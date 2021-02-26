@@ -68,6 +68,7 @@ cd CEESD-Y1_nozzle/startup
 PYOPENCL_TEST=port:pthread python -m mpi4py nozzle.py
 
 eval $(ssh-agent)
+trap "kill $SSH_AGENT_PID" EXIT
 
 # requires SSH private key in file timing-key
 # requires corresponding public key in
