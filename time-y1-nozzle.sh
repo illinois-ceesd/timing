@@ -6,6 +6,7 @@ set -x
 TIMING_HOME=$(pwd)
 TIMING_HOST=$(hostname)
 TIMING_DATE=$(date)
+TIMING_PLATFORM=$(uname)
 
 # -- installs conda env, dependencies and MIRGE-Com via *emirge*
 git clone https://github.com/illinois-ceesd/emirge.git
@@ -44,8 +45,11 @@ sed -e 's/\(nviz = \).*/\11000/g' \
     -e 's/\(t_final = \).*/\11e-6/g' \
     -e 's/y0_euler/nozzle-timing/g' \
     -e 's/y0euler/nozzle-timing/g' \
-    -e 's/mode="wu"/mode="wo"/g' \
+    -e 's/mode="wu"/mode="wo"/' \
     -e 's/\(casename = \).*/\1"nozzle-timing"/g' < ./nozzle.py > ./nozzle_timing.py
+
+# Fails on platforms without md5sum
+# DRIVER_MD5=$(md5dum ./nozzle_timing.py)
 
 # PYOPENCL_TEST=port:pthread python -m mpi4py nozzle.py
 
@@ -105,13 +109,15 @@ if [[ -f "nozzle-timing.sqlite-rank0" ]]; then
     SECOND_10_STEPS=`sqlite3 nozzle-timing.sqlite-rank0 'select SUM(value) from t_step WHERE step BETWEEN 11 and 20;'`
 
     # Create a text snippet with the timing info
-    printf "Date: ${TIMING_DATE}\nPlatform: ${TIMING_HOST}\n" > nozzle_timings.txt
-    printf "MIRGE version: ${MIRGE_HASH}\n" >> nozzle_timings.txt
-    printf "Y1 version: ${Y1_HASH}\n" >> nozzle_timings.txt
-    printf "Nozzle driver version: ${DRIVER_HASH}\n" >> nozzle_timings.txt
-    printf "Startup: ${STARTUP_TIME}\n10_steps1: ${FIRST_10_STEPS}\n" >> nozzle_timings.txt
-    printf "10_steps2: ${SECOND_10_STEPS}\n\n" >> nozzle_timings.txt
-
+    printf "run_date: ${TIMING_DATE}\nrun_host: ${TIMING_HOST}\n" > nozzle_timings.txt
+    printf "run_platform: ${TIMING_PLATFORM}\nmirge_version: ${MIRGE_HASH}\n" >> nozzle_timings.txt
+    printf "y1_version: ${Y1_HASH}\n" >> nozzle_timings.txt
+    printf "driver_version: ${DRIVER_HASH}\n" >> nozzle_timings.txt
+    printf "time_startup: ${STARTUP_TIME}\ntime_first_10: ${FIRST_10_STEPS}\n" >> nozzle_timings.txt
+    printf "time_second_10: ${SECOND_10_STEPS}\n---\n" >> nozzle_timings.txt
+    # MD5Sum for untracked driver temporarily disabled - fails some places
+    # printf "driver_md5sum: ${DRIVER_MD5SUM}\n" >> nozzle_timings.txt
+    
     # This snippet is failing on Lassen
     # requires SSH private key in file timing-key
     # requires corresponding public key in
