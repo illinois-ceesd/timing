@@ -5,7 +5,7 @@ set -x
 
 TIMING_HOME=$(pwd)
 TIMING_HOST=$(hostname)
-TIMING_DATE=$(date)
+TIMING_DATE=$(date +"%m-%d-%y")
 TIMING_PLATFORM=$(uname)
 
 # -- installs conda env, dependencies and MIRGE-Com via *emirge*
