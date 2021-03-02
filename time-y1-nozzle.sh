@@ -140,7 +140,7 @@ if [[ -f "nozzle-timing.sqlite-rank0" ]]; then
         (cd timing && git add y1-nozzle-timings.txt)
     fi
     cat nozzle_timings.txt >> timing/y1-nozzle-timings.txt
-    (cd timing && git commit -am "Automatic commit ${DATE}" && git push)
+    (cd timing && git commit -am "Automatic commit: ${TIMING_HOST} ${TIMING_DATE}" && git push)
 else
     printf "Timing run did not produce the expected sqlite file: nozzle-timing.sqlite-rank0\n"
     exit 1
