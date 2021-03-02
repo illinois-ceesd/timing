@@ -89,14 +89,16 @@ EOF
         chmod +x nozzle_timing_job.sh
         # Submit the batch script and wait for the job to finish
         bsub nozzle_timing_job.sh
+        # Wait 2 minutes right off the bat (the job is at least 90 sec)
+        sleep 120
         iwait=0
         while [ ! -f ./timing-run-done ]; do 
             iwait=$((iwait+1))
-            if [ "$iwait" -gt 360 ]; then # give up after .5 hours
+            if [ "$iwait" -gt 360 ]; then # give up after 1 hour
                 printf "Timed out waiting on batch job.\n"
                 exit 1 # skip the rest of the script
             fi
-            sleep 5
+            sleep 10
         done
         ;;
 
