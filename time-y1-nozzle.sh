@@ -7,6 +7,7 @@ TIMING_HOME=$(pwd)
 TIMING_HOST=$(hostname)
 TIMING_DATE=$(date +"%m-%d-%y")
 TIMING_PLATFORM=$(uname)
+TIMING_ARCH=$(uname -m)
 TIMING_REPO="MTCam/timing.git"
 TIMING_BRANCH="lassen-auto-timing"
 
@@ -130,10 +131,9 @@ if [[ -f "nozzle-timing.sqlite-rank0" ]]; then
 
     # --- Create a YAML-compatible text snippet with the timing info
     printf "run_date: ${TIMING_DATE}\nrun_host: ${TIMING_HOST}\n" > nozzle_timings.txt
-    printf "run_platform: ${TIMING_PLATFORM}\nmirge_version: ${MIRGE_HASH}\n" >> nozzle_timings.txt
-    printf "y1_version: ${Y1_HASH}\n" >> nozzle_timings.txt
-    printf "driver_version: ${DRIVER_HASH}\n" >> nozzle_timings.txt
-    printf "driver_md5sum: ${DRIVER_MD5SUM}\n" >> nozzle_timings.txt
+    printf "run_platform: ${TIMING_PLATFORM}\nrun_arch: ${TIMING_ARCH}\n" >> nozzle_timings.txt
+    printf "mirge_version: ${MIRGE_HASH}\ny1_version: ${Y1_HASH}\n" >> nozzle_timings.txt
+    printf "driver_version: ${DRIVER_HASH}\ndriver_md5sum: ${DRIVER_MD5SUM}\n" >> nozzle_timings.txt
     printf "time_startup: ${STARTUP_TIME}\ntime_first_10: ${FIRST_10_STEPS}\n" >> nozzle_timings.txt
     printf "time_second_10: ${SECOND_10_STEPS}\n---\n" >> nozzle_timings.txt
     
