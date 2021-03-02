@@ -3,79 +3,133 @@
 set -e
 set -x
 
+TIMING_HOME=$(pwd)
+TIMING_HOST=$(hostname)
+TIMING_DATE=$(date)
+
+# -- installs conda env, dependencies and MIRGE-Com via *emirge*
 git clone https://github.com/illinois-ceesd/emirge.git
 cd emirge
-./install.sh
+./install.sh --env-name=nozzle.timing.env
 
-source ./miniforge3/bin/activate ceesd
+# -- Activate the env we just created above
+export EMIRGE_HOME="${TIMING_HOME}/emirge"
+source ${EMIRGE_HOME}/config/activate_env.sh
 
 cd mirgecom
 
+# -- Grab and merge the branch with nozzle-dependent features
 git fetch https://github.com/illinois-ceesd/mirgecom.git y1_production:y1_production
+Y1_HASH=$(git rev-parse y1_production)
 git checkout master
+MIRGE_HASH=$(git rev-parse master)
 git branch -D temp || true
 git switch -c temp
-git merge y1_production
+git merge y1_production --no-edit
 
-
-echo RUNNING
+# -- Grab the repo with the nozzle driver
 rm -Rf CEESD-Y1_nozzle
 git clone https://github.com/anderson2981/CEESD-Y1_nozzle.git
 
-cat <<EOF > add-timing.patch
-diff --git a/startup/nozzle.py b/startup/nozzle.py
-index b8a3fd5..5e0f006 100644
---- a/startup/nozzle.py
-+++ b/startup/nozzle.py
-@@ -397,19 +397,27 @@ def main(ctx_factory=cl.create_some_context,
-                               constant_cfl=constant_cfl, comm=comm, vis_timer=vis_timer,
-                               overwrite=True,s0=s0_sc,kappa=kappa_sc)
 
-+    from time import time
-+    start = time()
-     if rank == 0:
-         logging.info("Stepping.")
-
--    (current_step, current_t, current_state) = \
--        advance_state(rhs=my_rhs, timestepper=timestepper,
--                      checkpoint=my_checkpoint,
--                      get_timestep=get_timestep, state=current_state,
--                      t_final=t_final, t=current_t, istep=current_step,
--                      logmgr=logmgr,eos=eos,dim=dim)
-+    my_rhs(t, state)
-+
-+    #(current_step, current_t, current_state) = \
-+    #    advance_state(rhs=my_rhs, timestepper=timestepper,
-+    #                  checkpoint=my_checkpoint,+    #                  get_timestep=get_timestep, state=current_state,
-+    #                  t_final=t_final, t=current_t, istep=current_step,
-+    #                  logmgr=logmgr,eos=eos,dim=dim)
-
-     if rank == 0:
-         logger.info("Checkpointing final state ...")
-
-+    elapsed = time()
-+    with open("case-time.txt", "w") as outf:
-+        outf.write(f"{repr(time())} {repr(elapsed)}\n")
-+
-     my_checkpoint(current_step, t=current_t,
-                   dt=(current_t - checkpoint_t),
-                   state=current_state)
-EOF
-
-(cd CEESD-Y1_nozzle; patch -p1 < ../add-timing.patch)
-
+# -- Edit the driver for:
+#    --- 20 steps
+#    --- no i/o
+#    --- desired file namings
 cd CEESD-Y1_nozzle/startup
-PYOPENCL_TEST=port:pthread python -m mpi4py nozzle.py
+DRIVER_HASH=$(git rev-parse main)
+sed -e 's/\(nviz = \).*/\11000/g' \
+    -e 's/\(nrestart = \).*/\11000/g' \
+    -e 's/\(current_dt = \).*/\15e-8/g' \
+    -e 's/\(t_final = \).*/\11e-6/g' \
+    -e 's/y0_euler/nozzle-timing/g' \
+    -e 's/y0euler/nozzle-timing/g' \
+    -e 's/mode="wu"/mode="wo"/g' \
+    -e 's/\(casename = \).*/\1"nozzle-timing"/g' < ./nozzle.py > ./nozzle_timing.py
 
-eval $(ssh-agent)
-trap "kill $SSH_AGENT_PID" EXIT
+# PYOPENCL_TEST=port:pthread python -m mpi4py nozzle.py
 
-# requires SSH private key in file timing-key
-# requires corresponding public key in
-# https://github.com/illinois-ceesd/timing/settings/keys/new
-ssh-add timing-key.pub
+# Run the case (platform-dependent)
+echo RUNNING
+case $TIMING_HOST in
 
-git clone git@github.com:illinois-ceesd/timing.git
+    lassen*)
+        printf "Host: Lassen\n"
+        rm -f nozzle_timing_job.sh
+        rm -f timing-run-done
+        cat <<EOF > nozzle_timing_job.sh
+#!/bin/bash
+#BSUB -nnodes 1
+#BSUB -G uiuc
+#BSUB -W 30
+#BSUB -q pdebug
 
-cat timing/y1-nozzle-timings.txt >> CEESD-Y1_nozzle/startup/case-time.txt
-(cd timing && git commit -m "Automatic commit $(date)" && git push)
+printf "Running with EMIRGE_HOME=${EMIRGE_HOME}\n"
+
+source "${EMIRGE_HOME}/config/activate_env.sh"
+export PYOPENCL_CTX="port:tesla"
+export XDG_CACHE_HOME="/tmp/$USER/xdg-scratch"
+
+rm -f timing-run-done
+jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./nozzle_timing.py
+touch timing-run-done
+
+EOF
+        chmod +x nozzle_timing_job.sh
+        bsub nozzle_timing_job.sh
+        iwait=0
+        while [ ! -f ./timing-run-done ]; do 
+            iwait=$((iwait+1))
+            if [ "$iwait" -gt 360 ]; then # give up after .5 hours
+                printf "Timed out waiting on batch job.\n"
+                exit 1 # skip the rest of the script
+            fi
+            sleep 5
+        done
+        ;;
+
+    *)
+        printf "Host: Unknown\n"
+        PYOPENCL_TEST=port:pthread python -m mpi4py ./nozzle_timing.py
+        ;;
+esac
+
+# Now the run should already be done - process the results
+if [[ -f "nozzle-timing.sqlite-rank0" ]]; then
+
+    rm -f nozzle_timings.txt
+
+    # Pull the timings out of the SQLITE files generated by logging
+    STARTUP_TIME=`sqlite3 nozzle-timing.sqlite-rank0 'select SUM(value) from t_step WHERE step BETWEEN 0 and 0;'`
+    FIRST_10_STEPS=`sqlite3 nozzle-timing.sqlite-rank0 'select SUM(value) from t_step WHERE step BETWEEN 0 and 10;'`
+    SECOND_10_STEPS=`sqlite3 nozzle-timing.sqlite-rank0 'select SUM(value) from t_step WHERE step BETWEEN 11 and 20;'`
+
+    # Create a text snippet with the timing info
+    printf "Date: ${TIMING_DATE}\nPlatform: ${TIMING_HOST}\n" > nozzle_timings.txt
+    printf "MIRGE version: ${MIRGE_HASH}\n" >> nozzle_timings.txt
+    printf "Y1 version: ${Y1_HASH}\n" >> nozzle_timings.txt
+    printf "Nozzle driver version: ${DRIVER_HASH}\n" >> nozzle_timings.txt
+    printf "Startup: ${STARTUP_TIME}\n10_steps1: ${FIRST_10_STEPS}\n" >> nozzle_timings.txt
+    printf "10_steps2: ${SECOND_10_STEPS}\n\n" >> nozzle_timings.txt
+
+    # This snippet is failing on Lassen
+    # requires SSH private key in file timing-key
+    # requires corresponding public key in
+    # https://github.com/illinois-ceesd/timing/settings/keys/new
+    # 
+    #    eval $(ssh-agent)
+    #    trap "kill $SSH_AGENT_PID" EXIT
+    #    ssh-add timing-key.pub
+
+    git clone git@github.com:illinois-ceesd/timing.git
+    if [[ ! -f timing/y1-nozzle-timings.txt ]]; then 
+        touch timing/y1-nozzle-timings.txt
+        (cd timing && git add y1-nozzle-timings.txt)
+    fi
+    cat nozzle_timings.txt >> timing/y1-nozzle-timings.txt
+    (cd timing && git commit -am "Automatic commit ${DATE}" && git push)
+else
+    printf "Timing run did not produce the expected sqlite file: nozzle-timing.sqlite-rank0\n"
+    exit 1
+fi
+
