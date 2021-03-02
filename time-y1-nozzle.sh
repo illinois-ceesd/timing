@@ -51,15 +51,13 @@ sed -e 's/\(nviz = \).*/\11000/g' \
     -e 's/\(casename = \).*/\1"nozzle-timing"/g' < ./nozzle.py > ./nozzle_timing.py
 
 # Fails on platforms without md5sum
-DRIVER_MD5="None"
+DRIVER_MD5SUM="None"
 if command -v md5sum &> /dev/null
 then 
-    DRIVER_MD5=$(md5sum ./nozzle_timing.py | cut -d " " -f 1)
+    DRIVER_MD5SUM=$(md5sum ./nozzle_timing.py | cut -d " " -f 1)
 else
-    echo "Warning: No MD5Sum command found. Skipping MD5Sum for untracked driver."
+    echo "Warning: No md5sum command found. Skipping  md5sum for untracked driver."
 fi
-
-# PYOPENCL_TEST=port:pthread python -m mpi4py nozzle.py
 
 # Run the case (platform-dependent)
 echo RUNNING
@@ -69,6 +67,7 @@ case $TIMING_HOST in
         printf "Host: Lassen\n"
         rm -f nozzle_timing_job.sh
         rm -f timing-run-done
+        # Generate a batch script for running the timing job
         cat <<EOF > nozzle_timing_job.sh
 #!/bin/bash
 #BSUB -nnodes 1
@@ -88,6 +87,7 @@ touch timing-run-done
 
 EOF
         chmod +x nozzle_timing_job.sh
+        # Submit the batch script and wait for the job to finish
         bsub nozzle_timing_job.sh
         iwait=0
         while [ ! -f ./timing-run-done ]; do 
@@ -145,4 +145,3 @@ else
     printf "Timing run did not produce the expected sqlite file: nozzle-timing.sqlite-rank0\n"
     exit 1
 fi
-
