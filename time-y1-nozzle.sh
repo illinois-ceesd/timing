@@ -49,7 +49,13 @@ sed -e 's/\(nviz = \).*/\11000/g' \
     -e 's/\(casename = \).*/\1"nozzle-timing"/g' < ./nozzle.py > ./nozzle_timing.py
 
 # Fails on platforms without md5sum
-# DRIVER_MD5=$(md5dum ./nozzle_timing.py)
+DRIVER_MD5="None"
+if command -v md5sum &> /dev/null
+then 
+    DRIVER_MD5=$(md5dum ./nozzle_timing.py | cut -d " " -f 1)
+else
+    echo "Warning: No MD5Sum command found. Skipping MD5Sum for untracked driver."
+fi
 
 # PYOPENCL_TEST=port:pthread python -m mpi4py nozzle.py
 
@@ -113,10 +119,9 @@ if [[ -f "nozzle-timing.sqlite-rank0" ]]; then
     printf "run_platform: ${TIMING_PLATFORM}\nmirge_version: ${MIRGE_HASH}\n" >> nozzle_timings.txt
     printf "y1_version: ${Y1_HASH}\n" >> nozzle_timings.txt
     printf "driver_version: ${DRIVER_HASH}\n" >> nozzle_timings.txt
+    printf "driver_md5sum: ${DRIVER_MD5SUM}\n" >> nozzle_timings.txt
     printf "time_startup: ${STARTUP_TIME}\ntime_first_10: ${FIRST_10_STEPS}\n" >> nozzle_timings.txt
     printf "time_second_10: ${SECOND_10_STEPS}\n---\n" >> nozzle_timings.txt
-    # MD5Sum for untracked driver temporarily disabled - fails some places
-    # printf "driver_md5sum: ${DRIVER_MD5SUM}\n" >> nozzle_timings.txt
     
     # This snippet is failing on Lassen
     # requires SSH private key in file timing-key
