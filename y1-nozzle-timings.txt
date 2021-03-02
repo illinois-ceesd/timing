@@ -1,9 +1,0 @@
-Date: Mon Mar  1 15:44:47 PST 2021
-Platform: lassen709
-MIRGE version: 72dd5ed2e370c095d997088235c5911b5abd482d
-Y1 version: 13b8a132406efa557ee40a9b35a39beaee0cc747
-Nozzle driver version: ee09d8a7aab969ab8cab14b4bb472a4c191c06e9
-Startup: 32.8169915676117
-10_steps1: 51.7365953922272
-10_steps2: 18.9734997749329
-
