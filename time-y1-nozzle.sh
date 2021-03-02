@@ -7,6 +7,8 @@ TIMING_HOME=$(pwd)
 TIMING_HOST=$(hostname)
 TIMING_DATE=$(date +"%m-%d-%y")
 TIMING_PLATFORM=$(uname)
+TIMING_REPO="MTCam/timing.git"
+TIMING_BRANCH="lassen-auto-timing"
 
 # -- installs conda env, dependencies and MIRGE-Com via *emirge*
 git clone https://github.com/illinois-ceesd/emirge.git
@@ -52,7 +54,7 @@ sed -e 's/\(nviz = \).*/\11000/g' \
 DRIVER_MD5="None"
 if command -v md5sum &> /dev/null
 then 
-    DRIVER_MD5=$(md5dum ./nozzle_timing.py | cut -d " " -f 1)
+    DRIVER_MD5=$(md5sum ./nozzle_timing.py | cut -d " " -f 1)
 else
     echo "Warning: No MD5Sum command found. Skipping MD5Sum for untracked driver."
 fi
@@ -132,7 +134,7 @@ if [[ -f "nozzle-timing.sqlite-rank0" ]]; then
     #    trap "kill $SSH_AGENT_PID" EXIT
     #    ssh-add timing-key.pub
 
-    git clone git@github.com:illinois-ceesd/timing.git
+    git clone -b ${TIMING_BRANCH} git@github.com:${TIMING_REPO}
     if [[ ! -f timing/y1-nozzle-timings.txt ]]; then 
         touch timing/y1-nozzle-timings.txt
         (cd timing && git add y1-nozzle-timings.txt)
