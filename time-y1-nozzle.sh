@@ -6,6 +6,7 @@ set -x
 TIMING_HOME=$(pwd)
 TIMING_HOST=$(hostname)
 TIMING_DATE=$(date "+%Y-%m-%d %H:%M")
+TIME_SINCE_EPOCH=$(date +%s)
 TIMING_PLATFORM=$(uname)
 TIMING_ARCH=$(uname -m)
 TIMING_REPO="MTCam/timing.git"
@@ -131,6 +132,7 @@ if [[ -f "nozzle-timing.sqlite-rank0" ]]; then
 
     # --- Create a YAML-compatible text snippet with the timing info
     printf "run_date: ${TIMING_DATE}\nrun_host: ${TIMING_HOST}\n" > nozzle_timings.yaml
+    printf "run_epoch: ${TIME_SINCE_EPOCH}\n" >> nozzle_timings.yaml
     printf "run_platform: ${TIMING_PLATFORM}\nrun_arch: ${TIMING_ARCH}\n" >> nozzle_timings.yaml
     printf "mirge_version: ${MIRGE_HASH}\ny1_version: ${Y1_HASH}\n" >> nozzle_timings.yaml
     printf "driver_version: ${DRIVER_HASH}\ndriver_md5sum: ${DRIVER_MD5SUM}\n" >> nozzle_timings.yaml
