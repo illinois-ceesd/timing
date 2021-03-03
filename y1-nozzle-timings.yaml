@@ -22,3 +22,16 @@ time_startup: 32.8335902690887
 time_first_10: 51.7251386642456
 time_second_10: 18.9531457424164
 ---
+run_date: 2021-03-03 09:16
+run_host: lassen709
+run_epoch: 1614791807
+run_platform: Linux
+run_arch: ppc64le
+mirge_version: 180bfdd654ead6980bae4a9a5286c8b8ecacb7b6
+y1_version: 13b8a132406efa557ee40a9b35a39beaee0cc747
+driver_version: b6fcf0bb151ba1fcb6758bdd0e0a36fee2e81666
+driver_md5sum: f21e87caef013438aeacfa66473cbe9c
+time_startup: 32.9008898735046
+time_first_10: 49.8146662712097
+time_second_10: 18.8665697574615
+---
