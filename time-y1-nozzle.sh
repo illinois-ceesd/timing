@@ -5,7 +5,7 @@ set -x
 
 TIMING_HOME=$(pwd)
 TIMING_HOST=$(hostname)
-TIMING_DATE=$(date +"%m-%d-%y")
+TIMING_DATE=$(date "+%Y-%m-%d %H:%M")
 TIMING_PLATFORM=$(uname)
 TIMING_ARCH=$(uname -m)
 TIMING_REPO="MTCam/timing.git"
@@ -144,7 +144,7 @@ if [[ -f "nozzle-timing.sqlite-rank0" ]]; then
     # 
     #    eval $(ssh-agent)
     #    trap "kill $SSH_AGENT_PID" EXIT
-    #    ssh-add timing-key.pub
+    #    ssh-add timing-key
 
     # --- Update the timing data in the repo
     # ---- First, clone the timing repo
