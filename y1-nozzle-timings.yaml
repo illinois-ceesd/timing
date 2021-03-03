@@ -48,21 +48,3 @@ time_startup: 33.0170214176178
 time_first_10: 50.1507890224457
 time_second_10: 19.0708997249603
 ---
-run_date: 2021-03-03 10:55
-run_host: lassen709
-run_epoch: 1614797703
-run_platform: Linux
-run_arch: ppc64le
-mirge_version: 180bfdd654ead6980bae4a9a5286c8b8ecacb7b6
-y1_version: 13b8a132406efa557ee40a9b35a39beaee0cc747
-driver_version: b6fcf0bb151ba1fcb6758bdd0e0a36fee2e81666
-driver_md5sum: f21e87caef013438aeacfa66473cbe9c
-time_startup: INFO: building temporary rank aggregation table rankagg_max_t_init
-65.3838860988617
-time_first_step: INFO: building temporary rank aggregation table rankagg_max_t_step
-35.45859885215759
-time_first_10: INFO: building temporary rank aggregation table rankagg_max_t_step
-52.416122913360596
-time_second_10: INFO: building temporary rank aggregation table rankagg_max_t_step
-18.902812242507935
----
