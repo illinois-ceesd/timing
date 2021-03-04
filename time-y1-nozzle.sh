@@ -1,4 +1,4 @@
-#! /bin/bash
+#!/bin/bash
 
 set -e
 set -x
@@ -40,17 +40,28 @@ git branch -D temp || true
 git switch -c temp
 git merge y1_production --no-edit
 
-# -- Grab the repo with the nozzle driver
+# -- Produce the driver to use for timing
+# --- Grab the nozzle driver repo
 rm -Rf CEESD-Y1_nozzle
 git clone https://github.com/anderson2981/CEESD-Y1_nozzle.git
-
-
-# -- Edit the driver for:
-# --- 20 steps
-# --- no i/o
-# --- desired file namings
 cd CEESD-Y1_nozzle/startup
 DRIVER_HASH=$(git rev-parse main)
+
+# --- DEVELOPERS NOTE:
+# --- The following (sed) edit is fragile in that, like a patch, it
+# --- depends on the driver having certain code constructs. If the
+# --- driver changes significantly, the following sed edit may fail,
+# --- and require updating.
+# --- In particular, we have taken care that the sed replacement with
+# --- the keyword *mode* below only replaces the first instance in the
+# --- file. Since this keyword is frequently shared among I/O APIs,
+# --- it is possible that new code introduced into the target file,
+# --- nozzle_timing.py, may cause this sed edit to edit the wrong call.
+
+# --- Edit the nozzle driver for:
+# ---- 20 steps
+# ---- no i/o
+# ---- desired file namings
 sed -e 's/\(nviz = \).*/\11000/g' \
     -e 's/\(nrestart = \).*/\11000/g' \
     -e 's/\(current_dt = \).*/\15e-8/g' \
