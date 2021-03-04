@@ -59,7 +59,7 @@ DRIVER_HASH=$(git rev-parse main)
 # --- file. Since this keyword is frequently shared among I/O APIs,
 # --- it is possible that new code introduced into the target file,
 # --- nozzle_timing.py, may cause this sed edit to edit the wrong call.
-
+#
 # --- Edit the nozzle driver for:
 # ---- 20 steps
 # ---- no i/o
@@ -162,14 +162,28 @@ if [[ -f "${RUN_LOG_FILE}" ]]; then
     printf "time_startup: ${STARTUP_TIME}\ntime_first_step: ${FIRST_STEP}\n" >> nozzle_timings.yaml
     printf "time_first_10: ${FIRST_10_STEPS}\ntime_second_10: ${SECOND_10_STEPS}\n---\n" >> nozzle_timings.yaml
 
-    # This snippet is failing on Lassen
-    # requires SSH private key in file timing-key
-    # requires corresponding public key in
-    # https://github.com/illinois-ceesd/timing/settings/keys/new
-    # 
-    #    eval $(ssh-agent)
-    #    trap "kill $SSH_AGENT_PID" EXIT
-    #    ssh-add timing-key
+    # Users should set special keys for using git over
+    # ssh for security concerns. This snippet will use
+    # a pre-arranged ssh key if the user provides one
+    # and indicates it with the TESTING_SSH_KEY environment
+    # variable.
+    # ===== To create a key:
+    # - Run ssh-keygen:
+    # $ ssh-keygen
+    # [enter a <keyname> when prompted]
+    # - Put the key(s) in a /secure/filesystem/location:
+    # $ mv <keyname>* /secure/filesystem/location
+    # - Add the key to GIT:
+    # $ [browse to] https://github.com/illinois-ceesd/timing/settings/keys/new
+    # $ Choose (New SSH key)
+    # $ Paste in the contents of /secure/filesystem/location/<keyname>.pub
+    # - Set the ENV variable before using this script:
+    # $ export TESTING_SSH_KEY=/secure/filesystem/location/<keyname>
+    if [ ! -z "${TESTING_SSH_KEY}" ]; then
+        eval $(ssh-agent)
+        trap "kill $SSH_AGENT_PID" EXIT
+        ssh-add ${TESTING_SSH_KEY}
+    fi
 
     # --- Update the timing data in the repo
     # ---- First, clone the timing repo
