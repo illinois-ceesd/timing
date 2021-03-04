@@ -71,7 +71,7 @@ sed -e 's/\(nviz = \).*/\11000/g' \
     -e 's/mode="wu"/mode="wo"/' \
     -e 's/\(casename = \).*/\1"nozzle-timing"/g' < ./nozzle.py > ./nozzle_timing.py
 
-# -- Get an MD5Sum for the untracked nozzle_timing driver
+# --- Get an MD5Sum for the untracked nozzle_timing driver
 DRIVER_MD5SUM="None"
 if command -v md5sum &> /dev/null
 then 
