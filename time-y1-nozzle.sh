@@ -3,6 +3,8 @@
 set -e
 set -x
 
+date
+
 TIMING_HOME=$(pwd)
 TIMING_HOST=$(hostname)
 TIMING_DATE=$(date "+%Y-%m-%d %H:%M")
@@ -81,12 +83,16 @@ else
 fi
 
 # -- Run the case (platform-dependent)
-echo RUNNING
+printf "Running on Host: ${TIMING_HOST}\n"
+date
+GPU_ARCH="Unknown"
 case $TIMING_HOST in
 
     # --- Run the timing test in a batch job on Lassen@LLC
     lassen*)
-        printf "Host: Lassen\n"
+        echo "Resolved Host: Lassen"
+        TIMING_HOST="Lassen"
+        GPU_ARCH="GV100GL"
         rm -f nozzle_timing_job.sh
         rm -f timing-run-done
         # ---- Generate a batch script for running the timing job
@@ -131,6 +137,8 @@ EOF
         ;;
 esac
 
+date
+
 # -- Process the results of the timing run
 RUN_LOG_FILE='nozzle-timing-rank0.sqlite'
 if [[ -f "${RUN_LOG_FILE}" ]]; then
@@ -147,8 +155,8 @@ if [[ -f "${RUN_LOG_FILE}" ]]; then
 
     # --- Create a YAML-compatible text snippet with the timing info
     printf "run_date: ${TIMING_DATE}\nrun_host: ${TIMING_HOST}\n" > nozzle_timings.yaml
-    printf "run_epoch: ${TIME_SINCE_EPOCH}\n" >> nozzle_timings.yaml
-    printf "run_platform: ${TIMING_PLATFORM}\nrun_arch: ${TIMING_ARCH}\n" >> nozzle_timings.yaml
+    printf "run_epoch: ${TIME_SINCE_EPOCH}\nrun_platform: ${TIMING_PLATFORM}\n" >> nozzle_timings.yaml
+    printf "run_arch: ${TIMING_ARCH}\ngpu_arch: ${GPU_ARCH}\n" >> nozzle_timings.yaml
     printf "mirge_version: ${MIRGE_HASH}\ny1_version: ${Y1_HASH}\n" >> nozzle_timings.yaml
     printf "driver_version: ${DRIVER_HASH}\ndriver_md5sum: ${DRIVER_MD5SUM}\n" >> nozzle_timings.yaml
     printf "time_startup: ${STARTUP_TIME}\ntime_first_step: ${FIRST_STEP}\n" >> nozzle_timings.yaml
@@ -179,3 +187,5 @@ else
     printf "Timing run did not produce the expected sqlite file: ${RUN_LOG_FILE}\n"
     exit 1
 fi
+
+date
