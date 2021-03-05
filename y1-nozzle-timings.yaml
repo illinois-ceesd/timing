@@ -120,3 +120,18 @@ time_first_step: 32.67159080505371
 time_first_10: 49.476155519485474
 time_second_10: 18.707656621932983
 ---
+run_date: 2021-03-05 08:57
+run_host: Lassen
+run_epoch: 1614963476
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 3cdd244d7c917515c138ec4b4eb9f9757be5c46c
+y1_version: 13b8a132406efa557ee40a9b35a39beaee0cc747
+driver_version: b6fcf0bb151ba1fcb6758bdd0e0a36fee2e81666
+driver_md5sum: f21e87caef013438aeacfa66473cbe9c
+time_startup: 43.86119318008423
+time_first_step: 32.90680932998657
+time_first_10: 49.943275451660156
+time_second_10: 18.968241214752197
+---
