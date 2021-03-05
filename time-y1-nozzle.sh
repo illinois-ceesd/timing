@@ -13,7 +13,7 @@ TIME_SINCE_EPOCH=$(date +%s)
 TIMING_PLATFORM=$(uname)
 TIMING_ARCH=$(uname -m)
 TIMING_REPO="illinois-ceesd/timing.git"
-TIMING_BRANCH="master"
+TIMING_BRANCH="main"
 
 # -- Install conda env, dependencies and MIRGE-Com via *emirge*
 # --- remove old run if it exists
