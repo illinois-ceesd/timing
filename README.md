@@ -6,7 +6,7 @@ curl -L -O https://raw.githubusercontent.com/illinois-ceesd/timing/main/time-y1-
 bash ./time-y1-nozzle.sh
 ```
 
-To plot (requires matplotlib, yaml):
+To plot (requires matplotlib, yaml, pandas):
 ```
 python utils/plot-timings.py
 ```
