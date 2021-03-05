@@ -109,6 +109,7 @@ printf "Running with EMIRGE_HOME=${EMIRGE_HOME}\n"
 source "${EMIRGE_HOME}/config/activate_env.sh"
 export PYOPENCL_CTX="port:tesla"
 export XDG_CACHE_HOME="/tmp/$USER/xdg-scratch"
+rm -rf $XDG_CACHE_HOME
 
 rm -f timing-run-done
 jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./nozzle_timing.py
