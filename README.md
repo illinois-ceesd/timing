@@ -7,6 +7,6 @@ bash ./time-y1-nozzle.sh
 ```
 
 To plot (requires matplotlib, yaml, pandas):
-```
-python utils/plot-timings.py
+```bash
+$ python utils/plot-timings.py
 ```
