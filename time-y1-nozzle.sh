@@ -37,8 +37,8 @@ cd mirgecom
 # -- Grab and merge the branch with nozzle-dependent features
 git fetch https://github.com/illinois-ceesd/mirgecom.git y1_production:y1_production
 Y1_HASH=$(git rev-parse y1_production)
-git checkout master
-MIRGE_HASH=$(git rev-parse master)
+git checkout main
+MIRGE_HASH=$(git rev-parse main)
 git branch -D temp || true
 git switch -c temp
 git merge y1_production --no-edit
