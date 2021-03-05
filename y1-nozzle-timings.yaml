@@ -1,0 +1,122 @@
+run_date: 03-02-21
+run_host: lassen708
+run_platform: Linux
+run_arch: ppc64le
+mirge_version: 72dd5ed2e370c095d997088235c5911b5abd482d
+y1_version: 13b8a132406efa557ee40a9b35a39beaee0cc747
+driver_version: b6fcf0bb151ba1fcb6758bdd0e0a36fee2e81666
+driver_md5sum: f21e87caef013438aeacfa66473cbe9c
+time_startup: 32.8479743003845
+time_first_10: 51.7075617313385
+time_second_10: 18.9298386573792
+---
+run_date: 03-02-21
+run_host: lassen708
+run_platform: Linux
+run_arch: ppc64le
+mirge_version: 72dd5ed2e370c095d997088235c5911b5abd482d
+y1_version: 13b8a132406efa557ee40a9b35a39beaee0cc747
+driver_version: b6fcf0bb151ba1fcb6758bdd0e0a36fee2e81666
+driver_md5sum: f21e87caef013438aeacfa66473cbe9c
+time_startup: 32.8335902690887
+time_first_10: 51.7251386642456
+time_second_10: 18.9531457424164
+---
+run_date: 2021-03-03 09:16
+run_host: lassen709
+run_epoch: 1614791807
+run_platform: Linux
+run_arch: ppc64le
+mirge_version: 180bfdd654ead6980bae4a9a5286c8b8ecacb7b6
+y1_version: 13b8a132406efa557ee40a9b35a39beaee0cc747
+driver_version: b6fcf0bb151ba1fcb6758bdd0e0a36fee2e81666
+driver_md5sum: f21e87caef013438aeacfa66473cbe9c
+time_startup: 32.9008898735046
+time_first_10: 49.8146662712097
+time_second_10: 18.8665697574615
+---
+run_date: 2021-03-03 10:48
+run_host: lassen708
+run_epoch: 1614797285
+run_platform: Linux
+run_arch: ppc64le
+mirge_version: 180bfdd654ead6980bae4a9a5286c8b8ecacb7b6
+y1_version: 13b8a132406efa557ee40a9b35a39beaee0cc747
+driver_version: b6fcf0bb151ba1fcb6758bdd0e0a36fee2e81666
+driver_md5sum: f21e87caef013438aeacfa66473cbe9c
+time_startup: 33.0170214176178
+time_first_10: 50.1507890224457
+time_second_10: 19.0708997249603
+---
+run_date: 2021-03-03 11:08
+run_host: lassen709
+run_epoch: 1614798489
+run_platform: Linux
+run_arch: ppc64le
+mirge_version: 180bfdd654ead6980bae4a9a5286c8b8ecacb7b6
+y1_version: 13b8a132406efa557ee40a9b35a39beaee0cc747
+driver_version: b6fcf0bb151ba1fcb6758bdd0e0a36fee2e81666
+driver_md5sum: f21e87caef013438aeacfa66473cbe9c
+time_startup: 47.25206780433655
+time_first_step: 32.84627366065979
+time_first_10: 49.83697867393494
+time_second_10: 18.944807291030884
+---
+run_date: 2021-03-03 11:27
+run_host: lassen709
+run_epoch: 1614799668
+run_platform: Linux
+run_arch: ppc64le
+mirge_version: 180bfdd654ead6980bae4a9a5286c8b8ecacb7b6
+y1_version: 13b8a132406efa557ee40a9b35a39beaee0cc747
+driver_version: b6fcf0bb151ba1fcb6758bdd0e0a36fee2e81666
+driver_md5sum: f21e87caef013438aeacfa66473cbe9c
+time_startup: 49.81365966796875
+time_first_step: 32.88090944290161
+time_first_10: 49.7982542514801
+time_second_10: 18.877001762390137
+---
+run_date: 2021-03-03 16:23
+run_host: lassen709
+run_epoch: 1614817413
+run_platform: Linux
+run_arch: ppc64le
+mirge_version: 180bfdd654ead6980bae4a9a5286c8b8ecacb7b6
+y1_version: 13b8a132406efa557ee40a9b35a39beaee0cc747
+driver_version: b6fcf0bb151ba1fcb6758bdd0e0a36fee2e81666
+driver_md5sum: f21e87caef013438aeacfa66473cbe9c
+time_startup: 70.26474094390869
+time_first_step: 32.826008796691895
+time_first_10: 49.783129930496216
+time_second_10: 18.90170645713806
+---
+run_date: 2021-03-03 17:39
+run_host: Lassen
+run_epoch: 1614821988
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 180bfdd654ead6980bae4a9a5286c8b8ecacb7b6
+y1_version: 13b8a132406efa557ee40a9b35a39beaee0cc747
+driver_version: b6fcf0bb151ba1fcb6758bdd0e0a36fee2e81666
+driver_md5sum: f21e87caef013438aeacfa66473cbe9c
+time_startup: 38.62359356880188
+time_first_step: 32.845163106918335
+time_first_10: 49.894590854644775
+time_second_10: 19.000505208969116
+---
+run_date: 2021-03-04 12:38
+run_host: Lassen
+run_epoch: 1614890291
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 1deb7f4cc5b371a4b8d3f2595d22c48cc324a396
+y1_version: 13b8a132406efa557ee40a9b35a39beaee0cc747
+driver_version: b6fcf0bb151ba1fcb6758bdd0e0a36fee2e81666
+driver_md5sum: 46a80b9983a0c3ab21852de1da03213c
+time_startup: 46.01881217956543
+time_first_step: 32.67159080505371
+time_first_10: 49.476155519485474
+time_second_10: 18.707656621932983
+---
