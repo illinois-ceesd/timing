@@ -47,7 +47,7 @@ git merge y1_production --no-edit
 # --- Grab the nozzle driver repo
 rm -Rf CEESD-Y1_nozzle
 git clone https://github.com/anderson2981/CEESD-Y1_nozzle.git
-cd CEESD-Y1_nozzle/startup
+cd CEESD-Y1_nozzle/timing_run
 DRIVER_HASH=$(git rev-parse main)
 
 # --- DEVELOPERS NOTE:
