@@ -14,6 +14,8 @@ TIMING_PLATFORM=$(uname)
 TIMING_ARCH=$(uname -m)
 TIMING_REPO="illinois-ceesd/timing.git"
 TIMING_BRANCH="main"
+DRIVER_REPO="MTCam/CEESD-Y1_nozzle.git"
+DRIVER_BRANCH="fixnoz"
 
 # -- Install conda env, dependencies and MIRGE-Com via *emirge*
 # --- remove old run if it exists
@@ -46,9 +48,9 @@ git merge y1_production --no-edit
 # -- Produce the driver to use for timing
 # --- Grab the nozzle driver repo
 rm -Rf CEESD-Y1_nozzle
-git clone https://github.com/anderson2981/CEESD-Y1_nozzle.git
+git clone -b ${DRIVER_BRANCH} https://github.com/${DRIVER_REPO}
 cd CEESD-Y1_nozzle/timing_run
-DRIVER_HASH=$(git rev-parse main)
+DRIVER_HASH=$(git rev-parse ${DRIVER_BRANCH})
 
 # --- DEVELOPERS NOTE:
 # --- The following (sed) edit is fragile in that, like a patch, it
