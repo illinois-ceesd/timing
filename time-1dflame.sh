@@ -35,13 +35,13 @@ source ${EMIRGE_HOME}/config/activate_env.sh
 cd mirgecom
 
 # -- Grab and merge the branch with flame1d-dependent features
-git fetch https://github.com/illinois-ceesd/mirgecom.git y1_combustion:y1_combustion
-Y1_HASH=$(git rev-parse y1_combustion)
+git fetch https://github.com/illinois-ceesd/mirgecom.git y1_production:y1_production
+Y1_HASH=$(git rev-parse y1_production)
 git checkout main
 MIRGE_HASH=$(git rev-parse main)
 git branch -D temp || true
 git switch -c temp
-git merge y1_combustion --no-edit
+git merge y1_production --no-edit
 
 # -- Produce the driver to use for timing
 # --- Grab the flame driver repo
