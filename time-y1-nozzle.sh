@@ -14,8 +14,8 @@ TIMING_PLATFORM=$(uname)
 TIMING_ARCH=$(uname -m)
 TIMING_REPO="illinois-ceesd/timing.git"
 TIMING_BRANCH="main"
-DRIVER_REPO="MTCam/CEESD-Y1_nozzle.git"
-DRIVER_BRANCH="fixnoz"
+DRIVER_REPO="anderson2981/CEESD-Y1_nozzle.git"
+DRIVER_BRANCH="main"
 
 # -- Install conda env, dependencies and MIRGE-Com via *emirge*
 # --- remove old run if it exists
