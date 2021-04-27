@@ -141,7 +141,7 @@ esac
 date
 
 # -- Process the results of the timing run
-RUN_LOG_FILE='flame-timing-rank0.sqlite'
+RUN_LOG_FILE='flame1d-rank0.sqlite'
 if [[ -f "${RUN_LOG_FILE}" ]]; then
 
     rm -f flame_timings.yaml
