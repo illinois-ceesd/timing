@@ -28,27 +28,26 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # Grab the data from the YAML timing file
-data = yaml.load_all(open('y1-nozzle-timings.yaml', 'r'), Loader=yaml.FullLoader)
+data = yaml.load_all(open('y1-flame-timings.yaml', 'r'), Loader=yaml.FullLoader)
 data = [d for d in list(data) if d is not None]  # Remove yaml's trailing None
 df = pd.DataFrame(data)
 df['run_date'] = pd.to_datetime(df['run_date'], errors='coerce')
 
 # Plot the data
-fig, ax = plt.subplots(figsize=(10,5))
+fig, ax = plt.subplots(figsize=(10, 5))
 kwargs = {'marker': 'o',
           'ms': 5,
           'markerfacecolor': 'w',
           'linestyle': '-',
-          'linewidth': 2,
-         }
+          'linewidth': 2, }
 
 for s in ['time_startup', 'time_first_step', 'time_second_10']:
-    ax.plot(df['run_date'], df[s], label=s.replace('time_',''), **kwargs)
+    ax.plot(df['run_date'], df[s], label=s.replace('time_', ''), **kwargs)
 
-ax.tick_params(axis='x', labelrotation = 45, labelsize=16)
+ax.tick_params(axis='x', labelrotation=45, labelsize=16)
 ax.grid(True)
 ax.set_xlabel('date', fontsize=20)
 ax.set_ylabel('time (s)', fontsize=20)
 ax.legend(fontsize=18)
-plt.savefig('y1-nozzle-timings.png', bbox_inches='tight')
+plt.savefig('y1-flame-timings.png', bbox_inches='tight')
 plt.show()
