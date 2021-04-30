@@ -1,3 +1,4 @@
+#! /usr/bin/env python3
 """Plot MIRGE-Com timing results."""
 
 __copyright__ = """
@@ -24,32 +25,69 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
 import yaml
-import pandas as pd
 import matplotlib.pyplot as plt
+import argparse
 
-# Grab the data from the YAML timing file
-data = yaml.load_all(open("y1-nozzle-timings.yaml", "r"), Loader=yaml.FullLoader)
-data = [d for d in list(data) if d is not None]  # Remove yaml's trailing None
-df = pd.DataFrame(data)
-df["run_date"] = pd.to_datetime(df["run_date"], errors="coerce")
 
-# Plot the data
-fig, ax = plt.subplots(figsize=(10, 5))
-kwargs = {
-    "marker": "o",
-    "ms": 5,
-    "markerfacecolor": "w",
-    "linestyle": "-",
-    "linewidth": 2,
-}
+def parse_datetime(s):
+    # I really don't know why we decided to not save Unix timestamps
+    import datetime
+    if isinstance(s, datetime.datetime):
+        return s
+    if isinstance(s, datetime.date):
+        return datetime.datetime.combine(s, datetime.datetime.min.time())
+    return datetime.datetime.strptime(s, "%Y-%m-%d %H:%M")
 
-for s in ["time_startup", "time_first_step", "time_second_10"]:
-    ax.plot(df["run_date"], df[s], label=s.replace("time_", ""), **kwargs)
 
-ax.tick_params(axis="x", labelrotation=45, labelsize=16)
-ax.grid(True)
-ax.set_xlabel("date", fontsize=20)
-ax.set_ylabel("time (s)", fontsize=20)
-ax.legend(fontsize=18)
-plt.savefig("y1-nozzle-timings.png", bbox_inches="tight")
-plt.show()
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("datafile", metavar="DATA.yaml")
+    parser.add_argument("--save-plot", metavar="NAME.{pdf,png}")
+    args = parser.parse_args()
+
+    # Grab the data from the YAML timing file
+    data = yaml.load_all(open(args.datafile), Loader=yaml.FullLoader)
+    data = [d for d in data if d is not None]  # Remove yaml's trailing None
+    for d in data:
+        d["run_date"] = parse_datetime(d["run_date"])
+
+    # Plot the data
+    plt.figure(figsize=(10, 5))
+    kwargs = {
+        "marker": "o",
+        "ms": 5,
+        "markerfacecolor": "w",
+        "linestyle": "-",
+        "linewidth": 2,
+    }
+
+    timing_names = ["time_startup", "time_first_step", "time_second_10"]
+    for s in timing_names:
+        plt.plot(
+                [d["run_date"] for d in data],
+                [d.get(s, None) for d in data],
+                label=s.replace("time_", ""), **kwargs)
+
+    for irow, d in enumerate(data):
+        if "comment" in d:
+            top = max(d.get(tname, 0) for tname in timing_names) * 1.1
+            plt.gca().annotate(d["comment"],
+                    xy=(d["run_date"], top),
+                    xytext=(d["run_date"], top+20),
+                    ha="center",
+                    arrowprops=dict(arrowstyle="->", connectionstyle="arc3"),
+                    )
+
+    plt.gca().tick_params(axis="x", labelrotation=45, labelsize=16)
+    plt.gca().grid(True)
+    plt.gca().set_xlabel("date", fontsize=20)
+    plt.gca().set_ylabel("time (s)", fontsize=20)
+    plt.gca().legend(loc="best")
+    if args.save_plot:
+        plt.savefig(args.save_plot, bbox_inches="tight")
+    else:
+        plt.show()
+
+
+if __name__ == "__main__":
+    main()

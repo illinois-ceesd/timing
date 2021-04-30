@@ -1,4 +1,4 @@
-run_date: 03-02-21
+run_date: 2021-03-02
 run_host: lassen708
 run_platform: Linux
 run_arch: ppc64le
@@ -9,8 +9,9 @@ driver_md5sum: f21e87caef013438aeacfa66473cbe9c
 time_startup: 32.8479743003845
 time_first_10: 51.7075617313385
 time_second_10: 18.9298386573792
+comment: "First one!"
 ---
-run_date: 03-02-21
+run_date: 2021-03-02
 run_host: lassen708
 run_platform: Linux
 run_arch: ppc64le
@@ -533,6 +534,7 @@ time_startup: 186.6615653038025
 time_first_step: 32.964736223220825
 time_first_10: 49.93045997619629
 time_second_10: 18.877599954605103
+comment: "Not sure what happened here"
 ---
 run_date: 2021-03-30 10:48
 run_host: Lassen
@@ -693,6 +695,7 @@ time_startup: 120.93861174583435
 time_first_step: 30.62150239944458
 time_first_10: 47.82638716697693
 time_second_10: 19.134381771087646
+comment: "Yikes!"
 ---
 run_date: 2021-04-15 01:00
 run_host: Lassen
