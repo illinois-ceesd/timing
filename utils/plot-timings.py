@@ -26,6 +26,7 @@ THE SOFTWARE.
 """
 import yaml
 import matplotlib.pyplot as plt
+import argparse
 
 
 def parse_datetime(s):
@@ -39,9 +40,13 @@ def parse_datetime(s):
 
 
 def main():
-    
+    parser = argparse.ArgumentParser()
+    parser.add_argument("datafile", metavar="DATA.yaml")
+    parser.add_argument("--save-plot", metavar="NAME.{pdf,png}")
+    args = parser.parse_args()
+
     # Grab the data from the YAML timing file
-    data = yaml.load_all(open("y1-nozzle-timings.yaml", "r"), Loader=yaml.FullLoader)
+    data = yaml.load_all(open(args.datafile), Loader=yaml.FullLoader)
     data = [d for d in data if d is not None]  # Remove yaml's trailing None
     for d in data:
         d["run_date"] = parse_datetime(d["run_date"])
@@ -78,9 +83,10 @@ def main():
     plt.gca().set_xlabel("date", fontsize=20)
     plt.gca().set_ylabel("time (s)", fontsize=20)
     plt.gca().legend(loc="best")
-    plt.savefig("y1-nozzle-timings.png", bbox_inches="tight")
-
-    plt.show()
+    if args.save_plot:
+        plt.savefig(args.save_plot, bbox_inches="tight")
+    else:
+        plt.show()
 
 
 if __name__ == "__main__":
