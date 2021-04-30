@@ -39,6 +39,7 @@ def parse_datetime(s):
 
 
 def main():
+    
     # Grab the data from the YAML timing file
     data = yaml.load_all(open("y1-nozzle-timings.yaml", "r"), Loader=yaml.FullLoader)
     data = [d for d in data if d is not None]  # Remove yaml's trailing None
@@ -64,17 +65,23 @@ def main():
 
     for irow, d in enumerate(data):
         if "comment" in d:
-            top = max(d[tname] for tname in timing_names) * 1.1
-        #plt.gca().annotate(d["comment"], xy=df["run_date"
+            top = max(d.get(tname, 0) for tname in timing_names) * 1.1
+            plt.gca().annotate(d["comment"],
+                    xy=(d["run_date"], top),
+                    xytext=(d["run_date"], top+20),
+                    ha="center",
+                    arrowprops=dict(arrowstyle="->", connectionstyle="arc3"),
+                    )
 
     plt.gca().tick_params(axis="x", labelrotation=45, labelsize=16)
     plt.gca().grid(True)
     plt.gca().set_xlabel("date", fontsize=20)
     plt.gca().set_ylabel("time (s)", fontsize=20)
-    plt.gca().legend(fontsize=18)
+    plt.gca().legend(loc="best")
     plt.savefig("y1-nozzle-timings.png", bbox_inches="tight")
 
     plt.show()
+
 
 if __name__ == "__main__":
     main()
