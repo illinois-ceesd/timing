@@ -13,9 +13,10 @@ TIME_SINCE_EPOCH=$(date +%s)
 TIMING_PLATFORM=$(uname)
 TIMING_ARCH=$(uname -m)
 TIMING_REPO="illinois-ceesd/timing.git"
-TIMING_BRANCH="main"
-DRIVER_REPO="anderson2981/CEESD-Y1_nozzle.git"
+TIMING_BRANCH="y1-production"
+DRIVER_REPO="illinois-ceesd/drivers_Y1-Nozzle.git"
 DRIVER_BRANCH="main"
+DRIVER_NAME="y1-production-nozzle"
 
 # -- Install conda env, dependencies and MIRGE-Com via *emirge*
 # --- remove old run if it exists
@@ -28,7 +29,7 @@ fi
 # --- grab emirge and install MIRGE-Com 
 git clone https://github.com/illinois-ceesd/emirge.git
 cd emirge
-./install.sh --env-name=nozzle.timing.env
+./install.sh --branch-name=y1-production --env-name=nozzle.timing.env
 
 # -- Activate the env we just created above
 export EMIRGE_HOME="${TIMING_HOME}/emirge"
@@ -37,19 +38,19 @@ source ${EMIRGE_HOME}/config/activate_env.sh
 cd mirgecom
 
 # -- Grab and merge the branch with nozzle-dependent features
-git fetch https://github.com/illinois-ceesd/mirgecom.git y1_production:y1_production
-Y1_HASH=$(git rev-parse y1_production)
+git fetch https://github.com/illinois-ceesd/mirgecom.git y1-production:y1-production
+Y1_HASH=$(git rev-parse y1-production)
 git checkout main
 MIRGE_HASH=$(git rev-parse main)
 git branch -D temp || true
 git switch -c temp
-git merge y1_production --no-edit
+git merge y1-production --no-edit
 
 # -- Produce the driver to use for timing
 # --- Grab the nozzle driver repo
-rm -Rf CEESD-Y1_nozzle
-git clone -b ${DRIVER_BRANCH} https://github.com/${DRIVER_REPO}
-cd CEESD-Y1_nozzle/timing_run
+rm -Rf ${DRIVER_NAME}
+git clone -b ${DRIVER_BRANCH} https://github.com/${DRIVER_REPO} ${DRIVER_NAME}
+cd ${DRIVER_NAME}/timing_run
 DRIVER_HASH=$(git rev-parse ${DRIVER_BRANCH})
 
 # --- DEVELOPERS NOTE:
