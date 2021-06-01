@@ -14,6 +14,8 @@ TIMING_PLATFORM=$(uname)
 TIMING_ARCH=$(uname -m)
 TIMING_REPO="illinois-ceesd/timing.git"
 TIMING_BRANCH="y1-production"
+TIMING_ENV_NAME="nozzle.timing.env"
+MIRGE_BRANCH="y1-production"
 DRIVER_REPO="illinois-ceesd/drivers_Y1-Nozzle.git"
 DRIVER_BRANCH="main"
 DRIVER_NAME="y1-production-nozzle"
@@ -29,7 +31,7 @@ fi
 # --- grab emirge and install MIRGE-Com 
 git clone https://github.com/illinois-ceesd/emirge.git
 cd emirge
-./install.sh --branch-name=y1-production --env-name=nozzle.timing.env
+./install.sh --branch-name=${MIRGE_BRANCH} --env-name=${TIMING_ENV_NAME}
 
 # -- Activate the env we just created above
 export EMIRGE_HOME="${TIMING_HOME}/emirge"
@@ -38,20 +40,21 @@ source ${EMIRGE_HOME}/config/activate_env.sh
 cd mirgecom
 
 # -- Grab and merge the branch with nozzle-dependent features
-git fetch https://github.com/illinois-ceesd/mirgecom.git y1-production:y1-production
-Y1_HASH=$(git rev-parse y1-production)
+# git fetch https://github.com/illinois-ceesd/mirgecom.git y1-production:y1-production
+Y1_HASH=$(git rev-parse HEAD)
 git checkout main
-MIRGE_HASH=$(git rev-parse main)
-git branch -D temp || true
-git switch -c temp
-git merge y1-production --no-edit
+MIRGE_HASH=$(git rev-parse HEAD)
+git checkout ${MIRGE_BRANCH}
+# git branch -D temp || true
+# git switch -c temp
+# git merge y1-production --no-edit
 
 # -- Produce the driver to use for timing
 # --- Grab the nozzle driver repo
 rm -Rf ${DRIVER_NAME}
 git clone -b ${DRIVER_BRANCH} https://github.com/${DRIVER_REPO} ${DRIVER_NAME}
 cd ${DRIVER_NAME}/timing_run
-DRIVER_HASH=$(git rev-parse ${DRIVER_BRANCH})
+DRIVER_HASH=$(git rev-parse HEAD)
 
 # --- DEVELOPERS NOTE:
 # --- The following (sed) edit is fragile in that, like a patch, it
@@ -68,20 +71,29 @@ DRIVER_HASH=$(git rev-parse ${DRIVER_BRANCH})
 # ---- 20 steps
 # ---- no i/o
 # ---- desired file namings
-sed -e 's/\(nviz = \).*/\11000/g' \
-    -e 's/\(nrestart = \).*/\11000/g' \
-    -e 's/\(current_dt = \).*/\15e-8/g' \
-    -e 's/\(t_final = \).*/\11e-6/g' \
-    -e 's/y0_euler/nozzle-timing/g' \
-    -e 's/y0euler/nozzle-timing/g' \
-    -e 's/mode="wu"/mode="wo"/' \
-    -e 's/\(casename = \).*/\1"nozzle-timing"/g' < ./nozzle.py > ./nozzle_timing.py
-
+# sed -e 's/\(nviz = \).*/\11000/g' \
+#     -e 's/\(nrestart = \).*/\11000/g' \
+#     -e 's/\(current_dt = \).*/\15e-8/g' \
+#     -e 's/\(t_final = \).*/\11e-6/g' \
+#     -e 's/y0_euler/nozzle-timing/g' \
+#     -e 's/y0euler/nozzle-timing/g' \
+#     -e 's/mode="wu"/mode="wo"/' \
+#     -e 's/\(casename = \).*/\1"nozzle-timing"/g' < ./nozzle.py > ./nozzle_timing.py
+cat <<EOF > timing_params.yaml
+nviz: 100
+nrestart: 100
+current_dt: 5e-8
+t_final: 1.e-6
+order:  1
+alpha_sc: 0.5
+s0_sc: -5.0
+kappa_sc: 0.5
+EOF
 # --- Get an MD5Sum for the untracked nozzle_timing driver
 DRIVER_MD5SUM="None"
 if command -v md5sum &> /dev/null
 then 
-    DRIVER_MD5SUM=$(md5sum ./nozzle_timing.py | cut -d " " -f 1)
+    DRIVER_MD5SUM=$(md5sum ./nozzle.py | cut -d " " -f 1)
 else
     echo "Warning: No md5sum command found. Skipping  md5sum for untracked driver."
 fi
@@ -115,7 +127,7 @@ export XDG_CACHE_HOME="/tmp/$USER/xdg-scratch"
 rm -rf $XDG_CACHE_HOME
 
 rm -f timing-run-done
-jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./nozzle_timing.py
+jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./nozzle.py -i timing_params.yaml
 touch timing-run-done
 
 EOF
@@ -138,14 +150,14 @@ EOF
     # --- Run the timing test on an unknown/generic machine 
     *)
         printf "Host: Unknown\n"
-        PYOPENCL_TEST=port:pthread python -m mpi4py ./nozzle_timing.py
+        PYOPENCL_TEST=port:pthread python -m mpi4py ./nozzle.py -i timing_params.yaml
         ;;
 esac
 
 date
 
 # -- Process the results of the timing run
-RUN_LOG_FILE='nozzle-timing-rank0.sqlite'
+RUN_LOG_FILE='nozzle-rank0.sqlite'
 if [[ -f "${RUN_LOG_FILE}" ]]; then
 
     rm -f nozzle_timings.yaml
