@@ -31,7 +31,7 @@ fi
 # --- grab emirge and install MIRGE-Com 
 git clone https://github.com/illinois-ceesd/emirge.git
 cd emirge
-./install.sh --branch-name=${MIRGE_BRANCH} --env-name=${TIMING_ENV_NAME}
+./install.sh --branch=${MIRGE_BRANCH} --env-name=${TIMING_ENV_NAME}
 
 # -- Activate the env we just created above
 export EMIRGE_HOME="${TIMING_HOME}/emirge"
@@ -40,14 +40,10 @@ source ${EMIRGE_HOME}/config/activate_env.sh
 cd mirgecom
 
 # -- Grab and merge the branch with nozzle-dependent features
-# git fetch https://github.com/illinois-ceesd/mirgecom.git y1-production:y1-production
 Y1_HASH=$(git rev-parse HEAD)
 git checkout main
 MIRGE_HASH=$(git rev-parse HEAD)
 git checkout ${MIRGE_BRANCH}
-# git branch -D temp || true
-# git switch -c temp
-# git merge y1-production --no-edit
 
 # -- Produce the driver to use for timing
 # --- Grab the nozzle driver repo
@@ -56,29 +52,6 @@ git clone -b ${DRIVER_BRANCH} https://github.com/${DRIVER_REPO} ${DRIVER_NAME}
 cd ${DRIVER_NAME}/timing_run
 DRIVER_HASH=$(git rev-parse HEAD)
 
-# --- DEVELOPERS NOTE:
-# --- The following (sed) edit is fragile in that, like a patch, it
-# --- depends on the driver having certain code constructs. If the
-# --- driver changes significantly, the following sed edit may fail,
-# --- and require updating.
-# --- In particular, we have taken care that the sed replacement with
-# --- the keyword *mode* below only replaces the first instance in the
-# --- file. Since this keyword is frequently shared among I/O APIs,
-# --- it is possible that new code introduced into the target file,
-# --- nozzle_timing.py, may cause this sed edit to edit the wrong call.
-#
-# --- Edit the nozzle driver for:
-# ---- 20 steps
-# ---- no i/o
-# ---- desired file namings
-# sed -e 's/\(nviz = \).*/\11000/g' \
-#     -e 's/\(nrestart = \).*/\11000/g' \
-#     -e 's/\(current_dt = \).*/\15e-8/g' \
-#     -e 's/\(t_final = \).*/\11e-6/g' \
-#     -e 's/y0_euler/nozzle-timing/g' \
-#     -e 's/y0euler/nozzle-timing/g' \
-#     -e 's/mode="wu"/mode="wo"/' \
-#     -e 's/\(casename = \).*/\1"nozzle-timing"/g' < ./nozzle.py > ./nozzle_timing.py
 cat <<EOF > timing_params.yaml
 nviz: 100
 nrestart: 100
@@ -89,6 +62,7 @@ alpha_sc: 0.5
 s0_sc: -5.0
 kappa_sc: 0.5
 EOF
+
 # --- Get an MD5Sum for the untracked nozzle_timing driver
 DRIVER_MD5SUM="None"
 if command -v md5sum &> /dev/null
