@@ -1,4 +1,4 @@
-2#!/bin/bash -l
+#!/bin/bash
 
 set -e
 set -x
@@ -101,7 +101,7 @@ rm -rf \$XDG_CACHE_HOME
 rm -f timing-run-done
 which python
 conda env list
-jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./flame1d.py -i timing_parms.yaml
+jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./flame1d.py -i timing_params.yaml
 touch timing-run-done
 
 EOF
