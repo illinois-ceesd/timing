@@ -14,10 +14,10 @@ TIMING_PLATFORM=$(uname)
 TIMING_ARCH=$(uname -m)
 TIMING_REPO="illinois-ceesd/timing.git"
 TIMING_BRANCH="flame-timing"
-TIMING_ENV_NAME="nozzle.timing.env"
+TIMING_ENV_NAME="flame1d.timing.env"
 MIRGE_BRANCH="y1-production"
-DRIVER_REPO="anderson2981/CEESD-Y1_Flame1D.git"
-DRIVER_BRANCH="main"
+DRIVER_REPO="MTCam//CEESD-Y1_Flame1D.git"
+DRIVER_BRANCH="y1-production"
 DRIVER_NAME="y1-production-flame"
 
 # -- Install conda env, dependencies and MIRGE-Com via *emirge*
@@ -28,10 +28,11 @@ then
     mv -f emirge emirge.old
     rm -rf emirge.old &
 fi
+
 # --- grab emirge and install MIRGE-Com 
 git clone https://github.com/illinois-ceesd/emirge.git
 cd emirge
-./install.sh --branch=${MIRGE_BRANCH} --env-name=flame1d.timing.env
+./install.sh --branch=${MIRGE_BRANCH} --env-name=${TIMING_ENV_NAME}
 
 # -- Activate the env we just created above
 export EMIRGE_HOME="${TIMING_HOME}/emirge"
@@ -53,8 +54,8 @@ DRIVER_HASH=$(git rev-parse HEAD)
 cat <<EOF > timing_params.yaml
 nviz: 100
 nrestart: 100
-current_dt: 5e-8
-t_final: 1.e-6
+current_dt: 5e-9
+t_final: 1.e-7
 order:  1
 alpha_sc: 0.5
 s0_sc: -5.0
