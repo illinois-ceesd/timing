@@ -1,4 +1,4 @@
-#!/bin/bash
+2#!/bin/bash -l
 
 set -e
 set -x
@@ -41,9 +41,8 @@ source ${EMIRGE_HOME}/config/activate_env.sh
 cd mirgecom
 
 # -- Grab and merge the branch with flame1d-dependent features
-Y1_HASH=$(git rev-parse ${MIRGE_BRANCH})
-git checkout main
-MIRGE_HASH=$(git rev-parse main)
+Y1_HASH=$(git rev-parse origin/${MIRGE_BRANCH})
+MIRGE_HASH=$(git rev-parse origin/main)
 
 # --- Grab the flame driver repo
 rm -Rf ${DRIVER_NAME}
@@ -87,6 +86,7 @@ case $TIMING_HOST in
         # ---- Generate a batch script for running the timing job
         cat <<EOF > flame_timing_job.sh
 #!/bin/bash
+
 #BSUB -nnodes 1
 #BSUB -G uiuc
 #BSUB -W 30
@@ -99,6 +99,8 @@ export PYOPENCL_CTX="port:tesla"
 export XDG_CACHE_HOME="/tmp/$USER/xdg-scratch"
 rm -rf \$XDG_CACHE_HOME
 rm -f timing-run-done
+which python
+conda env list
 jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./flame1d.py -i timing_parms.yaml
 touch timing-run-done
 
@@ -107,7 +109,7 @@ EOF
         # ---- Submit the batch script and wait for the job to finish
         bsub flame_timing_job.sh
         # ---- Wait 10 minutes right off the bat (the job is at least 10 min)
-        sleep 600
+        sleep 300
         iwait=0
         while [ ! -f ./timing-run-done ]; do 
             iwait=$((iwait+1))
