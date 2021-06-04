@@ -982,6 +982,7 @@ time_startup: 44.41573095321655
 time_first_step: 27.595382928848267
 time_first_10: 51.5159957408905
 time_second_10: 26.717141151428223
+comment: "Switch to Navier-Stokes"
 ---
 run_date: 2021-06-02 01:00
 run_host: Lassen
