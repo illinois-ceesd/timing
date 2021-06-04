@@ -70,12 +70,14 @@ def main():
 
     for irow, d in enumerate(data):
         if "comment" in d:
-            top = max(d.get(tname, 0) for tname in timing_names) * 1.1
+
+            top = max(d.get(tname, 0) for tname in timing_names)
             plt.gca().annotate(d["comment"],
                     xy=(d["run_date"], top),
-                    xytext=(d["run_date"], top+20),
+                    xytext=(d["run_date"], top-30),
                     ha="center",
                     arrowprops=dict(arrowstyle="->", connectionstyle="arc3"),
+                    annotation_clip=False,
                     )
 
     plt.gca().tick_params(axis="x", labelrotation=45, labelsize=16)
@@ -87,6 +89,7 @@ def main():
         plt.savefig(args.save_plot, bbox_inches="tight")
     else:
         plt.show()
+
 
 if __name__ == "__main__":
     main()
