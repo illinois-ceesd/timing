@@ -18,7 +18,7 @@ TIMING_BRANCH="y1-production"
 TIMING_ENV_NAME="${exename}.timing.env"
 MIRGE_BRANCH="y1-production"
 DRIVER_REPO="illinois-ceesd/drivers_y1-nozzle"
-DRIVER_BRANCH="y1-post-update"
+DRIVER_BRANCH="main"
 DRIVER_NAME="y1-production-nozzle"
 
 # -- Install conda env, dependencies and MIRGE-Com via *emirge*
@@ -147,7 +147,7 @@ if [[ -f "${RUN_LOG_FILE}" ]]; then
     STARTUP_TIME=$(runalyzer -m ${SUMMARY_FILE_NAME} -c 'print(q("select $t_init.max").fetchall()[0][0])' | grep -v INFO)
     FIRST_STEP=$(runalyzer -m ${SUMMARY_FILE_NAME} -c 'print(sum(p[0] for p in q("select $t_step.max").fetchall()[0:1]))' | grep -v INFO)
     FIRST_10_STEPS=$(runalyzer -m ${SUMMARY_FILE_NAME} -c 'print(sum(p[0] for p in q("select $t_step.max").fetchall()[0:10]))' | grep -v INFO)
-    SECOND_10_STEPS=$(runalyzer -m ${SUMMARY_FILE_NAME} -c 'print(sum(p[0] for p in q("select $t_step.max").fetchall()[11:21]))' | grep -v INFO)
+    SECOND_10_STEPS=$(runalyzer -m ${SUMMARY_FILE_NAME} -c 'print(sum(p[0] for p in q("select $t_step.max").fetchall()[10:20]))' | grep -v INFO)
 
     # --- Create a YAML-compatible text snippet with the timing info
     printf "run_date: ${TIMING_DATE}\nrun_host: ${TIMING_HOST}\n" > ${YAML_FILE_NAME}
