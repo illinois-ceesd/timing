@@ -126,7 +126,7 @@ EOF
     # --- Run the timing test on an unknown/generic machine 
     *)
         printf "Host: Unknown\n"
-        PYOPENCL_TEST=port:pthread python -m mpi4py ./${exename}.py -i timing_params.yaml
+        PYOPENCL_TEST=port:pthread python -O -m mpi4py ./${exename}.py -i timing_params.yaml
         ;;
 esac
 
