@@ -1,4 +1,4 @@
-#! /usr/bin/env python3
+#!/usr/bin/env python3
 """Plot MIRGE-Com timing results."""
 
 __copyright__ = """
@@ -41,6 +41,8 @@ def parse_datetime(s):
 
 def main():
     parser = argparse.ArgumentParser()
+    parser.add_argument("-s", "--per-step")
+    parser.add_argument("-o", "--text-offset")
     parser.add_argument("datafile", metavar="DATA.yaml")
     parser.add_argument("--save-plot", metavar="NAME.{pdf,png}")
     args = parser.parse_args()
@@ -62,19 +64,35 @@ def main():
     }
 
     timing_names = ["time_startup", "time_first_step", "time_second_10"]
-    for s in timing_names:
-        plt.plot(
+    scalfac = 1
+    if args.per_step:
+        timing_names = ["time_second_10"]
+        scalfac = 1.0/9.0
+        for s in timing_names:
+            plt.plot(
+                [d["run_date"] for d in data],
+                [scalfac*d.get(s, None) for d in data if d.get(s, None)],
+                label=s.replace("time_", ""), **kwargs)
+    else:
+        for s in timing_names:
+            plt.plot(
                 [d["run_date"] for d in data],
                 [d.get(s, None) for d in data],
                 label=s.replace("time_", ""), **kwargs)
 
+    top = max(scalfac*d.get(tname, 0) for tname in timing_names)
+    bottom = min(scalfac*d.get(tname, 0) for tname in timing_names)
+    textoffset = (top - bottom)/2
+
+    if args.text_offset:
+        textoffset = float(args.text_offset)
+
     for irow, d in enumerate(data):
         if "comment" in d:
 
-            top = max(d.get(tname, 0) for tname in timing_names)
             plt.gca().annotate(d["comment"],
                     xy=(d["run_date"], top),
-                    xytext=(d["run_date"], top-30),
+                    xytext=(d["run_date"], top-textoffset),
                     ha="center",
                     arrowprops=dict(arrowstyle="->", connectionstyle="arc3"),
                     annotation_clip=False,
@@ -83,7 +101,10 @@ def main():
     plt.gca().tick_params(axis="x", labelrotation=45, labelsize=16)
     plt.gca().grid(True)
     plt.gca().set_xlabel("date", fontsize=20)
-    plt.gca().set_ylabel("time (s)", fontsize=20)
+    if args.per_step:
+        plt.gca().set_ylabel("walltime/step (s)", fontsize=20)
+    else:
+        plt.gca().set_ylabel("time (s)", fontsize=20)
     plt.gca().legend(loc="best")
     if args.save_plot:
         plt.savefig(args.save_plot, bbox_inches="tight")

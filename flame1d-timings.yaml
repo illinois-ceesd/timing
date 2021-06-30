@@ -237,7 +237,7 @@ time_startup: 47.92236852645874
 time_first_step: 45.83017444610596
 time_first_10: 299.5397300720215
 time_second_10: 283.0131502151489
-comment: "Switch to Navier-Stokes"
+comment: "NS"
 ---
 run_date: 2021-04-27 06:15
 run_host: Lassen
@@ -366,7 +366,7 @@ time_startup: 66.50988411903381
 time_first_step: 41.57770586013794
 time_first_10: 281.18911385536194
 time_second_10: 240.87742257118225
-comment: "New World Grudge?"
+comment: "NWG"
 ---
 run_date: 2021-06-03 02:09
 run_host: Lassen
@@ -639,6 +639,7 @@ time_startup: 35.146390438079834
 time_first_step: 27.23009157180786
 time_first_10: 141.78367137908936
 time_second_10: 115.1218912601471
+comment: DV
 ---
 run_date: 2021-06-23 01:12
 run_host: Lassen
@@ -751,6 +752,7 @@ time_startup: 71.27741742134094
 time_first_step: 36.93186044692993
 time_first_10: 210.34328198432922
 time_second_10: 174.27497267723083
+comment: Fuel
 ---
 run_date: 2021-06-30 04:43
 run_host: Lassen
