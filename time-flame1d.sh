@@ -17,8 +17,8 @@ TIMING_REPO="illinois-ceesd/timing.git"
 TIMING_BRANCH="y1-production"
 TIMING_ENV_NAME="${exename}.timing.env"
 MIRGE_BRANCH="y1-production"
-DRIVER_REPO="anderson2981/CEESD-Y1_Flame1D.git"
-DRIVER_BRANCH="main"
+DRIVER_REPO="MTCam/CEESD-Y1_Flame1D.git"
+DRIVER_BRANCH="update-y1-callbacks"
 DRIVER_NAME="y1-production-flame"
 
 # -- Install conda env, dependencies and MIRGE-Com via *emirge*
