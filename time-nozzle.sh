@@ -18,7 +18,7 @@ TIMING_BRANCH="y1-production"
 TIMING_ENV_NAME="${exename}.timing.env"
 MIRGE_BRANCH="y1-production"
 DRIVER_REPO="illinois-ceesd/drivers_y1-nozzle"
-DRIVER_BRANCH="update-y1-callbacks"
+DRIVER_BRANCH="main"
 DRIVER_NAME="y1-production-nozzle"
 
 # -- Install conda env, dependencies and MIRGE-Com via *emirge*
