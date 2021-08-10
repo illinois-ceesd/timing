@@ -14,11 +14,11 @@ TIME_SINCE_EPOCH=$(date +%s)
 TIMING_PLATFORM=$(uname)
 TIMING_ARCH=$(uname -m)
 TIMING_REPO="illinois-ceesd/timing.git"
-TIMING_BRANCH="y1-production"
+TIMING_BRANCH="y1-lazy"
 TIMING_ENV_NAME="${exename}.timing.env"
-MIRGE_BRANCH="y1-production"
+MIRGE_BRANCH="parallel-lazy"
 DRIVER_REPO="illinois-ceesd/drivers_y1-nozzle"
-DRIVER_BRANCH="main"
+DRIVER_BRANCH="parallel-lazy"
 DRIVER_NAME="y1-production-nozzle"
 
 # -- Install conda env, dependencies and MIRGE-Com via *emirge*
@@ -40,7 +40,7 @@ export EMIRGE_HOME="${TIMING_HOME}/emirge"
 source ${EMIRGE_HOME}/config/activate_env.sh
 
 cd mirgecom
-
+git merge origin/y1-production
 # -- Grab and merge the branch with the case-dependent features
 Y1_HASH=$(git rev-parse origin/${MIRGE_BRANCH})
 MIRGE_HASH=$(git rev-parse origin/main)
@@ -91,7 +91,7 @@ case $TIMING_HOST in
 
 #BSUB -nnodes 1
 #BSUB -G uiuc
-#BSUB -W 30
+#BSUB -W 60
 #BSUB -q pdebug
 
 printf "Running with EMIRGE_HOME=${EMIRGE_HOME}\n"
@@ -103,7 +103,7 @@ rm -rf \$XDG_CACHE_HOME
 rm -f timing-run-done
 which python
 conda env list
-jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./${exename}.py -i timing_params.yaml
+jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./${exename}.py -i timing_params.yaml --lazy
 touch timing-run-done
 
 EOF
