@@ -2071,6 +2071,7 @@ time_startup: 46.663694858551025
 time_first_step: 2340.7499117851257
 time_first_10: 2361.283455133438
 time_second_10: 20.40539813041687
+comment: Switch to lazy eval
 ---
 run_date: 2021-08-10 01:00
 run_host: Lassen
