@@ -96,7 +96,7 @@ case $TIMING_HOST in
 
 #BSUB -nnodes 1
 #BSUB -G uiuc
-#BSUB -W 30
+#BSUB -W 60
 #BSUB -q pdebug
 
 printf "Running with EMIRGE_HOME=${EMIRGE_HOME}\n"
