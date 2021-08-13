@@ -24,9 +24,10 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 THE SOFTWARE.
 """
-import yaml
-import matplotlib.pyplot as plt
 import argparse
+import yaml
+from matplotlib.dates import date2num
+import matplotlib.pyplot as plt
 
 
 def parse_datetime(s):
@@ -41,8 +42,7 @@ def parse_datetime(s):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("-s", "--per-step")
-    parser.add_argument("-o", "--text-offset")
+    parser.add_argument("-s", "--per-step", action="store_true")
     parser.add_argument("datafile", metavar="DATA.yaml")
     parser.add_argument("--save-plot", metavar="NAME.{pdf,png}")
     args = parser.parse_args()
@@ -53,8 +53,6 @@ def main():
     for d in data:
         d["run_date"] = parse_datetime(d["run_date"])
 
-    # Plot the data
-    fig, ax = plt.subplots(figsize=(10, 5), constrained_layout=True)
     kwargs = {
         "marker": "o",
         "ms": 5,
@@ -62,52 +60,65 @@ def main():
         "linestyle": "-",
         "linewidth": 2,
     }
+    colors = ['tab:blue', 'tab:orange', 'tab:green']
+    leg = []
 
-    timing_names = ["time_startup", "time_first_step", "time_second_10"]
-    scalfac = 1
+    timing_names =  ["time_startup", "time_first_step", "time_second_10"]
+    timing_labels = ["startup", "first timestep", "second 9 timesteps"]
+    scalfac = 1.0
+    figwidth=10
+    figheight=8
     if args.per_step:
-        timing_names = ["time_second_10"]
+        timing_names =  timing_names[-1:]
+        timing_labels = timing_labels[-1:]
         scalfac = 1.0/9.0
-        for s in timing_names:
-            ax.plot([d["run_date"] for d in data],
-                    [scalfac*d.get(s, None) for d in data if d.get(s, None)],
-                    label=s.replace("time_", ""), **kwargs)
-    else:
-        for s in timing_names:
-            ax.plot([d["run_date"] for d in data],
-                    [d.get(s, None) for d in data],
-                    label=s.replace("time_", ""), **kwargs)
+        figheight=4
 
-    top = max(scalfac*d.get(tname, 0) for tname in timing_names)
-    bottom = min(scalfac*d.get(tname, 0) for tname in timing_names)
-    textoffset = (top - bottom)/2
+    numplots = len(timing_names)
 
-    if args.text_offset:
-        textoffset = float(args.text_offset)
+    # Plot the data
+    fig, ax = plt.subplots(ncols=1, nrows=numplots, sharex=True, figsize=(figwidth, figheight), constrained_layout=True)
 
-    for irow, d in enumerate(data):
+    if numplots == 1:
+        ax = [ax]
+
+    # clean data
+    for s in timing_names:
+        data = [d for d in data if s in d]
+
+    for i, s in enumerate(timing_names):
+        p, = ax[i].plot([d["run_date"] for d in data],
+                        [scalfac*d[s] for d in data],
+                        label=timing_labels[i], color=colors[i], **kwargs)
+        leg.append(p)
+
+    for d in data:
         if "comment" in d:
-            ax.annotate(d["comment"],
-                        xy=(d["run_date"], top),
-                        xytext=(d["run_date"], top-textoffset),
-                        ha="center",
-                        arrowprops=dict(arrowstyle="->", connectionstyle="arc3"),
-                        annotation_clip=False,
-                       )
+            for i in range(numplots):
+                xlim = ax[0].get_xlim()
+                xt = (date2num(d['run_date'])-xlim[0]) / (xlim[1]-xlim[0])
+                #(xt, _) = ax[0].transLimits.transform((date2num(d['run_date']),0))  # get the coordinates on the axis
+                ax[i].plot([xt, xt], [-0.05, 1.05], transform=ax[i].transAxes,
+                           color='tab:gray', linestyle='--', lw=1, clip_on=False)
+                if i==0:
+                    ax[i].text(xt, 1.1, d['comment'], ha='center', transform=ax[i].transAxes)
 
-    ax.tick_params(axis="x", labelrotation=45, labelsize=16)
-    ax.grid(True)
-    ax.set_xlabel("date", fontsize=20)
+    ax[-1].tick_params(axis="x", labelrotation=45, labelsize=12)
+    for i in range(numplots):
+        ax[i].grid(True)
+    ax[-1].set_xlabel("date", fontsize=12)
+    ax[0].legend(handles=leg,
+              bbox_to_anchor=(0,1.02,0.3,0.2), loc="lower left",
+              mode="expand", borderaxespad=0, ncol=1)
     if args.per_step:
-        ax.set_ylabel("walltime/step (s)", fontsize=20)
+        ax[0].set_ylabel("walltime/step (s)", fontsize=12)
     else:
-        ax.set_ylabel("time (s)", fontsize=20)
-    ax.legend(loc="best")
+        for i in range(numplots):
+            ax[i].set_ylabel("time (s)", fontsize=12)
     if args.save_plot:
         plt.savefig(args.save_plot, bbox_inches="tight")
     else:
         plt.show()
-
 
 if __name__ == "__main__":
     main()
