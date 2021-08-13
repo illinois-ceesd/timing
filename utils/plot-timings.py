@@ -54,7 +54,7 @@ def main():
         d["run_date"] = parse_datetime(d["run_date"])
 
     # Plot the data
-    plt.figure(figsize=(10, 5))
+    fig, ax = plt.subplots(figsize=(10, 5), constrained_layout=True)
     kwargs = {
         "marker": "o",
         "ms": 5,
@@ -69,16 +69,14 @@ def main():
         timing_names = ["time_second_10"]
         scalfac = 1.0/9.0
         for s in timing_names:
-            plt.plot(
-                [d["run_date"] for d in data],
-                [scalfac*d.get(s, None) for d in data if d.get(s, None)],
-                label=s.replace("time_", ""), **kwargs)
+            ax.plot([d["run_date"] for d in data],
+                    [scalfac*d.get(s, None) for d in data if d.get(s, None)],
+                    label=s.replace("time_", ""), **kwargs)
     else:
         for s in timing_names:
-            plt.plot(
-                [d["run_date"] for d in data],
-                [d.get(s, None) for d in data],
-                label=s.replace("time_", ""), **kwargs)
+            ax.plot([d["run_date"] for d in data],
+                    [d.get(s, None) for d in data],
+                    label=s.replace("time_", ""), **kwargs)
 
     top = max(scalfac*d.get(tname, 0) for tname in timing_names)
     bottom = min(scalfac*d.get(tname, 0) for tname in timing_names)
@@ -89,23 +87,22 @@ def main():
 
     for irow, d in enumerate(data):
         if "comment" in d:
+            ax.annotate(d["comment"],
+                        xy=(d["run_date"], top),
+                        xytext=(d["run_date"], top-textoffset),
+                        ha="center",
+                        arrowprops=dict(arrowstyle="->", connectionstyle="arc3"),
+                        annotation_clip=False,
+                       )
 
-            plt.gca().annotate(d["comment"],
-                    xy=(d["run_date"], top),
-                    xytext=(d["run_date"], top-textoffset),
-                    ha="center",
-                    arrowprops=dict(arrowstyle="->", connectionstyle="arc3"),
-                    annotation_clip=False,
-                    )
-
-    plt.gca().tick_params(axis="x", labelrotation=45, labelsize=16)
-    plt.gca().grid(True)
-    plt.gca().set_xlabel("date", fontsize=20)
+    ax.tick_params(axis="x", labelrotation=45, labelsize=16)
+    ax.grid(True)
+    ax.set_xlabel("date", fontsize=20)
     if args.per_step:
-        plt.gca().set_ylabel("walltime/step (s)", fontsize=20)
+        ax.set_ylabel("walltime/step (s)", fontsize=20)
     else:
-        plt.gca().set_ylabel("time (s)", fontsize=20)
-    plt.gca().legend(loc="best")
+        ax.set_ylabel("time (s)", fontsize=20)
+    ax.legend(loc="best")
     if args.save_plot:
         plt.savefig(args.save_plot, bbox_inches="tight")
     else:
