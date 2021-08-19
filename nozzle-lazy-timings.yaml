@@ -2216,3 +2216,19 @@ time_first_step: 2381.2404403686523
 time_first_10: 2401.750301361084
 time_second_10: 20.4396653175354
 ---
+run_date: 2021-08-19 06:54
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021cefa8>
+run_epoch: 1629381296
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: afecd078d9a8ff90ae21746905e1b2db6e2de4ed
+y1_version: 25a265a9b7994425cb3aea4cccf78da288277366
+driver_version: c9aeba037bc67736c676c5e351334e31bd26d3eb
+driver_md5sum: 4b19c458b62cbc95aef4dc170b41ca21
+time_startup: 47.915146827697754
+time_first_step: 704.4720933437347
+time_first_10: 713.3333072662354
+time_second_10: 8.875848770141602
+---
