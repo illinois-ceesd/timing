@@ -23,7 +23,7 @@ DRIVER_NAME="y1-production-nozzle-lazy"
 SUMMARY_FILE_ROOT="${exename}_lazy"
 YAML_FILE_NAME="${exename}-lazy-timings.yaml"
 LOGDIR="${exename}_lazy_logs"
-EXEOPTS="--lazy"
+EXEOPTS="--lazy --log"
 
 # -- Install conda env, dependencies and MIRGE-Com via *emirge*
 # --- remove old run if it exists
