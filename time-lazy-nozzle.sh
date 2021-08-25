@@ -67,6 +67,7 @@ order:  1
 alpha_sc: 0.5
 s0_sc: -5.0
 kappa_sc: 0.5
+logDependent: 0
 EOF
 
 # --- Get an MD5Sum for the untracked timing driver
