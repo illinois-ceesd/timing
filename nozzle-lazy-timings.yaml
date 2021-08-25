@@ -2647,6 +2647,7 @@ time_startup: 70.81366562843323
 time_first_step: 700.0404312610626
 time_first_10: 707.9738748073578
 time_second_10: 7.901251792907715
+comment: DV monitor turned off
 ---
 run_date: 2021-08-25 12:00
 run_host: Lassen

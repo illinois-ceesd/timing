@@ -90,6 +90,9 @@ def main():
         p, = ax[i].plot([d["run_date"] for d in data],
                         [scalfac*d[s] for d in data],
                         label=timing_labels[i], color=colors[i], **kwargs)
+        if args.per_step:
+            ylim = ax[i].get_ylim()
+            plt.ylim(0, 1.5*ylim[1])
         leg.append(p)
 
     commentcounter = 0
