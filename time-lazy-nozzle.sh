@@ -7,6 +7,7 @@ set -o pipefail
 date
 
 exename="nozzle"
+timestamp=$(date "+%Y.%m.%d-%H.%M.%S")
 TIMING_HOME=$(pwd)
 TIMING_HOST=$(hostname)
 TIMING_DATE=$(date "+%Y-%m-%d %H:%M")
@@ -15,13 +16,14 @@ TIMING_PLATFORM=$(uname)
 TIMING_ARCH=$(uname -m)
 TIMING_REPO="illinois-ceesd/timing.git"
 TIMING_BRANCH="y1-production"
-TIMING_ENV_NAME="${exename}.timing.env"
+TIMING_ENV_NAME="${exename}.lazy.timing.env"
 MIRGE_BRANCH="parallel-lazy"
 DRIVER_REPO="illinois-ceesd/drivers_y1-nozzle"
 DRIVER_BRANCH="parallel-lazy"
 DRIVER_NAME="y1-production-nozzle-lazy"
 SUMMARY_FILE_ROOT="${exename}_lazy"
 YAML_FILE_NAME="${exename}-lazy-timings.yaml"
+BATCH_OUTPUT_FILE="${SUMMARY_FILE_ROOT}_${timestamp}.out"
 LOGDIR="${exename}_lazy_logs"
 EXEOPTS="--lazy --log"
 
@@ -46,8 +48,8 @@ source ${EMIRGE_HOME}/config/activate_env.sh
 cd mirgecom
 
 # -- Grab and merge the branch with the case-dependent features
-Y1_HASH=$(git rev-parse origin/${MIRGE_BRANCH})
-MIRGE_HASH=$(git rev-parse origin/main)
+MIRGE_HASH=$(git rev-parse origin/${MIRGE_BRANCH})
+Y1_HASH=$(git rev-parse origin/y1-production)
 git merge origin/y1-production --no-edit
 
 # --- Grab the case driver repo
@@ -98,6 +100,7 @@ case $TIMING_HOST in
 #BSUB -G uiuc
 #BSUB -W 60
 #BSUB -q pdebug
+#BSUB -o ${BATCH_OUTPUT_FILE}
 
 printf "Running with EMIRGE_HOME=${EMIRGE_HOME}\n"
 
@@ -136,7 +139,6 @@ EOF
 esac
 
 date
-timestamp=$(date "+%Y.%m.%d-%H.%M.%S")
 # -- Process the results of the timing run
 RUN_LOG_FILE="${exename}-rank0.sqlite"
 if [[ -f "${RUN_LOG_FILE}" ]]; then
@@ -198,8 +200,9 @@ if [[ -f "${RUN_LOG_FILE}" ]]; then
     cat ${YAML_FILE_NAME} >> timing/${YAML_FILE_NAME}
     mkdir -p timing/${LOGDIR}
     cp ${SUMMARY_FILE_NAME} timing/${LOGDIR}
+    cp ${BATCH_OUTPUT_FILE} timing/${LOGDIR}
     cd timing
-    git add ${LOGDIR}/${SUMMARY_FILE_NAME}
+    git add ${LOGDIR}/
     # ---- Commit the new data to the repo
     (git commit -am "Automatic commit: ${TIMING_HOST} ${TIMING_DATE}" && git push)
     cd ../
