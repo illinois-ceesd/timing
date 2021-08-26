@@ -43,15 +43,24 @@ def parse_datetime(s):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--per-step", action="store_true")
+    parser.add_argument("-z", "--zero", action="store_true")
+    parser.add_argument("-d", "--date", metavar="YYYY-MM-DD")
     parser.add_argument("datafile", metavar="DATA.yaml")
     parser.add_argument("--save-plot", metavar="NAME.{pdf,png}")
     args = parser.parse_args()
 
     # Grab the data from the YAML timing file
-    data = yaml.load_all(open(args.datafile), Loader=yaml.FullLoader)
-    data = [d for d in data if d is not None]  # Remove yaml's trailing None
-    for d in data:
+    yaml_data = yaml.load_all(open(args.datafile), Loader=yaml.FullLoader)
+    raw_data = [d for d in yaml_data if d is not None]  # Remove yaml's trailing None
+    data = []
+    for d in raw_data:
         d["run_date"] = parse_datetime(d["run_date"])
+        if args.date:
+            start_date = date2num(parse_datetime(args.date+" 00:00"))
+            run_date = date2num(d["run_date"])
+            if run_date < start_date:
+                continue
+        data.append(d)
 
     kwargs = {
         "marker": "o",
@@ -90,9 +99,13 @@ def main():
         p, = ax[i].plot([d["run_date"] for d in data],
                         [scalfac*d[s] for d in data],
                         label=timing_labels[i], color=colors[i], **kwargs)
-        if args.per_step:
+        if args.zero:
             ylim = ax[i].get_ylim()
             plt.ylim(0, 1.5*ylim[1])
+        if args.date:
+            xlim = ax[i].get_xlim()
+            start_date = parse_datetime(args.date+" 00:00")
+            plt.xlim(date2num(start_date), xlim[1])
         leg.append(p)
 
     commentcounter = 0
