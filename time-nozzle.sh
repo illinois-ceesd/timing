@@ -121,6 +121,7 @@ EOF
             fi
             sleep 10
         done
+        sleep 30 #  Give the batch job time to finalize and write its spew to the log
         ;;
 
     # --- Run the timing test on an unknown/generic machine 

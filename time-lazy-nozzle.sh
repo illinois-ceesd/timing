@@ -100,7 +100,7 @@ case $TIMING_HOST in
 #BSUB -nnodes 1
 #BSUB -G uiuc
 #BSUB -W 60
-#BSUB -q pdebug
+#BSUB -q pbatch
 
 printf "Running with EMIRGE_HOME=${EMIRGE_HOME}\n"
 
@@ -111,6 +111,9 @@ rm -rf \$XDG_CACHE_HOME
 rm -f timing-run-done
 which python
 conda env list
+env
+env | grep LSB_MCPU_HOSTS
+
 jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./${exename}.py -i timing_params.yaml ${EXEOPTS}
 touch timing-run-done
 
@@ -119,7 +122,7 @@ EOF
         # ---- Submit the batch script and wait for the job to finish
         bsub ${BATCH_SCRIPT_NAME}
         # ---- Wait 10 minutes right off the bat (the job is at least 10 min)
-        sleep 300
+        sleep 600
         iwait=0
         while [ ! -f ./timing-run-done ]; do 
             iwait=$((iwait+1))
@@ -127,8 +130,9 @@ EOF
                 printf "Timed out waiting on batch job.\n"
                 exit 1 # skip the rest of the script
             fi
-            sleep 10
+            sleep 20
         done
+        sleep 30  # give the batch system time to spew its junk into the log
         ;;
 
     # --- Run the timing test on an unknown/generic machine 
