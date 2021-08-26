@@ -1,0 +1,870 @@
+Customizing shell for Lassen.
+Running with EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin/python
+# conda environments:
+#
+                         /g/g17/mtcampbe/scratchl/CEESD/AutomatedTesting/AK/emirge/miniforge3
+                         /g/g17/mtcampbe/scratchl/CEESD/AutomatedTesting/AK/emirge/miniforge3/envs/nozzle.timing.env
+                         /g/g17/mtcampbe/scratchl/CEESD/Software/Experimental/emirge/miniforge3
+                         /g/g17/mtcampbe/scratchl/CEESD/Software/Experimental/emirge/miniforge3/envs/xp.ceesd
+                         /g/g17/mtcampbe/scratchl/CEESD/Support/CEESD-Y1_Shock1D/emirge/miniforge3
+                         /g/g17/mtcampbe/scratchl/CEESD/Support/CEESD-Y1_Shock1D/emirge/miniforge3/envs/mirgeDriver.shock1d
+                         /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/hand-timing/emirge/miniforge3/envs/hand.timing.lazy.env
+base                     /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3
+nozzle.lazy.timing.env  *  /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env
+                         /p/gpfs1/mtcampbe/CEESD/Experimental/emirge/miniforge3/envs/test.lazy
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/abate.mtc_euler.env
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/ceesd.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/chem.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/dgfem
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/mc.master
+
+LMOD_FAMILY_COMPILER_VERSION=8.3.1
+PROJ_LIB=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/share/proj
+LLNL_IPISOLATE=0
+MANPATH=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release/share/man:/usr/tce/packages/gcc/gcc-8.3.1/man:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/man:/usr/man:/usr/share/man:/usr/local/man:/usr/X11R6/man:/usr/lib64/mvapich/default/man:/opt/ibm/spectrum_mpi/jsm_pmix/share/man
+LSB_EXEC_CLUSTER=lassen
+OMPI_COMM_WORLD_RANK=0
+LMOD_FAMILY_CUDA=cuda
+LMOD_ANCIENT_TIME=3600
+GUESTFISH_INIT=\e[1;34m
+_ModuleTable003_=bG9jLzIuMC5sdWEiLFsiZnVsbE5hbWUiXT0ibGFsbG9jLzIuMCIsWyJsb2FkT3JkZXIiXT0zLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImxhbGxvYy8yLjAiLH0sWyJzcGVjdHJ1bS1tcGkiXT17WyJmbiJdPSIvdXNyL3RjZS9tb2R1bGVmaWxlcy9Db21waWxlci9nY2MvOC4zLjEvc3BlY3RydW0tbXBpL3JvbGxpbmctcmVsZWFzZS5sdWEiLFsiZnVsbE5hbWUiXT0ic3BlY3RydW0tbXBpL3JvbGxpbmctcmVsZWFzZSIsWyJsb2FkT3JkZXIiXT01LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InNwZWN0cnVtLW1waS9yb2xsaW5nLXJlbGVhc2UiLH0sfSxt
+HOSTNAME=lassen361
+LSB_EFFECTIVE_RSRCREQ=1*{select[(LN) && (type == any)] order[r15s:pg] span[hosts=1]}+40*{select[(CN) && (type == any)] order[r15s:pg] span[ptile=40]}
+LSB_DOCKER_JOB_STARTTS=1630021196
+BBHASH=ad4f416fde94d342cbc201f7183a0ad4
+JSM_TMPDIR=/var/tmp
+MIRGE_TIMING_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing
+LSF_LOGDIR=/opt/ibm/spectrumcomputing/lsf/log
+LSF_LIM_API_NTRIES=1
+LSB_BATCH_JID=2768109
+__LMOD_REF_COUNT_MODULEPATH=/usr/tce/modulefiles/MPI/gcc/8.3.1/spectrum-mpi/rolling-release:1;/usr/tce/modulefiles/Compiler/gcc/8.3.1:1;/usr/tcetmp/modulefiles/Core:1;/usr/apps/modulefiles:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1;/collab/usr/global/tools/modulefiles/blueos_3_ppc64le_ib_p9/Core:1
+MAILTO=mtcampbe@illinois.edu,andreask@illinois.edu
+SHELL=/bin/bash
+LMOD_ROOT=/usr/share/lmod
+HISTSIZE=1000
+WISECONFIGDIR=/usr/share/wise2/
+LMOD_SYSTEM_DEFAULT_MODULES=StdEnv
+TMPDIR=/var/tmp
+MODULEPATH_ROOT=/usr/share/modulefiles
+SSH_CLIENT=192.168.66.202 40576 22
+LS_EXECCWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y1-production-nozzle-lazy/timing_run
+LSB_TRAPSIGS=trap # 15 10 12 2 1
+CONDA_SHLVL=1
+LMOD_FAMILY_CUDA_VERSION=10.1.243
+LS_JOBPID=81303
+CONDA_PROMPT_MODIFIER=
+LSB_MAX_NUM_PROCESSORS=41
+LSB_JOBRES_CALLBACK=60197@lassen710
+LMOD_PKG=/usr/share/lmod/lmod
+LSB_JOB_EXECUSER=mtcampbe
+LSB_JOBID=2768109
+QTDIR=/usr/lib64/qt-3.3
+LSF_SERVERDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc
+LSB_JOBRES_PID=81303
+LMOD_VERSION=8.2.7
+LMOD_SHORT_TIME=60
+QTINC=/usr/lib64/qt-3.3/include
+LSB_JOBNAME=nozzle_timing_job.sh
+LLNL_COMPUTE_NODES=lassen361
+LLNL_ATSDISABLE=0
+__LMOD_REF_COUNT_LOADEDMODULES=cuda/10.1.243:1;StdEnv:1;lalloc/2.0:1;gcc/8.3.1:1;spectrum-mpi/rolling-release:1
+BSUB_BLOCK_EXEC_HOST=
+QT_GRAPHICSSYSTEM_CHECKED=1
+LSF_LIBDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib
+LSB_PROJECT_NAME=default
+OPAL_PREFIX=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release
+CUDA_HOME=/usr/tce/packages/cuda/cuda-10.1.243
+USER=mtcampbe
+PYOPENCL_CTX=port:tesla
+LMOD_sys=Linux
+LD_LIBRARY_PATH=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib:/usr/tce/packages/cuda/cuda-10.1.243/lib64
+SBD_KRB5CCNAME_VAL=
+LSB_EEXEC_REAL_UID=
+CONDA_EXE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda
+CEESD=/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen
+ENV=/g/g17/mtcampbe/.bashrc
+PFTP_CONFIG_FILENAME=/etc/pftp_config
+HOST_GRP=linux
+_ModuleTable004_=cGF0aEE9eyIvdXNyL3RjZS9tb2R1bGVmaWxlcy9NUEkvZ2NjLzguMy4xL3NwZWN0cnVtLW1waS9yb2xsaW5nLXJlbGVhc2UiLCIvdXNyL3RjZS9tb2R1bGVmaWxlcy9Db21waWxlci9nY2MvOC4zLjEiLCIvdXNyL3RjZXRtcC9tb2R1bGVmaWxlcy9Db3JlIiwiL3Vzci9hcHBzL21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZSIsIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLCIvY29sbGFiL3Vzci9nbG9iYWwvdG9vbHMvbW9kdWxlZmlsZXMvYmx1ZW9zXzNfcHBjNjRsZV9pYl9wOS9Db3JlIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii91c3IvdGNldG1wL21vZHVsZWZpbGVz
+HOSTTYPE=LINUXPPC64LE
+__LMOD_REF_COUNT__LMFILES_=/usr/tcetmp/modulefiles/Core/cuda/10.1.243.lua:1;/usr/tcetmp/modulefiles/Core/StdEnv.lua:1;/usr/tcetmp/modulefiles/Core/lalloc/2.0.lua:1;/usr/tcetmp/modulefiles/Core/gcc/8.3.1.lua:1;/usr/tce/modulefiles/Compiler/gcc/8.3.1/spectrum-mpi/rolling-release.lua:1
+LSF_INVOKE_CMD=bsub
+CUDA_CACHE_DISABLE=1
+LS_EXEC_T=START
+LMOD_FAMILY_LALLOC=lalloc
+LS_SUBCWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y1-production-nozzle-lazy/timing_run
+LSB_SUB_RES_REQ=1*{select[LN]span[hosts=1]} + 40*{select[CN]span[ptile=40]}
+LSB_HOSTS=lassen710 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361 lassen361
+LMOD_PREPEND_BLOCK=normal
+LMOD_FAMILY_MPI_VERSION=rolling-release
+GUESTFISH_PS1=\[\e[1;32m\]><fs>\[\e[0;31m\] 
+_CE_CONDA=
+LSB_UNIXGROUP_INT=mtcampbe
+LSB_JOBFILENAME=/g/g17/mtcampbe/.lsbatch/1630021195.2768109
+LSB_JOBINDEX=0
+_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJjdWRhIl09ImN1ZGEiLFsibGFsbG9jIl09ImxhbGxvYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtTdGRFbnY9e1siZm4iXT0iL3Vzci90Y2V0bXAvbW9kdWxlZmlsZXMvQ29yZS9TdGRFbnYubHVhIixbImZ1bGxOYW1lIl09IlN0ZEVudiIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXtsbW9kPXtbInN0aWNreSJdPTEsfSx9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09IlN0ZEVudiIsfSxjdWRhPXtbImZuIl09Ii91c3Iv
+PATH=/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:/usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-8.3.1/bin:/usr/tce/packages/gcc/gcc-8.3.1/bin:/usr/tce/packages/lalloc/lalloc-2.0/bin:/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin:/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:/usr/tce/packages/cuda/cuda-10.1.243/bin:/usr/tcetmp/bin:/usr/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibm/spectrum_mpi/jsm_pmix/bin:/opt/ibm/bb/bin:/opt/ibm/flightlog/bin:/opt/ibutils/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin
+MAIL=/var/spool/mail/mtcampbe
+PROJ_NETWORK=ON
+LCSCHEDCLUSTER=lassen
+LSB_EXIT_PRE_ABORT=99
+LSB_JOBEXIT_STAT=0
+LMOD_SETTARG_CMD=:
+LMOD_FAMILY_LALLOC_VERSION=2.0
+CONDA_PREFIX=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env
+INPUTRC=/etc/inputrc
+PWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y1-production-nozzle-lazy/timing_run
+_LMFILES_=/usr/tcetmp/modulefiles/Core/cuda/10.1.243.lua:/usr/tcetmp/modulefiles/Core/StdEnv.lua:/usr/tcetmp/modulefiles/Core/lalloc/2.0.lua:/usr/tcetmp/modulefiles/Core/gcc/8.3.1.lua:/usr/tce/modulefiles/Compiler/gcc/8.3.1/spectrum-mpi/rolling-release.lua
+EDITOR=/bin/vi
+LANG=en_US.UTF-8
+LSB_CHKFILENAME=/g/g17/mtcampbe/.lsbatch/1630021195.2768109
+MODULEPATH=/usr/tce/modulefiles/MPI/gcc/8.3.1/spectrum-mpi/rolling-release:/usr/tce/modulefiles/Compiler/gcc/8.3.1:/usr/tcetmp/modulefiles/Core:/usr/apps/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/collab/usr/global/tools/modulefiles/blueos_3_ppc64le_ib_p9/Core
+LSB_DJOB_HOSTFILE=/g/g17/mtcampbe/.lsbatch/1630021195.2768109.hostfile
+LOADEDMODULES=cuda/10.1.243:StdEnv:lalloc/2.0:gcc/8.3.1:spectrum-mpi/rolling-release
+KDEDIRS=/usr
+GUESTFISH_OUTPUT=\e[0m
+_ModuleTable_Sz_=5
+LSB_JOB_STARTER=/usr/tcetmp/bin/bsub_job_starter %USRCMD
+EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge
+LSF_JOB_TIMESTAMP_VALUE=1630021196
+LMOD_CMD=/usr/share/lmod/lmod/libexec/lmod
+_ModuleTable005_=L0NvcmU6L3Vzci9hcHBzL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXg6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLH0=
+BBPATH=/mnt/bb_ad4f416fde94d342cbc201f7183a0ad4
+LSB_EXEC_HOSTTYPE=UNKNOWN_AUTO_DETECT
+LSB_DJOB_NUMPROC=41
+LSF_BINDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin
+LLNL_NUM_COMPUTE_NODES=1
+HISTCONTROL=ignoredups
+ENVIRONMENT=BATCH
+_CE_M=
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+CXX=mpicxx
+HOME=/g/g17/mtcampbe
+SHLVL=6
+__LMOD_REF_COUNT_PATH=/usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-8.3.1/bin:2;/usr/tce/packages/gcc/gcc-8.3.1/bin:2;/usr/tce/packages/lalloc/lalloc-2.0/bin:2;/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin:1;/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:1;/usr/tce/packages/cuda/cuda-10.1.243/bin:2;/usr/tcetmp/bin:2;/usr/condabin:1;/usr/lib64/qt-3.3/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/opt/ibm/spectrum_mpi/jsm_pmix/bin:1;/opt/ibm/bb/bin:1;/opt/ibm/flightlog/bin:1;/opt/ibutils/bin:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin:1
+JOB_TERMINATE_INTERVAL=10
+LSB_ACCT_FILE=/tmp/2768109.tmpdir/.1630021195.2768109.acct
+_ModuleTable002_=dGNldG1wL21vZHVsZWZpbGVzL0NvcmUvY3VkYS8xMC4xLjI0My5sdWEiLFsiZnVsbE5hbWUiXT0iY3VkYS8xMC4xLjI0MyIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImN1ZGEvMTAuMS4yNDMiLH0sZ2NjPXtbImZuIl09Ii91c3IvdGNldG1wL21vZHVsZWZpbGVzL0NvcmUvZ2NjLzguMy4xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvOC4zLjEiLFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJnY2MvOC4zLjEiLH0sbGFsbG9jPXtbImZuIl09Ii91c3IvdGNldG1wL21vZHVsZWZpbGVzL0NvcmUvbGFs
+CSM_ALLOCATION_ID=2764301
+BINARY_TYPE_HPC=
+LLNL_CORE_ISOLATION=2
+FC=mpif90
+LSB_SUB_HOST=lassen708
+XDG_CACHE_HOME=/tmp/mtcampbe/xdg-scratch
+__LSF_JOB_TMPDIR__=/tmp/2768109.tmpdir
+LSFUSER=mtcampbe
+LSB_SUB_USER=mtcampbe
+LSB_OUTPUTFILE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y1-production-nozzle-lazy/timing_run/
+LSB_OUTDIR=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y1-production-nozzle-lazy/timing_run
+LSB_MCPU_HOSTS=lassen710 1 lassen361 40 
+LMOD_arch=ppc64le
+TMP=/var/tmp
+MPI_ROOT=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release
+LSB_QUEUE=pbatch
+CONDA_PYTHON_EXE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/python
+LOGNAME=mtcampbe
+QTLIB=/usr/lib64/qt-3.3/lib
+CVS_RSH=ssh
+XLSF_UIDDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib/uid
+XDG_DATA_DIRS=/g/g17/mtcampbe/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+CEESD_CONDA_LASSEN=/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install
+SSH_CONNECTION=192.168.66.202 40576 192.168.65.107 22
+SYS_TYPE=blueos_3_ppc64le_ib_p9
+MODULESHOME=/usr/share/lmod/lmod
+LMOD_SETTARG_FULL_SUPPORT=no
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib:1
+PKG_CONFIG_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64/pkgconfig
+OMP_NUM_THREADS=1
+LSF_CGROUP_TOPDIR_KEY=lassen
+CONDA_DEFAULT_ENV=nozzle.lazy.timing.env
+LMOD_FULL_SETTARG_SUPPORT=no
+LMOD_FAMILY_COMPILER=gcc
+LSB_XFER_OP=
+LSB_EEXEC_REAL_GID=
+__LMOD_REF_COUNT_PKG_CONFIG_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64/pkgconfig:1
+CC=mpicc
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+LMOD_DIR=/usr/share/lmod/lmod/libexec
+LEXEC_UNPICKLE_QUIET=1
+__LMOD_REF_COUNT_MANPATH=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release/share/man:1;/usr/tce/packages/gcc/gcc-8.3.1/man:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/man:1;/usr/man:1;/usr/share/man:1;/usr/local/man:1;/usr/X11R6/man:1;/usr/lib64/mvapich/default/man:1;/opt/ibm/spectrum_mpi/jsm_pmix/share/man:1
+LSF_ENVDIR=/opt/ibm/spectrumcomputing/lsf/conf
+GUESTFISH_RESTORE=\e[0m
+LSB_DJOB_RANKFILE=/g/g17/mtcampbe/.lsbatch/1630021195.2768109.hostfile
+LMOD_FAMILY_MPI=spectrum-mpi
+LMOD_COLORIZE=yes
+HISTFILE=/g/g17/mtcampbe/.bash_history
+BASH_FUNC_module()=() {  eval $($LMOD_CMD bash "$@") && eval $(${LMOD_SETTARG_CMD:-:} -s sh)
+}
+BASH_FUNC_ml()=() {  eval $($LMOD_DIR/ml_cmd "$@")
+}
+_=/usr/bin/env
+LSB_MCPU_HOSTS=lassen710 1 lassen361 40 
+Default casename nozzle
+Reading user input from file: timing_params.yaml
+Running ./nozzle.py
+
+#### Simluation control data: ####
+	nviz = 100
+	nrestart = 100
+	nhealth = 100
+	nstatus = 1
+	current_dt = 5e-08
+	t_final = 1e-06
+	order = 1
+	Shock capturing parameters: alpha 0.5, s0 -5.0, kappa 0.5
+	Time integration rk4
+	Dependent variable logging is OFF.
+#### Simluation control data: ####
+inlet Mach number 0.13914536705094316
+inlet temperature 297.16860334713266
+inlet pressure 987.6162965049273
+final inlet pressure 148142.4444757391
+rank 0: sent all mesh partitions
+Making discretization
+./nozzle.py:527: DeprecationWarning: EagerDGDiscretization is deprecated and will go away in 2022. Use the base DiscretizationCollection with grudge.op instead.
+  discr = EagerDGDiscretization(actx,
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.22 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.22 s)
+./nozzle.py:532: DeprecationWarning: meshmode.dof_array.thaw is deprecated. Use arraycontext.thaw instead. WARNING: The argument order is reversed between these two functions. meshmode.dof_array.thaw will continue to work until 2022.
+  nodes = thaw(actx, discr.nodes())
+Initializing soln.
+Initialization for Case(nozzle)
+===
+Num 3d order-1 elements: 107554
+Num global elements: 107554
+Timestep:        5e-08
+Final time:      1e-06
+CFL:             1.0
+Constant CFL:    False
+Initialization:  pseudoY0
+EOS:             IdealSingleGas
+
+Stepping.
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+_pt_kernel: generate code: completed (0.49s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.21 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.21 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.44 s)
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/op.py:501: UserWarning: 'arg_names' don't bear any significance in PytatoPyOpenCLArrayContext.
+  actx.einsum("ij,ej,ej->ei",
+building face restriction: start
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+building face restriction: done
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.73 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.73 s)
+_pt_kernel: generate code: completed (0.62s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.29 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.29 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.44 s)
+_pt_kernel: generate code: completed (0.89s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.39 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.39 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.39 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.39 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+_pt_kernel: generate code: completed (0.45s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.66 s)
+build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.59 s)
+build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.59 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.44 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.58 s)
+build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.58 s)
+build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.59 s)
+build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.59 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.94 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.94 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.94 s)
+_pt_kernel: generate code: completed (0.58s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.82 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.82 s)
+building face restriction: start
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+building face restriction: done
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.44 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.73 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.73 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+_pt_kernel: generate code: completed (0.61s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.29 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.29 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.03 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.03 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.03 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.03 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+building face restriction: start
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+building face restriction: done
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.72 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.72 s)
+_pt_kernel: generate code: completed (0.57s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.23 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.23 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.02 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.02 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.02 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.02 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.73 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.73 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.73 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.73 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.73 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.73 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.73 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.73 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.73 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+building face restriction: start
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.44 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.44 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.44 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.44 s)
+building face restriction: done
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.72 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.72 s)
+_pt_kernel: generate code: completed (0.61s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.23 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.23 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.02 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.02 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.02 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.02 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.72 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.72 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.72 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.72 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.72 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.72 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.72 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.72 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.72 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.72 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.72 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.72 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.44 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.44 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.44 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+building face restriction: start
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+building face restriction: done
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.74 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.74 s)
+_pt_kernel: generate code: completed (0.61s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.29 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.29 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.04 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.04 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.04 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.04 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+_pt_kernel: check array access within bounds: completed (0.36s wall 1.00x CPU)
+_pt_kernel: generate code: completed (0.58s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.49 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.49 s)
+_pt_kernel: check array access within bounds: completed (0.36s wall 1.00x CPU)
+_pt_kernel: generate code: completed (0.58s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.49 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.49 s)
+_pt_kernel: check array access within bounds: completed (0.36s wall 1.00x CPU)
+_pt_kernel: generate code: completed (0.58s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.49 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.49 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/op.py:296: UserWarning: 'arg_names' don't bear any significance in PytatoPyOpenCLArrayContext.
+  actx.einsum("dij,ej,ej,dej->ei",
+_pt_kernel: check array access within bounds: completed (0.36s wall 1.00x CPU)
+_pt_kernel: generate code: completed (0.58s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.60 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.60 s)
+_pt_kernel: check array access within bounds: completed (0.36s wall 1.00x CPU)
+_pt_kernel: generate code: completed (0.64s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.49 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.49 s)
+_pt_kernel: check array access within bounds: completed (0.36s wall 1.00x CPU)
+_pt_kernel: generate code: completed (0.59s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.49 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.49 s)
+_pt_kernel: check array access within bounds: completed (0.36s wall 1.00x CPU)
+_pt_kernel: generate code: completed (0.59s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.49 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.49 s)
+_pt_kernel: check array access within bounds: completed (0.36s wall 1.00x CPU)
+_pt_kernel: generate code: completed (0.59s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.49 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.49 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+_pt_kernel: preprocess: completed (0.88s wall 1.00x CPU)
+_pt_kernel: check array access within bounds: completed (13.56s wall 1.00x CPU)
+_pt_kernel: schedule: completed (50.81s wall 1.00x CPU)
+_pt_kernel: generate code: completed (112.41s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_6' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_7' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_8' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_9' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_10' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_11' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_12' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_13' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_14' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_15' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_16' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_17' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_18' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_19' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_20' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_21' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_22' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_23' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_24' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_25' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_26' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_27' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_28' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_29' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_30' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_31' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_32' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_33' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_34' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_35' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_36' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_37' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_38' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_39' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_40' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_41' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_42' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_43' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_44' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_45' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_46' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_47' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_48' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_49' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_50' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_51' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_52' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_53' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_54' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_55' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_56' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_57' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_58' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_59' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_60' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_61' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_62' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_63' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_64' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_65' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_66' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_67' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_68' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_69' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_70' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_71' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_72' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_73' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_74' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_75' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_76' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_77' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_78' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_79' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_80' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_81' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_82' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_83' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_84' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_85' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_86' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_87' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_88' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_89' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_90' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_91' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_92' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_93' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_94' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_95' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_96' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_97' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_98' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_99' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_100' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_101' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_102' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_103' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_104' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_105' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_106' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_107' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_108' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_109' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_110' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_111' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_112' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_113' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_114' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_115' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_116' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_117' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_118' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_119' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_120' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_121' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_122' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_123' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_124' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_125' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_126' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_127' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_128' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_129' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_130' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_131' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_132' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_133' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_134' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_135' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_136' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_137' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_138' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_139' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_140' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_141' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_142' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_143' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_144' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_145' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_146' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_147' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_148' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_149' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_150' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_151' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_152' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_153' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_154' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_155' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_156' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_157' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_158' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_159' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_160' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_161' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_162' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_163' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_164' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_165' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel_166' was part of a lengthy source build resulting from a binary cache miss (68.67 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+step = 0, sim time: 0.000000e+00 s, cfl = 1.0000
+------- step walltime: 699.927 s, log walltime: 0.000199318 s
+
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+step = 1, sim time: 5.000000e-08 s, cfl = 0.0417
+------- step walltime: 0.863944 s, log walltime: 0.00026226 s
+
+step = 2, sim time: 1.000000e-07 s, cfl = 0.0417
+------- step walltime: 0.886693 s, log walltime: 0.000112534 s
+
+step = 3, sim time: 1.500000e-07 s, cfl = 0.0417
+------- step walltime: 0.863579 s, log walltime: 0.000115633 s
+
+step = 4, sim time: 2.000000e-07 s, cfl = 0.0417
+------- step walltime: 0.8813 s, log walltime: 0.000113726 s
+
+step = 5, sim time: 2.500000e-07 s, cfl = 0.0417
+------- step walltime: 0.871042 s, log walltime: 0.000114918 s
+
+step = 6, sim time: 3.000000e-07 s, cfl = 0.0417
+------- step walltime: 0.867728 s, log walltime: 0.000111103 s
+
+step = 7, sim time: 3.500000e-07 s, cfl = 0.0417
+------- step walltime: 0.879374 s, log walltime: 0.000115871 s
+
+step = 8, sim time: 4.000000e-07 s, cfl = 0.0417
+------- step walltime: 0.873756 s, log walltime: 0.000111103 s
+
+step = 9, sim time: 4.500000e-07 s, cfl = 0.0417
+------- step walltime: 0.863428 s, log walltime: 0.000115395 s
+
+step = 10, sim time: 5.000000e-07 s, cfl = 0.0417
+------- step walltime: 0.891645 s, log walltime: 0.00011301 s
+
+step = 11, sim time: 5.500000e-07 s, cfl = 0.0417
+------- step walltime: 0.864903 s, log walltime: 0.000115871 s
+
+step = 12, sim time: 6.000000e-07 s, cfl = 0.0417
+------- step walltime: 0.955461 s, log walltime: 0.000112772 s
+
+step = 13, sim time: 6.500000e-07 s, cfl = 0.0417
+------- step walltime: 0.874044 s, log walltime: 0.00011611 s
+
+step = 14, sim time: 7.000000e-07 s, cfl = 0.0417
+------- step walltime: 0.867043 s, log walltime: 0.000111818 s
+
+step = 15, sim time: 7.500000e-07 s, cfl = 0.0417
+------- step walltime: 0.894043 s, log walltime: 0.000114441 s
+
+step = 16, sim time: 8.000000e-07 s, cfl = 0.0417
+------- step walltime: 0.904243 s, log walltime: 0.00011301 s
+
+step = 17, sim time: 8.500000e-07 s, cfl = 0.0417
+------- step walltime: 0.883625 s, log walltime: 0.000115871 s
+
+step = 18, sim time: 9.000000e-07 s, cfl = 0.0417
+------- step walltime: 0.866459 s, log walltime: 0.000223398 s
+
+step = 19, sim time: 9.500000e-07 s, cfl = 0.0417
+------- step walltime: 0.880877 s, log walltime: 0.000115395 s
+
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+step = 20, sim time: 1.000000e-06 s, cfl = 0.0417
+------- step walltime: 2.24394 s, log walltime: 0.000112057 s
+
+Checkpointing final state ...
+_pt_kernel: schedule: completed (0.42s wall 1.00x CPU)
+_pt_kernel: generate code: completed (0.91s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+_pt_kernel: generate code: completed (0.67s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.71 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.71 s)
+_pt_kernel: generate code: completed (0.58s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.70 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.70 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.11 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.11 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.11 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.11 s)
+_pt_kernel: schedule: completed (0.46s wall 1.00x CPU)
+_pt_kernel: generate code: completed (1.07s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.92 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.92 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 2768109: <nozzle_timing_job.sh> in cluster <lassen> Done
+
+Job <nozzle_timing_job.sh> was submitted from host <lassen708> by user <mtcampbe> in cluster <lassen> at Thu Aug 26 16:39:55 2021
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <mtcampbe> in cluster <lassen> at Thu Aug 26 16:39:56 2021
+                            <40*lassen361>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y1-production-nozzle-lazy/timing_run> was used as the working directory.
+Started at Thu Aug 26 16:39:56 2021
+Terminated at Thu Aug 26 16:54:15 2021
+Results reported at Thu Aug 26 16:54:15 2021
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+#BSUB -nnodes 1
+#BSUB -G uiuc
+#BSUB -W 60
+#BSUB -q pbatch
+
+printf "Running with EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge\n"
+
+source "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/config/activate_env.sh"
+export PYOPENCL_CTX="port:tesla"
+export XDG_CACHE_HOME="/tmp/mtcampbe/xdg-scratch"
+rm -rf $XDG_CACHE_HOME
+rm -f timing-run-done
+which python
+conda env list
+env
+env | grep LSB_MCPU_HOSTS
+
+jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./nozzle.py -i timing_params.yaml --lazy --log
+touch timing-run-done
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.37 sec.
+    Max Memory :                                 59 MB
+    Average Memory :                             58.55 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1634 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   858 sec.
+    Turnaround time :                            860 sec.
+
+The output (if any) is above this job summary.
+
