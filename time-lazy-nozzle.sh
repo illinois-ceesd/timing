@@ -101,7 +101,6 @@ case $TIMING_HOST in
 #BSUB -G uiuc
 #BSUB -W 60
 #BSUB -q pdebug
-#BSUB -o ${BATCH_OUTPUT_FILE}
 
 printf "Running with EMIRGE_HOME=${EMIRGE_HOME}\n"
 
@@ -201,7 +200,7 @@ if [[ -f "${RUN_LOG_FILE}" ]]; then
     cat ${YAML_FILE_NAME} >> timing/${YAML_FILE_NAME}
     mkdir -p timing/${LOGDIR}
     cp ${SUMMARY_FILE_NAME} timing/${LOGDIR}
-    cp ${BATCH_OUTPUT_FILE} timing/${LOGDIR}
+    cat *.out > timing/${LOGDIR}/${BATCH_OUTPUT_FILE}
     cd timing
     git add ${LOGDIR}/
     # ---- Commit the new data to the repo
