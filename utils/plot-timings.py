@@ -102,10 +102,6 @@ def main():
         if args.zero:
             ylim = ax[i].get_ylim()
             plt.ylim(0, 1.5*ylim[1])
-        if args.date:
-            xlim = ax[i].get_xlim()
-            start_date = parse_datetime(args.date+" 00:00")
-            plt.xlim(date2num(start_date), xlim[1])
         leg.append(p)
 
     commentcounter = 0
