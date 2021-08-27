@@ -3209,6 +3209,7 @@ time_startup: 44.250110387802124
 time_first_step: 699.6813309192657
 time_first_10: 707.6646704673767
 time_second_10: 8.031153202056885
+comment: Use batch nodes
 ---
 run_date: 2021-08-26 10:00
 run_host: Lassen
