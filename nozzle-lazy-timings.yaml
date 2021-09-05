@@ -2231,6 +2231,7 @@ time_startup: 47.915146827697754
 time_first_step: 704.4720933437347
 time_first_10: 713.3333072662354
 time_second_10: 8.875848770141602
+comment: Kaushik's improvements
 ---
 run_date: 2021-08-20 01:37
 run_host: Lassen
@@ -2647,7 +2648,7 @@ time_startup: 70.81366562843323
 time_first_step: 700.0404312610626
 time_first_10: 707.9738748073578
 time_second_10: 7.901251792907715
-comment: DV monitor turned off
+comment: DV off, batch nodes
 ---
 run_date: 2021-08-25 12:00
 run_host: Lassen
@@ -2920,4 +2921,5 @@ time_startup: 47.087908029556274
 time_first_step: 655.3120923042297
 time_first_10: 660.0488657951355
 time_second_10: 4.724706411361694
+comment: Kaushik's improvements
 ---
