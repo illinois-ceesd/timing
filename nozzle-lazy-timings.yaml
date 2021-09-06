@@ -2923,3 +2923,19 @@ time_first_10: 660.0488657951355
 time_second_10: 4.724706411361694
 comment: Kaushik's improvements
 ---
+run_date: 2021-09-06 01:35
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10225f128>
+run_epoch: 1630917309
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 25a265a9b7994425cb3aea4cccf78da288277366
+y1_version: 116d768781c8877069673bf5b9fb02548dec7f36
+driver_version: 1cae2c782db606549fd5a105e972cff7973fc049
+driver_md5sum: 58cbefa11275610697efbec138200280
+time_startup: 43.06172227859497
+time_first_step: 644.7730150222778
+time_first_10: 649.7833924293518
+time_second_10: 4.9391279220581055
+---
