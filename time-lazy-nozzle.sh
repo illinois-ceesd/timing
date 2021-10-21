@@ -17,7 +17,7 @@ TIMING_ARCH=$(uname -m)
 TIMING_REPO="illinois-ceesd/timing.git"
 TIMING_BRANCH="y1-production"
 TIMING_ENV_NAME="${exename}.lazy.timing.env"
-MIRGE_BRANCH="parallel-lazy"
+MIRGE_BRANCH="y1-production"
 DRIVER_REPO="illinois-ceesd/drivers_y1-nozzle"
 DRIVER_BRANCH="parallel-lazy"
 DRIVER_NAME="y1-production-nozzle-lazy"
@@ -49,8 +49,8 @@ cd mirgecom
 
 # -- Grab and merge the branch with the case-dependent features
 MIRGE_HASH=$(git rev-parse origin/${MIRGE_BRANCH})
-Y1_HASH=$(git rev-parse origin/y1-production)
-git merge origin/y1-production --no-edit
+Y1_HASH="$MIRGE_HASH"
+# git merge origin/y1-production --no-edit
 
 # --- Grab the case driver repo
 rm -Rf ${DRIVER_NAME}
