@@ -20,7 +20,7 @@ MIRGE_BRANCH="y1-production"
 DRIVER_REPO="illinois-ceesd/drivers_y2-isolator"
 DRIVER_BRANCH="y2-production"
 DRIVER_NAME="y2-isolator"
-
+EXEOPTS="--log"
 # -- Install conda env, dependencies and MIRGE-Com via *emirge*
 # --- remove old run if it exists
 if [ -d "emirge" ]
@@ -108,7 +108,7 @@ rm -rf \$XDG_CACHE_HOME
 rm -f timing-run-done
 which python
 conda env list
-jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./${exename}.py -i timing_params.yaml
+jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./${exename}.py -i timing_params.yaml ${EXEOPTS}
 touch timing-run-done
 
 EOF
@@ -131,7 +131,7 @@ EOF
     # --- Run the timing test on an unknown/generic machine 
     *)
         printf "Host: Unknown\n"
-        PYOPENCL_TEST=port:pthread python -O -m mpi4py ./${exename}.py -i timing_params.yaml
+        PYOPENCL_TEST=port:pthread python -O -m mpi4py ./${exename}.py -i timing_params.yaml ${EXEOPTS}
         ;;
 esac
 
