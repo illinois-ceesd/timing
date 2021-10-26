@@ -20,7 +20,7 @@ MIRGE_BRANCH="y1-production"
 DRIVER_REPO="illinois-ceesd/drivers_y2-isolator"
 DRIVER_BRANCH="y2-production"
 DRIVER_NAME="y2-isolator"
-EXEOPTS="--log"
+EXEOPTS="--lazy --log"
 # -- Install conda env, dependencies and MIRGE-Com via *emirge*
 # --- remove old run if it exists
 if [ -d "emirge" ]
