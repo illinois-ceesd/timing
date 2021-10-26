@@ -7,6 +7,7 @@ set -o pipefail
 date
 
 exename="isolator"
+timestamp=$(date "+%Y.%m.%d-%H.%M.%S")
 TIMING_HOME=$(pwd)
 TIMING_HOST=$(hostname)
 TIMING_DATE=$(date "+%Y-%m-%d %H:%M")
@@ -20,7 +21,12 @@ MIRGE_BRANCH="y1-production"
 DRIVER_REPO="illinois-ceesd/drivers_y2-isolator"
 DRIVER_BRANCH="y2-production"
 DRIVER_NAME="y2-isolator"
+SUMMARY_FILE_ROOT="${exename}_lazy"
+YAML_FILE_NAME="${exename}-lazy-timings.yaml"
+BATCH_OUTPUT_FILE="${SUMMARY_FILE_ROOT}_${timestamp}.out"
+LOGDIR="${exename}_lazy_logs"
 EXEOPTS="--lazy --log"
+
 # -- Install conda env, dependencies and MIRGE-Com via *emirge*
 # --- remove old run if it exists
 if [ -d "emirge" ]
@@ -96,8 +102,8 @@ case $TIMING_HOST in
 
 #BSUB -nnodes 1
 #BSUB -G uiuc
-#BSUB -W 30
-#BSUB -q pdebug
+#BSUB -W 60
+#BSUB -q pbatch
 
 printf "Running with EMIRGE_HOME=${EMIRGE_HOME}\n"
 
@@ -108,6 +114,8 @@ rm -rf \$XDG_CACHE_HOME
 rm -f timing-run-done
 which python
 conda env list
+env
+env | grep LSB_MCPU_HOSTS 
 jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./${exename}.py -i timing_params.yaml ${EXEOPTS}
 touch timing-run-done
 
@@ -116,7 +124,7 @@ EOF
         # ---- Submit the batch script and wait for the job to finish
         bsub ${BATCH_SCRIPT_NAME}
         # ---- Wait 10 minutes right off the bat (the job is at least 10 min)
-        sleep 300
+        sleep 600
         iwait=0
         while [ ! -f ./timing-run-done ]; do 
             iwait=$((iwait+1))
@@ -124,8 +132,9 @@ EOF
                 printf "Timed out waiting on batch job.\n"
                 exit 1 # skip the rest of the script
             fi
-            sleep 10
+            sleep 20
         done
+        sleep 30  # give the batch system time to spew its junk into the log
         ;;
 
     # --- Run the timing test on an unknown/generic machine 
@@ -136,13 +145,11 @@ EOF
 esac
 
 date
-timestamp=$(date "+%Y.%m.%d-%H.%M.%S")
 # -- Process the results of the timing run
 RUN_LOG_FILE="${exename}-rank0.sqlite"
 if [[ -f "${RUN_LOG_FILE}" ]]; then
 
-    SUMMARY_FILE_NAME="${exename}_${timestamp}.sqlite"
-    YAML_FILE_NAME="${exename}_timings.yaml"
+    SUMMARY_FILE_NAME="${SUMMARY_FILE_ROOT}_${timestamp}.sqlite"
     rm -f ${YAML_FILE_NAME}
     rm -f ${SUMMARY_FILE_NAME}
 
@@ -191,16 +198,17 @@ if [[ -f "${RUN_LOG_FILE}" ]]; then
     # ---- First, clone the timing repo
     git clone -b ${TIMING_BRANCH} git@github.com:${TIMING_REPO}
     # ---- Create the timing file if it does not exist
-    if [[ ! -f timing/${exename}-timings.yaml ]]; then 
-        touch timing/${exename}-timings.yaml
-        (cd timing && git add ${exename}-timings.yaml)
-    fi
+    if [[ ! -f timing/${YAML_FILE_NAME} ]]; then 
+        touch timing/${YAML_FILE_NAME}
+        (cd timing && git add ${YAML_FILE_NAME})
     # ---- Update the timing file with the current test data
-    cat ${YAML_FILE_NAME} >> timing/${exename}-timings.yaml
-    mkdir -p timing/${exename}_logs
-    cp ${SUMMARY_FILE_NAME} timing/${exename}_logs
+    mkdir -p timing/${LOGDIR}
+    cat ${YAML_FILE_NAME} >> timing/${YAML_FILE_NAME}
+    cp ${SUMMARY_FILE_NAME} timing/${LOGDIR}
+    cat *.out > timing/${LOGDIR}/${BATCH_OUTPUT_FILE}
     cd timing
-    git add ${exename}_logs/${SUMMARY_FILE_NAME}
+    git add ${LOGDIR}/
+
     # ---- Commit the new data to the repo
     (git commit -am "Automatic commit: ${TIMING_HOST} ${TIMING_DATE}" && git push)
     cd ../
