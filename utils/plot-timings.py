@@ -43,6 +43,7 @@ def parse_datetime(s):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--per-step", action="store_true")
+    parser.add_argument("-l", "--log-scale", action="store_true")
     parser.add_argument("-z", "--zero", action="store_true")
     parser.add_argument("-d", "--date", metavar="YYYY-MM-DD")
     parser.add_argument("datafile", metavar="DATA.yaml")
@@ -90,6 +91,9 @@ def main():
 
     if numplots == 1:
         ax = [ax]
+
+    if args.log_scale:
+        plt.yscale("log")
 
     # clean data
     for s in timing_names:
