@@ -45,6 +45,8 @@ def main():
     parser.add_argument("-s", "--per-step", action="store_true")
     parser.add_argument("-l", "--log-scale", action="store_true")
     parser.add_argument("-z", "--zero", action="store_true")
+    parser.add_argument("-a", "--annotate", action="store_true",
+                        help="annotate the figure using comments in the data file")
     parser.add_argument("-d", "--date", metavar="YYYY-MM-DD")
     parser.add_argument("datafile", metavar="DATA.yaml")
     parser.add_argument("--save-plot", metavar="NAME.{pdf,png}")
@@ -111,7 +113,7 @@ def main():
     commentcounter = 0
     commentcolors = ['tab:cyan', 'tab:pink', 'tab:cyan', 'tab:pink']
     for d in data:
-        if "comment" in d:
+        if "comment" in d and args.annotate:
             commentcounter += 1
             ytext0 = 1.2
             ytextdelta = 0.1
