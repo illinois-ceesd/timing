@@ -29,6 +29,21 @@ import yaml
 from matplotlib.dates import date2num
 import matplotlib.pyplot as plt
 
+fontsize = 10
+params = {'backend': 'pdf',
+          'text.usetex': True,
+          'font.family': 'serif',
+          'font.serif': 'Computer Modern Roman',
+          # font sizes
+          'axes.labelsize': fontsize,
+          'font.size': fontsize,
+          'axes.titlesize': fontsize,
+          'legend.fontsize': fontsize,
+          'xtick.labelsize': fontsize,
+          'ytick.labelsize': fontsize,
+         }
+plt.rcParams.update(params)
+
 
 def parse_datetime(s):
     # I really don't know why we decided to not save Unix timestamps
@@ -130,18 +145,18 @@ def main():
                     ax[i].text(xt, ytext, d['comment'], ha='center', transform=ax[i].transAxes,
                                color=color, rotation=90)
 
-    ax[-1].tick_params(axis="x", labelrotation=45, labelsize=12)
+    ax[-1].tick_params(axis="x", labelrotation=45)
     for i in range(numplots):
         ax[i].grid(True)
-    ax[-1].set_xlabel("date", fontsize=12)
+    ax[-1].set_xlabel("date")
     ax[0].legend(handles=leg,
               bbox_to_anchor=(0,1.02,0.3,0.2), loc="lower left",
               mode="expand", borderaxespad=0, ncol=1)
     if args.per_step:
-        ax[0].set_ylabel("walltime/step (s)", fontsize=12)
+        ax[0].set_ylabel("walltime/step (s)")
     else:
         for i in range(numplots):
-            ax[i].set_ylabel("time (s)", fontsize=12)
+            ax[i].set_ylabel("time (s)")
     if args.save_plot:
         plt.savefig(args.save_plot, bbox_inches="tight")
     else:
