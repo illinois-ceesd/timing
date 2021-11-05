@@ -92,9 +92,6 @@ def main():
     if numplots == 1:
         ax = [ax]
 
-    if args.log_scale:
-        plt.yscale("log")
-
     # clean data
     for s in timing_names:
         data = [d for d in data if s in d]
@@ -106,23 +103,30 @@ def main():
         if args.zero:
             ylim = ax[i].get_ylim()
             plt.ylim(0, 1.5*ylim[1])
+
+        if args.log_scale:
+            ax[i].set_yscale('log', base=2)
         leg.append(p)
 
     commentcounter = 0
+    commentcolors = ['tab:cyan', 'tab:pink', 'tab:cyan', 'tab:pink']
     for d in data:
         if "comment" in d:
             commentcounter += 1
-            ytext = 1.2
-            if commentcounter % 2:
-                ytext = 1.3
+            ytext0 = 1.2
+            ytextdelta = 0.1
+            ytext = ytext0 + (commentcounter % 4) * ytextdelta
+            # color = commentcolors[commentcounter % 4]
+            color = 'tab:gray'
             for i in range(numplots):
                 xlim = ax[0].get_xlim()
                 xt = (date2num(d['run_date'])-xlim[0]) / (xlim[1]-xlim[0])
                 #(xt, _) = ax[0].transLimits.transform((date2num(d['run_date']),0))  # get the coordinates on the axis
                 ax[i].plot([xt, xt], [-0.05, ytext-0.05], transform=ax[i].transAxes,
-                           color='tab:gray', linestyle='--', lw=1, clip_on=False)
+                           color=color, linestyle='--', lw=1, clip_on=False)
                 if i==0:
-                    ax[i].text(xt, ytext, d['comment'], ha='center', transform=ax[i].transAxes)
+                    ax[i].text(xt, ytext, d['comment'], ha='center', transform=ax[i].transAxes,
+                               color=color, rotation=90)
 
     ax[-1].tick_params(axis="x", labelrotation=45, labelsize=12)
     for i in range(numplots):
