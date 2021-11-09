@@ -36,7 +36,7 @@ then
     rm -rf emirge.old &
 fi
 
-# --- grab emirge and install MIRGE-Com 
+# --- grab emirge and install MIRGE-Com
 git clone https://github.com/illinois-ceesd/emirge.git
 cd emirge
 ./install.sh --branch=${MIRGE_BRANCH} --env-name=${TIMING_ENV_NAME}
@@ -73,7 +73,7 @@ EOF
 # --- Get an MD5Sum for the untracked timing driver
 DRIVER_MD5SUM="None"
 if command -v md5sum &> /dev/null
-then 
+then
     DRIVER_MD5SUM=$(md5sum ./${exename}.py | cut -d " " -f 1)
 else
     echo "Warning: No md5sum command found. Skipping  md5sum for untracked driver."
@@ -122,7 +122,7 @@ EOF
         # ---- Wait 10 minutes right off the bat (the job is at least 10 min)
         sleep 300
         iwait=0
-        while [ ! -f ./timing-run-done ]; do 
+        while [ ! -f ./timing-run-done ]; do
             iwait=$((iwait+1))
             if [ "$iwait" -gt 360 ]; then # give up after 1 hour
                 printf "Timed out waiting on batch job.\n"
@@ -132,7 +132,7 @@ EOF
         done
         ;;
 
-    # --- Run the timing test on an unknown/generic machine 
+    # --- Run the timing test on an unknown/generic machine
     *)
         printf "Host: Unknown\n"
         PYOPENCL_TEST=port:pthread python -O -m mpi4py ./${exename}.py -i timing_params.yaml ${EXEOPTS}
@@ -156,6 +156,7 @@ if [[ -f "${RUN_LOG_FILE}" ]]; then
     FIRST_10_STEPS=$(runalyzer -m ${SUMMARY_FILE_NAME} -c 'print(sum(p[0] for p in q("select $t_step.max").fetchall()[0:10]))' | grep -v INFO)
     SECOND_10_STEPS=$(runalyzer -m ${SUMMARY_FILE_NAME} -c 'print(sum(p[0] for p in q("select $t_step.max").fetchall()[10:19]))' | grep -v INFO)
     MAX_PYTHON_MEM_USAGE=$(runalyzer -m ${SUMMARY_FILE_NAME} -c 'print(max(p[0] for p in q("select $memory_usage_python.max").fetchall()))' | grep -v INFO)
+    MAX_GPU_MEM_USAGE=$(runalyzer -m ${SUMMARY_FILE_NAME} -c 'print(max(p[0] for p in q("select $memory_usage_gpu.max").fetchall()))' | grep -v INFO)
 
     # --- Create a YAML-compatible text snippet with the timing info
     printf "run_date: ${TIMING_DATE}\nrun_host: ${TIMING_HOST}\n" > ${YAML_FILE_NAME}
@@ -166,7 +167,8 @@ if [[ -f "${RUN_LOG_FILE}" ]]; then
     printf "driver_version: ${DRIVER_HASH}\ndriver_md5sum: ${DRIVER_MD5SUM}\n" >> ${YAML_FILE_NAME}
     printf "time_startup: ${STARTUP_TIME}\ntime_first_step: ${FIRST_STEP}\n" >> ${YAML_FILE_NAME}
     printf "time_first_10: ${FIRST_10_STEPS}\ntime_second_10: ${SECOND_10_STEPS}\n" >> ${YAML_FILE_NAME}
-    printf "max_python_mem_usage: ${MAX_PYTHON_MEM_USAGE}\n---\n" >> ${YAML_FILE_NAME}
+    printf "max_python_mem_usage: ${MAX_PYTHON_MEM_USAGE}\n" >> ${YAML_FILE_NAME}
+    printf "max_gpu_mem_usage: ${MAX_GPU_MEM_USAGE}\n---\n" >> ${YAML_FILE_NAME}
 
     # Users should set special keys for using git over
     # ssh for security concerns. This snippet will use
@@ -195,7 +197,7 @@ if [[ -f "${RUN_LOG_FILE}" ]]; then
     # ---- First, clone the timing repo
     git clone -b ${TIMING_BRANCH} git@github.com:${TIMING_REPO}
     # ---- Create the timing file if it does not exist
-    if [[ ! -f timing/${YAML_FILE_NAME} ]]; then 
+    if [[ ! -f timing/${YAML_FILE_NAME} ]]; then
         touch timing/${YAML_FILE_NAME}
         (cd timing && git add ${YAML_FILE_NAME})
     fi
