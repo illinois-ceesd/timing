@@ -19,8 +19,8 @@ TIMING_BRANCH="y1-production"
 TIMING_ENV_NAME="${exename}.lazy.timing.env"
 MIRGE_BRANCH="production"
 DRIVER_REPO="illinois-ceesd/drivers_y2-isolator"
-DRIVER_BRANCH="main"
-DRIVER_NAME="y2-isolator"
+DRIVER_BRANCH="add-timing-run"
+DRIVER_NAME="y2-combustor"
 SUMMARY_FILE_ROOT="${exename}_lazy"
 YAML_FILE_NAME="${exename}-timings.yaml"
 BATCH_OUTPUT_FILE="${SUMMARY_FILE_ROOT}_${timestamp}.out"
@@ -57,21 +57,21 @@ git clone -b ${DRIVER_BRANCH} https://github.com/${DRIVER_REPO} ${DRIVER_NAME}
 cd ${DRIVER_NAME}/timing_run
 DRIVER_HASH=$(git rev-parse HEAD)
 
-cat <<EOF > timing_params.yaml
-nviz: 100
-nrestart: 100
-nhealth: 100
-nstatus: 100
-current_dt: 1.0e-8
-t_final: 2.e-7
-order:  1
-alpha_sc: 0.5
-s0_sc: -5.0
-kappa_sc: 0.5
-integrator: rk4
-health_pres_min: 1700
-health_pres_max: 280000
-EOF
+# cat <<EOF > timing_params.yaml
+# nviz: 100
+# nrestart: 100
+# nhealth: 100
+# nstatus: 100
+# current_dt: 1.0e-8
+# t_final: 2.e-7
+# order:  1
+# alpha_sc: 0.5
+# s0_sc: -5.0
+# kappa_sc: 0.5
+# integrator: rk4
+# health_pres_min: 1700
+# health_pres_max: 280000
+# EOF
 
 # --- Get an MD5Sum for the untracked timing driver
 DRIVER_MD5SUM="None"
@@ -117,7 +117,7 @@ conda env list
 env
 env | grep LSB_MCPU_HOSTS
 
-jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./${exename}.py -i timing_params.yaml ${EXEOPTS}
+jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./${exename}.py -i run_params.yaml ${EXEOPTS}
 touch timing-run-done
 
 EOF
