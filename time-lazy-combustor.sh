@@ -6,7 +6,7 @@ set -o pipefail
 
 date
 
-exename="isolator"
+exename="combustor"
 timestamp=$(date "+%Y.%m.%d-%H.%M.%S")
 TIMING_HOME=$(pwd)
 TIMING_HOST=$(hostname)
@@ -18,7 +18,7 @@ TIMING_REPO="illinois-ceesd/timing.git"
 TIMING_BRANCH="y1-production"
 TIMING_ENV_NAME="${exename}.lazy.timing.env"
 MIRGE_BRANCH="production"
-DRIVER_REPO="illinois-ceesd/drivers_y2-isolator"
+DRIVER_REPO="illinois-ceesd/drivers_y2-combustor"
 DRIVER_BRANCH="add-timing-run"
 DRIVER_NAME="y2-combustor"
 SUMMARY_FILE_ROOT="${exename}_lazy"
@@ -141,7 +141,7 @@ EOF
     # --- Run the timing test on an unknown/generic machine 
     *)
         printf "Host: Unknown\n"
-        PYOPENCL_TEST=port:pthread python -O -m mpi4py ./${exename}.py -i timing_params.yaml ${EXEOPTS}
+        PYOPENCL_TEST=port:pthread python -O -m mpi4py ./${exename}.py -i run_params.yaml ${EXEOPTS}
         ;;
 esac
 
