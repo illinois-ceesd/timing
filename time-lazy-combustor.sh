@@ -161,6 +161,8 @@ if [[ -f "${RUN_LOG_FILE}" ]]; then
     FIRST_STEP=$(runalyzer -m ${SUMMARY_FILE_NAME} -c 'print(sum(p[0] for p in q("select $t_step.max").fetchall()[0:1]))' | grep -v INFO)
     FIRST_10_STEPS=$(runalyzer -m ${SUMMARY_FILE_NAME} -c 'print(sum(p[0] for p in q("select $t_step.max").fetchall()[0:10]))' | grep -v INFO)
     SECOND_10_STEPS=$(runalyzer -m ${SUMMARY_FILE_NAME} -c 'print(sum(p[0] for p in q("select $t_step.max").fetchall()[10:19]))' | grep -v INFO)
+    MAX_PYTHON_MEM_USAGE=$(runalyzer -m ${SUMMARY_FILE_NAME} -c 'print(max(p[0] for p in q("select $memory_usage_python.max").fetchall()))' | grep -v INFO)
+    MAX_GPU_MEM_USAGE=$(runalyzer -m ${SUMMARY_FILE_NAME} -c 'print(max(p[0] for p in q("select $memory_usage_gpu.max").fetchall()))' | grep -v INFO)
 
     # --- Create a YAML-compatible text snippet with the timing info
     printf "run_date: ${TIMING_DATE}\nrun_host: ${TIMING_HOST}\n" > ${YAML_FILE_NAME}
@@ -170,7 +172,9 @@ if [[ -f "${RUN_LOG_FILE}" ]]; then
     printf "mirge_version: ${MIRGE_HASH}\ny1_version: ${Y1_HASH}\n" >> ${YAML_FILE_NAME}
     printf "driver_version: ${DRIVER_HASH}\ndriver_md5sum: ${DRIVER_MD5SUM}\n" >> ${YAML_FILE_NAME}
     printf "time_startup: ${STARTUP_TIME}\ntime_first_step: ${FIRST_STEP}\n" >> ${YAML_FILE_NAME}
-    printf "time_first_10: ${FIRST_10_STEPS}\ntime_second_10: ${SECOND_10_STEPS}\n---\n" >> ${YAML_FILE_NAME}
+    printf "time_first_10: ${FIRST_10_STEPS}\ntime_second_10: ${SECOND_10_STEPS}\n" >> ${YAML_FILE_NAME}
+    printf "max_python_mem_usage: ${MAX_PYTHON_MEM_USAGE}\n" >> ${YAML_FILE_NAME}
+    printf "max_gpu_mem_usage: ${MAX_GPU_MEM_USAGE}\n---\n" >> ${YAML_FILE_NAME}
 
     # Users should set special keys for using git over
     # ssh for security concerns. This snippet will use
