@@ -29,23 +29,28 @@ EXEOPTS="--lazy --log"
 
 # -- Install conda env, dependencies and MIRGE-Com via *emirge*
 # --- remove old run if it exists
-if [ -d "emirge" ]
+if [ -f "INSTALL_MIRGECOM" ]
 then
-    echo "Removing old timing run."
-    mv -f emirge emirge.old
-    rm -rf emirge.old &
-fi
+    if [ -d "emirge" ]
+    then
+        echo "Removing old timing run."
+        mv -f emirge emirge.old
+        rm -rf emirge.old &
+    fi
 
-# --- grab emirge and install MIRGE-Com
-git clone https://github.com/illinois-ceesd/emirge.git
-cd emirge
-./install.sh --branch=${MIRGE_BRANCH} --env-name=${TIMING_ENV_NAME}
+    # --- grab emirge and install MIRGE-Com 
+    git clone https://github.com/illinois-ceesd/emirge.git
+    cd emirge
+    ./install.sh --branch=${MIRGE_BRANCH} --env-name=${TIMING_ENV_NAME}
+    cd ../
+fi
+rm -f INSTALL_MIRGECOM
 
 # -- Activate the env we just created above
 export EMIRGE_HOME="${TIMING_HOME}/emirge"
 source ${EMIRGE_HOME}/config/activate_env.sh
 
-cd mirgecom
+cd emirge/mirgecom
 
 # -- Grab and merge the branch with the case-dependent features
 MIRGE_HASH=$(git rev-parse origin/${MIRGE_BRANCH})
