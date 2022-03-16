@@ -1,0 +1,659 @@
+Customizing shell for Lassen.
+Running with EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge
+Activating 'nozzle.lazy.timing.env' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin/python
+# conda environments:
+#
+                         /g/g17/mtcampbe/scratchl/CEESD/AutomatedTesting/AK/emirge/miniforge3
+                         /g/g17/mtcampbe/scratchl/CEESD/AutomatedTesting/AK/emirge/miniforge3/envs/nozzle.timing.env
+                         /g/g17/mtcampbe/scratchl/CEESD/Software/Experimental/emirge/miniforge3
+                         /g/g17/mtcampbe/scratchl/CEESD/Software/Experimental/emirge/miniforge3/envs/xp.ceesd
+                         /g/g17/mtcampbe/scratchl/CEESD/Support/CEESD-Y1_Shock1D/emirge/miniforge3
+                         /g/g17/mtcampbe/scratchl/CEESD/Support/CEESD-Y1_Shock1D/emirge/miniforge3/envs/mirgeDriver.shock1d
+                         /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/hand-timing/emirge/miniforge3/envs/hand.timing.lazy.env
+                         /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing.mix/emirge/miniforge3/envs/flame1d.lazy.mix.env
+base                     /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3
+nozzle.lazy.timing.env  *  /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env
+                         /p/gpfs1/mtcampbe/CEESD/Experimental/pardist2/emirge/miniforge3
+                         /p/gpfs1/mtcampbe/CEESD/Experimental/pardist2/emirge/miniforge3/envs/x.distpar2.test
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/abate.mtc_euler.env
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/ceesd.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/chem.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/dgfem
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/mc.master
+
+LMOD_FAMILY_COMPILER_VERSION=8.3.1
+PROJ_LIB=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/share/proj
+LLNL_IPISOLATE=0
+MANPATH=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release/share/man:/usr/tce/packages/gcc/gcc-8.3.1/man:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/man:/usr/man:/usr/share/man:/usr/local/man:/usr/X11R6/man:/usr/lib64/mvapich/default/man:/opt/ibm/spectrum_mpi/jsm_pmix/share/man
+LSB_EXEC_CLUSTER=lassen
+OMPI_COMM_WORLD_RANK=0
+LMOD_FAMILY_CUDA=cuda
+LMOD_ANCIENT_TIME=3600
+GUESTFISH_INIT=\e[1;34m
+_ModuleTable003_=bG9jLzIuMC5sdWEiLFsiZnVsbE5hbWUiXT0ibGFsbG9jLzIuMCIsWyJsb2FkT3JkZXIiXT0zLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImxhbGxvYy8yLjAiLH0sWyJzcGVjdHJ1bS1tcGkiXT17WyJmbiJdPSIvdXNyL3RjZS9tb2R1bGVmaWxlcy9Db21waWxlci9nY2MvOC4zLjEvc3BlY3RydW0tbXBpL3JvbGxpbmctcmVsZWFzZS5sdWEiLFsiZnVsbE5hbWUiXT0ic3BlY3RydW0tbXBpL3JvbGxpbmctcmVsZWFzZSIsWyJsb2FkT3JkZXIiXT01LHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09InNwZWN0cnVtLW1waS9yb2xsaW5nLXJlbGVhc2UiLH0sfSxt
+HOSTNAME=lassen427
+LSB_EFFECTIVE_RSRCREQ=1*{select[(LN) && (type == any)] order[r15s:pg] span[hosts=1]}+40*{select[(CN) && (type == any)] order[r15s:pg] span[ptile=40]}
+LSB_DOCKER_JOB_STARTTS=1647420972
+BBHASH=8ca8c49450ba2554ab6078962d717fbf
+JSM_TMPDIR=/var/tmp
+MIRGE_TIMING_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing
+LSF_LOGDIR=/opt/ibm/spectrumcomputing/lsf/log
+LSF_LIM_API_NTRIES=1
+LSB_BATCH_JID=3343980
+__LMOD_REF_COUNT_MODULEPATH=/usr/tce/modulefiles/MPI/gcc/8.3.1/spectrum-mpi/rolling-release:1;/usr/tce/modulefiles/Compiler/gcc/8.3.1:1;/usr/tcetmp/modulefiles/Core:1;/usr/apps/modulefiles:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1;/collab/usr/global/tools/modulefiles/blueos_3_ppc64le_ib_p9/Core:1
+MAILTO=mtcampbe@illinois.edu,andreask@illinois.edu
+SHELL=/bin/bash
+LMOD_ROOT=/usr/share/lmod
+HISTSIZE=1000
+WISECONFIGDIR=/usr/share/wise2/
+LMOD_SYSTEM_DEFAULT_MODULES=StdEnv
+TMPDIR=/var/tmp
+MODULEPATH_ROOT=/usr/share/modulefiles
+SSH_CLIENT=192.168.66.202 46692 22
+LS_EXECCWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run
+LSB_TRAPSIGS=trap # 15 10 12 2 1
+CONDA_SHLVL=1
+LMOD_FAMILY_CUDA_VERSION=10.1.243
+LS_JOBPID=66834
+CONDA_PROMPT_MODIFIER=
+LSB_MAX_NUM_PROCESSORS=41
+LSB_JOBRES_CALLBACK=47119@lassen710
+LMOD_PKG=/usr/share/lmod/lmod
+LSB_JOB_EXECUSER=mtcampbe
+LSB_JOBID=3343980
+QTDIR=/usr/lib64/qt-3.3
+LSF_SERVERDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc
+LSB_JOBRES_PID=66834
+LMOD_VERSION=8.2.7
+LMOD_SHORT_TIME=60
+QTINC=/usr/lib64/qt-3.3/include
+LSB_JOBNAME=isolator_timing_job.sh
+LLNL_COMPUTE_NODES=lassen427
+LLNL_ATSDISABLE=0
+__LMOD_REF_COUNT_LOADEDMODULES=cuda/10.1.243:1;StdEnv:1;lalloc/2.0:1;gcc/8.3.1:1;spectrum-mpi/rolling-release:1
+BSUB_BLOCK_EXEC_HOST=
+QT_GRAPHICSSYSTEM_CHECKED=1
+LSF_LIBDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib
+LSB_PROJECT_NAME=default
+OPAL_PREFIX=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release
+CUDA_HOME=/usr/tce/packages/cuda/cuda-10.1.243
+USER=mtcampbe
+PYOPENCL_CTX=port:tesla
+LMOD_sys=Linux
+LD_LIBRARY_PATH=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib:/usr/tce/packages/cuda/cuda-10.1.243/lib64
+SBD_KRB5CCNAME_VAL=
+LSB_EEXEC_REAL_UID=
+CONDA_EXE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda
+CEESD=/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen
+ENV=/g/g17/mtcampbe/.bashrc
+PFTP_CONFIG_FILENAME=/etc/pftp_config
+HOST_GRP=linux
+_ModuleTable004_=cGF0aEE9eyIvdXNyL3RjZS9tb2R1bGVmaWxlcy9NUEkvZ2NjLzguMy4xL3NwZWN0cnVtLW1waS9yb2xsaW5nLXJlbGVhc2UiLCIvdXNyL3RjZS9tb2R1bGVmaWxlcy9Db21waWxlci9nY2MvOC4zLjEiLCIvdXNyL3RjZXRtcC9tb2R1bGVmaWxlcy9Db3JlIiwiL3Vzci9hcHBzL21vZHVsZWZpbGVzIiwiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9MaW51eCIsIi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZSIsIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLCIvY29sbGFiL3Vzci9nbG9iYWwvdG9vbHMvbW9kdWxlZmlsZXMvYmx1ZW9zXzNfcHBjNjRsZV9pYl9wOS9Db3JlIix9LFsic3lzdGVtQmFzZU1QQVRIIl09Ii91c3IvdGNldG1wL21vZHVsZWZpbGVz
+HOSTTYPE=LINUXPPC64LE
+__LMOD_REF_COUNT__LMFILES_=/usr/tcetmp/modulefiles/Core/cuda/10.1.243.lua:1;/usr/tcetmp/modulefiles/Core/StdEnv.lua:1;/usr/tcetmp/modulefiles/Core/lalloc/2.0.lua:1;/usr/tcetmp/modulefiles/Core/gcc/8.3.1.lua:1;/usr/tce/modulefiles/Compiler/gcc/8.3.1/spectrum-mpi/rolling-release.lua:1
+LSF_INVOKE_CMD=bsub
+CUDA_CACHE_DISABLE=1
+LS_EXEC_T=START
+LMOD_FAMILY_LALLOC=lalloc
+LS_SUBCWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run
+LSB_SUB_RES_REQ=1*{select[LN]span[hosts=1]} + 40*{select[CN]span[ptile=40]}
+LSB_HOSTS=lassen710 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427 lassen427
+LMOD_PREPEND_BLOCK=normal
+LMOD_FAMILY_MPI_VERSION=rolling-release
+GUESTFISH_PS1=\[\e[1;32m\]><fs>\[\e[0;31m\] 
+_CE_CONDA=
+LSB_UNIXGROUP_INT=mtcampbe
+LSB_JOBFILENAME=/g/g17/mtcampbe/.lsbatch/1647420969.3343980
+LSB_JOBINDEX=0
+_ModuleTable001_=X01vZHVsZVRhYmxlXz17WyJNVHZlcnNpb24iXT0zLFsiY19yZWJ1aWxkVGltZSJdPWZhbHNlLFsiY19zaG9ydFRpbWUiXT1mYWxzZSxkZXB0aFQ9e30sZmFtaWx5PXtbImNvbXBpbGVyIl09ImdjYyIsWyJjdWRhIl09ImN1ZGEiLFsibGFsbG9jIl09ImxhbGxvYyIsWyJtcGkiXT0ic3BlY3RydW0tbXBpIix9LG1UPXtTdGRFbnY9e1siZm4iXT0iL3Vzci90Y2V0bXAvbW9kdWxlZmlsZXMvQ29yZS9TdGRFbnYubHVhIixbImZ1bGxOYW1lIl09IlN0ZEVudiIsWyJsb2FkT3JkZXIiXT0yLHByb3BUPXtsbW9kPXtbInN0aWNreSJdPTEsfSx9LFsic3RhY2tEZXB0aCJdPTAsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09IlN0ZEVudiIsfSxjdWRhPXtbImZuIl09Ii91c3Iv
+PATH=/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:/usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-8.3.1/bin:/usr/tce/packages/gcc/gcc-8.3.1/bin:/usr/tce/packages/lalloc/lalloc-2.0/bin:/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin:/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin:/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:/usr/tce/packages/cuda/cuda-10.1.243/bin:/usr/tcetmp/bin:/usr/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibm/spectrum_mpi/jsm_pmix/bin:/opt/ibm/bb/bin:/opt/ibm/flightlog/bin:/opt/ibutils/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin
+MAIL=/var/spool/mail/mtcampbe
+PROJ_NETWORK=ON
+LCSCHEDCLUSTER=lassen
+LSB_EXIT_PRE_ABORT=99
+LSB_JOBEXIT_STAT=0
+LMOD_SETTARG_CMD=:
+LMOD_FAMILY_LALLOC_VERSION=2.0
+CONDA_PREFIX=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env
+INPUTRC=/etc/inputrc
+PWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run
+_LMFILES_=/usr/tcetmp/modulefiles/Core/cuda/10.1.243.lua:/usr/tcetmp/modulefiles/Core/StdEnv.lua:/usr/tcetmp/modulefiles/Core/lalloc/2.0.lua:/usr/tcetmp/modulefiles/Core/gcc/8.3.1.lua:/usr/tce/modulefiles/Compiler/gcc/8.3.1/spectrum-mpi/rolling-release.lua
+EDITOR=/bin/vi
+LANG=en_US.UTF-8
+LSB_CHKFILENAME=/g/g17/mtcampbe/.lsbatch/1647420969.3343980
+MODULEPATH=/usr/tce/modulefiles/MPI/gcc/8.3.1/spectrum-mpi/rolling-release:/usr/tce/modulefiles/Compiler/gcc/8.3.1:/usr/tcetmp/modulefiles/Core:/usr/apps/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/collab/usr/global/tools/modulefiles/blueos_3_ppc64le_ib_p9/Core
+LSB_DJOB_HOSTFILE=/g/g17/mtcampbe/.lsbatch/1647420969.3343980.hostfile
+LOADEDMODULES=cuda/10.1.243:StdEnv:lalloc/2.0:gcc/8.3.1:spectrum-mpi/rolling-release
+KDEDIRS=/usr
+GUESTFISH_OUTPUT=\e[0m
+_ModuleTable_Sz_=5
+LSB_JOB_STARTER=/usr/tcetmp/bin/bsub_job_starter %USRCMD
+EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge
+LSF_JOB_TIMESTAMP_VALUE=1647420971
+LMOD_CMD=/usr/share/lmod/lmod/libexec/lmod
+_ModuleTable005_=L0NvcmU6L3Vzci9hcHBzL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXg6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLH0=
+BBPATH=/mnt/bb_8ca8c49450ba2554ab6078962d717fbf
+LSB_EXEC_HOSTTYPE=UNKNOWN_AUTO_DETECT
+LSB_DJOB_NUMPROC=41
+LSF_BINDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin
+LLNL_NUM_COMPUTE_NODES=1
+HISTCONTROL=ignoredups
+ENVIRONMENT=BATCH
+_CE_M=
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+CXX=mpicxx
+HOME=/g/g17/mtcampbe
+SHLVL=6
+__LMOD_REF_COUNT_PATH=/usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-8.3.1/bin:2;/usr/tce/packages/gcc/gcc-8.3.1/bin:2;/usr/tce/packages/lalloc/lalloc-2.0/bin:2;/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin:1;/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin:1;/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:1;/usr/tce/packages/cuda/cuda-10.1.243/bin:2;/usr/tcetmp/bin:2;/usr/condabin:1;/usr/lib64/qt-3.3/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/opt/ibm/spectrum_mpi/jsm_pmix/bin:1;/opt/ibm/bb/bin:1;/opt/ibm/flightlog/bin:1;/opt/ibutils/bin:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin:1
+JOB_TERMINATE_INTERVAL=10
+LSB_ACCT_FILE=/tmp/3343980.tmpdir/.1647420969.3343980.acct
+_ModuleTable002_=dGNldG1wL21vZHVsZWZpbGVzL0NvcmUvY3VkYS8xMC4xLjI0My5sdWEiLFsiZnVsbE5hbWUiXT0iY3VkYS8xMC4xLjI0MyIsWyJsb2FkT3JkZXIiXT0xLHByb3BUPXt9LFsic3RhY2tEZXB0aCJdPTEsWyJzdGF0dXMiXT0iYWN0aXZlIixbInVzZXJOYW1lIl09ImN1ZGEvMTAuMS4yNDMiLH0sZ2NjPXtbImZuIl09Ii91c3IvdGNldG1wL21vZHVsZWZpbGVzL0NvcmUvZ2NjLzguMy4xLmx1YSIsWyJmdWxsTmFtZSJdPSJnY2MvOC4zLjEiLFsibG9hZE9yZGVyIl09NCxwcm9wVD17fSxbInN0YWNrRGVwdGgiXT0wLFsic3RhdHVzIl09ImFjdGl2ZSIsWyJ1c2VyTmFtZSJdPSJnY2MvOC4zLjEiLH0sbGFsbG9jPXtbImZuIl09Ii91c3IvdGNldG1wL21vZHVsZWZpbGVzL0NvcmUvbGFs
+CSM_ALLOCATION_ID=3423509
+BINARY_TYPE_HPC=
+LLNL_CORE_ISOLATION=2
+FC=mpif90
+LSB_SUB_HOST=lassen708
+XDG_CACHE_HOME=/tmp/mtcampbe/xdg-scratch
+__LSF_JOB_TMPDIR__=/tmp/3343980.tmpdir
+LSFUSER=mtcampbe
+LSB_SUB_USER=mtcampbe
+LSB_OUTPUTFILE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run/
+LSB_OUTDIR=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run
+LSB_MCPU_HOSTS=lassen710 1 lassen427 40 
+LMOD_arch=ppc64le
+TMP=/var/tmp
+MPI_ROOT=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release
+LSB_QUEUE=pbatch
+CONDA_PYTHON_EXE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/python
+LOGNAME=mtcampbe
+QTLIB=/usr/lib64/qt-3.3/lib
+CVS_RSH=ssh
+XLSF_UIDDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib/uid
+XDG_DATA_DIRS=/g/g17/mtcampbe/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+CEESD_CONDA_LASSEN=/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install
+SSH_CONNECTION=192.168.66.202 46692 192.168.65.173 22
+SYS_TYPE=blueos_3_ppc64le_ib_p9
+MODULESHOME=/usr/share/lmod/lmod
+LMOD_SETTARG_FULL_SUPPORT=no
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib:1
+PKG_CONFIG_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64/pkgconfig
+OMP_NUM_THREADS=1
+LSF_CGROUP_TOPDIR_KEY=lassen
+CONDA_DEFAULT_ENV=nozzle.lazy.timing.env
+LMOD_FULL_SETTARG_SUPPORT=no
+LMOD_FAMILY_COMPILER=gcc
+LSB_XFER_OP=
+LSB_EEXEC_REAL_GID=
+__LMOD_REF_COUNT_PKG_CONFIG_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64/pkgconfig:1
+CC=mpicc
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+LMOD_DIR=/usr/share/lmod/lmod/libexec
+LEXEC_UNPICKLE_QUIET=1
+__LMOD_REF_COUNT_MANPATH=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release/share/man:1;/usr/tce/packages/gcc/gcc-8.3.1/man:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/man:1;/usr/man:1;/usr/share/man:1;/usr/local/man:1;/usr/X11R6/man:1;/usr/lib64/mvapich/default/man:1;/opt/ibm/spectrum_mpi/jsm_pmix/share/man:1
+LSF_ENVDIR=/opt/ibm/spectrumcomputing/lsf/conf
+GUESTFISH_RESTORE=\e[0m
+LSB_DJOB_RANKFILE=/g/g17/mtcampbe/.lsbatch/1647420969.3343980.hostfile
+LMOD_FAMILY_MPI=spectrum-mpi
+LMOD_COLORIZE=yes
+HISTFILE=/g/g17/mtcampbe/.bash_history
+BASH_FUNC_module()=() {  eval $($LMOD_CMD bash "$@") && eval $(${LMOD_SETTARG_CMD:-:} -s sh)
+}
+BASH_FUNC_ml()=() {  eval $($LMOD_DIR/ml_cmd "$@")
+}
+_=/usr/bin/env
+LSB_MCPU_HOSTS=lassen710 1 lassen427 40 
+Default casename isolator
+Using user input from file: timing_params.yaml
+Running ./isolator.py
+
+2022-03-16 01:56:44,261 - INFO - grudge.array_context - get_reasonable_array_context_class: MPISingleGridWorkBalancingPytatoArrayContext lazy=True distributed=True device-parallel=True
+Shock capturing parameters: alpha 0.5, s0 -4.0, kappa 0.5
+
+#### Simluation control data: ####
+	nviz = 100
+	nrestart = 100
+	nhealth = 100
+	nstatus = 100
+	current_dt = 1e-08
+	t_final = 2e-07
+	order = 1
+	dimen = 2
+	Time integration rk4
+#### Simluation control data: ####
+
+
+#### Simluation material properties: ####
+	mu = 4.216360056e-05
+	kappa = 0.05621788139856423
+	Prandtl Number  = 0.75
+#### Simluation initialization data: ####
+	inlet Mach number 0.038727226466056475
+	inlet temperature 2075.8073416311686
+	inlet pressure 274212.0081934861
+	inlet rho 0.4623484671063763
+	inlet velocity 35.28896626974282
+	outlet Mach number 3.661995139955526
+	outlet temperature 563.9344091915701
+	outlet pressure 2865.7077436508835
+	outlet rho 0.01778579568979098
+	outlet velocity 1739.2462693097807
+#### Simluation initialization data: ####
+
+Reading mesh from data/isolator.msh
+2022-03-16 01:57:11,157 - INFO - meshmode.distributed - rank 0: sent all mesh partitions
+Making discretization
+./isolator.py:1096: DeprecationWarning: EagerDGDiscretization is deprecated and will go away in 2022. Use the base DiscretizationCollection with grudge.op instead.
+  discr = EagerDGDiscretization(
+Done making discretization
+2022-03-16 01:57:15,348 - INFO - loopy.tools - preprocess_program on 'frozenset({'_pt_kernel'})': completed (2.51s wall 0.05x CPU)
+2022-03-16 01:57:16,650 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.90 s)
+Before restart/init
+Initializing soln.
+Initialization for Case(isolator)
+===
+Num 2d order-1 elements: 10288
+Num global elements: 10288
+Timestep:        1e-08
+Final time:      2e-07
+CFL:             1.0
+Constant CFL:    False
+Initialization:  isolator
+EOS:             IdealSingleGas
+
+2022-03-16 01:57:19,126 - INFO - loopy.tools - preprocess_program on 'frozenset({'_pt_kernel'})': completed (1.02s wall 1.00x CPU)
+2022-03-16 01:57:20,585 - INFO - loopy.check - _pt_kernel: check array access within bounds: completed (1.16s wall 1.00x CPU)
+2022-03-16 01:57:21,396 - INFO - loopy.schedule - _pt_kernel: schedule: completed (0.81s wall 1.00x CPU)
+2022-03-16 01:57:25,219 - INFO - loopy.codegen - _pt_kernel: generate code: completed (3.59s wall 1.00x CPU)
+370 warnings generated.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.9/site-packages/pyopencl/__init__.py:266: CompilerWarning: Non-empty compiler output encountered. Set the environment variable PYOPENCL_COMPILER_OUTPUT=1 to see more.
+  warn("Non-empty compiler output encountered. Set the "
+2022-03-16 01:57:27,176 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.78 s)
+2022-03-16 01:57:31,810 - INFO - loopy.tools - preprocess_program on 'frozenset({'_pt_kernel'})': completed (2.15s wall 1.00x CPU)
+2022-03-16 01:57:35,324 - INFO - loopy.check - _pt_kernel: check array access within bounds: completed (2.82s wall 1.00x CPU)
+2022-03-16 01:57:40,719 - INFO - loopy.schedule - _pt_kernel: schedule: completed (5.39s wall 1.00x CPU)
+2022-03-16 01:57:49,974 - INFO - loopy.codegen - _pt_kernel: generate code: completed (8.68s wall 1.00x CPU)
+737 warnings generated.
+2022-03-16 01:57:54,770 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (4.40 s)
+2022-03-16 01:57:58,795 - INFO - loopy.tools - preprocess_program on 'frozenset({'_pt_kernel'})': completed (1.95s wall 1.00x CPU)
+2022-03-16 01:58:01,810 - INFO - loopy.check - _pt_kernel: check array access within bounds: completed (2.46s wall 1.00x CPU)
+2022-03-16 01:58:07,640 - INFO - loopy.schedule - _pt_kernel: schedule: completed (5.83s wall 1.00x CPU)
+2022-03-16 01:58:15,453 - INFO - loopy.codegen - _pt_kernel: generate code: completed (7.34s wall 1.00x CPU)
+645 warnings generated.
+2022-03-16 01:58:19,601 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (3.80 s)
+2022-03-16 01:58:23,747 - INFO - loopy.tools - preprocess_program on 'frozenset({'_pt_kernel'})': completed (1.99s wall 1.00x CPU)
+2022-03-16 01:58:26,718 - INFO - loopy.check - _pt_kernel: check array access within bounds: completed (2.44s wall 1.00x CPU)
+2022-03-16 01:58:32,532 - INFO - loopy.schedule - _pt_kernel: schedule: completed (5.81s wall 1.00x CPU)
+2022-03-16 01:58:40,180 - INFO - loopy.codegen - _pt_kernel: generate code: completed (7.20s wall 1.00x CPU)
+646 warnings generated.
+2022-03-16 01:58:44,183 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (3.66 s)
+2022-03-16 01:58:45,221 - INFO - loopy.schedule - _pt_kernel: schedule: completed (0.32s wall 1.00x CPU)
+2022-03-16 01:58:46,846 - INFO - loopy.codegen - _pt_kernel: generate code: completed (1.48s wall 1.00x CPU)
+2022-03-16 01:58:48,236 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.37 s)
+2022-03-16 01:58:48,238 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.37 s)
+2022-03-16 01:58:48,239 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.37 s)
+2022-03-16 01:58:48,240 - INFO - pyopencl - build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.37 s)
+2022-03-16 01:58:48,242 - INFO - pyopencl - build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (1.37 s)
+2022-03-16 01:58:48,257 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2022-03-16 01:58:48,283 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2022-03-16 01:58:49,998 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.96s wall 1.00x CPU)
+2022-03-16 01:58:51,032 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.02 s)
+2022-03-16 01:58:51,034 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.02 s)
+2022-03-16 01:58:51,035 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.02 s)
+2022-03-16 01:58:52,337 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.76s wall 1.00x CPU)
+2022-03-16 01:58:53,256 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.91 s)
+2022-03-16 01:58:53,257 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.91 s)
+2022-03-16 01:58:53,258 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.91 s)
+2022-03-16 01:58:53,944 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+2022-03-16 01:58:54,931 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.47s wall 1.00x CPU)
+2022-03-16 01:58:55,522 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.58 s)
+2022-03-16 01:58:56,139 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+2022-03-16 01:58:56,746 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+2022-03-16 01:58:57,244 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-03-16 01:58:57,998 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.51 s)
+2022-03-16 01:58:58,608 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+2022-03-16 01:58:59,213 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+2022-03-16 01:58:59,695 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+2022-03-16 01:59:00,306 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+2022-03-16 01:59:00,912 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+2022-03-16 01:59:01,411 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-03-16 01:59:02,168 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.51 s)
+-------- dt = 1.000e-08, cfl = 0.0368
+-------- P (min, max) (Pa) = (2.865706984e+03, 2.742120082e+05)
+-------- T (min, max) (K)  = (    300, 2075.81)
+
+2022-03-16 01:59:02,944 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.50 s)
+2022-03-16 01:59:04,039 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.54 s)
+2022-03-16 01:59:04,883 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.54 s)
+2022-03-16 01:59:05,757 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.54 s)
+2022-03-16 01:59:06,690 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.46s wall 1.00x CPU)
+2022-03-16 01:59:07,437 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.73 s)
+2022-03-16 01:59:07,438 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.73 s)
+2022-03-16 01:59:08,180 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.52 s)
+2022-03-16 01:59:08,925 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.50 s)
+2022-03-16 01:59:09,656 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.38s wall 1.00x CPU)
+2022-03-16 01:59:10,365 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.70 s)
+2022-03-16 01:59:10,366 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.70 s)
+2022-03-16 01:59:11,174 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.31s wall 1.00x CPU)
+2022-03-16 01:59:12,339 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.92 s)
+2022-03-16 01:59:12,340 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.92 s)
+2022-03-16 01:59:12,341 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.92 s)
+2022-03-16 01:59:13,570 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.59s wall 1.00x CPU)
+2022-03-16 01:59:14,359 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.78 s)
+2022-03-16 01:59:14,360 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.78 s)
+2022-03-16 01:59:14,391 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2022-03-16 01:59:14,395 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2022-03-16 01:59:14,402 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2022-03-16 01:59:14,406 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2022-03-16 01:59:14,413 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2022-03-16 01:59:14,427 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2022-03-16 01:59:14,434 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2022-03-16 01:59:14,804 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2022-03-16 01:59:16,494 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.88s wall 1.00x CPU)
+2022-03-16 01:59:17,271 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-03-16 01:59:17,272 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-03-16 01:59:17,272 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-03-16 01:59:18,029 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.39s wall 1.00x CPU)
+2022-03-16 01:59:18,652 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+2022-03-16 01:59:18,654 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+2022-03-16 01:59:19,406 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.39s wall 1.00x CPU)
+2022-03-16 01:59:20,029 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+2022-03-16 01:59:20,030 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+2022-03-16 01:59:20,641 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-03-16 01:59:22,285 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.88s wall 1.00x CPU)
+2022-03-16 01:59:23,073 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.78 s)
+2022-03-16 01:59:23,073 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.78 s)
+2022-03-16 01:59:23,074 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.78 s)
+2022-03-16 01:59:23,833 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.40s wall 1.00x CPU)
+2022-03-16 01:59:24,461 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+2022-03-16 01:59:24,462 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+2022-03-16 01:59:25,215 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.40s wall 1.00x CPU)
+2022-03-16 01:59:25,846 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+2022-03-16 01:59:25,847 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+2022-03-16 01:59:26,451 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+2022-03-16 01:59:28,189 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.89s wall 1.00x CPU)
+2022-03-16 01:59:28,977 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.78 s)
+2022-03-16 01:59:28,977 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.78 s)
+2022-03-16 01:59:28,977 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.78 s)
+2022-03-16 01:59:29,738 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.40s wall 1.00x CPU)
+2022-03-16 01:59:30,367 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+2022-03-16 01:59:30,367 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+2022-03-16 01:59:31,124 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.40s wall 1.00x CPU)
+2022-03-16 01:59:31,752 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+2022-03-16 01:59:31,752 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+2022-03-16 01:59:32,362 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-03-16 01:59:34,087 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.96s wall 1.00x CPU)
+2022-03-16 01:59:35,102 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.00 s)
+2022-03-16 01:59:35,103 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.00 s)
+2022-03-16 01:59:35,103 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.00 s)
+2022-03-16 01:59:35,898 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.43s wall 1.00x CPU)
+2022-03-16 01:59:36,584 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.68 s)
+2022-03-16 01:59:36,584 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.68 s)
+2022-03-16 01:59:37,374 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.43s wall 1.00x CPU)
+2022-03-16 01:59:38,060 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.68 s)
+2022-03-16 01:59:38,061 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.68 s)
+2022-03-16 01:59:38,671 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-03-16 01:59:39,277 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-03-16 01:59:39,883 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-03-16 01:59:42,021 - INFO - loopy.tools - preprocess_program on 'frozenset({'_pt_kernel'})': completed (0.47s wall 1.00x CPU)
+2022-03-16 01:59:43,099 - INFO - loopy.check - _pt_kernel: check array access within bounds: completed (0.85s wall 1.00x CPU)
+2022-03-16 01:59:44,580 - INFO - loopy.schedule - _pt_kernel: schedule: completed (1.45s wall 1.00x CPU)
+2022-03-16 01:59:52,207 - INFO - loopy.codegen - _pt_kernel: generate code: completed (6.98s wall 1.00x CPU)
+2022-03-16 01:59:56,892 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,893 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,893 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,894 - INFO - pyopencl - build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,895 - INFO - pyopencl - build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,897 - INFO - pyopencl - build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,898 - INFO - pyopencl - build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,900 - INFO - pyopencl - build program: kernel '_pt_kernel_6' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,901 - INFO - pyopencl - build program: kernel '_pt_kernel_7' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,903 - INFO - pyopencl - build program: kernel '_pt_kernel_8' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,904 - INFO - pyopencl - build program: kernel '_pt_kernel_9' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,905 - INFO - pyopencl - build program: kernel '_pt_kernel_10' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,907 - INFO - pyopencl - build program: kernel '_pt_kernel_11' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,908 - INFO - pyopencl - build program: kernel '_pt_kernel_12' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,910 - INFO - pyopencl - build program: kernel '_pt_kernel_13' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,911 - INFO - pyopencl - build program: kernel '_pt_kernel_14' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,913 - INFO - pyopencl - build program: kernel '_pt_kernel_15' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,914 - INFO - pyopencl - build program: kernel '_pt_kernel_16' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:56,916 - INFO - pyopencl - build program: kernel '_pt_kernel_17' was part of a lengthy source build resulting from a binary cache miss (4.60 s)
+2022-03-16 01:59:58,331 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform.py - data wrapper de-duplication: 986 encountered, 53 kept, 933 eliminated
+2022-03-16 01:59:59,800 - INFO - meshmode.array_context - data wrapper de-duplication: 53 encountered, 53 kept, 0 eliminated
+2022-03-16 01:59:59,934 - INFO - arraycontext.impl.pytato.compile - transform_dag: completed (0.81s wall 1.00x CPU)
+2022-03-16 02:00:03,360 - INFO - arraycontext.impl.pytato.compile - generate_loopy: completed (3.43s wall 1.00x CPU)
+2022-03-16 02:00:30,788 - INFO - loopy.preprocess - _pt_kernel: preprocess: completed (0.42s wall 1.00x CPU)
+2022-03-16 02:00:32,899 - INFO - loopy.tools - preprocess_program on 'frozenset({'_pt_kernel'})': completed (8.38s wall 1.00x CPU)
+2022-03-16 02:00:47,842 - INFO - loopy.check - _pt_kernel: check array access within bounds: completed (12.06s wall 1.00x CPU)
+2022-03-16 02:01:13,719 - INFO - loopy.schedule - _pt_kernel: schedule: completed (24.83s wall 1.00x CPU)
+2022-03-16 02:01:14,716 - INFO - arraycontext.impl.pytato.compile - transform_loopy_program: completed (71.36s wall 1.00x CPU)
+2022-03-16 02:02:27,127 - INFO - loopy.codegen - _pt_kernel: generate code: completed (66.86s wall 1.00x CPU)
+737 warnings generated.
+2022-03-16 02:03:01,783 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,785 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,787 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,788 - INFO - pyopencl - build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,790 - INFO - pyopencl - build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,792 - INFO - pyopencl - build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,794 - INFO - pyopencl - build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,795 - INFO - pyopencl - build program: kernel '_pt_kernel_6' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,798 - INFO - pyopencl - build program: kernel '_pt_kernel_7' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,799 - INFO - pyopencl - build program: kernel '_pt_kernel_8' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,800 - INFO - pyopencl - build program: kernel '_pt_kernel_9' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,802 - INFO - pyopencl - build program: kernel '_pt_kernel_10' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,803 - INFO - pyopencl - build program: kernel '_pt_kernel_11' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,805 - INFO - pyopencl - build program: kernel '_pt_kernel_12' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,807 - INFO - pyopencl - build program: kernel '_pt_kernel_13' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,809 - INFO - pyopencl - build program: kernel '_pt_kernel_14' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,810 - INFO - pyopencl - build program: kernel '_pt_kernel_15' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,812 - INFO - pyopencl - build program: kernel '_pt_kernel_16' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,813 - INFO - pyopencl - build program: kernel '_pt_kernel_17' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,814 - INFO - pyopencl - build program: kernel '_pt_kernel_18' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,816 - INFO - pyopencl - build program: kernel '_pt_kernel_19' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,817 - INFO - pyopencl - build program: kernel '_pt_kernel_20' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,818 - INFO - pyopencl - build program: kernel '_pt_kernel_21' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,820 - INFO - pyopencl - build program: kernel '_pt_kernel_22' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,821 - INFO - pyopencl - build program: kernel '_pt_kernel_23' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,822 - INFO - pyopencl - build program: kernel '_pt_kernel_24' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,823 - INFO - pyopencl - build program: kernel '_pt_kernel_25' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,825 - INFO - pyopencl - build program: kernel '_pt_kernel_26' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,826 - INFO - pyopencl - build program: kernel '_pt_kernel_27' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,828 - INFO - pyopencl - build program: kernel '_pt_kernel_28' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,830 - INFO - pyopencl - build program: kernel '_pt_kernel_29' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,831 - INFO - pyopencl - build program: kernel '_pt_kernel_30' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,833 - INFO - pyopencl - build program: kernel '_pt_kernel_31' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,834 - INFO - pyopencl - build program: kernel '_pt_kernel_32' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,836 - INFO - pyopencl - build program: kernel '_pt_kernel_33' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,837 - INFO - pyopencl - build program: kernel '_pt_kernel_34' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,839 - INFO - pyopencl - build program: kernel '_pt_kernel_35' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,841 - INFO - pyopencl - build program: kernel '_pt_kernel_36' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,842 - INFO - pyopencl - build program: kernel '_pt_kernel_37' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,843 - INFO - pyopencl - build program: kernel '_pt_kernel_38' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,845 - INFO - pyopencl - build program: kernel '_pt_kernel_39' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,847 - INFO - pyopencl - build program: kernel '_pt_kernel_40' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,848 - INFO - pyopencl - build program: kernel '_pt_kernel_41' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,849 - INFO - pyopencl - build program: kernel '_pt_kernel_42' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,850 - INFO - pyopencl - build program: kernel '_pt_kernel_43' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,852 - INFO - pyopencl - build program: kernel '_pt_kernel_44' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,854 - INFO - pyopencl - build program: kernel '_pt_kernel_45' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,855 - INFO - pyopencl - build program: kernel '_pt_kernel_46' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,857 - INFO - pyopencl - build program: kernel '_pt_kernel_47' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,858 - INFO - pyopencl - build program: kernel '_pt_kernel_48' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,859 - INFO - pyopencl - build program: kernel '_pt_kernel_49' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,860 - INFO - pyopencl - build program: kernel '_pt_kernel_50' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,862 - INFO - pyopencl - build program: kernel '_pt_kernel_51' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,863 - INFO - pyopencl - build program: kernel '_pt_kernel_52' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,865 - INFO - pyopencl - build program: kernel '_pt_kernel_53' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,866 - INFO - pyopencl - build program: kernel '_pt_kernel_54' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,867 - INFO - pyopencl - build program: kernel '_pt_kernel_55' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,868 - INFO - pyopencl - build program: kernel '_pt_kernel_56' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,870 - INFO - pyopencl - build program: kernel '_pt_kernel_57' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,871 - INFO - pyopencl - build program: kernel '_pt_kernel_58' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,872 - INFO - pyopencl - build program: kernel '_pt_kernel_59' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,873 - INFO - pyopencl - build program: kernel '_pt_kernel_60' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,875 - INFO - pyopencl - build program: kernel '_pt_kernel_61' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,877 - INFO - pyopencl - build program: kernel '_pt_kernel_62' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,879 - INFO - pyopencl - build program: kernel '_pt_kernel_63' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,880 - INFO - pyopencl - build program: kernel '_pt_kernel_64' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,882 - INFO - pyopencl - build program: kernel '_pt_kernel_65' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,883 - INFO - pyopencl - build program: kernel '_pt_kernel_66' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,884 - INFO - pyopencl - build program: kernel '_pt_kernel_67' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,885 - INFO - pyopencl - build program: kernel '_pt_kernel_68' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,887 - INFO - pyopencl - build program: kernel '_pt_kernel_69' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,888 - INFO - pyopencl - build program: kernel '_pt_kernel_70' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,889 - INFO - pyopencl - build program: kernel '_pt_kernel_71' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,891 - INFO - pyopencl - build program: kernel '_pt_kernel_72' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,893 - INFO - pyopencl - build program: kernel '_pt_kernel_73' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,894 - INFO - pyopencl - build program: kernel '_pt_kernel_74' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,896 - INFO - pyopencl - build program: kernel '_pt_kernel_75' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,897 - INFO - pyopencl - build program: kernel '_pt_kernel_76' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,898 - INFO - pyopencl - build program: kernel '_pt_kernel_77' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,900 - INFO - pyopencl - build program: kernel '_pt_kernel_78' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,901 - INFO - pyopencl - build program: kernel '_pt_kernel_79' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,904 - INFO - pyopencl - build program: kernel '_pt_kernel_80' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,906 - INFO - pyopencl - build program: kernel '_pt_kernel_81' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,907 - INFO - pyopencl - build program: kernel '_pt_kernel_82' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,908 - INFO - pyopencl - build program: kernel '_pt_kernel_83' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,909 - INFO - pyopencl - build program: kernel '_pt_kernel_84' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,911 - INFO - pyopencl - build program: kernel '_pt_kernel_85' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,913 - INFO - pyopencl - build program: kernel '_pt_kernel_86' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,914 - INFO - pyopencl - build program: kernel '_pt_kernel_87' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,916 - INFO - pyopencl - build program: kernel '_pt_kernel_88' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,918 - INFO - pyopencl - build program: kernel '_pt_kernel_89' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,920 - INFO - pyopencl - build program: kernel '_pt_kernel_90' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,922 - INFO - pyopencl - build program: kernel '_pt_kernel_91' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,925 - INFO - pyopencl - build program: kernel '_pt_kernel_92' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,927 - INFO - pyopencl - build program: kernel '_pt_kernel_93' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,930 - INFO - pyopencl - build program: kernel '_pt_kernel_94' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,931 - INFO - pyopencl - build program: kernel '_pt_kernel_95' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,934 - INFO - pyopencl - build program: kernel '_pt_kernel_96' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,935 - INFO - pyopencl - build program: kernel '_pt_kernel_97' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,937 - INFO - pyopencl - build program: kernel '_pt_kernel_98' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,939 - INFO - pyopencl - build program: kernel '_pt_kernel_99' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:01,940 - INFO - pyopencl - build program: kernel '_pt_kernel_100' was part of a lengthy source build resulting from a binary cache miss (33.29 s)
+2022-03-16 02:03:02,923 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.50 s)
+2022-03-16 02:03:03,667 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+step = 0, sim time: 0.000000e+00 s, step walltime: 259.472 s
+2022-03-16 02:03:04,507 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.51 s)
+step = 1, sim time: 1.000000e-08 s, step walltime: 0.0795972 s
+step = 2, sim time: 2.000000e-08 s, step walltime: 0.0697725 s
+step = 3, sim time: 3.000000e-08 s, step walltime: 0.0665162 s
+step = 4, sim time: 4.000000e-08 s, step walltime: 0.0740085 s
+step = 5, sim time: 5.000000e-08 s, step walltime: 0.0658629 s
+step = 6, sim time: 6.000000e-08 s, step walltime: 0.0620782 s
+step = 7, sim time: 7.000000e-08 s, step walltime: 0.0757561 s
+step = 8, sim time: 8.000000e-08 s, step walltime: 0.0705214 s
+step = 9, sim time: 9.000000e-08 s, step walltime: 0.0683348 s
+step = 10, sim time: 1.000000e-07 s, step walltime: 0.0686677 s
+step = 11, sim time: 1.100000e-07 s, step walltime: 0.0625429 s
+step = 12, sim time: 1.200000e-07 s, step walltime: 0.0660596 s
+step = 13, sim time: 1.300000e-07 s, step walltime: 0.0610943 s
+step = 14, sim time: 1.400000e-07 s, step walltime: 0.0614035 s
+step = 15, sim time: 1.500000e-07 s, step walltime: 0.0686891 s
+step = 16, sim time: 1.600000e-07 s, step walltime: 0.0626531 s
+step = 17, sim time: 1.700000e-07 s, step walltime: 0.0652947 s
+step = 18, sim time: 1.800000e-07 s, step walltime: 0.0627065 s
+2022-03-16 02:03:06,708 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+2022-03-16 02:03:07,440 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+step = 19, sim time: 1.900000e-07 s, step walltime: 1.47226 s
+Checkpointing final state ...
+2022-03-16 02:03:08,322 - INFO - loopy.schedule - _pt_kernel: schedule: completed (0.36s wall 1.00x CPU)
+2022-03-16 02:03:09,264 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.84s wall 1.00x CPU)
+2022-03-16 02:03:09,958 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.68 s)
+2022-03-16 02:03:10,982 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.49s wall 1.00x CPU)
+2022-03-16 02:03:11,605 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.61 s)
+2022-03-16 02:03:12,443 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.37s wall 1.00x CPU)
+2022-03-16 02:03:13,051 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+-------- dt = 0.000e+00, cfl = 0.0368
+-------- P (min, max) (Pa) = (1.430222981e+03, 3.113408191e+05)
+-------- T (min, max) (K)  = (271.344, 2480.33)
+
+2022-03-16 02:03:13,920 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.55 s)
+2022-03-16 02:03:15,135 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.59s wall 1.00x CPU)
+2022-03-16 02:03:15,942 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+2022-03-16 02:03:15,943 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+2022-03-16 02:03:17,063 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.52s wall 1.00x CPU)
+2022-03-16 02:03:17,877 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.80 s)
+2022-03-16 02:03:17,878 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.80 s)
+2022-03-16 02:03:19,101 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.59s wall 1.00x CPU)
+2022-03-16 02:03:19,914 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.80 s)
+2022-03-16 02:03:19,914 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.80 s)
+2022-03-16 02:03:20,741 - INFO - loopy.schedule - _pt_kernel: schedule: completed (0.37s wall 1.00x CPU)
+2022-03-16 02:03:21,702 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.87s wall 1.00x CPU)
+2022-03-16 02:03:22,549 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.83 s)
+2022-03-16 02:03:22,551 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.83 s)
+2022-03-16 02:03:23,553 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.58 s)
+2022-03-16 02:03:24,671 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.51s wall 1.00x CPU)
+2022-03-16 02:03:25,443 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-03-16 02:03:25,443 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-03-16 02:03:26,290 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.32s wall 1.00x CPU)
+2022-03-16 02:03:27,524 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.98 s)
+2022-03-16 02:03:27,525 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.98 s)
+2022-03-16 02:03:27,525 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.98 s)
+2022-03-16 02:03:28,503 - INFO - loopy.schedule - _pt_kernel: schedule: completed (0.45s wall 1.00x CPU)
+2022-03-16 02:03:29,601 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.99s wall 1.00x CPU)
+2022-03-16 02:03:30,495 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.87 s)
+2022-03-16 02:03:30,496 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.87 s)
+2022-03-16 02:03:31,262 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.50 s)
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 3343980: <isolator_timing_job.sh> in cluster <lassen> Done
+
+Job <isolator_timing_job.sh> was submitted from host <lassen708> by user <mtcampbe> in cluster <lassen> at Wed Mar 16 01:56:09 2022
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <mtcampbe> in cluster <lassen> at Wed Mar 16 01:56:12 2022
+                            <40*lassen427>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run> was used as the working directory.
+Started at Wed Mar 16 01:56:12 2022
+Terminated at Wed Mar 16 02:04:13 2022
+Results reported at Wed Mar 16 02:04:13 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+#BSUB -nnodes 1
+#BSUB -G uiuc
+#BSUB -W 60
+#BSUB -q pbatch
+
+printf "Running with EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge\n"
+
+source "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/config/activate_env.sh"
+export PYOPENCL_CTX="port:tesla"
+export XDG_CACHE_HOME="/tmp/mtcampbe/xdg-scratch"
+rm -rf $XDG_CACHE_HOME
+rm -f timing-run-done
+which python
+conda env list
+env
+env | grep LSB_MCPU_HOSTS
+
+jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./isolator.py -i timing_params.yaml --lazy --log
+touch timing-run-done
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.38 sec.
+    Max Memory :                                 59 MB
+    Average Memory :                             58.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1634 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   482 sec.
+    Turnaround time :                            484 sec.
+
+The output (if any) is above this job summary.
+
