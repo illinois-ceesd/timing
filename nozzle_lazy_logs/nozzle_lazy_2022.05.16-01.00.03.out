@@ -1,0 +1,1007 @@
+Customizing shell for Lassen.
+Running with EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge
+Activating 'nozzle.lazy.timing.env' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin/python
+# conda environments:
+#
+                         /g/g17/mtcampbe/scratchl/CEESD/AutomatedTesting/AK/emirge/miniforge3
+                         /g/g17/mtcampbe/scratchl/CEESD/AutomatedTesting/AK/emirge/miniforge3/envs/nozzle.timing.env
+                         /g/g17/mtcampbe/scratchl/CEESD/Software/Experimental/emirge/miniforge3
+                         /g/g17/mtcampbe/scratchl/CEESD/Software/Experimental/emirge/miniforge3/envs/xp.ceesd
+                         /g/g17/mtcampbe/scratchl/CEESD/Support/CEESD-Y1_Shock1D/emirge/miniforge3
+                         /g/g17/mtcampbe/scratchl/CEESD/Support/CEESD-Y1_Shock1D/emirge/miniforge3/envs/mirgeDriver.shock1d
+                         /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/hand-timing/emirge/miniforge3/envs/hand.timing.lazy.env
+                         /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing.mix/emirge/miniforge3/envs/flame1d.lazy.mix.env
+base                     /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3
+nozzle.lazy.timing.env  *  /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env
+                         /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/production.permanent/emirge/miniforge3/envs/timing.production.permanent
+                         /p/gpfs1/mtcampbe/CEESD/Experimental/pardist2/emirge/miniforge3
+                         /p/gpfs1/mtcampbe/CEESD/Experimental/pardist2/emirge/miniforge3/envs/x.distpar2.test
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/abate.mtc_euler.env
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/ceesd.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/chem.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/dgfem
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/mc.master
+
+Default casename nozzle
+Reading user input from file: timing_params.yaml
+Running ./nozzle.py
+
+#### Simluation control data: ####
+	nviz = 100
+	nrestart = 100
+	nhealth = 100
+	nstatus = 1
+	current_dt = 5e-08
+	t_final = 1e-06
+	order = 1
+	Shock capturing parameters: alpha 0.5, s0 -5.0, kappa 0.5
+	Time integration rk4
+	Dependent variable logging is OFF.
+#### Simluation control data: ####
+inlet Mach number 0.13914536705094316
+inlet temperature 297.16860334713266
+inlet pressure 987.6162965049273
+final inlet pressure 148142.4444757391
+rank 0: sent all mesh partitions
+Making discretization
+./nozzle.py:559: DeprecationWarning: EagerDGDiscretization is deprecated and will go away in 2022. Use the base DiscretizationCollection with grudge.op instead.
+  discr = EagerDGDiscretization(actx,
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+preprocess_program on '_pt_kernel': completed (2.76s wall 0.15x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.94 s)
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+Initializing soln.
+Initialization for Case(nozzle)
+===
+Num 3d order-1 elements: 107554
+Num global elements: 107554
+Timestep:        5e-08
+Final time:      1e-06
+CFL:             1.0
+Constant CFL:    False
+Initialization:  pseudoY0
+EOS:             IdealSingleGas
+
+Stepping.
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+_pt_kernel: generate code: completed (0.63s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.57 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+data wrapper de-duplication: 45 encountered, 9 kept, 36 eliminated
+_pt_kernel: check array access within bounds: completed (0.42s wall 1.00x CPU)
+_pt_kernel: schedule: completed (0.83s wall 1.00x CPU)
+_pt_kernel: generate code: completed (3.93s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (2.93 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (2.93 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (2.93 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (2.93 s)
+build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (2.93 s)
+build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (2.93 s)
+build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (2.93 s)
+build program: kernel '_pt_kernel_6' was part of a lengthy source build resulting from a binary cache miss (2.93 s)
+build program: kernel '_pt_kernel_7' was part of a lengthy source build resulting from a binary cache miss (2.93 s)
+build program: kernel '_pt_kernel_8' was part of a lengthy source build resulting from a binary cache miss (2.93 s)
+building face restriction: start
+building face restriction: done
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.53 s)
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 30 encountered, 8 kept, 22 eliminated
+_pt_kernel: check array access within bounds: completed (0.32s wall 1.00x CPU)
+_pt_kernel: schedule: completed (0.77s wall 1.00x CPU)
+_pt_kernel: generate code: completed (3.32s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+data wrapper de-duplication: 4 encountered, 4 kept, 0 eliminated
+_pt_kernel: generate code: completed (0.62s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.01 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.01 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.01 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.51 s)
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+_pt_kernel: generate code: completed (0.52s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.51 s)
+build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+./nozzle.py:757: DeprecationWarning: allsync is deprecated and will disappear in Q1 2022. Use global_reduce instead.
+  health_errors = allsync(my_health_check(dv), comm,
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.52 s)
+data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.52 s)
+data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.53 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+data wrapper de-duplication: 3 encountered, 3 kept, 0 eliminated
+_pt_kernel: generate code: completed (0.63s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.12 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.12 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.12 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.12 s)
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+_pt_kernel: generate code: completed (0.60s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.74 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.74 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+building face restriction: start
+building face restriction: done
+building face restriction: start
+building face restriction: done
+building face restriction: start
+building face restriction: done
+building face restriction: start
+building face restriction: done
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.52 s)
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/trace_pair.py:520: UserWarning: Encountered unknown symbolic tag '<class 'mirgecom.gas_model._FluidCVTag'>', assigning a value of '627736185'. This is a temporary workaround, please ensure that tags are sufficiently distinct for your use case.
+  warn("Encountered unknown symbolic tag "
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 30 encountered, 8 kept, 22 eliminated
+_pt_kernel: check array access within bounds: completed (0.32s wall 1.00x CPU)
+_pt_kernel: schedule: completed (0.76s wall 1.00x CPU)
+_pt_kernel: generate code: completed (3.04s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.44 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.44 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.44 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.44 s)
+build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (1.44 s)
+build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (1.44 s)
+build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (1.44 s)
+data wrapper de-duplication: 31 encountered, 9 kept, 22 eliminated
+_pt_kernel: check array access within bounds: completed (0.32s wall 1.00x CPU)
+_pt_kernel: schedule: completed (0.72s wall 1.00x CPU)
+_pt_kernel: generate code: completed (2.84s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.44 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.44 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.44 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.44 s)
+build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (1.44 s)
+build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (1.44 s)
+build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (1.44 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 30 encountered, 8 kept, 22 eliminated
+_pt_kernel: check array access within bounds: completed (0.33s wall 1.00x CPU)
+_pt_kernel: schedule: completed (0.76s wall 1.00x CPU)
+_pt_kernel: generate code: completed (3.16s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.45 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.45 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.45 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.45 s)
+build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (1.45 s)
+build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (1.45 s)
+build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (1.45 s)
+data wrapper de-duplication: 31 encountered, 9 kept, 22 eliminated
+_pt_kernel: check array access within bounds: completed (0.32s wall 1.00x CPU)
+_pt_kernel: schedule: completed (0.72s wall 1.00x CPU)
+_pt_kernel: generate code: completed (2.97s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.45 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.45 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.45 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.45 s)
+build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (1.45 s)
+build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (1.45 s)
+build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (1.45 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.52 s)
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 30 encountered, 8 kept, 22 eliminated
+_pt_kernel: check array access within bounds: completed (0.33s wall 1.00x CPU)
+_pt_kernel: schedule: completed (0.77s wall 1.00x CPU)
+_pt_kernel: generate code: completed (3.27s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+data wrapper de-duplication: 31 encountered, 9 kept, 22 eliminated
+_pt_kernel: check array access within bounds: completed (0.32s wall 1.00x CPU)
+_pt_kernel: schedule: completed (0.73s wall 1.00x CPU)
+_pt_kernel: generate code: completed (3.17s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (2.32 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (2.32 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (2.32 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (2.32 s)
+build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (2.32 s)
+build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (2.32 s)
+build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (2.32 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 30 encountered, 8 kept, 22 eliminated
+_pt_kernel: check array access within bounds: completed (0.33s wall 1.00x CPU)
+_pt_kernel: schedule: completed (0.78s wall 1.00x CPU)
+_pt_kernel: generate code: completed (3.28s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (2.42 s)
+data wrapper de-duplication: 31 encountered, 9 kept, 22 eliminated
+_pt_kernel: check array access within bounds: completed (0.32s wall 1.00x CPU)
+_pt_kernel: schedule: completed (0.73s wall 1.00x CPU)
+_pt_kernel: generate code: completed (3.11s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (2.32 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (2.32 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (2.32 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (2.32 s)
+build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (2.32 s)
+build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (2.32 s)
+build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (2.32 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+data wrapper de-duplication: 586 encountered, 10 kept, 576 eliminated
+_pt_kernel: check array access within bounds: completed (0.62s wall 1.00x CPU)
+_pt_kernel: schedule: completed (1.29s wall 1.00x CPU)
+_pt_kernel: generate code: completed (5.23s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (3.40 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (3.40 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (3.40 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (3.40 s)
+build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (3.40 s)
+build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (3.40 s)
+build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (3.40 s)
+build program: kernel '_pt_kernel_6' was part of a lengthy source build resulting from a binary cache miss (3.40 s)
+build program: kernel '_pt_kernel_7' was part of a lengthy source build resulting from a binary cache miss (3.40 s)
+build program: kernel '_pt_kernel_8' was part of a lengthy source build resulting from a binary cache miss (3.40 s)
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/trace_pair.py:520: UserWarning: Encountered unknown symbolic tag '<class 'mirgecom.navierstokes._NSGradCVTag'>', assigning a value of '737376887'. This is a temporary workaround, please ensure that tags are sufficiently distinct for your use case.
+  warn("Encountered unknown symbolic tag "
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/trace_pair.py:520: UserWarning: Encountered unknown symbolic tag '<class 'mirgecom.navierstokes._NSGradTemperatureTag'>', assigning a value of '484119136'. This is a temporary workaround, please ensure that tags are sufficiently distinct for your use case.
+  warn("Encountered unknown symbolic tag "
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/artificial_viscosity.py:180: UserWarning: The AV boundary_kwargs interface is deprecated, please pass gas_model and time directly.
+  warn("The AV boundary_kwargs interface is deprecated, please pass gas_model"
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/trace_pair.py:520: UserWarning: Encountered unknown symbolic tag '<class 'mirgecom.artificial_viscosity._AVRTag'>', assigning a value of '2138941513'. This is a temporary workaround, please ensure that tags are sufficiently distinct for your use case.
+  warn("Encountered unknown symbolic tag "
+data wrapper de-duplication: 1645 encountered, 54 kept, 1591 eliminated
+transform_dag: completed (2.09s wall 1.00x CPU)
+generate_loopy: completed (10.69s wall 1.00x CPU)
+_pt_kernel: preprocess: completed (0.45s wall 1.00x CPU)
+preprocess_program on '_pt_kernel': completed (9.98s wall 1.00x CPU)
+_pt_kernel: check array access within bounds: completed (13.03s wall 1.00x CPU)
+_pt_kernel: schedule: completed (21.82s wall 1.00x CPU)
+transform_loopy_program: completed (146.75s wall 1.00x CPU)
+_pt_kernel: generate code: completed (382.24s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_6' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_7' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_8' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_9' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_10' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_11' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_12' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_13' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_14' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_15' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_16' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_17' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_18' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_19' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_20' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_21' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_22' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_23' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_24' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_25' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_26' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_27' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_28' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_29' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_30' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_31' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_32' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_33' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_34' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_35' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_36' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_37' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_38' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_39' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_40' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_41' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_42' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_43' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_44' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_45' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_46' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_47' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_48' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_49' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_50' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_51' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_52' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_53' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_54' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_55' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_56' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_57' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_58' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_59' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_60' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_61' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_62' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_63' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_64' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_65' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_66' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_67' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_68' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_69' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_70' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_71' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_72' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_73' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_74' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_75' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_76' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_77' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_78' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_79' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_80' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_81' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_82' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_83' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_84' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_85' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_86' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_87' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_88' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_89' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_90' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_91' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_92' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_93' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_94' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_95' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_96' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_97' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_98' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_99' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_100' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_101' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_102' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_103' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_104' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_105' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_106' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_107' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_108' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_109' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_110' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_111' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_112' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_113' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_114' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_115' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_116' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_117' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_118' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_119' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_120' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_121' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_122' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_123' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_124' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_125' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_126' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_127' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_128' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_129' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_130' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_131' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_132' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_133' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_134' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_135' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_136' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_137' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_138' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_139' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_140' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_141' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_142' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_143' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_144' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_145' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_146' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_147' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_148' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_149' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_150' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_151' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_152' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_153' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+build program: kernel '_pt_kernel_154' was part of a lengthy source build resulting from a binary cache miss (47.52 s)
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.54 s)
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.55 s)
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 0, sim time: 0.000000e+00 s, cfl = 1.0000
+------- step walltime: 735.553 s, log walltime: 0.000192881 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+_pt_kernel: generate code: completed (0.71s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.63 s)
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 1, sim time: 5.000000e-08 s, cfl = 0.0443
+------- step walltime: 0.32015 s, log walltime: 0.000268459 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 2, sim time: 1.000000e-07 s, cfl = 0.0444
+------- step walltime: 0.306369 s, log walltime: 0.000108719 s
+
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 3, sim time: 1.500000e-07 s, cfl = 0.0444
+------- step walltime: 0.297551 s, log walltime: 0.000109673 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 4, sim time: 2.000000e-07 s, cfl = 0.0444
+------- step walltime: 0.302848 s, log walltime: 0.000110865 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 5, sim time: 2.500000e-07 s, cfl = 0.0444
+------- step walltime: 0.297446 s, log walltime: 0.000112772 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 6, sim time: 3.000000e-07 s, cfl = 0.0444
+------- step walltime: 0.299153 s, log walltime: 0.000108242 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 7, sim time: 3.500000e-07 s, cfl = 0.0444
+------- step walltime: 0.297372 s, log walltime: 0.000110149 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 8, sim time: 4.000000e-07 s, cfl = 0.0444
+------- step walltime: 0.297419 s, log walltime: 0.000110388 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 9, sim time: 4.500000e-07 s, cfl = 0.0444
+------- step walltime: 0.30045 s, log walltime: 0.000109673 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 10, sim time: 5.000000e-07 s, cfl = 0.0444
+------- step walltime: 0.29933 s, log walltime: 0.000109673 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 11, sim time: 5.500000e-07 s, cfl = 0.0444
+------- step walltime: 0.301265 s, log walltime: 0.000108957 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 12, sim time: 6.000000e-07 s, cfl = 0.0444
+------- step walltime: 0.297614 s, log walltime: 0.000110388 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 13, sim time: 6.500000e-07 s, cfl = 0.0444
+------- step walltime: 0.297888 s, log walltime: 0.000108957 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 14, sim time: 7.000000e-07 s, cfl = 0.0445
+------- step walltime: 0.299095 s, log walltime: 0.000109434 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 15, sim time: 7.500000e-07 s, cfl = 0.0445
+------- step walltime: 0.298062 s, log walltime: 0.000109673 s
+
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 16, sim time: 8.000000e-07 s, cfl = 0.0445
+------- step walltime: 0.302019 s, log walltime: 0.000108957 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 17, sim time: 8.500000e-07 s, cfl = 0.0445
+------- step walltime: 0.297444 s, log walltime: 0.000108957 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 18, sim time: 9.000000e-07 s, cfl = 0.0445
+------- step walltime: 0.299828 s, log walltime: 0.00011158 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 19, sim time: 9.500000e-07 s, cfl = 0.0445
+------- step walltime: 0.29852 s, log walltime: 0.000109673 s
+
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+data wrapper de-duplication: 6 encountered, 6 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.54 s)
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.54 s)
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 20, sim time: 1.000000e-06 s, cfl = 0.0445
+------- step walltime: 1.74989 s, log walltime: 0.000111341 s
+
+Checkpointing final state ...
+data wrapper de-duplication: 26 encountered, 26 kept, 0 eliminated
+_pt_kernel: schedule: completed (0.38s wall 1.00x CPU)
+_pt_kernel: generate code: completed (1.34s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.72 s)
+data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.52 s)
+data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+_pt_kernel: generate code: completed (0.76s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.81 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.81 s)
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+_pt_kernel: generate code: completed (0.63s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.81 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.81 s)
+data wrapper de-duplication: 25 encountered, 25 kept, 0 eliminated
+_pt_kernel: generate code: completed (0.76s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.84 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.84 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 7 encountered, 7 kept, 0 eliminated
+_pt_kernel: generate code: completed (0.64s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.24 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.24 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.24 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.24 s)
+data wrapper de-duplication: 26 encountered, 26 kept, 0 eliminated
+_pt_kernel: schedule: completed (0.38s wall 1.00x CPU)
+_pt_kernel: generate code: completed (1.38s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.87 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.87 s)
+data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.52 s)
+data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
