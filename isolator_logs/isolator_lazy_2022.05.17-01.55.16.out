@@ -1,0 +1,1100 @@
+Customizing shell for Lassen.
+Running with EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge
+Activating 'nozzle.lazy.timing.env' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin/python
+# conda environments:
+#
+                         /g/g17/mtcampbe/scratchl/CEESD/AutomatedTesting/AK/emirge/miniforge3
+                         /g/g17/mtcampbe/scratchl/CEESD/AutomatedTesting/AK/emirge/miniforge3/envs/nozzle.timing.env
+                         /g/g17/mtcampbe/scratchl/CEESD/Software/Experimental/emirge/miniforge3
+                         /g/g17/mtcampbe/scratchl/CEESD/Software/Experimental/emirge/miniforge3/envs/xp.ceesd
+                         /g/g17/mtcampbe/scratchl/CEESD/Support/CEESD-Y1_Shock1D/emirge/miniforge3
+                         /g/g17/mtcampbe/scratchl/CEESD/Support/CEESD-Y1_Shock1D/emirge/miniforge3/envs/mirgeDriver.shock1d
+                         /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/hand-timing/emirge/miniforge3/envs/hand.timing.lazy.env
+                         /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing.mix/emirge/miniforge3/envs/flame1d.lazy.mix.env
+base                     /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3
+nozzle.lazy.timing.env  *  /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env
+                         /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/production.permanent/emirge/miniforge3
+                         /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/production.permanent/emirge/miniforge3/envs/timing.production.permanent
+                         /p/gpfs1/mtcampbe/CEESD/Experimental/pardist2/emirge/miniforge3
+                         /p/gpfs1/mtcampbe/CEESD/Experimental/pardist2/emirge/miniforge3/envs/x.distpar2.test
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/abate.mtc_euler.env
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/ceesd.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/chem.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/dgfem
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/mc.master
+
+LMOD_FAMILY_COMPILER_VERSION=8.3.1
+PROJ_LIB=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/share/proj
+LLNL_IPISOLATE=0
+MANPATH=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release/share/man:/usr/tce/packages/gcc/gcc-8.3.1/man:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/man:/usr/man:/usr/share/man:/usr/local/man:/usr/X11R6/man:/usr/lib64/mvapich/default/man:/opt/ibm/spectrum_mpi/jsm_pmix/share/man
+LSB_EXEC_CLUSTER=lassen
+OMPI_COMM_WORLD_RANK=0
+LMOD_FAMILY_CUDA=cuda
+LMOD_ANCIENT_TIME=3600
+GUESTFISH_INIT=\e[1;34m
+_ModuleTable003_=LAp1c2VyTmFtZSA9ICJnY2MvOC4zLjEiLAp3ViA9ICIwMDAwMDAwMDguMDAwMDAwMDAzLjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKbGFsbG9jID0gewpmbiA9ICIvdXNyL3RjZXRtcC9tb2R1bGVmaWxlcy9Db3JlL2xhbGxvYy8yLjAubHVhIiwKZnVsbE5hbWUgPSAibGFsbG9jLzIuMCIsCmxvYWRPcmRlciA9IDMsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibGFsbG9jLzIuMCIsCndWID0gIl4wMDAwMDAwMi4qemZpbmFsIiwKfSwKWyJzcGVjdHJ1bS1tcGkiXSA9IHsKZm4gPSAiL3Vzci90Y2UvbW9kdWxlZmlsZXMvQ29tcGlsZXIvZ2NjLzguMy4xL3NwZWN0cnVtLW1waS9yb2xsaW5nLXJlbGVhc2UubHVhIiwKZnVs
+HOSTNAME=lassen341
+LSB_EFFECTIVE_RSRCREQ=1*{select[(LN) && (type == any)] order[r15s:pg] span[hosts=1]}+40*{select[(CN) && (type == any)] order[r15s:pg] span[ptile=40]}
+LSB_DOCKER_JOB_STARTTS=1652777747
+BBHASH=2742ed8befb1c3e7aae96670fd0bbbb8
+JSM_TMPDIR=/var/tmp
+MIRGE_TIMING_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing
+LSF_LOGDIR=/opt/ibm/spectrumcomputing/lsf/log
+LSF_LIM_API_NTRIES=1
+LSB_BATCH_JID=3537921
+__LMOD_REF_COUNT_MODULEPATH=/usr/tce/modulefiles/MPI/gcc/8.3.1/spectrum-mpi/rolling-release:1;/usr/tce/modulefiles/Compiler/gcc/8.3.1:1;/usr/tcetmp/modulefiles/Core:1;/usr/apps/modulefiles:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1;/collab/usr/global/tools/modulefiles/blueos_3_ppc64le_ib_p9/Core:1
+MAILTO=mtcampbe@illinois.edu,andreask@illinois.edu
+SHELL=/bin/bash
+LMOD_ROOT=/usr/share/lmod
+HISTSIZE=1000
+WISECONFIGDIR=/usr/share/wise2/
+LMOD_SYSTEM_DEFAULT_MODULES=StdEnv
+TMPDIR=/var/tmp
+MODULEPATH_ROOT=/usr/share/modulefiles
+SSH_CLIENT=192.168.66.202 38958 22
+LS_EXECCWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run
+LSB_TRAPSIGS=trap # 15 10 12 2 1
+CONDA_SHLVL=1
+LMOD_FAMILY_CUDA_VERSION=10.1.243
+LS_JOBPID=104470
+CONDA_PROMPT_MODIFIER=
+LSB_MAX_NUM_PROCESSORS=41
+LSB_JOBRES_CALLBACK=32911@lassen710
+LMOD_PKG=/usr/share/lmod/lmod
+LSB_JOB_EXECUSER=mtcampbe
+LSB_JOBID=3537921
+QTDIR=/usr/lib64/qt-3.3
+LSF_SERVERDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc
+LSB_JOBRES_PID=104470
+LMOD_VERSION=8.6.16
+LMOD_SHORT_TIME=60
+QTINC=/usr/lib64/qt-3.3/include
+LSB_JOBNAME=isolator_timing_job.sh
+LLNL_COMPUTE_NODES=lassen341
+LLNL_ATSDISABLE=0
+BSUB_BLOCK_EXEC_HOST=
+QT_GRAPHICSSYSTEM_CHECKED=1
+LSF_LIBDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib
+LSB_PROJECT_NAME=default
+OPAL_PREFIX=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release
+CUDA_HOME=/usr/tce/packages/cuda/cuda-10.1.243
+USER=mtcampbe
+PYOPENCL_CTX=port:tesla
+LMOD_sys=Linux
+LD_LIBRARY_PATH=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib:/usr/tce/packages/cuda/cuda-10.1.243/lib64
+SBD_KRB5CCNAME_VAL=
+LSB_EEXEC_REAL_UID=
+CONDA_EXE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda
+CEESD=/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen
+ENV=/g/g17/mtcampbe/.bashrc
+PFTP_CONFIG_FILENAME=/etc/pftp_config
+HOST_GRP=linux
+_ModuleTable004_=bE5hbWUgPSAic3BlY3RydW0tbXBpL3JvbGxpbmctcmVsZWFzZSIsCmxvYWRPcmRlciA9IDUsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAic3BlY3RydW0tbXBpL3JvbGxpbmctcmVsZWFzZSIsCndWID0gIl5yb2xsaW5nLipyZWxlYXNlLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvdXNyL3RjZS9tb2R1bGVmaWxlcy9NUEkvZ2NjLzguMy4xL3NwZWN0cnVtLW1waS9yb2xsaW5nLXJlbGVhc2UiCiwgIi91c3IvdGNlL21vZHVsZWZpbGVzL0NvbXBpbGVyL2djYy84LjMuMSIsICIvdXNyL3RjZXRtcC9tb2R1bGVmaWxlcy9Db3JlIgosICIvdXNyL2FwcHMvbW9kdWxlZmlsZXMiLCAiL3Vzci9zaGFyZS9tb2R1bGVm
+HOSTTYPE=LINUXPPC64LE
+LSF_INVOKE_CMD=bsub
+CUDA_CACHE_DISABLE=1
+LS_EXEC_T=START
+LMOD_FAMILY_LALLOC=lalloc
+LS_SUBCWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run
+LSB_SUB_RES_REQ=1*{select[LN]span[hosts=1]} + 40*{select[CN]span[ptile=40]}
+LSB_HOSTS=lassen710 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341 lassen341
+LMOD_PREPEND_BLOCK=normal
+LMOD_FAMILY_MPI_VERSION=rolling-release
+GUESTFISH_PS1=\[\e[1;32m\]><fs>\[\e[0;31m\] 
+_CE_CONDA=
+LSB_UNIXGROUP_INT=mtcampbe
+LSB_JOBFILENAME=/g/g17/mtcampbe/.lsbatch/1652777744.3537921
+LSB_JOBINDEX=0
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpjb21waWxlciA9ICJnY2MiLApjdWRhID0gImN1ZGEiLApsYWxsb2MgPSAibGFsbG9jIiwKbXBpID0gInNwZWN0cnVtLW1waSIsCn0sCm1UID0gewpTdGRFbnYgPSB7CmZuID0gIi91c3IvdGNldG1wL21vZHVsZWZpbGVzL0NvcmUvU3RkRW52Lmx1YSIsCmZ1bGxOYW1lID0gIlN0ZEVudiIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0gewpsbW9kID0gewpzdGlja3kgPSAxLAp9LAp9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gIlN0ZEVudiIsCndWID0gIk0uKnpm
+PATH=/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:/usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-8.3.1/bin:/usr/tce/packages/gcc/gcc-8.3.1/bin:/usr/tce/packages/lalloc/lalloc-2.0/bin:/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin:/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin:/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:/usr/tce/packages/cuda/cuda-10.1.243/bin:/usr/tcetmp/bin:/usr/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibm/spectrum_mpi/jsm_pmix/bin:/opt/ibm/bb/bin:/opt/ibm/flightlog/bin:/opt/ibutils/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin
+MAIL=/var/spool/mail/mtcampbe
+PROJ_NETWORK=ON
+LCSCHEDCLUSTER=lassen
+LSB_EXIT_PRE_ABORT=99
+LSB_JOBEXIT_STAT=0
+LMOD_SETTARG_CMD=:
+LMOD_FAMILY_LALLOC_VERSION=2.0
+CONDA_PREFIX=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env
+INPUTRC=/etc/inputrc
+PWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run
+_LMFILES_=/usr/tcetmp/modulefiles/Core/cuda/10.1.243.lua:/usr/tcetmp/modulefiles/Core/StdEnv.lua:/usr/tcetmp/modulefiles/Core/lalloc/2.0.lua:/usr/tcetmp/modulefiles/Core/gcc/8.3.1.lua:/usr/tce/modulefiles/Compiler/gcc/8.3.1/spectrum-mpi/rolling-release.lua
+EDITOR=/bin/vi
+LANG=en_US.UTF-8
+LSB_CHKFILENAME=/g/g17/mtcampbe/.lsbatch/1652777744.3537921
+MODULEPATH=/usr/tce/modulefiles/MPI/gcc/8.3.1/spectrum-mpi/rolling-release:/usr/tce/modulefiles/Compiler/gcc/8.3.1:/usr/tcetmp/modulefiles/Core:/usr/apps/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/collab/usr/global/tools/modulefiles/blueos_3_ppc64le_ib_p9/Core
+LSB_DJOB_HOSTFILE=/g/g17/mtcampbe/.lsbatch/1652777744.3537921.hostfile
+LOADEDMODULES=cuda/10.1.243:StdEnv:lalloc/2.0:gcc/8.3.1:spectrum-mpi/rolling-release
+KDEDIRS=/usr
+GUESTFISH_OUTPUT=\e[0m
+_ModuleTable_Sz_=5
+LSB_JOB_STARTER=/usr/tcetmp/bin/bsub_job_starter %USRCMD
+EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge
+LSF_JOB_TIMESTAMP_VALUE=1652777746
+LMOD_CMD=/usr/share/lmod/lmod/libexec/lmod
+_ModuleTable005_=aWxlcy9MaW51eCIKLCAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlIiwgIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLCAiL2NvbGxhYi91c3IvZ2xvYmFsL3Rvb2xzL21vZHVsZWZpbGVzL2JsdWVvc18zX3BwYzY0bGVfaWJfcDkvQ29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvdXNyL3RjZXRtcC9tb2R1bGVmaWxlcy9Db3JlOi91c3IvYXBwcy9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIiwKfQo=
+BBPATH=/mnt/bb_2742ed8befb1c3e7aae96670fd0bbbb8
+LSB_EXEC_HOSTTYPE=UNKNOWN_AUTO_DETECT
+LSB_DJOB_NUMPROC=41
+LSF_BINDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin
+LLNL_NUM_COMPUTE_NODES=1
+HISTCONTROL=ignoredups
+ENVIRONMENT=BATCH
+_CE_M=
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+CXX=mpicxx
+HOME=/g/g17/mtcampbe
+SHLVL=6
+__LMOD_REF_COUNT_PATH=/usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-8.3.1/bin:2;/usr/tce/packages/gcc/gcc-8.3.1/bin:2;/usr/tce/packages/lalloc/lalloc-2.0/bin:2;/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin:1;/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin:1;/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:1;/usr/tce/packages/cuda/cuda-10.1.243/bin:2;/usr/tcetmp/bin:2;/usr/condabin:1;/usr/lib64/qt-3.3/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/opt/ibm/spectrum_mpi/jsm_pmix/bin:1;/opt/ibm/bb/bin:1;/opt/ibm/flightlog/bin:1;/opt/ibutils/bin:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin:1
+JOB_TERMINATE_INTERVAL=10
+LSB_ACCT_FILE=/tmp/3537921.tmpdir/.1652777744.3537921.acct
+_ModuleTable002_=aW5hbCIsCn0sCmN1ZGEgPSB7CmZuID0gIi91c3IvdGNldG1wL21vZHVsZWZpbGVzL0NvcmUvY3VkYS8xMC4xLjI0My5sdWEiLApmdWxsTmFtZSA9ICJjdWRhLzEwLjEuMjQzIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJjdWRhLzEwLjEuMjQzIiwKd1YgPSAiXjAwMDAwMDEwLjAwMDAwMDAwMS4wMDAwMDAyNDMuKnpmaW5hbCIsCn0sCmdjYyA9IHsKZm4gPSAiL3Vzci90Y2V0bXAvbW9kdWxlZmlsZXMvQ29yZS9nY2MvOC4zLjEubHVhIiwKZnVsbE5hbWUgPSAiZ2NjLzguMy4xIiwKbG9hZE9yZGVyID0gNCwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUi
+CSM_ALLOCATION_ID=3615884
+BINARY_TYPE_HPC=
+LLNL_CORE_ISOLATION=2
+FC=mpif90
+LSB_SUB_HOST=lassen708
+XDG_CACHE_HOME=/tmp/mtcampbe/xdg-scratch
+__LSF_JOB_TMPDIR__=/tmp/3537921.tmpdir
+LSFUSER=mtcampbe
+LSB_SUB_USER=mtcampbe
+LSB_OUTPUTFILE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run/
+LSB_OUTDIR=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run
+LSB_MCPU_HOSTS=lassen710 1 lassen341 40 
+LMOD_arch=ppc64le
+TMP=/var/tmp
+MPI_ROOT=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release
+LSB_QUEUE=pbatch
+CONDA_PYTHON_EXE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/python
+LOGNAME=mtcampbe
+QTLIB=/usr/lib64/qt-3.3/lib
+CVS_RSH=ssh
+XLSF_UIDDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib/uid
+XDG_DATA_DIRS=/g/g17/mtcampbe/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+CEESD_CONDA_LASSEN=/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install
+SSH_CONNECTION=192.168.66.202 38958 192.168.65.87 22
+SYS_TYPE=blueos_3_ppc64le_ib_p9
+MODULESHOME=/usr/share/lmod/lmod
+LMOD_SETTARG_FULL_SUPPORT=no
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib:1
+PKG_CONFIG_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64/pkgconfig
+OMP_NUM_THREADS=1
+LSF_CGROUP_TOPDIR_KEY=lassen
+CONDA_DEFAULT_ENV=nozzle.lazy.timing.env
+LMOD_FULL_SETTARG_SUPPORT=no
+LMOD_FAMILY_COMPILER=gcc
+LSB_XFER_OP=
+LSB_EEXEC_REAL_GID=
+__LMOD_REF_COUNT_PKG_CONFIG_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64/pkgconfig:1
+CC=mpicc
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+LMOD_DIR=/usr/share/lmod/lmod/libexec
+LEXEC_UNPICKLE_QUIET=1
+__LMOD_REF_COUNT_MANPATH=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release/share/man:1;/usr/tce/packages/gcc/gcc-8.3.1/man:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/man:1;/usr/man:1;/usr/share/man:1;/usr/local/man:1;/usr/X11R6/man:1;/usr/lib64/mvapich/default/man:1;/opt/ibm/spectrum_mpi/jsm_pmix/share/man:1
+LSF_ENVDIR=/opt/ibm/spectrumcomputing/lsf/conf
+GUESTFISH_RESTORE=\e[0m
+LSB_DJOB_RANKFILE=/g/g17/mtcampbe/.lsbatch/1652777744.3537921.hostfile
+LMOD_FAMILY_MPI=spectrum-mpi
+LMOD_COLORIZE=yes
+HISTFILE=/g/g17/mtcampbe/.bash_history
+BASH_FUNC_module()=() {  local __lmod_my_status;
+ local __lmod_sh_dbg;
+ if [ -z "${LMOD_SH_DBG_ON+x}" ]; then
+ case "$-" in 
+ *v*x*)
+ __lmod_sh_dbg='vx'
+ ;;
+ *v*)
+ __lmod_sh_dbg='v'
+ ;;
+ *x*)
+ __lmod_sh_dbg='x'
+ ;;
+ esac;
+ fi;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ set +$__lmod_sh_dbg;
+ echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output" 1>&2;
+ fi;
+ eval "$($LMOD_CMD bash "$@")" && eval $(${LMOD_SETTARG_CMD:-:} -s sh);
+ __lmod_my_status=$?;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ echo "Shell debugging restarted" 1>&2;
+ set -$__lmod_sh_dbg;
+ fi;
+ return $__lmod_my_status
+}
+BASH_FUNC_ml()=() {  eval "$($LMOD_DIR/ml_cmd "$@")"
+}
+_=/usr/bin/env
+LSB_MCPU_HOSTS=lassen710 1 lassen341 40 
+Default casename isolator
+2022-05-17 01:55:55,752 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: timing_params.yaml
+Running ./isolator.py
+
+Shock capturing parameters: alpha 0.5, s0 -4.0, kappa 0.5
+
+#### Simluation control data: ####
+	nviz = 100
+	nrestart = 100
+	nhealth = 100
+	nstatus = 100
+	current_dt = 1e-08
+	t_final = 2e-07
+	order = 1
+	dimen = 2
+	Time integration rk4
+#### Simluation control data: ####
+
+
+#### Simluation material properties: ####
+	mu = 4.216360056e-05
+	kappa = 0.05621788139856423
+	Prandtl Number  = 0.75
+#### Simluation initialization data: ####
+	inlet Mach number 0.038727226466056475
+	inlet temperature 2075.8073416311686
+	inlet pressure 274212.0081934861
+	inlet rho 0.4623484671063763
+	inlet velocity 35.28896626974282
+	outlet Mach number 3.661995139955526
+	outlet temperature 563.9344091915701
+	outlet pressure 2865.7077436508835
+	outlet rho 0.01778579568979098
+	outlet velocity 1739.2462693097807
+#### Simluation initialization data: ####
+
+Reading mesh from data/isolator.msh
+2022-05-17 01:56:11,950 - INFO - meshmode.distributed - rank 0: sent all mesh partitions
+Making discretization
+./isolator.py:1100: DeprecationWarning: EagerDGDiscretization is deprecated and will go away in 2022. Use the base DiscretizationCollection with grudge.op instead.
+  discr = EagerDGDiscretization(
+Done making discretization
+2022-05-17 01:56:12,082 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:56:12,088 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:56:12,147 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:56:13,437 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.00 s)
+2022-05-17 01:56:13,441 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+Before restart/init
+Initializing soln.
+Initialization for Case(isolator)
+===
+Num 2d order-1 elements: 2504
+Num global elements: 2504
+Timestep:        1e-08
+Final time:      2e-07
+CFL:             1.0
+Constant CFL:    False
+Initialization:  isolator
+EOS:             IdealSingleGas
+
+2022-05-17 01:56:13,924 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:56:14,866 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:56:15,169 - INFO - meshmode.array_context - transform_dag.infer_axes_tags: completed (0.74s wall 1.00x CPU)
+2022-05-17 01:56:17,372 - INFO - loopy.tools - fuse_same_discretization_entity_loops on '_pt_kernel': completed (1.29s wall 1.00x CPU)
+2022-05-17 01:56:17,508 - INFO - meshmode.array_context - Loop Fusion: completed (1.53s wall 1.00x CPU)
+2022-05-17 01:56:17,791 - INFO - meshmode.array_context - Array Contraction: Contracting 10 temps
+2022-05-17 01:56:19,389 - INFO - loopy.tools - contract_arrays on '_pt_kernel': completed (1.60s wall 1.00x CPU)
+2022-05-17 01:56:19,544 - INFO - meshmode.array_context - Array Contraction: completed (1.85s wall 1.00x CPU)
+2022-05-17 01:56:21,365 - INFO - loopy.tools - preprocess_program on '_pt_kernel': completed (1.25s wall 1.00x CPU)
+2022-05-17 01:56:23,890 - INFO - loopy.check - _pt_kernel: check array access within bounds: completed (2.07s wall 1.00x CPU)
+2022-05-17 01:56:41,066 - INFO - loopy.codegen - _pt_kernel: generate code: completed (16.91s wall 1.00x CPU)
+2022-05-17 01:56:45,851 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (4.43 s)
+2022-05-17 01:56:45,893 - INFO - meshmode.pytato_utils - Unification converged after 0 iterations.
+2022-05-17 01:56:45,899 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:56:46,381 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2022-05-17 01:56:46,398 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 7 kept, 13 eliminated
+2022-05-17 01:56:46,431 - INFO - meshmode.pytato_utils - Unification converged after 2 iterations.
+2022-05-17 01:56:46,838 - INFO - meshmode.array_context - Array Contraction: Contracting 1 temps
+2022-05-17 01:56:48,382 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+2022-05-17 01:56:48,383 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+2022-05-17 01:56:48,384 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+2022-05-17 01:56:48,394 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2022-05-17 01:56:48,407 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2022-05-17 01:56:48,409 - INFO - meshmode.pytato_utils - Unification converged after 0 iterations.
+2022-05-17 01:56:48,567 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 10 encountered, 6 kept, 4 eliminated
+2022-05-17 01:56:48,588 - INFO - meshmode.pytato_utils - Unification converged after 2 iterations.
+2022-05-17 01:56:48,859 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2022-05-17 01:56:50,228 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-05-17 01:56:50,229 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-05-17 01:56:50,230 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-05-17 01:56:50,240 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 4 encountered, 4 kept, 0 eliminated
+2022-05-17 01:56:50,255 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:56:50,629 - INFO - meshmode.array_context - Array Contraction: Contracting 1 temps
+2022-05-17 01:56:51,402 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.40s wall 1.00x CPU)
+2022-05-17 01:56:52,597 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.19 s)
+2022-05-17 01:56:52,598 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.19 s)
+2022-05-17 01:56:52,599 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.19 s)
+2022-05-17 01:56:52,600 - INFO - pyopencl - build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.19 s)
+2022-05-17 01:56:52,601 - INFO - pyopencl - build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (1.19 s)
+2022-05-17 01:56:52,602 - INFO - pyopencl - build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (1.19 s)
+2022-05-17 01:56:52,610 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:56:52,612 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:56:52,644 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:56:53,218 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2022-05-17 01:56:53,228 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:56:53,252 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:56:53,385 - INFO - meshmode.array_context - Array Contraction: Contracting 3 temps
+2022-05-17 01:56:54,167 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.50 s)
+2022-05-17 01:56:54,787 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.61 s)
+2022-05-17 01:56:55,402 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+2022-05-17 01:56:55,405 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:56:55,409 - INFO - meshmode.pytato_utils - Unification converged after 0 iterations.
+2022-05-17 01:56:55,422 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/array_context.py:1606: UserWarning: FusionContractorArrayContext.transform_loopy_program not broad enough (yet). Falling back to a possibly slower transformation strategy.
+  warn("FusionContractorArrayContext.transform_loopy_program not"
+2022-05-17 01:56:55,920 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-05-17 01:56:55,925 - INFO - meshmode.pytato_utils - Unification converged after 0 iterations.
+2022-05-17 01:56:55,981 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 4 encountered, 4 kept, 0 eliminated
+2022-05-17 01:56:55,989 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:56:56,033 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:56:56,645 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+2022-05-17 01:56:57,260 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+2022-05-17 01:56:57,871 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+2022-05-17 01:56:57,872 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:56:57,874 - INFO - meshmode.pytato_utils - Unification converged after 0 iterations.
+2022-05-17 01:56:57,884 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:56:58,368 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-05-17 01:56:58,372 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 4 encountered, 4 kept, 0 eliminated
+2022-05-17 01:56:58,986 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.61 s)
+2022-05-17 01:56:59,598 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+2022-05-17 01:56:59,599 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:56:59,604 - INFO - meshmode.pytato_utils - Unification converged after 0 iterations.
+2022-05-17 01:56:59,617 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:00,113 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-05-17 01:57:00,117 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 4 encountered, 4 kept, 0 eliminated
+2022-05-17 01:57:00,119 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:57:00,121 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 4 encountered, 4 kept, 0 eliminated
+2022-05-17 01:57:00,129 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:00,174 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:00,789 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+2022-05-17 01:57:00,793 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 4 encountered, 4 kept, 0 eliminated
+2022-05-17 01:57:00,800 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:00,843 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+-------- dt = 1.000e-08, cfl = 0.0253
+-------- P (min, max) (Pa) = (2.865706984e+03, 2.742120082e+05)
+-------- T (min, max) (K)  = (    300, 2075.81)
+
+2022-05-17 01:57:01,452 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2022-05-17 01:57:01,457 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:57:01,459 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:57:01,462 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:57:01,464 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:57:01,480 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:01,482 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:01,498 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:02,057 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2022-05-17 01:57:02,060 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:02,061 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:02,063 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:02,250 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:02,252 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:02,339 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:02,340 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:02,341 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 4 encountered, 4 kept, 0 eliminated
+2022-05-17 01:57:02,350 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:02,376 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:03,033 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+2022-05-17 01:57:03,038 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 4 encountered, 4 kept, 0 eliminated
+2022-05-17 01:57:03,046 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:03,071 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:03,712 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+2022-05-17 01:57:03,716 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 4 encountered, 4 kept, 0 eliminated
+2022-05-17 01:57:03,726 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:03,754 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:04,416 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+2022-05-17 01:57:04,421 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 4 encountered, 4 kept, 0 eliminated
+2022-05-17 01:57:04,437 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:04,510 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:05,514 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-05-17 01:57:05,515 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-05-17 01:57:05,520 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:57:05,523 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:05,540 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:06,122 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+2022-05-17 01:57:06,125 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:57:06,127 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:06,137 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:06,159 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:06,753 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+2022-05-17 01:57:06,757 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 4 encountered, 4 kept, 0 eliminated
+2022-05-17 01:57:06,766 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:06,830 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:07,739 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.63 s)
+2022-05-17 01:57:07,741 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.63 s)
+2022-05-17 01:57:07,747 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 3 encountered, 3 kept, 0 eliminated
+2022-05-17 01:57:07,763 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:07,959 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:08,566 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.31s wall 1.00x CPU)
+2022-05-17 01:57:09,673 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.10 s)
+2022-05-17 01:57:09,673 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.10 s)
+2022-05-17 01:57:09,674 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.10 s)
+2022-05-17 01:57:09,674 - INFO - pyopencl - build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.10 s)
+2022-05-17 01:57:09,675 - INFO - pyopencl - build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (1.10 s)
+2022-05-17 01:57:09,683 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:57:09,705 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:09,821 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2022-05-17 01:57:10,913 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.66 s)
+2022-05-17 01:57:10,913 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.66 s)
+2022-05-17 01:57:10,925 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:10,926 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:10,927 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:10,927 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:10,928 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:10,929 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:10,930 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:10,931 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:10,935 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2022-05-17 01:57:10,941 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2022-05-17 01:57:10,954 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2022-05-17 01:57:10,959 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2022-05-17 01:57:10,971 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2022-05-17 01:57:10,983 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2022-05-17 01:57:10,995 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2022-05-17 01:57:11,089 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2022-05-17 01:57:11,103 - INFO - meshmode.pytato_utils - Unification converged after 0 iterations.
+2022-05-17 01:57:11,194 - INFO - meshmode.pytato_utils - Unification converged after 0 iterations.
+2022-05-17 01:57:11,269 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 10 encountered, 6 kept, 4 eliminated
+2022-05-17 01:57:11,289 - INFO - meshmode.pytato_utils - Unification converged after 2 iterations.
+2022-05-17 01:57:11,558 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2022-05-17 01:57:12,887 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-05-17 01:57:12,888 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-05-17 01:57:12,888 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-05-17 01:57:12,898 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 11 encountered, 7 kept, 4 eliminated
+2022-05-17 01:57:12,924 - INFO - meshmode.pytato_utils - Unification converged after 2 iterations.
+2022-05-17 01:57:13,168 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:14,468 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-05-17 01:57:14,468 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-05-17 01:57:14,468 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-05-17 01:57:14,479 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:14,481 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:14,502 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:15,020 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-05-17 01:57:15,040 - INFO - meshmode.pytato_utils - Unification converged after 0 iterations.
+2022-05-17 01:57:15,114 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 10 encountered, 6 kept, 4 eliminated
+2022-05-17 01:57:15,135 - INFO - meshmode.pytato_utils - Unification converged after 2 iterations.
+2022-05-17 01:57:15,403 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2022-05-17 01:57:16,735 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-05-17 01:57:16,735 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-05-17 01:57:16,735 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-05-17 01:57:16,745 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 11 encountered, 7 kept, 4 eliminated
+2022-05-17 01:57:16,771 - INFO - meshmode.pytato_utils - Unification converged after 2 iterations.
+2022-05-17 01:57:17,015 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:18,308 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.75 s)
+2022-05-17 01:57:18,309 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.75 s)
+2022-05-17 01:57:18,309 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.75 s)
+2022-05-17 01:57:18,318 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:18,321 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:18,340 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:18,858 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-05-17 01:57:18,862 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:18,864 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:18,885 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:19,404 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-05-17 01:57:19,427 - INFO - meshmode.pytato_utils - Unification converged after 0 iterations.
+2022-05-17 01:57:19,495 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 10 encountered, 6 kept, 4 eliminated
+2022-05-17 01:57:19,576 - INFO - meshmode.pytato_utils - Unification converged after 2 iterations.
+2022-05-17 01:57:19,847 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2022-05-17 01:57:21,208 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-05-17 01:57:21,208 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-05-17 01:57:21,209 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-05-17 01:57:21,219 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 11 encountered, 7 kept, 4 eliminated
+2022-05-17 01:57:21,247 - INFO - meshmode.pytato_utils - Unification converged after 2 iterations.
+2022-05-17 01:57:21,494 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:22,823 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-05-17 01:57:22,823 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-05-17 01:57:22,823 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-05-17 01:57:22,834 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:22,836 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:22,856 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:23,374 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-05-17 01:57:23,378 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:23,380 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:23,400 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:23,925 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-05-17 01:57:23,958 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 10 encountered, 6 kept, 4 eliminated
+2022-05-17 01:57:23,979 - INFO - meshmode.pytato_utils - Unification converged after 2 iterations.
+2022-05-17 01:57:24,248 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2022-05-17 01:57:25,604 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-05-17 01:57:25,604 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-05-17 01:57:25,605 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-05-17 01:57:25,617 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 11 encountered, 7 kept, 4 eliminated
+2022-05-17 01:57:25,643 - INFO - meshmode.pytato_utils - Unification converged after 2 iterations.
+2022-05-17 01:57:25,887 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:27,213 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-05-17 01:57:27,213 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-05-17 01:57:27,213 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-05-17 01:57:27,223 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:27,225 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:27,245 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:27,768 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-05-17 01:57:27,772 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:27,774 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:27,795 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:28,321 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-05-17 01:57:28,325 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:28,327 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:28,347 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:28,874 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-05-17 01:57:28,973 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 101 encountered, 8 kept, 93 eliminated
+2022-05-17 01:57:29,027 - INFO - meshmode.pytato_utils - Unification converged after 2 iterations.
+2022-05-17 01:57:29,586 - INFO - loopy.tools - fuse_same_discretization_entity_loops on '_pt_kernel': completed (0.40s wall 1.00x CPU)
+2022-05-17 01:57:29,603 - INFO - meshmode.array_context - Loop Fusion: completed (0.44s wall 1.00x CPU)
+2022-05-17 01:57:29,694 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:30,859 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.41s wall 1.00x CPU)
+2022-05-17 01:57:31,808 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.93 s)
+2022-05-17 01:57:31,808 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.93 s)
+2022-05-17 01:57:31,810 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.93 s)
+2022-05-17 01:57:31,811 - INFO - pyopencl - build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (0.93 s)
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/artificial_viscosity.py:180: UserWarning: The AV boundary_kwargs interface is deprecated, please pass gas_model and time directly.
+  warn("The AV boundary_kwargs interface is deprecated, please pass gas_model"
+2022-05-17 01:57:32,958 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1026 encountered, 54 kept, 972 eliminated
+2022-05-17 01:57:35,964 - INFO - meshmode.pytato_utils - Unification converged after 3 iterations.
+2022-05-17 01:57:38,835 - INFO - grudge.array_context - transform_dag.infer_axes_tags[pre-partition]: completed (4.52s wall 1.00x CPU)
+2022-05-17 01:57:39,893 - INFO - pytato.partition - find_partition: Split 3554 nodes into 1 parts, with [3554] nodes in each partition.
+2022-05-17 01:57:40,780 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 54 encountered, 54 kept, 0 eliminated
+2022-05-17 01:57:41,613 - INFO - meshmode.array_context - transform_dag.materialize_all_einsums_or_reduces: completed (0.49s wall 1.00x CPU)
+2022-05-17 01:57:43,252 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:46,355 - INFO - meshmode.array_context - transform_dag.infer_axes_tags: completed (4.74s wall 1.00x CPU)
+2022-05-17 01:57:46,511 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:46,514 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:46,536 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:47,080 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2022-05-17 01:57:47,084 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:47,086 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:47,121 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:47,834 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.52 s)
+2022-05-17 01:57:47,838 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:47,840 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:47,875 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:48,597 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.52 s)
+2022-05-17 01:57:48,601 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:48,603 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:48,637 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:49,346 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.52 s)
+2022-05-17 01:57:49,362 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:57:49,364 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:57:49,414 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:57:50,244 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.58 s)
+2022-05-17 01:57:50,749 - INFO - arraycontext.impl.pytato.compile - transform_dag: completed (10.51s wall 1.00x CPU)
+2022-05-17 01:57:57,425 - INFO - arraycontext.impl.pytato.compile - generate_loopy: completed (6.68s wall 1.00x CPU)
+2022-05-17 01:58:19,812 - INFO - loopy.tools - fuse_same_discretization_entity_loops on '_pt_kernel': completed (21.65s wall 1.00x CPU)
+2022-05-17 01:58:20,539 - INFO - meshmode.array_context - Loop Fusion: completed (23.10s wall 1.00x CPU)
+2022-05-17 01:58:24,626 - INFO - meshmode.array_context - Array Contraction: Contracting 194 temps
+2022-05-17 01:58:34,296 - INFO - loopy.tools - contract_arrays on '_pt_kernel': completed (9.68s wall 1.00x CPU)
+2022-05-17 01:58:34,834 - INFO - meshmode.array_context - Array Contraction: completed (10.77s wall 1.00x CPU)
+2022-05-17 01:58:43,549 - INFO - loopy.tools - preprocess_program on '_pt_kernel': completed (5.88s wall 1.00x CPU)
+2022-05-17 01:58:52,846 - INFO - loopy.check - _pt_kernel: check array access within bounds: completed (7.82s wall 1.00x CPU)
+2022-05-17 01:59:02,415 - INFO - loopy.schedule - _pt_kernel: schedule: completed (9.49s wall 1.00x CPU)
+2022-05-17 01:59:02,755 - INFO - arraycontext.impl.pytato.compile - transform_loopy_program: completed (65.33s wall 1.00x CPU)
+2022-05-17 01:59:27,430 - INFO - loopy.codegen - _pt_kernel: generate code: completed (23.40s wall 1.00x CPU)
+2022-05-17 01:59:38,515 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,517 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,519 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,519 - INFO - pyopencl - build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,520 - INFO - pyopencl - build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,522 - INFO - pyopencl - build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,523 - INFO - pyopencl - build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,525 - INFO - pyopencl - build program: kernel '_pt_kernel_6' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,527 - INFO - pyopencl - build program: kernel '_pt_kernel_7' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,529 - INFO - pyopencl - build program: kernel '_pt_kernel_8' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,530 - INFO - pyopencl - build program: kernel '_pt_kernel_9' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,532 - INFO - pyopencl - build program: kernel '_pt_kernel_10' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,533 - INFO - pyopencl - build program: kernel '_pt_kernel_11' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,535 - INFO - pyopencl - build program: kernel '_pt_kernel_12' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,536 - INFO - pyopencl - build program: kernel '_pt_kernel_13' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,538 - INFO - pyopencl - build program: kernel '_pt_kernel_14' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,539 - INFO - pyopencl - build program: kernel '_pt_kernel_15' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,540 - INFO - pyopencl - build program: kernel '_pt_kernel_16' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,542 - INFO - pyopencl - build program: kernel '_pt_kernel_17' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,544 - INFO - pyopencl - build program: kernel '_pt_kernel_18' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,545 - INFO - pyopencl - build program: kernel '_pt_kernel_19' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,547 - INFO - pyopencl - build program: kernel '_pt_kernel_20' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,549 - INFO - pyopencl - build program: kernel '_pt_kernel_21' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,550 - INFO - pyopencl - build program: kernel '_pt_kernel_22' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,552 - INFO - pyopencl - build program: kernel '_pt_kernel_23' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,556 - INFO - pyopencl - build program: kernel '_pt_kernel_24' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,557 - INFO - pyopencl - build program: kernel '_pt_kernel_25' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,559 - INFO - pyopencl - build program: kernel '_pt_kernel_26' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,560 - INFO - pyopencl - build program: kernel '_pt_kernel_27' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,562 - INFO - pyopencl - build program: kernel '_pt_kernel_28' was part of a lengthy source build resulting from a binary cache miss (10.39 s)
+2022-05-17 01:59:38,695 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:38,698 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:38,734 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:59:39,328 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+2022-05-17 01:59:39,332 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:39,335 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:39,548 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:39,549 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:39,553 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:39,554 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:39,555 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:39,556 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:39,560 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:39,563 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:39,598 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:59:40,184 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2022-05-17 01:59:40,187 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:40,191 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:40,404 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:40,405 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 0, sim time: 0.000000e+00 s, step walltime: 174.529 s
+2022-05-17 01:59:40,474 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:40,501 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:40,624 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:59:41,379 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+2022-05-17 01:59:41,398 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:41,420 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:41,752 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:41,757 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:41,758 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:41,759 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:41,760 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:41,764 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:41,765 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:41,766 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:41,767 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:41,771 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:41,772 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:41,773 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:41,774 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 1, sim time: 1.000000e-08 s, step walltime: 0.389072 s
+2022-05-17 01:59:41,782 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:41,810 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:42,211 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:42,215 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,220 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,222 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,223 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,224 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,228 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,229 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,230 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,231 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,235 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,236 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,237 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,238 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 2, sim time: 2.000000e-08 s, step walltime: 0.0399897 s
+2022-05-17 01:59:42,246 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:42,261 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:42,265 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,270 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,272 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,272 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,273 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,277 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,279 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,280 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,280 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,284 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,286 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,287 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,287 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 3, sim time: 3.000000e-08 s, step walltime: 0.0387099 s
+2022-05-17 01:59:42,295 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:42,311 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:42,315 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,320 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 4, sim time: 4.000000e-08 s, step walltime: 0.0391681 s
+2022-05-17 01:59:42,321 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,322 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,323 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,327 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,329 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,329 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,330 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,334 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,335 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,336 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,337 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,345 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:42,360 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:42,364 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,369 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,370 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,371 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,372 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,376 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,377 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,378 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,379 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,383 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 5, sim time: 5.000000e-08 s, step walltime: 0.0382471 s
+2022-05-17 01:59:42,384 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,385 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,386 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,394 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:42,410 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:42,414 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,419 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,420 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,421 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,422 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,426 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 6, sim time: 6.000000e-08 s, step walltime: 0.0383129 s
+2022-05-17 01:59:42,427 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,428 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,429 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,433 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,434 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,435 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,436 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,444 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:42,459 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:42,463 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,468 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,469 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 7, sim time: 7.000000e-08 s, step walltime: 0.0381248 s
+2022-05-17 01:59:42,470 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,471 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,475 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,476 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,477 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,478 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,482 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,483 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,484 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,485 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,492 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:42,508 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:42,512 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,517 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,518 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,520 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,521 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,524 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,526 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,526 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,527 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,531 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,532 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 8, sim time: 8.000000e-08 s, step walltime: 0.038322 s
+2022-05-17 01:59:42,533 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,534 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,542 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:42,557 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:42,562 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,567 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,568 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,569 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,569 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,574 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,575 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,576 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,577 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,581 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,582 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,583 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,583 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 9, sim time: 9.000000e-08 s, step walltime: 0.0392034 s
+2022-05-17 01:59:42,592 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:42,607 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:42,611 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,616 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,617 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,618 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,619 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,623 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,624 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,625 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,626 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,630 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,631 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,632 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,633 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 10, sim time: 1.000000e-07 s, step walltime: 0.038259 s
+2022-05-17 01:59:42,641 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:42,656 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:42,660 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,665 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,666 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,667 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,668 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,673 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,674 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,675 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,676 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,680 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,681 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,682 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,683 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 11, sim time: 1.100000e-07 s, step walltime: 0.0393548 s
+2022-05-17 01:59:42,691 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:42,705 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:42,710 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,715 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,716 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,717 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,718 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,722 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,723 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,724 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,725 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,729 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,730 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,731 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,731 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 12, sim time: 1.200000e-07 s, step walltime: 0.0382869 s
+2022-05-17 01:59:42,739 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:42,755 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:42,759 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,764 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,765 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,766 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,767 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,977 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,978 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,979 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,980 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,984 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,985 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,986 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:42,987 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 13, sim time: 1.300000e-07 s, step walltime: 0.245464 s
+2022-05-17 01:59:42,995 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:43,010 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:43,015 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,020 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,021 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,022 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,023 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,027 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,028 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,029 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,030 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,034 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,035 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,036 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,037 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 14, sim time: 1.400000e-07 s, step walltime: 0.0385671 s
+2022-05-17 01:59:43,044 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:43,060 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:43,065 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,070 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,071 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,072 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,073 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,077 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,078 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,079 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,080 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,084 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,085 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,086 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,087 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 15, sim time: 1.500000e-07 s, step walltime: 0.0396228 s
+2022-05-17 01:59:43,095 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:43,110 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:43,114 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,119 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,120 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,121 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,122 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,126 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,127 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,128 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,129 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,133 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,134 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,135 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,136 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 16, sim time: 1.600000e-07 s, step walltime: 0.0384991 s
+2022-05-17 01:59:43,144 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:43,160 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:43,164 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,169 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,170 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,171 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,172 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,176 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,177 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,178 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,179 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,183 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,184 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,185 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,186 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 17, sim time: 1.700000e-07 s, step walltime: 0.0386882 s
+2022-05-17 01:59:43,194 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:43,209 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:43,213 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,218 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,219 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,220 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,221 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,225 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,226 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,227 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,228 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,232 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,233 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,234 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,235 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 18, sim time: 1.800000e-07 s, step walltime: 0.0385795 s
+2022-05-17 01:59:43,243 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:43,259 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 6 encountered, 5 kept, 1 eliminated
+2022-05-17 01:59:43,263 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,268 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,272 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:43,307 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:59:43,894 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2022-05-17 01:59:43,898 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,900 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,900 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,904 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,906 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,907 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,907 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,911 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:43,915 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:43,950 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:59:44,537 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2022-05-17 01:59:44,542 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:44,543 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:44,544 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+step = 19, sim time: 1.900000e-07 s, step walltime: 1.29764 s
+Checkpointing final state ...
+2022-05-17 01:59:44,566 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 22 encountered, 21 kept, 1 eliminated
+2022-05-17 01:59:44,613 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:44,904 - INFO - meshmode.array_context - Array Contraction: Contracting 6 temps
+2022-05-17 01:59:45,910 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.51 s)
+2022-05-17 01:59:45,918 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:45,921 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:45,953 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:46,118 - INFO - meshmode.array_context - Array Contraction: Contracting 3 temps
+2022-05-17 01:59:46,966 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+2022-05-17 01:59:46,973 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:47,005 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:47,144 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2022-05-17 01:59:47,955 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+2022-05-17 01:59:47,962 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:47,965 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:47,968 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+2022-05-17 01:59:47,970 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 2 encountered, 2 kept, 0 eliminated
+-------- dt = 0.000e+00, cfl = 0.0228
+-------- P (min, max) (Pa) = (1.308488379e+03, 2.864123776e+05)
+-------- T (min, max) (K)  = (275.025, 2214.64)
+
+2022-05-17 01:59:47,976 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+2022-05-17 01:59:47,984 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:48,012 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:59:48,642 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+2022-05-17 01:59:48,646 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+2022-05-17 01:59:48,648 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+2022-05-17 01:59:48,650 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+2022-05-17 01:59:48,653 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:48,686 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:48,810 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:59:49,935 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-05-17 01:59:49,936 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-05-17 01:59:49,944 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:49,976 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:50,087 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:59:51,206 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-05-17 01:59:51,207 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-05-17 01:59:51,215 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:51,250 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:51,376 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:59:52,504 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.66 s)
+2022-05-17 01:59:52,505 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.66 s)
+2022-05-17 01:59:52,514 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 20 encountered, 20 kept, 0 eliminated
+2022-05-17 01:59:52,554 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:52,754 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:59:54,159 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.68 s)
+2022-05-17 01:59:54,161 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.68 s)
+2022-05-17 01:59:54,168 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 10 encountered, 10 kept, 0 eliminated
+2022-05-17 01:59:54,184 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:54,224 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:59:54,947 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+2022-05-17 01:59:54,952 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 10 encountered, 10 kept, 0 eliminated
+2022-05-17 01:59:54,955 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-05-17 01:59:54,959 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 16 encountered, 16 kept, 0 eliminated
+2022-05-17 01:59:54,986 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:55,122 - INFO - meshmode.array_context - Array Contraction: Contracting 1 temps
+2022-05-17 01:59:56,181 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-05-17 01:59:56,182 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-05-17 01:59:56,190 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 7 encountered, 7 kept, 0 eliminated
+2022-05-17 01:59:56,213 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:56,426 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 01:59:57,063 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.31s wall 1.00x CPU)
+2022-05-17 01:59:58,194 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.12 s)
+2022-05-17 01:59:58,194 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.12 s)
+2022-05-17 01:59:58,195 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.12 s)
+2022-05-17 01:59:58,195 - INFO - pyopencl - build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.12 s)
+2022-05-17 01:59:58,195 - INFO - pyopencl - build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (1.12 s)
+2022-05-17 01:59:58,206 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 22 encountered, 21 kept, 1 eliminated
+2022-05-17 01:59:58,254 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 01:59:58,495 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2022-05-17 01:59:59,973 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.68 s)
+2022-05-17 01:59:59,973 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.68 s)
+2022-05-17 01:59:59,987 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+2022-05-17 01:59:59,995 - INFO - meshmode.pytato_utils - Unification converged after 1 iterations.
+2022-05-17 02:00:00,039 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-05-17 02:00:00,647 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2022-05-17 02:00:00,652 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+2022-05-17 02:00:00,654 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+2022-05-17 02:00:00,656 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 5 encountered, 5 kept, 0 eliminated
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 3537921: <isolator_timing_job.sh> in cluster <lassen> Done
+
+Job <isolator_timing_job.sh> was submitted from host <lassen708> by user <mtcampbe> in cluster <lassen> at Tue May 17 01:55:44 2022
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <mtcampbe> in cluster <lassen> at Tue May 17 01:55:47 2022
+                            <40*lassen341>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run> was used as the working directory.
+Started at Tue May 17 01:55:47 2022
+Terminated at Tue May 17 02:00:37 2022
+Results reported at Tue May 17 02:00:37 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+#BSUB -nnodes 1
+#BSUB -G uiuc
+#BSUB -W 60
+#BSUB -q pbatch
+
+printf "Running with EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge\n"
+
+source "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/config/activate_env.sh"
+export PYOPENCL_CTX="port:tesla"
+export XDG_CACHE_HOME="/tmp/mtcampbe/xdg-scratch"
+rm -rf $XDG_CACHE_HOME
+rm -f timing-run-done
+which python
+conda env list
+env
+env | grep LSB_MCPU_HOSTS
+
+jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./isolator.py -i timing_params.yaml --lazy --log
+touch timing-run-done
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.23 sec.
+    Max Memory :                                 59 MB
+    Average Memory :                             57.64 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1634 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   291 sec.
+    Turnaround time :                            293 sec.
+
+The output (if any) is above this job summary.
+
