@@ -18,4 +18,4 @@ jobs:
         - uses: actions/checkout@v2
         - name: check-todays-data
           run: |
-             .ci-support/check-for-todays-data.sh nozzle_lazy_logs
+             .ci-support/check-for-latest-data.sh nozzle_lazy_logs
