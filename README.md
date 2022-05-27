@@ -6,6 +6,26 @@
 
 [![nozzle-timing](https://github.com/illinois-ceesd/timing/actions/workflows/nozzle-timing.yaml/badge.svg)](https://github.com/illinois-ceesd/timing/actions/workflows/nozzle-timing.yaml)
 
+# Current timing plots
+
+## Isolator - 2D inert
+
+![Isolator2D-inert-full](plots/isolator-full-recent.png)
+
+![Isolator2D-inert-step](plots/isolator-step-recent.png)
+
+## Nozzle - 2D single gas
+
+![Nozzle-full](plots/nozzle-full-recent.png)
+
+![Nozzle-step](plots/nozzle-step-recent.png)
+
+## Flame1D - 2D mixture with combustion
+
+![Flame1D-full](plots/flame1d-full-recent.png)
+
+![Flame1D-step](plots/flame1d-step-recent.png)
+
 # Automated timings for CEESD production-ish runs
 
 To run (should work anywhere):
