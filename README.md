@@ -10,19 +10,31 @@
 
 ## Isolator - 2D inert
 
+### Startup, compile, and step
+
 ![Isolator2D-inert-full](plots/isolator-full-recent.png)
+
+### Step details
 
 ![Isolator2D-inert-step](plots/isolator-step-recent.png)
 
 ## Nozzle - 2D single gas
 
+### Startup, compile, and step
+
 ![Nozzle-full](plots/nozzle-full-recent.png)
+
+### Step details
 
 ![Nozzle-step](plots/nozzle-step-recent.png)
 
 ## Flame1D - 2D mixture with combustion
 
+### Startup, compile, and step
+
 ![Flame1D-full](plots/flame1d-full-recent.png)
+
+### Step details
 
 ![Flame1D-step](plots/flame1d-step-recent.png)
 
