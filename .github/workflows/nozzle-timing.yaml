@@ -1,0 +1,21 @@
+name: nozzle-timing
+
+on:
+  pull_request:
+  push:
+    branches: main
+  schedule:
+  - cron:  '5 0 * * *'
+
+
+jobs:
+
+    flame1d:
+        name: nozzle-check
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v2
+        - name: check-todays-data
+          run: |
+             .ci-support/check-for-todays-data.sh nozzle_lazy_logs

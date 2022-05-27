@@ -1,0 +1,21 @@
+name: isolator-timing
+
+on:
+  pull_request:
+  push:
+    branches: main
+  schedule:
+  - cron:  '5 0 * * *'
+
+
+jobs:
+
+    isolator:
+        name: isolator-check
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v2
+        - name: check-todays-data
+          run: |
+             .ci-support/check-for-todays-data.sh isolator_logs
