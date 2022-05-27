@@ -97,7 +97,7 @@ def main():
     figheight=8
     if args.per_step:
         timing_names =  timing_names[-1:]
-        timing_labels = ["second 9 timesteps, per time step"]
+        timing_labels = ["walltime per time step"]
         scalfac = 1.0/9.0
         figheight=4
 
