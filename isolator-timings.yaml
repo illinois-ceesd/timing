@@ -1,0 +1,2797 @@
+run_date: 2021-10-25 07:52
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021deae8>
+run_epoch: 1635173553
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 50cd5dd5013e6b76bf77b08948c501fc9fdce63c
+y1_version: dbd1040a67afa13394d84034b621bd0002d1554e
+driver_version: d3e3a249eb8d2dc87c74e40fad476189958d98d8
+driver_md5sum: 52afd6cb8a7292f7c8c74fbc41cb8b55
+time_startup: 78.49684739112854
+time_first_step: 19.601019382476807
+time_first_10: 30.98439335823059
+time_second_10: 11.455154180526733
+---
+run_date: 2021-10-25 10:31
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10221ef48>
+run_epoch: 1635183108
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 50cd5dd5013e6b76bf77b08948c501fc9fdce63c
+y1_version: dbd1040a67afa13394d84034b621bd0002d1554e
+driver_version: d3e3a249eb8d2dc87c74e40fad476189958d98d8
+driver_md5sum: 52afd6cb8a7292f7c8c74fbc41cb8b55
+time_startup: 80.16429400444031
+time_first_step: 19.502933740615845
+time_first_10: 30.834182024002075
+time_second_10: 11.418399095535278
+---
+run_date: 2021-10-25 16:49
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10221f478>
+run_epoch: 1635205792
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 9cc8d602b51c50234ef0a4fe9b8981965801b473
+y1_version: aa767452638a11a4b358fde8b02abb84d2268d66
+driver_version: d3e3a249eb8d2dc87c74e40fad476189958d98d8
+driver_md5sum: 52afd6cb8a7292f7c8c74fbc41cb8b55
+time_startup: 97.82574367523193
+time_first_step: 331.8957805633545
+time_first_10: 333.09961223602295
+time_second_10: 1.2068214416503906
+comment: Lazy
+---
+run_date: 2021-10-26 02:57
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10221f228>
+run_epoch: 1635242247
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 9cc8d602b51c50234ef0a4fe9b8981965801b473
+y1_version: aa767452638a11a4b358fde8b02abb84d2268d66
+driver_version: d3e3a249eb8d2dc87c74e40fad476189958d98d8
+driver_md5sum: 52afd6cb8a7292f7c8c74fbc41cb8b55
+time_startup: 75.12670350074768
+time_first_step: 331.7913136482239
+time_first_10: 332.9933772087097
+time_second_10: 1.2033982276916504
+---
+run_date: 2021-10-26 07:04
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10215ed88>
+run_epoch: 1635257085
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 598519ece0150ec9e50631e29d0f58e9e5b33383
+y1_version: 598519ece0150ec9e50631e29d0f58e9e5b33383
+driver_version: d3e3a249eb8d2dc87c74e40fad476189958d98d8
+driver_md5sum: 52afd6cb8a7292f7c8c74fbc41cb8b55
+time_startup: 74.46069312095642
+time_first_step: 332.12797713279724
+time_first_10: 333.33514404296875
+time_second_10: 1.210108995437622
+---
+run_date: 2021-10-27 02:13
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102216cb8>
+run_epoch: 1635325995
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 35191f461ab57e69cb42b7354195d434a96ec099
+y1_version: 35191f461ab57e69cb42b7354195d434a96ec099
+driver_version: d3e3a249eb8d2dc87c74e40fad476189958d98d8
+driver_md5sum: 52afd6cb8a7292f7c8c74fbc41cb8b55
+time_startup: 83.83809208869934
+time_first_step: 331.15617990493774
+time_first_10: 332.36155891418457
+time_second_10: 1.2077929973602295
+---
+run_date: 2021-10-28 04:00
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102217788>
+run_epoch: 1635418859
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 35191f461ab57e69cb42b7354195d434a96ec099
+y1_version: 35191f461ab57e69cb42b7354195d434a96ec099
+driver_version: d3e3a249eb8d2dc87c74e40fad476189958d98d8
+driver_md5sum: 52afd6cb8a7292f7c8c74fbc41cb8b55
+time_startup: 162.651184797287
+time_first_step: 332.4496741294861
+time_first_10: 333.6794242858887
+time_second_10: 1.2297401428222656
+---
+run_date: 2021-10-29 02:04
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021d0b38>
+run_epoch: 1635498296
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 61de24ad3a66ae128b4ed5e11718824ba68ae25d
+y1_version: 61de24ad3a66ae128b4ed5e11718824ba68ae25d
+driver_version: 97ba48271a53ac8bf1113bcca50112f8b68b3651
+driver_md5sum: 1c122ef0b5d4b03a5d24d59d039ac7f8
+time_startup: 80.74994421005249
+time_first_step: 283.86808705329895
+time_first_10: 284.4893798828125
+time_second_10: 0.621025562286377
+---
+run_date: 2021-10-30 02:04
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021d0b58>
+run_epoch: 1635584674
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 52e7e14e9edfc3dce40790a59d732c4a095c00ba
+y1_version: 52e7e14e9edfc3dce40790a59d732c4a095c00ba
+driver_version: 97ba48271a53ac8bf1113bcca50112f8b68b3651
+driver_md5sum: 1c122ef0b5d4b03a5d24d59d039ac7f8
+time_startup: 77.23838210105896
+time_first_step: 284.6334569454193
+time_first_10: 285.25176453590393
+time_second_10: 0.6226708889007568
+---
+run_date: 2021-10-31 01:59
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021d0b38>
+run_epoch: 1635670751
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 52e7e14e9edfc3dce40790a59d732c4a095c00ba
+y1_version: 52e7e14e9edfc3dce40790a59d732c4a095c00ba
+driver_version: 97ba48271a53ac8bf1113bcca50112f8b68b3651
+driver_md5sum: 1c122ef0b5d4b03a5d24d59d039ac7f8
+time_startup: 80.82288479804993
+time_first_step: 285.33715200424194
+time_first_10: 285.9572012424469
+time_second_10: 0.6232650279998779
+---
+run_date: 2021-11-01 02:05
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021d07d8>
+run_epoch: 1635757549
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 52e7e14e9edfc3dce40790a59d732c4a095c00ba
+y1_version: 52e7e14e9edfc3dce40790a59d732c4a095c00ba
+driver_version: 97ba48271a53ac8bf1113bcca50112f8b68b3651
+driver_md5sum: 1c122ef0b5d4b03a5d24d59d039ac7f8
+time_startup: 81.66080331802368
+time_first_step: 284.8158826828003
+time_first_10: 285.438129901886
+time_second_10: 0.6219747066497803
+---
+run_date: 2021-11-02 02:08
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021ee028>
+run_epoch: 1635844092
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 0d0c040e50d1fc4cde62faaf946d2345a2726978
+y1_version: 0d0c040e50d1fc4cde62faaf946d2345a2726978
+driver_version: 97ba48271a53ac8bf1113bcca50112f8b68b3651
+driver_md5sum: 1c122ef0b5d4b03a5d24d59d039ac7f8
+time_startup: 73.38585710525513
+time_first_step: 282.7612113952637
+time_first_10: 283.3778154850006
+time_second_10: 0.6187276840209961
+---
+run_date: 2021-11-03 02:27
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021ee028>
+run_epoch: 1635931639
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 0d0c040e50d1fc4cde62faaf946d2345a2726978
+y1_version: 0d0c040e50d1fc4cde62faaf946d2345a2726978
+driver_version: 97ba48271a53ac8bf1113bcca50112f8b68b3651
+driver_md5sum: 1c122ef0b5d4b03a5d24d59d039ac7f8
+time_startup: 75.84283900260925
+time_first_step: 281.6349837779999
+time_first_10: 282.25684809684753
+time_second_10: 0.6236827373504639
+---
+run_date: 2021-11-04 02:09
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10222ee88>
+run_epoch: 1636016996
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 6e8bf715c37048ba662a42b2dba32f9085b6e337
+y1_version: 6e8bf715c37048ba662a42b2dba32f9085b6e337
+driver_version: 28f560a4cad96bbaa45958e6ef4348012cddeb41
+driver_md5sum: 3a694e532fe8e18d3c060d23b2d6ce51
+time_startup: 81.05308032035828
+time_first_step: 284.07324290275574
+time_first_10: 284.69954085350037
+time_second_10: 0.6217923164367676
+---
+run_date: 2021-11-10 16:36
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021af8e8>
+run_epoch: 1636591000
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 0f6c0ec05db0f63ec7b30a3ae6cccef180d476a3
+y1_version: 0f6c0ec05db0f63ec7b30a3ae6cccef180d476a3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 104.44778180122375
+time_first_step: 291.0855360031128
+time_first_10: 291.66617465019226
+time_second_10: 0.5809195041656494
+---
+run_date: 2021-11-11 08:52
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10222f8e8>
+run_epoch: 1636649559
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 0f6c0ec05db0f63ec7b30a3ae6cccef180d476a3
+y1_version: 0f6c0ec05db0f63ec7b30a3ae6cccef180d476a3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 68.36658191680908
+time_first_step: 291.475204706192
+time_first_10: 292.060622215271
+time_second_10: 0.5840349197387695
+---
+run_date: 2021-11-13 02:07
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10222f8e8>
+run_epoch: 1636798025
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 0f6c0ec05db0f63ec7b30a3ae6cccef180d476a3
+y1_version: 0f6c0ec05db0f63ec7b30a3ae6cccef180d476a3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 61.00294375419617
+time_first_step: 291.1052215099335
+time_first_10: 291.6855673789978
+time_second_10: 0.5810487270355225
+---
+run_date: 2021-11-14 02:04
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10222f4f8>
+run_epoch: 1636884284
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 0f6c0ec05db0f63ec7b30a3ae6cccef180d476a3
+y1_version: 0f6c0ec05db0f63ec7b30a3ae6cccef180d476a3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 59.371325969696045
+time_first_step: 291.7579758167267
+time_first_10: 292.34171986579895
+time_second_10: 0.5830197334289551
+---
+run_date: 2021-11-15 02:10
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10222f488>
+run_epoch: 1636971020
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 0f6c0ec05db0f63ec7b30a3ae6cccef180d476a3
+y1_version: 0f6c0ec05db0f63ec7b30a3ae6cccef180d476a3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 99.01934719085693
+time_first_step: 292.3496165275574
+time_first_10: 292.94424843788147
+time_second_10: 0.5895280838012695
+---
+run_date: 2021-11-16 02:05
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10222f618>
+run_epoch: 1637057122
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 0f6c0ec05db0f63ec7b30a3ae6cccef180d476a3
+y1_version: 0f6c0ec05db0f63ec7b30a3ae6cccef180d476a3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 81.98483347892761
+time_first_step: 291.4625492095947
+time_first_10: 292.0466306209564
+time_second_10: 0.587285041809082
+---
+run_date: 2021-11-17 02:05
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10222f548>
+run_epoch: 1637143542
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 0f6c0ec05db0f63ec7b30a3ae6cccef180d476a3
+y1_version: 0f6c0ec05db0f63ec7b30a3ae6cccef180d476a3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 93.1847288608551
+time_first_step: 291.894900560379
+time_first_10: 292.47860622406006
+time_second_10: 0.5846915245056152
+---
+run_date: 2021-11-19 02:11
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10216ebe8>
+run_epoch: 1637316667
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: ab9283f288e36a87ac11dca0c54af750507d30e7
+y1_version: ab9283f288e36a87ac11dca0c54af750507d30e7
+driver_version: 3f8a162da3509adfe51bc98671ebee17a59eeeb6
+driver_md5sum: db7abdc13704d5dc213a6633c0327820
+time_startup: 67.55095219612122
+time_first_step: 171.24847531318665
+time_first_10: 172.7434802055359
+time_second_10: 0.5092864036560059
+---
+run_date: 2021-11-25 02:07
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10222f598>
+run_epoch: 1637834827
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+y1_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 74.84266209602356
+time_first_step: 291.8027765750885
+time_first_10: 292.3848316669464
+time_second_10: 0.582205057144165
+---
+run_date: 2021-11-26 02:10
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10222f8e8>
+run_epoch: 1637921411
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+y1_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 93.08465313911438
+time_first_step: 291.21540355682373
+time_first_10: 291.795729637146
+time_second_10: 0.5804867744445801
+---
+run_date: 2021-11-27 02:06
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10222f548>
+run_epoch: 1638007580
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+y1_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 74.59158205986023
+time_first_step: 291.92700815200806
+time_first_10: 292.5106086730957
+time_second_10: 0.5819370746612549
+---
+run_date: 2021-11-28 01:58
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10222f8e8>
+run_epoch: 1638093507
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+y1_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 73.77414178848267
+time_first_step: 291.47209787368774
+time_first_10: 292.0547046661377
+time_second_10: 0.5802316665649414
+---
+run_date: 2021-11-29 02:06
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10222f8e8>
+run_epoch: 1638180401
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+y1_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 71.88322138786316
+time_first_step: 292.32006311416626
+time_first_10: 292.9079518318176
+time_second_10: 0.5924828052520752
+---
+run_date: 2021-11-30 02:07
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021adc38>
+run_epoch: 1638266837
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+y1_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 73.37810349464417
+time_first_step: 292.2011728286743
+time_first_10: 292.78287267684937
+time_second_10: 0.5817246437072754
+---
+run_date: 2021-12-01 02:06
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10212e3a8>
+run_epoch: 1638353160
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+y1_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 66.62099289894104
+time_first_step: 291.7163543701172
+time_first_10: 292.3069751262665
+time_second_10: 0.5894122123718262
+---
+run_date: 2021-12-02 02:06
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10212e6a8>
+run_epoch: 1638439592
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+y1_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 64.20685362815857
+time_first_step: 291.96122550964355
+time_first_10: 292.5430016517639
+time_second_10: 0.5812151432037354
+---
+run_date: 2021-12-03 02:08
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021adc38>
+run_epoch: 1638526112
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+y1_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 104.99184465408325
+time_first_step: 291.6787633895874
+time_first_10: 292.2565448284149
+time_second_10: 0.5741510391235352
+---
+run_date: 2021-12-04 02:16
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021adc38>
+run_epoch: 1638612960
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+y1_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 89.98044943809509
+time_first_step: 295.4213604927063
+time_first_10: 296.02236437797546
+time_second_10: 0.5852282047271729
+---
+run_date: 2021-12-05 02:12
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021adc38>
+run_epoch: 1638699144
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+y1_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 108.59737420082092
+time_first_step: 292.17704153060913
+time_first_10: 292.7585082054138
+time_second_10: 0.580669641494751
+---
+run_date: 2021-12-06 02:08
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021adc38>
+run_epoch: 1638785339
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+y1_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 95.81654834747314
+time_first_step: 291.7382047176361
+time_first_10: 292.3170597553253
+time_second_10: 0.5759468078613281
+---
+run_date: 2021-12-07 02:08
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021aea08>
+run_epoch: 1638871706
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+y1_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 85.83273506164551
+time_first_step: 292.42243790626526
+time_first_10: 293.0160536766052
+time_second_10: 0.5888810157775879
+---
+run_date: 2021-12-08 01:41
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021ee738>
+run_epoch: 1638956511
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+y1_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 89.43843936920166
+time_first_step: 291.1751217842102
+time_first_10: 291.78030705451965
+time_second_10: 0.6027920246124268
+---
+run_date: 2021-12-09 02:09
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021edc38>
+run_epoch: 1639044586
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+y1_version: bda26ab4905fa0c6bb11b837fd85e0ba2db3fed3
+driver_version: 27df31177b3862d972f5aa2c1b34f59658e2b8f9
+driver_md5sum: 70c14c30596f7ddd4db10a8b4a38f57c
+time_startup: 91.6253445148468
+time_first_step: 291.7876420021057
+time_first_10: 292.39190101623535
+time_second_10: 0.7707729339599609
+---
+run_date: 2021-12-09 21:37
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102237828>
+run_epoch: 1639114654
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 96f65e66f8de338a0a2274810b7a7b9ec707dafd
+y1_version: 96f65e66f8de338a0a2274810b7a7b9ec707dafd
+driver_version: 4c67e47048730e2216ef19fc475fbe7fdc77aad4
+driver_md5sum: b58dd53104e372a6986924db478fefd7
+time_startup: 101.66816926002502
+time_first_step: 286.2655522823334
+time_first_10: 286.8268229961395
+time_second_10: 0.5608665943145752
+---
+run_date: 2021-12-10 03:56
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102237678>
+run_epoch: 1639137371
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: eddf5deed80c18d2f02b5fa87b2af738aafc0ae9
+y1_version: eddf5deed80c18d2f02b5fa87b2af738aafc0ae9
+driver_version: 4c67e47048730e2216ef19fc475fbe7fdc77aad4
+driver_md5sum: b58dd53104e372a6986924db478fefd7
+time_startup: 74.41677618026733
+time_first_step: 286.61958169937134
+time_first_10: 287.1822168827057
+time_second_10: 0.5661113262176514
+---
+run_date: 2021-12-11 03:52
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102237678>
+run_epoch: 1639223567
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: eddf5deed80c18d2f02b5fa87b2af738aafc0ae9
+y1_version: eddf5deed80c18d2f02b5fa87b2af738aafc0ae9
+driver_version: 4c67e47048730e2216ef19fc475fbe7fdc77aad4
+driver_md5sum: b58dd53104e372a6986924db478fefd7
+time_startup: 82.56653261184692
+time_first_step: 286.8517608642578
+time_first_10: 287.4143705368042
+time_second_10: 0.5656077861785889
+---
+run_date: 2021-12-12 02:07
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102237cf8>
+run_epoch: 1639303620
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: a11fd4c251e4f94b01dca9b6554f7b669f7c77d8
+y1_version: a11fd4c251e4f94b01dca9b6554f7b669f7c77d8
+driver_version: 0ca0d71421de49503bedb310f790f632cd46083d
+driver_md5sum: b40d229f9520ae9df7cdaef040cf80a0
+time_startup: 98.83486413955688
+time_first_step: 287.08141016960144
+time_first_10: 287.64825916290283
+time_second_10: 0.5714061260223389
+---
+run_date: 2021-12-13 01:54
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102237d28>
+run_epoch: 1639389288
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: d052e57b02d776e7cbeb9abb6bf411907cff4037
+y1_version: d052e57b02d776e7cbeb9abb6bf411907cff4037
+driver_version: 0ca0d71421de49503bedb310f790f632cd46083d
+driver_md5sum: b40d229f9520ae9df7cdaef040cf80a0
+time_startup: 65.82474160194397
+time_first_step: 285.7953269481659
+time_first_10: 286.3623757362366
+time_second_10: 0.5610480308532715
+---
+run_date: 2021-12-14 02:07
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022375f8>
+run_epoch: 1639476462
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: e2605f4f73a77cf404cc151e63cec599c4c7ac15
+y1_version: e2605f4f73a77cf404cc151e63cec599c4c7ac15
+driver_version: 0ca0d71421de49503bedb310f790f632cd46083d
+driver_md5sum: b40d229f9520ae9df7cdaef040cf80a0
+time_startup: 84.5358018875122
+time_first_step: 290.9259788990021
+time_first_10: 291.6934971809387
+time_second_10: 0.5773663520812988
+---
+run_date: 2021-12-15 02:06
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102237678>
+run_epoch: 1639562816
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: e2605f4f73a77cf404cc151e63cec599c4c7ac15
+y1_version: e2605f4f73a77cf404cc151e63cec599c4c7ac15
+driver_version: 0ca0d71421de49503bedb310f790f632cd46083d
+driver_md5sum: b40d229f9520ae9df7cdaef040cf80a0
+time_startup: 97.30173707008362
+time_first_step: 291.584290266037
+time_first_10: 292.15744185447693
+time_second_10: 0.5709688663482666
+---
+run_date: 2021-12-16 02:07
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022376c8>
+run_epoch: 1639649270
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 9fdf80389b9cb02014e1cd022f099c229788abe8
+y1_version: 9fdf80389b9cb02014e1cd022f099c229788abe8
+driver_version: 0ca0d71421de49503bedb310f790f632cd46083d
+driver_md5sum: b40d229f9520ae9df7cdaef040cf80a0
+time_startup: 80.74100875854492
+time_first_step: 291.574161529541
+time_first_10: 292.15096402168274
+time_second_10: 0.5777626037597656
+---
+run_date: 2021-12-17 02:09
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022376c8>
+run_epoch: 1639735778
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 5befae0891530e5f8e16b3fa65f33d6ecd652f8f
+y1_version: 5befae0891530e5f8e16b3fa65f33d6ecd652f8f
+driver_version: 0ca0d71421de49503bedb310f790f632cd46083d
+driver_md5sum: b40d229f9520ae9df7cdaef040cf80a0
+time_startup: 78.23249936103821
+time_first_step: 292.3892126083374
+time_first_10: 292.9629340171814
+time_second_10: 0.571911096572876
+---
+run_date: 2021-12-18 02:08
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102237868>
+run_epoch: 1639822131
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: acb0bfbb95bf3ccbf14bc47bbece6969408aa0c1
+y1_version: acb0bfbb95bf3ccbf14bc47bbece6969408aa0c1
+driver_version: 90282a3fc89046e7dfa684c5b1acc7b02ab4844c
+driver_md5sum: 37dd769c7c5c1955f346e719a79153d0
+time_startup: 76.80297899246216
+time_first_step: 293.0033497810364
+time_first_10: 293.57899475097656
+time_second_10: 0.5753676891326904
+---
+run_date: 2021-12-19 02:09
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102237868>
+run_epoch: 1639908583
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: acb0bfbb95bf3ccbf14bc47bbece6969408aa0c1
+y1_version: acb0bfbb95bf3ccbf14bc47bbece6969408aa0c1
+driver_version: 90282a3fc89046e7dfa684c5b1acc7b02ab4844c
+driver_md5sum: 37dd769c7c5c1955f346e719a79153d0
+time_startup: 98.93309998512268
+time_first_step: 292.29851508140564
+time_first_10: 292.8656327724457
+time_second_10: 0.5676181316375732
+---
+run_date: 2021-12-20 02:10
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102237b48>
+run_epoch: 1639995016
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 4aa86eae17c278626bfb7f968d7c6b7bc2613a1b
+y1_version: 4aa86eae17c278626bfb7f968d7c6b7bc2613a1b
+driver_version: 90282a3fc89046e7dfa684c5b1acc7b02ab4844c
+driver_md5sum: 37dd769c7c5c1955f346e719a79153d0
+time_startup: 69.5975284576416
+time_first_step: 294.96223616600037
+time_first_10: 295.53631472587585
+time_second_10: 0.6021728515625
+---
+run_date: 2021-12-21 02:10
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102237b38>
+run_epoch: 1640081408
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+y1_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+driver_version: 90282a3fc89046e7dfa684c5b1acc7b02ab4844c
+driver_md5sum: 37dd769c7c5c1955f346e719a79153d0
+time_startup: 80.60350370407104
+time_first_step: 295.49654364585876
+time_first_10: 296.0713276863098
+time_second_10: 0.5753426551818848
+---
+run_date: 2021-12-22 02:09
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102267828>
+run_epoch: 1640167757
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+y1_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+driver_version: 90282a3fc89046e7dfa684c5b1acc7b02ab4844c
+driver_md5sum: 37dd769c7c5c1955f346e719a79153d0
+time_startup: 77.96714091300964
+time_first_step: 294.7235336303711
+time_first_10: 295.297819852829
+time_second_10: 0.5730047225952148
+---
+run_date: 2021-12-23 02:25
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102267828>
+run_epoch: 1640255148
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+y1_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+driver_version: 90282a3fc89046e7dfa684c5b1acc7b02ab4844c
+driver_md5sum: 37dd769c7c5c1955f346e719a79153d0
+time_startup: 64.92442059516907
+time_first_step: 294.65953159332275
+time_first_10: 295.2349212169647
+time_second_10: 0.574852466583252
+---
+run_date: 2021-12-24 02:11
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102267818>
+run_epoch: 1640340708
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+y1_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+driver_version: d0926f19aefbf8f915f052f8c76b78e7ed0d02c3
+driver_md5sum: 37dd769c7c5c1955f346e719a79153d0
+time_startup: 87.56876707077026
+time_first_step: 294.6638307571411
+time_first_10: 295.2400851249695
+time_second_10: 0.5770087242126465
+---
+run_date: 2021-12-25 02:11
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10225e698>
+run_epoch: 1640427116
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+y1_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+driver_version: d0926f19aefbf8f915f052f8c76b78e7ed0d02c3
+driver_md5sum: 37dd769c7c5c1955f346e719a79153d0
+time_startup: 69.31520128250122
+time_first_step: 294.82219195365906
+time_first_10: 295.39839935302734
+time_second_10: 0.5745084285736084
+---
+run_date: 2021-12-26 02:08
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10225e6e8>
+run_epoch: 1640513293
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+y1_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+driver_version: d0926f19aefbf8f915f052f8c76b78e7ed0d02c3
+driver_md5sum: 37dd769c7c5c1955f346e719a79153d0
+time_startup: 96.87674307823181
+time_first_step: 294.8519616127014
+time_first_10: 295.45990347862244
+time_second_10: 0.5748882293701172
+---
+run_date: 2021-12-28 02:09
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10225e648>
+run_epoch: 1640686194
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+y1_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+driver_version: d0926f19aefbf8f915f052f8c76b78e7ed0d02c3
+driver_md5sum: 37dd769c7c5c1955f346e719a79153d0
+time_startup: 102.40142631530762
+time_first_step: 290.53313994407654
+time_first_10: 291.10920000076294
+time_second_10: 0.5690398216247559
+---
+run_date: 2021-12-29 02:10
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10225e648>
+run_epoch: 1640772645
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+y1_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+driver_version: d0926f19aefbf8f915f052f8c76b78e7ed0d02c3
+driver_md5sum: 37dd769c7c5c1955f346e719a79153d0
+time_startup: 82.56341791152954
+time_first_step: 289.9997310638428
+time_first_10: 290.56990361213684
+time_second_10: 0.57240891456604
+---
+run_date: 2021-12-30 02:14
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10219f598>
+run_epoch: 1640859275
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+y1_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+driver_version: d0926f19aefbf8f915f052f8c76b78e7ed0d02c3
+driver_md5sum: 37dd769c7c5c1955f346e719a79153d0
+time_startup: 110.51204466819763
+time_first_step: 290.0464951992035
+time_first_10: 290.6193675994873
+time_second_10: 0.5773694515228271
+---
+run_date: 2021-12-31 02:08
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10225f3f8>
+run_epoch: 1640945335
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+y1_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+driver_version: d0926f19aefbf8f915f052f8c76b78e7ed0d02c3
+driver_md5sum: 37dd769c7c5c1955f346e719a79153d0
+time_startup: 97.06708478927612
+time_first_step: 290.55392718315125
+time_first_10: 291.12672114372253
+time_second_10: 0.5726265907287598
+---
+run_date: 2022-01-01 10:18
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10225f8c8>
+run_epoch: 1641061133
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+y1_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+driver_version: d0926f19aefbf8f915f052f8c76b78e7ed0d02c3
+driver_md5sum: 37dd769c7c5c1955f346e719a79153d0
+time_startup: 110.54622554779053
+time_first_step: 291.13965225219727
+time_first_10: 291.7138442993164
+time_second_10: 0.5743160247802734
+---
+run_date: 2022-01-02 02:02
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10225f3f8>
+run_epoch: 1641117736
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+y1_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+driver_version: d0926f19aefbf8f915f052f8c76b78e7ed0d02c3
+driver_md5sum: 37dd769c7c5c1955f346e719a79153d0
+time_startup: 67.34501028060913
+time_first_step: 290.06527614593506
+time_first_10: 290.6372857093811
+time_second_10: 0.571197509765625
+---
+run_date: 2022-01-03 02:16
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10229f168>
+run_epoch: 1641204983
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+y1_version: 19f5029f567c5ef9208d1c96a7e5346f24785e33
+driver_version: d0926f19aefbf8f915f052f8c76b78e7ed0d02c3
+driver_md5sum: 37dd769c7c5c1955f346e719a79153d0
+time_startup: 93.15695405006409
+time_first_step: 290.64443254470825
+time_first_10: 291.21459197998047
+time_second_10: 0.5639326572418213
+---
+run_date: 2022-01-14 07:17
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102298638>
+run_epoch: 1642173464
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: d443de1bf2848acdf4b96db57a3c82b2852db5af
+driver_md5sum: 12500dca9a65825dd7f4c0091f84e9a2
+time_startup: 80.95466208457947
+time_first_step: 298.1043002605438
+time_first_10: 298.6715462207794
+time_second_10: 0.5673673152923584
+---
+run_date: 2022-01-15 02:17
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10229e9b8>
+run_epoch: 1642241855
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: d443de1bf2848acdf4b96db57a3c82b2852db5af
+driver_md5sum: 12500dca9a65825dd7f4c0091f84e9a2
+time_startup: 74.4979202747345
+time_first_step: 300.086448431015
+time_first_10: 300.6550467014313
+time_second_10: 0.5670821666717529
+---
+run_date: 2022-01-16 02:12
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10229ea38>
+run_epoch: 1642327977
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: d443de1bf2848acdf4b96db57a3c82b2852db5af
+driver_md5sum: 12500dca9a65825dd7f4c0091f84e9a2
+time_startup: 62.957809925079346
+time_first_step: 300.0831518173218
+time_first_10: 300.6565556526184
+time_second_10: 0.5712943077087402
+---
+run_date: 2022-01-17 02:15
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022dea88>
+run_epoch: 1642414522
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: d443de1bf2848acdf4b96db57a3c82b2852db5af
+driver_md5sum: 12500dca9a65825dd7f4c0091f84e9a2
+time_startup: 95.55057764053345
+time_first_step: 300.8061258792877
+time_first_10: 301.38548135757446
+time_second_10: 0.5801529884338379
+---
+run_date: 2022-01-18 02:19
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022dea88>
+run_epoch: 1642501143
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: d443de1bf2848acdf4b96db57a3c82b2852db5af
+driver_md5sum: 12500dca9a65825dd7f4c0091f84e9a2
+time_startup: 88.79275608062744
+time_first_step: 300.2407796382904
+time_first_10: 300.8140423297882
+time_second_10: 0.5689904689788818
+---
+run_date: 2022-01-19 06:23
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10229f238>
+run_epoch: 1642602234
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: d443de1bf2848acdf4b96db57a3c82b2852db5af
+driver_md5sum: 12500dca9a65825dd7f4c0091f84e9a2
+time_startup: 105.52765893936157
+time_first_step: 300.1493241786957
+time_first_10: 300.73428082466125
+time_second_10: 0.5824933052062988
+---
+run_date: 2022-01-20 02:22
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022ddc68>
+run_epoch: 1642674149
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: d443de1bf2848acdf4b96db57a3c82b2852db5af
+driver_md5sum: 12500dca9a65825dd7f4c0091f84e9a2
+time_startup: 79.73711967468262
+time_first_step: 300.08251094818115
+time_first_10: 300.66118144989014
+time_second_10: 0.5709273815155029
+---
+run_date: 2022-01-21 02:13
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022de058>
+run_epoch: 1642760002
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: d443de1bf2848acdf4b96db57a3c82b2852db5af
+driver_md5sum: 12500dca9a65825dd7f4c0091f84e9a2
+time_startup: 77.92677521705627
+time_first_step: 300.9098708629608
+time_first_10: 301.4970088005066
+time_second_10: 0.5888772010803223
+---
+run_date: 2022-01-22 02:10
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022de058>
+run_epoch: 1642846237
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: d443de1bf2848acdf4b96db57a3c82b2852db5af
+driver_md5sum: 12500dca9a65825dd7f4c0091f84e9a2
+time_startup: 61.71747279167175
+time_first_step: 298.0973320007324
+time_first_10: 298.71624541282654
+time_second_10: 0.42540884017944336
+---
+run_date: 2022-01-23 02:11
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022de058>
+run_epoch: 1642932684
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: d443de1bf2848acdf4b96db57a3c82b2852db5af
+driver_md5sum: 12500dca9a65825dd7f4c0091f84e9a2
+time_startup: 61.54179000854492
+time_first_step: 298.7649052143097
+time_first_10: 299.18173718452454
+time_second_10: 0.41339898109436035
+---
+run_date: 2022-01-24 02:12
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022de058>
+run_epoch: 1643019127
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: d443de1bf2848acdf4b96db57a3c82b2852db5af
+driver_md5sum: 12500dca9a65825dd7f4c0091f84e9a2
+time_startup: 73.67521381378174
+time_first_step: 298.5656156539917
+time_first_10: 298.98321437835693
+time_second_10: 0.6257472038269043
+---
+run_date: 2022-01-25 02:11
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022de298>
+run_epoch: 1643105475
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: d443de1bf2848acdf4b96db57a3c82b2852db5af
+driver_md5sum: 12500dca9a65825dd7f4c0091f84e9a2
+time_startup: 74.41181993484497
+time_first_step: 298.9105472564697
+time_first_10: 299.32734966278076
+time_second_10: 0.4132521152496338
+---
+run_date: 2022-01-26 02:14
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022de3d8>
+run_epoch: 1643192096
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: d443de1bf2848acdf4b96db57a3c82b2852db5af
+driver_md5sum: 12500dca9a65825dd7f4c0091f84e9a2
+time_startup: 106.38675570487976
+time_first_step: 298.4593698978424
+time_first_10: 298.8770999908447
+time_second_10: 0.4128437042236328
+---
+run_date: 2022-01-27 02:18
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022de298>
+run_epoch: 1643278682
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: d443de1bf2848acdf4b96db57a3c82b2852db5af
+driver_md5sum: 12500dca9a65825dd7f4c0091f84e9a2
+time_startup: 81.70603513717651
+time_first_step: 299.0232284069061
+time_first_10: 299.4378967285156
+time_second_10: 0.4113008975982666
+---
+run_date: 2022-01-28 02:25
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022d79a8>
+run_epoch: 1643365522
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: d443de1bf2848acdf4b96db57a3c82b2852db5af
+driver_md5sum: 12500dca9a65825dd7f4c0091f84e9a2
+time_startup: 58.466272830963135
+time_first_step: 298.2792954444885
+time_first_10: 298.69598865509033
+time_second_10: 0.41610050201416016
+---
+run_date: 2022-01-29 02:16
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10222f008>
+run_epoch: 1643451384
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: bd6085e34ca878594c3d4745d0932ede0f5b0e40
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 66.91453695297241
+time_first_step: 297.0206296443939
+time_first_10: 297.44474029541016
+time_second_10: 0.42028355598449707
+---
+run_date: 2022-01-30 02:06
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10222f028>
+run_epoch: 1643537201
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: bd6085e34ca878594c3d4745d0932ede0f5b0e40
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 62.07574534416199
+time_first_step: 296.2975389957428
+time_first_10: 296.7170457839966
+time_second_10: 0.4206686019897461
+---
+run_date: 2022-01-31 02:14
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022eea38>
+run_epoch: 1643624052
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: bd6085e34ca878594c3d4745d0932ede0f5b0e40
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 59.883591413497925
+time_first_step: 296.92576932907104
+time_first_10: 297.34128856658936
+time_second_10: 0.4144124984741211
+---
+run_date: 2022-02-01 02:20
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022ee9b8>
+run_epoch: 1643710821
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+y1_version: 677a2136f66b8702a0ae0dd65dcff120e708a335
+driver_version: f6663bda32bd35cd6c9bf38fbaac0c7682c43958
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 62.946401596069336
+time_first_step: 297.232914686203
+time_first_10: 297.6529414653778
+time_second_10: 0.4171566963195801
+---
+run_date: 2022-02-02 02:19
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022eea38>
+run_epoch: 1643797155
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: a6eb0b2f52ed9a1bebaf9dad5622a470b665f56f
+y1_version: a6eb0b2f52ed9a1bebaf9dad5622a470b665f56f
+driver_version: b1e3aa58dcdf2cfc86887b59a0783cab88822597
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 66.68537378311157
+time_first_step: 297.13994002342224
+time_first_10: 297.75689029693604
+time_second_10: 0.4254295825958252
+---
+run_date: 2022-02-03 02:24
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022eea38>
+run_epoch: 1643883875
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: a6eb0b2f52ed9a1bebaf9dad5622a470b665f56f
+y1_version: a6eb0b2f52ed9a1bebaf9dad5622a470b665f56f
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 91.83139061927795
+time_first_step: 297.04065775871277
+time_first_10: 297.46134305000305
+time_second_10: 0.4202439785003662
+---
+run_date: 2022-02-04 02:21
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022ee9b8>
+run_epoch: 1643970114
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: a6eb0b2f52ed9a1bebaf9dad5622a470b665f56f
+y1_version: a6eb0b2f52ed9a1bebaf9dad5622a470b665f56f
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 63.58831334114075
+time_first_step: 297.78727316856384
+time_first_10: 298.2115230560303
+time_second_10: 0.42087793350219727
+---
+run_date: 2022-02-05 02:21
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022ee718>
+run_epoch: 1644056494
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: a6eb0b2f52ed9a1bebaf9dad5622a470b665f56f
+y1_version: a6eb0b2f52ed9a1bebaf9dad5622a470b665f56f
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 81.58098244667053
+time_first_step: 296.15863513946533
+time_first_10: 296.57762908935547
+time_second_10: 0.41982197761535645
+---
+run_date: 2022-02-06 02:19
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022ee9b8>
+run_epoch: 1644142741
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: a6eb0b2f52ed9a1bebaf9dad5622a470b665f56f
+y1_version: a6eb0b2f52ed9a1bebaf9dad5622a470b665f56f
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 96.21397233009338
+time_first_step: 296.4694561958313
+time_first_10: 296.8877911567688
+time_second_10: 0.4170186519622803
+---
+run_date: 2022-02-07 02:19
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022ee9b8>
+run_epoch: 1644229193
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: a6eb0b2f52ed9a1bebaf9dad5622a470b665f56f
+y1_version: a6eb0b2f52ed9a1bebaf9dad5622a470b665f56f
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 66.74004888534546
+time_first_step: 297.2693009376526
+time_first_10: 297.69180250167847
+time_second_10: 0.4217050075531006
+---
+run_date: 2022-02-08 02:20
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022eea38>
+run_epoch: 1644315622
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: a6eb0b2f52ed9a1bebaf9dad5622a470b665f56f
+y1_version: a6eb0b2f52ed9a1bebaf9dad5622a470b665f56f
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 89.62379693984985
+time_first_step: 296.63289499282837
+time_first_10: 297.05084466934204
+time_second_10: 0.6218719482421875
+---
+run_date: 2022-02-09 02:23
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10232e488>
+run_epoch: 1644402230
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 0f1b96feb2b54f868e34ec3027e4f5cc61b3b3ea
+y1_version: 0f1b96feb2b54f868e34ec3027e4f5cc61b3b3ea
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 85.84821510314941
+time_first_step: 296.7347044944763
+time_first_10: 297.3557939529419
+time_second_10: 0.4261798858642578
+---
+run_date: 2022-02-10 02:23
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10236dc68>
+run_epoch: 1644488581
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 2110068e28fc3ad46562686935985a9a33489c56
+y1_version: 2110068e28fc3ad46562686935985a9a33489c56
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 116.44123148918152
+time_first_step: 296.70607900619507
+time_first_10: 297.32838010787964
+time_second_10: 0.4257960319519043
+---
+run_date: 2022-02-11 02:26
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021eed88>
+run_epoch: 1644575189
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 2d539fdfb671363ba0aab61c5acac2eabadd26b6
+y1_version: 2d539fdfb671363ba0aab61c5acac2eabadd26b6
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 93.35034036636353
+time_first_step: 296.2264382839203
+time_first_10: 296.6465575695038
+time_second_10: 0.4200866222381592
+---
+run_date: 2022-02-12 02:20
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021eeb58>
+run_epoch: 1644661252
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 2d539fdfb671363ba0aab61c5acac2eabadd26b6
+y1_version: 2d539fdfb671363ba0aab61c5acac2eabadd26b6
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 86.61565136909485
+time_first_step: 295.55727553367615
+time_first_10: 295.975546836853
+time_second_10: 0.42168331146240234
+---
+run_date: 2022-02-13 02:12
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023216c8>
+run_epoch: 1644747178
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 2d539fdfb671363ba0aab61c5acac2eabadd26b6
+y1_version: 2d539fdfb671363ba0aab61c5acac2eabadd26b6
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 69.11189389228821
+time_first_step: 295.644394159317
+time_first_10: 296.0607762336731
+time_second_10: 0.4232931137084961
+---
+run_date: 2022-02-14 02:45
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1021eee88>
+run_epoch: 1644835538
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 2d539fdfb671363ba0aab61c5acac2eabadd26b6
+y1_version: 2d539fdfb671363ba0aab61c5acac2eabadd26b6
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 75.11301779747009
+time_first_step: 296.2833032608032
+time_first_10: 296.7141182422638
+time_second_10: 0.42781829833984375
+---
+run_date: 2022-02-15 02:20
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10232eeb8>
+run_epoch: 1644920402
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 2d539fdfb671363ba0aab61c5acac2eabadd26b6
+y1_version: 2d539fdfb671363ba0aab61c5acac2eabadd26b6
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 80.77423477172852
+time_first_step: 295.36808037757874
+time_first_10: 295.79486298561096
+time_second_10: 0.4290626049041748
+---
+run_date: 2022-02-16 02:20
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022adc68>
+run_epoch: 1645006846
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 2d539fdfb671363ba0aab61c5acac2eabadd26b6
+y1_version: 2d539fdfb671363ba0aab61c5acac2eabadd26b6
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 75.79320049285889
+time_first_step: 280.7801675796509
+time_first_10: 281.217045545578
+time_second_10: 0.43445563316345215
+---
+run_date: 2022-02-17 02:26
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022adc68>
+run_epoch: 1645093601
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 2d539fdfb671363ba0aab61c5acac2eabadd26b6
+y1_version: 2d539fdfb671363ba0aab61c5acac2eabadd26b6
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 111.6708869934082
+time_first_step: 281.7814826965332
+time_first_10: 282.2103452682495
+time_second_10: 0.43257808685302734
+---
+run_date: 2022-02-18 02:24
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10222e3d8>
+run_epoch: 1645179845
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 9853946be4647d69d4f68cb4c07160e82fee981c
+y1_version: 9853946be4647d69d4f68cb4c07160e82fee981c
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 76.58839988708496
+time_first_step: 281.60023951530457
+time_first_10: 282.0316381454468
+time_second_10: 0.4330270290374756
+---
+run_date: 2022-02-19 02:16
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10226ec38>
+run_epoch: 1645265812
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: df571790b9488c716ab868029144a60f38754c6e
+y1_version: df571790b9488c716ab868029144a60f38754c6e
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 75.83665943145752
+time_first_step: 241.83722805976868
+time_first_10: 242.26817345619202
+time_second_10: 0.4330921173095703
+---
+run_date: 2022-02-20 02:15
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10226f448>
+run_epoch: 1645352103
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 33b5a3e28ff3af6a15386d0f08bb2b30d72c2253
+y1_version: 33b5a3e28ff3af6a15386d0f08bb2b30d72c2253
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 65.30159258842468
+time_first_step: 241.3467309474945
+time_first_10: 241.77341389656067
+time_second_10: 0.42769813537597656
+---
+run_date: 2022-02-21 02:18
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10226e998>
+run_epoch: 1645438728
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 33b5a3e28ff3af6a15386d0f08bb2b30d72c2253
+y1_version: 33b5a3e28ff3af6a15386d0f08bb2b30d72c2253
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 62.865612506866455
+time_first_step: 241.40046858787537
+time_first_10: 241.82911229133606
+time_second_10: 0.43165063858032227
+---
+run_date: 2022-02-22 02:19
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10226efa8>
+run_epoch: 1645525168
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 33b5a3e28ff3af6a15386d0f08bb2b30d72c2253
+y1_version: 33b5a3e28ff3af6a15386d0f08bb2b30d72c2253
+driver_version: 0ba20525ec8c3b7adfd5c8e51576ec2f94db0909
+driver_md5sum: 5bb97f4b8cb78c01d5ec10b68a4147f6
+time_startup: 62.959203481674194
+time_first_step: 241.66159319877625
+time_first_10: 242.08989357948303
+time_second_10: 0.6474730968475342
+---
+run_date: 2022-02-23 02:17
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023275f8>
+run_epoch: 1645611470
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: bad6fb07413232d654a67a8c938bd6641a3c9632
+y1_version: bad6fb07413232d654a67a8c938bd6641a3c9632
+driver_version: 94212263fbe402df1c886a9202c4069f5af76682
+driver_md5sum: 7219dc7cbb4982c126c5ff9143436c92
+time_startup: 66.66631817817688
+time_first_step: 239.04597425460815
+time_first_10: 239.7225377559662
+time_second_10: 0.6149911880493164
+---
+run_date: 2022-02-24 02:27
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022e69c8>
+run_epoch: 1645698442
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 163a01ae5ab721e1a21507e8f77b3f7a36104876
+y1_version: 163a01ae5ab721e1a21507e8f77b3f7a36104876
+driver_version: 94212263fbe402df1c886a9202c4069f5af76682
+driver_md5sum: 7219dc7cbb4982c126c5ff9143436c92
+time_startup: 104.87943196296692
+time_first_step: 228.93557906150818
+time_first_10: 229.59774112701416
+time_second_10: 0.7301745414733887
+---
+run_date: 2022-02-25 02:14
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022e6c98>
+run_epoch: 1645784094
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 163a01ae5ab721e1a21507e8f77b3f7a36104876
+y1_version: 163a01ae5ab721e1a21507e8f77b3f7a36104876
+driver_version: 94212263fbe402df1c886a9202c4069f5af76682
+driver_md5sum: 7219dc7cbb4982c126c5ff9143436c92
+time_startup: 63.11532998085022
+time_first_step: 230.9123511314392
+time_first_10: 231.6113841533661
+time_second_10: 0.6766536235809326
+---
+run_date: 2022-03-01 08:20
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10232e0d8>
+run_epoch: 1646151606
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: eb7a7c4066581026e7ed814921aeabd1db417d33
+y1_version: eb7a7c4066581026e7ed814921aeabd1db417d33
+driver_version: 1fd7defe70ab813ed289bead027c9aeee2baa487
+driver_md5sum: 59baae0c9e71851537987a3eafe33613
+time_startup: 163.5003044605255
+time_first_step: 253.70152378082275
+time_first_10: 254.42672204971313
+time_second_10: 0.6888699531555176
+max_python_mem_usage: 970.5
+max_gpu_mem_usage: 376.0
+---
+run_date: 2022-03-01 09:29
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10232e288>
+run_epoch: 1646155777
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: eb7a7c4066581026e7ed814921aeabd1db417d33
+y1_version: eb7a7c4066581026e7ed814921aeabd1db417d33
+driver_version: 1fd7defe70ab813ed289bead027c9aeee2baa487
+driver_md5sum: 59baae0c9e71851537987a3eafe33613
+time_startup: 177.58652877807617
+time_first_step: 256.5943691730499
+time_first_10: 257.33861470222473
+time_second_10: 0.7144036293029785
+max_python_mem_usage: 968.1875
+max_gpu_mem_usage: 374.0
+---
+run_date: 2022-03-02 01:37
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023afb08>
+run_epoch: 1646213841
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: eb7a7c4066581026e7ed814921aeabd1db417d33
+y1_version: eb7a7c4066581026e7ed814921aeabd1db417d33
+driver_version: 1fd7defe70ab813ed289bead027c9aeee2baa487
+driver_md5sum: 59baae0c9e71851537987a3eafe33613
+time_startup: 138.35910630226135
+time_first_step: 254.70503950119019
+time_first_10: 255.38631224632263
+time_second_10: 0.6780383586883545
+max_python_mem_usage: 952.4375
+max_gpu_mem_usage: 376.0
+---
+run_date: 2022-03-03 02:05
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10232ebb8>
+run_epoch: 1646301941
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 5cfcb708ff86fa9f3c7fdd2d3b7a2c456ed9842a
+y1_version: 5cfcb708ff86fa9f3c7fdd2d3b7a2c456ed9842a
+driver_version: 850f590ada81ef3630562aa1553026329ed99278
+driver_md5sum: 6c0a3e0d89d7b13c75fa17146bda0a01
+time_startup: 105.0726478099823
+time_first_step: 256.6109549999237
+time_first_10: 257.2920548915863
+time_second_10: 0.6852190494537354
+max_python_mem_usage: 972.4375
+max_gpu_mem_usage: 380.0
+---
+run_date: 2022-03-04 01:53
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022ae488>
+run_epoch: 1646387608
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 5cfcb708ff86fa9f3c7fdd2d3b7a2c456ed9842a
+y1_version: 5cfcb708ff86fa9f3c7fdd2d3b7a2c456ed9842a
+driver_version: 850f590ada81ef3630562aa1553026329ed99278
+driver_md5sum: 6c0a3e0d89d7b13c75fa17146bda0a01
+time_startup: 100.41442060470581
+time_first_step: 255.33396911621094
+time_first_10: 255.9448790550232
+time_second_10: 0.5757753849029541
+max_python_mem_usage: 942.375
+max_gpu_mem_usage: 378.0
+---
+run_date: 2022-03-05 01:55
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10232dc68>
+run_epoch: 1646474146
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: f453514fda64a760e95483175cc76789744df47c
+y1_version: f453514fda64a760e95483175cc76789744df47c
+driver_version: 850f590ada81ef3630562aa1553026329ed99278
+driver_md5sum: 6c0a3e0d89d7b13c75fa17146bda0a01
+time_startup: 100.43891644477844
+time_first_step: 253.20396327972412
+time_first_10: 253.83133459091187
+time_second_10: 0.5753140449523926
+max_python_mem_usage: 949.25
+max_gpu_mem_usage: 378.0
+---
+run_date: 2022-03-06 02:31
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022ae4c8>
+run_epoch: 1646562683
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: f453514fda64a760e95483175cc76789744df47c
+y1_version: f453514fda64a760e95483175cc76789744df47c
+driver_version: 850f590ada81ef3630562aa1553026329ed99278
+driver_md5sum: 6c0a3e0d89d7b13c75fa17146bda0a01
+time_startup: 122.87611842155457
+time_first_step: 256.0005729198456
+time_first_10: 256.82858514785767
+time_second_10: 0.8066091537475586
+max_python_mem_usage: 975.0
+max_gpu_mem_usage: 382.0
+---
+run_date: 2022-03-07 01:56
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10236f6f8>
+run_epoch: 1646647002
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: f453514fda64a760e95483175cc76789744df47c
+y1_version: f453514fda64a760e95483175cc76789744df47c
+driver_version: 850f590ada81ef3630562aa1553026329ed99278
+driver_md5sum: 6c0a3e0d89d7b13c75fa17146bda0a01
+time_startup: 99.90765118598938
+time_first_step: 252.88063979148865
+time_first_10: 253.4935576915741
+time_second_10: 0.5940043926239014
+max_python_mem_usage: 949.0625
+max_gpu_mem_usage: 378.0625
+---
+run_date: 2022-03-08 10:47
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10236f6c8>
+run_epoch: 1646765276
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 12a81cee2288e60b92de2840a897be67284c4115
+y1_version: 12a81cee2288e60b92de2840a897be67284c4115
+driver_version: dd73e69b5b6be9adb7651eea0d1419befd46eeed
+driver_md5sum: 95e1fd79a37cdb45d061070f1cbfb8d2
+time_startup: 106.2839572429657
+time_first_step: 255.14778208732605
+time_first_10: 255.83595871925354
+time_second_10: 0.6418161392211914
+max_python_mem_usage: 971.375
+max_gpu_mem_usage: 380.0
+---
+run_date: 2022-03-09 01:54
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10236f618>
+run_epoch: 1646819696
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 12a81cee2288e60b92de2840a897be67284c4115
+y1_version: 12a81cee2288e60b92de2840a897be67284c4115
+driver_version: 701d98e15ae94c505d7fdcfa61ab8456b3bcad9d
+driver_md5sum: 34e9f817b92b954a89304382ae1d8c4a
+time_startup: 100.80539178848267
+time_first_step: 255.8385488986969
+time_first_10: 256.4589946269989
+time_second_10: 0.5740022659301758
+max_python_mem_usage: 972.4375
+max_gpu_mem_usage: 380.0
+---
+run_date: 2022-03-10 01:54
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022af418>
+run_epoch: 1646906093
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 12a81cee2288e60b92de2840a897be67284c4115
+y1_version: 12a81cee2288e60b92de2840a897be67284c4115
+driver_version: f1768ba6c83e8567932bc41ecb60e8bb7879c66e
+driver_md5sum: 58978c31e7ee4cc9cd0a220b4c1a93ef
+time_startup: 103.59224939346313
+time_first_step: 255.63569688796997
+time_first_10: 256.26226019859314
+time_second_10: 0.6109919548034668
+max_python_mem_usage: 972.8125
+max_gpu_mem_usage: 380.0
+---
+run_date: 2022-03-11 01:55
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10235e058>
+run_epoch: 1646992541
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 12a81cee2288e60b92de2840a897be67284c4115
+y1_version: 12a81cee2288e60b92de2840a897be67284c4115
+driver_version: f1768ba6c83e8567932bc41ecb60e8bb7879c66e
+driver_md5sum: 58978c31e7ee4cc9cd0a220b4c1a93ef
+time_startup: 109.60339379310608
+time_first_step: 262.15957522392273
+time_first_10: 262.8249740600586
+time_second_10: 0.6222171783447266
+max_python_mem_usage: 985.4375
+max_gpu_mem_usage: 376.0
+---
+run_date: 2022-03-12 02:12
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10235dd08>
+run_epoch: 1647079924
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 12a81cee2288e60b92de2840a897be67284c4115
+y1_version: 12a81cee2288e60b92de2840a897be67284c4115
+driver_version: f1768ba6c83e8567932bc41ecb60e8bb7879c66e
+driver_md5sum: 58978c31e7ee4cc9cd0a220b4c1a93ef
+time_startup: 128.96052408218384
+time_first_step: 258.7940776348114
+time_first_10: 259.43333077430725
+time_second_10: 0.5868027210235596
+max_python_mem_usage: 987.0625
+max_gpu_mem_usage: 378.0
+---
+run_date: 2022-03-13 01:57
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023de7a8>
+run_epoch: 1647165427
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 8b6f6c1d94e7c7cdef7f15e8eba55c794fda599a
+y1_version: 8b6f6c1d94e7c7cdef7f15e8eba55c794fda599a
+driver_version: f1768ba6c83e8567932bc41ecb60e8bb7879c66e
+driver_md5sum: 58978c31e7ee4cc9cd0a220b4c1a93ef
+time_startup: 108.59238624572754
+time_first_step: 258.0256812572479
+time_first_10: 258.6924788951874
+time_second_10: 0.659919261932373
+max_python_mem_usage: 1011.5625
+max_gpu_mem_usage: 378.0
+---
+run_date: 2022-03-14 01:54
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023de7a8>
+run_epoch: 1647248066
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 8b6f6c1d94e7c7cdef7f15e8eba55c794fda599a
+y1_version: 8b6f6c1d94e7c7cdef7f15e8eba55c794fda599a
+driver_version: f1768ba6c83e8567932bc41ecb60e8bb7879c66e
+driver_md5sum: 58978c31e7ee4cc9cd0a220b4c1a93ef
+time_startup: 110.63625073432922
+time_first_step: 258.77372312545776
+time_first_10: 259.5689251422882
+time_second_10: 0.7941899299621582
+max_python_mem_usage: 986.75
+max_gpu_mem_usage: 378.0625
+---
+run_date: 2022-03-15 01:58
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023de7a8>
+run_epoch: 1647334693
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+y1_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+driver_version: f1768ba6c83e8567932bc41ecb60e8bb7879c66e
+driver_md5sum: 58978c31e7ee4cc9cd0a220b4c1a93ef
+time_startup: 108.04714822769165
+time_first_step: 261.4294638633728
+time_first_10: 262.4567759037018
+time_second_10: 0.8838684558868408
+max_python_mem_usage: 1009.0625
+max_gpu_mem_usage: 376.0
+---
+run_date: 2022-03-16 01:55
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022d68a8>
+run_epoch: 1647420941
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+y1_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+driver_version: f1768ba6c83e8567932bc41ecb60e8bb7879c66e
+driver_md5sum: 58978c31e7ee4cc9cd0a220b4c1a93ef
+time_startup: 135.15045380592346
+time_first_step: 259.4718301296234
+time_first_10: 260.1042778491974
+time_second_10: 0.5791113376617432
+max_python_mem_usage: 998.0
+max_gpu_mem_usage: 380.0625
+---
+run_date: 2022-03-17 01:55
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022d68a8>
+run_epoch: 1647507307
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+y1_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+driver_version: f1768ba6c83e8567932bc41ecb60e8bb7879c66e
+driver_md5sum: 58978c31e7ee4cc9cd0a220b4c1a93ef
+time_startup: 130.8133065700531
+time_first_step: 260.6705515384674
+time_first_10: 261.27587151527405
+time_second_10: 0.5663068294525146
+max_python_mem_usage: 961.625
+max_gpu_mem_usage: 380.0
+---
+run_date: 2022-03-18 01:55
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102394d28>
+run_epoch: 1647593744
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+y1_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+driver_version: f1768ba6c83e8567932bc41ecb60e8bb7879c66e
+driver_md5sum: 58978c31e7ee4cc9cd0a220b4c1a93ef
+time_startup: 119.30083060264587
+time_first_step: 258.32695269584656
+time_first_10: 258.9583668708801
+time_second_10: 0.6196424961090088
+max_python_mem_usage: 1011.875
+max_gpu_mem_usage: 378.0
+---
+run_date: 2022-03-19 01:41
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023df9a8>
+run_epoch: 1647679267
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+y1_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+driver_version: f1768ba6c83e8567932bc41ecb60e8bb7879c66e
+driver_md5sum: 58978c31e7ee4cc9cd0a220b4c1a93ef
+time_startup: 116.47659587860107
+time_first_step: 261.19606709480286
+time_first_10: 261.79587388038635
+time_second_10: 0.566591739654541
+max_python_mem_usage: 984.125
+max_gpu_mem_usage: 378.0
+---
+run_date: 2022-03-20 01:38
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023df918>
+run_epoch: 1647765520
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+y1_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+driver_version: f1768ba6c83e8567932bc41ecb60e8bb7879c66e
+driver_md5sum: 58978c31e7ee4cc9cd0a220b4c1a93ef
+time_startup: 110.95722532272339
+time_first_step: 264.5190472602844
+time_first_10: 265.1353003978729
+time_second_10: 0.5740845203399658
+max_python_mem_usage: 984.0
+max_gpu_mem_usage: 378.0
+---
+run_date: 2022-03-21 01:39
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023df898>
+run_epoch: 1647851965
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+y1_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+driver_version: f1768ba6c83e8567932bc41ecb60e8bb7879c66e
+driver_md5sum: 58978c31e7ee4cc9cd0a220b4c1a93ef
+time_startup: 115.49665451049805
+time_first_step: 258.64784932136536
+time_first_10: 259.25473189353943
+time_second_10: 0.5729331970214844
+max_python_mem_usage: 989.9375
+max_gpu_mem_usage: 378.0625
+---
+run_date: 2022-03-22 01:53
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023df918>
+run_epoch: 1647939239
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+y1_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+driver_version: f1768ba6c83e8567932bc41ecb60e8bb7879c66e
+driver_md5sum: 58978c31e7ee4cc9cd0a220b4c1a93ef
+time_startup: 120.5480694770813
+time_first_step: 259.6145508289337
+time_first_10: 260.2676649093628
+time_second_10: 0.6018614768981934
+max_python_mem_usage: 997.125
+max_gpu_mem_usage: 378.0
+---
+run_date: 2022-03-23 01:54
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023df948>
+run_epoch: 1648025656
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+y1_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+driver_version: 156b77347dfdaf85dbdbd05f85758b796ed99cee
+driver_md5sum: 23731c980cfceb3949329072acbc3a88
+time_startup: 113.85453391075134
+time_first_step: 261.81206154823303
+time_first_10: 262.2308237552643
+time_second_10: 0.41677284240722656
+max_python_mem_usage: 984.0625
+max_gpu_mem_usage: 382.0
+---
+run_date: 2022-03-24 01:56
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10239f5f8>
+run_epoch: 1648112169
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+y1_version: c72aa1c18d57937fffc387893e7bc66d256b94e7
+driver_version: 156b77347dfdaf85dbdbd05f85758b796ed99cee
+driver_md5sum: 23731c980cfceb3949329072acbc3a88
+time_startup: 154.24439024925232
+time_first_step: 261.9988040924072
+time_first_10: 262.4356846809387
+time_second_10: 0.42682552337646484
+max_python_mem_usage: 1013.9375
+max_gpu_mem_usage: 376.0
+---
+run_date: 2022-03-25 02:07
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023fe7a8>
+run_epoch: 1648199259
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: a86304ee318b5da53408e2a800767c53358f2b0b
+y1_version: a86304ee318b5da53408e2a800767c53358f2b0b
+driver_version: 156b77347dfdaf85dbdbd05f85758b796ed99cee
+driver_md5sum: 23731c980cfceb3949329072acbc3a88
+time_startup: 152.99634170532227
+time_first_step: 258.1934459209442
+time_first_10: 258.611145734787
+time_second_10: 0.41095995903015137
+max_python_mem_usage: 984.25
+max_gpu_mem_usage: 378.0
+---
+run_date: 2022-03-26 01:55
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023b73f8>
+run_epoch: 1648284920
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: a86304ee318b5da53408e2a800767c53358f2b0b
+y1_version: a86304ee318b5da53408e2a800767c53358f2b0b
+driver_version: 156b77347dfdaf85dbdbd05f85758b796ed99cee
+driver_md5sum: 23731c980cfceb3949329072acbc3a88
+time_startup: 119.03965330123901
+time_first_step: 259.519029378891
+time_first_10: 259.9339609146118
+time_second_10: 0.41675591468811035
+max_python_mem_usage: 984.4375
+max_gpu_mem_usage: 378.0
+---
+run_date: 2022-03-27 01:58
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023fe7a8>
+run_epoch: 1648371515
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: a86304ee318b5da53408e2a800767c53358f2b0b
+y1_version: a86304ee318b5da53408e2a800767c53358f2b0b
+driver_version: 156b77347dfdaf85dbdbd05f85758b796ed99cee
+driver_md5sum: 23731c980cfceb3949329072acbc3a88
+time_startup: 120.19958639144897
+time_first_step: 258.1649079322815
+time_first_10: 258.5790843963623
+time_second_10: 0.4101076126098633
+max_python_mem_usage: 984.0625
+max_gpu_mem_usage: 378.0
+---
+run_date: 2022-03-28 01:58
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023fe7a8>
+run_epoch: 1648457924
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: a86304ee318b5da53408e2a800767c53358f2b0b
+y1_version: a86304ee318b5da53408e2a800767c53358f2b0b
+driver_version: 156b77347dfdaf85dbdbd05f85758b796ed99cee
+driver_md5sum: 23731c980cfceb3949329072acbc3a88
+time_startup: 140.3064615726471
+time_first_step: 258.0002808570862
+time_first_10: 258.4141924381256
+time_second_10: 0.4086635112762451
+max_python_mem_usage: 984.25
+max_gpu_mem_usage: 378.0
+---
+run_date: 2022-03-29 01:58
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023fe7a8>
+run_epoch: 1648544302
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: a86304ee318b5da53408e2a800767c53358f2b0b
+y1_version: a86304ee318b5da53408e2a800767c53358f2b0b
+driver_version: 156b77347dfdaf85dbdbd05f85758b796ed99cee
+driver_md5sum: 23731c980cfceb3949329072acbc3a88
+time_startup: 131.27635407447815
+time_first_step: 260.73358488082886
+time_first_10: 261.15791749954224
+time_second_10: 0.41041040420532227
+max_python_mem_usage: 984.1875
+max_gpu_mem_usage: 378.0
+---
+run_date: 2022-03-30 02:06
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023fe7a8>
+run_epoch: 1648631218
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 6d699bb2880648b68a17c2eca650314749f2dc84
+y1_version: 6d699bb2880648b68a17c2eca650314749f2dc84
+driver_version: 156b77347dfdaf85dbdbd05f85758b796ed99cee
+driver_md5sum: 23731c980cfceb3949329072acbc3a88
+time_startup: 108.48148798942566
+time_first_step: 258.77052640914917
+time_first_10: 259.1824815273285
+time_second_10: 0.40863990783691406
+max_python_mem_usage: 984.4375
+max_gpu_mem_usage: 376.0
+---
+run_date: 2022-03-31 01:57
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023b74f8>
+run_epoch: 1648717068
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 6d699bb2880648b68a17c2eca650314749f2dc84
+y1_version: 6d699bb2880648b68a17c2eca650314749f2dc84
+driver_version: 156b77347dfdaf85dbdbd05f85758b796ed99cee
+driver_md5sum: 23731c980cfceb3949329072acbc3a88
+time_startup: 113.22577142715454
+time_first_step: 258.21623158454895
+time_first_10: 258.632915019989
+time_second_10: 0.4164884090423584
+max_python_mem_usage: 984.0625
+max_gpu_mem_usage: 374.0
+---
+run_date: 2022-04-01 01:57
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023f0738>
+run_epoch: 1648803430
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 15bd356822f27b6f5fbe27b3efb311b6c413490e
+y1_version: 15bd356822f27b6f5fbe27b3efb311b6c413490e
+driver_version: 156b77347dfdaf85dbdbd05f85758b796ed99cee
+driver_md5sum: 23731c980cfceb3949329072acbc3a88
+time_startup: 119.46401906013489
+time_first_step: 258.26759481430054
+time_first_10: 258.67987513542175
+time_second_10: 0.4090383052825928
+max_python_mem_usage: 984.25
+max_gpu_mem_usage: 376.0
+---
+run_date: 2022-04-02 01:55
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023cf528>
+run_epoch: 1648889735
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 63899f4e1d916b6caae8ff169654afa0d706940a
+y1_version: 63899f4e1d916b6caae8ff169654afa0d706940a
+driver_version: 156b77347dfdaf85dbdbd05f85758b796ed99cee
+driver_md5sum: 23731c980cfceb3949329072acbc3a88
+time_startup: 105.64283561706543
+time_first_step: 268.4442114830017
+time_first_10: 268.8616728782654
+time_second_10: 0.4149816036224365
+max_python_mem_usage: 998.375
+max_gpu_mem_usage: 380.0625
+---
+run_date: 2022-04-03 01:54
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023cf528>
+run_epoch: 1648976098
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 63899f4e1d916b6caae8ff169654afa0d706940a
+y1_version: 63899f4e1d916b6caae8ff169654afa0d706940a
+driver_version: 156b77347dfdaf85dbdbd05f85758b796ed99cee
+driver_md5sum: 23731c980cfceb3949329072acbc3a88
+time_startup: 106.64105701446533
+time_first_step: 269.6071083545685
+time_first_10: 270.02677392959595
+time_second_10: 0.4151933193206787
+max_python_mem_usage: 998.5
+max_gpu_mem_usage: 380.0
+---
+run_date: 2022-04-04 01:52
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023cf368>
+run_epoch: 1649062362
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 63899f4e1d916b6caae8ff169654afa0d706940a
+y1_version: 63899f4e1d916b6caae8ff169654afa0d706940a
+driver_version: 156b77347dfdaf85dbdbd05f85758b796ed99cee
+driver_md5sum: 23731c980cfceb3949329072acbc3a88
+time_startup: 149.7407386302948
+time_first_step: 268.32907223701477
+time_first_10: 268.7497944831848
+time_second_10: 0.4184870719909668
+max_python_mem_usage: 997.9375
+max_gpu_mem_usage: 380.0
+---
+run_date: 2022-05-01 06:48
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023ef918>
+run_epoch: 1651412881
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 52128891f1f6e7443dd2cdfefe65bff883ebb659
+y1_version: 52128891f1f6e7443dd2cdfefe65bff883ebb659
+driver_version: 3dc4699769d8aad365417036fe8b2bbe380ffdf5
+driver_md5sum: 7106b5b0978ab5e991b889dd108ddda8
+time_startup: 125.10088443756104
+time_first_step: 259.30996799468994
+time_first_10: 259.6112177371979
+time_second_10: 0.3003096580505371
+max_python_mem_usage: 947.8125
+max_gpu_mem_usage: 331.8125
+---
+run_date: 2022-05-02 01:53
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102424088>
+run_epoch: 1651481634
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 2619a374fbd877f6776e94b9568f4f924db0d983
+y1_version: 2619a374fbd877f6776e94b9568f4f924db0d983
+driver_version: 8241bd6d9b70e92b0a05c065466dad604022204c
+driver_md5sum: 65b404aeca0ba4a2d961bf2643c5b1c5
+time_startup: 124.55490398406982
+time_first_step: 259.1940486431122
+time_first_10: 259.4929747581482
+time_second_10: 0.2992119789123535
+max_python_mem_usage: 985.4375
+max_gpu_mem_usage: 331.625
+---
+run_date: 2022-05-09 05:21
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102404008>
+run_epoch: 1652098870
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: a81ffff3bd3a72112a4780057e03c89964179622
+y1_version: a81ffff3bd3a72112a4780057e03c89964179622
+driver_version: e25a7bbd7a27dd6c803d7871c64afece30aa9bd5
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 113.4538996219635
+time_first_step: 252.97428393363953
+time_first_10: 253.27056980133057
+time_second_10: 0.29660701751708984
+max_python_mem_usage: 926.25
+max_gpu_mem_usage: 331.625
+---
+run_date: 2022-05-09 08:38
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102434ae8>
+run_epoch: 1652110721
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 3fd7abf7fcae774775118506b5ee093475ab5482
+y1_version: 3fd7abf7fcae774775118506b5ee093475ab5482
+driver_version: e25a7bbd7a27dd6c803d7871c64afece30aa9bd5
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 137.0279664993286
+time_first_step: 255.34910678863525
+time_first_10: 255.6511356830597
+time_second_10: 0.30079102516174316
+max_python_mem_usage: 888.8125
+max_gpu_mem_usage: 331.625
+---
+run_date: 2022-05-10 01:58
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102404168>
+run_epoch: 1652173085
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 79ba94b3397218fa33a8869c872697d17f174bda
+y1_version: 79ba94b3397218fa33a8869c872697d17f174bda
+driver_version: e25a7bbd7a27dd6c803d7871c64afece30aa9bd5
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 111.23907136917114
+time_first_step: 253.12267565727234
+time_first_10: 253.41941165924072
+time_second_10: 0.2961156368255615
+max_python_mem_usage: 927.1875
+max_gpu_mem_usage: 331.625
+---
+run_date: 2022-05-11 02:04
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10240e7e8>
+run_epoch: 1652259892
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 10f8e3c4abb65ed48d9a33efb5eea86facec238d
+y1_version: 10f8e3c4abb65ed48d9a33efb5eea86facec238d
+driver_version: e25a7bbd7a27dd6c803d7871c64afece30aa9bd5
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 128.58563017845154
+time_first_step: 252.77388167381287
+time_first_10: 253.0689868927002
+time_second_10: 0.2954399585723877
+max_python_mem_usage: 927.4375
+max_gpu_mem_usage: 331.625
+---
+run_date: 2022-05-12 02:00
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102404458>
+run_epoch: 1652346015
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 10f8e3c4abb65ed48d9a33efb5eea86facec238d
+y1_version: 10f8e3c4abb65ed48d9a33efb5eea86facec238d
+driver_version: e25a7bbd7a27dd6c803d7871c64afece30aa9bd5
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 115.90072798728943
+time_first_step: 253.03002643585205
+time_first_10: 253.32618188858032
+time_second_10: 0.295107364654541
+max_python_mem_usage: 928.875
+max_gpu_mem_usage: 331.625
+---
+run_date: 2022-05-13 01:56
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102404088>
+run_epoch: 1652432189
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: fc2ef1eca181bbb755b993cfc64d193380772d1f
+y1_version: fc2ef1eca181bbb755b993cfc64d193380772d1f
+driver_version: e25a7bbd7a27dd6c803d7871c64afece30aa9bd5
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 56.964457750320435
+time_first_step: 231.15598273277283
+time_first_10: 231.8643398284912
+time_second_10: 0.5587046146392822
+max_python_mem_usage: 887.75
+max_gpu_mem_usage: 361.9375
+---
+run_date: 2022-05-15 01:54
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1024040d8>
+run_epoch: 1652604873
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 6b90d1b472323a965f1db1495b93df8326197817
+y1_version: 6b90d1b472323a965f1db1495b93df8326197817
+driver_version: e25a7bbd7a27dd6c803d7871c64afece30aa9bd5
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 56.60258460044861
+time_first_step: 230.72167897224426
+time_first_10: 231.4375762939453
+time_second_10: 0.3654787540435791
+max_python_mem_usage: 887.8125
+max_gpu_mem_usage: 337.625
+---
+run_date: 2022-05-16 01:54
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102403fb8>
+run_epoch: 1652691259
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 6b90d1b472323a965f1db1495b93df8326197817
+y1_version: 6b90d1b472323a965f1db1495b93df8326197817
+driver_version: e25a7bbd7a27dd6c803d7871c64afece30aa9bd5
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 56.045263051986694
+time_first_step: 230.74275040626526
+time_first_10: 231.4499638080597
+time_second_10: 0.3551967144012451
+max_python_mem_usage: 886.9375
+max_gpu_mem_usage: 337.625
+---
+run_date: 2022-05-16 15:00
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102403fb8>
+run_epoch: 1652738453
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 6b90d1b472323a965f1db1495b93df8326197817
+y1_version: 6b90d1b472323a965f1db1495b93df8326197817
+driver_version: 07348fdbbafa074888730967c54f6764cbbb3fbf
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 55.886528730392456
+time_first_step: 174.427166223526
+time_first_10: 175.33180832862854
+time_second_10: 0.3503851890563965
+max_python_mem_usage: 878.4375
+max_gpu_mem_usage: 335.625
+---
+run_date: 2022-05-17 01:55
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102403fb8>
+run_epoch: 1652777716
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 6b90d1b472323a965f1db1495b93df8326197817
+y1_version: 6b90d1b472323a965f1db1495b93df8326197817
+driver_version: 07348fdbbafa074888730967c54f6764cbbb3fbf
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 52.14234709739685
+time_first_step: 174.528902053833
+time_first_10: 175.22805213928223
+time_second_10: 0.5553209781646729
+max_python_mem_usage: 881.125
+max_gpu_mem_usage: 335.9375
+---
+run_date: 2022-05-17 06:15
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102403fb8>
+run_epoch: 1652793354
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 6b90d1b472323a965f1db1495b93df8326197817
+y1_version: 6b90d1b472323a965f1db1495b93df8326197817
+driver_version: 07348fdbbafa074888730967c54f6764cbbb3fbf
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 54.32590126991272
+time_first_step: 173.95345425605774
+time_first_10: 174.6611044406891
+time_second_10: 0.3560621738433838
+max_python_mem_usage: 880.625
+max_gpu_mem_usage: 337.625
+---
+run_date: 2022-05-18 01:55
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102403fb8>
+run_epoch: 1652864147
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: d1510d2144e8d3238884adb6e5c9877e7a60882d
+y1_version: d1510d2144e8d3238884adb6e5c9877e7a60882d
+driver_version: fcb39af34454df80d7e50c0695b6a5085aec33ba
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 51.6089551448822
+time_first_step: 178.13240575790405
+time_first_10: 178.79769277572632
+time_second_10: 0.30712127685546875
+max_python_mem_usage: 851.625
+max_gpu_mem_usage: 333.625
+---
+run_date: 2022-05-19 01:54
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10244f528>
+run_epoch: 1652950476
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: d1510d2144e8d3238884adb6e5c9877e7a60882d
+y1_version: d1510d2144e8d3238884adb6e5c9877e7a60882d
+driver_version: 102cb5d7da080a4e5b73f1d98290d2c838944cfa
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 51.654069662094116
+time_first_step: 177.88613438606262
+time_first_10: 178.54478979110718
+time_second_10: 0.30266475677490234
+max_python_mem_usage: 887.6875
+max_gpu_mem_usage: 333.9375
+---
+run_date: 2022-05-20 01:49
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10244f548>
+run_epoch: 1653036575
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: d1510d2144e8d3238884adb6e5c9877e7a60882d
+y1_version: d1510d2144e8d3238884adb6e5c9877e7a60882d
+driver_version: 102cb5d7da080a4e5b73f1d98290d2c838944cfa
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 52.230820178985596
+time_first_step: 161.71445226669312
+time_first_10: 162.37479376792908
+time_second_10: 0.5024158954620361
+max_python_mem_usage: 876.9375
+max_gpu_mem_usage: 331.625
+---
+run_date: 2022-05-21 01:47
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023c6918>
+run_epoch: 1653122874
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 51627e6186873b308e3d8ec9ef0361b43c8f26b4
+y1_version: 51627e6186873b308e3d8ec9ef0361b43c8f26b4
+driver_version: 83f6e697f94ff3e9bdd3a853fd37016fd1f19efe
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 57.82918334007263
+time_first_step: 162.11620998382568
+time_first_10: 162.77911472320557
+time_second_10: 0.3045790195465088
+max_python_mem_usage: 826.0
+max_gpu_mem_usage: 331.625
+---
+run_date: 2022-05-22 01:47
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023c6918>
+run_epoch: 1653209221
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 51627e6186873b308e3d8ec9ef0361b43c8f26b4
+y1_version: 51627e6186873b308e3d8ec9ef0361b43c8f26b4
+driver_version: 83f6e697f94ff3e9bdd3a853fd37016fd1f19efe
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 54.42536163330078
+time_first_step: 161.91913628578186
+time_first_10: 162.58230447769165
+time_second_10: 0.3042609691619873
+max_python_mem_usage: 873.3125
+max_gpu_mem_usage: 331.625
+---
+run_date: 2022-05-23 01:44
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10240fc48>
+run_epoch: 1653295477
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 51627e6186873b308e3d8ec9ef0361b43c8f26b4
+y1_version: 51627e6186873b308e3d8ec9ef0361b43c8f26b4
+driver_version: e7ee2d39d82fed9b266b5dbf66e346151b898c9f
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 54.41361165046692
+time_first_step: 161.71869373321533
+time_first_10: 162.57775616645813
+time_second_10: 0.30741286277770996
+max_python_mem_usage: 876.0625
+max_gpu_mem_usage: 331.625
+---
+run_date: 2022-05-24 01:53
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022cf218>
+run_epoch: 1653382430
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 51627e6186873b308e3d8ec9ef0361b43c8f26b4
+y1_version: 51627e6186873b308e3d8ec9ef0361b43c8f26b4
+driver_version: e7ee2d39d82fed9b266b5dbf66e346151b898c9f
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 51.44854426383972
+time_first_step: 162.15961623191833
+time_first_10: 162.82205033302307
+time_second_10: 0.3040037155151367
+max_python_mem_usage: 877.75
+max_gpu_mem_usage: 331.625
+---
+run_date: 2022-05-25 01:44
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1022cf378>
+run_epoch: 1653468264
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 51627e6186873b308e3d8ec9ef0361b43c8f26b4
+y1_version: 51627e6186873b308e3d8ec9ef0361b43c8f26b4
+driver_version: e7ee2d39d82fed9b266b5dbf66e346151b898c9f
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 61.35830235481262
+time_first_step: 161.96901035308838
+time_first_10: 162.63159799575806
+time_second_10: 0.30435729026794434
+max_python_mem_usage: 872.8125
+max_gpu_mem_usage: 331.625
+---
+run_date: 2022-05-26 01:44
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102357f78>
+run_epoch: 1653554682
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: ad89c442fd45464b981378b3ae7a35177d645629
+y1_version: ad89c442fd45464b981378b3ae7a35177d645629
+driver_version: e7ee2d39d82fed9b266b5dbf66e346151b898c9f
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 51.52096509933472
+time_first_step: 156.64374232292175
+time_first_10: 157.30216097831726
+time_second_10: 0.302990198135376
+max_python_mem_usage: 880.375
+max_gpu_mem_usage: 331.625
+---
+run_date: 2022-05-26 21:06
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10241e7e8>
+run_epoch: 1653624369
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 261cce05e07c91b5b6ec6601d9b1ed963a02f370
+y1_version: 261cce05e07c91b5b6ec6601d9b1ed963a02f370
+driver_version: e7ee2d39d82fed9b266b5dbf66e346151b898c9f
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 52.472126960754395
+time_first_step: 156.8073287010193
+time_first_10: 157.46389770507812
+time_second_10: 0.3005096912384033
+max_python_mem_usage: 878.75
+max_gpu_mem_usage: 331.625
+---
+run_date: 2022-05-27 01:44
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10231da38>
+run_epoch: 1653641053
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 261cce05e07c91b5b6ec6601d9b1ed963a02f370
+y1_version: 261cce05e07c91b5b6ec6601d9b1ed963a02f370
+driver_version: e7ee2d39d82fed9b266b5dbf66e346151b898c9f
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 51.08570146560669
+time_first_step: 156.86251187324524
+time_first_10: 157.51670598983765
+time_second_10: 0.2989377975463867
+max_python_mem_usage: 880.75
+max_gpu_mem_usage: 331.625
+---
+run_date: 2022-05-27 06:18
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023a03c8>
+run_epoch: 1653657484
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 261cce05e07c91b5b6ec6601d9b1ed963a02f370
+y1_version: 261cce05e07c91b5b6ec6601d9b1ed963a02f370
+driver_version: e7ee2d39d82fed9b266b5dbf66e346151b898c9f
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 55.1795334815979
+time_first_step: 156.7857701778412
+time_first_10: 157.44018578529358
+time_second_10: 0.29932236671447754
+max_python_mem_usage: 878.875
+max_gpu_mem_usage: 331.875
+---
+run_date: 2022-05-28 01:45
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1023f6918>
+run_epoch: 1653727541
+run_platform: Linux
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 58122dff632b6e00abfdef2fa09e6f0599c6f71b
+y1_version: 58122dff632b6e00abfdef2fa09e6f0599c6f71b
+driver_version: e7ee2d39d82fed9b266b5dbf66e346151b898c9f
+driver_md5sum: 7f918419290baf6e37b6e5fd49eb5a75
+time_startup: 51.47857451438904
+time_first_step: 157.34279227256775
+time_first_10: 158.00344920158386
+time_second_10: 0.3025939464569092
+max_python_mem_usage: 878.125
+max_gpu_mem_usage: 331.625
+---
