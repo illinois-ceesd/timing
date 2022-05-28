@@ -30,22 +30,23 @@ from matplotlib.dates import date2num
 import matplotlib.pyplot as plt
 
 fontsize = 10
-params = {'backend': 'pdf',
-          'text.usetex': True,
-          'font.family': 'serif',
-          'font.serif': 'Computer Modern Roman',
+params = {"backend": "pdf",
+          "text.usetex": True,
+          "font.family": "serif",
+          "font.serif": "Computer Modern Roman",
           # font sizes
-          'axes.labelsize': fontsize,
-          'font.size': fontsize,
-          'axes.titlesize': fontsize,
-          'legend.fontsize': fontsize,
-          'xtick.labelsize': fontsize,
-          'ytick.labelsize': fontsize,
-         }
+          "axes.labelsize": fontsize,
+          "font.size": fontsize,
+          "axes.titlesize": fontsize,
+          "legend.fontsize": fontsize,
+          "xtick.labelsize": fontsize,
+          "ytick.labelsize": fontsize}
+
 plt.rcParams.update(params)
 
 
 def parse_datetime(s):
+    """Parse the date and time."""
     # I really don't know why we decided to not save Unix timestamps
     import datetime
     if isinstance(s, datetime.datetime):
@@ -56,6 +57,7 @@ def parse_datetime(s):
 
 
 def main():
+    """Plot the timings with this main function. Totally useful docstring."""
     parser = argparse.ArgumentParser()
     parser.add_argument("-s", "--per-step", action="store_true")
     parser.add_argument("-l", "--log-scale", action="store_true")
@@ -87,24 +89,25 @@ def main():
         "linestyle": "-",
         "linewidth": 2,
     }
-    colors = ['tab:blue', 'tab:orange', 'tab:green']
+    colors = ["tab:blue", "tab:orange", "tab:green"]
     leg = []
 
-    timing_names =  ["time_startup", "time_first_step", "time_second_10"]
+    timing_names = ["time_startup", "time_first_step", "time_second_10"]
     timing_labels = ["startup", "first timestep", "second 9 timesteps"]
     scalfac = 1.0
-    figwidth=10
-    figheight=8
+    figwidth = 10
+    figheight = 8
     if args.per_step:
-        timing_names =  timing_names[-1:]
+        timing_names = timing_names[-1:]
         timing_labels = ["walltime per time step"]
         scalfac = 1.0/9.0
-        figheight=4
+        figheight = 4
 
     numplots = len(timing_names)
 
     # Plot the data
-    fig, ax = plt.subplots(ncols=1, nrows=numplots, sharex=True, figsize=(figwidth, figheight), constrained_layout=True)
+    fig, ax = plt.subplots(ncols=1, nrows=numplots, sharex=True,
+                           figsize=(figwidth, figheight), constrained_layout=True)
 
     if numplots == 1:
         ax = [ax]
@@ -122,11 +125,11 @@ def main():
             plt.ylim(0, 1.5*ylim[1])
 
         if args.log_scale:
-            ax[i].set_yscale('log', base=2)
+            ax[i].set_yscale("log", base=2)
         leg.append(p)
 
     commentcounter = 0
-    commentcolors = ['tab:cyan', 'tab:pink', 'tab:cyan', 'tab:pink']
+    commentcolors = ["tab:cyan", "tab:pink", "tab:cyan", "tab:pink"]  # noqa
     for d in data:
         if "comment" in d and args.annotate:
             commentcounter += 1
@@ -134,23 +137,24 @@ def main():
             ytextdelta = 0.1
             ytext = ytext0 + (commentcounter % 4) * ytextdelta
             # color = commentcolors[commentcounter % 4]
-            color = 'tab:gray'
+            color = "tab:gray"
             for i in range(numplots):
                 xlim = ax[0].get_xlim()
-                xt = (date2num(d['run_date'])-xlim[0]) / (xlim[1]-xlim[0])
-                #(xt, _) = ax[0].transLimits.transform((date2num(d['run_date']),0))  # get the coordinates on the axis
+                xt = (date2num(d["run_date"])-xlim[0]) / (xlim[1]-xlim[0])
+                # get the coordinates on the axis
+                #(xt, _) = ax[0].transLimits.transform((date2num(d["run_date"]),0))
                 ax[i].plot([xt, xt], [-0.05, ytext-0.05], transform=ax[i].transAxes,
-                           color=color, linestyle='--', lw=1, clip_on=False)
-                if i==0:
-                    ax[i].text(xt, ytext, d['comment'], ha='center', transform=ax[i].transAxes,
-                               color=color, rotation=90)
+                           color=color, linestyle="--", lw=1, clip_on=False)
+                if i == 0:
+                    ax[i].text(xt, ytext, d["comment"], ha="center",
+                               transform=ax[i].transAxes, color=color, rotation=90)
 
     ax[-1].tick_params(axis="x", labelrotation=45)
     for i in range(numplots):
         ax[i].grid(True)
     ax[-1].set_xlabel("date")
     ax[0].legend(handles=leg,
-              bbox_to_anchor=(0,1.02,0.3,0.2), loc="lower left",
+              bbox_to_anchor=(0, 1.02, 0.3, 0.2), loc="lower left",
               mode="expand", borderaxespad=0, ncol=1)
     if args.per_step:
         ax[0].set_ylabel("walltime/step (s)")
@@ -161,6 +165,7 @@ def main():
         plt.savefig(args.save_plot, bbox_inches="tight")
     else:
         plt.show()
+
 
 if __name__ == "__main__":
     main()
