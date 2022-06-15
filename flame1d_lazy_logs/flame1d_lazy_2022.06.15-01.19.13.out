@@ -1,0 +1,949 @@
+Customizing shell for Lassen.
+Running with EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge
+Activating 'nozzle.lazy.timing.env' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin/python
+# conda environments:
+#
+base                     /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3
+nozzle.lazy.timing.env  *  /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/abate.mtc_euler.env
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/ceesd.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/chem.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/dgfem
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/mc.master
+
+LMOD_FAMILY_COMPILER_VERSION=8.3.1
+PROJ_LIB=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/share/proj
+LLNL_IPISOLATE=0
+MANPATH=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release/share/man:/usr/tce/packages/gcc/gcc-8.3.1/man:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/man:/usr/man:/usr/share/man:/usr/local/man:/usr/X11R6/man:/usr/lib64/mvapich/default/man:/opt/ibm/spectrum_mpi/jsm_pmix/share/man
+LSB_EXEC_CLUSTER=lassen
+OMPI_COMM_WORLD_RANK=0
+LMOD_FAMILY_CUDA=cuda
+LMOD_ANCIENT_TIME=3600
+GUESTFISH_INIT=\e[1;34m
+_ModuleTable003_=LAp1c2VyTmFtZSA9ICJnY2MvOC4zLjEiLAp3ViA9ICIwMDAwMDAwMDguMDAwMDAwMDAzLjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKbGFsbG9jID0gewpmbiA9ICIvdXNyL3RjZXRtcC9tb2R1bGVmaWxlcy9Db3JlL2xhbGxvYy8yLjAubHVhIiwKZnVsbE5hbWUgPSAibGFsbG9jLzIuMCIsCmxvYWRPcmRlciA9IDMsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibGFsbG9jLzIuMCIsCndWID0gIl4wMDAwMDAwMi4qemZpbmFsIiwKfSwKWyJzcGVjdHJ1bS1tcGkiXSA9IHsKZm4gPSAiL3Vzci90Y2UvbW9kdWxlZmlsZXMvQ29tcGlsZXIvZ2NjLzguMy4xL3NwZWN0cnVtLW1waS9yb2xsaW5nLXJlbGVhc2UubHVhIiwKZnVs
+HOSTNAME=lassen254
+LSB_EFFECTIVE_RSRCREQ=1*{select[(LN) && (type == any)] order[r15s:pg] span[hosts=1]}+40*{select[(CN) && (type == any)] order[r15s:pg] span[ptile=40]}
+LSB_DOCKER_JOB_STARTTS=1655281244
+BBHASH=5067a0194cd17b2b08f0152aaa4bc219
+JSM_TMPDIR=/var/tmp
+MIRGE_TIMING_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing
+LSF_LOGDIR=/opt/ibm/spectrumcomputing/lsf/log
+LSF_LIM_API_NTRIES=1
+LSB_BATCH_JID=3638354
+__LMOD_REF_COUNT_MODULEPATH=/usr/tce/modulefiles/MPI/gcc/8.3.1/spectrum-mpi/rolling-release:1;/usr/tce/modulefiles/Compiler/gcc/8.3.1:1;/usr/tcetmp/modulefiles/Core:1;/usr/apps/modulefiles:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1;/collab/usr/global/tools/modulefiles/blueos_3_ppc64le_ib_p9/Core:1
+MAILTO=mtcampbe@illinois.edu,andreask@illinois.edu
+SHELL=/bin/bash
+LMOD_ROOT=/usr/share/lmod
+HISTSIZE=1000
+WISECONFIGDIR=/usr/share/wise2/
+LMOD_SYSTEM_DEFAULT_MODULES=StdEnv
+TMPDIR=/var/tmp
+MODULEPATH_ROOT=/usr/share/modulefiles
+SSH_CLIENT=192.168.66.202 35312 22
+LS_EXECCWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/flame1d-lazy/timing_run
+LSB_TRAPSIGS=trap # 15 10 12 2 1
+CONDA_SHLVL=1
+LMOD_FAMILY_CUDA_VERSION=10.1.243
+LS_JOBPID=62854
+CONDA_PROMPT_MODIFIER=
+LSB_MAX_NUM_PROCESSORS=41
+LSB_JOBRES_CALLBACK=55881@lassen710
+LMOD_PKG=/usr/share/lmod/lmod
+LSB_JOB_EXECUSER=mtcampbe
+LSB_JOBID=3638354
+QTDIR=/usr/lib64/qt-3.3
+LSF_SERVERDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc
+LSB_JOBRES_PID=62854
+LMOD_VERSION=8.6.16
+LMOD_SHORT_TIME=60
+QTINC=/usr/lib64/qt-3.3/include
+LSB_JOBNAME=flame1d_timing_job.sh
+LLNL_COMPUTE_NODES=lassen254
+LLNL_ATSDISABLE=0
+BSUB_BLOCK_EXEC_HOST=
+QT_GRAPHICSSYSTEM_CHECKED=1
+LSF_LIBDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib
+LSB_PROJECT_NAME=default
+OPAL_PREFIX=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release
+CUDA_HOME=/usr/tce/packages/cuda/cuda-10.1.243
+USER=mtcampbe
+PYOPENCL_CTX=port:tesla
+LMOD_sys=Linux
+LD_LIBRARY_PATH=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib:/usr/tce/packages/cuda/cuda-10.1.243/lib64
+SBD_KRB5CCNAME_VAL=
+LSB_EEXEC_REAL_UID=
+CONDA_EXE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda
+CEESD=/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen
+ENV=/g/g17/mtcampbe/.bashrc
+PFTP_CONFIG_FILENAME=/etc/pftp_config
+HOST_GRP=linux
+_ModuleTable004_=bE5hbWUgPSAic3BlY3RydW0tbXBpL3JvbGxpbmctcmVsZWFzZSIsCmxvYWRPcmRlciA9IDUsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAic3BlY3RydW0tbXBpL3JvbGxpbmctcmVsZWFzZSIsCndWID0gIl5yb2xsaW5nLipyZWxlYXNlLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvdXNyL3RjZS9tb2R1bGVmaWxlcy9NUEkvZ2NjLzguMy4xL3NwZWN0cnVtLW1waS9yb2xsaW5nLXJlbGVhc2UiCiwgIi91c3IvdGNlL21vZHVsZWZpbGVzL0NvbXBpbGVyL2djYy84LjMuMSIsICIvdXNyL3RjZXRtcC9tb2R1bGVmaWxlcy9Db3JlIgosICIvdXNyL2FwcHMvbW9kdWxlZmlsZXMiLCAiL3Vzci9zaGFyZS9tb2R1bGVm
+HOSTTYPE=LINUXPPC64LE
+LSF_INVOKE_CMD=bsub
+CUDA_CACHE_DISABLE=1
+LS_EXEC_T=START
+LMOD_FAMILY_LALLOC=lalloc
+LS_SUBCWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/flame1d-lazy/timing_run
+LSB_SUB_RES_REQ=1*{select[LN]span[hosts=1]} + 40*{select[CN]span[ptile=40]}
+LSB_HOSTS=lassen710 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254 lassen254
+LMOD_PREPEND_BLOCK=normal
+LMOD_FAMILY_MPI_VERSION=rolling-release
+GUESTFISH_PS1=\[\e[1;32m\]><fs>\[\e[0;31m\] 
+_CE_CONDA=
+LSB_UNIXGROUP_INT=mtcampbe
+LSB_JOBFILENAME=/g/g17/mtcampbe/.lsbatch/1655281241.3638354
+LSB_JOBINDEX=0
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpjb21waWxlciA9ICJnY2MiLApjdWRhID0gImN1ZGEiLApsYWxsb2MgPSAibGFsbG9jIiwKbXBpID0gInNwZWN0cnVtLW1waSIsCn0sCm1UID0gewpTdGRFbnYgPSB7CmZuID0gIi91c3IvdGNldG1wL21vZHVsZWZpbGVzL0NvcmUvU3RkRW52Lmx1YSIsCmZ1bGxOYW1lID0gIlN0ZEVudiIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0gewpsbW9kID0gewpzdGlja3kgPSAxLAp9LAp9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gIlN0ZEVudiIsCndWID0gIk0uKnpm
+PATH=/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:/usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-8.3.1/bin:/usr/tce/packages/gcc/gcc-8.3.1/bin:/usr/tce/packages/lalloc/lalloc-2.0/bin:/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin:/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin:/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:/usr/tce/packages/cuda/cuda-10.1.243/bin:/usr/tcetmp/bin:/usr/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibm/spectrum_mpi/jsm_pmix/bin:/opt/ibm/bb/bin:/opt/ibm/flightlog/bin:/opt/ibutils/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin
+MAIL=/var/spool/mail/mtcampbe
+PROJ_NETWORK=ON
+LCSCHEDCLUSTER=lassen
+LSB_EXIT_PRE_ABORT=99
+LSB_JOBEXIT_STAT=0
+LMOD_SETTARG_CMD=:
+LMOD_FAMILY_LALLOC_VERSION=2.0
+CONDA_PREFIX=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env
+INPUTRC=/etc/inputrc
+PWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/flame1d-lazy/timing_run
+_LMFILES_=/usr/tcetmp/modulefiles/Core/cuda/10.1.243.lua:/usr/tcetmp/modulefiles/Core/StdEnv.lua:/usr/tcetmp/modulefiles/Core/lalloc/2.0.lua:/usr/tcetmp/modulefiles/Core/gcc/8.3.1.lua:/usr/tce/modulefiles/Compiler/gcc/8.3.1/spectrum-mpi/rolling-release.lua
+EDITOR=/bin/vi
+LANG=en_US.UTF-8
+LSB_CHKFILENAME=/g/g17/mtcampbe/.lsbatch/1655281241.3638354
+MODULEPATH=/usr/tce/modulefiles/MPI/gcc/8.3.1/spectrum-mpi/rolling-release:/usr/tce/modulefiles/Compiler/gcc/8.3.1:/usr/tcetmp/modulefiles/Core:/usr/apps/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/collab/usr/global/tools/modulefiles/blueos_3_ppc64le_ib_p9/Core
+LSB_DJOB_HOSTFILE=/g/g17/mtcampbe/.lsbatch/1655281241.3638354.hostfile
+LOADEDMODULES=cuda/10.1.243:StdEnv:lalloc/2.0:gcc/8.3.1:spectrum-mpi/rolling-release
+KDEDIRS=/usr
+GUESTFISH_OUTPUT=\e[0m
+_ModuleTable_Sz_=5
+LSB_JOB_STARTER=/usr/tcetmp/bin/bsub_job_starter %USRCMD
+EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge
+LSF_JOB_TIMESTAMP_VALUE=1655281244
+LMOD_CMD=/usr/share/lmod/lmod/libexec/lmod
+_ModuleTable005_=aWxlcy9MaW51eCIKLCAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlIiwgIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLCAiL2NvbGxhYi91c3IvZ2xvYmFsL3Rvb2xzL21vZHVsZWZpbGVzL2JsdWVvc18zX3BwYzY0bGVfaWJfcDkvQ29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvdXNyL3RjZXRtcC9tb2R1bGVmaWxlcy9Db3JlOi91c3IvYXBwcy9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIiwKfQo=
+BBPATH=/mnt/bb_5067a0194cd17b2b08f0152aaa4bc219
+LSB_EXEC_HOSTTYPE=UNKNOWN_AUTO_DETECT
+LSB_DJOB_NUMPROC=41
+LSF_BINDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin
+LLNL_NUM_COMPUTE_NODES=1
+HISTCONTROL=ignoredups
+ENVIRONMENT=BATCH
+_CE_M=
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+CXX=mpicxx
+HOME=/g/g17/mtcampbe
+SHLVL=6
+__LMOD_REF_COUNT_PATH=/usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-8.3.1/bin:2;/usr/tce/packages/gcc/gcc-8.3.1/bin:2;/usr/tce/packages/lalloc/lalloc-2.0/bin:2;/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin:1;/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin:1;/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:1;/usr/tce/packages/cuda/cuda-10.1.243/bin:2;/usr/tcetmp/bin:2;/usr/condabin:1;/usr/lib64/qt-3.3/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/opt/ibm/spectrum_mpi/jsm_pmix/bin:1;/opt/ibm/bb/bin:1;/opt/ibm/flightlog/bin:1;/opt/ibutils/bin:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin:1
+JOB_TERMINATE_INTERVAL=10
+LSB_ACCT_FILE=/tmp/3638354.tmpdir/.1655281241.3638354.acct
+_ModuleTable002_=aW5hbCIsCn0sCmN1ZGEgPSB7CmZuID0gIi91c3IvdGNldG1wL21vZHVsZWZpbGVzL0NvcmUvY3VkYS8xMC4xLjI0My5sdWEiLApmdWxsTmFtZSA9ICJjdWRhLzEwLjEuMjQzIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJjdWRhLzEwLjEuMjQzIiwKd1YgPSAiXjAwMDAwMDEwLjAwMDAwMDAwMS4wMDAwMDAyNDMuKnpmaW5hbCIsCn0sCmdjYyA9IHsKZm4gPSAiL3Vzci90Y2V0bXAvbW9kdWxlZmlsZXMvQ29yZS9nY2MvOC4zLjEubHVhIiwKZnVsbE5hbWUgPSAiZ2NjLzguMy4xIiwKbG9hZE9yZGVyID0gNCwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUi
+CSM_ALLOCATION_ID=3707278
+BINARY_TYPE_HPC=
+LLNL_CORE_ISOLATION=2
+FC=mpif90
+LSB_SUB_HOST=lassen708
+XDG_CACHE_HOME=/tmp/mtcampbe/xdg-scratch
+__LSF_JOB_TMPDIR__=/tmp/3638354.tmpdir
+LSFUSER=mtcampbe
+LSB_SUB_USER=mtcampbe
+LSB_OUTPUTFILE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/flame1d-lazy/timing_run/
+LSB_OUTDIR=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/flame1d-lazy/timing_run
+LSB_MCPU_HOSTS=lassen710 1 lassen254 40 
+LMOD_arch=ppc64le
+TMP=/var/tmp
+MPI_ROOT=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release
+LSB_QUEUE=pbatch
+CONDA_PYTHON_EXE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/python
+LOGNAME=mtcampbe
+QTLIB=/usr/lib64/qt-3.3/lib
+CVS_RSH=ssh
+XLSF_UIDDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib/uid
+XDG_DATA_DIRS=/g/g17/mtcampbe/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+CEESD_CONDA_LASSEN=/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install
+SSH_CONNECTION=192.168.66.202 35312 192.168.64.254 22
+SYS_TYPE=blueos_3_ppc64le_ib_p9
+MODULESHOME=/usr/share/lmod/lmod
+LMOD_SETTARG_FULL_SUPPORT=no
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib:1
+PKG_CONFIG_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64/pkgconfig
+OMP_NUM_THREADS=1
+LSF_CGROUP_TOPDIR_KEY=lassen
+CONDA_DEFAULT_ENV=nozzle.lazy.timing.env
+LMOD_FULL_SETTARG_SUPPORT=no
+LMOD_FAMILY_COMPILER=gcc
+LSB_XFER_OP=
+LSB_EEXEC_REAL_GID=
+__LMOD_REF_COUNT_PKG_CONFIG_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64/pkgconfig:1
+CC=mpicc
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+LMOD_DIR=/usr/share/lmod/lmod/libexec
+LEXEC_UNPICKLE_QUIET=1
+__LMOD_REF_COUNT_MANPATH=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release/share/man:1;/usr/tce/packages/gcc/gcc-8.3.1/man:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/man:1;/usr/man:1;/usr/share/man:1;/usr/local/man:1;/usr/X11R6/man:1;/usr/lib64/mvapich/default/man:1;/opt/ibm/spectrum_mpi/jsm_pmix/share/man:1
+LSF_ENVDIR=/opt/ibm/spectrumcomputing/lsf/conf
+GUESTFISH_RESTORE=\e[0m
+LSB_DJOB_RANKFILE=/g/g17/mtcampbe/.lsbatch/1655281241.3638354.hostfile
+LMOD_FAMILY_MPI=spectrum-mpi
+LMOD_COLORIZE=yes
+HISTFILE=/g/g17/mtcampbe/.bash_history
+BASH_FUNC_module()=() {  local __lmod_my_status;
+ local __lmod_sh_dbg;
+ if [ -z "${LMOD_SH_DBG_ON+x}" ]; then
+ case "$-" in 
+ *v*x*)
+ __lmod_sh_dbg='vx'
+ ;;
+ *v*)
+ __lmod_sh_dbg='v'
+ ;;
+ *x*)
+ __lmod_sh_dbg='x'
+ ;;
+ esac;
+ fi;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ set +$__lmod_sh_dbg;
+ echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output" 1>&2;
+ fi;
+ eval "$($LMOD_CMD bash "$@")" && eval $(${LMOD_SETTARG_CMD:-:} -s sh);
+ __lmod_my_status=$?;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ echo "Shell debugging restarted" 1>&2;
+ set -$__lmod_sh_dbg;
+ fi;
+ return $__lmod_my_status
+}
+BASH_FUNC_ml()=() {  eval "$($LMOD_DIR/ml_cmd "$@")"
+}
+_=/usr/bin/env
+LSB_MCPU_HOSTS=lassen710 1 lassen254 40 
+get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Default casename flame1d
+Reading user input from 'timing_params.yaml'
+Running ./flame1d.py
+
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/array_context.py:320: UserWarning: No memory allocator specified, please pass one. (Preferably a pyopencl.tools.MemoryPool in order to reduce device allocations)
+  warn("No memory allocator specified, please pass one. "
+#### Simluation control data: ####
+	nviz = 100
+	nrestart = 100
+	nhealth = 100
+	nstatus = 1
+	current_dt = 5e-08
+	t_final = 1e-06
+	order = 1
+	Time integration rk4
+	Fuel: C2H4
+#### Simluation control data: ####
+./flame1d.py:310: DeprecationWarning: XML_Node::build: 
+The CTI and XML input file formats are deprecated and will be removed in
+Cantera 3.0. Use 'cti2yaml.py' or 'ctml2yaml.py' to convert CTI or XML input
+files to the YAML format. See https://cantera.org/tutorials/legacy2yaml.html
+for more information.
+  cantera_soln = cantera.Solution(phase_id="gas", source=mech_cti)
+Input state (T,P,X) = (300.0, 101325.0, [0.06542056 0.19626168 0.         0.         0.         0.
+ 0.73831776]
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/thermochemistry.py:136: UserWarning: make_pyrometheus_mechanism_class is deprecated. use get_pyrometheus_wrapper_class_from_cantera.
+  warn("make_pyrometheus_mechanism_class is deprecated."
+Pyrometheus mechanism species names ['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+Unburned (T,P,Y) = (300.0, 101325.0, [0.06372925 0.21806609 0.         0.         0.         0.
+ 0.71820466]
+Burned (T,P,Y) = (299.99999999999994, 101325.00000023544, [9.18702785e-176 8.53517662e-020 1.99947297e-001 8.07802672e-037
+ 8.18480439e-002 5.43388456e-033 7.18204659e-001]
+rank 0: sent all mesh partitions
+Making discretization
+./flame1d.py:495: DeprecationWarning: EagerDGDiscretization is deprecated and will go away in 2022. Use the base DiscretizationCollection with grudge.op instead.
+  discr = EagerDGDiscretization(actx,
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/array_context.py:320: UserWarning: No memory allocator specified, please pass one. (Preferably a pyopencl.tools.MemoryPool in order to reduce device allocations)
+  warn("No memory allocator specified, please pass one. "
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.87 s)
+Initializing soln.
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+find_partition: Split 342 nodes into 1 parts, with [342] nodes in each partition.
+transform_dag: completed (0.32s wall 1.00x CPU)
+Transforming kernel with 41 statements.
+fuse_same_discretization_entity_loops on '_pt_kernel': completed (0.85s wall 1.00x CPU)
+Loop Fusion: completed (0.93s wall 1.00x CPU)
+Array Contraction: Contracting 10 temps
+contract_arrays on '_pt_kernel': completed (0.50s wall 1.00x CPU)
+Array Contraction: completed (0.57s wall 1.00x CPU)
+_pt_kernel: schedule: completed (0.91s wall 1.00x CPU)
+transform_loopy_program: completed (3.09s wall 1.00x CPU)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.57 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+Fusion actx took: 0.9208662509918213 secs
+Initialization for Case(flame1d)
+===
+Num 2d order-1 elements: 43978
+Num global elements: 43978
+Timestep:        5e-08
+Final time:      1e-06
+CFL:             1.0
+Constant CFL:    False
+Initialization:  flame1d
+EOS:             PyrometheusMixture
+
+Stepping.
+Transforming kernel with 0 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+find_partition: Split 341 nodes into 1 parts, with [341] nodes in each partition.
+transform_dag: completed (0.34s wall 1.00x CPU)
+Transforming kernel with 40 statements.
+fuse_same_discretization_entity_loops on '_pt_kernel': completed (0.83s wall 1.00x CPU)
+Loop Fusion: completed (0.91s wall 1.00x CPU)
+Array Contraction: Contracting 9 temps
+contract_arrays on '_pt_kernel': completed (0.41s wall 1.00x CPU)
+Array Contraction: completed (0.48s wall 1.00x CPU)
+_pt_kernel: check array access within bounds: completed (0.40s wall 1.00x CPU)
+_pt_kernel: schedule: completed (1.24s wall 1.00x CPU)
+transform_loopy_program: completed (3.53s wall 1.00x CPU)
+_pt_kernel: generate code: completed (0.31s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.64 s)
+Fusion actx took: 1.09674072265625 secs
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+Transforming kernel with 0 statements.
+Transforming kernel with 10 statements.
+Loop Fusion: completed (0.30s wall 1.00x CPU)
+Array Contraction: Contracting 1 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+building face restriction: start
+building face restriction: done
+Transforming kernel with 0 statements.
+Transforming kernel with 7 statements.
+Array Contraction: Contracting 2 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+Transforming kernel with 7 statements.
+Array Contraction: Contracting 1 temps
+_pt_kernel: generate code: completed (0.40s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.17 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.17 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.17 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.17 s)
+build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (1.17 s)
+build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (1.17 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+find_partition: Split 64 nodes into 1 parts, with [64] nodes in each partition.
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+Transforming kernel with 8 statements.
+Array Contraction: Contracting 7 temps
+transform_loopy_program: completed (0.59s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.51 s)
+Fusion actx took: 0.6447954177856445 secs
+build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.63 s)
+build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.61 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/array_context.py:1599: UserWarning: FusionContractorArrayContext.transform_loopy_program not broad enough (yet). Falling back to a possibly slower transformation strategy.
+  warn("FusionContractorArrayContext.transform_loopy_program not"
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.61 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+find_partition: Split 3 nodes into 1 parts, with [3] nodes in each partition.
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+Fusion actx took: 0.5280349254608154 secs
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+find_partition: Split 329 nodes into 1 parts, with [329] nodes in each partition.
+Transforming kernel with 17 statements.
+fuse_same_discretization_entity_loops on '_pt_kernel': completed (0.40s wall 1.00x CPU)
+Loop Fusion: completed (0.45s wall 1.00x CPU)
+Array Contraction: Contracting 10 temps
+contract_arrays on '_pt_kernel': completed (0.45s wall 1.00x CPU)
+Array Contraction: completed (0.50s wall 1.00x CPU)
+transform_loopy_program: completed (1.56s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.67 s)
+Fusion actx took: 1.0534117221832275 secs
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+Transforming kernel with 1 statements.
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+building face restriction: start
+building face restriction: done
+building face restriction: start
+building face restriction: done
+building face restriction: start
+building face restriction: done
+building face restriction: start
+building face restriction: done
+Transforming kernel with 0 statements.
+Transforming kernel with 0 statements.
+Transforming kernel with 7 statements.
+Array Contraction: Contracting 2 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+Transforming kernel with 6 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+Transforming kernel with 0 statements.
+Array Contraction: Contracting 0 temps
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+Transforming kernel with 0 statements.
+Transforming kernel with 0 statements.
+Transforming kernel with 0 statements.
+Transforming kernel with 7 statements.
+Array Contraction: Contracting 2 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+Transforming kernel with 6 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+Transforming kernel with 0 statements.
+Transforming kernel with 7 statements.
+Array Contraction: Contracting 2 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+Transforming kernel with 6 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+Transforming kernel with 45 statements.
+fuse_same_discretization_entity_loops on '_pt_kernel': completed (1.25s wall 1.00x CPU)
+Loop Fusion: completed (1.37s wall 1.00x CPU)
+Array Contraction: Contracting 0 temps
+preprocess_program on '_pt_kernel': completed (0.56s wall 1.00x CPU)
+_pt_kernel: check array access within bounds: completed (0.67s wall 1.00x CPU)
+_pt_kernel: generate code: completed (0.75s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.17 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.17 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.17 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.17 s)
+data wrapper de-duplication: 1444 encountered, 45 kept, 1399 eliminated
+deduplicate_data_wrappers[pre-partition]: completed (1.38s wall 1.00x CPU)
+transform_dag.infer_axes_tags[pre-partition]: completed (3.53s wall 1.00x CPU)
+find_partition: Split 7532 nodes into 1 parts, with [7532] nodes in each partition.
+transform_dag.mpms_materialization: completed (0.37s wall 1.00x CPU)
+transform_dag.naming_cse: completed (0.45s wall 1.00x CPU)
+data wrapper de-duplication: 45 encountered, 45 kept, 0 eliminated
+transform_dag.deduplicate_data_wrappers: completed (0.56s wall 1.00x CPU)
+transform_dag.materialize_all_einsums_or_reduces: completed (1.15s wall 1.00x CPU)
+transform_dag.infer_axes_tags: completed (3.53s wall 1.00x CPU)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.52 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.58 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.52 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.52 s)
+transform_dag: completed (11.53s wall 1.00x CPU)
+generate_loopy: completed (12.52s wall 1.00x CPU)
+Transforming kernel with 688 statements.
+fuse_same_discretization_entity_loops on '_pt_kernel': completed (32.94s wall 1.00x CPU)
+Loop Fusion: completed (35.98s wall 1.00x CPU)
+Array Contraction: Contracting 122 temps
+contract_arrays on '_pt_kernel': completed (7.74s wall 1.00x CPU)
+Array Contraction: completed (9.66s wall 1.00x CPU)
+_pt_kernel: preprocess: completed (0.76s wall 1.00x CPU)
+preprocess_program on '_pt_kernel': completed (11.14s wall 1.00x CPU)
+_pt_kernel: check array access within bounds: completed (13.53s wall 1.00x CPU)
+_pt_kernel: schedule: completed (17.36s wall 1.00x CPU)
+transform_loopy_program: completed (99.43s wall 1.00x CPU)
+_pt_kernel: generate code: completed (24.71s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_6' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_7' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_8' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_9' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_10' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_11' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_12' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_13' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_14' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_15' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_16' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_17' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_18' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_19' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+build program: kernel '_pt_kernel_20' was part of a lengthy source build resulting from a binary cache miss (11.74 s)
+Fusion actx took: 39.33132004737854 secs
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+Transforming kernel with 1 statements.
+Fusion actx took: 0.013106346130371094 secs
+Fusion actx took: 0.013004302978515625 secs
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+Transforming kernel with 1 statements.
+Fusion actx took: 0.013150215148925781 secs
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+Transforming kernel with 1 statements.
+Fusion actx took: 0.008993387222290039 secs
+step = 0, sim time: 0.000000e+00 s, ------- step walltime: 216.811 s, log walltime: 0.000187635 s
+
+Fusion actx took: 0.009021997451782227 secs
+Fusion actx took: 0.0005512237548828125 secs
+Fusion actx took: 0.013247013092041016 secs
+Fusion actx took: 0.013053417205810547 secs
+Fusion actx took: 0.013092994689941406 secs
+Fusion actx took: 0.013102531433105469 secs
+Fusion actx took: 0.00912332534790039 secs
+step = 1, sim time: 5.000000e-08 s, ------- step walltime: 0.164669 s, log walltime: 0.000172138 s
+
+Fusion actx took: 0.009073495864868164 secs
+Fusion actx took: 0.0005421638488769531 secs
+Fusion actx took: 0.01318812370300293 secs
+Fusion actx took: 0.013069868087768555 secs
+Fusion actx took: 0.013093233108520508 secs
+Fusion actx took: 0.013187170028686523 secs
+Fusion actx took: 0.009090423583984375 secs
+step = 2, sim time: 1.000000e-07 s, ------- step walltime: 0.168277 s, log walltime: 9.72748e-05 s
+
+Fusion actx took: 0.00907135009765625 secs
+Fusion actx took: 0.0005450248718261719 secs
+Fusion actx took: 0.013080120086669922 secs
+Fusion actx took: 0.013060808181762695 secs
+Fusion actx took: 0.013088226318359375 secs
+Fusion actx took: 0.013095855712890625 secs
+Fusion actx took: 0.00910806655883789 secs
+step = 3, sim time: 1.500000e-07 s, ------- step walltime: 0.168027 s, log walltime: 9.77516e-05 s
+
+Fusion actx took: 0.009092092514038086 secs
+Fusion actx took: 0.0005478858947753906 secs
+Fusion actx took: 0.013151168823242188 secs
+Fusion actx took: 0.013109922409057617 secs
+Fusion actx took: 0.013143539428710938 secs
+Fusion actx took: 0.013135433197021484 secs
+Fusion actx took: 0.00916290283203125 secs
+step = 4, sim time: 2.000000e-07 s, ------- step walltime: 0.157497 s, log walltime: 9.94205e-05 s
+
+Fusion actx took: 0.009083032608032227 secs
+Fusion actx took: 0.0005419254302978516 secs
+Fusion actx took: 0.013197183609008789 secs
+Fusion actx took: 0.013189315795898438 secs
+Fusion actx took: 0.013173103332519531 secs
+Fusion actx took: 0.013198614120483398 secs
+Fusion actx took: 0.009264707565307617 secs
+step = 5, sim time: 2.500000e-07 s, ------- step walltime: 0.162091 s, log walltime: 9.84669e-05 s
+
+Fusion actx took: 0.009164810180664062 secs
+Fusion actx took: 0.0005512237548828125 secs
+Fusion actx took: 0.013241291046142578 secs
+Fusion actx took: 0.013222455978393555 secs
+Fusion actx took: 0.01322317123413086 secs
+Fusion actx took: 0.013245820999145508 secs
+Fusion actx took: 0.009313106536865234 secs
+step = 6, sim time: 3.000000e-07 s, ------- step walltime: 0.162772 s, log walltime: 9.72748e-05 s
+
+Fusion actx took: 0.009217023849487305 secs
+Fusion actx took: 0.0005536079406738281 secs
+Fusion actx took: 0.013262271881103516 secs
+Fusion actx took: 0.013250589370727539 secs
+Fusion actx took: 0.013253211975097656 secs
+Fusion actx took: 0.013575315475463867 secs
+Fusion actx took: 0.009373664855957031 secs
+step = 7, sim time: 3.500000e-07 s, ------- step walltime: 0.163081 s, log walltime: 9.89437e-05 s
+
+Fusion actx took: 0.009291887283325195 secs
+Fusion actx took: 0.0005488395690917969 secs
+Fusion actx took: 0.013344764709472656 secs
+Fusion actx took: 0.013292074203491211 secs
+Fusion actx took: 0.01326298713684082 secs
+Fusion actx took: 0.013272762298583984 secs
+Fusion actx took: 0.009468793869018555 secs
+step = 8, sim time: 4.000000e-07 s, ------- step walltime: 0.163075 s, log walltime: 9.70364e-05 s
+
+Fusion actx took: 0.009481430053710938 secs
+Fusion actx took: 0.0005538463592529297 secs
+Fusion actx took: 0.013348579406738281 secs
+Fusion actx took: 0.013342142105102539 secs
+Fusion actx took: 0.013319969177246094 secs
+Fusion actx took: 0.01331782341003418 secs
+Fusion actx took: 0.009551286697387695 secs
+step = 9, sim time: 4.500000e-07 s, ------- step walltime: 0.163452 s, log walltime: 9.77516e-05 s
+
+Fusion actx took: 0.009422540664672852 secs
+Fusion actx took: 0.0005588531494140625 secs
+Fusion actx took: 0.013390064239501953 secs
+Fusion actx took: 0.013330459594726562 secs
+Fusion actx took: 0.013365507125854492 secs
+Fusion actx took: 0.013370990753173828 secs
+Fusion actx took: 0.009603023529052734 secs
+step = 10, sim time: 5.000000e-07 s, ------- step walltime: 0.163609 s, log walltime: 9.84669e-05 s
+
+Fusion actx took: 0.009464740753173828 secs
+Fusion actx took: 0.0005590915679931641 secs
+Fusion actx took: 0.01341104507446289 secs
+Fusion actx took: 0.0133819580078125 secs
+Fusion actx took: 0.013403177261352539 secs
+Fusion actx took: 0.013413667678833008 secs
+Fusion actx took: 0.00964975357055664 secs
+step = 11, sim time: 5.500000e-07 s, ------- step walltime: 0.164153 s, log walltime: 9.70364e-05 s
+
+Fusion actx took: 0.009564876556396484 secs
+Fusion actx took: 0.0005605220794677734 secs
+Fusion actx took: 0.013439416885375977 secs
+Fusion actx took: 0.01343226432800293 secs
+Fusion actx took: 0.013452291488647461 secs
+Fusion actx took: 0.013453960418701172 secs
+Fusion actx took: 0.009782791137695312 secs
+step = 12, sim time: 6.000000e-07 s, ------- step walltime: 0.164749 s, log walltime: 9.72748e-05 s
+
+Fusion actx took: 0.009672880172729492 secs
+Fusion actx took: 0.0005705356597900391 secs
+Fusion actx took: 0.013512372970581055 secs
+Fusion actx took: 0.013472318649291992 secs
+Fusion actx took: 0.01346588134765625 secs
+Fusion actx took: 0.013490915298461914 secs
+Fusion actx took: 0.009793281555175781 secs
+step = 13, sim time: 6.500000e-07 s, ------- step walltime: 0.165431 s, log walltime: 0.000100851 s
+
+Fusion actx took: 0.009696245193481445 secs
+Fusion actx took: 0.0005650520324707031 secs
+Fusion actx took: 0.013492107391357422 secs
+Fusion actx took: 0.013519048690795898 secs
+Fusion actx took: 0.013496637344360352 secs
+Fusion actx took: 0.013534069061279297 secs
+Fusion actx took: 0.010048151016235352 secs
+step = 14, sim time: 7.000000e-07 s, ------- step walltime: 0.165449 s, log walltime: 9.89437e-05 s
+
+Fusion actx took: 0.009766101837158203 secs
+Fusion actx took: 0.0005681514739990234 secs
+Fusion actx took: 0.013550519943237305 secs
+Fusion actx took: 0.013534307479858398 secs
+Fusion actx took: 0.013534307479858398 secs
+Fusion actx took: 0.013559818267822266 secs
+Fusion actx took: 0.009923458099365234 secs
+step = 15, sim time: 7.500000e-07 s, ------- step walltime: 0.165558 s, log walltime: 9.87053e-05 s
+
+Fusion actx took: 0.009842634201049805 secs
+Fusion actx took: 0.00057220458984375 secs
+Fusion actx took: 0.013592720031738281 secs
+Fusion actx took: 0.013547897338867188 secs
+Fusion actx took: 0.013553619384765625 secs
+Fusion actx took: 0.013556718826293945 secs
+Fusion actx took: 0.009969711303710938 secs
+step = 16, sim time: 8.000000e-07 s, ------- step walltime: 0.165761 s, log walltime: 9.77516e-05 s
+
+Fusion actx took: 0.009877681732177734 secs
+Fusion actx took: 0.0005719661712646484 secs
+Fusion actx took: 0.013595342636108398 secs
+Fusion actx took: 0.013629436492919922 secs
+Fusion actx took: 0.013609886169433594 secs
+Fusion actx took: 0.01362156867980957 secs
+Fusion actx took: 0.010040521621704102 secs
+step = 17, sim time: 8.500000e-07 s, ------- step walltime: 0.166085 s, log walltime: 9.84669e-05 s
+
+Fusion actx took: 0.009952545166015625 secs
+Fusion actx took: 0.0005769729614257812 secs
+Fusion actx took: 0.013662576675415039 secs
+Fusion actx took: 0.013631105422973633 secs
+Fusion actx took: 0.01363992691040039 secs
+Fusion actx took: 0.013654947280883789 secs
+Fusion actx took: 0.010174751281738281 secs
+step = 18, sim time: 9.000000e-07 s, ------- step walltime: 0.166736 s, log walltime: 9.91821e-05 s
+
+Fusion actx took: 0.010011434555053711 secs
+Fusion actx took: 0.0005803108215332031 secs
+Fusion actx took: 0.013722896575927734 secs
+Fusion actx took: 0.013689994812011719 secs
+Fusion actx took: 0.013700723648071289 secs
+Fusion actx took: 0.013711929321289062 secs
+Fusion actx took: 0.010181903839111328 secs
+step = 19, sim time: 9.500000e-07 s, ------- step walltime: 0.167235 s, log walltime: 9.9659e-05 s
+
+Fusion actx took: 0.010155200958251953 secs
+Fusion actx took: 0.0005850791931152344 secs
+Fusion actx took: 0.01376652717590332 secs
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+Fusion actx took: 0.013803720474243164 secs
+Fusion actx took: 0.013724088668823242 secs
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+Fusion actx took: 0.013782978057861328 secs
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+Fusion actx took: 0.01018214225769043 secs
+step = 20, sim time: 1.000000e-06 s, ------- step walltime: 2.08283 s, log walltime: 9.9659e-05 s
+
+Checkpointing final state ...
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.50 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+Transforming kernel with 1 statements.
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+Transforming kernel with 10 statements.
+Loop Fusion: completed (0.31s wall 1.00x CPU)
+Array Contraction: Contracting 9 temps
+contract_arrays on '_pt_kernel': completed (0.39s wall 1.00x CPU)
+Array Contraction: completed (0.42s wall 1.00x CPU)
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.56 s)
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+Fusion actx took: 0.0005724430084228516 secs
+Fusion actx took: 0.0002880096435546875 secs
+Transforming kernel with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.51 s)
+Transforming kernel with 1 statements.
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 3638354: <flame1d_timing_job.sh> in cluster <lassen> Done
+
+Job <flame1d_timing_job.sh> was submitted from host <lassen708> by user <mtcampbe> in cluster <lassen> at Wed Jun 15 01:20:41 2022
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <mtcampbe> in cluster <lassen> at Wed Jun 15 01:20:44 2022
+                            <40*lassen254>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/flame1d-lazy/timing_run> was used as the working directory.
+Started at Wed Jun 15 01:20:44 2022
+Terminated at Wed Jun 15 01:26:44 2022
+Results reported at Wed Jun 15 01:26:44 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+#BSUB -nnodes 1
+#BSUB -G uiuc
+#BSUB -W 60
+#BSUB -q pbatch
+
+printf "Running with EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge\n"
+
+source "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/config/activate_env.sh"
+export PYOPENCL_CTX="port:tesla"
+export XDG_CACHE_HOME="/tmp/mtcampbe/xdg-scratch"
+rm -rf $XDG_CACHE_HOME
+rm -f timing-run-done
+which python
+conda env list
+env
+env | grep LSB_MCPU_HOSTS
+
+jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./flame1d.py -i timing_params.yaml --lazy --log
+touch timing-run-done
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.28 sec.
+    Max Memory :                                 59 MB
+    Average Memory :                             57.88 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1634 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   359 sec.
+    Turnaround time :                            363 sec.
+
+The output (if any) is above this job summary.
+
