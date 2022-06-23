@@ -1,0 +1,789 @@
+Customizing shell for Lassen.
+Running with EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge
+Activating 'nozzle.lazy.timing.env' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin/python
+# conda environments:
+#
+                         /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/testing/test-x/emirge/miniforge3/envs/testing.test.x
+base                     /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3
+nozzle.lazy.timing.env  *  /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/abate.mtc_euler.env
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/ceesd.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/chem.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/dgfem
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/mc.master
+
+LMOD_FAMILY_COMPILER_VERSION=8.3.1
+PROJ_LIB=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/share/proj
+LLNL_IPISOLATE=0
+MANPATH=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release/share/man:/usr/tce/packages/gcc/gcc-8.3.1/man:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/man:/usr/man:/usr/share/man:/usr/local/man:/usr/X11R6/man:/usr/lib64/mvapich/default/man:/opt/ibm/spectrum_mpi/jsm_pmix/share/man
+LSB_EXEC_CLUSTER=lassen
+OMPI_COMM_WORLD_RANK=0
+LMOD_FAMILY_CUDA=cuda
+LMOD_ANCIENT_TIME=3600
+GUESTFISH_INIT=\e[1;34m
+_ModuleTable003_=LAp1c2VyTmFtZSA9ICJnY2MvOC4zLjEiLAp3ViA9ICIwMDAwMDAwMDguMDAwMDAwMDAzLjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKbGFsbG9jID0gewpmbiA9ICIvdXNyL3RjZXRtcC9tb2R1bGVmaWxlcy9Db3JlL2xhbGxvYy8yLjAubHVhIiwKZnVsbE5hbWUgPSAibGFsbG9jLzIuMCIsCmxvYWRPcmRlciA9IDMsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibGFsbG9jLzIuMCIsCndWID0gIl4wMDAwMDAwMi4qemZpbmFsIiwKfSwKWyJzcGVjdHJ1bS1tcGkiXSA9IHsKZm4gPSAiL3Vzci90Y2UvbW9kdWxlZmlsZXMvQ29tcGlsZXIvZ2NjLzguMy4xL3NwZWN0cnVtLW1waS9yb2xsaW5nLXJlbGVhc2UubHVhIiwKZnVs
+HOSTNAME=lassen722
+LSB_EFFECTIVE_RSRCREQ=1*{select[(LN) && (type == any)] order[r15s:pg] span[hosts=1]}+40*{select[(CN) && (type == any)] order[r15s:pg] span[ptile=40]}
+LSB_DOCKER_JOB_STARTTS=1655973140
+BBHASH=b3bbe6ea8fc8936a002b87a48c180021
+JSM_TMPDIR=/var/tmp
+MIRGE_TIMING_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing
+LSF_LOGDIR=/opt/ibm/spectrumcomputing/lsf/log
+LSF_LIM_API_NTRIES=1
+LSB_BATCH_JID=3673226
+__LMOD_REF_COUNT_MODULEPATH=/usr/tce/modulefiles/MPI/gcc/8.3.1/spectrum-mpi/rolling-release:1;/usr/tce/modulefiles/Compiler/gcc/8.3.1:1;/usr/tcetmp/modulefiles/Core:1;/usr/apps/modulefiles:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1;/collab/usr/global/tools/modulefiles/blueos_3_ppc64le_ib_p9/Core:1
+MAILTO=mtcampbe@illinois.edu,andreask@illinois.edu
+SHELL=/bin/bash
+LMOD_ROOT=/usr/share/lmod
+HISTSIZE=1000
+WISECONFIGDIR=/usr/share/wise2/
+LMOD_SYSTEM_DEFAULT_MODULES=StdEnv
+TMPDIR=/var/tmp
+MODULEPATH_ROOT=/usr/share/modulefiles
+SSH_CLIENT=192.168.66.202 56580 22
+LS_EXECCWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run
+LSB_TRAPSIGS=trap # 15 10 12 2 1
+CONDA_SHLVL=1
+LMOD_FAMILY_CUDA_VERSION=10.1.243
+LS_JOBPID=102632
+CONDA_PROMPT_MODIFIER=
+LSB_MAX_NUM_PROCESSORS=41
+LSB_JOBRES_CALLBACK=51247@lassen710
+LMOD_PKG=/usr/share/lmod/lmod
+LSB_JOB_EXECUSER=mtcampbe
+LSB_JOBID=3673226
+QTDIR=/usr/lib64/qt-3.3
+LSF_SERVERDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc
+LSB_JOBRES_PID=102632
+LMOD_VERSION=8.6.16
+LMOD_SHORT_TIME=60
+QTINC=/usr/lib64/qt-3.3/include
+LSB_JOBNAME=isolator_timing_job.sh
+LLNL_COMPUTE_NODES=lassen722
+LLNL_ATSDISABLE=0
+BSUB_BLOCK_EXEC_HOST=
+QT_GRAPHICSSYSTEM_CHECKED=1
+LSF_LIBDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib
+LSB_PROJECT_NAME=default
+OPAL_PREFIX=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release
+CUDA_HOME=/usr/tce/packages/cuda/cuda-10.1.243
+USER=mtcampbe
+PYOPENCL_CTX=port:tesla
+LMOD_sys=Linux
+LD_LIBRARY_PATH=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib:/usr/tce/packages/cuda/cuda-10.1.243/lib64
+SBD_KRB5CCNAME_VAL=
+LSB_EEXEC_REAL_UID=
+CONDA_EXE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda
+CEESD=/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen
+ENV=/g/g17/mtcampbe/.bashrc
+PFTP_CONFIG_FILENAME=/etc/pftp_config
+HOST_GRP=linux
+_ModuleTable004_=bE5hbWUgPSAic3BlY3RydW0tbXBpL3JvbGxpbmctcmVsZWFzZSIsCmxvYWRPcmRlciA9IDUsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAic3BlY3RydW0tbXBpL3JvbGxpbmctcmVsZWFzZSIsCndWID0gIl5yb2xsaW5nLipyZWxlYXNlLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvdXNyL3RjZS9tb2R1bGVmaWxlcy9NUEkvZ2NjLzguMy4xL3NwZWN0cnVtLW1waS9yb2xsaW5nLXJlbGVhc2UiCiwgIi91c3IvdGNlL21vZHVsZWZpbGVzL0NvbXBpbGVyL2djYy84LjMuMSIsICIvdXNyL3RjZXRtcC9tb2R1bGVmaWxlcy9Db3JlIgosICIvdXNyL2FwcHMvbW9kdWxlZmlsZXMiLCAiL3Vzci9zaGFyZS9tb2R1bGVm
+HOSTTYPE=LINUXPPC64LE
+LSF_INVOKE_CMD=bsub
+CUDA_CACHE_DISABLE=1
+LS_EXEC_T=START
+LMOD_FAMILY_LALLOC=lalloc
+LS_SUBCWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run
+LSB_SUB_RES_REQ=1*{select[LN]span[hosts=1]} + 40*{select[CN]span[ptile=40]}
+LSB_HOSTS=lassen710 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722 lassen722
+LMOD_PREPEND_BLOCK=normal
+LMOD_FAMILY_MPI_VERSION=rolling-release
+GUESTFISH_PS1=\[\e[1;32m\]><fs>\[\e[0;31m\] 
+_CE_CONDA=
+LSB_UNIXGROUP_INT=mtcampbe
+LSB_JOBFILENAME=/g/g17/mtcampbe/.lsbatch/1655973138.3673226
+LSB_JOBINDEX=0
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpjb21waWxlciA9ICJnY2MiLApjdWRhID0gImN1ZGEiLApsYWxsb2MgPSAibGFsbG9jIiwKbXBpID0gInNwZWN0cnVtLW1waSIsCn0sCm1UID0gewpTdGRFbnYgPSB7CmZuID0gIi91c3IvdGNldG1wL21vZHVsZWZpbGVzL0NvcmUvU3RkRW52Lmx1YSIsCmZ1bGxOYW1lID0gIlN0ZEVudiIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0gewpsbW9kID0gewpzdGlja3kgPSAxLAp9LAp9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gIlN0ZEVudiIsCndWID0gIk0uKnpm
+PATH=/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:/usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-8.3.1/bin:/usr/tce/packages/gcc/gcc-8.3.1/bin:/usr/tce/packages/lalloc/lalloc-2.0/bin:/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin:/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin:/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:/usr/tce/packages/cuda/cuda-10.1.243/bin:/usr/tcetmp/bin:/usr/condabin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibm/spectrum_mpi/jsm_pmix/bin:/opt/ibm/bb/bin:/opt/ibm/flightlog/bin:/opt/ibutils/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin
+MAIL=/var/spool/mail/mtcampbe
+PROJ_NETWORK=ON
+LCSCHEDCLUSTER=lassen
+LSB_EXIT_PRE_ABORT=99
+LSB_JOBEXIT_STAT=0
+LMOD_SETTARG_CMD=:
+LMOD_FAMILY_LALLOC_VERSION=2.0
+CONDA_PREFIX=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env
+INPUTRC=/etc/inputrc
+PWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run
+_LMFILES_=/usr/tcetmp/modulefiles/Core/cuda/10.1.243.lua:/usr/tcetmp/modulefiles/Core/StdEnv.lua:/usr/tcetmp/modulefiles/Core/lalloc/2.0.lua:/usr/tcetmp/modulefiles/Core/gcc/8.3.1.lua:/usr/tce/modulefiles/Compiler/gcc/8.3.1/spectrum-mpi/rolling-release.lua
+EDITOR=/bin/vi
+LANG=en_US.UTF-8
+LSB_CHKFILENAME=/g/g17/mtcampbe/.lsbatch/1655973138.3673226
+MODULEPATH=/usr/tce/modulefiles/MPI/gcc/8.3.1/spectrum-mpi/rolling-release:/usr/tce/modulefiles/Compiler/gcc/8.3.1:/usr/tcetmp/modulefiles/Core:/usr/apps/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/collab/usr/global/tools/modulefiles/blueos_3_ppc64le_ib_p9/Core
+LSB_DJOB_HOSTFILE=/g/g17/mtcampbe/.lsbatch/1655973138.3673226.hostfile
+LOADEDMODULES=cuda/10.1.243:StdEnv:lalloc/2.0:gcc/8.3.1:spectrum-mpi/rolling-release
+KDEDIRS=/usr
+GUESTFISH_OUTPUT=\e[0m
+_ModuleTable_Sz_=5
+LSB_JOB_STARTER=/usr/tcetmp/bin/bsub_job_starter %USRCMD
+EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge
+LSF_JOB_TIMESTAMP_VALUE=1655973140
+LMOD_CMD=/usr/share/lmod/lmod/libexec/lmod
+_ModuleTable005_=aWxlcy9MaW51eCIKLCAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlIiwgIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLCAiL2NvbGxhYi91c3IvZ2xvYmFsL3Rvb2xzL21vZHVsZWZpbGVzL2JsdWVvc18zX3BwYzY0bGVfaWJfcDkvQ29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvdXNyL3RjZXRtcC9tb2R1bGVmaWxlcy9Db3JlOi91c3IvYXBwcy9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIiwKfQo=
+BBPATH=/mnt/bb_b3bbe6ea8fc8936a002b87a48c180021
+LSB_EXEC_HOSTTYPE=UNKNOWN_AUTO_DETECT
+LSB_DJOB_NUMPROC=41
+LSF_BINDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin
+LLNL_NUM_COMPUTE_NODES=1
+HISTCONTROL=ignoredups
+ENVIRONMENT=BATCH
+_CE_M=
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+CXX=mpicxx
+HOME=/g/g17/mtcampbe
+SHLVL=6
+__LMOD_REF_COUNT_PATH=/usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-8.3.1/bin:2;/usr/tce/packages/gcc/gcc-8.3.1/bin:2;/usr/tce/packages/lalloc/lalloc-2.0/bin:2;/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin:1;/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin:1;/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:1;/usr/tce/packages/cuda/cuda-10.1.243/bin:2;/usr/tcetmp/bin:2;/usr/condabin:1;/usr/lib64/qt-3.3/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/opt/ibm/spectrum_mpi/jsm_pmix/bin:1;/opt/ibm/bb/bin:1;/opt/ibm/flightlog/bin:1;/opt/ibutils/bin:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin:1
+JOB_TERMINATE_INTERVAL=10
+LSB_ACCT_FILE=/tmp/3673226.tmpdir/.1655973138.3673226.acct
+_ModuleTable002_=aW5hbCIsCn0sCmN1ZGEgPSB7CmZuID0gIi91c3IvdGNldG1wL21vZHVsZWZpbGVzL0NvcmUvY3VkYS8xMC4xLjI0My5sdWEiLApmdWxsTmFtZSA9ICJjdWRhLzEwLjEuMjQzIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJjdWRhLzEwLjEuMjQzIiwKd1YgPSAiXjAwMDAwMDEwLjAwMDAwMDAwMS4wMDAwMDAyNDMuKnpmaW5hbCIsCn0sCmdjYyA9IHsKZm4gPSAiL3Vzci90Y2V0bXAvbW9kdWxlZmlsZXMvQ29yZS9nY2MvOC4zLjEubHVhIiwKZnVsbE5hbWUgPSAiZ2NjLzguMy4xIiwKbG9hZE9yZGVyID0gNCwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUi
+CSM_ALLOCATION_ID=3733252
+BINARY_TYPE_HPC=
+LLNL_CORE_ISOLATION=2
+FC=mpif90
+LSB_SUB_HOST=lassen708
+XDG_CACHE_HOME=/tmp/mtcampbe/xdg-scratch
+__LSF_JOB_TMPDIR__=/tmp/3673226.tmpdir
+LSFUSER=mtcampbe
+LSB_SUB_USER=mtcampbe
+LSB_OUTPUTFILE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run/
+LSB_OUTDIR=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run
+LSB_MCPU_HOSTS=lassen710 1 lassen722 40 
+LMOD_arch=ppc64le
+TMP=/var/tmp
+MPI_ROOT=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release
+LSB_QUEUE=pbatch
+CONDA_PYTHON_EXE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/python
+LOGNAME=mtcampbe
+QTLIB=/usr/lib64/qt-3.3/lib
+CVS_RSH=ssh
+XLSF_UIDDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib/uid
+XDG_DATA_DIRS=/g/g17/mtcampbe/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+CEESD_CONDA_LASSEN=/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install
+SSH_CONNECTION=192.168.66.202 56580 192.168.66.214 22
+SYS_TYPE=blueos_3_ppc64le_ib_p9
+MODULESHOME=/usr/share/lmod/lmod
+LMOD_SETTARG_FULL_SUPPORT=no
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib:1
+PKG_CONFIG_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64/pkgconfig
+OMP_NUM_THREADS=1
+LSF_CGROUP_TOPDIR_KEY=lassen
+CONDA_DEFAULT_ENV=nozzle.lazy.timing.env
+LMOD_FULL_SETTARG_SUPPORT=no
+LMOD_FAMILY_COMPILER=gcc
+LSB_XFER_OP=
+LSB_EEXEC_REAL_GID=
+__LMOD_REF_COUNT_PKG_CONFIG_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64/pkgconfig:1
+CC=mpicc
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+LMOD_DIR=/usr/share/lmod/lmod/libexec
+LEXEC_UNPICKLE_QUIET=1
+__LMOD_REF_COUNT_MANPATH=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release/share/man:1;/usr/tce/packages/gcc/gcc-8.3.1/man:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/man:1;/usr/man:1;/usr/share/man:1;/usr/local/man:1;/usr/X11R6/man:1;/usr/lib64/mvapich/default/man:1;/opt/ibm/spectrum_mpi/jsm_pmix/share/man:1
+LSF_ENVDIR=/opt/ibm/spectrumcomputing/lsf/conf
+GUESTFISH_RESTORE=\e[0m
+LSB_DJOB_RANKFILE=/g/g17/mtcampbe/.lsbatch/1655973138.3673226.hostfile
+LMOD_FAMILY_MPI=spectrum-mpi
+LMOD_COLORIZE=yes
+HISTFILE=/g/g17/mtcampbe/.bash_history
+BASH_FUNC_module()=() {  local __lmod_my_status;
+ local __lmod_sh_dbg;
+ if [ -z "${LMOD_SH_DBG_ON+x}" ]; then
+ case "$-" in 
+ *v*x*)
+ __lmod_sh_dbg='vx'
+ ;;
+ *v*)
+ __lmod_sh_dbg='v'
+ ;;
+ *x*)
+ __lmod_sh_dbg='x'
+ ;;
+ esac;
+ fi;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ set +$__lmod_sh_dbg;
+ echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output" 1>&2;
+ fi;
+ eval "$($LMOD_CMD bash "$@")" && eval $(${LMOD_SETTARG_CMD:-:} -s sh);
+ __lmod_my_status=$?;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ echo "Shell debugging restarted" 1>&2;
+ set -$__lmod_sh_dbg;
+ fi;
+ return $__lmod_my_status
+}
+BASH_FUNC_ml()=() {  eval "$($LMOD_DIR/ml_cmd "$@")"
+}
+_=/usr/bin/env
+LSB_MCPU_HOSTS=lassen710 1 lassen722 40 
+Default casename isolator
+Using user input from file: timing_params.yaml
+Running ./isolator.py
+
+2022-06-23 01:32:34,079 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Shock capturing parameters: alpha 0.5, s0 -4.0, kappa 0.5
+
+#### Simluation control data: ####
+	nviz = 100
+	nrestart = 100
+	nhealth = 100
+	nstatus = 100
+	current_dt = 1e-08
+	t_final = 2e-07
+	order = 1
+	dimen = 2
+	Time integration rk4
+#### Simluation control data: ####
+
+
+#### Simluation material properties: ####
+	mu = 4.216360056e-05
+	kappa = 0.05621788139856423
+	Prandtl Number  = 0.75
+#### Simluation initialization data: ####
+	inlet Mach number 0.038727226466056475
+	inlet temperature 2075.8073416311686
+	inlet pressure 274212.0081934861
+	inlet rho 0.4623484671063763
+	inlet velocity 35.28896626974282
+	outlet Mach number 3.661995139955526
+	outlet temperature 563.9344091915701
+	outlet pressure 2865.7077436508835
+	outlet rho 0.01778579568979098
+	outlet velocity 1739.2462693097807
+#### Simluation initialization data: ####
+
+Reading mesh from data/isolator.msh
+2022-06-23 01:32:52,955 - INFO - meshmode.distributed - rank 0: sent all mesh partitions
+Making discretization
+./isolator.py:1100: DeprecationWarning: EagerDGDiscretization is deprecated and will go away in 2022. Use the base DiscretizationCollection with grudge.op instead.
+  discr = EagerDGDiscretization(
+Done making discretization
+2022-06-23 01:32:53,320 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:32:53,365 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:32:54,239 - INFO - loopy.tools - preprocess_program on '_pt_kernel': completed (0.86s wall 0.12x CPU)
+2022-06-23 01:32:55,199 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+Before restart/init
+Initializing soln.
+Initialization for Case(isolator)
+===
+Num 2d order-1 elements: 2504
+Num global elements: 2504
+Timestep:        1e-08
+Final time:      2e-07
+CFL:             1.0
+Constant CFL:    False
+Initialization:  isolator
+EOS:             IdealSingleGas
+
+2022-06-23 01:32:56,707 - INFO - meshmode.array_context - transform_dag.infer_axes_tags: completed (0.55s wall 1.00x CPU)
+2022-06-23 01:32:57,463 - INFO - meshmode.array_context - Transforming kernel with 14 statements.
+2022-06-23 01:32:58,808 - INFO - loopy.tools - fuse_same_discretization_entity_loops on '_pt_kernel': completed (1.24s wall 1.00x CPU)
+2022-06-23 01:32:58,945 - INFO - meshmode.array_context - Loop Fusion: completed (1.48s wall 1.00x CPU)
+2022-06-23 01:32:59,268 - INFO - meshmode.array_context - Array Contraction: Contracting 10 temps
+2022-06-23 01:33:00,854 - INFO - loopy.tools - contract_arrays on '_pt_kernel': completed (1.59s wall 1.00x CPU)
+2022-06-23 01:33:01,010 - INFO - meshmode.array_context - Array Contraction: completed (1.84s wall 1.00x CPU)
+2022-06-23 01:33:02,819 - INFO - loopy.tools - preprocess_program on '_pt_kernel': completed (1.25s wall 1.00x CPU)
+2022-06-23 01:33:05,362 - INFO - loopy.check - _pt_kernel: check array access within bounds: completed (2.08s wall 1.00x CPU)
+2022-06-23 01:33:22,691 - INFO - loopy.codegen - _pt_kernel: generate code: completed (17.11s wall 1.00x CPU)
+2022-06-23 01:33:27,453 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (4.41 s)
+2022-06-23 01:33:27,496 - INFO - meshmode.array_context - Transforming kernel with 0 statements.
+2022-06-23 01:33:27,500 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:27,982 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2022-06-23 01:33:28,140 - INFO - meshmode.array_context - Transforming kernel with 10 statements.
+2022-06-23 01:33:28,455 - INFO - meshmode.array_context - Array Contraction: Contracting 1 temps
+2022-06-23 01:33:30,056 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.80 s)
+2022-06-23 01:33:30,058 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.80 s)
+2022-06-23 01:33:30,059 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.80 s)
+2022-06-23 01:33:30,071 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2022-06-23 01:33:30,083 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2022-06-23 01:33:30,087 - INFO - meshmode.array_context - Transforming kernel with 0 statements.
+2022-06-23 01:33:30,325 - INFO - meshmode.array_context - Transforming kernel with 7 statements.
+2022-06-23 01:33:30,535 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2022-06-23 01:33:31,921 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-06-23 01:33:31,923 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-06-23 01:33:31,924 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-06-23 01:33:32,004 - INFO - meshmode.array_context - Transforming kernel with 7 statements.
+2022-06-23 01:33:32,270 - INFO - meshmode.array_context - Array Contraction: Contracting 1 temps
+2022-06-23 01:33:33,044 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.40s wall 1.00x CPU)
+2022-06-23 01:33:34,241 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.19 s)
+2022-06-23 01:33:34,242 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.19 s)
+2022-06-23 01:33:34,243 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.19 s)
+2022-06-23 01:33:34,244 - INFO - pyopencl - build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.19 s)
+2022-06-23 01:33:34,245 - INFO - pyopencl - build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (1.19 s)
+2022-06-23 01:33:34,247 - INFO - pyopencl - build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (1.19 s)
+2022-06-23 01:33:34,264 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:33:34,289 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:34,862 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-06-23 01:33:34,930 - INFO - meshmode.array_context - Transforming kernel with 4 statements.
+2022-06-23 01:33:35,024 - INFO - meshmode.array_context - Array Contraction: Contracting 3 temps
+2022-06-23 01:33:35,809 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+2022-06-23 01:33:36,430 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.61 s)
+2022-06-23 01:33:37,045 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+2022-06-23 01:33:37,058 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:33:37,065 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/array_context.py:1599: UserWarning: FusionContractorArrayContext.transform_loopy_program not broad enough (yet). Falling back to a possibly slower transformation strategy.
+  warn("FusionContractorArrayContext.transform_loopy_program not"
+2022-06-23 01:33:37,562 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-06-23 01:33:37,569 - INFO - meshmode.array_context - Transforming kernel with 0 statements.
+2022-06-23 01:33:37,643 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:33:37,672 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:38,335 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+2022-06-23 01:33:38,950 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+2022-06-23 01:33:39,562 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+2022-06-23 01:33:39,569 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:33:39,575 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:40,058 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-06-23 01:33:40,680 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.61 s)
+2022-06-23 01:33:41,292 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+2022-06-23 01:33:41,304 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:33:41,311 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:41,807 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-06-23 01:33:41,836 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:33:41,866 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:42,485 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+2022-06-23 01:33:42,509 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:33:42,539 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:43,147 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+-------- dt = 1.000e-08, cfl = 0.0253
+-------- P (min, max) (Pa) = (2.865706984e+03, 2.742120082e+05)
+-------- T (min, max) (K)  = (    300, 2075.81)
+
+2022-06-23 01:33:43,182 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:33:43,191 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:43,751 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2022-06-23 01:33:43,764 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:33:43,953 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:33:44,058 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:33:44,071 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:44,730 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+2022-06-23 01:33:44,754 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:33:44,767 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:45,408 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+2022-06-23 01:33:45,435 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:33:45,448 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:46,113 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+2022-06-23 01:33:46,157 - INFO - meshmode.array_context - Transforming kernel with 3 statements.
+2022-06-23 01:33:46,203 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:47,206 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-06-23 01:33:47,208 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-06-23 01:33:47,223 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:33:47,233 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:47,817 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+2022-06-23 01:33:47,841 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:33:47,852 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:48,444 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+2022-06-23 01:33:48,477 - INFO - meshmode.array_context - Transforming kernel with 3 statements.
+2022-06-23 01:33:48,521 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:49,430 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.63 s)
+2022-06-23 01:33:49,431 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.63 s)
+2022-06-23 01:33:49,496 - INFO - meshmode.array_context - Transforming kernel with 6 statements.
+2022-06-23 01:33:49,646 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:50,253 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.30s wall 1.00x CPU)
+2022-06-23 01:33:51,364 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.10 s)
+2022-06-23 01:33:51,364 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.10 s)
+2022-06-23 01:33:51,366 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.10 s)
+2022-06-23 01:33:51,366 - INFO - pyopencl - build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.10 s)
+2022-06-23 01:33:51,367 - INFO - pyopencl - build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (1.10 s)
+2022-06-23 01:33:51,432 - INFO - meshmode.array_context - Transforming kernel with 4 statements.
+2022-06-23 01:33:51,509 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2022-06-23 01:33:52,608 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.66 s)
+2022-06-23 01:33:52,609 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.66 s)
+2022-06-23 01:33:52,621 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-06-23 01:33:52,623 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-06-23 01:33:52,625 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-06-23 01:33:52,626 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+2022-06-23 01:33:52,632 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2022-06-23 01:33:52,637 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2022-06-23 01:33:52,647 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2022-06-23 01:33:52,652 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2022-06-23 01:33:52,662 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2022-06-23 01:33:52,674 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2022-06-23 01:33:52,684 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2022-06-23 01:33:52,772 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2022-06-23 01:33:52,786 - INFO - meshmode.array_context - Transforming kernel with 0 statements.
+2022-06-23 01:33:52,874 - INFO - meshmode.array_context - Transforming kernel with 0 statements.
+2022-06-23 01:33:53,028 - INFO - meshmode.array_context - Transforming kernel with 7 statements.
+2022-06-23 01:33:53,237 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2022-06-23 01:33:54,582 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:33:54,582 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:33:54,583 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:33:54,683 - INFO - meshmode.array_context - Transforming kernel with 6 statements.
+2022-06-23 01:33:54,867 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:56,180 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:33:56,180 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:33:56,182 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:33:56,199 - INFO - meshmode.array_context - Transforming kernel with 0 statements.
+2022-06-23 01:33:56,204 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:56,278 - INFO - meshmode.array_context - Transforming kernel with 0 statements.
+2022-06-23 01:33:56,345 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:33:56,359 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:33:56,880 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-06-23 01:33:56,899 - INFO - meshmode.array_context - Transforming kernel with 0 statements.
+2022-06-23 01:33:57,053 - INFO - meshmode.array_context - Transforming kernel with 7 statements.
+2022-06-23 01:33:57,263 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2022-06-23 01:33:58,609 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:33:58,610 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:33:58,610 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:33:58,708 - INFO - meshmode.array_context - Transforming kernel with 6 statements.
+2022-06-23 01:33:58,891 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:34:00,203 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:34:00,203 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:34:00,204 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:34:00,222 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:34:00,236 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:34:00,752 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-06-23 01:34:00,764 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:34:00,778 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:34:01,298 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-06-23 01:34:01,321 - INFO - meshmode.array_context - Transforming kernel with 0 statements.
+2022-06-23 01:34:01,469 - INFO - meshmode.array_context - Transforming kernel with 7 statements.
+2022-06-23 01:34:01,678 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2022-06-23 01:34:03,050 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:34:03,050 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:34:03,051 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:34:03,150 - INFO - meshmode.array_context - Transforming kernel with 6 statements.
+2022-06-23 01:34:03,395 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:34:04,738 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-06-23 01:34:04,739 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-06-23 01:34:04,739 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-06-23 01:34:04,758 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:34:04,773 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:34:05,289 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-06-23 01:34:05,301 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:34:05,315 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:34:05,840 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-06-23 01:34:05,954 - INFO - meshmode.array_context - Transforming kernel with 7 statements.
+2022-06-23 01:34:06,164 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2022-06-23 01:34:07,538 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:34:07,539 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:34:07,539 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.76 s)
+2022-06-23 01:34:07,640 - INFO - meshmode.array_context - Transforming kernel with 6 statements.
+2022-06-23 01:34:07,824 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:34:09,165 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-06-23 01:34:09,165 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-06-23 01:34:09,166 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (0.77 s)
+2022-06-23 01:34:09,184 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:34:09,198 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:34:09,722 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-06-23 01:34:09,733 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:34:09,748 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:34:10,275 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-06-23 01:34:10,286 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:34:10,301 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:34:10,826 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+2022-06-23 01:34:11,654 - INFO - meshmode.array_context - Transforming kernel with 45 statements.
+2022-06-23 01:34:12,971 - INFO - loopy.tools - fuse_same_discretization_entity_loops on '_pt_kernel': completed (1.24s wall 1.00x CPU)
+2022-06-23 01:34:13,025 - INFO - meshmode.array_context - Loop Fusion: completed (1.36s wall 1.00x CPU)
+2022-06-23 01:34:13,231 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:34:14,081 - INFO - loopy.tools - preprocess_program on '_pt_kernel': completed (0.64s wall 1.00x CPU)
+2022-06-23 01:34:14,912 - INFO - loopy.check - _pt_kernel: check array access within bounds: completed (0.67s wall 1.00x CPU)
+2022-06-23 01:34:16,033 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.75s wall 1.00x CPU)
+2022-06-23 01:34:17,244 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.17 s)
+2022-06-23 01:34:17,246 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.17 s)
+2022-06-23 01:34:17,248 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.17 s)
+2022-06-23 01:34:17,250 - INFO - pyopencl - build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.17 s)
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/artificial_viscosity.py:190: UserWarning: The AV boundary_kwargs interface is deprecated, please pass gas_model and time directly.
+  warn("The AV boundary_kwargs interface is deprecated, please pass gas_model"
+2022-06-23 01:34:18,185 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 1026 encountered, 54 kept, 972 eliminated
+2022-06-23 01:34:18,423 - INFO - grudge.array_context - deduplicate_data_wrappers[pre-partition]: completed (0.54s wall 1.00x CPU)
+2022-06-23 01:34:20,191 - INFO - grudge.array_context - transform_dag.infer_axes_tags[pre-partition]: completed (1.62s wall 1.00x CPU)
+2022-06-23 01:34:21,245 - INFO - pytato.partition - find_partition: Split 3554 nodes into 1 parts, with [3554] nodes in each partition.
+2022-06-23 01:34:22,019 - INFO - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/transform/__init__.py - data wrapper de-duplication: 54 encountered, 54 kept, 0 eliminated
+2022-06-23 01:34:23,027 - INFO - meshmode.array_context - transform_dag.materialize_all_einsums_or_reduces: completed (0.42s wall 1.00x CPU)
+2022-06-23 01:34:24,741 - INFO - meshmode.array_context - transform_dag.infer_axes_tags: completed (1.71s wall 1.00x CPU)
+2022-06-23 01:34:24,907 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:34:24,922 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:34:25,463 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2022-06-23 01:34:25,478 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:34:25,504 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:34:26,216 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.51 s)
+2022-06-23 01:34:26,232 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:34:26,259 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:34:26,978 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.52 s)
+2022-06-23 01:34:26,992 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:34:27,019 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:34:27,727 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.51 s)
+2022-06-23 01:34:27,756 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:34:27,796 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:34:28,627 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.58 s)
+2022-06-23 01:34:28,849 - INFO - arraycontext.impl.pytato.compile - transform_dag: completed (7.37s wall 1.00x CPU)
+2022-06-23 01:34:34,126 - INFO - arraycontext.impl.pytato.compile - generate_loopy: completed (5.28s wall 1.00x CPU)
+2022-06-23 01:34:34,127 - INFO - meshmode.array_context - Transforming kernel with 383 statements.
+2022-06-23 01:34:51,967 - INFO - loopy.tools - fuse_same_discretization_entity_loops on '_pt_kernel': completed (17.22s wall 1.00x CPU)
+2022-06-23 01:34:52,611 - INFO - meshmode.array_context - Loop Fusion: completed (18.47s wall 1.00x CPU)
+2022-06-23 01:34:55,902 - INFO - meshmode.array_context - Array Contraction: Contracting 82 temps
+2022-06-23 01:35:00,681 - INFO - loopy.tools - contract_arrays on '_pt_kernel': completed (4.79s wall 1.00x CPU)
+2022-06-23 01:35:01,085 - INFO - meshmode.array_context - Array Contraction: completed (5.68s wall 1.00x CPU)
+2022-06-23 01:35:09,207 - INFO - loopy.tools - preprocess_program on '_pt_kernel': completed (5.54s wall 1.00x CPU)
+2022-06-23 01:35:18,314 - INFO - loopy.check - _pt_kernel: check array access within bounds: completed (7.67s wall 1.00x CPU)
+2022-06-23 01:35:26,643 - INFO - loopy.schedule - _pt_kernel: schedule: completed (8.27s wall 1.00x CPU)
+2022-06-23 01:35:26,946 - INFO - arraycontext.impl.pytato.compile - transform_loopy_program: completed (52.82s wall 1.00x CPU)
+2022-06-23 01:35:51,363 - INFO - loopy.codegen - _pt_kernel: generate code: completed (23.41s wall 1.00x CPU)
+2022-06-23 01:36:02,538 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,540 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,542 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,543 - INFO - pyopencl - build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,545 - INFO - pyopencl - build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,545 - INFO - pyopencl - build program: kernel '_pt_kernel_4' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,547 - INFO - pyopencl - build program: kernel '_pt_kernel_5' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,548 - INFO - pyopencl - build program: kernel '_pt_kernel_6' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,550 - INFO - pyopencl - build program: kernel '_pt_kernel_7' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,552 - INFO - pyopencl - build program: kernel '_pt_kernel_8' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,554 - INFO - pyopencl - build program: kernel '_pt_kernel_9' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,556 - INFO - pyopencl - build program: kernel '_pt_kernel_10' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,557 - INFO - pyopencl - build program: kernel '_pt_kernel_11' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,558 - INFO - pyopencl - build program: kernel '_pt_kernel_12' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,560 - INFO - pyopencl - build program: kernel '_pt_kernel_13' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,562 - INFO - pyopencl - build program: kernel '_pt_kernel_14' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,563 - INFO - pyopencl - build program: kernel '_pt_kernel_15' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,564 - INFO - pyopencl - build program: kernel '_pt_kernel_16' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,566 - INFO - pyopencl - build program: kernel '_pt_kernel_17' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,568 - INFO - pyopencl - build program: kernel '_pt_kernel_18' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,570 - INFO - pyopencl - build program: kernel '_pt_kernel_19' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,571 - INFO - pyopencl - build program: kernel '_pt_kernel_20' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,573 - INFO - pyopencl - build program: kernel '_pt_kernel_21' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,575 - INFO - pyopencl - build program: kernel '_pt_kernel_22' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,576 - INFO - pyopencl - build program: kernel '_pt_kernel_23' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,581 - INFO - pyopencl - build program: kernel '_pt_kernel_24' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,582 - INFO - pyopencl - build program: kernel '_pt_kernel_25' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,584 - INFO - pyopencl - build program: kernel '_pt_kernel_26' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,585 - INFO - pyopencl - build program: kernel '_pt_kernel_27' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+2022-06-23 01:36:02,587 - INFO - pyopencl - build program: kernel '_pt_kernel_28' was part of a lengthy source build resulting from a binary cache miss (10.50 s)
+Fusion actx took: 35.7581889629364 secs
+2022-06-23 01:36:02,719 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:36:02,746 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:36:03,334 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2022-06-23 01:36:03,350 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+Fusion actx took: 0.0015990734100341797 secs
+Fusion actx took: 0.0015099048614501953 secs
+2022-06-23 01:36:03,576 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:36:03,603 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:36:04,190 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2022-06-23 01:36:04,206 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+Fusion actx took: 0.0015892982482910156 secs
+step = 0, sim time: 0.000000e+00 s, step walltime: 156.932 s
+2022-06-23 01:36:04,553 - INFO - meshmode.array_context - Transforming kernel with 4 statements.
+2022-06-23 01:36:04,626 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:36:05,385 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+2022-06-23 01:36:05,463 - INFO - meshmode.array_context - Transforming kernel with 4 statements.
+Fusion actx took: 0.0021071434020996094 secs
+Fusion actx took: 0.0015006065368652344 secs
+Fusion actx took: 0.001491546630859375 secs
+Fusion actx took: 0.0014977455139160156 secs
+step = 1, sim time: 1.000000e-08 s, step walltime: 0.388942 s
+2022-06-23 01:36:05,862 - INFO - meshmode.array_context - Transforming kernel with 4 statements.
+Fusion actx took: 0.0015649795532226562 secs
+Fusion actx took: 0.0014934539794921875 secs
+Fusion actx took: 0.0015022754669189453 secs
+Fusion actx took: 0.001964569091796875 secs
+step = 2, sim time: 2.000000e-08 s, step walltime: 0.0349784 s
+Fusion actx took: 0.0014452934265136719 secs
+Fusion actx took: 0.0014247894287109375 secs
+Fusion actx took: 0.0014224052429199219 secs
+Fusion actx took: 0.0014722347259521484 secs
+step = 3, sim time: 3.000000e-08 s, step walltime: 0.0338988 s
+Fusion actx took: 0.0014324188232421875 secs
+Fusion actx took: 0.001434326171875 secs
+Fusion actx took: 0.0014247894287109375 secs
+Fusion actx took: 0.0014193058013916016 secs
+step = 4, sim time: 4.000000e-08 s, step walltime: 0.034024 s
+Fusion actx took: 0.0014481544494628906 secs
+Fusion actx took: 0.0014252662658691406 secs
+Fusion actx took: 0.0014300346374511719 secs
+Fusion actx took: 0.0014178752899169922 secs
+step = 5, sim time: 5.000000e-08 s, step walltime: 0.0337293 s
+Fusion actx took: 0.0014576911926269531 secs
+Fusion actx took: 0.0018410682678222656 secs
+Fusion actx took: 0.0014460086822509766 secs
+Fusion actx took: 0.001415252685546875 secs
+step = 6, sim time: 6.000000e-08 s, step walltime: 0.03407 s
+Fusion actx took: 0.0014450550079345703 secs
+Fusion actx took: 0.0018558502197265625 secs
+Fusion actx took: 0.0014231204986572266 secs
+Fusion actx took: 0.0014278888702392578 secs
+step = 7, sim time: 7.000000e-08 s, step walltime: 0.0338933 s
+Fusion actx took: 0.0014405250549316406 secs
+Fusion actx took: 0.0018515586853027344 secs
+Fusion actx took: 0.001428842544555664 secs
+Fusion actx took: 0.0014190673828125 secs
+step = 8, sim time: 8.000000e-08 s, step walltime: 0.033879 s
+Fusion actx took: 0.0014562606811523438 secs
+Fusion actx took: 0.0018420219421386719 secs
+Fusion actx took: 0.0014233589172363281 secs
+Fusion actx took: 0.001422882080078125 secs
+step = 9, sim time: 9.000000e-08 s, step walltime: 0.0338976 s
+Fusion actx took: 0.0014562606811523438 secs
+Fusion actx took: 0.0018584728240966797 secs
+Fusion actx took: 0.0014252662658691406 secs
+Fusion actx took: 0.00142669677734375 secs
+step = 10, sim time: 1.000000e-07 s, step walltime: 0.0338597 s
+Fusion actx took: 0.0014328956604003906 secs
+Fusion actx took: 0.0020225048065185547 secs
+Fusion actx took: 0.0014226436614990234 secs
+Fusion actx took: 0.0014264583587646484 secs
+step = 11, sim time: 1.100000e-07 s, step walltime: 0.0339999 s
+Fusion actx took: 0.0014476776123046875 secs
+Fusion actx took: 0.001847982406616211 secs
+Fusion actx took: 0.0014221668243408203 secs
+Fusion actx took: 0.001417398452758789 secs
+step = 12, sim time: 1.200000e-07 s, step walltime: 0.0338902 s
+Fusion actx took: 0.0014476776123046875 secs
+Fusion actx took: 0.0018453598022460938 secs
+Fusion actx took: 0.0014219284057617188 secs
+Fusion actx took: 0.0014567375183105469 secs
+step = 13, sim time: 1.300000e-07 s, step walltime: 0.0340014 s
+Fusion actx took: 0.0014388561248779297 secs
+Fusion actx took: 0.0014297962188720703 secs
+Fusion actx took: 0.0014238357543945312 secs
+Fusion actx took: 0.001421213150024414 secs
+step = 14, sim time: 1.400000e-07 s, step walltime: 0.0338094 s
+Fusion actx took: 0.001447916030883789 secs
+Fusion actx took: 0.001422882080078125 secs
+Fusion actx took: 0.0014276504516601562 secs
+Fusion actx took: 0.0014786720275878906 secs
+step = 15, sim time: 1.500000e-07 s, step walltime: 0.0338378 s
+Fusion actx took: 0.0014424324035644531 secs
+Fusion actx took: 0.0014202594757080078 secs
+Fusion actx took: 0.0014238357543945312 secs
+Fusion actx took: 0.0014307498931884766 secs
+step = 16, sim time: 1.600000e-07 s, step walltime: 0.0340409 s
+Fusion actx took: 0.0014331340789794922 secs
+Fusion actx took: 0.0014388561248779297 secs
+Fusion actx took: 0.0014133453369140625 secs
+Fusion actx took: 0.001436471939086914 secs
+step = 17, sim time: 1.700000e-07 s, step walltime: 0.0337543 s
+Fusion actx took: 0.00144195556640625 secs
+Fusion actx took: 0.0018427371978759766 secs
+Fusion actx took: 0.001424551010131836 secs
+Fusion actx took: 0.0014195442199707031 secs
+step = 18, sim time: 1.800000e-07 s, step walltime: 0.0338953 s
+Fusion actx took: 0.0014519691467285156 secs
+2022-06-23 01:36:06,965 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:36:06,992 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:36:07,578 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+Fusion actx took: 0.0015075206756591797 secs
+Fusion actx took: 0.0014460086822509766 secs
+2022-06-23 01:36:07,605 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:36:07,631 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:36:08,218 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+Fusion actx took: 0.0015103816986083984 secs
+step = 19, sim time: 1.900000e-07 s, step walltime: 1.29061 s
+Checkpointing final state ...
+2022-06-23 01:36:08,362 - INFO - meshmode.array_context - Transforming kernel with 7 statements.
+2022-06-23 01:36:08,573 - INFO - meshmode.array_context - Array Contraction: Contracting 6 temps
+2022-06-23 01:36:09,584 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.51 s)
+2022-06-23 01:36:09,677 - INFO - meshmode.array_context - Transforming kernel with 4 statements.
+2022-06-23 01:36:09,783 - INFO - meshmode.array_context - Array Contraction: Contracting 3 temps
+2022-06-23 01:36:10,629 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+2022-06-23 01:36:10,714 - INFO - meshmode.array_context - Transforming kernel with 3 statements.
+2022-06-23 01:36:10,801 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2022-06-23 01:36:11,604 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+-------- dt = 0.000e+00, cfl = 0.0228
+-------- P (min, max) (Pa) = (1.308488379e+03, 2.864123776e+05)
+-------- T (min, max) (K)  = (275.025, 2214.64)
+
+2022-06-23 01:36:11,644 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:36:11,657 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:36:12,285 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+2022-06-23 01:36:12,377 - INFO - meshmode.array_context - Transforming kernel with 4 statements.
+2022-06-23 01:36:12,446 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:36:13,568 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-06-23 01:36:13,569 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-06-23 01:36:13,656 - INFO - meshmode.array_context - Transforming kernel with 3 statements.
+2022-06-23 01:36:13,714 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:36:14,825 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-06-23 01:36:14,827 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-06-23 01:36:14,920 - INFO - meshmode.array_context - Transforming kernel with 4 statements.
+2022-06-23 01:36:14,989 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:36:16,112 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-06-23 01:36:16,112 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-06-23 01:36:16,222 - INFO - meshmode.array_context - Transforming kernel with 6 statements.
+2022-06-23 01:36:16,352 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:36:17,752 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.67 s)
+2022-06-23 01:36:17,754 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.67 s)
+2022-06-23 01:36:17,797 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:36:17,814 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:36:18,536 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+2022-06-23 01:36:18,615 - INFO - meshmode.array_context - Transforming kernel with 4 statements.
+2022-06-23 01:36:18,703 - INFO - meshmode.array_context - Array Contraction: Contracting 1 temps
+2022-06-23 01:36:19,758 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-06-23 01:36:19,759 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.65 s)
+2022-06-23 01:36:19,839 - INFO - meshmode.array_context - Transforming kernel with 6 statements.
+2022-06-23 01:36:19,997 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:36:20,634 - INFO - loopy.codegen - _pt_kernel: generate code: completed (0.31s wall 1.00x CPU)
+2022-06-23 01:36:21,757 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (1.11 s)
+2022-06-23 01:36:21,757 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (1.11 s)
+2022-06-23 01:36:21,758 - INFO - pyopencl - build program: kernel '_pt_kernel_1' was part of a lengthy source build resulting from a binary cache miss (1.11 s)
+2022-06-23 01:36:21,758 - INFO - pyopencl - build program: kernel '_pt_kernel_2' was part of a lengthy source build resulting from a binary cache miss (1.11 s)
+2022-06-23 01:36:21,759 - INFO - pyopencl - build program: kernel '_pt_kernel_3' was part of a lengthy source build resulting from a binary cache miss (1.11 s)
+2022-06-23 01:36:21,888 - INFO - meshmode.array_context - Transforming kernel with 7 statements.
+2022-06-23 01:36:22,048 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2022-06-23 01:36:23,525 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.68 s)
+2022-06-23 01:36:23,527 - INFO - pyopencl - build program: kernel '_pt_kernel_0' was part of a lengthy source build resulting from a binary cache miss (0.68 s)
+2022-06-23 01:36:23,562 - INFO - meshmode.array_context - Transforming kernel with 1 statements.
+2022-06-23 01:36:23,592 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2022-06-23 01:36:24,195 - INFO - pyopencl - build program: kernel '_pt_kernel' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 3673226: <isolator_timing_job.sh> in cluster <lassen> Done
+
+Job <isolator_timing_job.sh> was submitted from host <lassen708> by user <mtcampbe> in cluster <lassen> at Thu Jun 23 01:32:18 2022
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <mtcampbe> in cluster <lassen> at Thu Jun 23 01:32:20 2022
+                            <40*lassen722>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run> was used as the working directory.
+Started at Thu Jun 23 01:32:20 2022
+Terminated at Thu Jun 23 01:37:01 2022
+Results reported at Thu Jun 23 01:37:01 2022
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+#BSUB -nnodes 1
+#BSUB -G uiuc
+#BSUB -W 60
+#BSUB -q pbatch
+
+printf "Running with EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge\n"
+
+source "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/config/activate_env.sh"
+export PYOPENCL_CTX="port:tesla"
+export XDG_CACHE_HOME="/tmp/mtcampbe/xdg-scratch"
+rm -rf $XDG_CACHE_HOME
+rm -f timing-run-done
+which python
+conda env list
+env
+env | grep LSB_MCPU_HOSTS
+
+jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./isolator.py -i timing_params.yaml --lazy --log
+touch timing-run-done
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.26 sec.
+    Max Memory :                                 59 MB
+    Average Memory :                             57.58 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1251 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   281 sec.
+    Turnaround time :                            283 sec.
+
+The output (if any) is above this job summary.
+
