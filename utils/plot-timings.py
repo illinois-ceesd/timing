@@ -30,7 +30,7 @@ from matplotlib.dates import date2num
 import matplotlib.pyplot as plt
 
 fontsize = 10
-params = {"backend": "pdf",
+params = {# "backend": "pdf",
           "text.usetex": True,
           "font.family": "serif",
           "font.serif": "Computer Modern Roman",
