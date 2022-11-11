@@ -70,14 +70,17 @@ env | grep LSB_MCPU_HOSTS
 
 date
 # --- User's commands go here ----
+# example:
 # jsrun -g 1 -a 1 -n 16 bash -c 'POCL_CACHE_DIR=$POCL_CACHE_DIR_ROOT/$$ python -u -m mpi4py ./${exename}.py -i run_params.yaml --log --lazy'
-if [[ -z "${command_script}" ]]; then
+return_code=0
+if [[ ! -z "${command_script}" ]]; then
    . ${command_script}
+   return_code=\$?
 fi
 # --------------------------------
 date
 touch ${finish_filename}
-
+return \$return_code
 EOF
         chmod +x ${BATCH_SCRIPT_NAME}
         # ---- Submit the batch script and wait for the job to finish
@@ -128,12 +131,12 @@ return_code=0
 # jsrun -g 1 -a 1 -n 16 bash -c 'POCL_CACHE_DIR=$POCL_CACHE_DIR_ROOT/$$ python -u -m mpi4py ./${exename}.py -i run_params.yaml --log --lazy'
 if [[ -z "${command_script}" ]]; then
    . ${command_script}
-   return_code=$?
+   return_code=\$?
 fi
 # --------------------------------
 date
 touch ${finish_filename}
-return $return_code
+return \$return_code
 EOF
         chmod +x ${BATCH_SCRIPT_NAME}
         # PYOPENCL_TEST=port:pthread python -O -m mpi4py ./${exename}.py -i timing_params.yaml ${EXEOPTS}

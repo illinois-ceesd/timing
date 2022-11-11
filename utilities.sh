@@ -83,37 +83,32 @@ install_mirgecom() {
 
 install_mirgecom_driver() {
 
-    DRIVER_NAME=""
-    MIRGE_BRANCH="main"
-    MIRGE_FORK="illinois-ceesd"
+    DRIVER_REPO_NAME=""
+    DRIVER_REPO_BRANCH="main"
+    DRIVER_REPO_FORK="illinois-ceesd"
     OVERWRITE=false
 
     NONOPT_ARGS=()
     while [[ $# -gt 0 ]]; do
         case $1 in
             -n|--name)
-                DRIVER_NAME="$2"
+                DRIVER_REPO_NAME="$2"
                 shift
                 shift
                 ;;
             -b|--branch)
-                MIRGE_BRANCH="$2"
+                DRIVER_REPO_BRANCH="$2"
                 shift
                 shift
                 ;;
             -f|--fork)
-                MIRGE_FORK="$2"
+                DRIVER_REPO_FORK="$2"
                 shift
                 shift
                 ;;
             -i|--install)
-                MIRGE_INSTALL="$2"
+                DRIVER_INSTALL_PATH="$2"
                 shift 
-                shift
-                ;;
-            -e|--env-name)
-                MIRGE_ENV_NAME="$2"
-                shift
                 shift
                 ;;
             --overwrite)
@@ -133,17 +128,17 @@ install_mirgecom_driver() {
 
     set -- "${NONOPT_ARGS[@]}" # restore positional parameters
 
-    if [[ -z "${DRIVER_NAME}" ]]; then
+    if [[ -z "${DRIVER_REPO_NAME}" ]]; then
         echo "install_mirgecom_driver: Driver name required -n <driver name>."
         return 1
     fi
-    MIRGE_INSTALL=${MIRGE_INSTALL:-"${DRIVER_NAME}"}
-    echo "Installing http//github.com/${MIRGE_FORK}/${DRIVER_NAME}@${MIRGE_BRANCH} in ${MIRGE_INSTALL}."
+    DRIVER_INSTALL_PATH=${DRIVER_INSTALL_PATH:-"${DRIVER_REPO_NAME}"}
+    echo "Installing http//github.com/${DRIVER_REPO_FORK}/${DRIVER_REPO_NAME}@${DRIVER_REPO_BRANCH} in ${DRIVER_INSTALL_PATH}."
     if [[ "$OVERWRITE" = true ]]; then
-        if [[ -d "${MIRGE_INSTALL}" ]]; then
-            echo "- Overwriting ${MIRGE_INSTALL}."
-            mv -f "${MIRGE_INSTALL}" "${MIRGE_INSTALL}.old"
-            rm -rf "${MIRGE_INSTALL}.old" &
+        if [[ -d "${DRIVER_INSTALL_PATH}" ]]; then
+            echo "- Overwriting ${DRIVER_INSTALL_PATH}."
+            mv -f "${DRIVER_INSTALL_PATH}" "${DRIVER_INSTALL_PATH}.old"
+            rm -rf "${DRIVER_INSTALL_PATH}.old" &
         fi
     fi
     # if [[ -n $1 ]]; then
@@ -155,7 +150,7 @@ install_mirgecom_driver() {
     # --- grab emirge and install MIRGE-Com 
     # printf "> git clone https://github.com/illinois-ceesd/emirge.git ${MIRGE_INSTALL}\n"
     set -x
-    git clone https://github.com/${MIRGE_FORK}/${DRIVER_NAME} ${MIRGE_INSTALL}
+    git clone -b ${DRIVER_REPO_BRANCH} https://github.com/${DRIVER_REPO_FORK}/${DRIVER_REPO_NAME} ${DRIVER_INSTALL_PATH}
     return_code=$?
     set +x
     return $return_code
