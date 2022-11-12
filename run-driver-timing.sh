@@ -67,6 +67,13 @@ TIMING_REPO="illinois-ceesd/timing.git"
 TIMING_BRANCH="main"
 TIMING_ENV_NAME="${TIMING_PKG_NAME}.timing.env"
 
+# Timing group: 
+#  - single_timing: single rank timings
+#  - node_timing: single "node" timings, few ranks
+#  - meso_timing: multi-node timings, 100's of ranks
+#  - scaling_timing: 1000's of ranks 
+TIMING_GROUP="single_timing"
+
 SUMMARY_FILE_ROOT="${TIMING_PKG_NAME}"
 YAML_FILE_NAME_ROOT="${TIMING_PKG_NAME}-timings.yaml"
 BATCH_OUTPUT_FILE="${SUMMARY_FILE_ROOT}_${timestamp}.out"
@@ -123,7 +130,7 @@ source ${EMIRGE_HOME}/config/activate_env.sh
 cd ${MIRGECOM_HOME}
 MIRGECOM_HOME=$(pwd)
 
-if [[ -d "scripts" ]]; then
+if [[ -f "scripts/utilities.sh" ]]; then
     . scripts/utilities.sh
 fi
 
@@ -132,7 +139,7 @@ cd -
 PLATFORM_ENV_FILE="${MIRGECOM_HOME}/scripts/mirge-testing-env.sh"
 
 # --- Grab the case driver repo
-DRIVER_INSTALL_PATH=${DRIVER_NAME}-single_timing
+DRIVER_INSTALL_PATH=${DRIVER_NAME}-${TIMING_GROUP}
 rm -Rf ${DRIVER_INSTALL_PATH}
 install_mirgecom_driver -b ${DRIVER_BRANCH} -n ${DRIVER_REPO_NAME} -i ${DRIVER_INSTALL_PATH} -f ${DRIVER_FORK} --overwrite
 
@@ -147,18 +154,23 @@ TIMING_DATA_PATH=$(pwd)
 cd -
 
 # Run the driver-specific timing script through batch (if necessary)
-. generate_mirge_batch_script.sh -c "${DRIVER_PATH}/scripts/single_timing.sh -c single_timing -e ${PLATFORM_ENV_FILE} -o ${TIMING_DATA_PATH} -p ${DRIVER_PATH}" -e ${EMIRGE_HOME} -o ${DRIVER_NAME}-single-timing-batch-script.sh -x Yes
-
+BATCH_SCRIPT_NAME="${DRIVER_NAME}-${TIMING_GROUP}-batch-script.sh"
+STDIO_FILE_NAME="${DRIVER_NAME}-${TIMING_GROUP}-batch-output.txt"
+rm -f ${BATCH_SCRIPT_NAME} ${STDIO_FILE_NAME}
+. generate_mirge_batch_script.sh -c "${DRIVER_PATH}/scripts/${TIMING_GROUP}.sh -c ${TIMING_GROUP} -e ${PLATFORM_ENV_FILE} -o ${TIMING_DATA_PATH} -p ${DRIVER_PATH}" -d ${STDIO_FILE_NAME} -e ${EMIRGE_HOME} -o ${BATCH_SCRIPT_NAME} -x Yes
+if [[ -f ${STDIO_FILE_NAME} ]]; then
+    cp -f ${STDIO_FILE_NAME} ${TIMING_DATA_PATH}/${DRIVER_NAME}-${TIMING_GROUP}-output_${timestamp}.txt
+fi
 date
 
 # Post-process the logpyle sqlite data into yaml files
-for datafile in ${TIMING_DATA_PATH}/single_timing*-rank0.sqlite
+for datafile in ${TIMING_DATA_PATH}/${TIMING_GROUP}*-rank0.sqlite
 do
 
     log_file=$(basename $datafile)
-    driver_casename=$(printf "$log_file" | sed 's/single_timing_//' | sed 's/-rank0\.sqlite//')
+    driver_casename=$(printf "$log_file" | sed "s/${TIMING_GROUP}_//" | sed 's/-rank0\.sqlite//')
     printf "Creating YAML data for ${driver_casename} from ${datafile}.\n"
-    DATA_YAML="${TIMING_DATA_PATH}/single_timing_${driver_casename}-timing-data.yaml"
+    DATA_YAML="${TIMING_DATA_PATH}/${TIMING_GROUP}_${driver_casename}-timing-data.yaml"
     DATA_PATH_ROOT=$(printf "${DATA_YAML}" | sed 's/\.yaml//')
     DATA_SQLITE="${DATA_PATH_ROOT}.sqlite"
     OUTPUT_SQLITE="${DATA_PATH_ROOT}_${timestamp}.sqlite"
@@ -182,6 +194,7 @@ do
 
     mv ${DATA_SQLITE} ${OUTPUT_SQLITE}
 done
+
 date
 
 # Users should set special keys for using git over
@@ -209,12 +222,12 @@ fi
 
 rm -rf timing-data-update
 git clone -b ${TIMING_BRANCH} git@github.com:${TIMING_REPO} timing-data-update
-for datafile in ${TIMING_DATA_PATH}/single_timing*-rank0.sqlite
+for datafile in ${TIMING_DATA_PATH}/${TIMING_GROUP}*-rank0.sqlite
 do
 
     log_file=$(basename $datafile)
-    driver_casename=$(printf "$log_file" | sed 's/single_timing_//' | sed 's/-rank0\.sqlite//')
-    REPO_TIMING_DATA_YAML="single_timing_${driver_casename}-timing-data.yaml"
+    driver_casename=$(printf "$log_file" | sed "s/${TIMING_GROUP}_//" | sed 's/-rank0\.sqlite//')
+    REPO_TIMING_DATA_YAML="${TIMING_GROUP}_${driver_casename}-timing-data.yaml"
     # printf "Creating YAML data for ${driver_casename} from ${datafile}.\n"
     DATA_YAML="${TIMING_DATA_PATH}/${REPO_TIMING_DATA_YAML}"
     DATA_PATH_ROOT=$(printf "${DATA_YAML}" | sed 's/\.yaml//')
@@ -229,14 +242,17 @@ do
     # ---- Update the timing file with the current test data
     mkdir -p ${REPO_DATA_PATH}/sql
     cp ${OUTPUT_SQLITE} ${REPO_DATA_PATH}/sql
-    cd timing-data-update
-    git add ${TIMING_PKG_NAME}
-    # ---- Commit the new data to the repo
-    # printf "COMMIT&PUSH: ${TIMING_HOST} ${TIMING_DATE}\n"
-    (git commit -am "Automatic commit: ${TIMING_HOST} ${TIMING_DATE}" && git push)
-    cd ../
+    mkdir -p ${REPO_DATA_PATH}/output
+    cp ${TIMING_DATA_PATH}/*${timestamp}.txt ${REPO_DATA_PATH}/output 2> /dev/null || :
 
 done
+
+cd timing-data-update
+git add ${TIMING_PKG_NAME}
+# ---- Commit the new data to the repo
+# printf "COMMIT&PUSH: ${TIMING_HOST} ${TIMING_DATE}\n"
+(git commit -am "Automatic commit: ${TIMING_HOST} ${TIMING_DATE}" && git push)
+cd ../
 
 rm -rf timing-data-update
 date

@@ -8,8 +8,9 @@ output_script_name="mirge-batch-script.sh"
 queue_name="pdebug"
 emirge_home="."
 execute_batch_script=""
+stdio_filename="mirge-batch-script-out.txt"
 
-while getopts n:c:t:o:q:e:x: flag
+while getopts n:c:t:o:q:e:x:d: flag
 do
     case "${flag}" in
         n) nnodes=${OPTARG};;
@@ -19,6 +20,7 @@ do
         q) queue_name=${OPTARG};;
         x) execute_batch_script=${OPTARG};;
         e) emirge_home=${OPTARG};;
+        d) stdio_filename=${OPTARG};;
     esac
 done
 
@@ -28,6 +30,7 @@ echo "Command script: $command_script";
 echo "Output script: $output_script_name";
 echo "Queue: ${queue_name}";
 echo "Emirge home: ${emirge_home}";
+echo "Stdio filename: ${stdio_filename}"
 
 BATCH_SCRIPT_NAME="${output_script_name}"
 TIMING_HOST=$(hostname)
@@ -51,6 +54,7 @@ case $TIMING_HOST in
 #BSUB -G uiuc
 #BSUB -W ${time_limit}
 #BSUB -q ${queue_name}
+#BSUB -o ${stdio_filename}
 
 printf "Running with EMIRGE_HOME=${emirge_home}\n"
 
@@ -141,7 +145,7 @@ EOF
         chmod +x ${BATCH_SCRIPT_NAME}
         # PYOPENCL_TEST=port:pthread python -O -m mpi4py ./${exename}.py -i timing_params.yaml ${EXEOPTS}
         if [[ ! -z "${execute_batch_script}" ]]; then
-            . ${BATCH_SCRIPT_NAME}
+            . ${BATCH_SCRIPT_NAME} >& ${stdio_filename}
             return_code=$?
         fi
         ;;
