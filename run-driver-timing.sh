@@ -157,9 +157,10 @@ cd -
 BATCH_SCRIPT_NAME="${DRIVER_NAME}-${TIMING_GROUP}-batch-script.sh"
 STDIO_FILE_NAME="${DRIVER_NAME}-${TIMING_GROUP}-batch-output.txt"
 rm -f ${BATCH_SCRIPT_NAME} ${STDIO_FILE_NAME}
+RUNTIME_OUTPUT_FILE="${DRIVER_NAME}-${TIMING_GROUP}-output_${timestamp}.txt"
 . generate_mirge_batch_script.sh -c "${DRIVER_PATH}/scripts/${TIMING_GROUP}.sh -c ${TIMING_GROUP} -e ${PLATFORM_ENV_FILE} -o ${TIMING_DATA_PATH} -p ${DRIVER_PATH}" -d ${STDIO_FILE_NAME} -e ${EMIRGE_HOME} -o ${BATCH_SCRIPT_NAME} -x Yes
 if [[ -f ${STDIO_FILE_NAME} ]]; then
-    cp -f ${STDIO_FILE_NAME} ${TIMING_DATA_PATH}/${DRIVER_NAME}-${TIMING_GROUP}-output_${timestamp}.txt
+    cp -f ${STDIO_FILE_NAME} ${TIMING_DATA_PATH}/${RUNTIME_OUTPUT_FILE}
 fi
 date
 
@@ -184,15 +185,15 @@ do
         exit 1
     fi
 
-
     printf "run_date: ${TIMING_DATE}\nrun_host: ${TIMING_HOST}\n" > ${OUTPUT_YAML}
     printf "run_epoch: ${TIME_SINCE_EPOCH}\nrun_platform: ${TIMING_PLATFORM}\n" >> ${OUTPUT_YAML}
     printf "run_arch: ${TIMING_ARCH}\ngpu_arch: ${GPU_ARCH}\n" >> ${OUTPUT_YAML}
     printf "mirge_version: ${MIRGE_HASH}\n" >> ${OUTPUT_YAML}
     printf "driver_version: ${DRIVER_HASH}\ndriver_md5sum: ${DRIVER_MD5SUM}\n" >> ${OUTPUT_YAML}
-    cat ${DATA_YAML} >> ${OUTPUT_YAML}
 
+    cat ${DATA_YAML} >> ${OUTPUT_YAML}
     mv ${DATA_SQLITE} ${OUTPUT_SQLITE}
+
 done
 
 date
@@ -242,8 +243,10 @@ do
     # ---- Update the timing file with the current test data
     mkdir -p ${REPO_DATA_PATH}/sql
     cp ${OUTPUT_SQLITE} ${REPO_DATA_PATH}/sql
-    mkdir -p ${REPO_DATA_PATH}/output
-    cp ${TIMING_DATA_PATH}/*${timestamp}.txt ${REPO_DATA_PATH}/output 2> /dev/null || :
+    if [[ -f "${TIMING_DATA_PATH}/${RUNTIME_OUTPUT_FILE}" ]]; then
+        mkdir -p ${REPO_DATA_PATH}/output
+        cp ${TIMING_DATA_PATH}/${RUNTIME_OUTPUT_FILE} ${REPO_DATA_PATH}/output 2> /dev/null || :
+    fi
 
 done
 
