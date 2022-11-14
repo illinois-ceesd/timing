@@ -2,6 +2,8 @@ Timings last ran on: 2022.11.13
 
 # Status of production timings
 
+[![y2-prediction-timing](https://github.com/illinois-ceesd/timing/actions/workflows/y2-prediction-timing.yaml/badge.svg)](https://github.com/illinois-ceesd/timing/actions/workflows/y2-prediction-timing.yaml)
+
 [![isolator-timing](https://github.com/illinois-ceesd/timing/actions/workflows/isolator-timing.yaml/badge.svg)](https://github.com/illinois-ceesd/timing/actions/workflows/isolator-timing.yaml)
 
 [![flame1d-timing](https://github.com/illinois-ceesd/timing/actions/workflows/flame1d-timing.yaml/badge.svg)](https://github.com/illinois-ceesd/timing/actions/workflows/flame1d-timing.yaml)
@@ -9,6 +11,35 @@ Timings last ran on: 2022.11.13
 [![nozzle-timing](https://github.com/illinois-ceesd/timing/actions/workflows/nozzle-timing.yaml/badge.svg)](https://github.com/illinois-ceesd/timing/actions/workflows/nozzle-timing.yaml)
 
 # Current timing plots
+
+## Y2 Prediction
+
+### Smoke Test
+#### Startup, compile, and step
+
+![Y2Prediction-smoke_test-full](plots/y2-prediction-single-smoke_test-full.png)
+
+#### Step details
+
+![Y2Prediction-smoke_test-step](plots/y2-prediction-single-smoke_test-step-recent.png)
+
+### Smoke Test 3D
+#### Startup, compile, and step
+
+![Y2Prediction-smoke_test_3d-full](plots/y2-prediction-single-smoke_test_3d-full.png)
+
+#### Step details
+
+![Y2Prediction-smoke_test_3d-step](plots/y2-prediction-single-smoke_test_3d-step-recent.png)
+
+### Smoke Test KS
+#### Startup, compile, and step
+
+![Y2Prediction-smoke_test_ks-full](plots/y2-prediction-single-smoke_test_ks-full.png)
+
+#### Step details
+
+![Y2Prediction-smoke_test_ks-step](plots/y2-prediction-single-smoke_test_ks-step-recent.png)
 
 ## Isolator - 2D inert
 
