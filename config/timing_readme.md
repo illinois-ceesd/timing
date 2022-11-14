@@ -8,6 +8,35 @@
 
 # Current timing plots
 
+## Y2 Prediction
+
+### Smoke Test
+#### Startup, compile, and step
+
+![Y2Prediction-smoke_test-full](plots/y2-prediction-single-smoke_test-full.png)
+
+#### Step details
+
+![Y2Prediction-smoke_test-full](plots/y2-prediction-single-smoke_test-step-recent.png)
+
+### Smoke Test 3D
+#### Startup, compile, and step
+
+![Y2Prediction-smoke_test_3d-full](plots/y2-prediction-single-smoke_test_3d-full.png)
+
+#### Step details
+
+![Y2Prediction-smoke_test_3d-full](plots/y2-prediction-single-smoke_test_3d-step-recent.png)
+
+### Smoke Test KS
+#### Startup, compile, and step
+
+![Y2Prediction-smoke_test_ks-full](plots/y2-prediction-single-smoke_test_ks-full.png)
+
+#### Step details
+
+![Y2Prediction-smoke_test_ks-full](plots/y2-prediction-single-smoke_test_ks-step-recent.png)
+
 ## Isolator - 2D inert
 
 ### Startup, compile, and step
