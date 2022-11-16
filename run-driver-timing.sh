@@ -250,6 +250,9 @@ do
 
 done
 
+# Remove stale/processed data just to be sure
+rm -f ${TIMING_DATA_PATH}/${TIMING_GROUP}*-rank0.sqlite
+
 cd timing-data-update
 git add ${TIMING_PKG_NAME}
 # ---- Commit the new data to the repo
