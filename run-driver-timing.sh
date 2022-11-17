@@ -127,16 +127,19 @@ fi
 # -- Activate the env we just created above
 # export EMIRGE_HOME="${TIMING_HOME}/${MIRGE_INSTALL}"
 source ${EMIRGE_HOME}/config/activate_env.sh
+
 cd ${MIRGECOM_HOME}
 MIRGECOM_HOME=$(pwd)
 
 if [[ -f "scripts/utilities.sh" ]]; then
     . scripts/utilities.sh
 fi
-
 MIRGE_HASH=$(git rev-parse origin/${MIRGE_BRANCH})
 cd -
+
+
 PLATFORM_ENV_FILE="${MIRGECOM_HOME}/scripts/mirge-testing-env.sh"
+printf "Env file: ${PLATFORM_ENV_FILE}\n"
 
 # --- Grab the case driver repo
 DRIVER_INSTALL_PATH=${DRIVER_NAME}-${TIMING_GROUP}
@@ -156,19 +159,33 @@ cd -
 # Run the driver-specific timing script through batch (if necessary)
 BATCH_SCRIPT_NAME="${DRIVER_NAME}-${TIMING_GROUP}-batch-script.sh"
 STDIO_FILE_NAME="${DRIVER_NAME}-${TIMING_GROUP}-batch-output.txt"
+printf "Batch script name: ${BATCH_SCRIPT_NAME}\n"
+pwd
+
 rm -f ${BATCH_SCRIPT_NAME} ${STDIO_FILE_NAME}
 RUNTIME_OUTPUT_FILE="${DRIVER_NAME}-${TIMING_GROUP}-output_${timestamp}.txt"
 . generate_mirge_batch_script.sh -c "${DRIVER_PATH}/scripts/${TIMING_GROUP}.sh -c ${TIMING_GROUP} -e ${PLATFORM_ENV_FILE} -o ${TIMING_DATA_PATH} -p ${DRIVER_PATH}" -d ${STDIO_FILE_NAME} -e ${EMIRGE_HOME} -o ${BATCH_SCRIPT_NAME} -x Yes
+#. generate_mirge_batch_script.sh -c "${DRIVER_PATH}/scripts/${TIMING_GROUP}.sh -c ${TIMING_GROUP} -e ${PLATFORM_ENV_FILE} -o ${TIMING_DATA_PATH} -p ${DRIVER_PATH}" -d ${STDIO_FILE_NAME} -e ${EMIRGE_HOME} -o ${BATCH_SCRIPT_NAME}
+batch_return_code=$?
 if [[ -f ${STDIO_FILE_NAME} ]]; then
     cp -f ${STDIO_FILE_NAME} ${TIMING_DATA_PATH}/${RUNTIME_OUTPUT_FILE}
 fi
 date
 
 # Post-process the logpyle sqlite data into yaml files
+#file_search_string="${TIMING_DATA_PATH}/${TIMING_GROUP}*-rank0.sqlite"
+#printf "Data file search string: ${file_search_string}\n"
+#pwd
+#data_file_list=$(ls ${file_search_string})
+#file_list=$(ls ${TIMING_DATA_PATH})
+
+#printf "Data File list: ${data_file_list}\n."
+#printf "File list: ${file_list}.\n"
+
 for datafile in ${TIMING_DATA_PATH}/${TIMING_GROUP}*-rank0.sqlite
 do
-
-    log_file=$(basename $datafile)
+    printf "Found datafile: ${datafile}\n"
+    log_file=$(basename "$datafile")
     driver_casename=$(printf "$log_file" | sed "s/${TIMING_GROUP}_//" | sed 's/-rank0\.sqlite//')
     printf "Creating YAML data for ${driver_casename} from ${datafile}.\n"
     DATA_YAML="${TIMING_DATA_PATH}/${TIMING_GROUP}_${driver_casename}-timing-data.yaml"
@@ -223,6 +240,7 @@ fi
 
 rm -rf timing-data-update
 git clone -b ${TIMING_BRANCH} git@github.com:${TIMING_REPO} timing-data-update
+
 for datafile in ${TIMING_DATA_PATH}/${TIMING_GROUP}*-rank0.sqlite
 do
 

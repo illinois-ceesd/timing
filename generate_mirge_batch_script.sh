@@ -59,6 +59,8 @@ case $TIMING_HOST in
 printf "Running with EMIRGE_HOME=${emirge_home}\n"
 
 source ${emirge_home}/config/activate_env.sh
+
+export MIRGE_HOME="${emirge_home}/mirgecom"
 export PYOPENCL_CTX="port:tesla"
 export XDG_CACHE_HOME="/tmp/$USER/xdg-scratch"
 export POCL_CACHE_DIR_ROOT="/tmp/$USER/pocl-cache"
