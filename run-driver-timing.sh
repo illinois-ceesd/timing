@@ -57,9 +57,9 @@ date
 # exename="prediction"
 TIMING_PKG_NAME=${DRIVER_INSTALL_NAME:-"y2-prediction"}
 timestamp=$(date "+%Y.%m.%d-%H.%M.%S")
-TIMING_HOME=$(pwd)
-TIMING_HOST=$(hostname)
-TIMING_DATE=$(date "+%Y-%m-%d %H:%M")
+DRIVER_TIMING_HOME=$(pwd)
+DRIVER_TIMING_HOST=$(hostname)
+DRIVER_TIMING_DATE=$(date "+%Y-%m-%d %H:%M")
 TIME_SINCE_EPOCH=$(date +%s)
 TIMING_PLATFORM=$(uname)
 TIMING_ARCH=$(uname -m)
@@ -93,18 +93,18 @@ DRIVER_BRANCH=${DRIVER_BRANCH:-"overhaul-testing"}
 DRIVER_NAME=${DRIVER_INSTALL_NAME:-"y2-prediction"}
 TIMING_DATA_PATH="${DRIVER_NAME}_timing_data"
 
-EMIRGE_HOME="${TIMING_HOME}/${MIRGE_INSTALL}"
+EMIRGE_HOME="${DRIVER_TIMING_HOME}/${MIRGE_INSTALL}"
 MIRGECOM_HOME="${EMIRGE_HOME}/mirgecom"
 
 # -- Run the case (platform-dependent)
 GPU_ARCH="Unknown"
 
-case $TIMING_HOST in
+case $DRIVER_TIMING_HOST in
 
     # --- Run the timing test in a batch job on Lassen@LLC
     lassen*)
         echo "Resolved Host: Lassen"
-        TIMING_HOST="Lassen"
+        DRIVER_TIMING_HOST="Lassen"
         GPU_ARCH="GV100GL"
         ;;
     # --- Run the timing test on an unknown/generic machine 
@@ -114,7 +114,7 @@ case $TIMING_HOST in
         ;;
 esac
 
-printf "Running on Host: ${TIMING_HOST}\n"
+printf "Running on Host: ${DRIVER_TIMING_HOST}\n"
 printf "GPU_ARCH: ${GPU_ARCH}\n"
 
 # -- Install conda env, dependencies and MIRGE-Com via *emirge*
@@ -125,7 +125,7 @@ then
 fi
 
 # -- Activate the env we just created above
-# export EMIRGE_HOME="${TIMING_HOME}/${MIRGE_INSTALL}"
+# export EMIRGE_HOME="${DRIVER_TIMING_HOME}/${MIRGE_INSTALL}"
 source ${EMIRGE_HOME}/config/activate_env.sh
 
 cd ${MIRGECOM_HOME}
@@ -202,7 +202,7 @@ do
         exit 1
     fi
 
-    printf "run_date: ${TIMING_DATE}\nrun_host: ${TIMING_HOST}\n" > ${OUTPUT_YAML}
+    printf "run_date: ${DRIVER_TIMING_DATE}\nrun_host: ${DRIVER_TIMING_HOST}\n" > ${OUTPUT_YAML}
     printf "run_epoch: ${TIME_SINCE_EPOCH}\nrun_platform: ${TIMING_PLATFORM}\n" >> ${OUTPUT_YAML}
     printf "run_arch: ${TIMING_ARCH}\ngpu_arch: ${GPU_ARCH}\n" >> ${OUTPUT_YAML}
     printf "mirge_version: ${MIRGE_HASH}\n" >> ${OUTPUT_YAML}
@@ -269,13 +269,14 @@ do
 done
 
 # Remove stale/processed data just to be sure
-rm -f ${TIMING_DATA_PATH}/${TIMING_GROUP}*-rank0.sqlite
+# rm -f ${TIMING_DATA_PATH}/${TIMING_GROUP}*-rank0.sqlite
+rm -rf ${TIMING_DATA_PATH}
 
 cd timing-data-update
 git add ${TIMING_PKG_NAME}
 # ---- Commit the new data to the repo
-# printf "COMMIT&PUSH: ${TIMING_HOST} ${TIMING_DATE}\n"
-(git commit -am "Automatic commit: ${TIMING_HOST} ${TIMING_DATE}" && git push)
+# printf "COMMIT&PUSH: ${DRIVER_TIMING_HOST} ${DRIVER_TIMING_DATE}\n"
+(git commit -am "Automatic commit: ${DRIVER_TIMING_HOST} ${DRIVER_TIMING_DATE}" && git push)
 cd ../
 
 rm -rf timing-data-update
