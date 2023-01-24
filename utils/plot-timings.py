@@ -59,12 +59,14 @@ def parse_datetime(s):
 def main():
     """Plot the timings with this main function. Totally useful docstring."""
     parser = argparse.ArgumentParser()
+    parser.add_argument("-m", "--memory", action="store_true")
     parser.add_argument("-s", "--per-step", action="store_true")
     parser.add_argument("-l", "--log-scale", action="store_true")
     parser.add_argument("-z", "--zero", action="store_true")
     parser.add_argument("-a", "--annotate", action="store_true",
                         help="annotate the figure using comments in the data file")
     parser.add_argument("-d", "--date", metavar="YYYY-MM-DD")
+    parser.add_argument("-e", "--end", metavar="YYYY-MM-DD")
     parser.add_argument("datafile", metavar="DATA.yaml")
     parser.add_argument("--save-plot", metavar="NAME.{pdf,png}")
     args = parser.parse_args()
@@ -80,6 +82,13 @@ def main():
             run_date = date2num(d["run_date"])
             if run_date < start_date:
                 continue
+
+        if args.end:
+            end_date = date2num(parse_datetime(args.end+" 00:00"))
+            run_date = date2num(d["run_date"])
+            if run_date > end_date:
+                continue
+
         data.append(d)
 
     kwargs = {
@@ -94,11 +103,17 @@ def main():
 
     timing_names = ["time_startup", "time_first_step", "time_second_10"]
     timing_labels = ["startup", "first timestep", "second 9 timesteps"]
+    if args.memory:
+        mem_names = ["max_python_mem_usage", "max_gpu_mem_usage"]
+        mem_labels = ["host memory (MB)", "device memory (MB)"]
+        timing_names.extend(mem_names)
+        timing_labels.extend(mem_labels)
+
     scalfac = 1.0
     figwidth = 10
     figheight = 8
     if args.per_step:
-        timing_names = timing_names[-1:]
+        timing_names = "time_second_10"
         timing_labels = ["walltime per time step"]
         scalfac = 1.0/9.0
         figheight = 4
