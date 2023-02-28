@@ -1,0 +1,9 @@
+timing:
+    sql_path: ./log_data
+    project: uiuc
+    queue: pbatch
+    nnodes: 1
+    mirge_branch: production
+    pyopenclCTX: port:tesla
+    host: Lassen
+    gpu_arch: GV100GL

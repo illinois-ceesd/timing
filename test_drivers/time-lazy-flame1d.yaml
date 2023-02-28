@@ -1,0 +1,25 @@
+driver:
+    name: flame1d-lazy
+    repo: illinois-ceesd/drivers_flame1d
+    branch: main
+    exename: &EXE flame1d
+    params:
+        nviz: 100
+        nrestart: 100
+        nhealth: 100
+        nstatus: 100
+        current_dt: 1.0e-8
+        t_final: 2.e-7
+        order: 1
+        alpha_sc: 0.5
+        s0_sc: -5.0
+        kappa_sc: 0.5
+        integrator: rk4
+        health_pres_min: 1700
+        health_pres_max: 280000
+    timing_env_name: !join [*EXE, .lazy.timing.env]
+    summary_file_root: !join [*EXE, _lazy]
+    yaml_file_name: !join [*EXE, -timings.yaml]
+    logdir: !join [*EXE, _logs]
+    execopts: --lazy --log
+    mem_usage: False
