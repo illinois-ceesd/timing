@@ -7,3 +7,5 @@ timing:
     pyopenclCTX: port:tesla
     host: Lassen
     gpu_arch: GV100GL
+    timing_repo: illinois-ceesd/timing.git
+    timing_branch: main
