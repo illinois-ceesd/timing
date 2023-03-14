@@ -1,0 +1,21 @@
+driver:
+  name: y1-production-nozzle-lazy
+  repo: illinois-ceesd/drivers_y1-nozzle
+  branch: main
+  exename: &EXE nozzle
+  params:
+    nviz: 100
+    nrestart: 100
+    current_dt: 5e-8
+    t_final: 1.e-6
+    order: 1
+    alpha_sc: 0.5
+    s0_sc: -5.0
+    kappa_sc: 0.5
+    logDependent: 0
+  timing_env_name: !join [*EXE, .lazy.timing.env]
+  summary_file_root: !join [ *EXE, _lazy ]
+  yaml_file_name: !join [ *EXE, -lazy-timings.yaml]
+  logdir: !join [ *EXE, _lazy_logs ]
+  execopts: --lazy --log
+  mem_usage: True
