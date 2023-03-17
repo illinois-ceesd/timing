@@ -1,0 +1,360 @@
+Customizing shell for Lassen.
+Running with EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge
+Activating 'nozzle.lazy.timing.env' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin/python
+# conda environments:
+#
+                         /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/testing/emirge/miniforge3/envs/ceesd.testing.env
+base                     /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3
+nozzle.lazy.timing.env  *  /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env
+                         /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y2-prediction-performance-runs/mirgecom-new-dist/miniforge3/envs/timing.y2.performance
+                         /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y2-prediction-testing/emirge/miniforge3/envs/y2.testing.prod
+                         /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-testing/emirge/miniforge3/envs/testing.y3.production
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/abate.mtc_euler.env
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/ceesd.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/chem.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/dgfem
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/mc.master
+
+Default casename nozzle
+Reading user input from file: timing_params.yaml
+Running ./nozzle.py
+
+#### Simluation control data: ####
+	nviz = 100
+	nrestart = 100
+	nhealth = 100
+	nstatus = 1
+	current_dt = 5e-08
+	t_final = 1e-06
+	order = 1
+	Shock capturing parameters: alpha 0.5, s0 -5.0, kappa 0.5
+	Time integration rk4
+	Dependent variable logging is OFF.
+#### Simluation control data: ####
+inlet Mach number 0.13914536705094316
+inlet temperature 297.16860334713266
+inlet pressure 987.6162965049273
+final inlet pressure 148142.4444757391
+./nozzle.py:521: DeprecationWarning: IsothermalNoSlipBoundary is deprecated. Use IsothermalWallBoundary instead.
+  wall = IsothermalNoSlipBoundary()
+./nozzle.py:550: DeprecationWarning: generate_and_distribute_mesh is deprecated and will go away Q4 2022. Use distribute_mesh instead.
+  local_mesh, global_nelements = generate_and_distribute_mesh(
+rank 0: received data
+rank 0: sent all data
+Making discretization
+./nozzle.py:559: DeprecationWarning: EagerDGDiscretization is deprecated and will go away in 2022. Use the base DiscretizationCollection with grudge.op instead.
+  dcoll = EagerDGDiscretization(actx,
+preprocess_program on 'frozen_nodes0_3d': completed (2.89s wall 0.19x CPU)
+frozen_nodes0_3d: generate code: completed (0.33s wall 0.83x CPU)
+build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (1.08 s)
+build program: kernel 'frozen_nodes1_3d' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+build program: kernel 'frozen_nodes2_3d' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+./nozzle.py:564: DeprecationWarning: Calling thaw(ary, actx) is deprecated, call actx.thaw(ary) instead. This will stop working in 2023.
+  nodes = thaw(dcoll.nodes(), actx)
+Initializing soln.
+Initialization for Case(nozzle)
+===
+Num 3d order-1 elements: 107554
+Num global elements: 107554
+Timestep:        5e-08
+Initial time:    0
+Final time:      1e-06
+CFL:             1.0
+Constant CFL:    False
+Initialization:  pseudoY0
+EOS:             IdealSingleGas
+
+Stepping.
+frozen_result: generate code: completed (0.90s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+frozen_area_el_vol: check array access within bounds: completed (0.48s wall 1.00x CPU)
+frozen_area_el_vol: schedule: completed (1.64s wall 1.00x CPU)
+frozen_area_el_vol: generate code: completed (4.58s wall 1.00x CPU)
+build program: kernel 'frozen_area_el_vol' was part of a lengthy source build resulting from a binary cache miss (2.18 s)
+building face restriction: start
+building face restriction: done
+build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+build program: kernel 'frozen_nodes1_3d' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+build program: kernel 'frozen_nodes2_3d' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+frozen_area_el_b_face_restr_all: check array access within bounds: completed (0.37s wall 1.00x CPU)
+frozen_area_el_b_face_restr_all: schedule: completed (1.29s wall 1.00x CPU)
+frozen_area_el_b_face_restr_all: generate code: completed (3.76s wall 1.00x CPU)
+build program: kernel 'frozen_area_el_b_face_restr_all' was part of a lengthy source build resulting from a binary cache miss (1.74 s)
+frozen_dt_geometric_vol: schedule: completed (0.31s wall 1.00x CPU)
+frozen_dt_geometric_vol: generate code: completed (0.73s wall 1.00x CPU)
+build program: kernel 'frozen_dt_geometric_vol' was part of a lengthy source build resulting from a binary cache miss (0.75 s)
+build program: kernel 'frozen_char_lscales' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+frozen_result: generate code: completed (0.60s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.51 s)
+build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.46 s)
+build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.48 s)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+./nozzle.py:757: DeprecationWarning: allsync is deprecated and will disappear in Q1 2022. Use global_reduce instead.
+  health_errors = allsync(my_health_check(dv), comm,
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py:258: UserWarning: Using `write_visfile` in parallel without an MPI communicator is deprecated and will stop working in Fall 2022. For parallel writes, specify an MPI communicator with the `mpi_communicator` argument.
+  warn("Using `write_visfile` in parallel without an MPI communicator is "
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.39 s)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.42 s)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.41 s)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.43 s)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.39 s)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.41 s)
+frozen_result: generate code: completed (0.72s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.89 s)
+frozen_result: generate code: completed (0.67s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+data wrapper de-duplication: 1 encountered, 1 kept, 0 eliminated
+building face restriction: start
+building face restriction: done
+building face restriction: start
+building face restriction: done
+building face restriction: start
+building face restriction: done
+building face restriction: start
+building face restriction: done
+build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+build program: kernel 'frozen_nodes1_3d' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+build program: kernel 'frozen_nodes2_3d' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+build program: kernel 'frozen_nodes1_3d' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+build program: kernel 'frozen_nodes2_3d' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+./nozzle.py:505: DeprecationWarning: Calling thaw(ary, actx) is deprecated, call actx.thaw(ary) instead. This will stop working in 2023.
+  nodes = thaw(bnd_discr.nodes(), actx)
+frozen_area_el_b_Inflow: check array access within bounds: completed (0.38s wall 1.00x CPU)
+frozen_area_el_b_Inflow: schedule: completed (1.28s wall 1.00x CPU)
+frozen_area_el_b_Inflow: generate code: completed (3.48s wall 1.00x CPU)
+build program: kernel 'frozen_area_el_b_Inflow' was part of a lengthy source build resulting from a binary cache miss (1.22 s)
+frozen_normal_4_b_Inflow: schedule: completed (0.43s wall 1.00x CPU)
+frozen_normal_4_b_Inflow: generate code: completed (1.29s wall 1.00x CPU)
+build program: kernel 'frozen_normal_4_b_Inflow' was part of a lengthy source build resulting from a binary cache miss (0.93 s)
+frozen_normal_2_b_Inflow: schedule: completed (0.42s wall 1.00x CPU)
+frozen_normal_2_b_Inflow: generate code: completed (1.29s wall 1.00x CPU)
+build program: kernel 'frozen_normal_2_b_Inflow' was part of a lengthy source build resulting from a binary cache miss (0.93 s)
+frozen_normal_1_b_Inflow: schedule: completed (0.42s wall 1.00x CPU)
+frozen_normal_1_b_Inflow: generate code: completed (1.28s wall 1.00x CPU)
+build program: kernel 'frozen_normal_1_b_Inflow' was part of a lengthy source build resulting from a binary cache miss (0.94 s)
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+build program: kernel 'frozen_nodes1_3d' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+build program: kernel 'frozen_nodes2_3d' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+frozen_area_el_b_Outflow: check array access within bounds: completed (0.37s wall 1.00x CPU)
+frozen_area_el_b_Outflow: schedule: completed (1.30s wall 1.00x CPU)
+frozen_area_el_b_Outflow: generate code: completed (3.67s wall 1.00x CPU)
+build program: kernel 'frozen_area_el_b_Outflow' was part of a lengthy source build resulting from a binary cache miss (1.23 s)
+frozen_normal_4_b_Outflow: schedule: completed (0.43s wall 1.00x CPU)
+frozen_normal_4_b_Outflow: generate code: completed (1.32s wall 1.00x CPU)
+build program: kernel 'frozen_normal_4_b_Outflow' was part of a lengthy source build resulting from a binary cache miss (0.94 s)
+frozen_normal_2_b_Outflow: schedule: completed (0.42s wall 1.00x CPU)
+frozen_normal_2_b_Outflow: generate code: completed (1.39s wall 1.00x CPU)
+build program: kernel 'frozen_normal_2_b_Outflow' was part of a lengthy source build resulting from a binary cache miss (0.94 s)
+frozen_normal_1_b_Outflow: schedule: completed (0.42s wall 1.00x CPU)
+frozen_normal_1_b_Outflow: generate code: completed (1.32s wall 1.00x CPU)
+build program: kernel 'frozen_normal_1_b_Outflow' was part of a lengthy source build resulting from a binary cache miss (0.94 s)
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+build program: kernel 'frozen_nodes1_3d' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+build program: kernel 'frozen_nodes2_3d' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+frozen_area_el_b_Wall: check array access within bounds: completed (0.37s wall 1.00x CPU)
+frozen_area_el_b_Wall: schedule: completed (1.29s wall 1.00x CPU)
+frozen_area_el_b_Wall: generate code: completed (3.77s wall 1.00x CPU)
+build program: kernel 'frozen_area_el_b_Wall' was part of a lengthy source build resulting from a binary cache miss (1.73 s)
+frozen_normal_4_b_Wall: schedule: completed (0.43s wall 1.00x CPU)
+frozen_normal_4_b_Wall: generate code: completed (1.41s wall 1.00x CPU)
+build program: kernel 'frozen_normal_4_b_Wall' was part of a lengthy source build resulting from a binary cache miss (1.04 s)
+frozen_normal_2_b_Wall: schedule: completed (0.43s wall 1.00x CPU)
+frozen_normal_2_b_Wall: generate code: completed (1.40s wall 1.00x CPU)
+build program: kernel 'frozen_normal_2_b_Wall' was part of a lengthy source build resulting from a binary cache miss (1.04 s)
+frozen_normal_1_b_Wall: schedule: completed (0.43s wall 1.00x CPU)
+frozen_normal_1_b_Wall: generate code: completed (1.41s wall 1.00x CPU)
+build program: kernel 'frozen_normal_1_b_Wall' was part of a lengthy source build resulting from a binary cache miss (1.04 s)
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+frozen_area_el_b_face_restr_interior: check array access within bounds: completed (0.37s wall 1.00x CPU)
+frozen_area_el_b_face_restr_interior: schedule: completed (1.29s wall 1.00x CPU)
+frozen_area_el_b_face_restr_interior: generate code: completed (3.78s wall 1.00x CPU)
+build program: kernel 'frozen_area_el_b_face_restr_interior' was part of a lengthy source build resulting from a binary cache miss (1.74 s)
+frozen_normal_4_b_face_restr_interior: schedule: completed (0.43s wall 1.00x CPU)
+frozen_normal_4_b_face_restr_interior: generate code: completed (1.39s wall 1.00x CPU)
+build program: kernel 'frozen_normal_4_b_face_restr_interior' was part of a lengthy source build resulting from a binary cache miss (1.05 s)
+frozen_normal_2_b_face_restr_interior: schedule: completed (0.43s wall 1.00x CPU)
+frozen_normal_2_b_face_restr_interior: generate code: completed (1.47s wall 1.00x CPU)
+build program: kernel 'frozen_normal_2_b_face_restr_interior' was part of a lengthy source build resulting from a binary cache miss (1.05 s)
+frozen_normal_1_b_face_restr_interior: schedule: completed (0.43s wall 1.00x CPU)
+frozen_normal_1_b_face_restr_interior: generate code: completed (1.39s wall 1.00x CPU)
+build program: kernel 'frozen_normal_1_b_face_restr_interior' was part of a lengthy source build resulting from a binary cache miss (1.05 s)
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.39 s)
+frozen_inv_metric_deriv_vol: preprocess: completed (0.44s wall 1.00x CPU)
+preprocess_program on 'frozen_inv_metric_deriv_vol': completed (7.02s wall 1.00x CPU)
+frozen_inv_metric_deriv_vol: check array access within bounds: completed (6.11s wall 1.00x CPU)
+frozen_inv_metric_deriv_vol: schedule: completed (197.06s wall 1.00x CPU)
+frozen_inv_metric_deriv_vol: generate code: completed (123.04s wall 1.00x CPU)
+build program: kernel 'frozen_inv_metric_deriv_vol' was part of a lengthy source build resulting from a binary cache miss (21.63 s)
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/artificial_viscosity.py:234: UserWarning: The AV boundary_kwargs interface is deprecated, please pass gas_model and time directly.
+  warn("The AV boundary_kwargs interface is deprecated, please pass gas_model"
+data wrapper de-duplication: 1574 encountered, 56 kept, 1518 eliminated
+transform_dag for '<function main.<locals>.my_rhs at 0x2002d2742de0>': completed (1.35s wall 1.00x CPU)
+generate_loopy for '<function main.<locals>.my_rhs at 0x2002d2742de0>': completed (10.37s wall 1.00x CPU)
+transform_loopy_program for '<function main.<locals>.my_rhs at 0x2002d2742de0>': completed (75.22s wall 1.00x CPU)
+my_rhs: preprocess: completed (0.65s wall 1.00x CPU)
+preprocess_program on 'my_rhs': completed (8.09s wall 1.00x CPU)
+my_rhs: check array access within bounds: completed (15.28s wall 1.00x CPU)
+my_rhs: schedule: completed (62.28s wall 1.00x CPU)
+my_rhs: generate code: completed (386.79s wall 1.00x CPU)
+build program: kernel 'my_rhs' was part of a lengthy source build resulting from a binary cache miss (32.68 s)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.41 s)
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/steppers.py:439: UserWarning: Deduced force_eval=True for this timestepper. This can have a nontrivial performance impact. If you know that your timestepper does not require per-step forced evaluation, explicitly set force_eval=False.
+  _advance_state_stepper_func(
+frozen_result: generate code: completed (0.78s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+step = 0, sim time: 0.000000e+00 s, cfl = 1.0000
+------- step walltime: 1159.04 s, log walltime: 0.00016099 s
+
+step = 1, sim time: 5.000000e-08 s, cfl = 0.0443
+------- step walltime: 0.310661 s, log walltime: 0.000177034 s
+
+step = 2, sim time: 1.000000e-07 s, cfl = 0.0444
+------- step walltime: 0.299905 s, log walltime: 8.0046e-05 s
+
+step = 3, sim time: 1.500000e-07 s, cfl = 0.0444
+------- step walltime: 0.307903 s, log walltime: 7.598e-05 s
+
+step = 4, sim time: 2.000000e-07 s, cfl = 0.0444
+------- step walltime: 0.298249 s, log walltime: 7.7899e-05 s
+
+step = 5, sim time: 2.500000e-07 s, cfl = 0.0444
+------- step walltime: 0.29881 s, log walltime: 7.5714e-05 s
+
+step = 6, sim time: 3.000000e-07 s, cfl = 0.0444
+------- step walltime: 0.298449 s, log walltime: 7.596e-05 s
+
+step = 7, sim time: 3.500000e-07 s, cfl = 0.0444
+------- step walltime: 0.301106 s, log walltime: 7.8661e-05 s
+
+step = 8, sim time: 4.000000e-07 s, cfl = 0.0444
+------- step walltime: 0.297867 s, log walltime: 7.49e-05 s
+
+step = 9, sim time: 4.500000e-07 s, cfl = 0.0444
+------- step walltime: 0.298783 s, log walltime: 7.4154e-05 s
+
+step = 10, sim time: 5.000000e-07 s, cfl = 0.0444
+------- step walltime: 0.298986 s, log walltime: 7.4638e-05 s
+
+step = 11, sim time: 5.500000e-07 s, cfl = 0.0444
+------- step walltime: 0.29804 s, log walltime: 7.5107e-05 s
+
+step = 12, sim time: 6.000000e-07 s, cfl = 0.0444
+------- step walltime: 0.302411 s, log walltime: 7.872e-05 s
+
+step = 13, sim time: 6.500000e-07 s, cfl = 0.0444
+------- step walltime: 0.301899 s, log walltime: 7.3625e-05 s
+
+step = 14, sim time: 7.000000e-07 s, cfl = 0.0445
+------- step walltime: 0.300139 s, log walltime: 7.4136e-05 s
+
+step = 15, sim time: 7.500000e-07 s, cfl = 0.0445
+------- step walltime: 0.298363 s, log walltime: 8.1991e-05 s
+
+step = 16, sim time: 8.000000e-07 s, cfl = 0.0445
+------- step walltime: 0.298234 s, log walltime: 7.382e-05 s
+
+step = 17, sim time: 8.500000e-07 s, cfl = 0.0445
+------- step walltime: 0.298823 s, log walltime: 7.364e-05 s
+
+step = 18, sim time: 9.000000e-07 s, cfl = 0.0445
+------- step walltime: 0.298398 s, log walltime: 7.3527e-05 s
+
+step = 19, sim time: 9.500000e-07 s, cfl = 0.0445
+------- step walltime: 0.301701 s, log walltime: 7.6062e-05 s
+
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.39 s)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.39 s)
+frozen_result: generate code: completed (0.78s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+step = 20, sim time: 1.000000e-06 s, cfl = 0.0445
+------- step walltime: 3.23939 s, log walltime: 7.5683e-05 s
+
+Checkpointing final state ...
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 4639165: <nozzle_timing_job.sh> in cluster <lassen> Done
+
+Job <nozzle_timing_job.sh> was submitted from host <lassen708> by user <mtcampbe> in cluster <lassen> at Fri Mar 17 01:17:22 2023
+Job was executed on host(s) <1*lassen710>, in queue <pdebug>, as user <mtcampbe> in cluster <lassen> at Fri Mar 17 01:17:25 2023
+                            <40*lassen33>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y1-production-nozzle-lazy/timing_run> was used as the working directory.
+Started at Fri Mar 17 01:17:25 2023
+Terminated at Fri Mar 17 01:38:48 2023
+Results reported at Fri Mar 17 01:38:48 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+#BSUB -nnodes 1
+#BSUB -G uiuc
+#BSUB -W 60
+#BSUB -q pdebug
+#BSUB -o nozzle_lazy_2023.03.17-01.01.05.out
+
+printf "Running with EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge\n"
+
+source "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/config/activate_env.sh"
+export PYOPENCL_CTX="port:tesla"
+export XDG_CACHE_HOME="/tmp/mtcampbe/xdg-scratch"
+rm -rf $XDG_CACHE_HOME
+rm -f timing-run-done
+which python
+conda env list
+jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./nozzle.py -i timing_params.yaml --lazy --log
+touch timing-run-done
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.55 sec.
+    Max Memory :                                 59 MB
+    Average Memory :                             58.70 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1634 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   1282 sec.
+    Turnaround time :                            1286 sec.
+
+The output (if any) is above this job summary.
+
