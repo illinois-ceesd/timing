@@ -1,0 +1,96 @@
+num_processors: 8
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
+driver_version: fb778f46cc5b2a889f9fcbbb8396224297d64cea
+time_startup: 714.468209028244
+time_first_step: 994.3578288555145
+time_first_10: 1007.648933172226
+time_second_10: 12.895362854003906
+max_python_mem_usage: 2076.25
+max_gpu_mem_usage: 8833.625
+---
+num_processors: 8
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
+driver_version: fb778f46cc5b2a889f9fcbbb8396224297d64cea
+time_startup: 699.5025916099548
+time_first_step: 995.4829025268555
+time_first_10: 1008.7838535308838
+time_second_10: 12.886909008026123
+max_python_mem_usage: 2073.4375
+max_gpu_mem_usage: 7471.625
+---
+num_processors: 8
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
+driver_version: fb778f46cc5b2a889f9fcbbb8396224297d64cea
+time_startup: 679.4646730422974
+time_first_step: 992.9945957660675
+time_first_10: 1005.3304216861725
+time_second_10: 12.707387924194336
+max_python_mem_usage: 2077.9375
+max_gpu_mem_usage: 8917.625
+---
+num_processors: 8
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
+driver_version: fb778f46cc5b2a889f9fcbbb8396224297d64cea
+time_startup: 679.7386810779572
+time_first_step: 992.7929036617279
+time_first_10: 1006.1393067836761
+time_second_10: 12.798235893249512
+max_python_mem_usage: 2072.75
+max_gpu_mem_usage: 7417.625
+---
+num_processors: 8
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
+driver_version: fb778f46cc5b2a889f9fcbbb8396224297d64cea
+time_startup: 641.0047245025635
+time_first_step: 1091.0312609672546
+time_first_10: 1104.304770231247
+time_second_10: 13.017203569412231
+max_python_mem_usage: 2071.0
+max_gpu_mem_usage: 7429.625
+---
+num_processors: 8
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
+driver_version: fb778f46cc5b2a889f9fcbbb8396224297d64cea
+time_startup: 689.4716606140137
+time_first_step: 956.66295170784
+time_first_10: 969.064505815506
+time_second_10: 12.676876544952393
+max_python_mem_usage: 2082.875
+max_gpu_mem_usage: 8919.625
+---
+num_processors: 8
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
+driver_version: fb778f46cc5b2a889f9fcbbb8396224297d64cea
+time_startup: 646.2896811962128
+time_first_step: 996.8356606960297
+time_first_10: 1009.2111113071442
+time_second_10: 12.750006675720215
+max_python_mem_usage: 2084.3125
+max_gpu_mem_usage: 8703.625
+---
+num_processors: 8
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
+driver_version: fb778f46cc5b2a889f9fcbbb8396224297d64cea
+time_startup: 652.6258325576782
+time_first_step: 994.9302413463593
+time_first_10: 1007.3023979663849
+time_second_10: 12.843611478805542
+max_python_mem_usage: 2074.5
+max_gpu_mem_usage: 7567.625
+---
