@@ -4,6 +4,7 @@ function process_parallel_runlog(){
 
     # OUTPUT_PATH=${OUTPUT_PATH:-"."}
     run_timestamp=$1
+    formatted_timestamp=$(date -d "${run_timestamp:0:8} ${run_timestamp:9:2}:${run_timestamp:11:2}:${run_timestamp:13:2}" +'%Y-%m-%d %H:%M')
     
     run_name=$(ls *-rank0-${run_timestamp}.sqlite | sed -e 's/\(.*\)-rank.*$/\1/')
     nproc=$(ls *-rank0-${run_timestamp}.sqlite | sed -e 's/.*np\([0-9]\+\)-.*/\1/')
@@ -41,8 +42,8 @@ function process_parallel_runlog(){
     rm -f ${YAML_OUTPUT_NAME}
     printf "Creating YAML output: ${YAML_OUTPUT_NAME}\n"
     printf "run_date: ${formatted_timestamp}\nrun_host: Lassen\n" > ${YAML_OUTPUT_NAME}
-    printf "cl_device: ${CL_DEVICE}\n" > ${YAML_OUTPUT_NAME}
-    printf "num_processors: ${nproc}\n" > ${YAML_OUTPUT_NAME}
+    printf "cl_device: ${CL_DEVICE}\n" >> ${YAML_OUTPUT_NAME}
+    printf "num_processors: ${nproc}\n" >> ${YAML_OUTPUT_NAME}
     printf "run_arch: ${TIMING_ARCH}\ngpu_arch: GV100GL\n" >> ${YAML_OUTPUT_NAME}
     printf "mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81\n" >> ${YAML_OUTPUT_NAME}
     printf "driver_version: fb778f46cc5b2a889f9fcbbb8396224297d64cea\n" >> ${YAML_OUTPUT_NAME}
@@ -50,7 +51,7 @@ function process_parallel_runlog(){
     printf "time_first_10: ${FIRST_10_STEPS}\ntime_second_10: ${SECOND_10_STEPS}\n" >> ${YAML_OUTPUT_NAME}
     printf "max_python_mem_usage: ${MAX_PYTHON_MEM_USAGE}\n" >> ${YAML_OUTPUT_NAME}
     printf "max_gpu_mem_usage: ${MAX_GPU_MEM_USAGE}\n---\n" >> ${YAML_OUTPUT_NAME}
-    
+
     cat ${YAML_OUTPUT_NAME} >> ${MAIN_YAML_FILE_NAME}
     rm -f ${YAML_OUTPUT_NAME}
 
@@ -59,7 +60,7 @@ function process_parallel_runlog(){
 }
 
 last_processed_timestamp=$(date -d "yesterday 24 hours ago" +"%Y-%m-%d %H:%M")
-last_date=$(date -d "yesterday 24 hours ago" +"%s")
+last_date="0"      # $(date -d "yesterday 24 hours ago" +"%s")
 for timestamp in $(ls *-rank0-*.sqlite | sed -e 's/.*-\([0-9]\{8\}-[0-9]\{6\}\)\.sqlite/\1/' | sort -u)
 do
     data_date=$(date -d "${timestamp:0:8} ${timestamp:9:2}:${timestamp:11:2}:${timestamp:13:2}" +'%s')

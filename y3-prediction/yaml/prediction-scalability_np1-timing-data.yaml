@@ -1,3 +1,6 @@
+run_date: 2023-03-14 12:02
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102938268>
 num_processors: 1
 run_arch: ppc64le
 gpu_arch: GV100GL
@@ -10,6 +13,9 @@ time_second_10: 8.850379467010498
 max_python_mem_usage: 2848.6875
 max_gpu_mem_usage: 7801.625
 ---
+run_date: 2023-03-14 13:36
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1028fe678>
 num_processors: 1
 run_arch: ppc64le
 gpu_arch: GV100GL
@@ -22,6 +28,9 @@ time_second_10: 8.844833374023438
 max_python_mem_usage: 2850.25
 max_gpu_mem_usage: 7801.625
 ---
+run_date: 2023-03-14 15:11
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10296f638>
 num_processors: 1
 run_arch: ppc64le
 gpu_arch: GV100GL
@@ -34,6 +43,9 @@ time_second_10: 8.830856800079346
 max_python_mem_usage: 2849.4375
 max_gpu_mem_usage: 7801.625
 ---
+run_date: 2023-03-15 19:08
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10297f998>
 num_processors: 1
 run_arch: ppc64le
 gpu_arch: GV100GL
@@ -46,6 +58,9 @@ time_second_10: 8.79906177520752
 max_python_mem_usage: 2842.875
 max_gpu_mem_usage: 7801.625
 ---
+run_date: 2023-03-16 09:39
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10296f618>
 num_processors: 1
 run_arch: ppc64le
 gpu_arch: GV100GL
@@ -58,6 +73,9 @@ time_second_10: 8.822721719741821
 max_python_mem_usage: 2854.5625
 max_gpu_mem_usage: 8241.625
 ---
+run_date: 2023-03-16 14:00
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10296f618>
 num_processors: 1
 run_arch: ppc64le
 gpu_arch: GV100GL
@@ -70,6 +88,9 @@ time_second_10: 8.84282112121582
 max_python_mem_usage: 2847.8125
 max_gpu_mem_usage: 7801.625
 ---
+run_date: 2023-03-17 14:29
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10286d6f8>
 num_processors: 1
 run_arch: ppc64le
 gpu_arch: GV100GL
@@ -82,6 +103,9 @@ time_second_10: 8.806121587753296
 max_python_mem_usage: 2845.25
 max_gpu_mem_usage: 7801.625
 ---
+run_date: 2023-03-19 02:31
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10286d7e8>
 num_processors: 1
 run_arch: ppc64le
 gpu_arch: GV100GL
@@ -94,6 +118,9 @@ time_second_10: 8.852400779724121
 max_python_mem_usage: 2830.125
 max_gpu_mem_usage: 7801.625
 ---
+run_date: 2023-03-19 15:24
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10286d858>
 num_processors: 1
 run_arch: ppc64le
 gpu_arch: GV100GL
@@ -106,6 +133,9 @@ time_second_10: 8.79067325592041
 max_python_mem_usage: 2847.6875
 max_gpu_mem_usage: 8385.625
 ---
+run_date: 2023-03-19 18:40
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10296ed18>
 num_processors: 1
 run_arch: ppc64le
 gpu_arch: GV100GL
@@ -118,6 +148,9 @@ time_second_10: 8.801867008209229
 max_python_mem_usage: 2840.25
 max_gpu_mem_usage: 7801.625
 ---
+run_date: 2023-03-20 12:09
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1028bb0c8>
 num_processors: 1
 run_arch: ppc64le
 gpu_arch: GV100GL
@@ -129,4 +162,19 @@ time_first_10: 734.0888204574585
 time_second_10: 8.828926086425781
 max_python_mem_usage: 2855.4375
 max_gpu_mem_usage: 8241.625
+---
+run_date: 2023-03-21 05:12
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10287f248>
+num_processors: 1
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
+driver_version: fb778f46cc5b2a889f9fcbbb8396224297d64cea
+time_startup: 635.9347312450409
+time_first_step: 716.6125566959381
+time_first_10: 725.4971992969513
+time_second_10: 8.833627462387085
+max_python_mem_usage: 2842.875
+max_gpu_mem_usage: 7801.625
 ---
