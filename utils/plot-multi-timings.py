@@ -153,7 +153,7 @@ def main():
                 data = [d for d in data if s in d]
 
             for i, s in enumerate(timing_names):
-                nproc = d["num_processors"]
+                nproc = 1 if args.multicase else d["num_processors"]
                 label = casename if args.multicase else f"{nproc}"
                 p, = ax[i].plot([d["run_date"] for d in data],
                                 [scalfac*d[s] for d in data],
