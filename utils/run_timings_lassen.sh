@@ -59,6 +59,10 @@ if [ -f "RUN_PREDICTION" ]; then
     ./run-driver-timing.sh -d drivers_y2-prediction -b main -i y2-prediction
 fi
 
+if [ -f "RUN_SCALING_TEST" ]; then
+    ./run-scaling-test.sh
+fi
+
 # Update the README with the latest testing date
 if [ -f "UPDATE_PLOTS" ]; then
 
