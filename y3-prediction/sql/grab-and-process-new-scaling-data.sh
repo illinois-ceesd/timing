@@ -61,6 +61,16 @@ function process_parallel_runlog(){
 
 conda deactivate
 source ../../emirge/config/activate_env.sh
+process_file=${1:-""}
+if [[ ! -z "${process_file}" ]]; then
+    printf "Processing single file: ${process_file}\n"
+    timestamp=$(printf "${process_file}" | sed -e 's/.*-\([0-9]\{8\}-[0-9]\{6\}\)\.sqlite/\1/')
+    printf "Timestamp: ${timestamp}\n"
+    process_parallel_runlog ${timestamp}
+    return_code=$?
+    conda deactivate
+    exit ${return_code}
+fi
 
 last_processed_timestamp=$(date -d "yesterday 24 hours ago" +"%Y-%m-%d %H:%M")
 last_date="0"      # $(date -d "yesterday 24 hours ago" +"%s")
@@ -74,7 +84,7 @@ done
 last_processed_timestamp=$(date -d "@${last_date}" +"%Y-%m-%d %H:%M") 
 printf "Processing any data later than ${last_processed_timestamp}\n"
 
-ln -sf ../../y3-prediction-testing/scalability_test/log_data/*-rank0-* .
+ln -sf ../../y3-prediction-testing/scalability_test/log_data/*-rank0-*.sqlite .
 
 for timestamp in $(ls *-rank0-*.sqlite | sed -e 's/.*-\([0-9]\{8\}-[0-9]\{6\}\)\.sqlite/\1/' | sort -u)
 do
