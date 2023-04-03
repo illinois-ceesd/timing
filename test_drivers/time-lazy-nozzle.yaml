@@ -2,7 +2,7 @@ driver:
   name: y1-production-nozzle-lazy
   repo: illinois-ceesd/drivers_y1-nozzle
   branch: main
-  exename: &EXE nozzle
+  execname: &EXE nozzle
   params:
     nviz: 100
     nrestart: 100

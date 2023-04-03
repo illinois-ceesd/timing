@@ -2,7 +2,7 @@ driver:
     name: flame1d-lazy
     repo: illinois-ceesd/drivers_flame1d
     branch: main
-    exename: &EXE flame1d
+    execname: &EXE flame1d
     params:
         nviz: 100
         nrestart: 100

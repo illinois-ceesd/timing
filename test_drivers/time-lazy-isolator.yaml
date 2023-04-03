@@ -2,7 +2,7 @@ driver:
   name: y2-isolator
   repo: illinois-ceesd/drivers_y2-isolator
   branch: main
-  exename: &EXE isolator
+  execname: &EXE isolator
   params:
     nviz: 100
     nrestart: 100
