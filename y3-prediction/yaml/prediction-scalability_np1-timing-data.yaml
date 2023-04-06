@@ -403,3 +403,63 @@ time_second_10: 8.831990480422974
 max_python_mem_usage: 2848.875
 max_gpu_mem_usage: 8370.0
 ---
+run_date: 2023-04-05 17:02
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10285e2c8>
+num_processors: 1
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
+driver_version: fb778f46cc5b2a889f9fcbbb8396224297d64cea
+time_startup: 546.8458938598633
+time_first_step: 636.1100118160248
+time_first_10: 645.6538777351379
+time_second_10: 9.446696758270264
+max_python_mem_usage: 6784.0
+max_gpu_mem_usage: 8791.625
+---
+run_date: 2023-04-05 18:48
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102964048>
+num_processors: 1
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
+driver_version: fb778f46cc5b2a889f9fcbbb8396224297d64cea
+time_startup: 543.2995903491974
+time_first_step: 638.8520193099976
+time_first_10: 648.3229737281799
+time_second_10: 9.424525022506714
+max_python_mem_usage: 6782.3125
+max_gpu_mem_usage: 9519.625
+---
+run_date: 2023-04-05 19:30
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102964048>
+num_processors: 1
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
+driver_version: fb778f46cc5b2a889f9fcbbb8396224297d64cea
+time_startup: 914.1618278026581
+time_first_step: 547.3548533916473
+time_first_10: 557.3169190883636
+time_second_10: 9.966010332107544
+max_python_mem_usage: 7089.6875
+max_gpu_mem_usage: 8855.6875
+---
+run_date: 2023-04-05 20:14
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102876bf8>
+num_processors: 1
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
+driver_version: fb778f46cc5b2a889f9fcbbb8396224297d64cea
+time_startup: 957.4437022209167
+time_first_step: 612.7029595375061
+time_first_10: 622.7941374778748
+time_second_10: 9.98144245147705
+max_python_mem_usage: 7116.625
+max_gpu_mem_usage: 8299.6875
+---
