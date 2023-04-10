@@ -67,6 +67,7 @@ def main():
     parser.add_argument("-c", "--multicase", action="store_true")
     parser.add_argument("-a", "--annotate", action="store_true",
                         help="annotate the figure using comments in the data file")
+    parser.add_argument("-g", "--gradient", action="store_true")
     parser.add_argument("-d", "--date", metavar="YYYY-MM-DD")
     parser.add_argument("-e", "--end", metavar="YYYY-MM-DD")
     # parser.add_argument("datafile", metavar="DATA.yaml")
@@ -75,9 +76,17 @@ def main():
     parser.add_argument("--save-plot", metavar="NAME.{pdf,png}")
     args = parser.parse_args()
 
-    markers = ["o", "s", "v", "^", ">", "<", "D", "P", "*", "X"]
-    colors = ["tab:blue", "tab:green", "tab:orange", "tab:red",
-              "tab:cyan", "m", "y", "k"]
+    name_mapping = None
+    #if args.names:
+    #    name_mapping = {}
+    #    with open(args.names, "r") as f:
+    #        for line in f:
+    #            key, value = line.strip().split()
+    #            name_mapping[key] = value
+
+    markers = ["o", "s", "v", "^", ">", "<", "D", "P", "*", "X", "p", "8"]
+    colors = ["black", "tab:blue", "tab:green", "tab:orange", "tab:red",
+              "tab:cyan", "m", "y", "k", "green", "red", "blue"]
 
     timing_names = ["time_startup", "time_first_step", "time_second_10"]
     timing_labels = ["startup", "first timestep", "second 9 timesteps"]
@@ -116,10 +125,22 @@ def main():
     leg = []
     nfiles = len(args.files)
     legend_ready = [False for _ in range(nfiles)]
-
+    colorbar = args.gradient and nfiles > 4
+    ncolor_bar = nfiles - 2
+    cmap = plt.cm.Blues
     # Grab the data from the YAML timing file
     for f, datafile in enumerate(args.files):
+        color = colors[f]
+        if colorbar:
+            if f == 0:
+                color = colors[f]
+            elif f > ncolor_bar - 1:
+                color = colors[f-ncolor_bar]
+            else:
+                color = cmap((f-1)/(2*ncolor_bar))
         casename = os.path.splitext(os.path.basename(datafile))[0]
+        if name_mapping is not None:
+            casename = name_mapping[casename]
         yaml_data = yaml.load_all(open(datafile), Loader=yaml.FullLoader)
         # Remove yaml's trailing None
         raw_data = [d for d in yaml_data if d is not None]
@@ -155,9 +176,11 @@ def main():
             for i, s in enumerate(timing_names):
                 nproc = 1 if args.multicase else d["num_processors"]
                 label = casename if args.multicase else f"{nproc}"
+                if name_mapping is not None:
+                    label = name_mapping[label]
                 p, = ax[i].plot([d["run_date"] for d in data],
                                 [scalfac*d[s] for d in data],
-                                label=label, color=colors[f], **kwargs)
+                                label=label, color=color, **kwargs)
                 if not legend_ready[f]:
                     leg.append(p)
                     legend_ready[f] = True
