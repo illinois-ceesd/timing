@@ -26,6 +26,7 @@ THE SOFTWARE.
 """
 import argparse
 import yaml
+import matplotlib as mpl
 from matplotlib.dates import date2num
 import matplotlib.pyplot as plt
 import numpy as np
@@ -69,6 +70,7 @@ def main():
     parser.add_argument("-a", "--annotate", action="store_true",
                         help="annotate the figure using comments in the data file")
     parser.add_argument("-g", "--gradient", action="store_true")
+    parser.add_argument("-p", "--palette", metavar="NAME")
     parser.add_argument("-d", "--date", metavar="YYYY-MM-DD")
     parser.add_argument("-e", "--end", metavar="YYYY-MM-DD")
     # parser.add_argument("datafile", metavar="DATA.yaml")
@@ -76,6 +78,9 @@ def main():
                         help="YAML file(s) to plot.")
     parser.add_argument("--save-plot", metavar="NAME.{pdf,png}")
     args = parser.parse_args()
+    palette_name = "winter"
+    if args.palette is not None:
+        palette_name = args.palette
 
     name_mapping = None
     #if args.names:
@@ -144,7 +149,8 @@ def main():
     colorbar = args.gradient
     grad_colors = np.linspace(0.3, 1.0, nfiles)
     # ncolor_bar = nfiles
-    cmap = plt.cm.plasma
+    # cmap = plt.cm.seismic
+    cmap = mpl.colormaps[palette_name]
     # Grab the data from the YAML timing file
     for f, datafile in enumerate(sorted_filelist):
         casename = os.path.splitext(os.path.basename(datafile))[0]
