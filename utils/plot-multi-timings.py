@@ -28,6 +28,7 @@ import argparse
 import yaml
 from matplotlib.dates import date2num
 import matplotlib.pyplot as plt
+import numpy as np
 import os
 
 fontsize = 10
@@ -122,22 +123,30 @@ def main():
     for i in range(numplots):
         ax[i].set_title(subplot_titles[i])
 
+    def resort_filelist(filelist):
+        nprocs = []
+        for datafile in filelist:
+            yaml_data = yaml.load_all(open(datafile), Loader=yaml.FullLoader)
+            raw_data = [d for d in yaml_data if d is not None]
+            nproc = raw_data[0]["num_processors"]
+            nprocs.append(nproc)
+
+        file_nproc = list(zip(filelist, nprocs))
+        file_nproc.sort(key=lambda x: x[1])
+        sorted_files = [file for file, _ in file_nproc]
+        return sorted_files
+
     leg = []
     nfiles = len(args.files)
+    sorted_filelist = resort_filelist(args.files)
     legend_ready = [False for _ in range(nfiles)]
-    colorbar = args.gradient and nfiles > 4
-    ncolor_bar = nfiles - 2
-    cmap = plt.cm.Blues
+    # colorbar = args.gradient and nfiles > 4
+    colorbar = args.gradient
+    grad_colors = np.linspace(0.3, 1.0, nfiles)
+    # ncolor_bar = nfiles
+    cmap = plt.cm.plasma
     # Grab the data from the YAML timing file
-    for f, datafile in enumerate(args.files):
-        color = colors[f]
-        if colorbar:
-            if f == 0:
-                color = colors[f]
-            elif f > ncolor_bar - 1:
-                color = colors[f-ncolor_bar]
-            else:
-                color = cmap((f-1)/(2*ncolor_bar))
+    for f, datafile in enumerate(sorted_filelist):
         casename = os.path.splitext(os.path.basename(datafile))[0]
         if name_mapping is not None:
             casename = name_mapping[casename]
@@ -146,6 +155,7 @@ def main():
         raw_data = [d for d in yaml_data if d is not None]
         data = []
         for d in raw_data:
+            nproc = d["num_processors"]
             d["run_date"] = parse_datetime(d["run_date"])
             if args.date:
                 start_date = date2num(parse_datetime(args.date+" 00:00"))
@@ -159,6 +169,21 @@ def main():
                 if run_date > end_date:
                     continue
 
+            color = colors[f]
+
+            if colorbar:
+                color = cmap(grad_colors[f])
+                # if f == 0:
+                #    color = colors[f]
+                #    # elif f > ncolor_bar - 1:
+                #    #    color = colors[f-ncolor_bar]
+                # else:
+                #    if nproc > 1:
+                #        color = cmap(grad_colors[f])
+                #    elif nproc > 128:
+                #        color = colors[f]
+                #    else:
+                #        color = colors[f]
             data.append(d)
 
             kwargs = {
