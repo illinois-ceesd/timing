@@ -28,6 +28,10 @@ function process_parallel_runlog(){
     runalyzer-gather ${SUMMARY_FILE_NAME} ${run_name}-rank*-${run_timestamp}.sqlite
     # rm ${run_name}-rank*-${run_timestamp}.sqlite
     set +x
+    if [ ! -e "${SUMMARY_FILE_NAME}" ]; then
+        printf "Failed to produce ${SUMMARY_FILE_NAME}, skipping.\n"
+        return
+    fi
 
     CL_DEVICE=$(sqlite3 ${SUMMARY_FILE_NAME} 'SELECT cl_device_name FROM runs')
     STARTUP_TIME=$(runalyzer -m ${SUMMARY_FILE_NAME} -c 'print(q("select $t_init.max").fetchall()[0][0])' | grep -v INFO)
