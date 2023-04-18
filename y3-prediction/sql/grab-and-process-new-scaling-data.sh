@@ -30,6 +30,15 @@ function process_parallel_runlog(){
     set +x
     if [ ! -e "${SUMMARY_FILE_NAME}" ]; then
         printf "Failed to produce ${SUMMARY_FILE_NAME}, skipping.\n"
+        unset run_timestamp
+        unset run_name
+        unset RUN_CASENAME
+        unset nproc
+        unset formatted_timestamp
+        unset MAIN_YAML_FILE_NAME
+        unset SUMMARY_FILE_ROOT
+        unset YAML_OUTPUT_NAME
+        unset SUMMARY_FILE_NAME
         return
     fi
 
@@ -61,6 +70,13 @@ function process_parallel_runlog(){
 
     unset MAIN_YAML_FILE_NAME
     unset SUMMARY_FILE_ROOT
+    unset run_timestamp
+    unset run_name
+    unset RUN_CASENAME
+    unset nproc
+    unset formatted_timestamp
+    unset YAML_OUTPUT_NAME
+    unset SUMMARY_FILE_NAME
 }
 
 conda deactivate
