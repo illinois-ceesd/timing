@@ -48,6 +48,12 @@ params = {  # "backend": "pdf",
 plt.rcParams.update(params)
 
 
+def calculate_average(data):
+    if len(data) == 0:
+        return 0
+    return sum(data)/len(data)
+
+
 def parse_datetime(s):
     """Parse the date and time."""
     # I really don't know why we decided to not save Unix timestamps
@@ -73,6 +79,7 @@ def main():
     parser.add_argument("-p", "--palette", metavar="NAME")
     parser.add_argument("-d", "--date", metavar="YYYY-MM-DD")
     parser.add_argument("-e", "--end", metavar="YYYY-MM-DD")
+    parser.add_argument("-r", "--limit-range", action="store_true")
     # parser.add_argument("datafile", metavar="DATA.yaml")
     parser.add_argument("files", metavar="file", type=str, nargs="+",
                         help="YAML file(s) to plot.")
@@ -246,6 +253,13 @@ def main():
                             ax[i].text(xt, ytext, d["comment"], ha="center",
                                        transform=ax[i].transAxes, color=color,
                                        rotation=90)
+
+    if args.limit_range:
+        for i, s in enumerate(timing_names):
+            y_values = [scalfac * d[s] for d in data]
+            avg_value = calculate_average(y_values)
+            ylim = ax[i].get_ylim()
+            ax[i].set_ylim(ylim[0], avg_value * 1.5)
 
     ax[-1].tick_params(axis="x", labelrotation=45)
     ax[-1].set_xlabel("date")
