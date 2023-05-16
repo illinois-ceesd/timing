@@ -9,7 +9,6 @@ function process_parallel_runlog(){
     run_name=$(ls *-rank0-${run_timestamp}.sqlite | sed -e 's/\(.*\)-rank.*$/\1/')
     nproc=$(ls *-rank0-${run_timestamp}.sqlite | sed -e 's/.*np\([0-9]\+\)-.*/\1/')
 
-
     RUN_CASENAME=${run_name}
     MAIN_YAML_FILE_NAME=${MAIN_YAML_FILE_NAME:-"../yaml/${RUN_CASENAME}-timing-data.yaml"}
     SUMMARY_FILE_ROOT=${SUMMARY_FILE_ROOT:-"${RUN_CASENAME}-timing-data"}
@@ -28,6 +27,7 @@ function process_parallel_runlog(){
     runalyzer-gather ${SUMMARY_FILE_NAME} ${run_name}-rank*-${run_timestamp}.sqlite
     # rm ${run_name}-rank*-${run_timestamp}.sqlite
     set +x
+
     if [ ! -e "${SUMMARY_FILE_NAME}" ]; then
         printf "Failed to produce ${SUMMARY_FILE_NAME}, skipping.\n"
         unset run_timestamp
@@ -79,8 +79,11 @@ function process_parallel_runlog(){
     unset SUMMARY_FILE_NAME
 }
 
+SQL_DATA_SOURCE_DIR=${SQL_DATA_SOURCE_DIR:-"../../y3-prediction-testing/scalability_test/log_data"}
+EMIRGE_HOME=${EMIRGE_HOME:-"../../emirge"}
+
 conda deactivate
-source ../../emirge/config/activate_env.sh
+source ${EMIRGE_HOME}/config/activate_env.sh
 process_file=${1:-""}
 if [[ ! -z "${process_file}" ]]; then
     printf "Processing single file: ${process_file}\n"
@@ -92,6 +95,8 @@ if [[ ! -z "${process_file}" ]]; then
     exit ${return_code}
 fi
 
+# This bit just checks the timestamp of the latest file in cwd and
+# then grabs any data from the data source that is newer.
 last_processed_timestamp=$(date -d "yesterday 24 hours ago" +"%Y-%m-%d %H:%M")
 last_date="0"      # $(date -d "yesterday 24 hours ago" +"%s")
 for timestamp in $(ls *-rank0-*.sqlite | sed -e 's/.*-\([0-9]\{8\}-[0-9]\{6\}\)\.sqlite/\1/' | sort -u)
@@ -104,7 +109,7 @@ done
 last_processed_timestamp=$(date -d "@${last_date}" +"%Y-%m-%d %H:%M") 
 printf "Processing any data later than ${last_processed_timestamp}\n"
 
-ln -sf ../../y3-prediction-testing/scalability_test/log_data/*-rank0-*.sqlite .
+ln -sf ${SQL_DATA_SOURCE_DIR}/*-rank0-*.sqlite .
 
 for timestamp in $(ls *-rank0-*.sqlite | sed -e 's/.*-\([0-9]\{8\}-[0-9]\{6\}\)\.sqlite/\1/' | sort -u)
 do
