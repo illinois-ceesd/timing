@@ -19,7 +19,7 @@ TIMING_BRANCH="main"
 TIMING_ENV_NAME="${exename}.lazy.timing.env"
 MIRGE_BRANCH="production"
 DRIVER_REPO="illinois-ceesd/drivers_flame1d"
-DRIVER_BRANCH="main"
+DRIVER_BRANCH="update-to-y3"
 DRIVER_NAME="flame1d-lazy"
 SUMMARY_FILE_ROOT="${exename}_lazy"
 YAML_FILE_NAME="${exename}-lazy-timings.yaml"
@@ -57,6 +57,8 @@ cd emirge/mirgecom
 MIRGE_HASH=$(git rev-parse origin/${MIRGE_BRANCH})
 Y1_HASH=$MIRGE_HASH
 #git merge origin/y1-production --no-edit
+
+cd ${TIMING_HOME}
 
 # --- Grab the case driver repo
 rm -Rf ${DRIVER_NAME}
