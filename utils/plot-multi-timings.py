@@ -141,7 +141,7 @@ def main():
             yaml_data = yaml.load_all(open(datafile), Loader=yaml.FullLoader)
             raw_data = [d for d in yaml_data if d is not None]
             nproc = raw_data[0]["num_processors"]
-            nprocs.append(nproc)
+            nprocs.append(int(nproc))
 
         file_nproc = list(zip(filelist, nprocs))
         file_nproc.sort(key=lambda x: x[1])
