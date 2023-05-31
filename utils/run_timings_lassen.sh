@@ -56,7 +56,7 @@ fi
 
 # Time prediction
 if [ -f "RUN_PREDICTION" ]; then
-    ./run-driver-timing.sh -d drivers_y2-prediction -b main -i y2-prediction
+    ./run-driver-timing.sh -d drivers_y2-prediction -b update-to-y3 -i y2-prediction
 fi
 
 if [ -f "RUN_SCALING_TEST" ]; then

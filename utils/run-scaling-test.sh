@@ -1,25 +1,33 @@
 #!/bin/bash
 
+TOPDIR=$(pwd)
+
 # Run this dumb data collect script which
 # collects the sql data from the place where
 # it runs, and inserts the timing data into
 # the nproc-specific yaml files.
-SCALING_CASE_RUN_ROOT="y3-prediction-performance-run"
+SCALING_CASE_RUN_ROOT="y3-prediction-scaling-run"
 SCALING_CASE_TIMING_ROOT="y3-prediction"
-cd ${SCALING_CASE_TIMING_ROOT}/sql
-./grab-and-process-new-scaling-data.sh
-cd ../..
+TEMP_TIMESTAMP=$(date "+%Y.%m.%d-%H.%M.%S")
+if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
+    cd ${SCALING_CASE_TIMING_ROOT}/sql
+    ./grab-and-process-new-scaling-data.sh
+    cd ../..
+    mv ${SCALING_CASE_RUN_ROOT} ${SCALING_CASE_RUN_ROOT}_${TEMP_TIMESTAMP}
+fi
 
 # Install the prediction driver
-rm -rf ${SCALING_CASE_RUN_ROOT}
-git clone -b scalability_testing git@github.com:/illinois-ceesd/driver_y3-prediction ${SCALING_CASE_RUN_ROOT}
-EMIRGE_HOME=${EMIRGE_HOME:-"./emirge"}
+# rm -rf ${SCALING_CASE_RUN_ROOT}
+git clone -b scalability-testing git@github.com:/illinois-ceesd/drivers_y3-prediction ${SCALING_CASE_RUN_ROOT}
+EMIRGE_HOME=${EMIRGE_HOME:-"${TOPDIR}/emirge"}
 conda deactivate
 source ${EMIRGE_HOME}/config/activate_env.sh
 cd ${SCALING_CASE_RUN_ROOT}
+ln -s $EMIRGE_HOME emirge
 pip install -e .
-
-cd scalability_test
+cd data/cav5_comb4/3D/scalability
+cp ../../../../../y3-prediction-scalability-data/* .
+cd ../../../../scalability_test
 
 job1=$(bsub scal1node_lassen.bsub.sh)
 job1_id=$(printf "${job1}" | cut -d "<" -f 2 | cut -d ">" -f 1)

@@ -9,7 +9,6 @@ function process_parallel_runlog(){
     run_name=$(ls *-rank0-${run_timestamp}.sqlite | sed -e 's/\(.*\)-rank.*$/\1/')
     nproc=$(ls *-rank0-${run_timestamp}.sqlite | sed -e 's/.*np\([0-9]\+\)-.*/\1/')
 
-
     RUN_CASENAME=${run_name}
     MAIN_YAML_FILE_NAME=${MAIN_YAML_FILE_NAME:-"../yaml/${RUN_CASENAME}-timing-data.yaml"}
     SUMMARY_FILE_ROOT=${SUMMARY_FILE_ROOT:-"${RUN_CASENAME}-timing-data"}
@@ -26,8 +25,22 @@ function process_parallel_runlog(){
 
     set -x
     runalyzer-gather ${SUMMARY_FILE_NAME} ${run_name}-rank*-${run_timestamp}.sqlite
-    # rm ${run_name}-rank*-${run_timestamp}.sqlite
+    #rm *-rank*-${run_timestamp}.sqlite
     set +x
+
+    if [ ! -e "${SUMMARY_FILE_NAME}" ]; then
+        printf "Failed to produce ${SUMMARY_FILE_NAME}, skipping.\n"
+        unset run_timestamp
+        unset run_name
+        unset RUN_CASENAME
+        unset nproc
+        unset formatted_timestamp
+        unset MAIN_YAML_FILE_NAME
+        unset SUMMARY_FILE_ROOT
+        unset YAML_OUTPUT_NAME
+        unset SUMMARY_FILE_NAME
+        return
+    fi
 
     CL_DEVICE=$(sqlite3 ${SUMMARY_FILE_NAME} 'SELECT cl_device_name FROM runs')
     STARTUP_TIME=$(runalyzer -m ${SUMMARY_FILE_NAME} -c 'print(q("select $t_init.max").fetchall()[0][0])' | grep -v INFO)
@@ -57,14 +70,37 @@ function process_parallel_runlog(){
 
     unset MAIN_YAML_FILE_NAME
     unset SUMMARY_FILE_ROOT
+    unset run_timestamp
+    unset run_name
+    unset RUN_CASENAME
+    unset nproc
+    unset formatted_timestamp
+    unset YAML_OUTPUT_NAME
+    unset SUMMARY_FILE_NAME
 }
 
-conda deactivate
-source ../../emirge/config/activate_env.sh
+SCALING_CASE_RUN_ROOT="y3-prediction-scaling-run"
+SQL_DATA_SOURCE_DIR=${SQL_DATA_SOURCE_DIR:-"../../${SCALING_CASE_RUN_ROOT}/scalability_test/log_data"}
+EMIRGE_HOME=${EMIRGE_HOME:-"../../emirge"}
 
+conda deactivate
+source ${EMIRGE_HOME}/config/activate_env.sh
+process_file=${1:-""}
+if [[ ! -z "${process_file}" ]]; then
+    printf "Processing single file: ${process_file}\n"
+    timestamp=$(printf "${process_file}" | sed -e 's/.*-\([0-9]\{8\}-[0-9]\{6\}\)\.sqlite/\1/')
+    printf "Timestamp: ${timestamp}\n"
+    process_parallel_runlog ${timestamp}
+    return_code=$?
+    conda deactivate
+    exit ${return_code}
+fi
+
+# This bit just checks the timestamp of the latest file in cwd and
+# then grabs any data from the data source that is newer.
 last_processed_timestamp=$(date -d "yesterday 24 hours ago" +"%Y-%m-%d %H:%M")
 last_date="0"      # $(date -d "yesterday 24 hours ago" +"%s")
-for timestamp in $(ls *-rank0-*.sqlite | sed -e 's/.*-\([0-9]\{8\}-[0-9]\{6\}\)\.sqlite/\1/' | sort -u)
+for timestamp in $(ls *-timing-data-*.sqlite | sed -e 's/.*-\([0-9]\{8\}-[0-9]\{6\}\)\.sqlite/\1/' | sort -u)
 do
     data_date=$(date -d "${timestamp:0:8} ${timestamp:9:2}:${timestamp:11:2}:${timestamp:13:2}" +'%s')
     if [ ${data_date} -gt ${last_date} ]; then
@@ -74,7 +110,7 @@ done
 last_processed_timestamp=$(date -d "@${last_date}" +"%Y-%m-%d %H:%M") 
 printf "Processing any data later than ${last_processed_timestamp}\n"
 
-ln -sf ../../y3-prediction-testing/scalability_test/log_data/*-rank0-* .
+ln -sf ${SQL_DATA_SOURCE_DIR}/*-rank0-*.sqlite .
 
 for timestamp in $(ls *-rank0-*.sqlite | sed -e 's/.*-\([0-9]\{8\}-[0-9]\{6\}\)\.sqlite/\1/' | sort -u)
 do
@@ -84,5 +120,7 @@ do
         process_parallel_runlog ${timestamp}
     fi
 done
+
+rm *-rank0-*sqlite
 
 conda deactivate
