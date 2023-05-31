@@ -79,7 +79,8 @@ function process_parallel_runlog(){
     unset SUMMARY_FILE_NAME
 }
 
-SQL_DATA_SOURCE_DIR=${SQL_DATA_SOURCE_DIR:-"../../y3-prediction-testing/scalability_test/log_data"}
+SCALING_CASE_RUN_ROOT="y3-prediction-scaling-run"
+SQL_DATA_SOURCE_DIR=${SQL_DATA_SOURCE_DIR:-"../../${SCALING_CASE_RUN_ROOT}/scalability_test/log_data"}
 EMIRGE_HOME=${EMIRGE_HOME:-"../../emirge"}
 
 conda deactivate
