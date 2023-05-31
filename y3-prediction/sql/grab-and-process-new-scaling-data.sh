@@ -25,7 +25,7 @@ function process_parallel_runlog(){
 
     set -x
     runalyzer-gather ${SUMMARY_FILE_NAME} ${run_name}-rank*-${run_timestamp}.sqlite
-    # rm ${run_name}-rank*-${run_timestamp}.sqlite
+    #rm *-rank*-${run_timestamp}.sqlite
     set +x
 
     if [ ! -e "${SUMMARY_FILE_NAME}" ]; then
@@ -100,7 +100,7 @@ fi
 # then grabs any data from the data source that is newer.
 last_processed_timestamp=$(date -d "yesterday 24 hours ago" +"%Y-%m-%d %H:%M")
 last_date="0"      # $(date -d "yesterday 24 hours ago" +"%s")
-for timestamp in $(ls *-rank0-*.sqlite | sed -e 's/.*-\([0-9]\{8\}-[0-9]\{6\}\)\.sqlite/\1/' | sort -u)
+for timestamp in $(ls *-timing-data-*.sqlite | sed -e 's/.*-\([0-9]\{8\}-[0-9]\{6\}\)\.sqlite/\1/' | sort -u)
 do
     data_date=$(date -d "${timestamp:0:8} ${timestamp:9:2}:${timestamp:11:2}:${timestamp:13:2}" +'%s')
     if [ ${data_date} -gt ${last_date} ]; then
@@ -120,5 +120,7 @@ do
         process_parallel_runlog ${timestamp}
     fi
 done
+
+rm *-rank0-*sqlite
 
 conda deactivate
