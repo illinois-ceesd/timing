@@ -1,6 +1,7 @@
 #!/bin/bash
 
 PLOT_WINDOW_START=$(date --date="$(date +%Y-%m-1) -1 month" "+%Y-%m-%d")
+testing_date=$(date "+%Y.%m.%d")
 
 git pull # pick up all the timings we just made
 rm -f latest_testing_date
