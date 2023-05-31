@@ -1,0 +1,20 @@
+name: y3-prediction-scalability
+
+on:
+  pull_request:
+  schedule:
+  - cron:  '5 0 * * *'
+
+
+jobs:
+
+    y3-prediction:
+        name: y3-prediction-check
+        runs-on: ubuntu-latest
+
+        steps:
+        - uses: actions/checkout@v2
+        - name: check-todays-data
+          run: |
+             .ci-support/check-for-latest-data.sh y3-prediction/sql
+
