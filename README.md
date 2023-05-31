@@ -1,4 +1,4 @@
-Timings last ran on: 2023.05.31
+Tests last ran on: 
 
 # Status of production timings
 
@@ -11,6 +11,17 @@ Timings last ran on: 2023.05.31
 [![nozzle-timing](https://github.com/illinois-ceesd/timing/actions/workflows/nozzle-timing.yaml/badge.svg)](https://github.com/illinois-ceesd/timing/actions/workflows/nozzle-timing.yaml)
 
 # Current timing plots
+
+## Y3 Prediction: weak scaling on Lassen
+
+### Startup, compile, and runtime
+
+![Y3Prediction-scalability-full](plots/y3-prediction-scalability-full.png)
+
+### Step details
+
+![Y3Prediction-scalability-step](plots/y3-prediction-scalability-step-full.png)
+
 
 ## Y2 Prediction
 
