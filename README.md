@@ -1,6 +1,8 @@
-Tests last ran on: 
+Tests last ran on: 2023.05.31
 
 # Status of production timings
+
+[![y3-prediction-scalability](https://github.com/illinois-ceesd/timing/actions/workflows/y3-prediction-scalability.yaml/badge.svg)](https://github.com/illinois-ceesd/timing/actions/workflows/y3-prediction-scalability.yaml)
 
 [![y2-prediction-timing](https://github.com/illinois-ceesd/timing/actions/workflows/y2-prediction-timing.yaml/badge.svg)](https://github.com/illinois-ceesd/timing/actions/workflows/y2-prediction-timing.yaml)
 
