@@ -10,9 +10,13 @@ SCALING_CASE_RUN_ROOT="y3-prediction-scaling-run"
 SCALING_CASE_TIMING_ROOT="y3-prediction"
 TEMP_TIMESTAMP=$(date "+%Y.%m.%d-%H.%M.%S")
 if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
+    git pull
     cd ${SCALING_CASE_TIMING_ROOT}/sql
     ./grab-and-process-new-scaling-data.sh
     cd ../..
+    git add ${SCALING_CASE_TIMING_ROOT}/sql/*-sqlite
+    # git add ${SCALING_CASE_TIMING_ROOT}/yaml
+    (git commit -am "Automatic commit: Y3Scalability/Lassen ${TEMP_TIMESTAMP}" && git push)
     mv ${SCALING_CASE_RUN_ROOT} ${SCALING_CASE_RUN_ROOT}_${TEMP_TIMESTAMP}
 fi
 
@@ -25,8 +29,9 @@ source ${EMIRGE_HOME}/config/activate_env.sh
 cd ${SCALING_CASE_RUN_ROOT}
 ln -s $EMIRGE_HOME emirge
 pip install -e .
+
 cd data/cav5_comb4/3D/scalability
-cp ../../../../../y3-prediction-scalability-data/* .
+ln -sf ../../../../../y3-prediction-scalability-data/*.msh .
 cd ../../../../scalability_test
 
 job1=$(bsub scal1node_lassen.bsub.sh)

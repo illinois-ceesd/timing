@@ -10,6 +10,17 @@
 
 # Current timing plots
 
+## Y3 Prediction: weak scaling on Lassen
+
+### Startup, compile, and runtime
+
+![Y3Prediction-scalability-full](plots/y3-prediction-scalability-full.png)
+
+### Step details
+
+![Y3Prediction-scalability-step](plots/y3-prediction-scalability-step-full.png)
+
+
 ## Y2 Prediction
 
 ### Smoke Test
