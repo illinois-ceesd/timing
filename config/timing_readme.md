@@ -1,5 +1,7 @@
 # Status of production timings
 
+[![y3-prediction-scalability](https://github.com/illinois-ceesd/timing/actions/workflows/y3-prediction-scalability.yaml/badge.svg)](https://github.com/illinois-ceesd/timing/actions/workflows/y3-prediction-scalability.yaml)
+
 [![y2-prediction-timing](https://github.com/illinois-ceesd/timing/actions/workflows/y2-prediction-timing.yaml/badge.svg)](https://github.com/illinois-ceesd/timing/actions/workflows/y2-prediction-timing.yaml)
 
 [![isolator-timing](https://github.com/illinois-ceesd/timing/actions/workflows/isolator-timing.yaml/badge.svg)](https://github.com/illinois-ceesd/timing/actions/workflows/isolator-timing.yaml)
