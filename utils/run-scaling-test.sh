@@ -17,7 +17,7 @@ if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
     cd ../..
     git add ${SCALING_CASE_TIMING_ROOT}/sql/*-sqlite
     mkdir ${SCALING_CASE_TIMING_ROOT}/output/${TEMP_TIMESTAMP}
-    cp ${SCALING_CASE_RUN_ROOT}/scalability/scal*.txt ${SCALING_CASE_TIMING_ROOT}/out/${TEMP_TIMESTAMP}
+    cp ${SCALING_CASE_RUN_ROOT}/scalability_test/scal*.txt ${SCALING_CASE_TIMING_ROOT}/output/${TEMP_TIMESTAMP}
     git add ${SCALING_CASE_TIMING_ROOT}/output/${TEMP_TIMESTAMP}
     # git add ${SCALING_CASE_TIMING_ROOT}/yaml
     (git commit -am "Automatic commit: Y3Scalability/Lassen ${TEMP_TIMESTAMP}" && git push)
@@ -28,16 +28,27 @@ fi
 # rm -rf ${SCALING_CASE_RUN_ROOT}
 git clone -b scalability-testing git@github.com:/illinois-ceesd/drivers_y3-prediction ${SCALING_CASE_RUN_ROOT}
 EMIRGE_HOME=${EMIRGE_HOME:-"${TOPDIR}/emirge"}
+
 cd ${EMIRGE_HOME}/mirgecom
 export MIRGE_VERSION=$(git rev-parse HEAD)
 export MIRGE_BRANCH=$(git symbolic-ref --short HEAD)
-cd ${TOP_DIR}
-cd ${SCALING_CASE_RUN_ROOT}
+
+cd ${TOP_DIR}/${SCALING_CASE_RUN_ROOT}
 export DRIVER_VERSION=$(git rev-parse HEAD)
 export DRIVER_BRANCH=$(git symbolic-ref --short HEAD)
 
+printf "MIRGE_BRANCH=${MIRGE_BRANCH}\n"
+printf "MIRGE_VERSION=${MIRGE_VERSION}\n"
+printf "DRIVER_BRANCH=${DRIVER_BRANCH}\n"
+printf "DRIVER_VERSION=${DRIVER_VERSION}\n"
+
 conda deactivate
 source ${EMIRGE_HOME}/config/activate_env.sh
+
+printf "INSTALLING IN: ${TOP_DIR}/${SCALING_CASE_RUN_ROOT}\n"
+CURDIR=$(pwd)
+printf "CURRENT DIR: ${CURDIR}\n"
+
 ln -s $EMIRGE_HOME emirge
 pip install -e .
 
