@@ -14,6 +14,10 @@ function process_parallel_runlog(){
     SUMMARY_FILE_ROOT=${SUMMARY_FILE_ROOT:-"${RUN_CASENAME}-timing-data"}
     YAML_OUTPUT_NAME="${SUMMARY_FILE_ROOT}-${run_timestamp}.yaml"
     SUMMARY_FILE_NAME="${SUMMARY_FILE_ROOT}-${run_timestamp}.sqlite"
+    MIRGE_VERSION=${MIRGE_VERSION:-"Unknown"}
+    DRIVER_VERSION=${DRIVER_VERSION:-"Unknown"}
+    MIRGE_BRANCH=${MIRGE_BRANCH:-"Unknown"}
+    DRIVER_BRANCH=${DRIVER_BRANCH:-"Unkonwn"}
 
     if [ ! -f ${MAIN_YAML_FILE_NAME} ]; then
         touch ${MAIN_YAML_FILE_NAME}
@@ -60,8 +64,10 @@ function process_parallel_runlog(){
     printf "cl_device: ${CL_DEVICE}\n" >> ${YAML_OUTPUT_NAME}
     printf "num_processors: ${nproc}\n" >> ${YAML_OUTPUT_NAME}
     printf "run_arch: ${TIMING_ARCH}\ngpu_arch: GV100GL\n" >> ${YAML_OUTPUT_NAME}
-    printf "mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81\n" >> ${YAML_OUTPUT_NAME}
-    printf "driver_version: fb778f46cc5b2a889f9fcbbb8396224297d64cea\n" >> ${YAML_OUTPUT_NAME}
+    printf "mirge_branch: ${MIRGE_BRANCH}\n" >> ${YAML_OUTPUT_NAME}
+    printf "driver_branch: ${DRIVER_BRANCH}\n" >> ${YAML_OUTPUT_NAME}
+    printf "mirge_version: ${MIRGE_VERSION}\n" >> ${YAML_OUTPUT_NAME}
+    printf "driver_version: ${DRIVER_VERSION}\n" >> ${YAML_OUTPUT_NAME}
     printf "time_startup: ${STARTUP_TIME}\ntime_first_step: ${FIRST_STEP}\n" >> ${YAML_OUTPUT_NAME}
     printf "time_first_10: ${FIRST_10_STEPS}\ntime_second_10: ${SECOND_10_STEPS}\n" >> ${YAML_OUTPUT_NAME}
     printf "max_python_mem_usage: ${MAX_PYTHON_MEM_USAGE}\n" >> ${YAML_OUTPUT_NAME}
