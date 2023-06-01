@@ -27,8 +27,9 @@ if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
     mkdir ${SCALING_CASE_TIMING_ROOT}/output/${TEMP_TIMESTAMP}
     cp ${SCALING_CASE_RUN_ROOT}/scalability_test/scal*.txt ${SCALING_CASE_TIMING_ROOT}/output/${TEMP_TIMESTAMP}
     git add ${SCALING_CASE_TIMING_ROOT}/output/${TEMP_TIMESTAMP}
+    git add ${SCALING_CASE_TIMING_ROOT}/yaml
     # git add ${SCALING_CASE_TIMING_ROOT}/yaml
-    (git commit -am "Automatic commit: Y3Scalability/Lassen ${TEMP_TIMESTAMP}" && git push)
+    (git commit -m "Automatic commit: Y3Scalability/Lassen ${TEMP_TIMESTAMP}" && git push)
     mv ${SCALING_CASE_RUN_ROOT} ${SCALING_CASE_RUN_ROOT}_${TEMP_TIMESTAMP}
 fi
 

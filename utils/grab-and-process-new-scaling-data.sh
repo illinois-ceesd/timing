@@ -5,7 +5,18 @@ function process_parallel_runlog(){
     # OUTPUT_PATH=${OUTPUT_PATH:-"."}
     run_timestamp=$1
     formatted_timestamp=$(date -d "${run_timestamp:0:8} ${run_timestamp:9:2}:${run_timestamp:11:2}:${run_timestamp:13:2}" +'%Y-%m-%d %H:%M')
-    
+
+    # Extract the year, month, day, hour, minute, and second
+    year=${run_timestamp:0:4}
+    month=${run_timestamp:4:2}
+    day=${run_timestamp:6:2}
+    hour=${run_timestamp:9:2}
+    minute=${run_timestamp:11:2}
+    second=${run_timestamp:13:2}
+
+    # Create the reformatted timestamp
+    reformatted_timestamp="${year}.${month}.${day}-${hour}.${minute}.${second}"
+
     run_name=$(ls *-rank0-${run_timestamp}.sqlite | sed -e 's/\(.*\)-rank.*$/\1/')
     nproc=$(ls *-rank0-${run_timestamp}.sqlite | sed -e 's/.*np\([0-9]\+\)-.*/\1/')
 
@@ -46,7 +57,7 @@ function process_parallel_runlog(){
         return
     fi
 
-    touch processed-${run_name}-${run_timestamp}-sqlite
+    touch processed-${run_name}-${reformatted_timestamp}-sqlite
 
     CL_DEVICE=$(sqlite3 ${SUMMARY_FILE_NAME} 'SELECT cl_device_name FROM runs')
     STARTUP_TIME=$(runalyzer -m ${SUMMARY_FILE_NAME} -c 'print(q("select $t_init.max").fetchall()[0][0])' | grep -v INFO)
