@@ -49,4 +49,6 @@ python utils/plot-multi-timings.py -d "${PLOT_WINDOW_START}" -s -l -r -g -p viri
 
 # Update origin/timing with the new README and plots
 git add plots
+git add README.md
+git add latest_testing_date
 (git commit -m "Automatic timing summary commit: ${TIMING_HOST} ${TIMING_DATE}" && git push)
