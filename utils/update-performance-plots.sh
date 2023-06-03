@@ -7,7 +7,9 @@ git pull # pick up all the timings we just made
 rm -f latest_testing_date
 printf "${testing_date}\n" > latest_testing_date
 rm -f README.md
-printf "Tests last ran on: ${testing_date}\n\n" > README.md
+# Status of production timings
+
+printf "# Timing status (last ran on: ${testing_date})\n\n" > README.md
 cat config/timing_readme.md >> README.md
 
 # Activate the env to make the plots
