@@ -14,6 +14,9 @@
 
 ![Y3Prediction-scalability-step](plots/y3-prediction-scalability-step-full.png)
 
+### Scaling
+
+![Y3Prediction-weak-scaling](plots/weak_scaling_y3-prediction-scalability-step-full.png)
 
 ## Y2 Prediction
 
