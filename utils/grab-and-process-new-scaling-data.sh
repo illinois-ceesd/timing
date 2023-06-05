@@ -86,6 +86,8 @@ function process_parallel_runlog(){
 
     cat ${YAML_OUTPUT_NAME} >> ${MAIN_YAML_FILE_NAME}
     rm -f ${YAML_OUTPUT_NAME}
+    mkdir -p summary_file_archive
+    mv ${SUMMARY_FILE_NAME} summary_file_archive
 
     unset MAIN_YAML_FILE_NAME
     unset SUMMARY_FILE_ROOT
