@@ -313,7 +313,7 @@ def main():
             ax[i].set_ylabel("time (s)")
 
     if args.save_plot:
-        plt.savefig(args.save_plot, bbox_inches="tight")
+        fig.savefig(args.save_plot, bbox_inches="tight")
         if args.weak_scaling:
             fig_weak_scaling.savefig("weak_scaling_" + args.save_plot,
                                      bbox_inches="tight")
