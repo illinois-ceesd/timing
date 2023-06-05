@@ -31,6 +31,8 @@ from matplotlib.dates import date2num
 import matplotlib.pyplot as plt
 import numpy as np
 import os
+from collections import defaultdict
+from matplotlib.pyplot import ScalarFormatter
 
 fontsize = 10
 params = {  # "backend": "pdf",
@@ -80,12 +82,14 @@ def main():
     parser.add_argument("-d", "--date", metavar="YYYY-MM-DD")
     parser.add_argument("-e", "--end", metavar="YYYY-MM-DD")
     parser.add_argument("-r", "--limit-range", action="store_true")
+    parser.add_argument("-w", "--weak-scaling", action="store_true")
     # parser.add_argument("datafile", metavar="DATA.yaml")
     parser.add_argument("files", metavar="file", type=str, nargs="+",
                         help="YAML file(s) to plot.")
     parser.add_argument("--save-plot", metavar="NAME.{pdf,png}")
     args = parser.parse_args()
-    palette_name = "winter"
+
+    palette_name = "viridis"
     if args.palette is not None:
         palette_name = args.palette
 
@@ -123,16 +127,21 @@ def main():
         scalfac = 1.0/9.0
         figheight = 4
 
-    numplots = len(timing_names)
+    num_line_plots = len(timing_names)
+    # numplots = num_line_plots + num_bar_plots
 
     # Plot the data
-    fig, ax = plt.subplots(ncols=1, nrows=numplots, sharex=True,
+    fig, ax = plt.subplots(ncols=1, nrows=num_line_plots, sharex=True,
                            figsize=(figwidth, figheight), constrained_layout=True)
 
-    if numplots == 1:
+    if args.weak_scaling:
+        fig_weak_scaling, ax_weak_scaling = \
+            plt.subplots(figsize=(figwidth, figheight))
+
+    if num_line_plots == 1:
         ax = [ax]
 
-    for i in range(numplots):
+    for i in range(num_line_plots):
         ax[i].set_title(subplot_titles[i])
 
     def resort_filelist(filelist):
@@ -158,6 +167,9 @@ def main():
     # ncolor_bar = nfiles
     # cmap = plt.cm.seismic
     cmap = mpl.colormaps[palette_name]
+    scaling_data = defaultdict(float)
+    color_mapping = {}
+
     # Grab the data from the YAML timing file
     for f, datafile in enumerate(sorted_filelist):
         casename = os.path.splitext(os.path.basename(datafile))[0]
@@ -166,7 +178,9 @@ def main():
         yaml_data = yaml.load_all(open(datafile), Loader=yaml.FullLoader)
         # Remove yaml's trailing None
         raw_data = [d for d in yaml_data if d is not None]
+
         data = []
+
         for d in raw_data:
             nproc = d["num_processors"]
             d["run_date"] = parse_datetime(d["run_date"])
@@ -182,21 +196,8 @@ def main():
                 if run_date > end_date:
                     continue
 
-            color = colors[f]
+            color = cmap(grad_colors[f]) if colorbar else colors[f]
 
-            if colorbar:
-                color = cmap(grad_colors[f])
-                # if f == 0:
-                #    color = colors[f]
-                #    # elif f > ncolor_bar - 1:
-                #    #    color = colors[f-ncolor_bar]
-                # else:
-                #    if nproc > 1:
-                #        color = cmap(grad_colors[f])
-                #    elif nproc > 128:
-                #        color = colors[f]
-                #    else:
-                #        color = colors[f]
             data.append(d)
 
             kwargs = {
@@ -214,11 +215,18 @@ def main():
             for i, s in enumerate(timing_names):
                 nproc = 1 if args.multicase else d["num_processors"]
                 label = casename if args.multicase else f"{nproc}"
+                color_mapping[label] = color
+
+                if s == "time_second_10":
+                    scaling_data[label] = scalfac*d[s]
+
                 if name_mapping is not None:
                     label = name_mapping[label]
+
                 p, = ax[i].plot([d["run_date"] for d in data],
                                 [scalfac*d[s] for d in data],
                                 label=label, color=color, **kwargs)
+
                 if not legend_ready[f]:
                     leg.append(p)
                     legend_ready[f] = True
@@ -240,7 +248,7 @@ def main():
                     ytext = ytext0 + (commentcounter % 4) * ytextdelta
                     # color = commentcolors[commentcounter % 4]
                     color = "tab:gray"
-                    for i in range(numplots):
+                    for i in range(num_line_plots):
                         xlim = ax[0].get_xlim()
                         xt = (date2num(d["run_date"])-xlim[0]) / (xlim[1]-xlim[0])
                         # get the coordinates on the axis
@@ -263,11 +271,36 @@ def main():
 
     ax[-1].tick_params(axis="x", labelrotation=45)
     ax[-1].set_xlabel("date")
-    for i in range(numplots):
-        ax[i].grid(True)
 
     legend_title = "MIRGE-Com Casename" if args.multicase else "Number of GPUs"
     legend_ncols = 1 if args.multicase else 4
+
+    if args.weak_scaling:
+        # Create the weak scaling subplot
+        ax_weak_scaling.set_title("Weak Scaling", fontsize=16)
+        ax_weak_scaling.set_ylabel("Walltime/Step (s)", fontsize=14)
+        ax_weak_scaling.grid(True, axis="y")
+        ax_weak_scaling.set_xscale("log", base=2)
+        ax_weak_scaling.set_xlabel("Number of GPUs", fontsize=14)
+        formatter = ScalarFormatter()
+        formatter.set_scientific(False)
+        ax_weak_scaling.xaxis.set_major_formatter(formatter)
+
+        # Sort the data by number of ranks
+        weak_scaling_items = sorted(scaling_data.items(), key=lambda x: int(x[0]))
+        ranks = np.array([int(item[0]) for item in weak_scaling_items])
+        times = [item[1] for item in weak_scaling_items]
+
+        colors = [color_mapping[f"{label}"] for label in ranks]
+
+        # Create the bar chart
+        ax_weak_scaling.bar(x=ranks, height=times, width=ranks/2,
+                            label="Step Walltime", color=colors)
+        ax_weak_scaling.set_xticks(ranks)
+
+    for i in range(num_line_plots):
+        ax[i].grid(True)
+
     ax[0].legend(handles=leg,
                  title=legend_title,
                  bbox_to_anchor=(0, 1.02, 0.3, 0.2), loc="lower left",
@@ -276,11 +309,14 @@ def main():
     if args.per_step:
         ax[0].set_ylabel("walltime/step (s)")
     else:
-        for i in range(numplots):
+        for i in range(num_line_plots):
             ax[i].set_ylabel("time (s)")
 
     if args.save_plot:
         plt.savefig(args.save_plot, bbox_inches="tight")
+        if args.weak_scaling:
+            fig_weak_scaling.savefig("weak_scaling_" + args.save_plot,
+                                     bbox_inches="tight")
     else:
         plt.show()
 
