@@ -33,6 +33,7 @@ import numpy as np
 import os
 from collections import defaultdict
 from matplotlib.pyplot import ScalarFormatter
+import matplotlib.ticker as ticker
 
 fontsize = 10
 params = {  # "backend": "pdf",
@@ -83,23 +84,29 @@ def main():
     parser.add_argument("-e", "--end", metavar="YYYY-MM-DD")
     parser.add_argument("-r", "--limit-range", action="store_true")
     parser.add_argument("-w", "--weak-scaling", action="store_true")
+    parser.add_argument("-n", "--name-mapping", metavar="filename",
+                        type=str, help="file with name mapping")
     # parser.add_argument("datafile", metavar="DATA.yaml")
     parser.add_argument("files", metavar="file", type=str, nargs="+",
                         help="YAML file(s) to plot.")
     parser.add_argument("--save-plot", metavar="NAME.{pdf,png}")
     args = parser.parse_args()
+    if args.multicase and args.weak_scaling:
+        raise RuntimeError("--multicase and --weak-scaling options are mutually"
+                           " exclusive.")
 
     palette_name = "viridis"
     if args.palette is not None:
         palette_name = args.palette
 
     name_mapping = None
-    #if args.names:
-    #    name_mapping = {}
-    #    with open(args.names, "r") as f:
-    #        for line in f:
-    #            key, value = line.strip().split()
-    #            name_mapping[key] = value
+    if args.name_mapping:
+        name_mapping = {}
+        with open(args.name_mapping, "r") as f:
+            for line in f:
+                key, value = line.strip().split()
+                # print(f"Mapping {key=}{value=}")
+                name_mapping[key] = value
 
     markers = ["o", "s", "v", "^", ">", "<", "D", "P", "*", "X", "p", "8"]
     colors = ["black", "tab:blue", "tab:green", "tab:orange", "tab:red",
@@ -108,6 +115,7 @@ def main():
     timing_names = ["time_startup", "time_first_step", "time_second_10"]
     timing_labels = ["startup", "first timestep", "second 9 timesteps"]
     subplot_titles = ["Startup", "First timestep", "Second 9 Timesteps"]
+
     if args.memory:
         mem_names = ["max_python_mem_usage", "max_gpu_mem_usage"]
         mem_labels = ["host memory (MB)", "device memory (MB)"]
@@ -136,7 +144,15 @@ def main():
 
     if args.weak_scaling:
         fig_weak_scaling, ax_weak_scaling = \
-            plt.subplots(figsize=(figwidth, figheight))
+            plt.subplots(ncols=1,
+                         figsize=(figwidth, figheight/num_line_plots),
+                         constrained_layout=True)
+
+    if args.multicase:
+        fig_comparison, ax_comparison = \
+            plt.subplots(ncols=1,
+                         figsize=(figwidth, figheight/num_line_plots),
+                         constrained_layout=True)
 
     if num_line_plots == 1:
         ax = [ax]
@@ -149,7 +165,10 @@ def main():
         for datafile in filelist:
             yaml_data = yaml.load_all(open(datafile), Loader=yaml.FullLoader)
             raw_data = [d for d in yaml_data if d is not None]
-            nproc = raw_data[0]["num_processors"]
+            try:
+                nproc = raw_data[0]["num_processors"]
+            except KeyError:
+                nproc = 1
             nprocs.append(int(nproc))
 
         file_nproc = list(zip(filelist, nprocs))
@@ -168,13 +187,20 @@ def main():
     # cmap = plt.cm.seismic
     cmap = mpl.colormaps[palette_name]
     scaling_data = defaultdict(float)
+    if args.multicase:
+        scaling_data = {}
     color_mapping = {}
 
     # Grab the data from the YAML timing file
     for f, datafile in enumerate(sorted_filelist):
         casename = os.path.splitext(os.path.basename(datafile))[0]
         if name_mapping is not None:
-            casename = name_mapping[casename]
+            try:
+                mapped_casename = name_mapping[casename]
+            except KeyError:
+                mapped_casename = casename
+            casename = mapped_casename
+        # print(f"{casename=}")
         yaml_data = yaml.load_all(open(datafile), Loader=yaml.FullLoader)
         # Remove yaml's trailing None
         raw_data = [d for d in yaml_data if d is not None]
@@ -182,7 +208,11 @@ def main():
         data = []
 
         for d in raw_data:
-            nproc = d["num_processors"]
+            try:
+                nproc = d["num_processors"]
+            except KeyError:
+                d["num_processors"] = 1
+                nproc = 1
             d["run_date"] = parse_datetime(d["run_date"])
             if args.date:
                 start_date = date2num(parse_datetime(args.date+" 00:00"))
@@ -216,12 +246,11 @@ def main():
                 nproc = 1 if args.multicase else d["num_processors"]
                 label = casename if args.multicase else f"{nproc}"
                 color_mapping[label] = color
+                #if name_mapping is not None:
+                #    label = name_mapping[label]
 
                 if s == "time_second_10":
                     scaling_data[label] = scalfac*d[s]
-
-                if name_mapping is not None:
-                    label = name_mapping[label]
 
                 p, = ax[i].plot([d["run_date"] for d in data],
                                 [scalfac*d[s] for d in data],
@@ -262,12 +291,36 @@ def main():
                                        transform=ax[i].transAxes, color=color,
                                        rotation=90)
 
+    if args.log_scale:
+        for i, s in enumerate(timing_names):
+            y_values = [scalfac * d[s] for d in data]
+            avg_value = calculate_average(y_values)
+            # mean_range_value = (ymax - ymin)/2.0
+            ymin, ymax = ax[i].get_ylim()
+            ymin = max(1e-16, ymin)
+            y_axis_min = min(np.log2(ymin), np.log2(avg_value/2))
+            y_axis_max = max(np.log2(ymax), np.log2(avg_value*2))
+            if args.limit_range:
+                y_axis_max = min(np.log2(1.5*avg_value), y_axis_max)
+            num_major_ticks = max(int(y_axis_max - y_axis_min), 1)
+            ax[i].yaxis.set_major_locator(
+                ticker.LogLocator(base=2., numticks=num_major_ticks))
+            # Calculate the locations of the minor ticks
+            # num_minor_ticks = 4*num_major_ticks
+            # ax[i].yaxis.set_minor_locator(
+            #    ticker.LogLocator(base=2., subs=np.arange(0.5, 1.5, 0.5),
+            #                      numticks=num_minor_ticks))
+            # minor_tick_values = 2**(np.arange(y_axis_min, y_axis_max + 1, 0.5))
+            # ax[i].yaxis.set_minor_locator(
+            #    ticker.FixedLocator(minor_tick_values))
+
     if args.limit_range:
         for i, s in enumerate(timing_names):
             y_values = [scalfac * d[s] for d in data]
             avg_value = calculate_average(y_values)
-            ylim = ax[i].get_ylim()
-            ax[i].set_ylim(ylim[0], avg_value * 1.5)
+            ymin, ymax = ax[i].get_ylim()
+            ymin = max(1e-16, ymin)
+            ax[i].set_ylim(ymin, avg_value * 1.5)
 
     ax[-1].tick_params(axis="x", labelrotation=45)
     ax[-1].set_xlabel("date")
@@ -298,6 +351,29 @@ def main():
                             label="Step Walltime", color=colors)
         ax_weak_scaling.set_xticks(ranks)
 
+    if args.multicase:
+        # Create the multicase comparison subplot
+        ax_comparison.set_title("Multi-case comparison", fontsize=16)
+        ax_comparison.set_ylabel("Walltime/Step (s)", fontsize=14)
+        ax_comparison.grid(True, axis="y")
+        ax_comparison.set_xlabel("Casename", fontsize=14)
+        ax_comparison.tick_params(axis="x", labelrotation=45)
+
+        # Sort the data by the times
+        comparison_items = sorted(scaling_data.items(), key=lambda x: float(x[1]))
+        case_names = np.array([item[0] for item in comparison_items])
+        times = [item[1] for item in comparison_items]
+
+        colors = [color_mapping[label] for label in case_names]
+
+        # Create the bar chart
+        ax_comparison.bar(x=case_names, height=times, width=.35,
+                            label="Step Walltime", color=colors)
+        # ax_comparison.set_xticks(ranks)
+        # ax_comparison.legend(handles=leg, title=legend_title,
+        #                     bbox_to_anchor=(0, 1.02, 0.3, 0.2), loc="lower left",
+        #                     mode="expand", borderaxespad=0, ncol=legend_ncols)
+
     for i in range(num_line_plots):
         ax[i].grid(True)
 
@@ -317,6 +393,9 @@ def main():
         if args.weak_scaling:
             fig_weak_scaling.savefig("weak_scaling_" + args.save_plot,
                                      bbox_inches="tight")
+        if args.multicase:
+            fig_comparison.savefig("comparison_" + args.save_plot,
+                                   bbox_inches="tight")
     else:
         plt.show()
 
