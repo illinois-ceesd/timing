@@ -11568,7 +11568,7 @@ mirge_version: 78c10aa5f2c224770d2a0218424f7861ea4b17d4
 y1_version: 78c10aa5f2c224770d2a0218424f7861ea4b17d4
 driver_version: 67ffce143e301c8d9a830dbe06d03b7ed0dff95a
 driver_md5sum: c15b3d230ad3ade8e8cf1b868d4e4624
-time_startup: -1676978806.2237875
+time_startup: 103.46
 time_first_step: 1150.0160998080391
 time_first_10: 1152.724544600118
 time_second_10: 2.6934698231052607
@@ -11586,7 +11586,7 @@ mirge_version: 78c10aa5f2c224770d2a0218424f7861ea4b17d4
 y1_version: 78c10aa5f2c224770d2a0218424f7861ea4b17d4
 driver_version: 67ffce143e301c8d9a830dbe06d03b7ed0dff95a
 driver_md5sum: c15b3d230ad3ade8e8cf1b868d4e4624
-time_startup: -1671574184.5803416
+time_startup: 103.46
 time_first_step: 1150.588479964994
 time_first_10: 1153.2991394000128
 time_second_10: 2.6881333691999316
@@ -11604,7 +11604,7 @@ mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
 y1_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
 driver_version: 67ffce143e301c8d9a830dbe06d03b7ed0dff95a
 driver_md5sum: c15b3d230ad3ade8e8cf1b868d4e4624
-time_startup: -1678822030.2615852
+time_startup: 103.46
 time_first_step: 1159.0385166929918
 time_first_10: 1161.7502492950298
 time_second_10: 2.6952929550316185
@@ -11622,7 +11622,7 @@ mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
 y1_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
 driver_version: 67ffce143e301c8d9a830dbe06d03b7ed0dff95a
 driver_md5sum: c15b3d230ad3ade8e8cf1b868d4e4624
-time_startup: -1658941175.3666444
+time_startup: 103.46
 time_first_step: 1154.3075712397695
 time_first_10: 1157.0347661077976
 time_second_10: 2.6994491405785084
@@ -11640,7 +11640,7 @@ mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
 y1_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
 driver_version: 67ffce143e301c8d9a830dbe06d03b7ed0dff95a
 driver_md5sum: c15b3d230ad3ade8e8cf1b868d4e4624
-time_startup: -1658941160.3688083
+time_startup: 103.46
 time_first_step: 1150.2146700806916
 time_first_10: 1152.9259158149362
 time_second_10: 2.6906331293284893
@@ -11658,7 +11658,7 @@ mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
 y1_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
 driver_version: 67ffce143e301c8d9a830dbe06d03b7ed0dff95a
 driver_md5sum: c15b3d230ad3ade8e8cf1b868d4e4624
-time_startup: -1678124957.358329
+time_startup: 103.46
 time_first_step: 1150.4700767779723
 time_first_10: 1153.1926059171092
 time_second_10: 2.6893038579728454
@@ -11676,7 +11676,7 @@ mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
 y1_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
 driver_version: 67ffce143e301c8d9a830dbe06d03b7ed0dff95a
 driver_md5sum: c15b3d230ad3ade8e8cf1b868d4e4624
-time_startup: -1658941188.4890924
+time_startup: 103.46
 time_first_step: 1154.518106430769
 time_first_10: 1157.261586420238
 time_second_10: 2.6924003586173058
@@ -11694,7 +11694,7 @@ mirge_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
 y1_version: 70c1a6aa77a0d199104820a9b190e0a7aa5c0b81
 driver_version: 67ffce143e301c8d9a830dbe06d03b7ed0dff95a
 driver_md5sum: c15b3d230ad3ade8e8cf1b868d4e4624
-time_startup: -1658941191.8496907
+time_startup: 103.46
 time_first_step: 1152.7284292280674
 time_first_10: 1155.4391557909548
 time_second_10: 2.694627344608307
