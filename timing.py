@@ -4,7 +4,7 @@ import argparse
 import os
 import shutil
 import yaml
-from jsonschema import validate
+from jsonschema import validate, exceptions
 import subprocess
 import datetime
 import parsl
@@ -16,6 +16,7 @@ from parsl.executors import HighThroughputExecutor
 from parsl.providers import LSFProvider
 from parsl.launchers import JsrunLauncher
 from parsl.data_provider.files import File
+
 # quartz imports
 # from parsl.providers import SlurmProvider
 # from parsl.launchers import SrunLauncher
@@ -25,13 +26,34 @@ from parsl.config import Config
 
 
 def nodeJoin(loader, nodeid):
+    """ Helper function to handle the !join keyword in yaml documents
+
+        Parameters
+        ----------
+        loader: yaml.Loader instance
+        nodeid: the name of the node to operate on
+
+        Example
+        -------
+        yaml document as follows:
+
+        exec: &EXEC isolator
+        log: !join [ *EXEC, .log ]
+
+        will produce
+        {
+        "exec": "isolator",
+        "log": "isolator.log"
+        }
+
+        when loaded
+    """
     return ''.join([str(item) for item in loader.construct_sequence(nodeid)])
 
 
 # add the nodeJoin function to the yal Loader
 yaml.add_constructor('!join', nodeJoin)
 
-TIMING_DATE = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
 
 print(datetime.datetime.now())
 
@@ -66,7 +88,7 @@ TIMING_SCHEMA = {"title": "Timing Global Schema",
                      }
                  }
 
-# schema for the driver yamls
+# schema for the driver yamls                                                                                           
 DRIVER_SCHEMA = {"title": "Driver Schema",
                  "description": "Schema for testing driver",
                  "type": "object",
@@ -98,16 +120,15 @@ DRIVER_SCHEMA = {"title": "Driver Schema",
                      }
                  }
 
-
 class Driver:
-    """ Class to define a test instance
-
-        Parameters
-        ----------
-        ymlFile: str, the name of the yaml file giving the parameters for the run
-        lazy: bool, whether the test is a lazy test
-        root_dir: str, the root directory for the tests
-        test_vars: dict, Listing of the overall testing variables
+    """ Class to define a test instance                                                                                 
+                                                                                                                        
+        Parameters                                                                                                      
+        ----------                                                                                                      
+        ymlFile: str, the name of the yaml file giving the parameters for the run                                       
+        lazy: bool, whether the test is a lazy test                                                                     
+        root_dir: str, the root directory for the tests                                                                 
+        test_vars: dict, Listing of the overall testing variables                                                       
     """
     ITEMS = ['name', 'repo', 'branch', 'execname', 'params',
              'execopts', 'timing_env_name', 'yaml_file_name', 'logdir',
@@ -132,7 +153,7 @@ class Driver:
         for it in Driver.ITEMS:
             setattr(self, it, None)
 
-        # load the given yaml file
+        # load the given yaml file                                                                                      
         if not self.loadYaml(test_vars):
             raise Exception(f"Could not load test runner {self.yamlFile}")
 
@@ -141,8 +162,8 @@ class Driver:
         self.md5sum = msum
 
     def verify_runner(self):
-        """ Function to determine the actual name of the yaml file. It tries:
-            yamlFile, yamlFile + '.yml', and yamlFile + '.yaml'
+        """ Function to determine the actual name of the yaml file. It tries:                                           
+            yamlFile, yamlFile + '.yml', and yamlFile + '.yaml'                                                         
         """
         self.fname = os.path.join(self.root_dir, self.yamlFile)
         if os.path.isfile(self.fname):
@@ -159,24 +180,24 @@ class Driver:
         return getattr(self, item, None)
 
     def loadYaml(self, var):
-        """ Function to load the driver yaml file, this includes error checking against
-            the schema, and adding the loaded values to the class member variables
-
-            Parameters
-            ----------
-            var: dict, Listing of the overall testing variables
-
-            Returns
-            -------
-            Bool, True if the yaml was loaded, False otherwise.
+        """ Function to load the driver yaml file, this includes error checking against                                 
+            the schema, and adding the loaded values to the class member variables                                      
+                                                                                                                        
+            Parameters                                                                                                  
+            ----------                                                                                                  
+            var: dict, Listing of the overall testing variables                                                         
+                                                                                                                        
+            Returns                                                                                                     
+            -------                                                                                                     
+            Bool, True if the yaml was loaded, False otherwise.                                                         
         """
         self.verify_runner()
         if self.fname:
-            drvr = yaml.load(open(self.fname, 'r'), Loader=yaml.FullLoader)
-            validate(drvr, DRIVER_SCHEMA)
+            drv = yaml.load(open(self.fname, 'r'), Loader=yaml.FullLoader)
+            validate(drv, DRIVER_SCHEMA)
 
             for it in Driver.ITEMS:
-                setattr(self, it, drvr['driver'][it])
+                setattr(self, it, drv['driver'][it])
 
             self.batch_output_file = f"{self.summary_file_root}_{self.timestamp}.out"
             self.sqlfile = os.path.join(var['sql_path'], self.execname) + '-rank0.sqlite'
@@ -184,7 +205,7 @@ class Driver:
         return False
 
     def get_driver(self):
-        """ Function to clone the given driver repo
+        """ Function to clone the given driver repo                                                                     
         """
         cwd = os.getcwd()
         os.system(f"rm -rf {self.name}")
@@ -199,19 +220,19 @@ class Driver:
         os.chdir(cwd)
 
     def write_params(self):
-        """ Write the driver parameters to a yaml file for the test to run with
+        """ Write the driver parameters to a yaml file for the test to run with                                         
         """
         self.paramsfile = os.path.join(self.work_dir, self.name) + "_timing_params.yaml"
         with open(self.paramsfile, 'w') as yfh:
             yaml.dump(self.params, yfh)
 
     def getExecutor(self, emirge, var):
-        """ Define the Parsl Executor to use with this test.
-
-            Parameters
-            ----------
-            emirge: str, path to the emirge directory
-            var: dict, Listing of the overall testing variables
+        """ Define the Parsl Executor to use with this test.                                                            
+                                                                                                                        
+            Parameters                                                                                                  
+            ----------                                                                                                  
+            emirge: str, path to the emirge directory                                                                   
+            var: dict, Listing of the overall testing variables                                                         
         """
         if var['host'].lower() == 'lassen':
             return HighThroughputExecutor(label=self.name,
@@ -242,44 +263,37 @@ class Driver:
                                                    )
 
         elif var['host'].lower() == 'quartz':
-            # not completely configured yet
-            '''
-            self.executor = HighThroughputExecutor(label=self.name,
-                                                   working_dir='',
-                                                   address='quartz.llnl.gov',
-                                                   worker_port_range=(50000, 55000),
-                                                   worker_debug=True,
-                                                   provider=SlurmProvider(launcher=SrunLauncher(overrides=f''),
-                                                                          walltime='02:00:00',
-                                                                          nodes_per_block=1,
-                                                                          init_blocks=1,
-                                                                          max_blocks=1,
-                                                                          scheduler_options='#SBATCH -q pdebug',
-                                                                          worker_init=("module load spectrum-mpi\n"
-                                                                                       f"export XDG_CACHE_HOME=/tmp/$USER/xdg-scratch_{self.name}\n"
-                                                                                       "conda activate ...\n"
-                                                                                       ),
-                                                                          cmd_timeout=600
-                                                                          )
+            # not completely configured yet                                                                             
+            '''                                                                                                         
+            self.executor = HighThroughputExecutor(label=self.name,                                                     
+                                                   working_dir='',                                                      
+                                                   address='quartz.llnl.gov',                                           
+                                                   worker_port_range=(50000, 55000),                                    
+                                                   worker_debug=True,                                                   
+                                                   provider=SlurmProvider(launcher=SrunLauncher(overrides=f''),         
+                                                                          walltime='02:00:00',                          
+                                                                          nodes_per_block=1,                            
+                                                                          init_blocks=1,                                
+                                                                          max_blocks=1,                                 
+                                                                          scheduler_options='#SBATCH -q pdebug',        
+                                                                          worker_init=("module load spectrum-mpi\n"     
+                                                                                       f"export XDG_CACHE_HOME=/tmp/$USER/xdg-scratch_{self.name}\n"                                                                                           
+                                                                                       "conda activate ...\n"           
+                                                                                       ),                               
+                                                                          cmd_timeout=600                               
+                                                                          )                                             
                                                    )'''
             raise Exception("Executor for quartz not implemented yet.")
         else:
             raise Exception(f"Could not create Executor for {var['host']}")
 
 
-def run(work_dir, paramsfile, execn, execopts, outputs=[]):
+def run(work_dir, name, paramsfile, execn, execopts, outputs=[]):
     """ Run the test. This function is called through a Parsl bash_app.
 
         Parameters
         ----------
-        work_dir: str
-            root working directory
-        paramsfile: str
-            Filename for the parameters file
-        execn: str
-            Name of the executable
-        execopts: str
-            Any command line flags/options for the execn
+        cls: Driver instance, defining the test to be run
         outputs: List of Parsl File objects containing the output data from the test
     """
     import os
@@ -291,20 +305,8 @@ def process(summary_file_root, timestamp, yaml_file_name, hsh, md5sum, var, mem_
 
         Parameters
         ----------
-        summary_file_root: str
-            Root path for the summary file
-        timestamp: str
-            Timestamp the process was started
-        var: dict
-            Listing of the overall testing variables
-        yaml_file_name: str
-            Name of the yaml control file
-        hsh: str
-            Hash of the repo
-        md5sum: str
-            Md5sum of the exec file
-        mem_usage: bool
-            Whether to calculate memory usage for the test
+        cls: Driver instance, defining the test to be processed
+        var: dict, Listing of the overall testing variables
         inputs: List of Parsl File objects containing the outputs from the test run
 
         Returns
@@ -319,6 +321,7 @@ def process(summary_file_root, timestamp, yaml_file_name, hsh, md5sum, var, mem_
     import platform
     import yaml
 
+    TIMING_DATE = datetime.datetime.now().strftime("%Y-%m-%d %H:%M")
     uname = platform.uname()
     timing_platform = uname.system
     timing_arch = uname.machine
@@ -334,22 +337,22 @@ def process(summary_file_root, timestamp, yaml_file_name, hsh, md5sum, var, mem_
 
     rgather = subprocess.Popen(f"runalyzer-gather {s_file_name} {inputs[0]}",
                                stdout=subprocess.PIPE, shell=True, text=True)
-    _, _ = rgather.communicate()
+    outs, errs = rgather.communicate()
     cld = subprocess.Popen(f"$(sqlite3 {s_file_name} 'SELECT cl_device_name FROM runs')",
                            stdout=subprocess.PIPE, shell=True, text=True)
-    cl_device, _ = cld.communicate()
+    cl_device, errs = cld.communicate()
 
     stup = subprocess.Popen(f"$(runalyzer -m {s_file_name} -c 'print(q(\"select $t_init.max\").fetchall()[0][0])' | grep -v INFO)",
                             stdout=subprocess.PIPE, shell=True, text=True)
-    startup_time, _ = stup.communicate()
+    startup_time, errs = stup.communicate()
 
     fst = subprocess.Popen(f"$(runalyzer -m {s_file_name} -c 'print(sum(p[0] for p in q(\"select $t_step.max\").fetchall()[0:1]))' | grep -v INFO))",
                            stdout=subprocess.PIPE, shell=True, text=True)
-    first_step, _ = fst.communicate()
+    first_step, errs = fst.communicate()
 
     ften = subprocess.Popen(f"$(runalyzer -m {s_file_name} -c 'print(sum(p[0] for p in q(\"select $t_step.max\").fetchall()[0:10]))' | grep -v INFO)",
                             stdout=subprocess.PIPE, shell=True, text=True)
-    first_10_steps, _ = ften.communicate()
+    first_10_steps, errs = ften.communicate()
 
     sten = subprocess.Popen(f"$(runalyzer -m {s_file_name} -c 'print(sum(p[0] for p in q(\"select $t_step.max\").fetchall()[10:19]))' | grep -v INFO)",
                             stdout=subprocess.PIPE, shell=True, text=True)
@@ -443,6 +446,7 @@ if __name__ == '__main__':
     runners = []
     executors = []
     for yml in cmdargs.runners:
+        print(yml)
         drv = (Driver(yml, cmdargs.lazy, timing_home, master_vars))
         drv.get_driver()
         md5_hash = hashlib.md5()
@@ -457,67 +461,55 @@ if __name__ == '__main__':
     master_vars['mirge_hash'] = setup_env(cmdargs)
     run_jobs = []
     process_jobs = []
+    #for runner in runners:
+
+    # --- Get an MD5Sum for the untracked timing driver
     parsl.set_stream_logger()
     parsl.clear()
     parsl.load(Config(executors=executors))
     for runner in runners:
+        print("RUNNER")
         print(os.path.join(os.getcwd(), runner.sqlfile))
         crunner = bash_app(executors=[runner.name])(run)(runner.work_dir, runner.name, runner.paramsfile, runner.execname, runner.execopts, outputs=[File(os.path.join(runner.work_dir, 'timing_run', runner.sqlfile))])
         run_jobs.append(crunner)
 
         process_jobs.append(python_app(executors=[runner.name])(process)(runner.summary_file_root, runner.timestamp, runner.yaml_file_name, runner.hash, runner.md5sum, master_vars, runner.mem_usage, inputs=[crunner.outputs[0]]))
 
-    for job in process_jobs:
-        job.result()
+    for job in run_jobs:
+        print(f"JOB STATUS {job.result()}")
+    print(len(process_jobs))
+    print("JOBS DONE")
 
-    # -- Run the case (platform-dependent)
-    # printf "Running on Host: ${TIMING_HOST}\n"
-    # Users should set special keys for using git over
-    # ssh for security concerns. This snippet will use
-    # a pre-arranged ssh key if the user provides one
-    # and indicates it with the TESTING_SSH_KEY environment
-    # variable.
-    # ===== To create a key:
-    # - Run ssh-keygen:
-    # $ ssh-keygen
-    # [enter a <keyname> when prompted]
-    # - Put the key(s) in a /secure/filesystem/location:
-    # $ mv <keyname>* /secure/filesystem/location
-    # - Add the key to GIT:
-    # $ [browse to] https://github.com/illinois-ceesd/timing/settings/keys/new
-    # $ Choose (New SSH key)
-    # $ Paste in the contents of /secure/filesystem/location/<keyname>.pub
-    # - Set the ENV variable before using this script:
-    # $ export TESTING_SSH_KEY=/secure/filesystem/location/<keyname>
     if 'TESTING_SSH_KEY' in os.environ:
         ssh_job = subprocess.Popen("eval $(ssh-agent); trap \"kill $SSH_AGENT_PID\" EXIT; ssh-add ${TESTING_SSH_KEY}",
                                    stdout=subprocess.PIPE, shell=True, text=True)
 
     # --- Update the timing data in the repo
     # ---- First, clone the timing repo
-    Repo.clone_from(f"git@github.com:{master_vars['timing_repo']}", os.path.join(os.getcwd(), 'timing'),
-                    branch=master_vars['timing_branch'])
-    timing_repo = Repo(os.path.join(os.getcwd(), 'timing'))
+    #Repo.clone_from(f"git@github.com:{master_vars['timing_repo']}", os.path.join(os.getcwd(), 'timing'),
+    #                branch=master_vars['timing_branch'])
+    timing_repo = Repo(os.getcwd())
     # ---- Create the timing file if it does not exist
     count = 0
-    for runner, i in enumerate(runners):
+    for i, runner in enumerate(runners):
         if not process_jobs[i].result():
             print(f"Timing run did not produce the expected sqlite file: {runner.sqlfile}\n")
             continue
         count += 1
-        if not os.path.exists(os.path.join("timing", runner.yaml_file_name)):
-            Path(os.path.join(os.getcwd(), 'timing', runner.yaml_file_name)).touch()
-            timing_repo.index.add([os.path.join("timing", runner.yaml_file_name)])
+        if not os.path.exists(runner.yaml_file_name):
+            Path(os.path.join(os.getcwd(), runner.yaml_file_name)).touch()
+            timing_repo.index.add([runner.yaml_file_name])
 
         # ---- Update the timing file with the current test data
 
-        os.system(f"cat {runner.yaml_file_name} >> timing/{runner.yaml_file_name}")
-        os.makedirs(os.path.join('timin', runner.logdir), exist_ok=True)
-        summary_file_name = os.path.join(master_vars['sql_path'], runner.summary_file_root + '_' + runner.timestamp) + '.sqlite'
-        shutil.copy(summary_file_name, os.path.join("timing", runner.logdir))
+        #os.system(f"cat {runner.yaml_file_name} >> timing/{runner.yaml_file_name}")
+        #os.makedirs(runner.logdir, exist_ok=True)
+        summary_file_name = os.path.join('flame1d-lazy', 'timing_run', master_vars['sql_path'], runner.summary_file_root + '_' + runner.timestamp) + '.sqlite'
+        shutil.copy(summary_file_name, runner.logdir)
         os.system(f"cat *.out > timing/{runner.logdir}/{runner.batch_output_file}")
-        timing_repo.index.add([os.path.join('timing', runner.logdir)])
-    # ---- Commit the new data to the repo
-    if count > 0:
-        commit = timing_repo.indexs.commit(f"Automatic commit: {socket.gethostname()} {TIMING_DATE}")
-        timing_repo.remotes.origin.push()
+        timing_repo.index.add([os.path.join(runner.logdir, runner.summary_file_root + '_' + runner.timestamp + '.sqlite')])
+
+# ---- Commit the new data to the repo
+if count > 0:
+    commit = timing_repo.indexs.commit(f"Automatic commit: {socket.gethostname()} {TIMING_DATE}")
+    timing_repo.remotes.origin.push()

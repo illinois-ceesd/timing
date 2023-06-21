@@ -1,7 +1,7 @@
 driver:
     name: flame1d-lazy
     repo: illinois-ceesd/drivers_flame1d
-    branch: main
+    branch: update-to-y3
     execname: &EXE flame1d
     params:
         nviz: 100
@@ -20,6 +20,6 @@ driver:
     timing_env_name: !join [*EXE, .lazy.timing.env]
     summary_file_root: !join [*EXE, _lazy]
     yaml_file_name: !join [*EXE, -timings.yaml]
-    logdir: !join [*EXE, _logs]
+    logdir: !join [*EXE, _lazy_logs]
     execopts: --lazy --log
     mem_usage: False
