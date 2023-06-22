@@ -22,7 +22,8 @@ if [ -f "INSTALL_MATPLOTLIB" ]; then
     rm -f INSTALL_MATPLOTLIB
 fi
 
-# Replace the timing plots with the most recent 
+# Replace the timing plots with the most recent
+set -x
 python utils/plot-timings.py -l --save-plot plots/nozzle-full.png nozzle-lazy-timings.yaml
 python utils/plot-timings.py -l --save-plot plots/flame1d-full.png flame1d-lazy-timings.yaml
 python utils/plot-timings.py -l --save-plot plots/isolator-full.png isolator-timings.yaml
@@ -56,3 +57,4 @@ git add plots
 git add README.md
 git add latest_testing_date
 (git commit -m "Automatic timing summary commit: ${TIMING_HOST} ${TIMING_DATE}" && git push)
+set +x

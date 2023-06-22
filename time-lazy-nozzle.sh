@@ -45,7 +45,13 @@ then
     ./install.sh --branch=${MIRGE_BRANCH} --env-name=${TIMING_ENV_NAME}
     cd ../
 fi
-rm -f INSTALL_MIRGECOM
+if [ -d "emirge/mirgecom" ]
+then
+    rm -f INSTALL_MIRGECOM
+else
+    echo "MIRGE-Com installation failed."
+    exit 1
+fi
 
 # -- Activate the env we just created above
 export EMIRGE_HOME="${TIMING_HOME}/emirge"
