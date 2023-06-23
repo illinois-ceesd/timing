@@ -1,0 +1,255 @@
+Customizing shell for Lassen.
+/g/g17/mtcampbe/.lsbatch/1687507932.4928064.shell: line 9: ../emirge/config/activate_env.sh: No such file or directory
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+Driver directory: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run
+Fri Jun 23 01:12:20 PDT 2023
+Running parallel timing tests...
+* Running prediction-scalability test in scalability_test.
+** Running prediction-scalability_np1 on 1 ranks.
+rm: cannot remove ‘actii.msh’: No such file or directory
+Making 3D mesh with the following parameters:
+Output name: actii
+Number of threads: 1
+Mesh size: 48
+Injector ratio: 2
+Sample boundary layer ratio: 4
+Bulk boundary layer ratio: 4
+Injector boundary layer ratio: 2
+Cavity boundary layer ratio: 2
+Surround boundary layer ratio: 2
+Isolator factor: 2
+Cavity factor: 4
+Injector factor: 3
+Shear layer factor: 4
+Sample factor: 4
+Make link actii.msh for finished mesh.
+Expected mesh file already exists, skipping mesh creation.
+++ jsrun -g 1 -a 1 -n 1 bash /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh python -u -O -m mpi4py driver.py -c prediction-scalability_np1 -g /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test/log_data -i run_params.yaml --log --lazy
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 37
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+++ return_code=1
+++ set +x
+mv: cannot stat ‘viz_data’: No such file or directory
+mv: cannot stat ‘restart_data’: No such file or directory
+**  scalability_test/prediction-scalability_np1 failed.
+** Running prediction-scalability_np2 on 2 ranks.
+Making 3D mesh with the following parameters:
+Output name: actii
+Number of threads: 1
+Mesh size: 30.5
+Injector ratio: 2
+Sample boundary layer ratio: 4
+Bulk boundary layer ratio: 4
+Injector boundary layer ratio: 2
+Cavity boundary layer ratio: 2
+Surround boundary layer ratio: 2
+Isolator factor: 2
+Cavity factor: 4
+Injector factor: 3
+Shear layer factor: 4
+Sample factor: 4
+Make link actii.msh for finished mesh.
+Expected mesh file already exists, skipping mesh creation.
+++ jsrun -g 1 -a 1 -n 2 bash /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh python -u -O -m mpi4py driver.py -c prediction-scalability_np2 -g /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test/log_data -i run_params.yaml --log --lazy
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 37
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError:     code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 37
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+invalid syntax
+++ return_code=1
+++ set +x
+mv: cannot stat ‘viz_data’: No such file or directory
+mv: cannot stat ‘restart_data’: No such file or directory
+**  scalability_test/prediction-scalability_np2 failed.
+** Running prediction-scalability_np4 on 4 ranks.
+Making 3D mesh with the following parameters:
+Output name: actii
+Number of threads: 1
+Mesh size: 21.5
+Injector ratio: 2
+Sample boundary layer ratio: 4
+Bulk boundary layer ratio: 4
+Injector boundary layer ratio: 2
+Cavity boundary layer ratio: 2
+Surround boundary layer ratio: 2
+Isolator factor: 2
+Cavity factor: 4
+Injector factor: 3
+Shear layer factor: 4
+Sample factor: 4
+Make link actii.msh for finished mesh.
+Expected mesh file already exists, skipping mesh creation.
+++ jsrun -g 1 -a 1 -n 4 bash /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh python -u -O -m mpi4py driver.py -c prediction-scalability_np4 -g /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test/log_data -i run_params.yaml --log --lazy
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 37
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 37
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+++ return_code=1
+++ set +x
+mv: cannot stat ‘viz_data’: No such file or directory
+mv: cannot stat ‘restart_data’: No such file or directory
+**  scalability_test/prediction-scalability_np4 failed.
+Fri Jun 23 01:12:22 PDT 2023
+Scaling/timing tests done.
+Passing tests: 
+Failing tests:  scalability_test/prediction-scalability_np1 scalability_test/prediction-scalability_np2 scalability_test/prediction-scalability_np4
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 4928064: <scale4> in cluster <lassen> Exited
+
+Job <scale4> was submitted from host <lassen708> by user <mtcampbe> in cluster <lassen> at Fri Jun 23 01:12:12 2023
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <mtcampbe> in cluster <lassen> at Fri Jun 23 01:12:14 2023
+                            <40*lassen253>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test> was used as the working directory.
+Started at Fri Jun 23 01:12:14 2023
+Terminated at Fri Jun 23 01:12:23 2023
+Results reported at Fri Jun 23 01:12:23 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -nnodes 1
+#BSUB -G uiuc
+#BSUB -W 180
+#BSUB -J scale4
+#BSUB -q pbatch
+#BSUB -o scal4.txt
+
+source ../emirge/config/activate_env.sh
+source ../emirge/mirgecom/scripts/mirge-testing-env.sh
+source ../scripts/multi_scalability.sh -p ../ -n 4
+
+
+
+------------------------------------------------------------
+
+Exited with exit code 3.
+
+Resource usage summary:
+
+    CPU time :                                   0.23 sec.
+    Max Memory :                                 582 MB
+    Average Memory :                             582.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1154 MB
+    Max Processes :                              1
+    Max Threads :                                2
+    Run time :                                   8 sec.
+    Turnaround time :                            11 sec.
+
+The output (if any) is above this job summary.
+
