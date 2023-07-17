@@ -1347,3 +1347,20 @@ time_second_10: 16.63202380761504
 max_python_mem_usage: 6700.4375
 max_gpu_mem_usage: 8621.3125
 ---
+run_date: 2023-07-16 11:40
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10300d9f0>
+num_processors: 32
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_branch: production
+driver_branch: Unkonwn
+mirge_version: 15190bf3a05b3952a3a78939d8fbca4f33bdbeaf
+driver_version: Unknown
+time_startup: 788.6835405826569
+time_first_step: 887.235179618001
+time_first_10: 905.1771245524287
+time_second_10: 16.71784869581461
+max_python_mem_usage: 6693.8125
+max_gpu_mem_usage: 8619.625
+---
