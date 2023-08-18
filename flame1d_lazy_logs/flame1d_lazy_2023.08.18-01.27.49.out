@@ -1,0 +1,962 @@
+Customizing shell for Lassen.
+Running with EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge
+Activating 'nozzle.lazy.timing.env' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin/python
+# conda environments:
+#
+base                     /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3
+nozzle.lazy.timing.env  *  /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env
+                         /p/gpfs1/mtcampbe/CEESD/Experimental/prediciton/mirge-current/miniforge3/envs/x.mirge.current
+                         /p/gpfs1/mtcampbe/CEESD/Experimental/prediciton/mirge/miniforge3/envs/x.mirge
+                         /usr/WS1/xpacc/Users/mtcampbe/CEESD/Lassen/test_emirge/emirge/miniforge3/envs/test.emirge.fk
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/abate.mtc_euler.env
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/ceesd.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/chem.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/dgfem
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/mc.master
+
+LMOD_FAMILY_COMPILER_VERSION=8.3.1
+LLNL_IPISOLATE=0
+MANPATH=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release/share/man:/usr/tce/packages/gcc/gcc-8.3.1/man:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/man:/usr/man:/usr/share/man:/usr/local/man:/usr/X11R6/man:/usr/lib64/mvapich/default/man:/opt/ibm/spectrum_mpi/jsm_pmix/share/man
+LSB_EXEC_CLUSTER=lassen
+OMPI_COMM_WORLD_RANK=0
+LMOD_FAMILY_CUDA=cuda
+LMOD_ANCIENT_TIME=3600
+GUESTFISH_INIT=\e[1;34m
+_ModuleTable003_=LAp1c2VyTmFtZSA9ICJnY2MvOC4zLjEiLAp3ViA9ICIwMDAwMDAwMDguMDAwMDAwMDAzLjAwMDAwMDAwMS4qemZpbmFsIiwKfSwKbGFsbG9jID0gewpmbiA9ICIvdXNyL3RjZXRtcC9tb2R1bGVmaWxlcy9Db3JlL2xhbGxvYy8yLjAubHVhIiwKZnVsbE5hbWUgPSAibGFsbG9jLzIuMCIsCmxvYWRPcmRlciA9IDMsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAibGFsbG9jLzIuMCIsCndWID0gIl4wMDAwMDAwMi4qemZpbmFsIiwKfSwKWyJzcGVjdHJ1bS1tcGkiXSA9IHsKZm4gPSAiL3Vzci90Y2UvbW9kdWxlZmlsZXMvQ29tcGlsZXIvZ2NjLzguMy4xL3NwZWN0cnVtLW1waS9yb2xsaW5nLXJlbGVhc2UubHVhIiwKZnVs
+HOSTNAME=lassen277
+PROJ_DATA=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/share/proj
+LSB_EFFECTIVE_RSRCREQ=1*{select[(LN) && (type == any)] order[r15s:pg] span[hosts=1]}+40*{select[(CN) && (type == any)] order[r15s:pg] span[ptile=40]}
+LSB_DOCKER_JOB_STARTTS=1692347356
+BBHASH=b48157dccb46aba0bb03b846bf24fdd7
+JSM_TMPDIR=/var/tmp
+MIRGE_TIMING_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing
+LSF_LOGDIR=/opt/ibm/spectrumcomputing/lsf/log
+LSF_LIM_API_NTRIES=1
+LSB_BATCH_JID=5131919
+__LMOD_REF_COUNT_MODULEPATH=/usr/tce/modulefiles/MPI/gcc/8.3.1/spectrum-mpi/rolling-release:1;/usr/tce/modulefiles/Compiler/gcc/8.3.1:1;/usr/tcetmp/modulefiles/Core:1;/usr/apps/modulefiles:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1;/collab/usr/global/tools/modulefiles/blueos_3_ppc64le_ib_p9/Core:1
+MAILTO=mtcampbe@illinois.edu,andreask@illinois.edu
+SHELL=/bin/bash
+LMOD_ROOT=/usr/share/lmod
+HISTSIZE=1000
+WISECONFIGDIR=/usr/share/wise2/
+LMOD_SYSTEM_DEFAULT_MODULES=StdEnv
+TMPDIR=/var/tmp
+MODULEPATH_ROOT=/usr/share/modulefiles
+SSH_CLIENT=192.168.66.202 60528 22
+LS_EXECCWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/flame1d-lazy/timing_run
+LSB_TRAPSIGS=trap # 15 10 12 2 1
+CONDA_SHLVL=1
+LMOD_FAMILY_CUDA_VERSION=10.1.243
+LS_JOBPID=104362
+CONDA_PROMPT_MODIFIER=
+GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+LSB_MAX_NUM_PROCESSORS=41
+LSB_JOBRES_CALLBACK=53685@lassen710
+LMOD_PKG=/usr/share/lmod/lmod
+LSB_JOB_EXECUSER=mtcampbe
+LSB_JOBID=5131919
+QTDIR=/usr/lib64/qt-3.3
+LSF_SERVERDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc
+LSB_JOBRES_PID=104362
+LMOD_VERSION=8.6.16
+LMOD_SHORT_TIME=60
+QTINC=/usr/lib64/qt-3.3/include
+LSB_JOBNAME=flame1d_timing_job.sh
+LLNL_COMPUTE_NODES=lassen277
+LLNL_ATSDISABLE=0
+BSUB_BLOCK_EXEC_HOST=
+QT_GRAPHICSSYSTEM_CHECKED=1
+LSF_LIBDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib
+LSB_PROJECT_NAME=default
+OPAL_PREFIX=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release
+CUDA_HOME=/usr/tce/packages/cuda/cuda-10.1.243
+USER=mtcampbe
+PYOPENCL_CTX=port:tesla
+LMOD_sys=Linux
+LD_LIBRARY_PATH=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib:/usr/tce/packages/cuda/cuda-10.1.243/lib64
+SBD_KRB5CCNAME_VAL=
+LSB_EEXEC_REAL_UID=
+REQUESTS_CA_BUNDLE=/etc/pki/tls/cert.pem
+CONDA_EXE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda
+CEESD=/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen
+PFTP_CONFIG_FILENAME=/etc/pftp_config
+ENV=/g/g17/mtcampbe/.bashrc
+HOST_GRP=linux
+_ModuleTable004_=bE5hbWUgPSAic3BlY3RydW0tbXBpL3JvbGxpbmctcmVsZWFzZSIsCmxvYWRPcmRlciA9IDUsCnByb3BUID0ge30sCnN0YWNrRGVwdGggPSAwLApzdGF0dXMgPSAiYWN0aXZlIiwKdXNlck5hbWUgPSAic3BlY3RydW0tbXBpL3JvbGxpbmctcmVsZWFzZSIsCndWID0gIl5yb2xsaW5nLipyZWxlYXNlLip6ZmluYWwiLAp9LAp9LAptcGF0aEEgPSB7CiIvdXNyL3RjZS9tb2R1bGVmaWxlcy9NUEkvZ2NjLzguMy4xL3NwZWN0cnVtLW1waS9yb2xsaW5nLXJlbGVhc2UiCiwgIi91c3IvdGNlL21vZHVsZWZpbGVzL0NvbXBpbGVyL2djYy84LjMuMSIsICIvdXNyL3RjZXRtcC9tb2R1bGVmaWxlcy9Db3JlIgosICIvdXNyL2FwcHMvbW9kdWxlZmlsZXMiLCAiL3Vzci9zaGFyZS9tb2R1bGVm
+HOSTTYPE=LINUXPPC64LE
+LSF_INVOKE_CMD=bsub
+CUDA_CACHE_DISABLE=1
+LS_EXEC_T=START
+LMOD_FAMILY_LALLOC=lalloc
+LS_SUBCWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/flame1d-lazy/timing_run
+LSB_SUB_RES_REQ=1*{select[LN]span[hosts=1]} + 40*{select[CN]span[ptile=40]}
+LSB_HOSTS=lassen710 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277 lassen277
+LMOD_PREPEND_BLOCK=normal
+LMOD_FAMILY_MPI_VERSION=rolling-release
+GUESTFISH_PS1=\[\e[1;32m\]><fs>\[\e[0;31m\] 
+_CE_CONDA=
+LSB_UNIXGROUP_INT=mtcampbe
+LSB_JOBFILENAME=/g/g17/mtcampbe/.lsbatch/1692347346.5131919
+LSB_JOBINDEX=0
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpjb21waWxlciA9ICJnY2MiLApjdWRhID0gImN1ZGEiLApsYWxsb2MgPSAibGFsbG9jIiwKbXBpID0gInNwZWN0cnVtLW1waSIsCn0sCm1UID0gewpTdGRFbnYgPSB7CmZuID0gIi91c3IvdGNldG1wL21vZHVsZWZpbGVzL0NvcmUvU3RkRW52Lmx1YSIsCmZ1bGxOYW1lID0gIlN0ZEVudiIsCmxvYWRPcmRlciA9IDIsCnByb3BUID0gewpsbW9kID0gewpzdGlja3kgPSAxLAp9LAp9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gIlN0ZEVudiIsCndWID0gIk0uKnpm
+PATH=/usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-8.3.1/bin:/usr/tce/packages/gcc/gcc-8.3.1/bin:/usr/tce/packages/lalloc/lalloc-2.0/bin:/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin:/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin:/usr/tce/packages/cuda/cuda-10.1.243/bin:/usr/tcetmp/bin:/usr/condabin:/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibm/spectrum_mpi/jsm_pmix/bin:/opt/ibm/bb/bin:/opt/ibm/flightlog/bin:/opt/ibutils/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin
+MAIL=/var/spool/mail/mtcampbe
+PROJ_NETWORK=ON
+GSETTINGS_SCHEMA_DIR=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/share/glib-2.0/schemas
+LCSCHEDCLUSTER=lassen
+XML_CATALOG_FILES=file:///p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/etc/xml/catalog file:///etc/xml/catalog
+LSB_EXIT_PRE_ABORT=99
+LSB_JOBEXIT_STAT=0
+LMOD_SETTARG_CMD=:
+LMOD_FAMILY_LALLOC_VERSION=2.0
+CONDA_PREFIX=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env
+INPUTRC=/etc/inputrc
+PWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/flame1d-lazy/timing_run
+_LMFILES_=/usr/tcetmp/modulefiles/Core/cuda/10.1.243.lua:/usr/tcetmp/modulefiles/Core/StdEnv.lua:/usr/tcetmp/modulefiles/Core/lalloc/2.0.lua:/usr/tcetmp/modulefiles/Core/gcc/8.3.1.lua:/usr/tce/modulefiles/Compiler/gcc/8.3.1/spectrum-mpi/rolling-release.lua
+EDITOR=/bin/vi
+LANG=en_US.UTF-8
+LSB_CHKFILENAME=/g/g17/mtcampbe/.lsbatch/1692347346.5131919
+MODULEPATH=/usr/tce/modulefiles/MPI/gcc/8.3.1/spectrum-mpi/rolling-release:/usr/tce/modulefiles/Compiler/gcc/8.3.1:/usr/tcetmp/modulefiles/Core:/usr/apps/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/collab/usr/global/tools/modulefiles/blueos_3_ppc64le_ib_p9/Core
+LSB_DJOB_HOSTFILE=/g/g17/mtcampbe/.lsbatch/1692347346.5131919.hostfile
+LOADEDMODULES=cuda/10.1.243:StdEnv:lalloc/2.0:gcc/8.3.1:spectrum-mpi/rolling-release
+KDEDIRS=/usr
+GUESTFISH_OUTPUT=\e[0m
+_ModuleTable_Sz_=5
+LSB_JOB_STARTER=/usr/tcetmp/bin/bsub_job_starter %USRCMD
+EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge
+LSF_JOB_TIMESTAMP_VALUE=1692347356
+LMOD_CMD=/usr/share/lmod/lmod/libexec/lmod
+_ModuleTable005_=aWxlcy9MaW51eCIKLCAiL3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlIiwgIi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLCAiL2NvbGxhYi91c3IvZ2xvYmFsL3Rvb2xzL21vZHVsZWZpbGVzL2JsdWVvc18zX3BwYzY0bGVfaWJfcDkvQ29yZSIsCn0sCnN5c3RlbUJhc2VNUEFUSCA9ICIvdXNyL3RjZXRtcC9tb2R1bGVmaWxlcy9Db3JlOi91c3IvYXBwcy9tb2R1bGVmaWxlczovdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4Oi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvQ29yZTovdXNyL3NoYXJlL2xtb2QvbG1vZC9tb2R1bGVmaWxlcy9Db3JlIiwKfQo=
+BBPATH=/mnt/bb_b48157dccb46aba0bb03b846bf24fdd7
+LSB_EXEC_HOSTTYPE=UNKNOWN_AUTO_DETECT
+LSB_DJOB_NUMPROC=41
+LSF_BINDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin
+LLNL_NUM_COMPUTE_NODES=1
+HISTCONTROL=ignoredups
+_CE_M=
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+ENVIRONMENT=BATCH
+CXX=mpicxx
+HOME=/g/g17/mtcampbe
+SHLVL=6
+__LMOD_REF_COUNT_PATH=/usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-8.3.1/bin:2;/usr/tce/packages/gcc/gcc-8.3.1/bin:2;/usr/tce/packages/lalloc/lalloc-2.0/bin:2;/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin:1;/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin:1;/usr/tce/packages/cuda/cuda-10.1.243/bin:2;/usr/tcetmp/bin:2;/usr/condabin:1;/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:1;/usr/lib64/qt-3.3/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/opt/ibm/spectrum_mpi/jsm_pmix/bin:1;/opt/ibm/bb/bin:1;/opt/ibm/flightlog/bin:1;/opt/ibutils/bin:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin:1
+JOB_TERMINATE_INTERVAL=10
+LSB_ACCT_FILE=/tmp/5131919.tmpdir/.1692347346.5131919.acct
+_ModuleTable002_=aW5hbCIsCn0sCmN1ZGEgPSB7CmZuID0gIi91c3IvdGNldG1wL21vZHVsZWZpbGVzL0NvcmUvY3VkYS8xMC4xLjI0My5sdWEiLApmdWxsTmFtZSA9ICJjdWRhLzEwLjEuMjQzIiwKbG9hZE9yZGVyID0gMSwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDEsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJjdWRhLzEwLjEuMjQzIiwKd1YgPSAiXjAwMDAwMDEwLjAwMDAwMDAwMS4wMDAwMDAyNDMuKnpmaW5hbCIsCn0sCmdjYyA9IHsKZm4gPSAiL3Vzci90Y2V0bXAvbW9kdWxlZmlsZXMvQ29yZS9nY2MvOC4zLjEubHVhIiwKZnVsbE5hbWUgPSAiZ2NjLzguMy4xIiwKbG9hZE9yZGVyID0gNCwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUi
+CSM_ALLOCATION_ID=5633212
+BINARY_TYPE_HPC=
+LLNL_CORE_ISOLATION=2
+FC=mpif90
+LSB_SUB_HOST=lassen708
+XDG_CACHE_HOME=/tmp/mtcampbe/xdg-scratch
+__LSF_JOB_TMPDIR__=/tmp/5131919.tmpdir
+LSFUSER=mtcampbe
+LSB_SUB_USER=mtcampbe
+LSB_OUTPUTFILE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/flame1d-lazy/timing_run/
+LSB_OUTDIR=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/flame1d-lazy/timing_run
+LSB_MCPU_HOSTS=lassen710 1 lassen277 40 
+LMOD_arch=ppc64le
+TMP=/var/tmp
+MPI_ROOT=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release
+LSB_QUEUE=pbatch
+CONDA_PYTHON_EXE=/home/conda/feedstock_root/build_artifacts/conda_1677264974347/_build_env/venv/bin/cross-python
+LOGNAME=mtcampbe
+QTLIB=/usr/lib64/qt-3.3/lib
+CVS_RSH=ssh
+XLSF_UIDDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib/uid
+XDG_DATA_DIRS=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+SSH_CONNECTION=192.168.66.202 60528 192.168.65.23 22
+SYS_TYPE=blueos_3_ppc64le_ib_p9
+MODULESHOME=/usr/share/lmod/lmod
+LMOD_SETTARG_FULL_SUPPORT=no
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib:1
+PKG_CONFIG_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64/pkgconfig
+OMP_NUM_THREADS=1
+LSF_CGROUP_TOPDIR_KEY=lassen
+CONDA_DEFAULT_ENV=nozzle.lazy.timing.env
+LMOD_FULL_SETTARG_SUPPORT=no
+LMOD_FAMILY_COMPILER=gcc
+LSB_XFER_OP=
+LSB_EEXEC_REAL_GID=
+__LMOD_REF_COUNT_PKG_CONFIG_PATH=/usr/tce/packages/cuda/cuda-10.1.243/lib64/pkgconfig:1
+CC=mpicc
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+LMOD_DIR=/usr/share/lmod/lmod/libexec
+LEXEC_UNPICKLE_QUIET=1
+__LMOD_REF_COUNT_MANPATH=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release/share/man:1;/usr/tce/packages/gcc/gcc-8.3.1/man:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/man:1;/usr/man:1;/usr/share/man:1;/usr/local/man:1;/usr/X11R6/man:1;/usr/lib64/mvapich/default/man:1;/opt/ibm/spectrum_mpi/jsm_pmix/share/man:1
+LSF_ENVDIR=/opt/ibm/spectrumcomputing/lsf/conf
+GUESTFISH_RESTORE=\e[0m
+LSB_DJOB_RANKFILE=/g/g17/mtcampbe/.lsbatch/1692347346.5131919.hostfile
+LMOD_FAMILY_MPI=spectrum-mpi
+LMOD_COLORIZE=yes
+HISTFILE=/g/g17/mtcampbe/.bash_history
+BASH_FUNC_module()=() {  local __lmod_my_status;
+ local __lmod_sh_dbg;
+ if [ -z "${LMOD_SH_DBG_ON+x}" ]; then
+ case "$-" in 
+ *v*x*)
+ __lmod_sh_dbg='vx'
+ ;;
+ *v*)
+ __lmod_sh_dbg='v'
+ ;;
+ *x*)
+ __lmod_sh_dbg='x'
+ ;;
+ esac;
+ fi;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ set +$__lmod_sh_dbg;
+ echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output" 1>&2;
+ fi;
+ eval "$($LMOD_CMD bash "$@")" && eval $(${LMOD_SETTARG_CMD:-:} -s sh);
+ __lmod_my_status=$?;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ echo "Shell debugging restarted" 1>&2;
+ set -$__lmod_sh_dbg;
+ fi;
+ return $__lmod_my_status
+}
+BASH_FUNC_ml()=() {  eval "$($LMOD_DIR/ml_cmd "$@")"
+}
+_=/usr/bin/env
+LSB_MCPU_HOSTS=lassen710 1 lassen277 40 
+get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Default casename flame1d
+Reading user input from 'timing_params.yaml'
+Running ./flame1d.py
+
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/array_context.py:417: UserWarning: No memory allocator specified, please pass one. (Preferably a pyopencl.tools.MemoryPool in order to reduce device allocations)
+  warn("No memory allocator specified, please pass one. "
+#### Simluation control data: ####
+	nviz = 100
+	nrestart = 100
+	nhealth = 100
+	nstatus = 1
+	current_dt = 5e-08
+	t_final = 1e-06
+	order = 1
+	Time integration rk4
+	Fuel: C2H4
+#### Simluation control data: ####
+./flame1d.py:304: UserWarning: The uiuc mechanism was updated in Q3 2023. Use 'uiuc_7sp' instead.
+  mech_input = get_mechanism_input('uiuc')
+Input state (T,P,X) = (300.0, 101325.0, [0.06542056 0.19626168 0.         0.         0.         0.
+ 0.73831776]
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/thermochemistry.py:196: UserWarning: make_pyrometheus_mechanism_class is deprecated. use get_pyrometheus_wrapper_class_from_cantera.
+  warn("make_pyrometheus_mechanism_class is deprecated."
+Pyrometheus mechanism species names ['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+Unburned (T,P,Y) = (300.0, 101325.0, [0.06372925 0.21806609 0.         0.         0.         0.
+ 0.71820466]
+Burned (T,P,Y) = (299.99999999999994, 101325.00000023544, [9.18702785e-176 8.53517662e-020 1.99947297e-001 8.07802672e-037
+ 8.18480439e-002 5.43388456e-033 7.18204659e-001]
+./flame1d.py:477: DeprecationWarning: generate_and_distribute_mesh is deprecated and will go away Q4 2022. Use distribute_mesh instead.
+  generate_and_distribute_mesh(comm, generate_mesh))
+Making discretization
+./flame1d.py:493: DeprecationWarning: EagerDGDiscretization is deprecated and will go away in 2022. Use the base DiscretizationCollection with grudge.op instead.
+  dcoll = EagerDGDiscretization(actx,
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10374f890> to 3896 bytes
+Transforming kernel 'frozen_nodes0_2d' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_2d' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_nodes0_2d' was part of a lengthy source build resulting from a binary cache miss (0.75 s)
+Transforming kernel 'frozen_nodes1_2d' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes1_2d' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_nodes1_2d' was part of a lengthy source build resulting from a binary cache miss (0.35 s)
+./flame1d.py:497: DeprecationWarning: Calling thaw(ary, actx) is deprecated, call actx.thaw(ary) instead. This will stop working in 2023.
+  nodes = thaw(dcoll.nodes(), actx)
+Initializing soln.
+transform_dag.infer_axes_tags[pre-partition]: completed (0.86s wall 1.00x CPU)
+find_partition: Split 2022 nodes into 1 parts, with [2034] nodes in each partition.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/array.py:803: UserWarning: Passing `tags=None` is deprecated and will result in an error from 2023. To remove this message either call make_dict_of_named_arrays or pass the `tags` argument.
+  warn("Passing `tags=None` is deprecated and will result"
+transform_dag.materialize_all_einsums_or_reduces: completed (0.39s wall 1.00x CPU)
+transform_dag.infer_axes_tags: completed (0.99s wall 1.00x CPU)
+transform_dag for 'get_fluid_state': completed (2.52s wall 1.00x CPU)
+limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10374f890> to 3896 bytes
+generate_loopy for 'get_fluid_state': completed (0.82s wall 1.00x CPU)
+Transforming kernel 'get_fluid_state' with 50 statements.
+fuse_same_discretization_entity_loops on 'get_fluid_state': completed (1.95s wall 1.00x CPU)
+Loop Fusion: completed (2.20s wall 1.00x CPU)
+Array Contraction: Contracting 16 temps
+contract_arrays on 'get_fluid_state': completed (3.37s wall 1.00x CPU)
+Array Contraction: completed (3.60s wall 1.00x CPU)
+[_alias_global_temporaries]: Reduced memory requirement of 'get_fluid_state' from 16.9MB to 11.6MB.
+transform_loopy_program for 'get_fluid_state': completed (6.03s wall 1.00x CPU)
+./flame1d.py:547: DeprecationWarning: Argument array '(0, 'species_mass', 2, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  current_state = create_fluid_state(current_cv, temperature_seed)
+Transforming kernel 'frozen_result' with 2 statements.
+Array Contraction: Contracting 1 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 1.1MB to 1.1MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+./flame1d.py:547: DeprecationWarning: Argument array '(0, 'species_mass', 5, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  current_state = create_fluid_state(current_cv, temperature_seed)
+Transforming kernel 'frozen_result' with 2 statements.
+Array Contraction: Contracting 1 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 1.1MB to 1.1MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+./flame1d.py:547: DeprecationWarning: Argument array '(0, 'momentum', 0, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  current_state = create_fluid_state(current_cv, temperature_seed)
+Transforming kernel 'frozen_result' with 2 statements.
+Array Contraction: Contracting 1 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 1.1MB to 1.1MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+./flame1d.py:547: DeprecationWarning: Argument array '(0, 'species_mass', 6, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  current_state = create_fluid_state(current_cv, temperature_seed)
+Transforming kernel 'frozen_result' with 2 statements.
+Array Contraction: Contracting 1 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 1.1MB to 1.1MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+./flame1d.py:547: DeprecationWarning: Argument array '(0, 'species_mass', 1, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  current_state = create_fluid_state(current_cv, temperature_seed)
+Transforming kernel 'frozen_result' with 2 statements.
+Array Contraction: Contracting 1 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 1.1MB to 1.1MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+./flame1d.py:547: DeprecationWarning: Argument array '(0, 'species_mass', 4, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  current_state = create_fluid_state(current_cv, temperature_seed)
+Transforming kernel 'frozen_result' with 2 statements.
+Array Contraction: Contracting 1 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 1.1MB to 1.1MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+./flame1d.py:547: DeprecationWarning: Argument array '(0, 'energy', 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  current_state = create_fluid_state(current_cv, temperature_seed)
+Transforming kernel 'frozen_result' with 2 statements.
+Array Contraction: Contracting 1 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 1.1MB to 1.1MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.42 s)
+./flame1d.py:547: DeprecationWarning: Argument array '(0, 'species_mass', 0, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  current_state = create_fluid_state(current_cv, temperature_seed)
+Transforming kernel 'frozen_result' with 2 statements.
+Array Contraction: Contracting 1 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 1.1MB to 1.1MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+./flame1d.py:547: DeprecationWarning: Argument array '(0, 'mass', 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  current_state = create_fluid_state(current_cv, temperature_seed)
+Transforming kernel 'frozen_result' with 2 statements.
+Array Contraction: Contracting 1 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 1.1MB to 1.1MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+./flame1d.py:547: DeprecationWarning: Argument array '(0, 'species_mass', 3, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  current_state = create_fluid_state(current_cv, temperature_seed)
+Transforming kernel 'frozen_result' with 2 statements.
+Array Contraction: Contracting 1 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 1.1MB to 1.1MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+./flame1d.py:547: DeprecationWarning: Argument array '(0, 'momentum', 1, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  current_state = create_fluid_state(current_cv, temperature_seed)
+preprocess_program on 'get_fluid_state': completed (0.75s wall 1.00x CPU)
+get_fluid_state: schedule: completed (0.63s wall 1.00x CPU)
+get_fluid_state: generate code: completed (0.41s wall 1.00x CPU)
+build program: kernel 'get_fluid_state' was part of a lengthy source build resulting from a binary cache miss (1.03 s)
+Initialization for Case(flame1d)
+===
+Num 2d order-1 elements: 43978
+Num global elements: 43978
+Timestep:        5e-08
+Initial time:    0
+Final time:      1e-06
+CFL:             1.0
+Constant CFL:    False
+Initialization:  flame1d
+EOS:             PyrometheusMixture
+
+Stepping.
+transform_dag.infer_axes_tags[pre-partition]: completed (0.86s wall 1.00x CPU)
+find_partition: Split 2021 nodes into 1 parts, with [2033] nodes in each partition.
+transform_dag.materialize_all_einsums_or_reduces: completed (0.30s wall 1.00x CPU)
+transform_dag.infer_axes_tags: completed (0.95s wall 1.00x CPU)
+transform_dag for 'get_fluid_state': completed (2.01s wall 1.00x CPU)
+generate_loopy for 'get_fluid_state': completed (0.92s wall 1.00x CPU)
+Transforming kernel 'get_fluid_state' with 49 statements.
+fuse_same_discretization_entity_loops on 'get_fluid_state': completed (2.08s wall 1.00x CPU)
+Loop Fusion: completed (2.33s wall 1.00x CPU)
+Array Contraction: Contracting 15 temps
+contract_arrays on 'get_fluid_state': completed (3.24s wall 1.00x CPU)
+Array Contraction: completed (3.54s wall 1.00x CPU)
+[_alias_global_temporaries]: Reduced memory requirement of 'get_fluid_state' from 15.8MB to 11.6MB.
+transform_loopy_program for 'get_fluid_state': completed (6.16s wall 1.00x CPU)
+preprocess_program on 'get_fluid_state': completed (0.88s wall 1.00x CPU)
+get_fluid_state: schedule: completed (0.62s wall 1.00x CPU)
+get_fluid_state: generate code: completed (0.47s wall 1.00x CPU)
+build program: kernel 'get_fluid_state' was part of a lengthy source build resulting from a binary cache miss (1.04 s)
+limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10374f890> to 3896 bytes
+Transforming kernel 'frozen_area_el_vol' with 10 statements.
+Array Contraction: Contracting 1 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_area_el_vol' from 6.0MB to 2.8MB.
+build program: kernel 'frozen_area_el_vol' was part of a lengthy source build resulting from a binary cache miss (0.64 s)
+building face restriction: start
+building face restriction: done
+Transforming kernel 'frozen_area_el_b_face_restr_all' with 7 statements.
+Array Contraction: Contracting 2 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_area_el_b_face_restr_all' from 8.4MB to 5.3MB.
+build program: kernel 'frozen_area_el_b_face_restr_all' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+Transforming kernel 'frozen_dt_geometric_vol' with 7 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_dt_geometric_vol' from 5.3MB to 4.2MB.
+build program: kernel 'frozen_dt_geometric_vol' was part of a lengthy source build resulting from a binary cache miss (1.10 s)
+Transforming kernel 'frozen_char_lscales' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_char_lscales' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_char_lscales' was part of a lengthy source build resulting from a binary cache miss (0.35 s)
+find_partition: Split 64 nodes into 1 parts, with [64] nodes in each partition.
+Transforming kernel 'get_cfl' with 8 statements.
+Array Contraction: Contracting 7 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'get_cfl' from 7.4MB to 3.2MB.
+build program: kernel 'get_cfl' was part of a lengthy source build resulting from a binary cache miss (0.39 s)
+build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/array_context.py:1744: UserWarning: [frozen_result]: FusionContractorArrayContext.transform_loopy_program not broad enough (yet). Falling back to a possibly slower transformation strategy.
+  warn(f"[{knl.name}]: FusionContractorArrayContext."
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.35 s)
+./flame1d.py:674: DeprecationWarning: Calling freeze(ary, actx) is deprecated, call actx.freeze(ary) instead. This will stop working in 2023.
+  pressure = thaw(freeze(dv.pressure, actx), actx)
+./flame1d.py:674: DeprecationWarning: Calling thaw(ary, actx) is deprecated, call actx.thaw(ary) instead. This will stop working in 2023.
+  pressure = thaw(freeze(dv.pressure, actx), actx)
+./flame1d.py:675: DeprecationWarning: Calling freeze(ary, actx) is deprecated, call actx.freeze(ary) instead. This will stop working in 2023.
+  temperature = thaw(freeze(dv.temperature, actx), actx)
+./flame1d.py:675: DeprecationWarning: Calling thaw(ary, actx) is deprecated, call actx.thaw(ary) instead. This will stop working in 2023.
+  temperature = thaw(freeze(dv.temperature, actx), actx)
+build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.44 s)
+build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.44 s)
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.35 s)
+build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.35 s)
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+find_partition: Split 358 nodes into 1 parts, with [358] nodes in each partition.
+transform_dag for 'get_temperature_update': completed (0.31s wall 1.00x CPU)
+Transforming kernel 'get_temperature_update' with 8 statements.
+Array Contraction: Contracting 7 temps
+contract_arrays on 'get_temperature_update': completed (0.38s wall 1.00x CPU)
+Array Contraction: completed (0.42s wall 1.00x CPU)
+[_alias_global_temporaries]: Reduced memory requirement of 'get_temperature_update' from 7.4MB to 7.4MB.
+transform_loopy_program for 'get_temperature_update': completed (0.77s wall 1.00x CPU)
+build program: kernel 'get_temperature_update' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+./flame1d.py:717: DeprecationWarning: Calling freeze(ary, actx) is deprecated, call actx.freeze(ary) instead. This will stop working in 2023.
+  temp_resid = thaw(freeze(temp_update, actx), actx) / temperature
+./flame1d.py:717: DeprecationWarning: Calling thaw(ary, actx) is deprecated, call actx.thaw(ary) instead. This will stop working in 2023.
+  temp_resid = thaw(freeze(temp_update, actx), actx) / temperature
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+find_partition: Split 230 nodes into 1 parts, with [230] nodes in each partition.
+Transforming kernel 'get_production_rates' with 16 statements.
+Loop Fusion: completed (0.32s wall 1.00x CPU)
+Array Contraction: Contracting 9 temps
+contract_arrays on 'get_production_rates': completed (0.36s wall 1.00x CPU)
+Array Contraction: completed (0.40s wall 1.00x CPU)
+[_alias_global_temporaries]: Reduced memory requirement of 'get_production_rates' from 9.5MB to 7.4MB.
+transform_loopy_program for 'get_production_rates': completed (0.80s wall 1.00x CPU)
+build program: kernel 'get_production_rates' was part of a lengthy source build resulting from a binary cache miss (0.49 s)
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py:338: UserWarning: Using `write_visfile` in parallel without an MPI communicator is deprecated and will stop working in Fall 2022. For parallel writes, specify an MPI communicator with the `mpi_communicator` argument.
+  warn("Using `write_visfile` in parallel without an MPI communicator is "
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.35 s)
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.35 s)
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.35 s)
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/navierstokes.py:470: UserWarning: Mixtures often require species limiting, and a non-limited state is being created for this operator. For mixtures, one should pass the operator_states_quad argument with limited states or provide a limiter_func to this operator.
+  warn("Mixtures often require species limiting, and a non-limited "
+building face restriction: start
+building face restriction: done
+building face restriction: start
+building face restriction: done
+building face restriction: start
+building face restriction: done
+building face restriction: start
+building face restriction: done
+./flame1d.py:431: DeprecationWarning: Calling thaw(ary, actx) is deprecated, call actx.thaw(ary) instead. This will stop working in 2023.
+  nodes = thaw(bnd_discr.nodes(), actx)
+Transforming kernel 'frozen_area_el_b_Inflow' with 7 statements.
+Array Contraction: Contracting 2 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_area_el_b_Inflow' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_area_el_b_Inflow' was part of a lengthy source build resulting from a binary cache miss (0.61 s)
+Transforming kernel 'frozen_normal_2_b_Inflow' with 3 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_normal_2_b_Inflow' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_normal_2_b_Inflow' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+Transforming kernel 'frozen_normal_1_b_Inflow' with 3 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_normal_1_b_Inflow' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_normal_1_b_Inflow' was part of a lengthy source build resulting from a binary cache miss (0.60 s)
+Transforming kernel 'frozen_f2allf_ind' with 0 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.34 s)
+Transforming kernel 'frozen_f2allf_ind' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_f2allf_ind' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.35 s)
+Transforming kernel 'frozen_f2allf_ind' with 0 statements.
+Transforming kernel 'frozen_area_el_b_Outflow' with 7 statements.
+Array Contraction: Contracting 2 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_area_el_b_Outflow' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_area_el_b_Outflow' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+Transforming kernel 'frozen_normal_2_b_Outflow' with 3 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_normal_2_b_Outflow' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_normal_2_b_Outflow' was part of a lengthy source build resulting from a binary cache miss (0.61 s)
+Transforming kernel 'frozen_normal_1_b_Outflow' with 3 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_normal_1_b_Outflow' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_normal_1_b_Outflow' was part of a lengthy source build resulting from a binary cache miss (0.61 s)
+Transforming kernel 'frozen_area_el_b_Wall' with 7 statements.
+Array Contraction: Contracting 2 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_area_el_b_Wall' from 0.3MB to 0.2MB.
+build program: kernel 'frozen_area_el_b_Wall' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+Transforming kernel 'frozen_normal_2_b_Wall' with 3 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_normal_2_b_Wall' from 0.1MB to 0.1MB.
+build program: kernel 'frozen_normal_2_b_Wall' was part of a lengthy source build resulting from a binary cache miss (0.61 s)
+Transforming kernel 'frozen_normal_1_b_Wall' with 3 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_normal_1_b_Wall' from 0.1MB to 0.1MB.
+build program: kernel 'frozen_normal_1_b_Wall' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+Transforming kernel 'frozen_f2allf_ind' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_f2allf_ind' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.35 s)
+Transforming kernel 'frozen_f2allf_ind' with 0 statements.
+Transforming kernel 'frozen_area_el_b_face_restr_interior' with 7 statements.
+Array Contraction: Contracting 2 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_area_el_b_face_restr_interior' from 8.2MB to 5.1MB.
+build program: kernel 'frozen_area_el_b_face_restr_interior' was part of a lengthy source build resulting from a binary cache miss (0.62 s)
+Transforming kernel 'frozen_normal_2_b_face_restr_interior' with 3 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_normal_2_b_face_restr_interior' from 3.1MB to 3.1MB.
+build program: kernel 'frozen_normal_2_b_face_restr_interior' was part of a lengthy source build resulting from a binary cache miss (0.61 s)
+Transforming kernel 'frozen_normal_1_b_face_restr_interior' with 3 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_normal_1_b_face_restr_interior' from 3.1MB to 3.1MB.
+build program: kernel 'frozen_normal_1_b_face_restr_interior' was part of a lengthy source build resulting from a binary cache miss (0.61 s)
+Transforming kernel 'frozen_f2allf_ind' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_f2allf_ind' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.35 s)
+Transforming kernel 'frozen_f2allf_ind' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_f2allf_ind' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.35 s)
+Transforming kernel 'frozen_f2allf_ind' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_f2allf_ind' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.35 s)
+Transforming kernel 'frozen_inv_metric_deriv_vol' with 45 statements.
+fuse_same_discretization_entity_loops on 'frozen_inv_metric_deriv_vol': completed (0.86s wall 1.00x CPU)
+Loop Fusion: completed (1.01s wall 1.00x CPU)
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_inv_metric_deriv_vol' from 29.6MB to 9.5MB.
+preprocess_program on 'frozen_inv_metric_deriv_vol': completed (0.51s wall 1.00x CPU)
+frozen_inv_metric_deriv_vol: generate code: completed (0.35s wall 1.00x CPU)
+build program: kernel 'frozen_inv_metric_deriv_vol' was part of a lengthy source build resulting from a binary cache miss (0.93 s)
+deduplicate_data_wrappers[pre-partition]: completed (46.76s wall 1.00x CPU)
+materialize_with_mpms[pre-partition]: completed (3.14s wall 1.00x CPU)
+transform_dag.infer_axes_tags[pre-partition]: completed (14.67s wall 1.00x CPU)
+find_partition: Split 23641 nodes into 1 parts, with [23641] nodes in each partition.
+transform_dag.mpms_materialization: completed (2.78s wall 1.00x CPU)
+transform_dag.naming_cse: completed (2.23s wall 1.00x CPU)
+transform_dag.tag_indices_as_non_negative: completed (1.40s wall 1.00x CPU)
+transform_dag.deduplicate_data_wrappers: completed (2.81s wall 1.00x CPU)
+transform_dag.materialize_face_mass_ins_and_outs: completed (2.29s wall 1.00x CPU)
+transform_dag.materialize_all_einsums_or_reduces: completed (4.03s wall 1.00x CPU)
+transform_dag.infer_axes_tags: completed (16.08s wall 1.00x CPU)
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.35 s)
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+Transforming kernel 'frozen_result' with 1 statements.
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+transform_dag for 'my_rhs': completed (43.58s wall 1.00x CPU)
+generate_loopy for 'my_rhs': completed (26.14s wall 1.00x CPU)
+Transforming kernel 'my_rhs' with 856 statements.
+fuse_same_discretization_entity_loops on 'my_rhs': completed (44.85s wall 1.00x CPU)
+Loop Fusion: completed (52.24s wall 1.00x CPU)
+Array Contraction: Contracting 303 temps
+contract_arrays on 'my_rhs': completed (22.32s wall 1.00x CPU)
+Array Contraction: completed (27.72s wall 1.00x CPU)
+[_alias_global_temporaries]: Reduced memory requirement of 'my_rhs' from 688.6MB to 309.3MB.
+transform_loopy_program for 'my_rhs': completed (89.15s wall 1.00x CPU)
+my_rhs: preprocess: completed (2.31s wall 1.00x CPU)
+preprocess_program on 'my_rhs': completed (22.67s wall 1.00x CPU)
+my_rhs: schedule: completed (14.07s wall 1.00x CPU)
+my_rhs: generate code: completed (14.00s wall 1.00x CPU)
+build program: kernel 'my_rhs' was part of a lengthy source build resulting from a binary cache miss (15.47 s)
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/steppers.py:439: UserWarning: Deduced force_eval=True for this timestepper. This can have a nontrivial performance impact. If you know that your timestepper does not require per-step forced evaluation, explicitly set force_eval=False.
+  _advance_state_stepper_func(
+Transforming kernel 'frozen_result' with 12 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+step = 0, sim time: 0.000000e+00 s, ------- step walltime: 394.91 s, log walltime: 0.000124365 s
+
+step = 1, sim time: 5.000000e-08 s, ------- step walltime: 0.499136 s, log walltime: 0.000114486 s
+
+step = 2, sim time: 1.000000e-07 s, ------- step walltime: 0.499233 s, log walltime: 4.18518e-05 s
+
+step = 3, sim time: 1.500000e-07 s, ------- step walltime: 0.49952 s, log walltime: 4.07677e-05 s
+
+step = 4, sim time: 2.000000e-07 s, ------- step walltime: 0.498521 s, log walltime: 4.13563e-05 s
+
+step = 5, sim time: 2.500000e-07 s, ------- step walltime: 0.498572 s, log walltime: 4.09633e-05 s
+
+step = 6, sim time: 3.000000e-07 s, ------- step walltime: 0.498466 s, log walltime: 4.1103e-05 s
+
+step = 7, sim time: 3.500000e-07 s, ------- step walltime: 0.500171 s, log walltime: 4.24273e-05 s
+
+step = 8, sim time: 4.000000e-07 s, ------- step walltime: 0.497017 s, log walltime: 3.95719e-05 s
+
+step = 9, sim time: 4.500000e-07 s, ------- step walltime: 0.497214 s, log walltime: 4.06299e-05 s
+
+step = 10, sim time: 5.000000e-07 s, ------- step walltime: 0.499585 s, log walltime: 3.92124e-05 s
+
+step = 11, sim time: 5.500000e-07 s, ------- step walltime: 0.500219 s, log walltime: 3.97637e-05 s
+
+step = 12, sim time: 6.000000e-07 s, ------- step walltime: 0.498754 s, log walltime: 3.91789e-05 s
+
+step = 13, sim time: 6.500000e-07 s, ------- step walltime: 0.498626 s, log walltime: 4.00636e-05 s
+
+step = 14, sim time: 7.000000e-07 s, ------- step walltime: 0.497151 s, log walltime: 3.97433e-05 s
+
+step = 15, sim time: 7.500000e-07 s, ------- step walltime: 0.500397 s, log walltime: 3.91416e-05 s
+
+step = 16, sim time: 8.000000e-07 s, ------- step walltime: 0.501895 s, log walltime: 4.02331e-05 s
+
+step = 17, sim time: 8.500000e-07 s, ------- step walltime: 0.501005 s, log walltime: 3.9788e-05 s
+
+step = 18, sim time: 9.000000e-07 s, ------- step walltime: 0.501246 s, log walltime: 3.91547e-05 s
+
+step = 19, sim time: 9.500000e-07 s, ------- step walltime: 0.5036 s, log walltime: 3.9747e-05 s
+
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+Transforming kernel 'frozen_result' with 12 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+step = 20, sim time: 1.000000e-06 s, ------- step walltime: 3.72928 s, log walltime: 4.16543e-05 s
+
+Checkpointing final state ...
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'dv', 'species_enthalpies', 4, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+transform_dag.infer_axes_tags: completed (0.63s wall 1.00x CPU)
+Transforming kernel 'frozen_result' with 14 statements.
+fuse_same_discretization_entity_loops on 'frozen_result': completed (1.14s wall 1.00x CPU)
+Loop Fusion: completed (1.28s wall 1.00x CPU)
+Array Contraction: Contracting 13 temps
+contract_arrays on 'frozen_result': completed (2.75s wall 1.00x CPU)
+Array Contraction: completed (2.89s wall 1.00x CPU)
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 13.7MB to 10.6MB.
+preprocess_program on 'frozen_result': completed (0.52s wall 1.00x CPU)
+frozen_result: generate code: completed (0.34s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.84 s)
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'tv', 'bulk_viscosity', 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'dv', 'species_enthalpies', 0, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+transform_dag.infer_axes_tags: completed (0.61s wall 1.00x CPU)
+Transforming kernel 'frozen_result' with 14 statements.
+fuse_same_discretization_entity_loops on 'frozen_result': completed (1.14s wall 1.00x CPU)
+Loop Fusion: completed (1.28s wall 1.00x CPU)
+Array Contraction: Contracting 13 temps
+contract_arrays on 'frozen_result': completed (2.70s wall 1.00x CPU)
+Array Contraction: completed (2.84s wall 1.00x CPU)
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 13.7MB to 10.6MB.
+preprocess_program on 'frozen_result': completed (0.52s wall 1.00x CPU)
+frozen_result: generate code: completed (0.34s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.83 s)
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'tv', 'species_diffusivity', 1, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'dv', 'species_enthalpies', 5, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+transform_dag.infer_axes_tags: completed (0.61s wall 1.00x CPU)
+Transforming kernel 'frozen_result' with 14 statements.
+fuse_same_discretization_entity_loops on 'frozen_result': completed (1.14s wall 1.00x CPU)
+Loop Fusion: completed (1.28s wall 1.00x CPU)
+Array Contraction: Contracting 13 temps
+contract_arrays on 'frozen_result': completed (2.69s wall 1.00x CPU)
+Array Contraction: completed (2.83s wall 1.00x CPU)
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 13.7MB to 10.6MB.
+preprocess_program on 'frozen_result': completed (0.52s wall 1.00x CPU)
+frozen_result: generate code: completed (0.34s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.84 s)
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'tv', 'species_diffusivity', 6, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'dv', 'smoothness_mu', 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'tv', 'species_diffusivity', 0, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'tv', 'species_diffusivity', 5, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'dv', 'smoothness_kappa', 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'dv', 'pressure', 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+transform_dag.infer_axes_tags: completed (0.59s wall 1.00x CPU)
+Transforming kernel 'frozen_result' with 13 statements.
+fuse_same_discretization_entity_loops on 'frozen_result': completed (1.13s wall 1.00x CPU)
+Loop Fusion: completed (1.27s wall 1.00x CPU)
+Array Contraction: Contracting 12 temps
+contract_arrays on 'frozen_result': completed (2.64s wall 1.00x CPU)
+Array Contraction: completed (2.78s wall 1.00x CPU)
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 12.7MB to 10.6MB.
+preprocess_program on 'frozen_result': completed (0.53s wall 1.00x CPU)
+frozen_result: generate code: completed (0.34s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.84 s)
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'tv', 'species_diffusivity', 4, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'tv', 'thermal_conductivity', 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+Transforming kernel 'frozen_result' with 1 statements.
+Array Contraction: Contracting 0 temps
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'dv', 'species_enthalpies', 1, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+transform_dag.infer_axes_tags: completed (0.61s wall 1.00x CPU)
+Transforming kernel 'frozen_result' with 14 statements.
+fuse_same_discretization_entity_loops on 'frozen_result': completed (1.14s wall 1.00x CPU)
+Loop Fusion: completed (1.28s wall 1.00x CPU)
+Array Contraction: Contracting 13 temps
+contract_arrays on 'frozen_result': completed (3.71s wall 1.00x CPU)
+Array Contraction: completed (3.85s wall 1.00x CPU)
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 13.7MB to 10.6MB.
+preprocess_program on 'frozen_result': completed (0.52s wall 1.00x CPU)
+frozen_result: generate code: completed (0.34s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.84 s)
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'dv', 'species_enthalpies', 3, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+transform_dag.infer_axes_tags: completed (0.61s wall 1.00x CPU)
+Transforming kernel 'frozen_result' with 14 statements.
+fuse_same_discretization_entity_loops on 'frozen_result': completed (1.14s wall 1.00x CPU)
+Loop Fusion: completed (1.29s wall 1.00x CPU)
+Array Contraction: Contracting 13 temps
+contract_arrays on 'frozen_result': completed (2.71s wall 1.00x CPU)
+Array Contraction: completed (2.85s wall 1.00x CPU)
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 13.7MB to 10.6MB.
+preprocess_program on 'frozen_result': completed (0.52s wall 1.00x CPU)
+frozen_result: generate code: completed (0.34s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.83 s)
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'tv', 'species_diffusivity', 3, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'dv', 'speed_of_sound', 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+transform_dag.infer_axes_tags: completed (0.69s wall 1.00x CPU)
+Transforming kernel 'frozen_result' with 16 statements.
+fuse_same_discretization_entity_loops on 'frozen_result': completed (1.36s wall 1.00x CPU)
+Loop Fusion: completed (1.52s wall 1.00x CPU)
+Array Contraction: Contracting 15 temps
+contract_arrays on 'frozen_result': completed (4.17s wall 1.00x CPU)
+Array Contraction: completed (4.32s wall 1.00x CPU)
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 15.8MB to 11.6MB.
+preprocess_program on 'frozen_result': completed (0.55s wall 1.00x CPU)
+frozen_result: generate code: completed (0.35s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.89 s)
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'dv', 'species_enthalpies', 2, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+transform_dag.infer_axes_tags: completed (0.61s wall 1.00x CPU)
+Transforming kernel 'frozen_result' with 14 statements.
+fuse_same_discretization_entity_loops on 'frozen_result': completed (1.14s wall 1.00x CPU)
+Loop Fusion: completed (1.29s wall 1.00x CPU)
+Array Contraction: Contracting 13 temps
+contract_arrays on 'frozen_result': completed (2.71s wall 1.00x CPU)
+Array Contraction: completed (2.85s wall 1.00x CPU)
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 13.7MB to 10.6MB.
+preprocess_program on 'frozen_result': completed (0.53s wall 1.00x CPU)
+frozen_result: generate code: completed (0.34s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.83 s)
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'dv', 'smoothness_beta', 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'tv', 'species_diffusivity', 2, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'tv', 'viscosity', 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'dv', 'temperature', 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+transform_dag.infer_axes_tags: completed (0.61s wall 1.00x CPU)
+Transforming kernel 'frozen_result' with 13 statements.
+fuse_same_discretization_entity_loops on 'frozen_result': completed (1.12s wall 1.00x CPU)
+Loop Fusion: completed (1.26s wall 1.00x CPU)
+Array Contraction: Contracting 12 temps
+contract_arrays on 'frozen_result': completed (2.62s wall 1.00x CPU)
+Array Contraction: completed (2.75s wall 1.00x CPU)
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 12.7MB to 10.6MB.
+preprocess_program on 'frozen_result': completed (0.52s wall 1.00x CPU)
+frozen_result: generate code: completed (0.33s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.82 s)
+./flame1d.py:766: DeprecationWarning: Argument array '(0, 'dv', 'species_enthalpies', 6, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  ts_field = compute_cfl(state, current_dt)[0]
+transform_dag.infer_axes_tags: completed (0.61s wall 1.00x CPU)
+Transforming kernel 'frozen_result' with 14 statements.
+fuse_same_discretization_entity_loops on 'frozen_result': completed (1.14s wall 1.00x CPU)
+Loop Fusion: completed (1.29s wall 1.00x CPU)
+Array Contraction: Contracting 13 temps
+contract_arrays on 'frozen_result': completed (2.71s wall 1.00x CPU)
+Array Contraction: completed (2.85s wall 1.00x CPU)
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 13.7MB to 10.6MB.
+preprocess_program on 'frozen_result': completed (0.52s wall 1.00x CPU)
+frozen_result: generate code: completed (0.34s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.83 s)
+./flame1d.py:641: DeprecationWarning: Argument array '(1, 0)' to a compiled function is unevaluated. Evaluating just-in-time, at considerable expense. This is deprecated and will stop working in 2023. To avoid this warning, force evaluation of all arguments via freeze/thaw.
+  reaction_rates, = compute_production_rates(cv, dv.temperature)
+transform_dag.infer_axes_tags: completed (0.55s wall 1.00x CPU)
+Transforming kernel 'frozen_result' with 13 statements.
+fuse_same_discretization_entity_loops on 'frozen_result': completed (0.90s wall 1.00x CPU)
+Loop Fusion: completed (1.04s wall 1.00x CPU)
+Array Contraction: Contracting 3 temps
+contract_arrays on 'frozen_result': completed (0.43s wall 1.00x CPU)
+Array Contraction: completed (0.56s wall 1.00x CPU)
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 12.7MB to 10.6MB.
+preprocess_program on 'frozen_result': completed (0.83s wall 1.00x CPU)
+frozen_result: schedule: completed (0.53s wall 1.00x CPU)
+frozen_result: generate code: completed (1.28s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (1.04 s)
+transform_dag.infer_axes_tags: completed (1.70s wall 1.00x CPU)
+Transforming kernel 'frozen_result' with 13 statements.
+fuse_same_discretization_entity_loops on 'frozen_result': completed (0.90s wall 1.00x CPU)
+Loop Fusion: completed (1.04s wall 1.00x CPU)
+Array Contraction: Contracting 3 temps
+contract_arrays on 'frozen_result': completed (0.39s wall 1.00x CPU)
+Array Contraction: completed (0.52s wall 1.00x CPU)
+[_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 12.7MB to 10.6MB.
+preprocess_program on 'frozen_result': completed (0.82s wall 1.00x CPU)
+frozen_result: schedule: completed (0.54s wall 1.00x CPU)
+frozen_result: generate code: completed (1.28s wall 1.00x CPU)
+build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (1.03 s)
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 5131919: <flame1d_timing_job.sh> in cluster <lassen> Done
+
+Job <flame1d_timing_job.sh> was submitted from host <lassen708> by user <mtcampbe> in cluster <lassen> at Fri Aug 18 01:29:06 2023
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <mtcampbe> in cluster <lassen> at Fri Aug 18 01:29:16 2023
+                            <40*lassen277>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/flame1d-lazy/timing_run> was used as the working directory.
+Started at Fri Aug 18 01:29:16 2023
+Terminated at Fri Aug 18 01:40:10 2023
+Results reported at Fri Aug 18 01:40:10 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+#BSUB -nnodes 1
+#BSUB -G uiuc
+#BSUB -W 60
+#BSUB -q pbatch
+
+printf "Running with EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge\n"
+
+source "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/config/activate_env.sh"
+export PYOPENCL_CTX="port:tesla"
+export XDG_CACHE_HOME="/tmp/mtcampbe/xdg-scratch"
+rm -rf $XDG_CACHE_HOME
+rm -f timing-run-done
+which python
+conda env list
+env
+env | grep LSB_MCPU_HOSTS
+
+jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./flame1d.py -i timing_params.yaml --lazy --log
+touch timing-run-done
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.44 sec.
+    Max Memory :                                 59 MB
+    Average Memory :                             58.42 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1634 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   654 sec.
+    Turnaround time :                            664 sec.
+
+The output (if any) is above this job summary.
+
