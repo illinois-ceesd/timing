@@ -30,6 +30,7 @@ if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
     git add ${SCALING_CASE_TIMING_ROOT}/yaml
     # git add ${SCALING_CASE_TIMING_ROOT}/yaml
     (git commit -m "Automatic commit: Y3Scalability/Lassen ${TEMP_TIMESTAMP}" && git push)
+    rm -rf ${SCALING_CASE_RUN_ROOT}/scalability_test/viz_data* ${SCALING_CASE_RUN_ROOT}/scalability_test/restart_data*
     mv ${SCALING_CASE_RUN_ROOT} ${SCALING_CASE_RUN_ROOT}_${TEMP_TIMESTAMP}
 fi
 
@@ -37,7 +38,8 @@ fi
 # rm -rf ${SCALING_CASE_RUN_ROOT}
 printf "Installing driver in: ${TOPDIR}/${SCALING_CASE_RUN_ROOT}\n"
 
-git clone -b scalability-testing git@github.com:/illinois-ceesd/drivers_y3-prediction ${SCALING_CASE_RUN_ROOT}
+# git clone -b scalability-testing git@github.com:/illinois-ceesd/drivers_y3-prediction ${SCALING_CASE_RUN_ROOT}
+git clone git@github.com:/illinois-ceesd/drivers_y3-prediction ${SCALING_CASE_RUN_ROOT}
 cd ${SCALING_CASE_RUN_ROOT}
 export DRIVER_VERSION=$(git rev-parse HEAD)
 export DRIVER_BRANCH=$(git symbolic-ref --short HEAD)
@@ -55,13 +57,21 @@ cd data/cav5_comb4/3D/scalability
 ln -sf ../../../../../y3-prediction-scalability-data/*.msh .
 cd ../../../../scalability_test
 
+set -x
 job1=$(bsub scal1node_lassen.bsub.sh)
+set +x
 job1_id=$(printf "${job1}" | cut -d "<" -f 2 | cut -d ">" -f 1)
-job2=$(bsub -w "${job1_id}" scal2nodes_lassen.bsub.sh)
+set -x
+job2=$(bsub -w "ended(${job1_id})" scal2nodes_lassen.bsub.sh)
+set +x
 job2_id=$(printf "${job2}" | cut -d "<" -f 2 | cut -d ">" -f 1)
-job3=$(bsub -w "${job2_id}" scal4nodes_lassen.bsub.sh)
+set -x
+job3=$(bsub -w "ended(${job2_id})" scal4nodes_lassen.bsub.sh)
+set +x
 job3_id=$(printf "${job3}" | cut -d "<" -f 2 | cut -d ">" -f 1)
-job4=$(bsub -w "${job3_id}" scal8nodes_lassen.bsub.sh)
+set -x
+job4=$(bsub -w "ended(${job3_id})" scal8nodes_lassen.bsub.sh)
+set +x
 job4_id=$(printf "${job4}" | cut -d "<" -f 2 | cut -d ">" -f 1)
 printf "Scaling JobIDs: ${job1_id} ${job2_id} ${job3_id} ${job4_id}\n"
 

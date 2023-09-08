@@ -45,7 +45,7 @@ then
     ./install.sh --branch=${MIRGE_BRANCH} --env-name=${TIMING_ENV_NAME}
     cd ../
 fi
-if [ -d "emirge/mirgecom" ]
+if [ -d "emirge/grudge" ]
 then
     rm -f INSTALL_MIRGECOM
 else
