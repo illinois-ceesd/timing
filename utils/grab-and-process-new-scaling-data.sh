@@ -25,10 +25,11 @@ function process_parallel_runlog(){
     SUMMARY_FILE_ROOT=${SUMMARY_FILE_ROOT:-"${RUN_CASENAME}-timing-data"}
     YAML_OUTPUT_NAME="${SUMMARY_FILE_ROOT}-${run_timestamp}.yaml"
     SUMMARY_FILE_NAME="${SUMMARY_FILE_ROOT}-${run_timestamp}.sqlite"
+
     MIRGE_VERSION=${MIRGE_VERSION:-"Unknown"}
     DRIVER_VERSION=${DRIVER_VERSION:-"Unknown"}
     MIRGE_BRANCH=${MIRGE_BRANCH:-"Unknown"}
-    DRIVER_BRANCH=${DRIVER_BRANCH:-"Unkonwn"}
+    DRIVER_BRANCH=${DRIVER_BRANCH:-"Unknown"}
 
     if [ ! -f ${MAIN_YAML_FILE_NAME} ]; then
         touch ${MAIN_YAML_FILE_NAME}
@@ -106,42 +107,42 @@ EMIRGE_HOME=${EMIRGE_HOME:-"../../emirge"}
 
 conda deactivate
 source ${EMIRGE_HOME}/config/activate_env.sh
-process_file=${1:-""}
-if [[ ! -z "${process_file}" ]]; then
-    printf "Processing single file: ${process_file}\n"
-    timestamp=$(printf "${process_file}" | sed -e 's/.*-\([0-9]\{8\}-[0-9]\{6\}\)\.sqlite/\1/')
-    printf "Timestamp: ${timestamp}\n"
-    process_parallel_runlog ${timestamp}
-    return_code=$?
-    conda deactivate
-    exit ${return_code}
+
+
+# If $1 is given and it's a file
+if [[ -f "$1" ]]; then
+
+    candidate_timestamps=$(printf "$1" | sed -e 's/.*-\([0-9]\{8\}-[0-9]\{6\}\)\.sqlite/\1/')
+    SQL_DATA_SOURCE_DIR=$(dirname "$1")
+    ln -sf ${SQL_DATA_SOURCE_DIR}/*${candidate_timestamps}*.sqlite .
+    
+# If $1 is given and it's a directory or $1 isn't given at all
+else
+
+    SQL_DATA_SOURCE_DIR=${1:-"$SQL_DATA_SOURCE_DIR"}
+    if [[ ! -d "$SQL_DATA_SOURCE_DIR" ]]; then
+        printf "Error: ${SQL_DATA_SOURCE_DIR} is not a valid directory.\n"
+        exit 1
+    fi
+    ln -sf ${SQL_DATA_SOURCE_DIR}/*-rank*.sqlite .
+    candidate_timestamps=$(ls *-rank0-*.sqlite | sed -e 's/.*-\([0-9]\{8\}-[0-9]\{6\}\)\.sqlite/\1/' | sort -u)
 fi
 
-# This bit just checks the timestamp of the latest file in cwd and
-# then grabs any data from the data source that is newer.
-last_processed_timestamp=$(date -d "yesterday 24 hours ago" +"%Y-%m-%d %H:%M")
-last_date="0"      # $(date -d "yesterday 24 hours ago" +"%s")
-for timestamp in $(ls *-timing-data-*.sqlite | sed -e 's/.*-\([0-9]\{8\}-[0-9]\{6\}\)\.sqlite/\1/' | sort -u)
-do
-    data_date=$(date -d "${timestamp:0:8} ${timestamp:9:2}:${timestamp:11:2}:${timestamp:13:2}" +'%s')
-    if [ ${data_date} -gt ${last_date} ]; then
-        last_date=${data_date}
-    fi
-done
-last_processed_timestamp=$(date -d "@${last_date}" +"%Y-%m-%d %H:%M") 
-printf "Processing any data later than ${last_processed_timestamp}\n"
+# Get a list of already processed timestamps and convert them to YYYYMMDD-HHMMSS format
+processed_timestamps=$(ls *-sqlite | sed -e 's/.*-\([0-9]\{4\}\)\.\([0-9]\{2\}\)\.\([0-9]\{2\}\)-\([0-9]\{2\}\)\.\([0-9]\{2\}\)\.\([0-9]\{2\}\)-sqlite/\1\2\3-\4\5\6/' | sort -u)
 
-ln -sf ${SQL_DATA_SOURCE_DIR}/*-rank0-*.sqlite .
 
-for timestamp in $(ls *-rank0-*.sqlite | sed -e 's/.*-\([0-9]\{8\}-[0-9]\{6\}\)\.sqlite/\1/' | sort -u)
+# Process candidate datasets
+for timestamp in $candidate_timestamps
 do
-    data_date=$(date -d "${timestamp:0:8} ${timestamp:9:2}:${timestamp:11:2}:${timestamp:13:2}" +'%s')
-    if [ ${data_date} -gt ${last_date} ]; then
+    if ! echo "$processed_timestamps" | grep -q "$timestamp"; then
         printf "Processing timestamp: ${timestamp}\n"
         process_parallel_runlog ${timestamp}
+    else
+        printf "Skipping already processed timestamp: ${timestamp}\n"
     fi
 done
 
-rm *-rank0-*sqlite
+rm -f *-rank*sqlite
 
 conda deactivate
