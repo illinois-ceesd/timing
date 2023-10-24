@@ -52,6 +52,7 @@ plt.rcParams.update(params)
 
 
 def calculate_average(data):
+    """Calculate average of data items."""
     if len(data) == 0:
         return 0
     return sum(data)/len(data)
@@ -294,10 +295,13 @@ def main():
     if args.log_scale:
         for i, s in enumerate(timing_names):
             y_values = [scalfac * d[s] for d in data]
+            if len(y_values) == 0:
+                continue
             avg_value = calculate_average(y_values)
             # mean_range_value = (ymax - ymin)/2.0
             ymin, ymax = ax[i].get_ylim()
             ymin = max(1e-16, ymin)
+            ymax = max(1e-16, ymax)
             y_axis_min = min(np.log2(ymin), np.log2(avg_value/2))
             y_axis_max = max(np.log2(ymax), np.log2(avg_value*2))
             if args.limit_range:
