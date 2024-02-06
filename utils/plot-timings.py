@@ -29,7 +29,7 @@ import yaml
 from matplotlib.dates import date2num
 import matplotlib.pyplot as plt
 
-fontsize = 10
+fontsize = 14
 params = {  # "backend": "pdf",
           "text.usetex": True,
           "font.family": "serif",
@@ -167,15 +167,15 @@ def main():
     ax[-1].tick_params(axis="x", labelrotation=45)
     for i in range(numplots):
         ax[i].grid(True)
-    ax[-1].set_xlabel("date")
+    ax[-1].set_xlabel("date", fontsize=14)
     ax[0].legend(handles=leg,
               bbox_to_anchor=(0, 1.02, 0.3, 0.2), loc="lower left",
               mode="expand", borderaxespad=0, ncol=1)
     if args.per_step:
-        ax[0].set_ylabel("walltime/step (s)")
+        ax[0].set_ylabel("walltime/step (s)", fontsize=14)
     else:
         for i in range(numplots):
-            ax[i].set_ylabel("time (s)")
+            ax[i].set_ylabel("time (s)", fontsize=14)
     if args.save_plot:
         plt.savefig(args.save_plot, bbox_inches="tight")
     else:

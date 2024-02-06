@@ -35,7 +35,8 @@ from collections import defaultdict
 from matplotlib.pyplot import ScalarFormatter
 import matplotlib.ticker as ticker
 
-fontsize = 10
+# fontsize = 10
+fontsize = 12  # 10(too small) 14(too big)
 params = {  # "backend": "pdf",
           "text.usetex": True,
           "font.family": "serif",
@@ -115,7 +116,7 @@ def main():
 
     timing_names = ["time_startup", "time_first_step", "time_second_10"]
     timing_labels = ["startup", "first timestep", "second 9 timesteps"]
-    subplot_titles = ["Startup", "First timestep", "Second 9 Timesteps"]
+    subplot_titles = ["Startup", "RHS Compile", "9 Timesteps"]
 
     if args.memory:
         mem_names = ["max_python_mem_usage", "max_gpu_mem_usage"]
@@ -159,7 +160,7 @@ def main():
         ax = [ax]
 
     for i in range(num_line_plots):
-        ax[i].set_title(subplot_titles[i])
+        ax[i].set_title(subplot_titles[i], fontsize=14)
 
     def resort_filelist(filelist):
         nprocs = []
@@ -228,8 +229,8 @@ def main():
                     continue
 
             color = cmap(grad_colors[f]) if colorbar else colors[f]
-
-            data.append(d)
+            if d["time_first_step"] > 0:
+                data.append(d)
 
             kwargs = {
                 "marker": markers[f],
@@ -327,7 +328,7 @@ def main():
             ax[i].set_ylim(ymin, avg_value * 1.5)
 
     ax[-1].tick_params(axis="x", labelrotation=45)
-    ax[-1].set_xlabel("date")
+    ax[-1].set_xlabel("date", fontsize=14)
 
     legend_title = "MIRGE-Com Casename" if args.multicase else "Number of GPUs"
     legend_ncols = 1 if args.multicase else 4
@@ -387,10 +388,10 @@ def main():
                  mode="expand", borderaxespad=0, ncol=legend_ncols)
 
     if args.per_step:
-        ax[0].set_ylabel("walltime/step (s)")
+        ax[0].set_ylabel("walltime/step (s)", fontsize=14)
     else:
         for i in range(num_line_plots):
-            ax[i].set_ylabel("time (s)")
+            ax[i].set_ylabel("time (s)", fontsize=14)
 
     if args.save_plot:
         fig.savefig(args.save_plot, bbox_inches="tight")
