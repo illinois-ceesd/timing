@@ -1,0 +1,857 @@
+Customizing shell for Lassen.
+Activating 'nozzle.lazy.timing.env' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+Driver directory: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run
+Tue Feb  6 11:08:34 PST 2024
+Running parallel timing tests...
+* Running prediction-scalability test in scalability_test.
+** Running prediction-scalability_np32 on 32 ranks.
+Making 3D mesh with the following parameters:
+Output name: actii
+Number of threads: 1
+Mesh size: 9.535
+Injector ratio: 2
+Sample boundary layer ratio: 4
+Bulk boundary layer ratio: 4
+Injector boundary layer ratio: 2
+Cavity boundary layer ratio: 2
+Surround boundary layer ratio: 2
+Isolator factor: 2
+Cavity factor: 4
+Injector factor: 3
+Shear layer factor: 4
+Sample factor: 4
+Make link actii.msh for finished mesh.
+Expected mesh file already exists, skipping mesh creation.
+++ jsrun -g 1 -a 1 -n 32 bash /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh python -u -O -m mpi4py driver.py -c prediction-scalability_np32 -g /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test/log_data -i run_params.yaml --log --lazy
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+2024-02-06 11:08:36,956 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:36,956 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-06 11:08:36,956 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:36,956 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:36,962 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:36,962 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-06 11:08:36,962 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-06 11:08:36,962 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-06 11:08:37,241 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:37,241 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:37,241 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-06 11:08:37,241 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-06 11:08:37,339 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:37,339 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:37,339 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:37,339 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-06 11:08:37,343 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-06 11:08:37,343 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:37,343 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:37,343 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:37,551 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-06 11:08:37,551 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:37,552 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:37,552 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-06 11:08:37,565 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:37,565 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:37,565 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-06 11:08:37,565 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-06 11:08:37,607 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-06 11:08:37,607 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-06 11:08:37,607 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:37,607 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,024 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,024 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,024 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,024 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,024 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,024 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,024 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,024 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:08:39,028 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-06 11:09:06,120 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e4bb10>.
+2024-02-06 11:09:06,290 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e456b0>.
+2024-02-06 11:09:06,302 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102ec3ce0>.
+2024-02-06 11:09:06,781 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e8eff0>.
+2024-02-06 11:09:08,187 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102ec3ce0>.
+2024-02-06 11:09:08,238 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e45530>.
+2024-02-06 11:09:08,250 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e4bc20>.
+2024-02-06 11:09:08,251 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e8f0a0>.
+2024-02-06 11:09:15,188 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e4bbb0>.
+2024-02-06 11:09:15,201 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102d4e390>.
+2024-02-06 11:09:15,204 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e455a0>.
+2024-02-06 11:09:15,216 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e8f0d0>.
+2024-02-06 11:09:15,216 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102ec3ce0>.
+2024-02-06 11:09:15,222 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102d4e550>.
+2024-02-06 11:09:15,223 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e8eff0>.
+2024-02-06 11:09:15,250 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102ec3ce0>.
+2024-02-06 11:09:18,839 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102ec3ce0>.
+2024-02-06 11:09:18,839 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e45630>.
+2024-02-06 11:09:18,890 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102d4e8f0>.
+2024-02-06 11:09:18,924 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102d4eba0>.
+2024-02-06 11:09:18,984 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102ec3ce0>.
+2024-02-06 11:09:18,984 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e45530>.
+2024-02-06 11:09:19,000 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102d4e5b0>.
+2024-02-06 11:09:19,041 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102d4e9b0>.
+2024-02-06 11:09:19,042 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e45540>.
+2024-02-06 11:09:19,055 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102d4e7d0>.
+2024-02-06 11:09:19,058 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102ec3ce0>.
+2024-02-06 11:09:19,058 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102d59cf0>.
+2024-02-06 11:09:19,060 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e8f0d0>.
+2024-02-06 11:09:19,091 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e4bbb0>.
+2024-02-06 11:09:19,091 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102d91640>.
+Setting force_eval = False for pre-compiled time integration
+Shock capturing parameters: alpha 0.01, s0 -6.408239965311849, kappa 0.5
+Smoothing characteristic length for use in artificial viscosity
+smoothing_alpha 1e-12
+Artificial viscosity smoothness_alpha=1e-12
+Artificial viscosity smoothness_tau=1e-12
+Artificial viscosity using modified transport properties
+	 mu, beta, kappa
+Shock capturing parameters:
+	av_mu 0.1
+	av_beta 6.0
+	av_kappa 1.0
+	av_prantdl 0.9
+stagnation temperature 2076.43
+
+#### Simluation control data: ####
+	nrestart = 1000
+	nhealth = -1
+	nstatus = -1
+	Constant dt mode, current_dt = 1e-13
+	t_final = 2e-11
+	order = 4
+	dimension = 3
+	Time integration compiled_lsrk54
+   Boundary Conditions:
+	Checking for outflow boundary in mesh.
+	Checking for inflow boundary in mesh.
+	Checking for flow boundary in mesh.
+	Checking for injection boundary in mesh.
+	Checking for upstream_injection boundary in mesh.
+	Checking for isothermal_wall boundary in mesh.
+	Checking for wall_interface boundary in mesh.
+
+	Interface wall boundary conditions are noslip for velocity
+#### Simluation control data: ####
+
+
+#### Visualization setup: ####
+	Basic visualization output enabled.
+	(cv, dv, cfl)
+	Extra visualization output enabled for derived quantities.
+	(velocity, mass_fractions, etc.)
+	Writing viz data every 1000 steps.
+#### Visualization setup: ####
+
+#### Simluation initialization data: ####
+	Initializing flow to y3prediction
+	Inflow stagnation pressure 274500.0
+	Inflow stagnation temperature 2076.43
+	Injection stagnation pressure 50400.0
+	Injection stagnation temperature 300.0
+	Upstream injection stagnation pressure50400.0
+	Upstream injection stagnation temperature300.0
+#### Simluation initialization data: ####
+
+#### Simluation setup data: ####
+	vel_sigma = 500
+	temp_sigma = 1250
+	vel_sigma_injection = 5000
+	temp_sigma_injection = 5000
+#### Simluation setup data: ####
+
+#### Ignition control parameters ####
+spark center (0.677,-0.021)
+spark FWHM 0.02
+spark strength 600.0
+ignition time 5e-08
+ignition duration 1e-08
+heat source ignition
+#### Ignition control parameters ####
+
+
+Setting inviscid numerical flux to: Rusanov
+Setting viscous numerical flux to: Harmonic
+
+2024-02-06 11:09:19,117 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e45520>.
+
+#### Simluation material properties: ####
+#### Fluid domain: ####
+	mu = 4.216360056e-05
+	kappa = 0.05621788139856423
+	Prandtl Number  = 0.75
+	nspecies = 7
+	full multi-species initialization with pyrometheus eos
+	combustion source terms enabled
+	Pyrometheus EOS
+	Pyro mechanism {pyro_mech}
+
+Species mass fractions limited to [0:1]
+#### Wall domain: ####
+	Reactive wall model for porous media
+	Wall oxidizer transport enabled
+	 Wall mass loss enabled
+	Wall density = 1625
+	Wall cp = 770
+	Wall O2 diff = 0.0001
+	Wall surround density = 7900.0
+	Wall surround cp = 470
+	Wall surround kappa = 48
+	Wall time scale = 100
+	Wall penalty = 0
+#### Simluation material properties: ####
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+	 Power law transport model:
+		 temperature dependent viscosity, species diffusivity
+	transport_alpha = 0.6
+	transport_beta = 4.093e-07
+	transport_sigma = 2.0
+	transport_n = 0.666
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+	species diffusivity = [0.0001 0.0001 0.0001 0.0001 0.0001 0.0001 0.0001]
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+#### Simluation initialization data: ####
+	inlet Mach number 0.039188827430281535
+	inlet gamma 1.2942272392672118
+	inlet temperature 2075.9609743385954
+	inlet pressure 274227.36437127565
+	inlet rho 0.4607349972974453
+	inlet velocity 34.39515974209585
+	********
+	outlet Mach number 3.793040446574542
+	outlet gamma 1.3777480529683475
+	outlet temperature 558.5757736845096
+	outlet pressure 2284.257055974718
+	outlet rho 0.014263380803459059
+	outlet velocity 1796.0265011633348
+	********
+	injector Mach number 1.0
+	injector gamma 1.3246735835852341
+	injector temperature 258.1007615257789
+	injector pressure 27281.922529269654
+	injector rho 0.1911428114322463
+	injector velocity -434.8234312418551
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+Reading mesh from data/actii.msh
+Reading gmsh mesh from disk file...
+Done. Populating meshmode data structures...
+Done.
+Read GMSH: 14.767586946487427
+MeshData: 27.93484115600586
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py:573: UserWarning: num_ranks is deprecated, use nranks_per_axis instead.
+  warn("num_ranks is deprecated, use nranks_per_axis instead.")
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+2024-02-06 11:10:15,300 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,300 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,301 - INFO - meshmode.discretization.connection.face - building face restriction: start
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+2024-02-06 11:10:15,302 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,302 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,302 - INFO - meshmode.discretization.connection.face - building face restriction: start
+No target file specied, using restart as target
+2024-02-06 11:10:15,302 - INFO - meshmode.discretization.connection.face - building face restriction: start
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+2024-02-06 11:10:15,310 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,310 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,310 - INFO - meshmode.discretization.connection.face - building face restriction: start
+No target file specied, using restart as target
+2024-02-06 11:10:15,310 - INFO - meshmode.discretization.connection.face - building face restriction: start
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+2024-02-06 11:10:15,314 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,314 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,315 - INFO - meshmode.discretization.connection.face - building face restriction: start
+No target file specied, using restart as target
+2024-02-06 11:10:15,315 - INFO - meshmode.discretization.connection.face - building face restriction: start
+No target file specied, using restart as target
+No target file specied, using restart as target
+2024-02-06 11:10:15,318 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,318 - INFO - meshmode.discretization.connection.face - building face restriction: start
+No target file specied, using restart as target
+No target file specied, using restart as target
+2024-02-06 11:10:15,320 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,320 - INFO - meshmode.discretization.connection.face - building face restriction: start
+No target file specied, using restart as target
+Making 3D order 4 discretization.
+2024-02-06 11:10:15,326 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,326 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,327 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,328 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,330 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,330 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,330 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,330 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,332 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,330 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,330 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,330 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,330 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,814 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,814 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,814 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,814 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,814 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,814 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,814 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,814 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,814 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,814 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,814 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,814 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,814 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,814 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,814 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,814 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,815 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,815 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,818 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,815 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,815 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,818 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,815 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,818 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,815 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,818 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,819 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,815 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,818 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,815 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,819 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,819 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,825 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,825 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,825 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,825 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,825 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,825 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,825 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,828 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,828 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,829 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,828 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,829 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,829 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,832 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,832 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,832 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,832 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,832 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,832 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,833 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,834 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,834 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,833 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,834 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,834 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,835 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,835 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,836 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,837 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,835 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,836 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,839 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,836 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,840 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,840 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,841 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,840 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,841 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,842 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,842 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,838 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,838 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,838 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,843 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,838 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,839 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,843 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,838 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,838 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,838 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,845 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,845 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,849 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,849 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,849 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,849 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,850 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,850 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,850 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,853 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,853 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,854 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,854 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,855 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,855 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,856 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,856 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,857 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,857 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,860 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,860 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,861 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,861 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,862 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,866 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,867 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,867 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,875 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,875 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,877 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,877 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,881 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,882 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,882 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,883 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,884 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,884 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,887 - INFO - meshmode.discretization.connection.face - building face restriction: done
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+2024-02-06 11:10:15,892 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102d4e7d0> to 3896 bytes
+2024-02-06 11:10:15,895 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,895 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,903 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes0_3d' with 1 statements.
+2024-02-06 11:10:15,913 - INFO - meshmode.discretization.connection.face - building face restriction: done
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+2024-02-06 11:10:15,918 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e45630> to 3896 bytes
+2024-02-06 11:10:15,918 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e456b0> to 3896 bytes
+2024-02-06 11:10:15,918 - INFO - meshmode.discretization.connection.face - building face restriction: done
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+2024-02-06 11:10:15,921 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102d4eba0> to 3896 bytes
+2024-02-06 11:10:15,928 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,928 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,929 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes0_3d' with 1 statements.
+2024-02-06 11:10:15,930 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes0_3d' with 1 statements.
+2024-02-06 11:10:15,931 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes0_3d' with 1 statements.
+2024-02-06 11:10:15,935 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-02-06 11:10:15,938 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_3d' from 0.0MB to 0.0MB.
+2024-02-06 11:10:15,942 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,942 - INFO - meshmode.discretization.connection.face - building face restriction: start
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+2024-02-06 11:10:15,947 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102d4e8f0> to 3896 bytes
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+2024-02-06 11:10:15,952 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e4bb10> to 3896 bytes
+2024-02-06 11:10:15,955 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,955 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-06 11:10:15,957 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes0_3d' with 1 statements.
+2024-02-06 11:10:15,960 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,961 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-02-06 11:10:15,961 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes0_3d' with 1 statements.
+2024-02-06 11:10:15,963 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_3d' from 0.0MB to 0.0MB.
+2024-02-06 11:10:15,964 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-02-06 11:10:15,966 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-02-06 11:10:15,966 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_3d' from 0.0MB to 0.0MB.
+2024-02-06 11:10:15,969 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_3d' from 0.0MB to 0.0MB.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+2024-02-06 11:10:15,971 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102ec3ce0> to 3896 bytes
+2024-02-06 11:10:15,977 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:15,981 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes0_3d' with 1 statements.
+2024-02-06 11:10:15,985 - INFO - meshmode.discretization.connection.face - building face restriction: done
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+2024-02-06 11:10:15,987 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102ec3ce0> to 3896 bytes
+2024-02-06 11:10:15,988 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-02-06 11:10:15,991 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_3d' from 0.0MB to 0.0MB.
+2024-02-06 11:10:15,992 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-02-06 11:10:15,994 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_3d' from 0.0MB to 0.0MB.
+2024-02-06 11:10:15,997 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes0_3d' with 1 statements.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+2024-02-06 11:10:15,997 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102d59cf0> to 3896 bytes
+2024-02-06 11:10:16,005 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-06 11:10:16,007 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes0_3d' with 1 statements.
+2024-02-06 11:10:16,013 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-02-06 11:10:16,015 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_3d' from 0.0MB to 0.0MB.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+2024-02-06 11:10:16,016 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102e45530> to 3896 bytes
+2024-02-06 11:10:16,025 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes0_3d' with 1 statements.
+2024-02-06 11:10:16,029 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-02-06 11:10:16,033 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_3d' from 0.0MB to 0.0MB.
+2024-02-06 11:10:16,039 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-02-06 11:10:16,041 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_3d' from 0.0MB to 0.0MB.
+2024-02-06 11:10:16,057 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-02-06 11:10:16,061 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_3d' from 0.0MB to 0.0MB.
+2024-02-06 11:10:16,313 - INFO - loopy.tools - preprocess_program on 'frozen_nodes0_3d': completed (0.37s wall 0.36x CPU)
+2024-02-06 11:10:16,340 - INFO - loopy.tools - preprocess_program on 'frozen_nodes0_3d': completed (0.34s wall 0.37x CPU)
+2024-02-06 11:10:16,341 - INFO - loopy.tools - preprocess_program on 'frozen_nodes0_3d': completed (0.32s wall 0.39x CPU)
+2024-02-06 11:10:16,341 - INFO - loopy.tools - preprocess_program on 'frozen_nodes0_3d': completed (0.36s wall 0.37x CPU)
+2024-02-06 11:10:16,345 - INFO - loopy.tools - preprocess_program on 'frozen_nodes0_3d': completed (0.37s wall 0.33x CPU)
+2024-02-06 11:10:16,345 - INFO - loopy.tools - preprocess_program on 'frozen_nodes0_3d': completed (0.35s wall 0.37x CPU)
+2024-02-06 11:10:16,346 - INFO - loopy.tools - preprocess_program on 'frozen_nodes0_3d': completed (0.37s wall 0.34x CPU)
+2024-02-06 11:10:16,408 - INFO - loopy.tools - preprocess_program on 'frozen_nodes0_3d': completed (0.36s wall 0.35x CPU)
+2024-02-06 11:10:17,221 - INFO - pyopencl - build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.80 s)
+2024-02-06 11:10:17,236 - INFO - pyopencl - build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.81 s)
+2024-02-06 11:10:17,236 - INFO - pyopencl - build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.81 s)
+[lassen393:126118] *** Process received signal ***
+[lassen393:126118] Signal: Segmentation fault (11)
+[lassen393:126118] Signal code:  (3)
+[lassen393:126118] Failing at address: 0x3fe1c835903e18fe
+2024-02-06 11:10:17,252 - INFO - pyopencl - build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.80 s)
+[lassen393:126121] *** Process received signal ***
+[lassen393:126121] Signal: Segmentation fault (11)
+[lassen393:126121] Signal code:  (3)
+[lassen393:126121] Failing at address: 0x3fe1c835903e18fe
+[lassen393:126120] *** Process received signal ***
+[lassen393:126120] Signal: Segmentation fault (11)
+[lassen393:126120] Signal code:  (3)
+[lassen393:126120] Failing at address: 0x3fe1c835903e18fe
+2024-02-06 11:10:17,258 - INFO - pyopencl - build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.80 s)
+2024-02-06 11:10:17,265 - INFO - pyopencl - build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.81 s)
+2024-02-06 11:10:17,265 - INFO - pyopencl - build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.81 s)
+2024-02-06 11:10:17,272 - INFO - pyopencl - build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.81 s)
+2024-02-06 11:10:17,272 - INFO - pyopencl - build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.81 s)
+[lassen615:88480] *** Process received signal ***
+[lassen615:88480] Signal: Segmentation fault (11)
+[lassen615:88480] Signal code:  (3)
+[lassen615:88480] Failing at address: 0x3fe1c835903e18fe
+[lassen529:43561] *** Process received signal ***
+[lassen529:43561] Signal: Segmentation fault (11)
+[lassen529:43561] Signal code:  (3)
+[lassen529:43561] Failing at address: 0x3fe1c835903e18fe
+[lassen615:88477] *** Process received signal ***
+[lassen615:88477] Signal: Segmentation fault (11)
+[lassen615:88477] Signal code:  (3)
+[lassen615:88477] Failing at address: 0x3fe1c835903e18fe
+[lassen615:88479] *** Process received signal ***
+[lassen615:88479] Signal: Segmentation fault (11)
+[lassen615:88479] Signal code:  (3)
+[lassen615:88479] Failing at address: 0x3fe1c835903e18fe
+[lassen529:43562] *** Process received signal ***
+[lassen529:43562] Signal: Segmentation fault (11)
+[lassen529:43562] Signal code:  (3)
+[lassen529:43562] Failing at address: 0x3fe1c835903e18fe
+[lassen529:43563] *** Process received signal ***
+[lassen529:43563] Signal: Segmentation fault (11)
+[lassen529:43563] Signal code:  (3)
+[lassen529:43563] Failing at address: 0x3fe1c835903e18fe
+2024-02-06 11:10:17,314 - INFO - pyopencl - build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+<< Rank 14: Generating lwcore_cpu.5609795_1.14 on lassen393 Tue Feb  6 11:10:17 PST 2024 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 12: Generating lwcore_cpu.5609795_1.12 on lassen393 Tue Feb  6 11:10:17 PST 2024 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 13: Generating lwcore_cpu.5609795_1.13 on lassen393 Tue Feb  6 11:10:17 PST 2024 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+[lassen392:128588] *** Process received signal ***
+[lassen392:128588] Signal: Segmentation fault (11)
+[lassen392:128588] Signal code:  (3)
+[lassen392:128588] Failing at address: 0x3fe1c835903e18fe
+<< Rank 22: Generating lwcore_cpu.5609795_1.22 on lassen615 Tue Feb  6 11:10:17 PST 2024 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 17: Generating lwcore_cpu.5609795_1.17 on lassen529 Tue Feb  6 11:10:17 PST 2024 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 20: Generating lwcore_cpu.5609795_1.20 on lassen615 Tue Feb  6 11:10:17 PST 2024 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 21: Generating lwcore_cpu.5609795_1.21 on lassen615 Tue Feb  6 11:10:17 PST 2024 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 19: Generating lwcore_cpu.5609795_1.19 on lassen529 Tue Feb  6 11:10:17 PST 2024 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 18: Generating lwcore_cpu.5609795_1.18 on lassen529 Tue Feb  6 11:10:17 PST 2024 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 11: Generating lwcore_cpu.5609795_1.11 on lassen392 Tue Feb  6 11:10:17 PST 2024 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 14:  Generated lwcore_cpu.5609795_1.14 on lassen393 Tue Feb  6 11:10:22 PST 2024 in 5 secs >>
+<< Rank 13:  Generated lwcore_cpu.5609795_1.13 on lassen393 Tue Feb  6 11:10:22 PST 2024 in 5 secs >>
+<< Rank 12:  Generated lwcore_cpu.5609795_1.12 on lassen393 Tue Feb  6 11:10:22 PST 2024 in 5 secs >>
+<< Rank 14: Waiting 60 secs before aborting task on lassen393 Tue Feb  6 11:10:22 PST 2024 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 13: Waiting 60 secs before aborting task on lassen393 Tue Feb  6 11:10:22 PST 2024 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 12: Waiting 60 secs before aborting task on lassen393 Tue Feb  6 11:10:22 PST 2024 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 22:  Generated lwcore_cpu.5609795_1.22 on lassen615 Tue Feb  6 11:10:22 PST 2024 in 5 secs >>
+<< Rank 21:  Generated lwcore_cpu.5609795_1.21 on lassen615 Tue Feb  6 11:10:22 PST 2024 in 5 secs >>
+<< Rank 20:  Generated lwcore_cpu.5609795_1.20 on lassen615 Tue Feb  6 11:10:22 PST 2024 in 5 secs >>
+<< Rank 22: Waiting 60 secs before aborting task on lassen615 Tue Feb  6 11:10:22 PST 2024 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 21: Waiting 60 secs before aborting task on lassen615 Tue Feb  6 11:10:22 PST 2024 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 20: Waiting 60 secs before aborting task on lassen615 Tue Feb  6 11:10:22 PST 2024 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 11:  Generated lwcore_cpu.5609795_1.11 on lassen392 Tue Feb  6 11:10:22 PST 2024 in 5 secs >>
+<< Rank 17:  Generated lwcore_cpu.5609795_1.17 on lassen529 Tue Feb  6 11:10:22 PST 2024 in 5 secs >>
+<< Rank 18:  Generated lwcore_cpu.5609795_1.18 on lassen529 Tue Feb  6 11:10:22 PST 2024 in 5 secs >>
+<< Rank 19:  Generated lwcore_cpu.5609795_1.19 on lassen529 Tue Feb  6 11:10:22 PST 2024 in 5 secs >>
+<< Rank 11: Waiting 60 secs before aborting task on lassen392 Tue Feb  6 11:10:22 PST 2024 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 17: Waiting 60 secs before aborting task on lassen529 Tue Feb  6 11:10:22 PST 2024 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 18: Waiting 60 secs before aborting task on lassen529 Tue Feb  6 11:10:22 PST 2024 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 19: Waiting 60 secs before aborting task on lassen529 Tue Feb  6 11:10:22 PST 2024 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 14:  Waited 60 secs -> now aborting task on lassen393 Tue Feb  6 11:11:22 PST 2024 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 12:  Waited 60 secs -> now aborting task on lassen393 Tue Feb  6 11:11:22 PST 2024 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 13:  Waited 60 secs -> now aborting task on lassen393 Tue Feb  6 11:11:22 PST 2024 (LLNL_COREDUMP_KILL=task) >>
+[lassen393:126118] -----------------------
+[lassen393:126118] -----------------------
+[lassen393:126121] -----------------------
+[lassen393:126121] -----------------------
+[lassen393:126118] *** End of error message ***
+[lassen393:126120] -----------------------
+[lassen393:126120] -----------------------
+[lassen393:126121] *** End of error message ***
+[lassen393:126120] *** End of error message ***
+<< Rank 22:  Waited 60 secs -> now aborting task on lassen615 Tue Feb  6 11:11:22 PST 2024 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 21:  Waited 60 secs -> now aborting task on lassen615 Tue Feb  6 11:11:22 PST 2024 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 20:  Waited 60 secs -> now aborting task on lassen615 Tue Feb  6 11:11:22 PST 2024 (LLNL_COREDUMP_KILL=task) >>
+[lassen615:88480] -----------------------
+[lassen615:88480] -----------------------
+[lassen615:88477] -----------------------
+[lassen615:88477] -----------------------
+[lassen615:88479] -----------------------
+[lassen615:88479] -----------------------
+[lassen615:88479] *** End of error message ***
+[lassen615:88480] *** End of error message ***
+[lassen615:88477] *** End of error message ***
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh: line 12: 126121 Segmentation fault      "$@"
+++ return_code=139
+++ set +x
+mv: cannot stat 'viz_data': No such file or directory
+mv: cannot stat 'restart_data': No such file or directory
+**  scalability_test/prediction-scalability_np32 failed.
+Tue Feb  6 11:11:22 PST 2024
+Scaling/timing tests done.
+Passing tests: 
+Failing tests:  scalability_test/prediction-scalability_np32
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 5609795: <scale32> in cluster <lassen> Exited
+
+Job <scale32> was submitted from host <lassen709> by user <mtcampbe> in cluster <lassen> at Tue Feb  6 10:48:21 2024
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <mtcampbe> in cluster <lassen> at Tue Feb  6 11:08:26 2024
+                            <40*lassen615>
+                            <40*lassen793>
+                            <40*lassen664>
+                            <40*lassen529>
+                            <40*lassen378>
+                            <40*lassen392>
+                            <40*lassen393>
+                            <40*lassen221>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test> was used as the working directory.
+Started at Tue Feb  6 11:08:26 2024
+Terminated at Tue Feb  6 11:11:55 2024
+Results reported at Tue Feb  6 11:11:55 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -nnodes 8
+#BSUB -G uiuc
+#BSUB -W 120
+#BSUB -J scale32
+#BSUB -q pbatch
+#BSUB -o scal32.txt
+
+source ../emirge/config/activate_env.sh
+source ../emirge/mirgecom/scripts/mirge-testing-env.sh
+source ../scripts/multi_scalability.sh -p ../ -s 32 -n 32
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.59 sec.
+    Max Memory :                                 59 MB
+    Average Memory :                             56.95 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1425 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   208 sec.
+    Turnaround time :                            1414 sec.
+
+The output (if any) is above this job summary.
+
