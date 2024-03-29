@@ -6,8 +6,8 @@ set -o pipefail
 
 date
 
-MIRGE_BRANCH="y1-production"
-TIMING_ENV_NAME="y1.timing.env"
+MIRGE_BRANCH="main"
+TIMING_ENV_NAME="mirge.timing.env"
 
 if [ ! -z "$1" ]; then
     MIRGE_BRANCH="$1"

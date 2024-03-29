@@ -30,8 +30,8 @@ python utils/plot-timings.py -l --save-plot plots/isolator-full.png isolator-tim
 python utils/plot-timings.py -l --save-plot plots/y2-prediction-single-smoke_test-full.png y2-prediction/yaml/single_timing_smoke_test-timing-data.yaml
 python utils/plot-timings.py -l --save-plot plots/y2-prediction-single-smoke_test_3d-full.png y2-prediction/yaml/single_timing_smoke_test_3d-timing-data.yaml
 python utils/plot-timings.py -l --save-plot plots/y2-prediction-single-smoke_test_ks-full.png y2-prediction/yaml/single_timing_smoke_test_ks-timing-data.yaml
-python utils/plot-multi-timings.py -l -r -g --save-plot plots/y3-prediction-scalability-full.png y3-prediction/yaml/*.yaml
-python utils/plot-multi-timings.py -s -l -r -g -w --save-plot y3-prediction-scalability-step-full.png y3-prediction/yaml/*.yaml
+python utils/plot-multi-timings.py -k -l -r -g --save-plot plots/y3-prediction-scalability-full.png y3-prediction/yaml/*.yaml
+python utils/plot-multi-timings.py -k -s -l -r -g -w --save-plot y3-prediction-scalability-step-full.png y3-prediction/yaml/*.yaml
 mv y3-prediction-scalability-step-full.png plots
 mv weak_scaling_y3-prediction-scalability-step-full.png plots
 
@@ -49,8 +49,8 @@ python utils/plot-timings.py -d "${PLOT_WINDOW_START}" -s --save-plot plots/y2-p
 python utils/plot-timings.py -d "${PLOT_WINDOW_START}" -s --save-plot plots/y2-prediction-single-smoke_test_3d-step-recent.png y2-prediction/yaml/single_timing_smoke_test_3d-timing-data.yaml
 python utils/plot-timings.py -d "${PLOT_WINDOW_START}" -s --save-plot plots/y2-prediction-single-smoke_test_ks-step-recent.png y2-prediction/yaml/single_timing_smoke_test_ks-timing-data.yaml
 
-python utils/plot-multi-timings.py -d "${PLOT_WINDOW_START}" -l -r -g -p viridis --save-plot plots/y3-prediction-scalability-recent.png y3-prediction/yaml/*.yaml
-python utils/plot-multi-timings.py -d "${PLOT_WINDOW_START}" -s -l -r -g -p viridis --save-plot plots/y3-prediction-scalability-step-recent.png y3-prediction/yaml/*.yaml
+python utils/plot-multi-timings.py -k -d "${PLOT_WINDOW_START}" -l -r -g -p viridis --save-plot plots/y3-prediction-scalability-recent.png y3-prediction/yaml/*.yaml
+python utils/plot-multi-timings.py -k -d "${PLOT_WINDOW_START}" -s -l -r -g -p viridis --save-plot plots/y3-prediction-scalability-step-recent.png y3-prediction/yaml/*.yaml
 
 # Update origin/timing with the new README and plots
 git add plots

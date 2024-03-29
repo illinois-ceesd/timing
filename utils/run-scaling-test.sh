@@ -1,15 +1,35 @@
 #!/bin/bash
+# This script does the following:
+# - collects the sql data from the place where
+# it ran (last night), processes it and inserts
+# the timing data into the nproc-specific yaml
+# files for the y3-scaling runs.
+# - Pushes those results to the git timing repo
+# - Submits the y3-prediction scaling run jobs for 
+# tonight's tests 
 
 TOPDIR=$(pwd)
 
-# Run this dumb data collect script which
-# collects the sql data from the place where
-# it runs, and inserts the timing data into
-# the nproc-specific yaml files.
 SCALING_CASE_RUN_ROOT="y3-prediction-scaling-run"
 SCALING_CASE_TIMING_ROOT="y3-prediction"
 TEMP_TIMESTAMP=$(date "+%Y.%m.%d-%H.%M.%S")
 EMIRGE_HOME=${EMIRGE_HOME:-"${TOPDIR}/emirge"}
+export MIRGE_CACHE_ROOT="${TOPDIR}/timing-run-caches"
+SCALING_DAY_OF_WEEK=$(date +%a)
+
+if [ -f DELETE_TIMING_CACHE ]; then
+    if [ "$SCALING_DAY_OF_WEEK" = "Mon" ]; then
+        echo "Today is Monday. Deleting the cache directory..."
+        mv $MIRGE_CACHE_ROOT ${MIRGE_CACHE_ROOT}.delete
+        rm -rf ${MIRGE_CACHE_ROOT}.delete &
+        # Only remove the cache *once* on Monday
+        rm DELETE_TIMING_CACHE
+    else
+        echo "Today is not Monday. Skipping cache deletion."
+        # Re-enable cache deletion for when Monday hits
+        touch DELETE_TIMING_CACHE
+    fi
+fi
 
 cd ${EMIRGE_HOME}/mirgecom
 export MIRGE_VERSION=$(git rev-parse HEAD)

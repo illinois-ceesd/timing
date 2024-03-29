@@ -17,7 +17,7 @@ TIMING_ARCH=$(uname -m)
 TIMING_REPO="illinois-ceesd/timing.git"
 TIMING_BRANCH="main"
 TIMING_ENV_NAME="${exename}.lazy.timing.env"
-MIRGE_BRANCH="production"
+MIRGE_BRANCH="cache-globalfs"
 DRIVER_REPO="illinois-ceesd/drivers_y1-nozzle"
 DRIVER_BRANCH="update-to-y3"
 DRIVER_NAME="y1-production-nozzle-lazy"
@@ -40,7 +40,7 @@ then
     fi
 
     # --- grab emirge and install MIRGE-Com 
-    git clone https://github.com/illinois-ceesd/emirge.git
+    git clone -b install-with-ssh https://github.com/illinois-ceesd/emirge.git
     cd emirge
     ./install.sh --branch=${MIRGE_BRANCH} --env-name=${TIMING_ENV_NAME}
     cd ../

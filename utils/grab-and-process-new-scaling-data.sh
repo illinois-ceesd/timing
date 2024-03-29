@@ -35,9 +35,12 @@ function process_parallel_runlog(){
         touch ${MAIN_YAML_FILE_NAME}
     fi
 
-    printf "get_timing_data_from_log: Casename ${RUN_CASENAME}\n"
-    printf "get_timing_data_from_log: Summary File ${SUMMARY_FILE_NAME}\n"
-    printf "get_timing_data_from_log: YAML output ${YAML_OUTPUT_NAME}\n"
+    printf "get_timing_data_from_log: Casename = (${RUN_CASENAME})\n"
+    printf "get_timing_data_from_log: Number of ranks = (${nproc})\n"
+    printf "get_timing_data_from_log: Run timestamp = (${run_timestamp})\n"
+    printf "get_timing_data_from_log: Summary filename = (${SUMMARY_FILE_NAME})\n"
+    printf "get_timing_data_from_log: Run YAML filename = (${YAML_OUTPUT_NAME})\n"
+    printf "get_timing_data_from_log: Main YAML filename = (${MAIN_YAML_FILE_NAME})\n"
 
     set -x
     runalyzer-gather ${SUMMARY_FILE_NAME} ${run_name}-rank*-${run_timestamp}.sqlite
@@ -125,12 +128,17 @@ else
         exit 1
     fi
     ln -sf ${SQL_DATA_SOURCE_DIR}/*-rank*.sqlite .
+    # All datasets will have a rank0, so we only need to look for those
     candidate_timestamps=$(ls *-rank0-*.sqlite | sed -e 's/.*-\([0-9]\{8\}-[0-9]\{6\}\)\.sqlite/\1/' | sort -u)
 fi
 
 # Get a list of already processed timestamps and convert them to YYYYMMDD-HHMMSS format
-processed_timestamps=$(ls *-sqlite | sed -e 's/.*-\([0-9]\{4\}\)\.\([0-9]\{2\}\)\.\([0-9]\{2\}\)-\([0-9]\{2\}\)\.\([0-9]\{2\}\)\.\([0-9]\{2\}\)-sqlite/\1\2\3-\4\5\6/' | sort -u)
+# processed_timestamps=$(ls *-sqlite | sed -e 's/.*-\([0-9]\{4\}\)\.\([0-9]\{2\}\)\.\([0-9]\{2\}\)-\([0-9]\{2\}\)\.\([0-9]\{2\}\)\.\([0-9]\{2\}\)-sqlite/\1\2\3-\4\5\6/' | sort -u)
+NHISTORY=7
+processed_timestamps=$(find . -name '*-sqlite' -mtime -$NHISTORY -exec basename {} \; | sed -e 's/.*-\([0-9]\{4\}\)\.\([0-9]\{2\}\)\.\([0-9]\{2\}\)-\([0-9]\{2\}\)\.\([0-9]\{2\}\)\.\([0-9]\{2\}\)-sqlite/\1\2\3-\4\5\6/' | sort -u)
 
+printf "Timestamps processed in the last ($NHISTORY) days: ($processed_timestamps)\n"
+printf "Candidate timetamps: ($candidate_timestamps)\n"
 
 # Process candidate datasets
 for timestamp in $candidate_timestamps
