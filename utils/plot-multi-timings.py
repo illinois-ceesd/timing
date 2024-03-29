@@ -85,6 +85,7 @@ def main():
     parser.add_argument("-d", "--date", metavar="YYYY-MM-DD")
     parser.add_argument("-e", "--end", metavar="YYYY-MM-DD")
     parser.add_argument("-r", "--limit-range", action="store_true")
+    parser.add_argument("-k", "--skip-outliers", action="store_true")
     parser.add_argument("-w", "--weak-scaling", action="store_true")
     parser.add_argument("-n", "--name-mapping", metavar="filename",
                         type=str, help="file with name mapping")
@@ -210,6 +211,10 @@ def main():
         data = []
 
         for d in raw_data:
+            if args.skip_outliers:
+                if "comment" in d:
+                    if "outlier" in d["comment"].lower():
+                        continue
             try:
                 nproc = d["num_processors"]
             except KeyError:

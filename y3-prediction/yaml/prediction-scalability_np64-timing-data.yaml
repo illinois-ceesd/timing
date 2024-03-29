@@ -132,6 +132,7 @@ time_first_10: 1146.9416999593377
 time_second_10: 36.64872848987579
 max_python_mem_usage: 7280.0
 max_gpu_mem_usage: 8979.625
+comment: outlier
 ---
 run_date: 2023-04-19 16:50
 run_host: Lassen

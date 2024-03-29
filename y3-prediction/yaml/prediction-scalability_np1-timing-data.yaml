@@ -672,6 +672,7 @@ time_first_10: 1140.5040221214294
 time_second_10: 23.932398557662964
 max_python_mem_usage: 8121.0625
 max_gpu_mem_usage: 8873.875
+comment: outlier
 ---
 run_date: 2023-04-13 08:51
 run_host: Lassen
@@ -822,6 +823,7 @@ time_first_10: 5083.277339527383
 time_second_10: 8.960462469607592
 max_python_mem_usage: 6932.0
 max_gpu_mem_usage: 12169.625
+comment: outlier
 ---
 run_date: 2023-04-21 08:51
 run_host: Lassen
@@ -837,6 +839,7 @@ time_first_10: 5074.339682106984
 time_second_10: 8.953427562992147
 max_python_mem_usage: 6924.3125
 max_gpu_mem_usage: 12167.625
+comment: outlier
 ---
 run_date: 2023-04-21 13:49
 run_host: Lassen
@@ -852,6 +855,7 @@ time_first_10: 5060.661384420935
 time_second_10: 8.961225314065814
 max_python_mem_usage: 6922.5625
 max_gpu_mem_usage: 12167.75
+comment: outlier
 ---
 run_date: 2023-04-22 08:50
 run_host: Lassen
