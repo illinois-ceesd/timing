@@ -17,18 +17,18 @@ EMIRGE_HOME=${EMIRGE_HOME:-"${TOPDIR}/emirge"}
 export MIRGE_CACHE_ROOT="${TOPDIR}/timing-run-caches"
 SCALING_DAY_OF_WEEK=$(date +%a)
 
-if [ -f DELETE_TIMING_CACHE ]; then
-    if [ "$SCALING_DAY_OF_WEEK" = "Mon" ]; then
+if [ "$SCALING_DAY_OF_WEEK" = "Mon" ]; then
+    if [ -f DELETE_TIMING_CACHE ]; then
         echo "Today is Monday. Deleting the cache directory..."
         mv $MIRGE_CACHE_ROOT ${MIRGE_CACHE_ROOT}.delete
         rm -rf ${MIRGE_CACHE_ROOT}.delete &
         # Only remove the cache *once* on Monday
         rm DELETE_TIMING_CACHE
-    else
-        echo "Today is not Monday. Skipping cache deletion."
-        # Re-enable cache deletion for when Monday hits
-        touch DELETE_TIMING_CACHE
     fi
+elif [ -f AUTODELETE_TIMING_CACHE ]; then
+    echo "Today is not Monday. Skipping cache deletion."
+    # Re-enable cache deletion for when Monday hits
+    touch DELETE_TIMING_CACHE
 fi
 
 cd ${EMIRGE_HOME}/mirgecom
