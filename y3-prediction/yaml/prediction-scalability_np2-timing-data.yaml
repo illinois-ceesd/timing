@@ -6717,6 +6717,7 @@ time_first_10: 912.9794825715944
 time_second_10: 14.544865112751722
 max_python_mem_usage: 7954.25
 max_gpu_mem_usage: 9805.625
+comment: limiter
 ---
 run_date: 2024-04-16 16:52
 run_host: Lassen
@@ -6803,23 +6804,6 @@ time_second_10: 13.321747918846086
 max_python_mem_usage: 3710.1875
 max_gpu_mem_usage: 9875.625
 ---
-run_date: 2024-04-17 20:13
-run_host: Lassen
-cl_device: 
-num_processors: 2
-run_arch: ppc64le
-gpu_arch: GV100GL
-mirge_branch: cache-globalfs-update-limiter-api
-driver_branch: Unknown
-mirge_version: d113459081e4b328b83d165f7ae9a2919956911f
-driver_version: Unknown
-time_startup: 
-time_first_step: 0
-time_first_10: 0
-time_second_10: 0
-max_python_mem_usage: 
-max_gpu_mem_usage: 
----
 run_date: 2024-04-17 20:18
 run_host: Lassen
 cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1029277a0>
@@ -6836,23 +6820,7 @@ time_first_10: 997.9136118018068
 time_second_10: 15.294836193905212
 max_python_mem_usage: 3858.375
 max_gpu_mem_usage: 10611.6875
----
-run_date: 2024-04-17 20:54
-run_host: Lassen
-cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1027efa20>
-num_processors: 2
-run_arch: ppc64le
-gpu_arch: GV100GL
-mirge_branch: cache-globalfs-update-limiter-api
-driver_branch: Unknown
-mirge_version: d113459081e4b328b83d165f7ae9a2919956911f
-driver_version: Unknown
-time_startup: 902.8045642375946
-time_first_step: 0
-time_first_10: 0
-time_second_10: 0
-max_python_mem_usage: 
-max_gpu_mem_usage: 
+comment: outlier
 ---
 run_date: 2024-04-17 21:22
 run_host: Lassen
@@ -6887,6 +6855,7 @@ time_first_10: 952.8746111210203
 time_second_10: 17.142995634116232
 max_python_mem_usage: 3792.4375
 max_gpu_mem_usage: 9983.625
+comment: outlier, limiter
 ---
 run_date: 2024-04-17 22:50
 run_host: Lassen
@@ -6904,6 +6873,7 @@ time_first_10: 1013.388986979844
 time_second_10: 16.82661470072344
 max_python_mem_usage: 3845.375
 max_gpu_mem_usage: 10063.625
+comment: outlier
 ---
 run_date: 2024-04-18 00:00
 run_host: Lassen

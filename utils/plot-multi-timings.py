@@ -294,7 +294,10 @@ def main():
                                    transform=ax[i].transAxes,
                                    color=color, linestyle="--", lw=1, clip_on=False)
                         if i == 0:
-                            ax[i].text(xt, ytext, d["comment"], ha="center",
+                            comment = d["comment"]
+                            if "outlier," in comment:
+                                comment = comment.replace("outlier,", "").strip()
+                            ax[i].text(xt, ytext, comment, ha="center",
                                        transform=ax[i].transAxes, color=color,
                                        rotation=90)
 
