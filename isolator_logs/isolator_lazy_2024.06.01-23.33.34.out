@@ -1,0 +1,1242 @@
+Customizing shell for Lassen.
+Running with EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge
+Activating 'nozzle.lazy.timing.env' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin/python
+# conda environments:
+#
+test.parsl               /g/g17/mtcampbe/.conda/envs/test.parsl
+                         /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/testing/temporary-test/alpha/miniforge3/envs/temp.test.alpha
+base                     /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3
+nozzle.lazy.timing.env  *  /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env
+                         /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-nowall-scaling-run/emirge/miniforge3/envs/big.scale
+                         /p/gpfs1/mtcampbe/CEESD/Experimental/cache-db/miniforge3/envs/x.cache.db
+                         /p/gpfs1/mtcampbe/CEESD/Experimental/m-to-n-prediction/emirge/miniforge3/envs/y3.m2n
+                         /p/gpfs1/mtcampbe/CEESD/Experimental/performance-model/miniforge3/envs/x.perf.model
+                         /p/gpfs1/mtcampbe/CEESD/Experimental/scalability/emirge/miniforge3/envs/big.scale2
+                         /p/gpfs1/mtcampbe/CEESD/Experimental/tpe-test/miniforge3/envs/x.tpe.exmp
+                         /p/gpfs1/mtcampbe/CEESD/Experimental/zirui/emirge/miniforge3/envs/ex.zirui
+                         /usr/WS1/xpacc/Users/mtcampbe/CEESD/Lassen/test_emirge/emirge/miniforge3/envs/test.emirge.fk
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/abate.mtc_euler.env
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/ceesd.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/chem.master
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/dgfem
+                         /usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Install/conda/envs/mc.master
+
+LMOD_FAMILY_COMPILER_VERSION=8.3.1
+LLNL_IPISOLATE=0
+MANPATH=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release/share/man:/usr/tce/packages/gcc/gcc-8.3.1/man:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/man:/usr/man:/usr/share/man:/usr/local/man:/usr/X11R6/man:/usr/lib64/mvapich/default/man:/opt/ibm/spectrum_mpi/jsm_pmix/share/man
+LSB_EXEC_CLUSTER=lassen
+OMPI_COMM_WORLD_RANK=0
+LMOD_FAMILY_CUDA=cuda
+LMOD_ANCIENT_TIME=3600
+GUESTFISH_INIT=\e[1;34m
+_ModuleTable003_=IHt9LApzdGFja0RlcHRoID0gMSwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImN1ZGEvMTEuMi4wIiwKd1YgPSAiXjAwMDAwMDExLjAwMDAwMDAwMi4qemZpbmFsIiwKfSwKZ2NjID0gewpmbiA9ICIvdXNyL3RjZXRtcC9tb2R1bGVmaWxlcy9Db3JlL2djYy84LjMuMS5sdWEiLApmdWxsTmFtZSA9ICJnY2MvOC4zLjEiLApsb2FkT3JkZXIgPSA1LApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMCwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImdjYy84LjMuMSIsCndWID0gIjAwMDAwMDAwOC4wMDAwMDAwMDMuMDAwMDAwMDAxLip6ZmluYWwiLAp9LApsYWxsb2MgPSB7CmZuID0gIi91c3IvdGNldG1wL21vZHVsZWZpbGVzL0NvcmUvbGFsbG9jLzIuMC5sdWEi
+HOSTNAME=lassen122
+PROJ_DATA=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/share/proj
+LSB_EFFECTIVE_RSRCREQ=1*{select[(LN) && (type == any)] order[r15s:pg] span[hosts=1]}+40*{select[(CN) && (type == any)] order[r15s:pg] span[ptile=40]}
+LSB_DOCKER_JOB_STARTTS=1717310024
+BBHASH=1982b46f821a03fefe326a5b69e49869
+JSM_TMPDIR=/var/tmp
+MIRGE_TIMING_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing
+LSF_LOGDIR=/opt/ibm/spectrumcomputing/lsf/log
+LSF_LIM_API_NTRIES=1
+LSB_BATCH_JID=5928103
+__LMOD_REF_COUNT_MODULEPATH=/usr/tce/modulefiles/MPI/gcc/8.3.1/spectrum-mpi/rolling-release:1;/usr/tce/modulefiles/Compiler/gcc/8.3.1:1;/usr/tcetmp/modulefiles/Core:1;/usr/apps/modulefiles:1;/usr/share/modulefiles/Linux:1;/usr/share/modulefiles/Core:1;/usr/share/lmod/lmod/modulefiles/Core:1;/collab/usr/global/tools/modulefiles/blueos_3_ppc64le_ib_p9/Core:1
+MAILTO=mtcampbe@illinois.edu,andreask@illinois.edu
+SHELL=/bin/bash
+LMOD_ROOT=/usr/share/lmod
+LMOD_FAMILY_BASEGCC_VERSION=8.3.1
+HISTSIZE=1000
+WISECONFIGDIR=/usr/share/wise2/
+LMOD_SYSTEM_DEFAULT_MODULES=StdEnv
+TMPDIR=/var/tmp
+MODULEPATH_ROOT=/usr/share/modulefiles
+SSH_CLIENT=192.168.66.202 44100 22
+LS_EXECCWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run
+LSB_TRAPSIGS=trap # 15 10 12 2 1
+CONDA_SHLVL=1
+LMOD_FAMILY_CUDA_VERSION=11.2.0
+LS_JOBPID=6632
+CONDA_PROMPT_MODIFIER=
+GSETTINGS_SCHEMA_DIR_CONDA_BACKUP=
+LSB_MAX_NUM_PROCESSORS=41
+LSB_JOBRES_CALLBACK=59361@lassen710
+LMOD_PKG=/usr/share/lmod/lmod
+LSB_JOB_EXECUSER=mtcampbe
+LSB_JOBID=5928103
+QTDIR=/usr/lib64/qt-3.3
+LSF_SERVERDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc
+LSB_JOBRES_PID=6632
+LMOD_VERSION=8.6.16
+LMOD_SHORT_TIME=60
+QTINC=/usr/lib64/qt-3.3/include
+LSB_JOBNAME=isolator_timing_job.sh
+LLNL_COMPUTE_NODES=lassen122
+LLNL_ATSDISABLE=0
+_ModuleTable007_=ZXMvTGludXg6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLAp9Cg==
+BSUB_BLOCK_EXEC_HOST=
+QT_GRAPHICSSYSTEM_CHECKED=1
+LSF_LIBDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib
+OPAL_PREFIX=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release
+LSB_PROJECT_NAME=default
+CUDA_HOME=/usr/tce/packages/cuda/cuda-11.2.0
+USER=mtcampbe
+PYOPENCL_CTX=port:tesla
+LMOD_sys=Linux
+LMOD_FAMILY_BASEGCC=base-gcc
+LD_LIBRARY_PATH=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib:/usr/tce/packages/cuda/cuda-11.2.0/lib64
+SBD_KRB5CCNAME_VAL=
+NVHPC_CUDA_HOME=/usr/tce/packages/cuda/cuda-11.2.0
+LSB_EEXEC_REAL_UID=
+REQUESTS_CA_BUNDLE=/etc/pki/tls/cert.pem
+CONDA_EXE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda
+CEESD=/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen
+PFTP_CONFIG_FILENAME=/etc/pftp_config
+ENV=/g/g17/mtcampbe/.bashrc
+HOST_GRP=linux
+_ModuleTable004_=LApmdWxsTmFtZSA9ICJsYWxsb2MvMi4wIiwKbG9hZE9yZGVyID0gNCwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJsYWxsb2MvMi4wIiwKd1YgPSAiXjAwMDAwMDAyLip6ZmluYWwiLAp9LApbInNwZWN0cnVtLW1waSJdID0gewpmbiA9ICIvdXNyL3RjZS9tb2R1bGVmaWxlcy9Db21waWxlci9nY2MvOC4zLjEvc3BlY3RydW0tbXBpL3JvbGxpbmctcmVsZWFzZS5sdWEiLApmdWxsTmFtZSA9ICJzcGVjdHJ1bS1tcGkvcm9sbGluZy1yZWxlYXNlIiwKbG9hZE9yZGVyID0gNiwKcHJvcFQgPSB7fSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9ICJzcGVjdHJ1bS1tcGkvcm9sbGluZy1y
+HOSTTYPE=LINUXPPC64LE
+LSF_INVOKE_CMD=bsub
+CUDA_CACHE_DISABLE=1
+LS_EXEC_T=START
+LMOD_FAMILY_LALLOC=lalloc
+LS_SUBCWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run
+LSB_SUB_RES_REQ=1*{select[LN]span[hosts=1]} + 40*{select[CN]span[ptile=40]}
+LSB_HOSTS=lassen710 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122 lassen122
+LMOD_PREPEND_BLOCK=normal
+LMOD_FAMILY_MPI_VERSION=rolling-release
+GUESTFISH_PS1=\[\e[1;32m\]><fs>\[\e[0;31m\] 
+_CE_CONDA=
+LSB_UNIXGROUP_INT=mtcampbe
+LSB_JOBFILENAME=/g/g17/mtcampbe/.lsbatch/1717310023.5928103
+LSB_JOBINDEX=0
+_ModuleTable001_=X01vZHVsZVRhYmxlXyA9IHsKTVR2ZXJzaW9uID0gMywKY19yZWJ1aWxkVGltZSA9IGZhbHNlLApjX3Nob3J0VGltZSA9IGZhbHNlLApkZXB0aFQgPSB7fSwKZmFtaWx5ID0gewpiYXNlZ2NjID0gImJhc2UtZ2NjIiwKY29tcGlsZXIgPSAiZ2NjIiwKY3VkYSA9ICJjdWRhIiwKbGFsbG9jID0gImxhbGxvYyIsCm1waSA9ICJzcGVjdHJ1bS1tcGkiLAp9LAptVCA9IHsKU3RkRW52ID0gewpmbiA9ICIvdXNyL3RjZXRtcC9tb2R1bGVmaWxlcy9Db3JlL1N0ZEVudi5sdWEiLApmdWxsTmFtZSA9ICJTdGRFbnYiLApsb2FkT3JkZXIgPSAzLApwcm9wVCA9IHsKbG1vZCA9IHsKc3RpY2t5ID0gMSwKfSwKfSwKc3RhY2tEZXB0aCA9IDAsCnN0YXR1cyA9ICJhY3RpdmUiLAp1c2VyTmFtZSA9
+PATH=/usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-8.3.1/bin:/usr/tce/packages/gcc/gcc-8.3.1/bin:/usr/tce/packages/lalloc/lalloc-2.0/bin:/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin:/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin:/usr/tce/packages/cuda/cuda-11.2.0/bin:/usr/tcetmp/packages/base-gcc/base-gcc-8.3.1/bin:/usr/tcetmp/bin:/usr/condabin:/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:/usr/tce/packages/cuda/cuda-10.1.243/bin:/usr/lib64/qt-3.3/bin:/usr/local/bin:/usr/bin:/usr/local/sbin:/usr/sbin:/opt/ibm/spectrum_mpi/jsm_pmix/bin:/opt/ibm/bb/bin:/opt/ibm/flightlog/bin:/opt/ibutils/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc:/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin:/g/g17/mtcampbe/tools/bin
+MAIL=/var/spool/mail/mtcampbe
+PROJ_NETWORK=ON
+GSETTINGS_SCHEMA_DIR=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/share/glib-2.0/schemas
+LCSCHEDCLUSTER=lassen
+XML_CATALOG_FILES=file:///p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/etc/xml/catalog file:///etc/xml/catalog
+LSB_EXIT_PRE_ABORT=99
+LSB_JOBEXIT_STAT=0
+LMOD_SETTARG_CMD=:
+LMOD_FAMILY_LALLOC_VERSION=2.0
+CONDA_PREFIX=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env
+INPUTRC=/etc/inputrc
+PWD=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run
+_LMFILES_=/usr/tcetmp/modulefiles/Core/base-gcc/8.3.1.lua:/usr/tcetmp/modulefiles/Core/cuda/11.2.0.lua:/usr/tcetmp/modulefiles/Core/StdEnv.lua:/usr/tcetmp/modulefiles/Core/lalloc/2.0.lua:/usr/tcetmp/modulefiles/Core/gcc/8.3.1.lua:/usr/tce/modulefiles/Compiler/gcc/8.3.1/spectrum-mpi/rolling-release.lua
+EDITOR=/bin/vi
+LANG=en_US.UTF-8
+LSB_CHKFILENAME=/g/g17/mtcampbe/.lsbatch/1717310023.5928103
+MODULEPATH=/usr/tce/modulefiles/MPI/gcc/8.3.1/spectrum-mpi/rolling-release:/usr/tce/modulefiles/Compiler/gcc/8.3.1:/usr/tcetmp/modulefiles/Core:/usr/apps/modulefiles:/usr/share/modulefiles/Linux:/usr/share/modulefiles/Core:/usr/share/lmod/lmod/modulefiles/Core:/collab/usr/global/tools/modulefiles/blueos_3_ppc64le_ib_p9/Core
+LSB_DJOB_HOSTFILE=/g/g17/mtcampbe/.lsbatch/1717310023.5928103.hostfile
+LOADEDMODULES=base-gcc/8.3.1:cuda/11.2.0:StdEnv:lalloc/2.0:gcc/8.3.1:spectrum-mpi/rolling-release
+KDEDIRS=/usr
+GUESTFISH_OUTPUT=\e[0m
+_ModuleTable_Sz_=6
+LSB_JOB_STARTER=/usr/tcetmp/bin/bsub_job_starter %USRCMD
+EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge
+LSF_JOB_TIMESTAMP_VALUE=1717310024
+LMOD_CMD=/usr/share/lmod/lmod/libexec/lmod
+_ModuleTable005_=ZWxlYXNlIiwKd1YgPSAiXnJvbGxpbmcuKnJlbGVhc2UuKnpmaW5hbCIsCn0sCn0sCm1wYXRoQSA9IHsKIi91c3IvdGNlL21vZHVsZWZpbGVzL01QSS9nY2MvOC4zLjEvc3BlY3RydW0tbXBpL3JvbGxpbmctcmVsZWFzZSIKLCAiL3Vzci90Y2UvbW9kdWxlZmlsZXMvQ29tcGlsZXIvZ2NjLzguMy4xIiwgIi91c3IvdGNldG1wL21vZHVsZWZpbGVzL0NvcmUiCiwgIi91c3IvYXBwcy9tb2R1bGVmaWxlcyIsICIvdXNyL3NoYXJlL21vZHVsZWZpbGVzL0xpbnV4IgosICIvdXNyL3NoYXJlL21vZHVsZWZpbGVzL0NvcmUiLCAiL3Vzci9zaGFyZS9sbW9kL2xtb2QvbW9kdWxlZmlsZXMvQ29yZSIsICIvY29sbGFiL3Vzci9nbG9iYWwvdG9vbHMvbW9kdWxlZmlsZXMvYmx1ZW9zXzNfcHBj
+BBPATH=/mnt/bb_1982b46f821a03fefe326a5b69e49869
+LSB_EXEC_HOSTTYPE=UNKNOWN_AUTO_DETECT
+LSB_DJOB_NUMPROC=41
+LSF_BINDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin
+LLNL_NUM_COMPUTE_NODES=1
+HISTCONTROL=ignoredups
+_CE_M=
+SSH_ASKPASS=/usr/libexec/openssh/gnome-ssh-askpass
+ENVIRONMENT=BATCH
+CXX=mpicxx
+HOME=/g/g17/mtcampbe
+SHLVL=6
+__LMOD_REF_COUNT_PATH=/usr/tce/packages/spectrum-mpi/spectrum-mpi-rolling-release-gcc-8.3.1/bin:2;/usr/tce/packages/gcc/gcc-8.3.1/bin:2;/usr/tce/packages/lalloc/lalloc-2.0/bin:2;/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/bin:1;/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin:1;/usr/tce/packages/cuda/cuda-11.2.0/bin:1;/usr/tcetmp/packages/base-gcc/base-gcc-8.3.1/bin:1;/usr/tcetmp/bin:1;/usr/condabin:1;/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Lassen/conda-install/bin:1;/usr/tce/packages/cuda/cuda-10.1.243/bin:1;/usr/lib64/qt-3.3/bin:1;/usr/local/bin:1;/usr/bin:1;/usr/local/sbin:1;/usr/sbin:1;/opt/ibm/spectrum_mpi/jsm_pmix/bin:1;/opt/ibm/bb/bin:1;/opt/ibm/flightlog/bin:1;/opt/ibutils/bin:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/etc:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/bin:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/etc:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.9/linux3.10-glibc2.17-ppc64le-csm/bin:1
+JOB_TERMINATE_INTERVAL=10
+LSB_ACCT_FILE=/tmp/5928103.tmpdir/.1717310023.5928103.acct
+_ModuleTable002_=ICJTdGRFbnYiLAp3ViA9ICJNLip6ZmluYWwiLAp9LApbImJhc2UtZ2NjIl0gPSB7CmZuID0gIi91c3IvdGNldG1wL21vZHVsZWZpbGVzL0NvcmUvYmFzZS1nY2MvOC4zLjEubHVhIiwKZnVsbE5hbWUgPSAiYmFzZS1nY2MvOC4zLjEiLApsb2FkT3JkZXIgPSAxLApwcm9wVCA9IHt9LApzdGFja0RlcHRoID0gMSwKc3RhdHVzID0gImFjdGl2ZSIsCnVzZXJOYW1lID0gImJhc2UtZ2NjLzguMy4xIiwKd1YgPSAiXjAwMDAwMDA4LjAwMDAwMDAwMy4wMDAwMDAwMDEuKnpmaW5hbCIsCn0sCmN1ZGEgPSB7CmZuID0gIi91c3IvdGNldG1wL21vZHVsZWZpbGVzL0NvcmUvY3VkYS8xMS4yLjAubHVhIiwKZnVsbE5hbWUgPSAiY3VkYS8xMS4yLjAiLApsb2FkT3JkZXIgPSAyLApwcm9wVCA9
+CSM_ALLOCATION_ID=6512767
+BINARY_TYPE_HPC=
+LLNL_CORE_ISOLATION=2
+FC=mpif90
+LSB_SUB_HOST=lassen708
+XDG_CACHE_HOME=/tmp/mtcampbe/xdg-scratch
+__LSF_JOB_TMPDIR__=/tmp/5928103.tmpdir
+LSFUSER=mtcampbe
+LSB_SUB_USER=mtcampbe
+LSB_OUTDIR=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run
+LSB_MCPU_HOSTS=lassen710 1 lassen122 40 
+LMOD_arch=ppc64le
+TMP=/var/tmp
+MPI_ROOT=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release
+LSB_QUEUE=pbatch
+LSB_OUTPUTFILE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run/
+CONDA_PYTHON_EXE=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/python
+LOGNAME=mtcampbe
+QTLIB=/usr/lib64/qt-3.3/lib
+CVS_RSH=ssh
+XLSF_UIDDIR=/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib/uid
+XDG_DATA_DIRS=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share:/usr/share
+SSH_CONNECTION=192.168.66.202 44100 192.168.64.122 22
+SYS_TYPE=blueos_3_ppc64le_ib_p9
+MODULESHOME=/usr/share/lmod/lmod
+LMOD_SETTARG_FULL_SUPPORT=no
+LESSOPEN=||/usr/bin/lesspipe.sh %s
+__LMOD_REF_COUNT_LD_LIBRARY_PATH=/usr/tce/packages/cuda/cuda-11.2.0/lib64:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/linux3.10-glibc2.17-ppc64le-csm/lib:1
+PKG_CONFIG_PATH=/usr/tce/packages/cuda/cuda-11.2.0/lib64/pkgconfig
+OMP_NUM_THREADS=1
+LSF_CGROUP_TOPDIR_KEY=lassen
+CONDA_DEFAULT_ENV=nozzle.lazy.timing.env
+LMOD_FULL_SETTARG_SUPPORT=no
+LMOD_FAMILY_COMPILER=gcc
+LSB_XFER_OP=
+LSB_EEXEC_REAL_GID=
+__LMOD_REF_COUNT_PKG_CONFIG_PATH=/usr/tce/packages/cuda/cuda-11.2.0/lib64/pkgconfig:1
+CC=mpicc
+QT_PLUGIN_PATH=/usr/lib64/kde4/plugins:/usr/lib/kde4/plugins
+LMOD_DIR=/usr/share/lmod/lmod/libexec
+LEXEC_UNPICKLE_QUIET=1
+__LMOD_REF_COUNT_MANPATH=/usr/tce/packages/spectrum-mpi/ibm/spectrum-mpi-rolling-release/share/man:1;/usr/tce/packages/gcc/gcc-8.3.1/man:1;/opt/ibm/spectrumcomputing/lsf/10.1.0.10/man:1;/usr/man:1;/usr/share/man:1;/usr/local/man:1;/usr/X11R6/man:1;/usr/lib64/mvapich/default/man:1;/opt/ibm/spectrum_mpi/jsm_pmix/share/man:1
+_ModuleTable006_=NjRsZV9pYl9wOS9Db3JlIiwKfSwKc3lzdGVtQmFzZU1QQVRIID0gIi91c3IvdGNldG1wL21vZHVsZWZpbGVzL0NvcmU6L3Vzci9hcHBzL21vZHVsZWZpbGVzOi91c3Ivc2hhcmUvbW9kdWxlZmlsZXMvTGludXg6L3Vzci9zaGFyZS9tb2R1bGVmaWxlcy9Db3JlOi91c3Ivc2hhcmUvbG1vZC9sbW9kL21vZHVsZWZpbGVzL0NvcmUiLAp9Cg==
+LSF_ENVDIR=/opt/ibm/spectrumcomputing/lsf/conf
+GUESTFISH_RESTORE=\e[0m
+LSB_DJOB_RANKFILE=/g/g17/mtcampbe/.lsbatch/1717310023.5928103.hostfile
+LMOD_FAMILY_MPI=spectrum-mpi
+LMOD_COLORIZE=yes
+HISTFILE=/g/g17/mtcampbe/.bash_history
+BASH_FUNC_module()=() {  local __lmod_my_status;
+ local __lmod_sh_dbg;
+ if [ -z "${LMOD_SH_DBG_ON+x}" ]; then
+ case "$-" in 
+ *v*x*)
+ __lmod_sh_dbg='vx'
+ ;;
+ *v*)
+ __lmod_sh_dbg='v'
+ ;;
+ *x*)
+ __lmod_sh_dbg='x'
+ ;;
+ esac;
+ fi;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ set +$__lmod_sh_dbg;
+ echo "Shell debugging temporarily silenced: export LMOD_SH_DBG_ON=1 for Lmod's output" 1>&2;
+ fi;
+ eval "$($LMOD_CMD bash "$@")" && eval $(${LMOD_SETTARG_CMD:-:} -s sh);
+ __lmod_my_status=$?;
+ if [ -n "${__lmod_sh_dbg:-}" ]; then
+ echo "Shell debugging restarted" 1>&2;
+ set -$__lmod_sh_dbg;
+ fi;
+ return $__lmod_my_status
+}
+BASH_FUNC_ml()=() {  eval "$($LMOD_DIR/ml_cmd "$@")"
+}
+_=/usr/bin/env
+LSB_MCPU_HOSTS=lassen710 1 lassen122 40 
+Default casename isolator
+2024-06-01 23:33:53,659 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: timing_params.yaml
+Running ./isolator.py
+
+2024-06-01 23:33:54,113 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-06-01 23:34:18,215 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102a14ac0>.
+Shock capturing parameters: alpha 0.5, s0 -4.0, kappa 0.5
+
+#### Simluation control data: ####
+	nviz = 100
+	nrestart = 100
+	nhealth = 100
+	nstatus = 100
+	current_dt = 1e-08
+	t_final = 2e-07
+	order = 1
+	dimen = 2
+	Time integration rk4
+#### Simluation control data: ####
+
+
+#### Simluation material properties: ####
+	mu = 4.216360056e-05
+	kappa = 0.05621788139856423
+	Prandtl Number  = 0.75
+#### Simluation initialization data: ####
+	inlet Mach number 0.038727226466056475
+	inlet temperature 2075.8073416311686
+	inlet pressure 274212.0081934861
+	inlet rho 0.4623484671063763
+	inlet velocity 35.28896626974282
+	outlet Mach number 3.661995139955526
+	outlet temperature 563.9344091915701
+	outlet pressure 2865.7077436508835
+	outlet rho 0.01778579568979098
+	outlet velocity 1739.2462693097807
+#### Simluation initialization data: ####
+
+Reading mesh from data/isolator.msh
+./isolator.py:1087: DeprecationWarning: generate_and_distribute_mesh is deprecated and will go away Q4 2022. Use distribute_mesh instead.
+  local_mesh, global_nelements = generate_and_distribute_mesh(
+Reading gmsh mesh from disk file...
+Done. Populating meshmode data structures...
+Done.
+Read GMSH: 0.05887103080749512
+MeshData: 0.06514644622802734
+Making discretization
+./isolator.py:1094: DeprecationWarning: mpi_communicator argument is deprecated and will disappear in Q4 2022.
+  dcoll = create_discretization_collection(
+Done making discretization
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+2024-06-01 23:34:23,445 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102a14ac0> to 3896 bytes
+2024-06-01 23:34:23,475 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes0_2d' with 1 statements.
+2024-06-01 23:34:23,514 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:34:23,517 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_2d' from 0.0MB to 0.0MB.
+2024-06-01 23:34:30,279 - INFO - loopy.tools - preprocess_program on 'frozen_nodes0_2d': completed (6.76s wall 0.06x CPU)
+2024-06-01 23:34:31,305 - INFO - pyopencl - build program: kernel 'frozen_nodes0_2d' was part of a lengthy source build resulting from a binary cache miss (0.90 s)
+2024-06-01 23:34:31,362 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes1_2d' with 1 statements.
+2024-06-01 23:34:31,386 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:34:31,388 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes1_2d' from 0.0MB to 0.0MB.
+2024-06-01 23:34:31,847 - INFO - pyopencl - build program: kernel 'frozen_nodes1_2d' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+Before restart/init
+Initializing soln.
+Initialization for Case(isolator)
+===
+Num 2d order-1 elements: 2504
+Num global elements: 2504
+Timestep:        1e-08
+Initial time:    0
+Final time:      2e-07
+CFL:             1.0
+Constant CFL:    False
+Initialization:  isolator
+EOS:             IdealSingleGas
+
+2024-06-01 23:34:33,408 - INFO - meshmode.array_context - transform_dag.infer_axes_tags: completed (0.54s wall 1.00x CPU)
+2024-06-01 23:34:33,589 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102a14ac0> to 3896 bytes
+2024-06-01 23:34:34,307 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 14 statements.
+2024-06-01 23:34:35,825 - INFO - loopy.tools - fuse_same_discretization_entity_loops on 'frozen_result': completed (1.39s wall 1.00x CPU)
+2024-06-01 23:34:35,987 - INFO - meshmode.array_context - Loop Fusion: completed (1.68s wall 1.00x CPU)
+2024-06-01 23:34:36,386 - INFO - meshmode.array_context - Array Contraction: Contracting 10 temps
+2024-06-01 23:34:38,047 - INFO - loopy.tools - contract_arrays on 'frozen_result': completed (1.66s wall 1.00x CPU)
+2024-06-01 23:34:38,229 - INFO - meshmode.array_context - Array Contraction: completed (1.97s wall 1.00x CPU)
+2024-06-01 23:34:38,231 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.5MB to 0.4MB.
+2024-06-01 23:34:40,390 - INFO - loopy.tools - preprocess_program on 'frozen_result': completed (1.39s wall 1.00x CPU)
+2024-06-01 23:34:44,001 - INFO - loopy.codegen - frozen_result: generate code: completed (1.78s wall 1.00x CPU)
+2024-06-01 23:34:49,641 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (4.91 s)
+2024-06-01 23:34:49,986 - INFO - pytato.distributed.verify - find_partition: Split 22 nodes into 1 parts, with [22] nodes in each partition.
+2024-06-01 23:34:50,041 - INFO - meshmode.array_context - Transforming kernel 'get_fluid_state_part_0' with 15 statements.
+2024-06-01 23:34:50,191 - INFO - meshmode.array_context - Array Contraction: Contracting 1 temps
+2024-06-01 23:34:50,215 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'get_fluid_state_part_0' from 0.1MB to 0.1MB.
+2024-06-01 23:34:51,084 - INFO - pyopencl - build program: kernel 'get_fluid_state_part_0' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+./isolator.py:1349: DeprecationWarning: simutil.force_evaluation is deprecated and will disappear in Q3 2023. Use utils.force_evaluation instead.
+  fluid_state = force_evaluation(actx, create_fluid_state(cv=state))
+2024-06-01 23:34:51,263 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102a14ac0> to 3896 bytes
+2024-06-01 23:34:51,390 - INFO - meshmode.array_context - Transforming kernel 'frozen_area_el_vol' with 10 statements.
+2024-06-01 23:34:51,593 - INFO - meshmode.array_context - Array Contraction: Contracting 1 temps
+2024-06-01 23:34:51,623 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_area_el_vol' from 0.3MB to 0.2MB.
+2024-06-01 23:34:52,576 - INFO - pyopencl - build program: kernel 'frozen_area_el_vol' was part of a lengthy source build resulting from a binary cache miss (0.42 s)
+2024-06-01 23:34:52,627 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-06-01 23:34:52,637 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-06-01 23:34:52,720 - INFO - meshmode.array_context - Transforming kernel 'frozen_area_el_b_face_restr_all' with 7 statements.
+2024-06-01 23:34:52,848 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2024-06-01 23:34:52,880 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_area_el_b_face_restr_all' from 0.5MB to 0.3MB.
+2024-06-01 23:34:53,632 - INFO - pyopencl - build program: kernel 'frozen_area_el_b_face_restr_all' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+2024-06-01 23:34:53,715 - INFO - meshmode.array_context - Transforming kernel 'frozen_dt_geometric_vol' with 7 statements.
+2024-06-01 23:34:53,895 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:34:53,905 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_dt_geometric_vol' from 0.3MB to 0.2MB.
+2024-06-01 23:34:54,779 - INFO - pyopencl - build program: kernel 'frozen_dt_geometric_vol' was part of a lengthy source build resulting from a binary cache miss (0.42 s)
+2024-06-01 23:34:54,829 - INFO - meshmode.array_context - Transforming kernel 'frozen_char_lscales' with 1 statements.
+2024-06-01 23:34:54,844 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:34:54,846 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_char_lscales' from 0.0MB to 0.0MB.
+2024-06-01 23:34:55,267 - INFO - pyopencl - build program: kernel 'frozen_char_lscales' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+2024-06-01 23:34:55,313 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 4 statements.
+2024-06-01 23:34:55,364 - INFO - meshmode.array_context - Array Contraction: Contracting 3 temps
+2024-06-01 23:34:55,400 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.2MB to 0.2MB.
+2024-06-01 23:34:55,924 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.39 s)
+2024-06-01 23:34:56,431 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2024-06-01 23:34:56,909 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2024-06-01 23:34:56,921 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:34:56,927 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+_get_iel_to_idofs: str(insn)='_ary_store: _ary <- NaN if isnan(_actx_dw) or isnan(_actx_dw_0) else (_actx_dw if _actx_dw > _actx_dw_0 else _actx_dw_0) {tags=EinsumTag(orig_loop_nest=frozenset())}'
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/array_context.py:1790: UserWarning: [frozen_result]: FusionContractorArrayContext.transform_loopy_program not broad enough (yet). Falling back to a possibly slower transformation strategy.
+  warn(f"[{knl.name}]: FusionContractorArrayContext."
+2024-06-01 23:34:57,335 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+2024-06-01 23:34:57,801 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+2024-06-01 23:34:58,261 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.45 s)
+2024-06-01 23:34:58,267 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:34:58,272 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+_get_iel_to_idofs: str(insn)='_ary_store: _ary <- 0 + _actx_dw {tags=EinsumTag(orig_loop_nest=frozenset())}'
+2024-06-01 23:34:58,666 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+2024-06-01 23:34:59,146 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage1' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2024-06-01 23:34:59,620 - INFO - pyopencl - build program: kernel 'reduce_kernel_stage2' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2024-06-01 23:34:59,631 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:34:59,637 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+_get_iel_to_idofs: str(insn)='_ary_store: _ary <- NaN if isnan(_actx_dw) or isnan(_actx_dw_0) else (_actx_dw if _actx_dw < _actx_dw_0 else _actx_dw_0) {tags=EinsumTag(orig_loop_nest=frozenset())}'
+2024-06-01 23:35:00,037 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+-------- dt = 1.000e-08, cfl = 0.0253
+-------- P (min, max) (Pa) = (2.865706984e+03, 2.742120082e+05)
+-------- T (min, max) (K)  = (    300, 2075.81)
+
+2024-06-01 23:35:00,082 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:35:00,089 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:00,091 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+2024-06-01 23:35:00,513 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+2024-06-01 23:35:00,526 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:35:00,532 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:00,535 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+2024-06-01 23:35:00,956 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+2024-06-01 23:35:00,968 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:35:00,975 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:00,977 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+2024-06-01 23:35:01,399 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+2024-06-01 23:35:01,412 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:35:01,419 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:01,421 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+2024-06-01 23:35:01,843 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+2024-06-01 23:35:01,875 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 3 statements.
+2024-06-01 23:35:01,903 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:01,907 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.1MB to 0.1MB.
+2024-06-01 23:35:02,468 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+2024-06-01 23:35:02,491 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:35:02,499 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:02,501 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+2024-06-01 23:35:02,941 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+2024-06-01 23:35:02,966 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:35:02,976 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:02,978 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+2024-06-01 23:35:03,440 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+2024-06-01 23:35:03,470 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 3 statements.
+2024-06-01 23:35:03,499 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:03,503 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.1MB to 0.1MB.
+2024-06-01 23:35:04,056 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.39 s)
+failed to infer axis 1 of array of type <class 'pytato.array.Reshape'>.
+expr.non_equality_tags=frozenset()
+2024-06-01 23:35:04,116 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 6 statements.
+2024-06-01 23:35:04,207 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:04,215 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.2MB to 0.2MB.
+2024-06-01 23:35:05,087 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2024-06-01 23:35:05,157 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 4 statements.
+2024-06-01 23:35:05,201 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2024-06-01 23:35:05,226 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.2MB to 0.2MB.
+2024-06-01 23:35:05,822 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.41 s)
+2024-06-01 23:35:05,857 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-06-01 23:35:05,862 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-06-01 23:35:05,876 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-06-01 23:35:05,881 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-06-01 23:35:05,896 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-06-01 23:35:05,908 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-06-01 23:35:05,921 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-06-01 23:35:06,017 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-06-01 23:35:06,156 - INFO - meshmode.array_context - Transforming kernel 'frozen_area_el_b_inflow' with 7 statements.
+2024-06-01 23:35:06,285 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2024-06-01 23:35:06,321 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_area_el_b_inflow' from 0.0MB to 0.0MB.
+2024-06-01 23:35:07,056 - INFO - pyopencl - build program: kernel 'frozen_area_el_b_inflow' was part of a lengthy source build resulting from a binary cache miss (0.39 s)
+2024-06-01 23:35:07,132 - INFO - meshmode.array_context - Transforming kernel 'frozen_normal_2_b_inflow' with 3 statements.
+2024-06-01 23:35:07,200 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:07,205 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_normal_2_b_inflow' from 0.0MB to 0.0MB.
+2024-06-01 23:35:07,916 - INFO - pyopencl - build program: kernel 'frozen_normal_2_b_inflow' was part of a lengthy source build resulting from a binary cache miss (0.39 s)
+2024-06-01 23:35:07,982 - INFO - meshmode.array_context - Transforming kernel 'frozen_normal_1_b_inflow' with 3 statements.
+2024-06-01 23:35:08,051 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:08,056 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_normal_1_b_inflow' from 0.0MB to 0.0MB.
+2024-06-01 23:35:08,684 - INFO - pyopencl - build program: kernel 'frozen_normal_1_b_inflow' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+2024-06-01 23:35:08,715 - INFO - meshmode.array_context - Transforming kernel 'frozen_f2allf_ind' with 0 statements.
+2024-06-01 23:35:08,719 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:09,109 - INFO - pyopencl - build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+2024-06-01 23:35:09,119 - INFO - meshmode.array_context - Transforming kernel 'frozen_f2allf_ind' with 0 statements.
+2024-06-01 23:35:09,178 - INFO - meshmode.array_context - Transforming kernel 'frozen_f2allf_ind' with 1 statements.
+2024-06-01 23:35:09,188 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:09,190 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_f2allf_ind' from 0.0MB to 0.0MB.
+2024-06-01 23:35:09,591 - INFO - pyopencl - build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+2024-06-01 23:35:09,698 - INFO - meshmode.array_context - Transforming kernel 'frozen_area_el_b_outflow' with 7 statements.
+2024-06-01 23:35:09,827 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2024-06-01 23:35:09,860 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_area_el_b_outflow' from 0.0MB to 0.0MB.
+2024-06-01 23:35:10,599 - INFO - pyopencl - build program: kernel 'frozen_area_el_b_outflow' was part of a lengthy source build resulting from a binary cache miss (0.39 s)
+2024-06-01 23:35:10,677 - INFO - meshmode.array_context - Transforming kernel 'frozen_normal_2_b_outflow' with 3 statements.
+2024-06-01 23:35:10,746 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:10,751 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_normal_2_b_outflow' from 0.0MB to 0.0MB.
+2024-06-01 23:35:11,379 - INFO - pyopencl - build program: kernel 'frozen_normal_2_b_outflow' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+2024-06-01 23:35:11,445 - INFO - meshmode.array_context - Transforming kernel 'frozen_normal_1_b_outflow' with 3 statements.
+2024-06-01 23:35:11,519 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:11,524 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_normal_1_b_outflow' from 0.0MB to 0.0MB.
+2024-06-01 23:35:12,151 - INFO - pyopencl - build program: kernel 'frozen_normal_1_b_outflow' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+2024-06-01 23:35:12,181 - INFO - meshmode.array_context - Transforming kernel 'frozen_f2allf_ind' with 1 statements.
+2024-06-01 23:35:12,191 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:12,193 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_f2allf_ind' from 0.0MB to 0.0MB.
+2024-06-01 23:35:12,590 - INFO - pyopencl - build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+2024-06-01 23:35:12,602 - INFO - meshmode.array_context - Transforming kernel 'frozen_f2allf_ind' with 1 statements.
+2024-06-01 23:35:12,612 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:12,614 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_f2allf_ind' from 0.0MB to 0.0MB.
+2024-06-01 23:35:13,016 - INFO - pyopencl - build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+2024-06-01 23:35:13,122 - INFO - meshmode.array_context - Transforming kernel 'frozen_area_el_b_wall' with 7 statements.
+2024-06-01 23:35:13,249 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2024-06-01 23:35:13,281 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_area_el_b_wall' from 0.0MB to 0.0MB.
+2024-06-01 23:35:14,032 - INFO - pyopencl - build program: kernel 'frozen_area_el_b_wall' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+2024-06-01 23:35:14,110 - INFO - meshmode.array_context - Transforming kernel 'frozen_normal_2_b_wall' with 3 statements.
+2024-06-01 23:35:14,178 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:14,183 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_normal_2_b_wall' from 0.0MB to 0.0MB.
+2024-06-01 23:35:14,829 - INFO - pyopencl - build program: kernel 'frozen_normal_2_b_wall' was part of a lengthy source build resulting from a binary cache miss (0.39 s)
+2024-06-01 23:35:14,895 - INFO - meshmode.array_context - Transforming kernel 'frozen_normal_1_b_wall' with 3 statements.
+2024-06-01 23:35:14,963 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:14,968 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_normal_1_b_wall' from 0.0MB to 0.0MB.
+2024-06-01 23:35:15,627 - INFO - pyopencl - build program: kernel 'frozen_normal_1_b_wall' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+2024-06-01 23:35:15,658 - INFO - meshmode.array_context - Transforming kernel 'frozen_f2allf_ind' with 1 statements.
+2024-06-01 23:35:15,669 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:15,671 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_f2allf_ind' from 0.0MB to 0.0MB.
+2024-06-01 23:35:16,070 - INFO - pyopencl - build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+2024-06-01 23:35:16,081 - INFO - meshmode.array_context - Transforming kernel 'frozen_f2allf_ind' with 1 statements.
+2024-06-01 23:35:16,091 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:16,093 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_f2allf_ind' from 0.0MB to 0.0MB.
+2024-06-01 23:35:16,502 - INFO - pyopencl - build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+2024-06-01 23:35:16,603 - INFO - meshmode.array_context - Transforming kernel 'frozen_area_el_b_face_restr_interior' with 7 statements.
+2024-06-01 23:35:16,736 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2024-06-01 23:35:16,768 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_area_el_b_face_restr_interior' from 0.4MB to 0.3MB.
+2024-06-01 23:35:17,516 - INFO - pyopencl - build program: kernel 'frozen_area_el_b_face_restr_interior' was part of a lengthy source build resulting from a binary cache miss (0.39 s)
+2024-06-01 23:35:17,593 - INFO - meshmode.array_context - Transforming kernel 'frozen_normal_2_b_face_restr_interior' with 3 statements.
+2024-06-01 23:35:17,662 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:17,666 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_normal_2_b_face_restr_interior' from 0.2MB to 0.2MB.
+2024-06-01 23:35:18,317 - INFO - pyopencl - build program: kernel 'frozen_normal_2_b_face_restr_interior' was part of a lengthy source build resulting from a binary cache miss (0.39 s)
+2024-06-01 23:35:18,383 - INFO - meshmode.array_context - Transforming kernel 'frozen_normal_1_b_face_restr_interior' with 3 statements.
+2024-06-01 23:35:18,451 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:18,456 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_normal_1_b_face_restr_interior' from 0.2MB to 0.2MB.
+2024-06-01 23:35:19,104 - INFO - pyopencl - build program: kernel 'frozen_normal_1_b_face_restr_interior' was part of a lengthy source build resulting from a binary cache miss (0.39 s)
+2024-06-01 23:35:19,135 - INFO - meshmode.array_context - Transforming kernel 'frozen_f2allf_ind' with 1 statements.
+2024-06-01 23:35:19,145 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:19,147 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_f2allf_ind' from 0.0MB to 0.0MB.
+2024-06-01 23:35:19,554 - INFO - pyopencl - build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+2024-06-01 23:35:19,566 - INFO - meshmode.array_context - Transforming kernel 'frozen_f2allf_ind' with 1 statements.
+2024-06-01 23:35:19,576 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:19,578 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_f2allf_ind' from 0.0MB to 0.0MB.
+2024-06-01 23:35:19,981 - INFO - pyopencl - build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+2024-06-01 23:35:19,993 - INFO - meshmode.array_context - Transforming kernel 'frozen_f2allf_ind' with 1 statements.
+2024-06-01 23:35:20,003 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:20,005 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_f2allf_ind' from 0.0MB to 0.0MB.
+2024-06-01 23:35:20,409 - INFO - pyopencl - build program: kernel 'frozen_f2allf_ind' was part of a lengthy source build resulting from a binary cache miss (0.36 s)
+2024-06-01 23:35:21,181 - INFO - meshmode.array_context - Transforming kernel 'frozen_inv_metric_deriv_vol' with 45 statements.
+2024-06-01 23:35:22,104 - INFO - loopy.tools - fuse_same_discretization_entity_loops on 'frozen_inv_metric_deriv_vol': completed (0.83s wall 1.00x CPU)
+2024-06-01 23:35:22,150 - INFO - meshmode.array_context - Loop Fusion: completed (0.96s wall 1.00x CPU)
+2024-06-01 23:35:22,272 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:22,307 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_inv_metric_deriv_vol' from 1.7MB to 0.5MB.
+2024-06-01 23:35:23,051 - INFO - loopy.tools - preprocess_program on 'frozen_inv_metric_deriv_vol': completed (0.59s wall 1.00x CPU)
+2024-06-01 23:35:25,086 - INFO - pyopencl - build program: kernel 'frozen_inv_metric_deriv_vol' was part of a lengthy source build resulting from a binary cache miss (0.59 s)
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/artificial_viscosity.py:347: UserWarning: The AV boundary_kwargs interface is deprecated, please pass gas_model and time directly.
+  warn("The AV boundary_kwargs interface is deprecated, please pass gas_model"
+2024-06-01 23:35:26,357 - INFO - grudge.array_context - deduplicate_data_wrappers[pre-partition]: completed (0.58s wall 1.00x CPU)
+failed to infer axis 1 of array of type <class 'pytato.array.Reshape'>.
+expr.non_equality_tags=frozenset()
+2024-06-01 23:35:28,205 - INFO - grudge.array_context - transform_dag.infer_axes_tags[pre-partition]: completed (1.72s wall 1.00x CPU)
+2024-06-01 23:35:28,527 - INFO - pytato.distributed.verify - find_partition: Split 3430 nodes into 1 parts, with [3430] nodes in each partition.
+2024-06-01 23:35:29,980 - INFO - meshmode.array_context - transform_dag.materialize_all_einsums_or_reduces: completed (0.37s wall 1.00x CPU)
+failed to infer axis 1 of array of type <class 'pytato.array.Reshape'>.
+expr.non_equality_tags=frozenset()
+2024-06-01 23:35:31,758 - INFO - meshmode.array_context - transform_dag.infer_axes_tags: completed (1.78s wall 1.00x CPU)
+2024-06-01 23:35:31,876 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:35:31,887 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:35:31,889 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+2024-06-01 23:35:32,315 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+2024-06-01 23:35:32,330 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:35:32,355 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+_get_iel_to_idofs: str(insn)="_ary_store: _ary[idim_ensm0, idim_ensm0_0, iel_ensm0] <- inv_metric_deriv_vol[((idim_ensm0*5008 + idim_ensm0_0*2504 + iel_ensm0) % 10016) // 5008, ((idim_ensm0*5008 + idim_ensm0_0*2504 + iel_ensm0) % 5008) // 2504, (idim_ensm0*5008 + idim_ensm0_0*2504 + iel_ensm0) % 2504, 0] {tags=EinsumTag(orig_loop_nest=frozenset({'iel_0_0_', 'idim_1_0_', 'idim_0_0_'}))}"
+2024-06-01 23:35:32,880 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+2024-06-01 23:35:32,899 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+_get_iel_to_idofs: str(insn)="_ary_store: _ary[idim_ensm0, idim_ensm0_0, iel_ensm0] <- inv_metric_deriv_vol[((idim_ensm0*5008 + idim_ensm0_0*2504 + iel_ensm0) % 10016) // 5008, ((idim_ensm0*5008 + idim_ensm0_0*2504 + iel_ensm0) % 5008) // 2504, (idim_ensm0*5008 + idim_ensm0_0*2504 + iel_ensm0) % 2504, 0] {tags=EinsumTag(orig_loop_nest=frozenset({'iel_0_0_', 'idim_1_0_', 'idim_0_0_'}))}"
+2024-06-01 23:35:33,000 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:35:33,016 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+_get_iel_to_idofs: str(insn)="_ary_store: _ary[iface_ensm0, iel_ensm0] <- _actx_dw[((iface_ensm0*2504 + iel_ensm0) % 7512) // 2504, (iface_ensm0*2504 + iel_ensm0) % 2504, 0] {tags=EinsumTag(orig_loop_nest=frozenset({'iface_0_0_', 'iel_0_0_'}))}"
+2024-06-01 23:35:33,493 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+2024-06-01 23:35:33,719 - INFO - arraycontext.impl.pytato.compile - transform_dag for 'my_rhs_part_0': completed (5.19s wall 1.00x CPU)
+2024-06-01 23:35:37,593 - INFO - arraycontext.impl.pytato.compile - generate_loopy for 'my_rhs_part_0': completed (3.87s wall 1.00x CPU)
+2024-06-01 23:35:37,594 - INFO - meshmode.array_context - Transforming kernel 'my_rhs_part_0' with 355 statements.
+2024-06-01 23:35:49,304 - INFO - loopy.tools - fuse_same_discretization_entity_loops on 'my_rhs_part_0': completed (10.94s wall 1.00x CPU)
+2024-06-01 23:35:49,965 - INFO - meshmode.array_context - Loop Fusion: completed (12.35s wall 1.00x CPU)
+2024-06-01 23:35:51,692 - INFO - meshmode.array_context - Array Contraction: Contracting 73 temps
+2024-06-01 23:35:54,726 - INFO - loopy.tools - contract_arrays on 'my_rhs_part_0': completed (3.04s wall 1.00x CPU)
+2024-06-01 23:35:55,119 - INFO - meshmode.array_context - Array Contraction: completed (4.02s wall 1.00x CPU)
+2024-06-01 23:35:55,296 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'my_rhs_part_0' from 16.3MB to 7.5MB.
+2024-06-01 23:35:57,001 - INFO - arraycontext.impl.pytato.compile - transform_loopy_program for 'my_rhs_part_0': completed (19.41s wall 1.00x CPU)
+2024-06-01 23:36:01,065 - INFO - loopy.preprocess - my_rhs_part_0: preprocess: completed (0.37s wall 1.00x CPU)
+2024-06-01 23:36:03,315 - INFO - loopy.tools - preprocess_program on 'my_rhs_part_0': completed (5.46s wall 1.00x CPU)
+2024-06-01 23:36:09,400 - INFO - loopy.schedule - my_rhs_part_0: schedule: completed (2.60s wall 1.00x CPU)
+2024-06-01 23:36:17,016 - INFO - loopy.codegen - my_rhs_part_0: generate code: completed (4.05s wall 1.00x CPU)
+2024-06-01 23:36:24,983 - INFO - pyopencl - build program: kernel 'my_rhs_part_0' was part of a lengthy source build resulting from a binary cache miss (5.97 s)
+2024-06-01 23:36:26,342 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:36:26,358 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:36:26,360 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+2024-06-01 23:36:26,797 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+2024-06-01 23:36:26,814 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:36:26,829 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:36:26,832 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+2024-06-01 23:36:27,265 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+2024-06-01 23:36:27,291 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:36:27,306 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:36:27,309 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+2024-06-01 23:36:27,746 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+2024-06-01 23:36:27,763 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:36:27,779 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:36:27,781 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+2024-06-01 23:36:28,214 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/steppers.py:439: UserWarning: Deduced force_eval=True for this timestepper. This can have a nontrivial performance impact. If you know that your timestepper does not require per-step forced evaluation, explicitly set force_eval=False.
+  _advance_state_stepper_func(
+2024-06-01 23:36:28,288 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 4 statements.
+2024-06-01 23:36:28,341 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:36:28,345 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+2024-06-01 23:36:28,931 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+step = 0, sim time: 0.000000e+00 s, step walltime: 98.0499 s
+2024-06-01 23:36:29,297 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 4 statements.
+2024-06-01 23:36:29,350 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:36:29,355 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+2024-06-01 23:36:29,941 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+step = 1, sim time: 1.000000e-08 s, step walltime: 0.764273 s
+step = 2, sim time: 2.000000e-08 s, step walltime: 0.0413736 s
+step = 3, sim time: 3.000000e-08 s, step walltime: 0.0377971 s
+step = 4, sim time: 4.000000e-08 s, step walltime: 0.0342979 s
+step = 5, sim time: 5.000000e-08 s, step walltime: 0.0336674 s
+step = 6, sim time: 6.000000e-08 s, step walltime: 0.0333459 s
+step = 7, sim time: 7.000000e-08 s, step walltime: 0.0342958 s
+step = 8, sim time: 8.000000e-08 s, step walltime: 0.0333007 s
+step = 9, sim time: 9.000000e-08 s, step walltime: 0.0393652 s
+step = 10, sim time: 1.000000e-07 s, step walltime: 0.0333496 s
+step = 11, sim time: 1.100000e-07 s, step walltime: 0.0334023 s
+step = 12, sim time: 1.200000e-07 s, step walltime: 0.033089 s
+step = 13, sim time: 1.300000e-07 s, step walltime: 0.0337779 s
+step = 14, sim time: 1.400000e-07 s, step walltime: 0.0332759 s
+step = 15, sim time: 1.500000e-07 s, step walltime: 0.0373677 s
+step = 16, sim time: 1.600000e-07 s, step walltime: 0.0332327 s
+step = 17, sim time: 1.700000e-07 s, step walltime: 0.0334614 s
+step = 18, sim time: 1.800000e-07 s, step walltime: 0.0332263 s
+2024-06-01 23:36:30,653 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:36:30,670 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:36:30,672 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+2024-06-01 23:36:31,107 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+2024-06-01 23:36:31,133 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:36:31,148 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:36:31,150 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+2024-06-01 23:36:31,586 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.37 s)
+2024-06-01 23:36:31,664 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 4 statements.
+2024-06-01 23:36:31,717 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:36:31,722 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+2024-06-01 23:36:32,308 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+step = 19, sim time: 1.900000e-07 s, step walltime: 1.70356 s
+2024-06-01 23:36:32,359 - INFO - pytato.distributed.verify - find_partition: Split 22 nodes into 1 parts, with [22] nodes in each partition.
+2024-06-01 23:36:32,415 - INFO - meshmode.array_context - Transforming kernel 'get_fluid_state_part_0' with 15 statements.
+2024-06-01 23:36:32,558 - INFO - meshmode.array_context - Array Contraction: Contracting 1 temps
+2024-06-01 23:36:32,582 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'get_fluid_state_part_0' from 0.1MB to 0.1MB.
+2024-06-01 23:36:33,440 - INFO - pyopencl - build program: kernel 'get_fluid_state_part_0' was part of a lengthy source build resulting from a binary cache miss (0.39 s)
+Checkpointing final state ...
+2024-06-01 23:36:33,518 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 4 statements.
+2024-06-01 23:36:33,569 - INFO - meshmode.array_context - Array Contraction: Contracting 3 temps
+2024-06-01 23:36:33,605 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.2MB to 0.2MB.
+2024-06-01 23:36:34,132 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.39 s)
+-------- dt = 0.000e+00, cfl = 0.0228
+-------- P (min, max) (Pa) = (1.284504623e+03, 2.753939220e+05)
+-------- T (min, max) (K)  = (269.955, 2214.65)
+
+2024-06-01 23:36:34,186 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 3 statements.
+2024-06-01 23:36:34,215 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:36:34,219 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.1MB to 0.1MB.
+2024-06-01 23:36:34,777 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+2024-06-01 23:36:34,799 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 1 statements.
+2024-06-01 23:36:34,806 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:36:34,809 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.0MB to 0.0MB.
+2024-06-01 23:36:35,246 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.38 s)
+2024-06-01 23:36:35,277 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 3 statements.
+2024-06-01 23:36:35,306 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:36:35,310 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.1MB to 0.1MB.
+2024-06-01 23:36:35,864 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.40 s)
+failed to infer axis 1 of array of type <class 'pytato.array.Reshape'>.
+expr.non_equality_tags=frozenset()
+2024-06-01 23:36:35,919 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 6 statements.
+2024-06-01 23:36:36,010 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-06-01 23:36:36,020 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.2MB to 0.2MB.
+2024-06-01 23:36:36,856 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.47 s)
+2024-06-01 23:36:36,922 - INFO - meshmode.array_context - Transforming kernel 'frozen_result' with 4 statements.
+2024-06-01 23:36:36,966 - INFO - meshmode.array_context - Array Contraction: Contracting 2 temps
+2024-06-01 23:36:36,992 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_result' from 0.2MB to 0.2MB.
+2024-06-01 23:36:37,591 - INFO - pyopencl - build program: kernel 'frozen_result' was part of a lengthy source build resulting from a binary cache miss (0.41 s)
+nanobind: leaked 498 instances!
+ - leaked instance 0x10a48b910 of type "PooledSVM"
+ - leaked instance 0x109f00850 of type "PooledSVM"
+ - leaked instance 0x10aa51670 of type "Event"
+ - leaked instance 0x10ae05d90 of type "Event"
+ - leaked instance 0x10af141f0 of type "PooledSVM"
+ - leaked instance 0x10af5f9d0 of type "PooledSVM"
+ - leaked instance 0x1089cf1e0 of type "PooledSVM"
+ - leaked instance 0x108a233a0 of type "Event"
+ - leaked instance 0x1049419b0 of type "PooledSVM"
+ - leaked instance 0x2002f2bca0d8 of type "Kernel"
+ - leaked instance 0x10af33130 of type "PooledSVM"
+ - leaked instance 0x10ae89c80 of type "Event"
+ - leaked instance 0x109f38db0 of type "PooledSVM"
+ - leaked instance 0x2002f3790758 of type "Kernel"
+ - leaked instance 0x2002fde38418 of type "Kernel"
+ - leaked instance 0x2002ff6974d8 of type "Kernel"
+ - leaked instance 0x2002f3795398 of type "Kernel"
+ - leaked instance 0x2002fd11a618 of type "Kernel"
+ - leaked instance 0x10b2a3030 of type "PooledSVM"
+ - leaked instance 0x10b1e0e40 of type "Event"
+ - leaked instance 0x10b2bd570 of type "Event"
+ - leaked instance 0x109b494e0 of type "Event"
+ - leaked instance 0x1045d2790 of type "Event"
+ - leaked instance 0x108a68070 of type "PooledSVM"
+ - leaked instance 0x10b7ce7a0 of type "Event"
+ - leaked instance 0x10b7a25e0 of type "Event"
+ - leaked instance 0x2002f23fa3d8 of type "Kernel"
+ - leaked instance 0x10ad4da80 of type "PooledSVM"
+ - leaked instance 0x2002f38888d8 of type "Kernel"
+ - leaked instance 0x10a4defc0 of type "PooledSVM"
+ - leaked instance 0x108a122e0 of type "Event"
+ - leaked instance 0x109ab2960 of type "PooledSVM"
+ - leaked instance 0x102d3d560 of type "Device"
+ - leaked instance 0x10bb0c490 of type "Event"
+ - leaked instance 0x2002ff6f7c58 of type "Kernel"
+ - leaked instance 0x2002f2b6b358 of type "Kernel"
+ - leaked instance 0x10b804070 of type "PooledSVM"
+ - leaked instance 0x1045d25c0 of type "Event"
+ - leaked instance 0x108a320b0 of type "Event"
+ - leaked instance 0x10ae6f2a0 of type "PooledSVM"
+ - leaked instance 0x108b0c1f0 of type "PooledSVM"
+ - leaked instance 0x10c8536c0 of type "Event"
+ - leaked instance 0x2002f39a72d8 of type "Kernel"
+ - leaked instance 0x2002f3341e58 of type "Kernel"
+ - leaked instance 0x108a31a70 of type "Event"
+ - leaked instance 0x109c5ed30 of type "Event"
+ - leaked instance 0x108a63740 of type "PooledSVM"
+ - leaked instance 0x108a27950 of type "Event"
+ - leaked instance 0x10a3ceee0 of type "Event"
+ - leaked instance 0x10aeb3920 of type "PooledSVM"
+ - leaked instance 0x10b2146d0 of type "PooledSVM"
+ - leaked instance 0x2002f2fa12d8 of type "Kernel"
+ - leaked instance 0x10c841ec0 of type "Event"
+ - leaked instance 0x10b2b3060 of type "Event"
+ - leaked instance 0x10aec3910 of type "Event"
+ - leaked instance 0x1046ae600 of type "PooledSVM"
+ - leaked instance 0x10b34d4a0 of type "PooledSVM"
+ - leaked instance 0x10ba694b0 of type "Event"
+ - leaked instance 0x2002f2b572d8 of type "Kernel"
+ - leaked instance 0x2002ff0bed58 of type "Kernel"
+ - leaked instance 0x10a8cfa10 of type "Event"
+ - leaked instance 0x10abe5d20 of type "Event"
+ - leaked instance 0x10ad461f0 of type "Event"
+ - leaked instance 0x2002f31db758 of type "Kernel"
+ - leaked instance 0x10bd4e430 of type "PooledSVM"
+ - leaked instance 0x1099a2200 of type "Event"
+ - leaked instance 0x10ac31dd0 of type "PooledSVM"
+ - leaked instance 0x10b2f29d0 of type "Event"
+ - leaked instance 0x10ba5b680 of type "Event"
+ - leaked instance 0x2002f3d1ff18 of type "Kernel"
+ - leaked instance 0x10b1d7340 of type "Event"
+ - leaked instance 0x10bb51d00 of type "PooledSVM"
+ - leaked instance 0x108b0c2f0 of type "PooledSVM"
+ - leaked instance 0x109b32160 of type "PooledSVM"
+ - leaked instance 0x108a63790 of type "Event"
+ - leaked instance 0x10bb5a050 of type "Event"
+ - leaked instance 0x106f884a0 of type "PooledSVM"
+ - leaked instance 0x2002f2838498 of type "Kernel"
+ - leaked instance 0x10b7d8960 of type "Event"
+ - leaked instance 0x10ba36ce0 of type "Event"
+ - leaked instance 0x10a887c50 of type "PooledSVM"
+ - leaked instance 0x2002f37958d8 of type "Kernel"
+ - leaked instance 0x109c466f0 of type "PooledSVM"
+ - leaked instance 0x2002f3e3cf58 of type "Kernel"
+ - leaked instance 0x2002f27cb5d8 of type "Kernel"
+ - leaked instance 0x106f4cc70 of type "Event"
+ - leaked instance 0x2002f2889418 of type "Kernel"
+ - leaked instance 0x104d236f0 of type "PooledSVM"
+ - leaked instance 0x2002fcf84ed8 of type "Kernel"
+ - leaked instance 0x109e36ff0 of type "PooledSVM"
+ - leaked instance 0x10ad8f390 of type "PooledSVM"
+ - leaked instance 0x10b20f0e0 of type "Event"
+ - leaked instance 0x10ad3f500 of type "PooledSVM"
+ - leaked instance 0x10aa44110 of type "PooledSVM"
+ - leaked instance 0x2002f2b65558 of type "Kernel"
+ - leaked instance 0x10ac0c010 of type "PooledSVM"
+ - leaked instance 0x10c79d420 of type "PooledSVM"
+ - leaked instance 0x10ab742a0 of type "Event"
+ - leaked instance 0x10af35590 of type "PooledSVM"
+ - leaked instance 0x2002f348ad98 of type "Kernel"
+ - leaked instance 0x10b283b50 of type "PooledSVM"
+ - leaked instance 0x109c5e720 of type "PooledSVM"
+ - leaked instance 0x10b265860 of type "PooledSVM"
+ - leaked instance 0x10a619060 of type "Event"
+ - leaked instance 0x10b7a2650 of type "Event"
+ - leaked instance 0x104d964b0 of type "Event"
+ - leaked instance 0x2002f31e74d8 of type "Kernel"
+ - leaked instance 0x102936dd0 of type "PooledSVM"
+ - leaked instance 0x10aec3590 of type "Event"
+ - leaked instance 0x10b7647d0 of type "Event"
+ - leaked instance 0x10ae5b940 of type "Event"
+ - leaked instance 0x10b22a2c0 of type "Event"
+ - leaked instance 0x2002f25b86d8 of type "Kernel"
+ - leaked instance 0x2002f3234398 of type "Kernel"
+ - leaked instance 0x10b31b600 of type "Event"
+ - leaked instance 0x2002ff47e218 of type "Kernel"
+ - leaked instance 0x2002ff47dd98 of type "Kernel"
+ - leaked instance 0x108a808e0 of type "Event"
+ - leaked instance 0x1045d39e0 of type "Event"
+ - leaked instance 0x2002f2dbf2d8 of type "Kernel"
+ - leaked instance 0x10b2f3d00 of type "Event"
+ - leaked instance 0x2002f3e34a18 of type "Kernel"
+ - leaked instance 0x10aeb70c0 of type "PooledSVM"
+ - leaked instance 0x10aee2520 of type "Event"
+ - leaked instance 0x2002f3a99f98 of type "Kernel"
+ - leaked instance 0x2002fea82798 of type "Kernel"
+ - leaked instance 0x108a0ca00 of type "Event"
+ - leaked instance 0x2002f3b81158 of type "Kernel"
+ - leaked instance 0x20003fdcf568 of type "SVMAllocator"
+ - leaked instance 0x109f4f980 of type "Event"
+ - leaked instance 0x2002f3c0bb58 of type "Kernel"
+ - leaked instance 0x2002fc971958 of type "Kernel"
+ - leaked instance 0x2002f34a9c98 of type "Kernel"
+ - leaked instance 0x10ad016a0 of type "PooledSVM"
+ - leaked instance 0x10463e2b0 of type "PooledSVM"
+ - leaked instance 0x2000b3de2c58 of type "Kernel"
+ - leaked instance 0x108a635e0 of type "Event"
+ - leaked instance 0x2002f34afe18 of type "Kernel"
+ - leaked instance 0x1046148c0 of type "Event"
+ - leaked instance 0x2002fd4f1898 of type "Kernel"
+ - leaked instance 0x109c78dc0 of type "PooledSVM"
+ - leaked instance 0x10a205b80 of type "PooledSVM"
+ - leaked instance 0x10abc0cc0 of type "Event"
+ - leaked instance 0x2002f28ebbd8 of type "Kernel"
+ - leaked instance 0x2002ffecac98 of type "Kernel"
+ - leaked instance 0x2002f3c6a258 of type "Kernel"
+ - leaked instance 0x10baa4d50 of type "Event"
+ - leaked instance 0x10b34db10 of type "PooledSVM"
+ - leaked instance 0x10a5f60b0 of type "Event"
+ - leaked instance 0x2002fff09cd8 of type "Kernel"
+ - leaked instance 0x10a320990 of type "PooledSVM"
+ - leaked instance 0x10a8d25c0 of type "Event"
+ - leaked instance 0x108a7ec50 of type "PooledSVM"
+ - leaked instance 0x2002f39e7f18 of type "Kernel"
+ - leaked instance 0x104614d40 of type "Event"
+ - leaked instance 0x10999e8e0 of type "Event"
+ - leaked instance 0x1011d0c20 of type "Event"
+ - leaked instance 0x2002f2c68d58 of type "Kernel"
+ - leaked instance 0x1099db270 of type "PooledSVM"
+ - leaked instance 0x2002ff4b06d8 of type "Kernel"
+ - leaked instance 0x10b32ddd0 of type "Event"
+ - leaked instance 0x10bb281e0 of type "Event"
+ - leaked instance 0x2002f3bc5ad8 of type "Kernel"
+ - leaked instance 0x106f1b910 of type "PooledSVM"
+ - leaked instance 0x2002ffea9698 of type "Kernel"
+ - leaked instance 0x10af2e070 of type "PooledSVM"
+ - leaked instance 0x10af05a80 of type "Event"
+ - leaked instance 0x2002f2567598 of type "Kernel"
+ - leaked instance 0x10bb1e7f0 of type "Event"
+ - leaked instance 0x10a52f900 of type "PooledSVM"
+ - leaked instance 0x10b78c920 of type "PooledSVM"
+ - leaked instance 0x2002fc347c18 of type "Kernel"
+ - leaked instance 0x2002f39848d8 of type "Kernel"
+ - leaked instance 0x2002f2b372d8 of type "Kernel"
+ - leaked instance 0x10af14a40 of type "PooledSVM"
+ - leaked instance 0x10ae09b60 of type "Event"
+ - leaked instance 0x108a80700 of type "Event"
+ - leaked instance 0x10af5f280 of type "PooledSVM"
+ - leaked instance 0x10abe5b20 of type "Event"
+ - leaked instance 0x105284090 of type "Event"
+ - leaked instance 0x109f44c90 of type "PooledSVM"
+ - leaked instance 0x109c05fc0 of type "Event"
+ - leaked instance 0x10bc23170 of type "Event"
+ - leaked instance 0x10451b570 of type "PooledSVM"
+ - leaked instance 0x10b2f2660 of type "Event"
+ - leaked instance 0x2002f2cbef98 of type "Kernel"
+ - leaked instance 0x2002f3ac9b18 of type "Kernel"
+ - leaked instance 0x2002f12891d8 of type "Kernel"
+ - leaked instance 0x2002f3787758 of type "Kernel"
+ - leaked instance 0x2002fef471d8 of type "Kernel"
+ - leaked instance 0x10ae38490 of type "Event"
+ - leaked instance 0x10adfdb00 of type "Event"
+ - leaked instance 0x10adea4c0 of type "PooledSVM"
+ - leaked instance 0x2002f2879d18 of type "Kernel"
+ - leaked instance 0x2002feb33e58 of type "Kernel"
+ - leaked instance 0x10aea8b20 of type "PooledSVM"
+ - leaked instance 0x10addf250 of type "Event"
+ - leaked instance 0x10b7cfd10 of type "Event"
+ - leaked instance 0x10accc4c0 of type "PooledSVM"
+ - leaked instance 0x10aefb3f0 of type "Event"
+ - leaked instance 0x2002f36fff98 of type "Kernel"
+ - leaked instance 0x10c797d30 of type "Event"
+ - leaked instance 0x2002f24527d8 of type "Kernel"
+ - leaked instance 0x2002f24b4958 of type "Kernel"
+ - leaked instance 0x10ae385b0 of type "PooledSVM"
+ - leaked instance 0x108b2e490 of type "PooledSVM"
+ - leaked instance 0x10bcf6b00 of type "PooledSVM"
+ - leaked instance 0x100b28db0 of type "Event"
+ - leaked instance 0x10b32e090 of type "PooledSVM"
+ - leaked instance 0x102e36b10 of type "Context"
+ - leaked instance 0x10ae09a80 of type "Event"
+ - leaked instance 0x2002ff16b498 of type "Kernel"
+ - leaked instance 0x1089df400 of type "Event"
+ - leaked instance 0x10bb5a610 of type "Event"
+ - leaked instance 0x10bb46e30 of type "Event"
+ - leaked instance 0x2002fef886d8 of type "Kernel"
+ - leaked instance 0x104d963b0 of type "PooledSVM"
+ - leaked instance 0x10a4f4930 of type "Event"
+ - leaked instance 0x2002fd123ad8 of type "Kernel"
+ - leaked instance 0x2002f307d398 of type "Kernel"
+ - leaked instance 0x2002f1239dd8 of type "Kernel"
+ - leaked instance 0x2002ff0bff98 of type "Kernel"
+ - leaked instance 0x1099bb120 of type "Event"
+ - leaked instance 0x2002f39745d8 of type "Kernel"
+ - leaked instance 0x10add5d30 of type "Event"
+ - leaked instance 0x109ff0050 of type "Event"
+ - leaked instance 0x10bb4a090 of type "Event"
+ - leaked instance 0x108aacea0 of type "Event"
+ - leaked instance 0x2002f3987118 of type "Kernel"
+ - leaked instance 0x10b35a2e0 of type "Event"
+ - leaked instance 0x10bb53850 of type "Event"
+ - leaked instance 0x109f19170 of type "PooledSVM"
+ - leaked instance 0x2002f2c01e98 of type "Kernel"
+ - leaked instance 0x1094ba380 of type "Event"
+ - leaked instance 0x10a486710 of type "Event"
+ - leaked instance 0x10b76afa0 of type "PooledSVM"
+ - leaked instance 0x109cc5070 of type "Event"
+ - leaked instance 0x10ae09480 of type "PooledSVM"
+ - leaked instance 0x10acde8a0 of type "Event"
+ - leaked instance 0x109f831b0 of type "PooledSVM"
+ - leaked instance 0x10ba36fb0 of type "PooledSVM"
+ - leaked instance 0x10ba41120 of type "Event"
+ - leaked instance 0x10a8f5910 of type "Event"
+ - leaked instance 0x10ad8fc10 of type "PooledSVM"
+ - leaked instance 0x2002f30cc358 of type "Kernel"
+ - leaked instance 0x108b0c650 of type "Event"
+ - leaked instance 0x2002fd4f1f58 of type "Kernel"
+ - leaked instance 0x10a4f4b70 of type "PooledSVM"
+ - leaked instance 0x10af1d830 of type "Event"
+ - leaked instance 0x10b2f5d40 of type "PooledSVM"
+ - leaked instance 0x2002fc613898 of type "Kernel"
+ - leaked instance 0x10b7d1dc0 of type "Event"
+ - leaked instance 0x10bc23860 of type "PooledSVM"
+ - leaked instance 0x2002f30ce358 of type "Kernel"
+ - leaked instance 0x2002f3794358 of type "Kernel"
+ - leaked instance 0x10a9f6fc0 of type "Event"
+ - leaked instance 0x10adfd950 of type "PooledSVM"
+ - leaked instance 0x104d65db0 of type "PooledSVM"
+ - leaked instance 0x109f6a9a0 of type "Event"
+ - leaked instance 0x10abe5730 of type "Event"
+ - leaked instance 0x10a631290 of type "PooledSVM"
+ - leaked instance 0x109dfbd60 of type "Event"
+ - leaked instance 0x10ad912e0 of type "Event"
+ - leaked instance 0x10a3209e0 of type "Event"
+ - leaked instance 0x10a236710 of type "PooledSVM"
+ - leaked instance 0x10ae7d790 of type "PooledSVM"
+ - leaked instance 0x109e1e530 of type "PooledSVM"
+ - leaked instance 0x10a8a5130 of type "Event"
+ - leaked instance 0x2002f3880d58 of type "Kernel"
+ - leaked instance 0x10a8805a0 of type "Event"
+ - leaked instance 0x2002ffb47058 of type "Kernel"
+ - leaked instance 0x108b2e0b0 of type "Event"
+ - leaked instance 0x104d67570 of type "Event"
+ - leaked instance 0x10ba90910 of type "Event"
+ - leaked instance 0x10ad48420 of type "Event"
+ - leaked instance 0x2002f2b65818 of type "Kernel"
+ - leaked instance 0x10a8cd3e0 of type "PooledSVM"
+ - leaked instance 0x2002f3d22b58 of type "Kernel"
+ - leaked instance 0x10b8013e0 of type "Event"
+ - leaked instance 0x10af35550 of type "Event"
+ - leaked instance 0x2002f2359e98 of type "Kernel"
+ - leaked instance 0x2002f32082d8 of type "Kernel"
+ - leaked instance 0x2002f2cf7f18 of type "Kernel"
+ - leaked instance 0x10adb9a50 of type "Event"
+ - leaked instance 0x109c89dc0 of type "PooledSVM"
+ - leaked instance 0x108afe260 of type "Event"
+ - leaked instance 0x10b30c470 of type "Event"
+ - leaked instance 0x109c49900 of type "Event"
+ - leaked instance 0x10b1f85e0 of type "Event"
+ - leaked instance 0x106f13ca0 of type "PooledSVM"
+ - leaked instance 0x10ba35950 of type "Event"
+ - leaked instance 0x2002f3871558 of type "Kernel"
+ - leaked instance 0x10af02e90 of type "PooledSVM"
+ - leaked instance 0x2002ff70aed8 of type "Kernel"
+ - leaked instance 0x2002fd121898 of type "Kernel"
+ - leaked instance 0x102eb2bf0 of type "Platform"
+ - leaked instance 0x10b2251b0 of type "PooledSVM"
+ - leaked instance 0x10af1af30 of type "PooledSVM"
+ - leaked instance 0x2002f337de58 of type "Kernel"
+ - leaked instance 0x10ad466b0 of type "PooledSVM"
+ - leaked instance 0x10ae09820 of type "Event"
+ - leaked instance 0x1099c8ff0 of type "Event"
+ - leaked instance 0x10ad0d690 of type "Event"
+ - leaked instance 0x10aeabcd0 of type "Event"
+ - leaked instance 0x109ff3540 of type "PooledSVM"
+ - leaked instance 0x20003fde57d8 of type "CommandQueue"
+ - leaked instance 0x10b36b7a0 of type "Event"
+ - leaked instance 0x10acfe330 of type "Event"
+ - leaked instance 0x20000d15af18 of type "Context"
+ - leaked instance 0x10b222b20 of type "PooledSVM"
+ - leaked instance 0x10b63e0e0 of type "Event"
+ - leaked instance 0x2002f39d1658 of type "Kernel"
+ - leaked instance 0x10ad460a0 of type "Event"
+ - leaked instance 0x2002f3be7498 of type "Kernel"
+ - leaked instance 0x10ae7bc40 of type "Event"
+ - leaked instance 0x2002f3992558 of type "Kernel"
+ - leaked instance 0x108b1c0b0 of type "PooledSVM"
+ - leaked instance 0x2002f2ba3c18 of type "Kernel"
+ - leaked instance 0x10af3cdf0 of type "PooledSVM"
+ - leaked instance 0x10acda7b0 of type "Event"
+ - leaked instance 0x2002fddf3998 of type "Kernel"
+ - leaked instance 0x109c05fa0 of type "Event"
+ - leaked instance 0x1099a6460 of type "Event"
+ - leaked instance 0x109f619d0 of type "Event"
+ - leaked instance 0x10afaca80 of type "Event"
+ - leaked instance 0x10c7a3d70 of type "PooledSVM"
+ - leaked instance 0x2002f3dd9c98 of type "Kernel"
+ - leaked instance 0x2002f2a32718 of type "Kernel"
+ - leaked instance 0x10b301b50 of type "Event"
+ - leaked instance 0x104614d60 of type "Event"
+ - leaked instance 0x2002f3db9358 of type "Kernel"
+ - leaked instance 0x109f7cbf0 of type "Event"
+ - leaked instance 0x2002f3236018 of type "Kernel"
+ - leaked instance 0x10ae09b00 of type "Event"
+ - leaked instance 0x2002f3b1c258 of type "Kernel"
+ - leaked instance 0x108a638b0 of type "Event"
+ - leaked instance 0x108b35b80 of type "PooledSVM"
+ - leaked instance 0x2002ff366c18 of type "Kernel"
+ - leaked instance 0x2002f2267ed8 of type "Kernel"
+ - leaked instance 0x2002fea83dd8 of type "Kernel"
+ - leaked instance 0x10abe1dc0 of type "Event"
+ - leaked instance 0x10aeb9c30 of type "Event"
+ - leaked instance 0x104d65e00 of type "Event"
+ - leaked instance 0x10ad37e10 of type "Event"
+ - leaked instance 0x10b823170 of type "PooledSVM"
+ - leaked instance 0x2002f30754d8 of type "Kernel"
+ - leaked instance 0x10b2ab5e0 of type "Event"
+ - leaked instance 0x10a8ca910 of type "PooledSVM"
+ - leaked instance 0x2002f3796a58 of type "Kernel"
+ - leaked instance 0x10b7a24f0 of type "Event"
+ - leaked instance 0x108abbf30 of type "PooledSVM"
+ - leaked instance 0x109f50fe0 of type "Event"
+ - leaked instance 0x10ad58040 of type "Event"
+ - leaked instance 0x10af99550 of type "PooledSVM"
+ - leaked instance 0x109be9d80 of type "PooledSVM"
+ - leaked instance 0x10b330110 of type "PooledSVM"
+ - leaked instance 0x10af11ca0 of type "Event"
+ - leaked instance 0x10bb54ec0 of type "PooledSVM"
+ - leaked instance 0x2002f2c69d58 of type "Kernel"
+ - leaked instance 0x2002fc142898 of type "Kernel"
+ - leaked instance 0x10a257360 of type "Event"
+ - leaked instance 0x109b296e0 of type "PooledSVM"
+ - leaked instance 0x2002fea708d8 of type "Kernel"
+ - leaked instance 0x10abe1da0 of type "Event"
+ - leaked instance 0x10adcab30 of type "PooledSVM"
+ - leaked instance 0x109c22a80 of type "PooledSVM"
+ - leaked instance 0x10ae09580 of type "PooledSVM"
+ - leaked instance 0x10aa45890 of type "PooledSVM"
+ - leaked instance 0x109a828b0 of type "Event"
+ - leaked instance 0x109c8b070 of type "Event"
+ - leaked instance 0x108aaa970 of type "PooledSVM"
+ - leaked instance 0x10adc34e0 of type "Event"
+ - leaked instance 0x2002f3c1ef58 of type "Kernel"
+ - leaked instance 0x109a67370 of type "PooledSVM"
+ - leaked instance 0x1045d2550 of type "PooledSVM"
+ - leaked instance 0x10aa9cf90 of type "Event"
+ - leaked instance 0x2002f2ea4658 of type "Kernel"
+ - leaked instance 0x10a900d00 of type "PooledSVM"
+ - leaked instance 0x2002f392fcd8 of type "Kernel"
+ - leaked instance 0x10a645ce0 of type "PooledSVM"
+ - leaked instance 0x109b47b10 of type "Event"
+ - leaked instance 0x10acdc110 of type "PooledSVM"
+ - leaked instance 0x109a49720 of type "Event"
+ - leaked instance 0x10af68390 of type "Event"
+ - leaked instance 0x108aae030 of type "Event"
+ - leaked instance 0x1089c6220 of type "Event"
+ - leaked instance 0x108aacfe0 of type "Event"
+ - leaked instance 0x109f5e7c0 of type "PooledSVM"
+ - leaked instance 0x10b326ca0 of type "Event"
+ - leaked instance 0x10b283ba0 of type "Event"
+ - leaked instance 0x106f45d80 of type "PooledSVM"
+ - leaked instance 0x104d615d0 of type "PooledSVM"
+ - leaked instance 0x10a52eff0 of type "PooledSVM"
+ - leaked instance 0x2002ff92ec58 of type "Kernel"
+ - leaked instance 0x1045efb60 of type "Event"
+ - leaked instance 0x10aa25990 of type "PooledSVM"
+ - leaked instance 0x108b007d0 of type "PooledSVM"
+ - leaked instance 0x2002f2470d58 of type "Kernel"
+ - leaked instance 0x10af02260 of type "PooledSVM"
+ - leaked instance 0x10b32e3b0 of type "Event"
+ - leaked instance 0x10afb56b0 of type "Event"
+ - leaked instance 0x10a24e2d0 of type "Event"
+ - leaked instance 0x10b27e0d0 of type "Event"
+ - leaked instance 0x10a5f61f0 of type "Event"
+ - leaked instance 0x109ddc530 of type "PooledSVM"
+ - leaked instance 0x2002ff4c9c58 of type "Kernel"
+ - leaked instance 0x2002fe5877d8 of type "Kernel"
+ - leaked instance 0x10bb5dfc0 of type "PooledSVM"
+ - leaked instance 0x10b35a370 of type "Event"
+ - leaked instance 0x2002fde396d8 of type "Kernel"
+ - leaked instance 0x10af59ee0 of type "Event"
+ - leaked instance 0x10c79c210 of type "PooledSVM"
+ - leaked instance 0x10aa19c30 of type "Event"
+ - leaked instance 0x10ae034a0 of type "PooledSVM"
+ - leaked instance 0x2002f3e3fd58 of type "Kernel"
+ - leaked instance 0x109c47190 of type "PooledSVM"
+ - leaked instance 0x10531fd10 of type "Event"
+ - leaked instance 0x2002f3db9658 of type "Kernel"
+ - leaked instance 0x1046adf00 of type "Event"
+ - leaked instance 0x10bc22e10 of type "Event"
+ - leaked instance 0x2002f346a798 of type "Kernel"
+ - leaked instance 0x2002f28a5c58 of type "Kernel"
+ - leaked instance 0x2002fce6bc18 of type "Kernel"
+ - leaked instance 0x10bc243d0 of type "Event"
+ - leaked instance 0x106f66330 of type "PooledSVM"
+ - leaked instance 0x2002f11d9b18 of type "Kernel"
+ - leaked instance 0x10a541b70 of type "Event"
+ - leaked instance 0x2002ff6c7ed8 of type "Kernel"
+ - leaked instance 0x2002f3501398 of type "Kernel"
+ - leaked instance 0x2002f3d14358 of type "Kernel"
+ - leaked instance 0x10a4f4bc0 of type "Event"
+ - leaked instance 0x2002f2be8bd8 of type "Kernel"
+ - leaked instance 0x10b276670 of type "Event"
+ - leaked instance 0x2002f3c0a458 of type "Kernel"
+ - leaked instance 0x1089df3b0 of type "PooledSVM"
+ - leaked instance 0x10af057f0 of type "Event"
+ - leaked instance 0x108a12270 of type "Event"
+ - leaked instance 0x104d08270 of type "PooledSVM"
+ - leaked instance 0x2002ff8d3dd8 of type "Kernel"
+ - leaked instance 0x10afb7630 of type "Event"
+ - leaked instance 0x109e47170 of type "PooledSVM"
+ - leaked instance 0x10aebcef0 of type "PooledSVM"
+ - leaked instance 0x2002f39c9198 of type "Kernel"
+ - leaked instance 0x2002f3dda798 of type "Kernel"
+ - leaked instance 0x10bcf6720 of type "PooledSVM"
+ - leaked instance 0x10af85310 of type "PooledSVM"
+ - leaked instance 0x10c85f530 of type "PooledSVM"
+ - leaked instance 0x10b296ff0 of type "PooledSVM"
+ - leaked instance 0x10bb4bce0 of type "Event"
+ - leaked instance 0x10c830370 of type "PooledSVM"
+ - leaked instance 0x10c7f2680 of type "Event"
+ - leaked instance 0x2002f3db3798 of type "Kernel"
+ - leaked instance 0x10abe1de0 of type "Event"
+ - leaked instance 0x10ae09e60 of type "Event"
+ - leaked instance 0x2002fc341c98 of type "Kernel"
+ - leaked instance 0x109c47dd0 of type "PooledSVM"
+ - leaked instance 0x2002f2e72898 of type "Kernel"
+ - leaked instance 0x108a63590 of type "PooledSVM"
+ - leaked instance 0x2002f3d7ba58 of type "Kernel"
+ - leaked instance 0x2002fcf60258 of type "Kernel"
+ - leaked instance 0x20003fdb9908 of type "SVMPool"
+ - leaked instance 0x10a9d6560 of type "PooledSVM"
+ - leaked instance 0x2002f227a818 of type "Kernel"
+ - leaked instance 0x1094ba330 of type "PooledSVM"
+ - leaked instance 0x10b7d9530 of type "Event"
+ - leaked instance 0x2002f3312158 of type "Kernel"
+ - leaked instance 0x108afab40 of type "Event"
+ - leaked instance 0x108ade860 of type "Event"
+ - leaked instance 0x2002f3b9f958 of type "Kernel"
+ - leaked instance 0x10b22a250 of type "PooledSVM"
+ - leaked instance 0x104d96490 of type "Event"
+ - leaked instance 0x106f96270 of type "Event"
+ - leaked instance 0x109f7cbd0 of type "Event"
+ - leaked instance 0x10ad46a20 of type "Event"
+ - leaked instance 0x10ab8cdb0 of type "PooledSVM"
+ - leaked instance 0x10b31bb90 of type "PooledSVM"
+ - leaked instance 0x10b25cec0 of type "Event"
+ - leaked instance 0x10aa2cc20 of type "PooledSVM"
+ - leaked instance 0x10b383ce0 of type "PooledSVM"
+ - leaked instance 0x2002f3987058 of type "Kernel"
+ - leaked instance 0x10aeb5b90 of type "Event"
+ - leaked instance 0x108a6f650 of type "Event"
+ - leaked instance 0x104d96710 of type "Event"
+ - leaked instance 0x2002f10d1658 of type "Kernel"
+ - leaked instance 0x10b7a5850 of type "Event"
+ - leaked instance 0x1099a0cf0 of type "Event"
+ - leaked instance 0x2002f34eb7d8 of type "Kernel"
+ - leaked instance 0x2002f38c29d8 of type "Kernel"
+ - leaked instance 0x2002f3521c98 of type "Kernel"
+ - leaked instance 0x2002fc664c58 of type "Kernel"
+ - leaked instance 0x108a63f10 of type "Event"
+ - leaked instance 0x10c83db90 of type "PooledSVM"
+ - leaked instance 0x10b1e0e60 of type "Event"
+ - leaked instance 0x10ab72570 of type "Event"
+ - leaked instance 0x2002fda05418 of type "Kernel"
+ - leaked instance 0x10bc23190 of type "Event"
+ - leaked instance 0x10a4db100 of type "Event"
+ - leaked instance 0x2002fea83218 of type "Kernel"
+nanobind: leaked 16 types!
+ - leaked type "pyopencl._cl.Device"
+ - leaked type "pyopencl._cl.status_code"
+ - leaked type "pyopencl._cl.SVMAllocator"
+ - leaked type "pyopencl._cl.SVMPointer"
+ - leaked type "pyopencl._cl.CommandQueue"
+ - leaked type "pyopencl._cl.AllocatorBase"
+ - leaked type "pyopencl._cl.Event"
+ - leaked type "pyopencl._cl.Buffer"
+ - leaked type "pyopencl._cl.Kernel"
+ - leaked type "pyopencl._cl.SVMPool"
+ - leaked type "pyopencl._cl.PooledSVM"
+ - ... skipped remainder
+nanobind: leaked 102 functions!
+ - leaked function "__eq__"
+ - leaked function ""
+ - leaked function "release"
+ - leaked function "bin_number"
+ - leaked function "wait"
+ - leaked function "__call__"
+ - leaked function "set_default_device_command_queue"
+ - leaked function "enqueue_release"
+ - leaked function ""
+ - leaked function "flush"
+ - leaked function "get_sub_group_info"
+ - ... skipped remainder
+nanobind: this is likely caused by a reference counting issue in the binding code.
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 5928103: <isolator_timing_job.sh> in cluster <lassen> Done
+
+Job <isolator_timing_job.sh> was submitted from host <lassen708> by user <mtcampbe> in cluster <lassen> at Sat Jun  1 23:33:43 2024
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <mtcampbe> in cluster <lassen> at Sat Jun  1 23:33:44 2024
+                            <40*lassen122>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/y2-isolator/timing_run> was used as the working directory.
+Started at Sat Jun  1 23:33:44 2024
+Terminated at Sat Jun  1 23:36:56 2024
+Results reported at Sat Jun  1 23:36:56 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+
+#BSUB -nnodes 1
+#BSUB -G uiuc
+#BSUB -W 60
+#BSUB -q pbatch
+
+printf "Running with EMIRGE_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge\n"
+
+source "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/config/activate_env.sh"
+export PYOPENCL_CTX="port:tesla"
+export XDG_CACHE_HOME="/tmp/mtcampbe/xdg-scratch"
+rm -rf $XDG_CACHE_HOME
+rm -f timing-run-done
+which python
+conda env list
+env
+env | grep LSB_MCPU_HOSTS
+
+jsrun -g 1 -a 1 -n 1 python -O -u -m mpi4py ./isolator.py -i timing_params.yaml --lazy --log
+touch timing-run-done
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.23 sec.
+    Max Memory :                                 59 MB
+    Average Memory :                             56.75 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1634 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   192 sec.
+    Turnaround time :                            193 sec.
+
+The output (if any) is above this job summary.
+
