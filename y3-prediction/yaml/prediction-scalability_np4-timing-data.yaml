@@ -7826,3 +7826,20 @@ time_second_10: 33.11369255371392
 max_python_mem_usage: 8696.8125
 max_gpu_mem_usage: 9561.625
 ---
+run_date: 2024-08-16 22:46
+run_host: Lassen
+cl_device: 
+num_processors: 4
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_branch: unify-caches
+driver_branch: Unknown
+mirge_version: 01b241adadae63d7ca395abcbe2b2b37efb4db41
+driver_version: Unknown
+time_startup: 
+time_first_step: 0
+time_first_10: 0
+time_second_10: 0
+max_python_mem_usage: 
+max_gpu_mem_usage: 
+---
