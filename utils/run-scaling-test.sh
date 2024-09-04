@@ -16,6 +16,7 @@ TEMP_TIMESTAMP=$(date "+%Y.%m.%d-%H.%M.%S")
 EMIRGE_HOME=${EMIRGE_HOME:-"${TOPDIR}/emirge"}
 export MIRGE_CACHE_ROOT="${TOPDIR}/timing-run-caches"
 SCALING_DAY_OF_WEEK=$(date +%a)
+SCALING_DRIVER_BRANCH="main"
 
 if [ "$SCALING_DAY_OF_WEEK" = "Mon" ]; then
     if [ -f DELETE_TIMING_CACHE ]; then
@@ -59,7 +60,7 @@ fi
 printf "Installing driver in: ${TOPDIR}/${SCALING_CASE_RUN_ROOT}\n"
 
 # git clone -b scalability-testing git@github.com:/illinois-ceesd/drivers_y3-prediction ${SCALING_CASE_RUN_ROOT}
-git clone git@github.com:/illinois-ceesd/drivers_y3-prediction ${SCALING_CASE_RUN_ROOT}
+git clone -b ${SCALING_DRIVER_BRANCH} git@github.com:/illinois-ceesd/drivers_y3-prediction ${SCALING_CASE_RUN_ROOT}
 cd ${SCALING_CASE_RUN_ROOT}
 export DRIVER_VERSION=$(git rev-parse HEAD)
 export DRIVER_BRANCH=$(git symbolic-ref --short HEAD)
@@ -69,6 +70,7 @@ printf "DRIVER_VERSION=${DRIVER_VERSION}\n"
 
 conda deactivate
 source ${EMIRGE_HOME}/config/activate_env.sh
+${EMIRGE_HOME}/version.sh
 
 ln -s $EMIRGE_HOME emirge
 pip install -e .
