@@ -1,0 +1,125 @@
+<<Error: tweaked_jsm_wait_for_ready returned 22 to lexec>>
+
+This typically indicates one of the following five issues:
+ 1) A long running command in .bashrc such as SPACK or CONDA init
+ 2) Disabling ssh key checks by creating ~/.ssh/setup_ssh_keys_skip_tests
+ 3) Incompatible ssh keys or ~/.ssh/config (Did you recently change either?)
+ 4) Setting TMP or TMP_DIR to a dir that doesn't exist on compute nodes
+ 5) A system problem where NFS mounts or SSH daemons are broken on a node
+
+NOTE: Only 5) is a system problem. The rest require changing user files to fix
+
+5) Starting JSM diagnostics for allocation 6400488 from lassen710
+Testing nodes lassen[30-31,33,35]
+Launched  Thu Apr 18 02:19:36 PDT 2024
+Completed Thu Apr 18 02:19:36 PDT 2024
+
+NOTE: Any output between 'Launched' and 'Completed' confirms a system problem
+      that should be reported to John Gyllenhaal gyllen@llnl.gov and please
+      cc lc-hotline@llnl.gov and include the above output!
+
+NOTE: No output suggests it is an user solvable issue, such as listed in 1-4
+
+Starting user file diagnostics printing hopefully useful info on 1-4:
+1) Running: grep -i -e spack/setup -e conda ~/.bashrc
+#    __conda_setup="$('/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Miniconda3/bin/conda' 'shell.bas#h' 'hook' 2> /dev/null)"
+#        eval "$__conda_setup"
+#        if [ -f "/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Miniconda3/etc/profile.d/conda.sh" ]; then
+#            . "/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Miniconda3/etc/profile.d/conda.sh"
+#            export PATH="/usr/workspace/wsa/xpacc/Users/mtcampbe/CEESD/Quartz/Miniconda3/bin:$PATH"
+#    unset __conda_setup
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+# <<< conda initialize <<<
+We have found that python scripts that typically take 3 seconds to run can
+intermittently run much longer, triggering the 60 second JSM launch timeout.
+Restricting to interactive with 'if [[ huB == *i* ]]; then <cmd> fi' may help
+
+2) Running: ls -l  ~/.ssh/setup_ssh_keys_skip_tests
+/usr/bin/ls: cannot access /g/g17/mtcampbe/.ssh/setup_ssh_keys_skip_tests: No such file or directory
+Excellent, we do not want ~/.ssh/setup_ssh_keys_skip_tests to exist
+
+3a) Running: ls -lt ~/.ssh | head -6
+total 44
+-rw-r--r-- 1 mtcampbe mtcampbe 12931 Mar 26 12:55 known_hosts
+-rw------- 1 mtcampbe mtcampbe     0 Nov 13 02:28 setup_ssh_keys_verified
+-rw-r--r-- 1 mtcampbe mtcampbe 13023 Mar 24  2023 known_hosts~
+-rw------- 1 mtcampbe mtcampbe   397 Mar 10  2016 authorized_keys
+-rw------- 1 mtcampbe mtcampbe   397 Mar 10  2016 id_rsa.pub
+
+3b) Running: setup_ssh_keys -v
+Testing /g/g17/mtcampbe permissions (currently drwx------)
+Testing /g/g17/mtcampbe/.ssh permissions (currently 700)
+Testing /g/g17/mtcampbe/.ssh/authorized_keys permissions (currently -rw-------)
+Testing /g/g17/mtcampbe/.ssh/id_rsa permissions (currently -rw-------)
+Ssh key test on lassen passed
+Touching file /g/g17/mtcampbe/.ssh/setup_ssh_keys_verified to cache
+
+4a) Running: grep TMP ~/.bash* ~/.profile* ~/.csh* ~/.login*
+
+4b) Running: ls -lt  ~/.bash* ~/.profile* ~/.csh* ~/.login* | head -3
+-rw------- 1 mtcampbe mtcampbe   296 Sep 14  2023 /g/g17/mtcampbe/.bash_profile
+-rw------- 1 mtcampbe mtcampbe   787 Aug 31  2023 /g/g17/mtcampbe/.bashrc
+-rw------- 1 mtcampbe mtcampbe   296 Nov  9  2022 /g/g17/mtcampbe/.bash_profile~
+
+NOTE: Until the problem is found and fixed, getting a new allocation
+      with different nodes can be an effective temporary workaround.
+
+<<If it is a confirmed system problem or if you need help solving the issue>>
+<<please contact John Gyllenhaal gyllen@llnl.gov and cc lc-hotline@llnl.gov>>
+<<Please include all the output above in the email to help us find the problem>>
+
+<<Ending JSM diagnostics, please include all of the above if emailing for help>>
+<<Exiting job due to node issues detected>>
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 5797442: <scale16> in cluster <lassen> Exited
+
+Job <scale16> was submitted from host <lassen708> by user <mtcampbe> in cluster <lassen> at Thu Apr 18 00:02:45 2024
+Job was executed on host(s) <1*lassen710>, in queue <pdebug>, as user <mtcampbe> in cluster <lassen> at Thu Apr 18 02:18:30 2024
+                            <40*lassen35>
+                            <40*lassen33>
+                            <40*lassen31>
+                            <40*lassen30>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test> was used as the working directory.
+Started at Thu Apr 18 02:18:30 2024
+Terminated at Thu Apr 18 02:19:38 2024
+Results reported at Thu Apr 18 02:19:38 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -nnodes 4
+#BSUB -G uiuc
+#BSUB -W 120
+#BSUB -J scale16
+#BSUB -q pdebug
+#BSUB -o scal16.txt
+
+source ../emirge/config/activate_env.sh
+source ../emirge/mirgecom/scripts/mirge-testing-env.sh
+source ../scripts/multi_scalability.sh -p ../ -s 16 -n 16
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   2.09 sec.
+    Max Memory :                                 86 MB
+    Average Memory :                             86.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   583 MB
+    Max Processes :                              7
+    Max Threads :                                12
+    Run time :                                   68 sec.
+    Turnaround time :                            8213 sec.
+
+The output (if any) is above this job summary.
+

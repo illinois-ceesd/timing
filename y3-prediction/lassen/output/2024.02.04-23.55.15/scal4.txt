@@ -1,0 +1,760 @@
+Customizing shell for Lassen.
+Activating 'nozzle.lazy.timing.env' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+Driver directory: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run
+Sat Feb  3 23:58:19 PST 2024
+Running parallel timing tests...
+* Running prediction-scalability test in scalability_test.
+** Running prediction-scalability_np1 on 1 ranks.
+Making 3D mesh with the following parameters:
+Output name: actii
+Number of threads: 1
+Mesh size: 48
+Injector ratio: 2
+Sample boundary layer ratio: 4
+Bulk boundary layer ratio: 4
+Injector boundary layer ratio: 2
+Cavity boundary layer ratio: 2
+Surround boundary layer ratio: 2
+Isolator factor: 2
+Cavity factor: 4
+Injector factor: 3
+Shear layer factor: 4
+Sample factor: 4
+Make link actii.msh for finished mesh.
+Expected mesh file already exists, skipping mesh creation.
+++ jsrun -g 1 -a 1 -n 1 bash /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh python -u -O -m mpi4py driver.py -c prediction-scalability_np1 -g /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test/log_data -i run_params.yaml --log --lazy
+Custom casename 'prediction-scalability_np1'
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-03 23:58:22,478 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-03 23:58:23,196 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-03 23:58:48,121 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102dce1f0>.
+Setting force_eval = False for pre-compiled time integration
+Shock capturing parameters: alpha 0.01, s0 -6.408239965311849, kappa 0.5
+Smoothing characteristic length for use in artificial viscosity
+smoothing_alpha 1e-12
+Artificial viscosity smoothness_alpha=1e-12
+Artificial viscosity smoothness_tau=1e-12
+Artificial viscosity using modified transport properties
+	 mu, beta, kappa
+Shock capturing parameters:
+	av_mu 0.1
+	av_beta 6.0
+	av_kappa 1.0
+	av_prantdl 0.9
+stagnation temperature 2076.43
+
+#### Simluation control data: ####
+	nrestart = 1000
+	nhealth = -1
+	nstatus = -1
+	Constant dt mode, current_dt = 1e-13
+	t_final = 2e-11
+	order = 4
+	dimension = 3
+	Time integration compiled_lsrk54
+   Boundary Conditions:
+	Checking for outflow boundary in mesh.
+	Checking for inflow boundary in mesh.
+	Checking for flow boundary in mesh.
+	Checking for injection boundary in mesh.
+	Checking for upstream_injection boundary in mesh.
+	Checking for isothermal_wall boundary in mesh.
+	Checking for wall_interface boundary in mesh.
+
+	Interface wall boundary conditions are noslip for velocity
+#### Simluation control data: ####
+
+
+#### Visualization setup: ####
+	Basic visualization output enabled.
+	(cv, dv, cfl)
+	Extra visualization output enabled for derived quantities.
+	(velocity, mass_fractions, etc.)
+	Writing viz data every 1000 steps.
+#### Visualization setup: ####
+
+#### Simluation initialization data: ####
+	Initializing flow to y3prediction
+	Inflow stagnation pressure 274500.0
+	Inflow stagnation temperature 2076.43
+	Injection stagnation pressure 50400.0
+	Injection stagnation temperature 300.0
+	Upstream injection stagnation pressure50400.0
+	Upstream injection stagnation temperature300.0
+#### Simluation initialization data: ####
+
+#### Simluation setup data: ####
+	vel_sigma = 500
+	temp_sigma = 1250
+	vel_sigma_injection = 5000
+	temp_sigma_injection = 5000
+#### Simluation setup data: ####
+
+#### Ignition control parameters ####
+spark center (0.677,-0.021)
+spark FWHM 0.02
+spark strength 600.0
+ignition time 5e-08
+ignition duration 1e-08
+heat source ignition
+#### Ignition control parameters ####
+
+
+Setting inviscid numerical flux to: Rusanov
+Setting viscous numerical flux to: Harmonic
+
+
+#### Simluation material properties: ####
+#### Fluid domain: ####
+	mu = 4.216360056e-05
+	kappa = 0.05621788139856423
+	Prandtl Number  = 0.75
+	nspecies = 7
+	full multi-species initialization with pyrometheus eos
+	combustion source terms enabled
+	Pyrometheus EOS
+	Pyro mechanism {pyro_mech}
+
+Species mass fractions limited to [0:1]
+#### Wall domain: ####
+	Reactive wall model for porous media
+	Wall oxidizer transport enabled
+	 Wall mass loss enabled
+	Wall density = 1625
+	Wall cp = 770
+	Wall O2 diff = 0.0001
+	Wall surround density = 7900.0
+	Wall surround cp = 470
+	Wall surround kappa = 48
+	Wall time scale = 100
+	Wall penalty = 0
+#### Simluation material properties: ####
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+	 Power law transport model:
+		 temperature dependent viscosity, species diffusivity
+	transport_alpha = 0.6
+	transport_beta = 4.093e-07
+	transport_sigma = 2.0
+	transport_n = 0.666
+	species diffusivity = [0.0001 0.0001 0.0001 0.0001 0.0001 0.0001 0.0001]
+#### Simluation initialization data: ####
+	inlet Mach number 0.039188827430281535
+	inlet gamma 1.2942272392672118
+	inlet temperature 2075.9609743385954
+	inlet pressure 274227.36437127565
+	inlet rho 0.4607349972974453
+	inlet velocity 34.39515974209585
+	********
+	outlet Mach number 3.793040446574542
+	outlet gamma 1.3777480529683475
+	outlet temperature 558.5757736845096
+	outlet pressure 2284.257055974718
+	outlet rho 0.014263380803459059
+	outlet velocity 1796.0265011633348
+	********
+	injector Mach number 1.0
+	injector gamma 1.3246735835852341
+	injector temperature 258.1007615257789
+	injector pressure 27281.922529269654
+	injector rho 0.1911428114322463
+	injector velocity -434.8234312418551
+Reading mesh from data/actii.msh
+Reading gmsh mesh from disk file...
+Done. Populating meshmode data structures...
+Done.
+Read GMSH: 0.5663027763366699
+MeshData: 0.9872972965240479
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py:573: UserWarning: num_ranks is deprecated, use nranks_per_axis instead.
+  warn("num_ranks is deprecated, use nranks_per_axis instead.")
+No target file specied, using restart as target
+Making 3D order 4 discretization.
+2024-02-03 23:58:49,967 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-03 23:58:50,495 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-03 23:58:50,495 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-03 23:58:50,522 - INFO - meshmode.discretization.connection.face - building face restriction: done
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+2024-02-03 23:58:50,534 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x102dce1f0> to 3896 bytes
+2024-02-03 23:58:50,545 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes0_3d' with 1 statements.
+2024-02-03 23:58:50,578 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-02-03 23:58:50,580 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_3d' from 0.0MB to 0.0MB.
+2024-02-03 23:58:51,180 - INFO - loopy.tools - preprocess_program on 'frozen_nodes0_3d': completed (0.59s wall 0.22x CPU)
+2024-02-03 23:58:52,084 - INFO - pyopencl - build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.78 s)
+[lassen64:52819] *** Process received signal ***
+[lassen64:52819] Signal: Segmentation fault (11)
+[lassen64:52819] Signal code:  (3)
+[lassen64:52819] Failing at address: 0x3fe1c835903e18fe
+<< Rank 0: Generating lwcore_cpu.5604332_1.0 on lassen64 Sat Feb  3 23:58:52 PST 2024 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 0:  Generated lwcore_cpu.5604332_1.0 on lassen64 Sat Feb  3 23:58:56 PST 2024 in 4 secs >>
+<< Rank 0: Waiting 60 secs before aborting task on lassen64 Sat Feb  3 23:58:56 PST 2024 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 0:  Waited 60 secs -> now aborting task on lassen64 Sat Feb  3 23:59:56 PST 2024 (LLNL_COREDUMP_KILL=task) >>
+[lassen64:52819] -----------------------
+[lassen64:52819] -----------------------
+[lassen64:52819] *** End of error message ***
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh: line 12: 52819 Segmentation fault      "$@"
+++ return_code=139
+++ set +x
+mv: cannot stat ‘viz_data’: No such file or directory
+mv: cannot stat ‘restart_data’: No such file or directory
+**  scalability_test/prediction-scalability_np1 failed.
+** Running prediction-scalability_np2 on 2 ranks.
+Making 3D mesh with the following parameters:
+Output name: actii
+Number of threads: 1
+Mesh size: 30.5
+Injector ratio: 2
+Sample boundary layer ratio: 4
+Bulk boundary layer ratio: 4
+Injector boundary layer ratio: 2
+Cavity boundary layer ratio: 2
+Surround boundary layer ratio: 2
+Isolator factor: 2
+Cavity factor: 4
+Injector factor: 3
+Shear layer factor: 4
+Sample factor: 4
+Make link actii.msh for finished mesh.
+Expected mesh file already exists, skipping mesh creation.
+++ jsrun -g 1 -a 1 -n 2 bash /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh python -u -O -m mpi4py driver.py -c prediction-scalability_np2 -g /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test/log_data -i run_params.yaml --log --lazy
+Custom casename 'prediction-scalability_np2'
+Custom casename 'prediction-scalability_np2'
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-03 23:59:57,611 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-03 23:59:57,611 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-03 23:59:58,109 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-03 23:59:58,109 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-04 00:00:21,339 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10288a660>.
+2024-02-04 00:00:21,593 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10288ae60>.
+Setting force_eval = False for pre-compiled time integration
+Shock capturing parameters: alpha 0.01, s0 -6.408239965311849, kappa 0.5
+Smoothing characteristic length for use in artificial viscosity
+smoothing_alpha 1e-12
+Artificial viscosity smoothness_alpha=1e-12
+Artificial viscosity smoothness_tau=1e-12
+Artificial viscosity using modified transport properties
+	 mu, beta, kappa
+Shock capturing parameters:
+	av_mu 0.1
+	av_beta 6.0
+	av_kappa 1.0
+	av_prantdl 0.9
+stagnation temperature 2076.43
+
+#### Simluation control data: ####
+	nrestart = 1000
+	nhealth = -1
+	nstatus = -1
+	Constant dt mode, current_dt = 1e-13
+	t_final = 2e-11
+	order = 4
+	dimension = 3
+	Time integration compiled_lsrk54
+   Boundary Conditions:
+	Checking for outflow boundary in mesh.
+	Checking for inflow boundary in mesh.
+	Checking for flow boundary in mesh.
+	Checking for injection boundary in mesh.
+	Checking for upstream_injection boundary in mesh.
+	Checking for isothermal_wall boundary in mesh.
+	Checking for wall_interface boundary in mesh.
+
+	Interface wall boundary conditions are noslip for velocity
+#### Simluation control data: ####
+
+
+#### Visualization setup: ####
+	Basic visualization output enabled.
+	(cv, dv, cfl)
+	Extra visualization output enabled for derived quantities.
+	(velocity, mass_fractions, etc.)
+	Writing viz data every 1000 steps.
+#### Visualization setup: ####
+
+#### Simluation initialization data: ####
+	Initializing flow to y3prediction
+	Inflow stagnation pressure 274500.0
+	Inflow stagnation temperature 2076.43
+	Injection stagnation pressure 50400.0
+	Injection stagnation temperature 300.0
+	Upstream injection stagnation pressure50400.0
+	Upstream injection stagnation temperature300.0
+#### Simluation initialization data: ####
+
+#### Simluation setup data: ####
+	vel_sigma = 500
+	temp_sigma = 1250
+	vel_sigma_injection = 5000
+	temp_sigma_injection = 5000
+#### Simluation setup data: ####
+
+#### Ignition control parameters ####
+spark center (0.677,-0.021)
+spark FWHM 0.02
+spark strength 600.0
+ignition time 5e-08
+ignition duration 1e-08
+heat source ignition
+#### Ignition control parameters ####
+
+
+Setting inviscid numerical flux to: Rusanov
+Setting viscous numerical flux to: Harmonic
+
+
+#### Simluation material properties: ####
+#### Fluid domain: ####
+	mu = 4.216360056e-05
+	kappa = 0.05621788139856423
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+	Prandtl Number  = 0.75
+	nspecies = 7
+	full multi-species initialization with pyrometheus eos
+	combustion source terms enabled
+	Pyrometheus EOS
+	Pyro mechanism {pyro_mech}
+
+Species mass fractions limited to [0:1]
+#### Wall domain: ####
+	Reactive wall model for porous media
+	Wall oxidizer transport enabled
+	 Wall mass loss enabled
+	Wall density = 1625
+	Wall cp = 770
+	Wall O2 diff = 0.0001
+	Wall surround density = 7900.0
+	Wall surround cp = 470
+	Wall surround kappa = 48
+	Wall time scale = 100
+	Wall penalty = 0
+#### Simluation material properties: ####
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+	 Power law transport model:
+		 temperature dependent viscosity, species diffusivity
+	transport_alpha = 0.6
+	transport_beta = 4.093e-07
+	transport_sigma = 2.0
+	transport_n = 0.666
+	species diffusivity = [0.0001 0.0001 0.0001 0.0001 0.0001 0.0001 0.0001]
+#### Simluation initialization data: ####
+	inlet Mach number 0.039188827430281535
+	inlet gamma 1.2942272392672118
+	inlet temperature 2075.9609743385954
+	inlet pressure 274227.36437127565
+	inlet rho 0.4607349972974453
+	inlet velocity 34.39515974209585
+	********
+	outlet Mach number 3.793040446574542
+	outlet gamma 1.3777480529683475
+	outlet temperature 558.5757736845096
+	outlet pressure 2284.257055974718
+	outlet rho 0.014263380803459059
+	outlet velocity 1796.0265011633348
+	********
+	injector Mach number 1.0
+	injector gamma 1.3246735835852341
+	injector temperature 258.1007615257789
+	injector pressure 27281.922529269654
+	injector rho 0.1911428114322463
+	injector velocity -434.8234312418551
+Reading mesh from data/actii.msh
+Reading gmsh mesh from disk file...
+Done. Populating meshmode data structures...
+Done.
+Read GMSH: 1.0932128429412842
+MeshData: 2.0139148235321045
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py:573: UserWarning: num_ranks is deprecated, use nranks_per_axis instead.
+  warn("num_ranks is deprecated, use nranks_per_axis instead.")
+Making 3D order 4 discretization.
+No target file specied, using restart as target
+No target file specied, using restart as target
+2024-02-04 00:00:25,061 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-04 00:00:25,065 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-04 00:00:25,311 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-04 00:00:25,311 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-04 00:00:25,312 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-04 00:00:25,312 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-04 00:00:25,326 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-04 00:00:25,326 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-04 00:00:25,332 - INFO - meshmode.discretization.connection.face - building face restriction: done
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+2024-02-04 00:00:25,342 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10288ae60> to 3896 bytes
+2024-02-04 00:00:25,353 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes0_3d' with 1 statements.
+2024-02-04 00:00:25,362 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-04 00:00:25,362 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-04 00:00:25,385 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-02-04 00:00:25,388 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_3d' from 0.0MB to 0.0MB.
+2024-02-04 00:00:25,397 - INFO - meshmode.discretization.connection.face - building face restriction: done
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+2024-02-04 00:00:25,431 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10288a660> to 3896 bytes
+2024-02-04 00:00:25,440 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes0_3d' with 1 statements.
+2024-02-04 00:00:25,472 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-02-04 00:00:25,475 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_3d' from 0.0MB to 0.0MB.
+2024-02-04 00:00:26,421 - INFO - pyopencl - build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.80 s)
+[lassen64:54288] *** Process received signal ***
+[lassen64:54288] Signal: Segmentation fault (11)
+[lassen64:54288] Signal code:  (3)
+[lassen64:54288] Failing at address: 0x3fe1c835903e18fe
+<< Rank 0: Generating lwcore_cpu.5604332_2.0 on lassen64 Sun Feb  4 00:00:26 PST 2024 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+2024-02-04 00:00:26,512 - INFO - pyopencl - build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.80 s)
+[lassen64:54289] *** Process received signal ***
+[lassen64:54289] Signal: Segmentation fault (11)
+[lassen64:54289] Signal code:  (3)
+[lassen64:54289] Failing at address: 0x3fe1c835903e18fe
+<< Rank 1: Generating lwcore_cpu.5604332_2.1 on lassen64 Sun Feb  4 00:00:26 PST 2024 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 1:  Generated lwcore_cpu.5604332_2.1 on lassen64 Sun Feb  4 00:00:30 PST 2024 in 4 secs >>
+<< Rank 0:  Generated lwcore_cpu.5604332_2.0 on lassen64 Sun Feb  4 00:00:30 PST 2024 in 4 secs >>
+<< Rank 1: Waiting 60 secs before aborting task on lassen64 Sun Feb  4 00:00:30 PST 2024 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 0: Waiting 60 secs before aborting task on lassen64 Sun Feb  4 00:00:30 PST 2024 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 1:  Waited 60 secs -> now aborting task on lassen64 Sun Feb  4 00:01:30 PST 2024 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 0:  Waited 60 secs -> now aborting task on lassen64 Sun Feb  4 00:01:30 PST 2024 (LLNL_COREDUMP_KILL=task) >>
+[lassen64:54289] -----------------------
+[lassen64:54289] -----------------------
+[lassen64:54288] -----------------------
+[lassen64:54288] -----------------------
+[lassen64:54288] *** End of error message ***
+[lassen64:54289] *** End of error message ***
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh: line 12: 54288 Segmentation fault      "$@"
+++ return_code=139
+++ set +x
+mv: cannot stat ‘viz_data’: No such file or directory
+mv: cannot stat ‘restart_data’: No such file or directory
+**  scalability_test/prediction-scalability_np2 failed.
+** Running prediction-scalability_np4 on 4 ranks.
+Making 3D mesh with the following parameters:
+Output name: actii
+Number of threads: 1
+Mesh size: 21.5
+Injector ratio: 2
+Sample boundary layer ratio: 4
+Bulk boundary layer ratio: 4
+Injector boundary layer ratio: 2
+Cavity boundary layer ratio: 2
+Surround boundary layer ratio: 2
+Isolator factor: 2
+Cavity factor: 4
+Injector factor: 3
+Shear layer factor: 4
+Sample factor: 4
+Make link actii.msh for finished mesh.
+Expected mesh file already exists, skipping mesh creation.
+++ jsrun -g 1 -a 1 -n 4 bash /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh python -u -O -m mpi4py driver.py -c prediction-scalability_np4 -g /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test/log_data -i run_params.yaml --log --lazy
+Custom casename 'prediction-scalability_np4'
+Custom casename 'prediction-scalability_np4'
+Custom casename 'prediction-scalability_np4'
+Custom casename 'prediction-scalability_np4'
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-04 00:01:31,521 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-04 00:01:31,521 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-04 00:01:31,526 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-02-04 00:01:31,526 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2024-02-04 00:01:32,189 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-04 00:01:32,189 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-04 00:01:32,189 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-04 00:01:32,189 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2024-02-04 00:01:55,600 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10292f6b0>.
+2024-02-04 00:01:55,603 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10292f710>.
+2024-02-04 00:01:55,610 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10292f4b0>.
+2024-02-04 00:01:55,610 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10292f640>.
+Setting force_eval = False for pre-compiled time integration
+Shock capturing parameters: alpha 0.01, s0 -6.408239965311849, kappa 0.5
+Smoothing characteristic length for use in artificial viscosity
+smoothing_alpha 1e-12
+Artificial viscosity smoothness_alpha=1e-12
+Artificial viscosity smoothness_tau=1e-12
+Artificial viscosity using modified transport properties
+	 mu, beta, kappa
+Shock capturing parameters:
+	av_mu 0.1
+	av_beta 6.0
+	av_kappa 1.0
+	av_prantdl 0.9
+stagnation temperature 2076.43
+
+#### Simluation control data: ####
+	nrestart = 1000
+	nhealth = -1
+	nstatus = -1
+	Constant dt mode, current_dt = 1e-13
+	t_final = 2e-11
+	order = 4
+	dimension = 3
+	Time integration compiled_lsrk54
+   Boundary Conditions:
+	Checking for outflow boundary in mesh.
+	Checking for inflow boundary in mesh.
+	Checking for flow boundary in mesh.
+	Checking for injection boundary in mesh.
+	Checking for upstream_injection boundary in mesh.
+	Checking for isothermal_wall boundary in mesh.
+	Checking for wall_interface boundary in mesh.
+
+	Interface wall boundary conditions are noslip for velocity
+#### Simluation control data: ####
+
+
+#### Visualization setup: ####
+	Basic visualization output enabled.
+	(cv, dv, cfl)
+	Extra visualization output enabled for derived quantities.
+	(velocity, mass_fractions, etc.)
+	Writing viz data every 1000 steps.
+#### Visualization setup: ####
+
+#### Simluation initialization data: ####
+	Initializing flow to y3prediction
+	Inflow stagnation pressure 274500.0
+	Inflow stagnation temperature 2076.43
+	Injection stagnation pressure 50400.0
+	Injection stagnation temperature 300.0
+	Upstream injection stagnation pressure50400.0
+	Upstream injection stagnation temperature300.0
+#### Simluation initialization data: ####
+
+#### Simluation setup data: ####
+	vel_sigma = 500
+	temp_sigma = 1250
+	vel_sigma_injection = 5000
+	temp_sigma_injection = 5000
+#### Simluation setup data: ####
+
+#### Ignition control parameters ####
+spark center (0.677,-0.021)
+spark FWHM 0.02
+spark strength 600.0
+ignition time 5e-08
+ignition duration 1e-08
+heat source ignition
+#### Ignition control parameters ####
+
+
+Setting inviscid numerical flux to: Rusanov
+Setting viscous numerical flux to: Harmonic
+
+
+#### Simluation material properties: ####
+#### Fluid domain: ####
+	mu = 4.216360056e-05
+	kappa = 0.05621788139856423
+	Prandtl Number  = 0.75
+	nspecies = 7
+	full multi-species initialization with pyrometheus eos
+	combustion source terms enabled
+	Pyrometheus EOS
+	Pyro mechanism {pyro_mech}
+
+Species mass fractions limited to [0:1]
+#### Wall domain: ####
+	Reactive wall model for porous media
+	Wall oxidizer transport enabled
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+	 Wall mass loss enabled
+	Wall density = 1625
+	Wall cp = 770
+	Wall O2 diff = 0.0001
+	Wall surround density = 7900.0
+	Wall surround cp = 470
+	Wall surround kappa = 48
+	Wall time scale = 100
+	Wall penalty = 0
+#### Simluation material properties: ####
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+	 Power law transport model:
+		 temperature dependent viscosity, species diffusivity
+	transport_alpha = 0.6
+	transport_beta = 4.093e-07
+	transport_sigma = 2.0
+	transport_n = 0.666
+	species diffusivity = [0.0001 0.0001 0.0001 0.0001 0.0001 0.0001 0.0001]
+#### Simluation initialization data: ####
+	inlet Mach number 0.039188827430281535
+	inlet gamma 1.2942272392672118
+	inlet temperature 2075.9609743385954
+	inlet pressure 274227.36437127565
+	inlet rho 0.4607349972974453
+	inlet velocity 34.39515974209585
+	********
+	outlet Mach number 3.793040446574542
+	outlet gamma 1.3777480529683475
+	outlet temperature 558.5757736845096
+	outlet pressure 2284.257055974718
+	outlet rho 0.014263380803459059
+	outlet velocity 1796.0265011633348
+	********
+	injector Mach number 1.0
+	injector gamma 1.3246735835852341
+	injector temperature 258.1007615257789
+	injector pressure 27281.922529269654
+	injector rho 0.1911428114322463
+	injector velocity -434.8234312418551
+Reading mesh from data/actii.msh
+Reading gmsh mesh from disk file...
+Done. Populating meshmode data structures...
+Done.
+Read GMSH: 2.138753652572632
+MeshData: 3.993445873260498
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py:573: UserWarning: num_ranks is deprecated, use nranks_per_axis instead.
+  warn("num_ranks is deprecated, use nranks_per_axis instead.")
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+Making 3D order 4 discretization.
+No target file specied, using restart as target
+2024-02-04 00:02:02,671 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-04 00:02:02,673 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-04 00:02:02,675 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-04 00:02:02,675 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-04 00:02:03,287 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-04 00:02:03,287 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-04 00:02:03,287 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-04 00:02:03,287 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-04 00:02:03,288 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-04 00:02:03,288 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-04 00:02:03,288 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-04 00:02:03,305 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-04 00:02:03,305 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-04 00:02:03,319 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-04 00:02:03,321 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-04 00:02:03,321 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-04 00:02:03,331 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-04 00:02:03,331 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2024-02-04 00:02:03,338 - INFO - meshmode.discretization.connection.face - building face restriction: done
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+2024-02-04 00:02:03,353 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10292f710> to 3896 bytes
+2024-02-04 00:02:03,362 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes0_3d' with 1 statements.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+2024-02-04 00:02:03,372 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10292f640> to 3896 bytes
+2024-02-04 00:02:03,374 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2024-02-04 00:02:03,381 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes0_3d' with 1 statements.
+2024-02-04 00:02:03,393 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-02-04 00:02:03,395 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_3d' from 0.0MB to 0.0MB.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:413: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+2024-02-04 00:02:03,409 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10292f4b0> to 3896 bytes
+2024-02-04 00:02:03,415 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-02-04 00:02:03,417 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_3d' from 0.0MB to 0.0MB.
+2024-02-04 00:02:03,418 - INFO - meshmode.array_context - Transforming kernel 'frozen_nodes0_3d' with 1 statements.
+2024-02-04 00:02:03,450 - INFO - meshmode.array_context - Array Contraction: Contracting 0 temps
+2024-02-04 00:02:03,453 - INFO - meshmode.array_context - [_alias_global_temporaries]: Reduced memory requirement of 'frozen_nodes0_3d' from 0.0MB to 0.0MB.
+2024-02-04 00:02:04,464 - INFO - pyopencl - build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.78 s)
+2024-02-04 00:02:04,478 - INFO - pyopencl - build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+2024-02-04 00:02:04,491 - INFO - pyopencl - build program: kernel 'frozen_nodes0_3d' was part of a lengthy source build resulting from a binary cache miss (0.79 s)
+[lassen64:56382] *** Process received signal ***
+[lassen64:56382] Signal: Segmentation fault (11)
+[lassen64:56382] Signal code:  (3)
+[lassen64:56382] Failing at address: 0x3fe1c835903e18fe
+[lassen64:56384] *** Process received signal ***
+[lassen64:56384] Signal: Segmentation fault (11)
+[lassen64:56384] Signal code:  (3)
+[lassen64:56384] Failing at address: 0x3fe1c835903e18fe
+[lassen64:56383] *** Process received signal ***
+[lassen64:56383] Signal: Segmentation fault (11)
+[lassen64:56383] Signal code:  (3)
+[lassen64:56383] Failing at address: 0x3fe1c835903e18fe
+<< Rank 3: Generating lwcore_cpu.5604332_3.3 on lassen64 Sun Feb  4 00:02:04 PST 2024 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 1: Generating lwcore_cpu.5604332_3.1 on lassen64 Sun Feb  4 00:02:04 PST 2024 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 2: Generating lwcore_cpu.5604332_3.2 on lassen64 Sun Feb  4 00:02:04 PST 2024 (LLNL_COREDUMP_FORMAT_CPU=lwcore) >>
+<< Rank 1:  Generated lwcore_cpu.5604332_3.1 on lassen64 Sun Feb  4 00:02:08 PST 2024 in 4 secs >>
+<< Rank 1: Waiting 60 secs before aborting task on lassen64 Sun Feb  4 00:02:08 PST 2024 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 2:  Generated lwcore_cpu.5604332_3.2 on lassen64 Sun Feb  4 00:02:08 PST 2024 in 4 secs >>
+<< Rank 3:  Generated lwcore_cpu.5604332_3.3 on lassen64 Sun Feb  4 00:02:08 PST 2024 in 4 secs >>
+<< Rank 2: Waiting 60 secs before aborting task on lassen64 Sun Feb  4 00:02:08 PST 2024 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 3: Waiting 60 secs before aborting task on lassen64 Sun Feb  4 00:02:08 PST 2024 (LLNL_COREDUMP_WAIT_FOR_OTHERS=60) >>
+<< Rank 1:  Waited 60 secs -> now aborting task on lassen64 Sun Feb  4 00:03:08 PST 2024 (LLNL_COREDUMP_KILL=task) >>
+[lassen64:56382] -----------------------
+[lassen64:56382] -----------------------
+[lassen64:56382] *** End of error message ***
+<< Rank 2:  Waited 60 secs -> now aborting task on lassen64 Sun Feb  4 00:03:08 PST 2024 (LLNL_COREDUMP_KILL=task) >>
+<< Rank 3:  Waited 60 secs -> now aborting task on lassen64 Sun Feb  4 00:03:08 PST 2024 (LLNL_COREDUMP_KILL=task) >>
+[lassen64:56383] -----------------------
+[lassen64:56383] -----------------------
+[lassen64:56384] -----------------------
+[lassen64:56384] -----------------------
+[lassen64:56384] *** End of error message ***
+[lassen64:56383] *** End of error message ***
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh: line 12: 56382 Segmentation fault      "$@"
+++ return_code=139
+++ set +x
+mv: cannot stat ‘viz_data’: No such file or directory
+mv: cannot stat ‘restart_data’: No such file or directory
+**  scalability_test/prediction-scalability_np4 failed.
+Sun Feb  4 00:03:08 PST 2024
+Scaling/timing tests done.
+Passing tests: 
+Failing tests:  scalability_test/prediction-scalability_np1 scalability_test/prediction-scalability_np2 scalability_test/prediction-scalability_np4
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 5604332: <scale4> in cluster <lassen> Exited
+
+Job <scale4> was submitted from host <lassen708> by user <mtcampbe> in cluster <lassen> at Sat Feb  3 23:58:03 2024
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <mtcampbe> in cluster <lassen> at Sat Feb  3 23:58:05 2024
+                            <40*lassen64>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test> was used as the working directory.
+Started at Sat Feb  3 23:58:05 2024
+Terminated at Sun Feb  4 00:03:30 2024
+Results reported at Sun Feb  4 00:03:30 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -nnodes 1
+#BSUB -G uiuc
+#BSUB -W 180
+#BSUB -J scale4
+#BSUB -q pbatch
+#BSUB -o scal4.txt
+
+source ../emirge/config/activate_env.sh
+source ../emirge/mirgecom/scripts/mirge-testing-env.sh
+source ../scripts/multi_scalability.sh -p ../ -n 4
+
+
+
+------------------------------------------------------------
+
+Exited with exit code 3.
+
+Resource usage summary:
+
+    CPU time :                                   0.31 sec.
+    Max Memory :                                 59 MB
+    Average Memory :                             57.83 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1634 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   325 sec.
+    Turnaround time :                            327 sec.
+
+The output (if any) is above this job summary.
+
