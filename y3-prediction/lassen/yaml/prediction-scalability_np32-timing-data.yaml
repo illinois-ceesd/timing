@@ -7490,3 +7490,71 @@ time_second_10: 14.443663766607642
 max_python_mem_usage: 8545.875
 max_gpu_mem_usage: 9429.75
 ---
+run_date: 2024-09-04 11:01
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10398f9f0>
+num_processors: 32
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_branch: limit-pocl
+driver_branch: Unknown
+mirge_version: 485be4104ee0cec695f45558e655f70081323f1e
+driver_version: Unknown
+time_startup: 1410.2302985191345
+time_first_step: 1163.8292934130877
+time_first_10: 1183.3717795554549
+time_second_10: 14.74024790711701
+max_python_mem_usage: 5110.125
+max_gpu_mem_usage: 10085.6875
+---
+run_date: 2024-09-05 10:19
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10390f940>
+num_processors: 32
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_branch: limit-pocl
+driver_branch: Unknown
+mirge_version: 485be4104ee0cec695f45558e655f70081323f1e
+driver_version: Unknown
+time_startup: 1468.4052414894104
+time_first_step: 1178.978691434022
+time_first_10: 1198.81061114138
+time_second_10: 14.75536342151463
+max_python_mem_usage: 5100.625
+max_gpu_mem_usage: 9979.6875
+---
+run_date: 2024-09-07 02:36
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1037cfa70>
+num_processors: 32
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_branch: limit-pocl
+driver_branch: Unknown
+mirge_version: 485be4104ee0cec695f45558e655f70081323f1e
+driver_version: Unknown
+time_startup: 2339.6963832378387
+time_first_step: 1332.29530050233
+time_first_10: 1358.8335626721382
+time_second_10: 14.5669206545208
+max_python_mem_usage: 7690.5
+max_gpu_mem_usage: 10074.0
+---
+run_date: 2024-09-07 13:09
+run_host: Lassen
+cl_device: <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x10360b790>
+num_processors: 32
+run_arch: ppc64le
+gpu_arch: GV100GL
+mirge_branch: limit-pocl
+driver_branch: Unknown
+mirge_version: 485be4104ee0cec695f45558e655f70081323f1e
+driver_version: Unknown
+time_startup: 2394.675146341324
+time_first_step: 1353.3857369087636
+time_first_10: 1378.7012419258244
+time_second_10: 14.7319997837767
+max_python_mem_usage: 7796.125
+max_gpu_mem_usage: 10071.625
+---
