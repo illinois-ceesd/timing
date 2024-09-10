@@ -1,0 +1,794 @@
+Customizing shell for Lassen.
+
+The following have been reloaded with a version change:
+  1) base-gcc/8.3.1 => base-gcc/11.2.1
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) spectrum-mpi/rolling-release
+
+The following have been reloaded with a version change:
+  1) gcc/8.3.1 => gcc/10.2.1
+
+/g/g17/mtcampbe/.lsbatch/1725781918.6167092.shell: line 9: ../emirge/config/activate_env.sh: No such file or directory
+/g/g17/mtcampbe/.lsbatch/1725781918.6167092.shell: line 10: ../emirge/mirgecom/scripts/mirge-testing-env.sh: No such file or directory
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+Driver directory: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run
+Mon Sep  9 19:12:12 PDT 2024
+Running parallel timing tests...
+* Running prediction-scalability test in scalability_test.
+** Running prediction-scalability_np32 on 32 ranks.
+Making 3D mesh with the following parameters:
+Output name: actii
+Number of threads: 1
+Mesh size: 9.535
+Injector ratio: 2
+Sample boundary layer ratio: 4
+Bulk boundary layer ratio: 4
+Injector boundary layer ratio: 2
+Cavity boundary layer ratio: 2
+Surround boundary layer ratio: 2
+Isolator factor: 2
+Cavity factor: 4
+Injector factor: 3
+Shear layer factor: 4
+Sample factor: 4
+Make link actii.msh for finished mesh.
+Expected mesh file already exists, skipping mesh creation.
+++ mpiexec -n 32 python -u -O -m mpi4py driver.py -c prediction-scalability_np32 -g /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test/log_data -i run_params.yaml --log --lazy
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                       exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+                        ^
+SyntaxError: invalid syntax    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                  run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+                             ^
+SyntaxError: invalid syntax
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                            run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+                   ^
+SyntaxError: invalid syntax
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+------------------------------------------------------------
+A process or daemon was unable to complete a TCP connection
+to another process:
+  Local host:    lassen583
+  Remote host:   lassen710
+This is usually caused by a firewall on the remote host. Please
+check that any firewall (e.g., iptables) has been disabled and
+try again.
+------------------------------------------------------------
+------------------------------------------------------------
+A process or daemon was unable to complete a TCP connection
+to another process:
+  Local host:    lassen583
+  Remote host:   lassen586
+This is usually caused by a firewall on the remote host. Please
+check that any firewall (e.g., iptables) has been disabled and
+try again.
+------------------------------------------------------------
+------------------------------------------------------------
+A process or daemon was unable to complete a TCP connection
+to another process:
+  Local host:    lassen583
+  Remote host:   lassen587
+This is usually caused by a firewall on the remote host. Please
+check that any firewall (e.g., iptables) has been disabled and
+try again.
+------------------------------------------------------------
+------------------------------------------------------------
+A process or daemon was unable to complete a TCP connection
+to another process:
+  Local host:    lassen583
+  Remote host:   lassen589
+This is usually caused by a firewall on the remote host. Please
+check that any firewall (e.g., iptables) has been disabled and
+try again.
+------------------------------------------------------------
+------------------------------------------------------------
+A process or daemon was unable to complete a TCP connection
+to another process:
+  Local host:    lassen583
+  Remote host:   lassen82
+This is usually caused by a firewall on the remote host. Please
+check that any firewall (e.g., iptables) has been disabled and
+try again.
+------------------------------------------------------------
+------------------------------------------------------------
+A process or daemon was unable to complete a TCP connection
+to another process:
+  Local host:    lassen583
+  Remote host:   lassen83
+This is usually caused by a firewall on the remote host. Please
+check that any firewall (e.g., iptables) has been disabled and
+try again.
+------------------------------------------------------------
+------------------------------------------------------------
+A process or daemon was unable to complete a TCP connection
+to another process:
+  Local host:    lassen583
+  Remote host:   lassen410
+This is usually caused by a firewall on the remote host. Please
+check that any firewall (e.g., iptables) has been disabled and
+try again.
+------------------------------------------------------------
+------------------------------------------------------------
+A process or daemon was unable to complete a TCP connection
+to another process:
+  Local host:    lassen583
+  Remote host:   lassen744
+This is usually caused by a firewall on the remote host. Please
+check that any firewall (e.g., iptables) has been disabled and
+try again.
+------------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[20423,1],22]
+  Exit code:    1
+--------------------------------------------------------------------------
+++ return_code=1
+++ set +x
+mv: cannot stat ‘viz_data’: No such file or directory
+mv: cannot stat ‘restart_data’: No such file or directory
+**  scalability_test/prediction-scalability_np32 failed.
+Mon Sep  9 19:12:16 PDT 2024
+Scaling/timing tests done.
+Passing tests: 
+Failing tests:  scalability_test/prediction-scalability_np32
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 6167092: <scale32> in cluster <lassen> Exited
+
+Job <scale32> was submitted from host <lassen708> by user <mtcampbe> in cluster <lassen> at Sun Sep  8 00:51:58 2024
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <mtcampbe> in cluster <lassen> at Mon Sep  9 19:12:02 2024
+                            <40*lassen583>
+                            <40*lassen586>
+                            <40*lassen587>
+                            <40*lassen589>
+                            <40*lassen82>
+                            <40*lassen83>
+                            <40*lassen410>
+                            <40*lassen744>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test> was used as the working directory.
+Started at Mon Sep  9 19:12:02 2024
+Terminated at Mon Sep  9 19:12:17 2024
+Results reported at Mon Sep  9 19:12:17 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -nnodes 8
+#BSUB -G uiuc
+#BSUB -W 120
+#BSUB -J scale32
+#BSUB -q pbatch
+#BSUB -o scal32.txt
+
+source ../emirge/config/activate_env.sh
+source ../emirge/mirgecom/scripts/mirge-testing-env.sh
+source ../scripts/multi_scalability.sh -p ../ -s 32 -n 32
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.32 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   14 sec.
+    Turnaround time :                            152419 sec.
+
+The output (if any) is above this job summary.
+
