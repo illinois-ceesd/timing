@@ -1,0 +1,54 @@
+run_date: 2024-09-04 16:35
+run_host: Lassen
+cl_device: <pyopencl.Device 'gfx90a:sramecc+:xnack-' on 'AMD Accelerated Parallel Processing' at 0x5555571d1180>
+num_processors: 2
+run_arch: x86_64
+gpu_arch: AMD-MI250X
+run_platform: tioga
+mirge_branch: Unknown
+driver_branch: Unknown
+mirge_version: Unknown
+driver_version: Unknown
+time_startup: 524.9306659698486
+time_first_step: 357.08683875389397
+time_first_10: 375.9440451133996
+time_second_10: 15.363707297015935
+max_python_mem_usage: 3211.2109375
+max_gpu_mem_usage: 7894.525390625
+---
+run_date: 2024-09-05 17:39
+run_host: Lassen
+cl_device: <pyopencl.Device 'gfx90a:sramecc+:xnack-' on 'AMD Accelerated Parallel Processing' at 0x5555571d1d60>
+num_processors: 2
+run_arch: x86_64
+gpu_arch: AMD-MI250X
+run_platform: tioga
+mirge_branch: Unknown
+driver_branch: Unknown
+mirge_version: Unknown
+driver_version: Unknown
+time_startup: 403.50557827949524
+time_first_step: 343.468182885088
+time_first_10: 362.99916178919375
+time_second_10: 15.423122081439942
+max_python_mem_usage: 3382.90234375
+max_gpu_mem_usage: 8478.23046875
+---
+run_date: 2024-09-09 22:18
+run_host: Lassen
+cl_device: <pyopencl.Device 'gfx90a:sramecc+:xnack-' on 'AMD Accelerated Parallel Processing' at 0x5555571d1d60>
+num_processors: 2
+run_arch: x86_64
+gpu_arch: AMD-MI250X
+run_platform: tioga
+mirge_branch: Unknown
+driver_branch: Unknown
+mirge_version: Unknown
+driver_version: Unknown
+time_startup: 403.77573561668396
+time_first_step: 349.70685869897716
+time_first_10: 368.3751529380097
+time_second_10: 14.56414335500449
+max_python_mem_usage: 3384.20703125
+max_gpu_mem_usage: 8203.44140625
+---

@@ -20,7 +20,16 @@ function process_parallel_runlog(){
     run_name=$(ls *-rank0-${run_timestamp}.sqlite | sed -e 's/\(.*\)-rank.*$/\1/')
     nproc=$(ls *-rank0-${run_timestamp}.sqlite | sed -e 's/.*np\([0-9]\+\)-.*/\1/')
 
+    TIMING_ARCH=$(uname -m)
+    TIMING_PLATFORM=$(uname -n | sed 's/[0-9]\+$//')
+    GPU_ARCH="GV100GL"
+    if test "${TIMING_PLATFORM}" == "tioga"
+    then
+        GPU_ARCH="AMD-MI250X"
+    fi
     RUN_CASENAME=${run_name}
+    # Note, we should be in timing/${SOMENAME}/${TIMING_PLATFORM}/sql
+    # yaml files are in timing/${SOMENAME}/${TIMING_PLATFORM}/yaml
     MAIN_YAML_FILE_NAME=${MAIN_YAML_FILE_NAME:-"../yaml/${RUN_CASENAME}-timing-data.yaml"}
     SUMMARY_FILE_ROOT=${SUMMARY_FILE_ROOT:-"${RUN_CASENAME}-timing-data"}
     YAML_OUTPUT_NAME="${SUMMARY_FILE_ROOT}-${run_timestamp}.yaml"
@@ -58,6 +67,9 @@ function process_parallel_runlog(){
         unset SUMMARY_FILE_ROOT
         unset YAML_OUTPUT_NAME
         unset SUMMARY_FILE_NAME
+        unset TIMING_PLATFORM
+        unset TIMING_ARCH
+        unset GPU_ARCH
         return
     fi
 
@@ -70,15 +82,15 @@ function process_parallel_runlog(){
     SECOND_10_STEPS=$(runalyzer ${SUMMARY_FILE_NAME} -c 'print(sum(p[0] for p in q("select $t_step.max").fetchall()[10:19]))' | grep -v INFO)
     MAX_PYTHON_MEM_USAGE=$(runalyzer ${SUMMARY_FILE_NAME} -c 'print(max(p[0] for p in q("select $memory_usage_python.max").fetchall()))' | grep -v INFO)
     MAX_GPU_MEM_USAGE=$(runalyzer ${SUMMARY_FILE_NAME} -c 'print(max(p[0] for p in q("select $memory_usage_gpu.max").fetchall()))' | grep -v INFO)
-    TIMING_ARCH=$(uname -m)
-
+    
     # --- Create a YAML-compatible text snippet with the timing info
     rm -f ${YAML_OUTPUT_NAME}
     printf "Creating YAML output: ${YAML_OUTPUT_NAME}\n"
     printf "run_date: ${formatted_timestamp}\nrun_host: Lassen\n" > ${YAML_OUTPUT_NAME}
     printf "cl_device: ${CL_DEVICE}\n" >> ${YAML_OUTPUT_NAME}
     printf "num_processors: ${nproc}\n" >> ${YAML_OUTPUT_NAME}
-    printf "run_arch: ${TIMING_ARCH}\ngpu_arch: GV100GL\n" >> ${YAML_OUTPUT_NAME}
+    printf "run_arch: ${TIMING_ARCH}\ngpu_arch: ${GPU_ARCH}\n" >> ${YAML_OUTPUT_NAME}
+    printf "run_platform: ${TIMING_PLATFORM}\n" >> ${YAML_OUTPUT_NAME}
     printf "mirge_branch: ${MIRGE_BRANCH}\n" >> ${YAML_OUTPUT_NAME}
     printf "driver_branch: ${DRIVER_BRANCH}\n" >> ${YAML_OUTPUT_NAME}
     printf "mirge_version: ${MIRGE_VERSION}\n" >> ${YAML_OUTPUT_NAME}
@@ -102,11 +114,23 @@ function process_parallel_runlog(){
     unset formatted_timestamp
     unset YAML_OUTPUT_NAME
     unset SUMMARY_FILE_NAME
+    unset TIMING_PLATFORM
+    unset TIMING_ARCH
+    unset GPU_ARCH
 }
 
-SCALING_CASE_RUN_ROOT="y3-prediction-scaling-run"
-SQL_DATA_SOURCE_DIR=${SQL_DATA_SOURCE_DIR:-"../../${SCALING_CASE_RUN_ROOT}/scalability_test/log_data"}
-EMIRGE_HOME=${EMIRGE_HOME:-"../../emirge"}
+TIMING_ROOT_DIR=${TIMING_ROOT_DIR:-"../../../"}
+SQL_DATA_DIR=$(pwd)
+cd ${TIMING_ROOT_DIR}
+TIMING_ROOT_DIR=$(pwd)
+cd ${SQL_DATA_DIR}
+
+SCALING_CASE_RUN_ROOT=${SCALING_CASE_RUN_ROOT:-"y3-prediction-scaling-run"}
+# Go back 3 directories cause we're in timing/y3-prediction/<platform>/sql/
+# Data is in timing/y3-prediction-scaling-run/scalability_test/log_data
+SQL_DATA_SOURCE_DIR=${SQL_DATA_SOURCE_DIR:-"${TIMING_ROOT_DIR}/${SCALING_CASE_RUN_ROOT}/scalability_test/log_data"}
+# Emirge is (presumably) in timing/emirge
+EMIRGE_HOME=${EMIRGE_HOME:-"${TIMING_ROOT_DIR}/emirge"}
 
 conda deactivate
 source ${EMIRGE_HOME}/config/activate_env.sh

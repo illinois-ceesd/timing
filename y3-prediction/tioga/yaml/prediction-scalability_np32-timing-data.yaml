@@ -1,0 +1,18 @@
+run_date: 2024-09-04 21:29
+run_host: Lassen
+cl_device: <pyopencl.Device 'gfx90a:sramecc+:xnack-' on 'AMD Accelerated Parallel Processing' at 0x5555571abb40>
+num_processors: 32
+run_arch: x86_64
+gpu_arch: AMD-MI250X
+run_platform: tioga
+mirge_branch: Unknown
+driver_branch: Unknown
+mirge_version: Unknown
+driver_version: Unknown
+time_startup: 757.7159659862518
+time_first_step: 597.3416225533001
+time_first_10: 619.138306512963
+time_second_10: 17.542277733795345
+max_python_mem_usage: 3897.1171875
+max_gpu_mem_usage: 9097.8583984375
+---
