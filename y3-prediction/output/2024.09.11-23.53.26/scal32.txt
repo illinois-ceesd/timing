@@ -1,0 +1,2 @@
+Customizing shell for Lassen.
+Activating 'nozzle.lazy.timing.env' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
