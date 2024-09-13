@@ -73,26 +73,30 @@ def parse_datetime(s):
 def main():
     """Plot the timings with this main function. Totally useful docstring."""
     parser = argparse.ArgumentParser()
-    parser.add_argument("-m", "--memory", action="store_true")
-    parser.add_argument("-s", "--per-step", action="store_true")
-    parser.add_argument("-l", "--log-scale", action="store_true")
-    parser.add_argument("-z", "--zero", action="store_true")
-    parser.add_argument("-c", "--multicase", action="store_true")
     parser.add_argument("-a", "--annotate", action="store_true",
                         help="annotate the figure using comments in the data file")
-    parser.add_argument("-g", "--gradient", action="store_true")
-    parser.add_argument("-p", "--palette", metavar="NAME")
+    parser.add_argument("-b", "--begin", metavar="YYYY-MM-DD")
+    parser.add_argument("-c", "--multicase", action="store_true")
     parser.add_argument("-d", "--date", metavar="YYYY-MM-DD")
     parser.add_argument("-e", "--end", metavar="YYYY-MM-DD")
-    parser.add_argument("-r", "--limit-range", action="store_true")
+    parser.add_argument("-g", "--gradient", action="store_true")
     parser.add_argument("-k", "--skip-outliers", action="store_true")
-    parser.add_argument("-w", "--weak-scaling", action="store_true")
+    parser.add_argument("-l", "--log-scale", action="store_true")
+    parser.add_argument("-m", "--memory", action="store_true")
     parser.add_argument("-n", "--name-mapping", metavar="filename",
                         type=str, help="file with name mapping")
+    parser.add_argument("-p", "--palette", metavar="NAME")
+    parser.add_argument("-r", "--limit-range", action="store_true")
+    parser.add_argument("-s", "--per-step", action="store_true")
+    parser.add_argument("--save-plot", metavar="NAME.{pdf,png}")
+    parser.add_argument("-w", "--weak-scaling", action="store_true")
+    parser.add_argument("-x", "--exclude-interval", type=str,
+                        metavar="YYYY-MM-DD:YYYY-MM-DD",
+                        help="Exclude data from this date interval")
+    parser.add_argument("-z", "--zero", action="store_true")
     # parser.add_argument("datafile", metavar="DATA.yaml")
     parser.add_argument("files", metavar="file", type=str, nargs="+",
                         help="YAML file(s) to plot.")
-    parser.add_argument("--save-plot", metavar="NAME.{pdf,png}")
     args = parser.parse_args()
     if args.multicase and args.weak_scaling:
         raise RuntimeError("--multicase and --weak-scaling options are mutually"
@@ -110,6 +114,15 @@ def main():
                 key, value = line.strip().split()
                 # print(f"Mapping {key=}{value=}")
                 name_mapping[key] = value
+
+    if args.exclude_interval:
+        try:
+            xstart_date, xend_date = args.exclude_interval.split(":")
+            print(f"Exclusion Start Date: {xstart_date}")
+            print(f"Exclusion End Date: {xend_date}")
+        except ValueError:
+            print("Error: The --exclude-interval argument must be in the format"
+                  "'YYYY-MM-DD:YYYY-MM-DD'")
 
     markers = ["o", "s", "v", "^", ">", "<", "D", "P", "*", "X", "p", "8"]
     colors = ["black", "tab:blue", "tab:green", "tab:orange", "tab:red",
@@ -221,8 +234,15 @@ def main():
                 d["num_processors"] = 1
                 nproc = 1
             d["run_date"] = parse_datetime(d["run_date"])
+
             if args.date:
                 start_date = date2num(parse_datetime(args.date+" 00:00"))
+                run_date = date2num(d["run_date"])
+                if run_date < start_date:
+                    continue
+
+            if args.begin:
+                start_date = date2num(parse_datetime(args.begin+" 00:00"))
                 run_date = date2num(d["run_date"])
                 if run_date < start_date:
                     continue
@@ -231,6 +251,13 @@ def main():
                 end_date = date2num(parse_datetime(args.end+" 00:00"))
                 run_date = date2num(d["run_date"])
                 if run_date > end_date:
+                    continue
+
+            if args.exclude_interval:
+                end_date = date2num(parse_datetime(xend_date+" 12:00"))
+                start_date = date2num(parse_datetime(xstart_date+" 12:00"))
+                run_date = date2num(d["run_date"])
+                if run_date > start_date and run_date < end_date:
                     continue
 
             color = cmap(grad_colors[f]) if colorbar else colors[f]
