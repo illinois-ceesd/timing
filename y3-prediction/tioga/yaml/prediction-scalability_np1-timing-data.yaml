@@ -88,3 +88,21 @@ time_second_10: 11.18030102388002
 max_python_mem_usage: 2798.12890625
 max_gpu_mem_usage: 8335.322265625
 ---
+run_date: 2024-09-16 18:10
+run_host: Lassen
+cl_device: <pyopencl.Device 'gfx90a:sramecc+:xnack-' on 'AMD Accelerated Parallel Processing' at 0x555556c03100>
+num_processors: 1
+run_arch: x86_64
+gpu_arch: AMD-MI250X
+run_platform: tioga
+mirge_branch: tioga
+driver_branch: tioga-scaling
+mirge_version: 90e5c537723794aa12fc2141bc54601acb4f0e20
+driver_version: 7c185dce5beb68964472ebedcfb53744d184c43d
+time_startup: 169.13637161254883
+time_first_step: 75.9860369451344
+time_first_10: 90.99238211475313
+time_second_10: 11.188216168433428
+max_python_mem_usage: 2212.265625
+max_gpu_mem_usage: 8339.5009765625
+---
