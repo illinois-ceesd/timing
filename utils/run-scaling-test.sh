@@ -17,7 +17,7 @@ TEMP_TIMESTAMP=$(date "+%Y.%m.%d-%H.%M.%S")
 EMIRGE_HOME=${EMIRGE_HOME:-"${TOPDIR}/emirge"}
 export MIRGE_CACHE_ROOT="${TOPDIR}/timing-run-caches"
 SCALING_DAY_OF_WEEK=$(date +%a)
-SCALING_DRIVER_BRANCH="tioga-scaling"
+SCALING_DRIVER_BRANCH="tioga-scaling-merge"
 
 printf "Running scaling cases for ${SCALING_CASE_TIMING_ROOT} on ${TIMING_PLATFORM}@${TEMP_TIMESTAMP}\n"
 
@@ -80,8 +80,9 @@ if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
                 printf " -- No changes to commit.\n"
             fi
         else
-            print "Not committing processed timing data: directive not given.\n"
+            printf "Not committing processed timing data: directive not given.\n"
         fi
+    else
         printf "Not processing previous runs: No directive given.\n"
     fi
     if [ -f ARCHIVE_PREDICTION_DRIVER ]; then
@@ -178,5 +179,5 @@ if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
         printf "Job submission directive not given.\n"
     fi
 else
-    print "No prediction driver found in ${SCALING_CASE_RUN_ROOT}\n"
+    printf "No prediction driver found in ${SCALING_CASE_RUN_ROOT}\n"
 fi
