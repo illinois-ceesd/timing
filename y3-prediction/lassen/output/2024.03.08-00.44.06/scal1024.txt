@@ -1,0 +1,1129 @@
+Customizing shell for Lassen.
+Activating 'nozzle.lazy.timing.env' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+Driver directory: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run
+Thu Mar  7 22:02:15 PST 2024
+Running parallel timing tests...
+* Running prediction-scalability test in scalability_test.
+** Running prediction-scalability_np1024 on 1024 ranks.
+Making 3D mesh with the following parameters:
+Output name: actii
+Number of threads: 1
+Mesh size: 3.07
+Injector ratio: 2
+Sample boundary layer ratio: 4
+Bulk boundary layer ratio: 4
+Injector boundary layer ratio: 2
+Cavity boundary layer ratio: 2
+Surround boundary layer ratio: 2
+Isolator factor: 2
+Cavity factor: 4
+Injector factor: 3
+Shear layer factor: 4
+Sample factor: 4
+Make link actii.msh for finished mesh.
+Thu Mar  7 22:02:15 PST 2024
++ rm -f tmp.msh
++ gmsh -setnumber size 3.07 -setnumber blratio 4 -setnumber cavityfac 4 -setnumber isofac 2 -setnumber samplefac 4 -setnumber injectorfac 3 -setnumber blratiocavity 2 -setnumber blratioinjector 2 -setnumber blratiosample 4 -setnumber blratiosurround 2 -setnumber shearfac 4 -o tmp.msh -nopopup -format msh2 ./actii_from_brep.geo -3 -nt 1
+Info    : Running 'gmsh -setnumber size 3.07 -setnumber blratio 4 -setnumber cavityfac 4 -setnumber isofac 2 -setnumber samplefac 4 -setnumber injectorfac 3 -setnumber blratiocavity 2 -setnumber blratioinjector 2 -setnumber blratiosample 4 -setnumber blratiosurround 2 -setnumber shearfac 4 -o tmp.msh -nopopup -format msh2 ./actii_from_brep.geo -3 -nt 1' [Gmsh 4.12.2, 1 node, max. 1 thread]
+Info    : Started on Thu Mar  7 22:02:24 2024
+Info    : Reading './actii_from_brep.geo'...
+basesize = 3.070000
+inletsize = 3.070000
+isosize = 1.535000
+nozzlesize = 0.255833
+cavitysize = 0.767500
+shearsize = 0.383750
+injectorsize = 0.530000
+samplesize = 0.767500
+boundratio = 4.000000
+boundratiocavity = 2.000000
+boundratiocombustor = 1.000000
+boundratioinjector = 2.000000
+boundratiosample = 4.000000
+boundratiosurround = 2.000000
+Info    : Done reading './actii_from_brep.geo'
+Info    : Meshing 1D...
+Info    : [  0%] Meshing curve 1 (Line)
+Info    : [ 10%] Meshing curve 2 (Line)
+Info    : [ 10%] Meshing curve 3 (Line)
+Info    : [ 10%] Meshing curve 4 (Line)
+Info    : [ 10%] Meshing curve 5 (Line)
+Info    : [ 10%] Meshing curve 6 (Line)
+Info    : [ 10%] Meshing curve 7 (Line)
+Info    : [ 10%] Meshing curve 8 (Line)
+Info    : [ 10%] Meshing curve 9 (Line)
+Info    : [ 10%] Meshing curve 10 (Line)
+Info    : [ 10%] Meshing curve 11 (BSpline)
+Info    : [ 10%] Meshing curve 12 (Line)
+Info    : [ 20%] Meshing curve 13 (Line)
+Info    : [ 20%] Meshing curve 14 (Line)
+Info    : [ 20%] Meshing curve 15 (Line)
+Info    : [ 20%] Meshing curve 16 (Line)
+Info    : [ 20%] Meshing curve 17 (Line)
+Info    : [ 20%] Meshing curve 18 (Line)
+Info    : [ 20%] Meshing curve 19 (Line)
+Info    : [ 20%] Meshing curve 20 (Line)
+Info    : [ 20%] Meshing curve 21 (Line)
+Info    : [ 20%] Meshing curve 22 (Line)
+Info    : [ 20%] Meshing curve 23 (Line)
+Info    : [ 20%] Meshing curve 24 (Line)
+Info    : [ 30%] Meshing curve 25 (BSpline)
+Info    : [ 30%] Meshing curve 26 (Line)
+Info    : [ 30%] Meshing curve 27 (Line)
+Info    : [ 30%] Meshing curve 28 (BSpline)
+Info    : [ 30%] Meshing curve 29 (Line)
+Info    : [ 30%] Meshing curve 30 (Line)
+Info    : [ 30%] Meshing curve 31 (Line)
+Info    : [ 30%] Meshing curve 32 (Line)
+Info    : [ 30%] Meshing curve 33 (Line)
+Info    : [ 30%] Meshing curve 34 (Line)
+Info    : [ 30%] Meshing curve 35 (Line)
+Info    : [ 30%] Meshing curve 36 (Line)
+Info    : [ 40%] Meshing curve 37 (Line)
+Info    : [ 40%] Meshing curve 38 (Line)
+Info    : [ 40%] Meshing curve 39 (Line)
+Info    : [ 40%] Meshing curve 40 (Line)
+Info    : [ 40%] Meshing curve 41 (Line)
+Info    : [ 40%] Meshing curve 42 (BSpline)
+Info    : [ 40%] Meshing curve 43 (Line)
+Info    : [ 40%] Meshing curve 44 (Line)
+Info    : [ 40%] Meshing curve 45 (Line)
+Info    : [ 40%] Meshing curve 46 (Line)
+Info    : [ 40%] Meshing curve 47 (Line)
+Info    : [ 40%] Meshing curve 48 (Line)
+Info    : [ 50%] Meshing curve 49 (Line)
+Info    : [ 50%] Meshing curve 50 (Line)
+Info    : [ 50%] Meshing curve 51 (Line)
+Info    : [ 50%] Meshing curve 52 (Line)
+Info    : [ 50%] Meshing curve 53 (Line)
+Info    : [ 50%] Meshing curve 54 (Ellipse)
+Info    : [ 50%] Meshing curve 55 (Line)
+Info    : [ 50%] Meshing curve 56 (Ellipse)
+Info    : [ 50%] Meshing curve 57 (Line)
+Info    : [ 50%] Meshing curve 58 (Ellipse)
+Info    : [ 50%] Meshing curve 59 (Line)
+Info    : [ 50%] Meshing curve 60 (Ellipse)
+Info    : [ 60%] Meshing curve 61 (Line)
+Info    : [ 60%] Meshing curve 62 (Line)
+Info    : [ 60%] Meshing curve 63 (Line)
+Info    : [ 60%] Meshing curve 64 (Circle)
+Info    : [ 60%] Meshing curve 65 (Line)
+Info    : [ 60%] Meshing curve 66 (Circle)
+Info    : [ 60%] Meshing curve 67 (Line)
+Info    : [ 60%] Meshing curve 68 (Line)
+Info    : [ 60%] Meshing curve 69 (Line)
+Info    : [ 60%] Meshing curve 70 (Line)
+Info    : [ 60%] Meshing curve 71 (Line)
+Info    : [ 60%] Meshing curve 72 (Ellipse)
+Info    : [ 70%] Meshing curve 73 (Line)
+Info    : [ 70%] Meshing curve 74 (Line)
+Info    : [ 70%] Meshing curve 75 (Line)
+Info    : [ 70%] Meshing curve 76 (Line)
+Info    : [ 70%] Meshing curve 77 (Line)
+Info    : [ 70%] Meshing curve 78 (Line)
+Info    : [ 70%] Meshing curve 79 (Line)
+Info    : [ 70%] Meshing curve 80 (Line)
+Info    : [ 70%] Meshing curve 81 (Circle)
+Info    : [ 70%] Meshing curve 82 (Line)
+Info    : [ 70%] Meshing curve 83 (TrimmedCurve)
+Info    : [ 70%] Meshing curve 84 (Line)
+Info    : [ 80%] Meshing curve 85 (TrimmedCurve)
+Info    : [ 80%] Meshing curve 86 (Line)
+Info    : [ 80%] Meshing curve 87 (Line)
+Info    : [ 80%] Meshing curve 88 (Line)
+Info    : [ 80%] Meshing curve 89 (Line)
+Info    : [ 80%] Meshing curve 90 (Line)
+Info    : [ 80%] Meshing curve 91 (Line)
+Info    : [ 80%] Meshing curve 92 (Line)
+Info    : [ 80%] Meshing curve 93 (Line)
+Info    : [ 80%] Meshing curve 94 (Line)
+Info    : [ 80%] Meshing curve 95 (Line)
+Info    : [ 80%] Meshing curve 96 (Line)
+Info    : [ 90%] Meshing curve 97 (Line)
+Info    : [ 90%] Meshing curve 98 (Line)
+Info    : [ 90%] Meshing curve 99 (Line)
+Info    : [ 90%] Meshing curve 100 (TrimmedCurve)
+Info    : [ 90%] Meshing curve 101 (TrimmedCurve)
+Info    : [ 90%] Meshing curve 102 (Line)
+Info    : [ 90%] Meshing curve 103 (TrimmedCurve)
+Info    : [ 90%] Meshing curve 104 (Line)
+Info    : [ 90%] Meshing curve 105 (TrimmedCurve)
+Info    : [ 90%] Meshing curve 106 (Line)
+Info    : [ 90%] Meshing curve 107 (Line)
+Info    : [ 90%] Meshing curve 108 (Line)
+Info    : [100%] Meshing curve 109 (Line)
+Info    : [100%] Meshing curve 110 (Line)
+Info    : [100%] Meshing curve 111 (Line)
+Info    : [100%] Meshing curve 112 (Line)
+Info    : [100%] Meshing curve 113 (Line)
+Info    : [100%] Meshing curve 114 (Line)
+Info    : [100%] Meshing curve 115 (Line)
+Info    : [100%] Meshing curve 116 (Line)
+Info    : [100%] Meshing curve 117 (Line)
+Info    : [100%] Meshing curve 118 (Line)
+Info    : [100%] Meshing curve 119 (Line)
+Info    : Done meshing 1D (Wall 320.844s, CPU 320.616s)
+Info    : Meshing 2D...
+Info    : [  0%] Meshing surface 1 (Plane, Frontal-Delaunay)
+Info    : [ 10%] Meshing surface 2 (Plane, Frontal-Delaunay)
+Info    : [ 10%] Meshing surface 3 (Plane, Frontal-Delaunay)
+Info    : [ 10%] Meshing surface 4 (Plane, Frontal-Delaunay)
+Info    : [ 10%] Meshing surface 5 (Plane, Frontal-Delaunay)
+Info    : [ 10%] Meshing surface 6 (Plane, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 7 (Unknown, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 8 (Plane, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 9 (Plane, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 10 (Plane, Frontal-Delaunay)
+Info    : [ 20%] Meshing surface 11 (Plane, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 12 (Plane, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 13 (Plane, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 14 (Plane, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 15 (Plane, Frontal-Delaunay)
+Info    : [ 30%] Meshing surface 16 (Plane, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 17 (Plane, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 18 (Plane, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 19 (Plane, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 20 (Plane, Frontal-Delaunay)
+Info    : [ 40%] Meshing surface 21 (Plane, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 22 (Plane, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 23 (Plane, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 24 (Unknown, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 25 (Plane, Frontal-Delaunay)
+Info    : [ 50%] Meshing surface 26 (Cylinder, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 27 (Plane, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 28 (Plane, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 29 (Plane, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 30 (Cylinder, Frontal-Delaunay)
+Info    : [ 60%] Meshing surface 31 (Plane, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 32 (Cylinder, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 33 (Plane, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 34 (Plane, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 35 (Plane, Frontal-Delaunay)
+Info    : [ 70%] Meshing surface 36 (Plane, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 37 (Plane, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 38 (Plane, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 39 (Plane, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 40 (Cylinder, Frontal-Delaunay)
+Info    : [ 80%] Meshing surface 41 (Cylinder, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 42 (Plane, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 43 (Plane, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 44 (Cylinder, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 45 (Plane, Frontal-Delaunay)
+Info    : [ 90%] Meshing surface 46 (Cylinder, Frontal-Delaunay)
+Info    : [100%] Meshing surface 47 (Plane, Frontal-Delaunay)
+Info    : [100%] Meshing surface 48 (Plane, Frontal-Delaunay)
+Info    : [100%] Meshing surface 49 (Plane, Frontal-Delaunay)
+Info    : [100%] Meshing surface 50 (Plane, Frontal-Delaunay)
+Info    : [100%] Meshing surface 51 (Plane, Frontal-Delaunay)
+Info    : Done meshing 2D (Wall 195.738s, CPU 195.343s)
+Info    : Meshing 3D...
+Info    : 3D Meshing 5 volumes with 1 connected component
+Info    : Input mesh hash 26d8dfdc18846aaa
+Info    : Creating an empty mesh with 888474 vertices
+Info    : Initialization of tet. mesh
+Info    : Delaunay of     888470 points on   1 threads - mesh.nvert: 4         
+Info    : Recovering 4 missing facet(s)
+Info    : Recover Delaunay
+Info    : All volumes of the BRep were found and colorized accordingly
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of    2844386 points on   1 threads - mesh.nvert: 888474    
+Info    :           -    2488212 points filtered
+Info    :           =     356174 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of    3363656 points on   1 threads - mesh.nvert: 1244648   
+Info    :           -    2603126 points filtered
+Info    :           =     760530 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of    3599773 points on   1 threads - mesh.nvert: 2005178   
+Info    :           -    2526771 points filtered
+Info    :           =    1073002 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of    2612508 points on   1 threads - mesh.nvert: 3078180   
+Info    :           -    1758055 points filtered
+Info    :           =     854453 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of     753071 points on   1 threads - mesh.nvert: 3932633   
+Info    :           -     438900 points filtered
+Info    :           =     314171 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of      97328 points on   1 threads - mesh.nvert: 4246804   
+Info    :           -      40049 points filtered
+Info    :           =      57279 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of       8048 points on   1 threads - mesh.nvert: 4304083   
+Info    :           -       2391 points filtered
+Info    :           =       5657 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of        685 points on   1 threads - mesh.nvert: 4309740   
+Info    :           -        263 points filtered
+Info    :           =        422 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of         95 points on   1 threads - mesh.nvert: 4310162   
+Info    :           -         57 points filtered
+Info    :           =         38 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of         20 points on   1 threads - mesh.nvert: 4310200   
+Info    :           -         13 points filtered
+Info    :           =          7 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of          5 points on   1 threads - mesh.nvert: 4310207   
+Info    :           -          4 points filtered
+Info    :           =          1 points added
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Delaunay of          1 points on   1 threads - mesh.nvert: 4310208   
+Info    : Computing mesh sizes...
+Info    : Done computing mesh sizes
+Info    : Improving     883591 tet. on   1 thrd (S & ER)
+Info    : Improving      36541 tet. on   1 thrd (S & ER)
+Info    : Improving      10993 tet. on   1 thrd (S & ER)
+Info    : Improving       8602 tet. on   1 thrd (S & ER)
+Info    : Improving       8023 tet. on   1 thrd (S & ER)
+Info    : Improving       7848 tet. on   1 thrd (S & ER)
+Info    : Improving       7722 tet. on   1 thrd (S & ER)
+Info    : Improving       7681 tet. on   1 thrd (S & ER)
+Info    : Improving       7669 tet. on   1 thrd (GSC)
+Info    : Improving       1905 tet. on   1 thrd (S & ER)
+Info    : Improving       1506 tet. on   1 thrd (S & ER)
+Info    : Improving       1376 tet. on   1 thrd (S & ER)
+Info    : Improving       1337 tet. on   1 thrd (S & ER)
+Info    : Improving       1314 tet. on   1 thrd (S & ER)
+Info    : Improving       1309 tet. on   1 thrd (S & ER)
+Info    : Improving       1306 tet. on   1 thrd (GSC)
+Info    : Improving       1220 tet. on   1 thrd (S & ER)
+Info    : Improving       1161 tet. on   1 thrd (S & ER)
+Info    : Improving       1137 tet. on   1 thrd (S & ER)
+Info    : Improving       1132 tet. on   1 thrd (S & ER)
+Info    : Improving       1129 tet. on   1 thrd (S & ER)
+Info    : Improving       1128 tet. on   1 thrd (S & ER)
+Info    : Improving       1128 tet. on   1 thrd (GSC)
+Info    : Improving       1126 tet. on   1 thrd (S & ER)
+Info    : Improving       1115 tet. on   1 thrd (S & ER)
+Info    : Improving       1110 tet. on   1 thrd (S & ER)
+Info    : Improving       1105 tet. on   1 thrd (S & ER)
+Info    : Improving       1103 tet. on   1 thrd (S & ER)
+Info    : Improving       1102 tet. on   1 thrd (S & ER)
+Info    : Improving       1102 tet. on   1 thrd (GSC)
+Info    : Improving       1100 tet. on   1 thrd (S & ER)
+Info    : Improving       1094 tet. on   1 thrd (S & ER)
+Info    : Improving       1092 tet. on   1 thrd (S & ER)
+Info    : Improving       1092 tet. on   1 thrd (GSC)
+Info    :  	Final tet. mesh contains 26560362 tetrahedra
+Info    :  	Final tet. mesh contains 4310209 vertices
+Info    : tEmptyMesh  	 = 	    4.274
+Info    : tVerifyBnd  	 = 	    1.443
+Info    : tBndRecovery	 = 	   10.514
+Info    : tConvertMesh	 = 	    1.586
+Info    : tRefine     	 = 	 7291.356
+Info    : tOptimize   	 = 	   17.242
+Info    : Done meshing 3D (Wall 7477.93s, CPU 7469.41s)
+Info    : 4310209 nodes 26240003 elements
+Info    : Writing 'tmp.msh'...
+Info    : Done writing 'tmp.msh'
+Info    : Stopped on Fri Mar  8 00:17:50 2024 (From start: Wall 8125.88s, CPU 8113.83s)
++ set +x
+Fri Mar  8 00:17:57 PST 2024
+Created actii_24446096.msh with 24446096 tets.
+++ jsrun -g 1 -a 1 -n 1024 bash /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh python -u -O -m mpi4py driver.py -c prediction-scalability_np1024 -g /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test/log_data -i run_params.yaml --log --lazy
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+2024-03-08 00:18:16,393 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Custom casename 'prediction-scalability_np1024'
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-03-08 00:18:16,393 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Custom casename 'prediction-scalability_np1024'
+2024-03-08 00:18:16,393 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+    main()
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+    run_command_line(args)
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 75, in <module>
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 75, in <module>
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 75, in <module>
+    from y3prediction.prediction import main
+ModuleNotFoundError: No module named 'y3prediction'
+    from y3prediction.prediction import main
+ModuleNotFoundError    from y3prediction.prediction import main
+ModuleNotFoundError: No module named 'y3prediction'
+: No module named 'y3prediction'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Using user input from file: run_params.yaml
+Running driver.py
+
+2024-03-08 00:18:16,430 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 75, in <module>
+    from y3prediction.prediction import main
+ModuleNotFoundError: No module named 'y3prediction'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+Custom casename 'prediction-scalability_np1024'
+++ return_code=1
+++ set +x
+mv: cannot stat 'viz_data': No such file or directory
+mv: cannot stat 'restart_data': No such file or directory
+**  scalability_test/prediction-scalability_np1024 failed.
+Fri Mar  8 00:18:16 PST 2024
+Scaling/timing tests done.
+Passing tests: 
+Failing tests:  scalability_test/prediction-scalability_np1024
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 5693305: <scale1024> in cluster <lassen> Exited
+
+Job <scale1024> was submitted from host <lassen709> by user <mtcampbe> in cluster <lassen> at Thu Mar  7 09:20:22 2024
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <mtcampbe> in cluster <lassen> at Thu Mar  7 22:01:20 2024
+                            <40*lassen81>
+                            <40*lassen82>
+                            <40*lassen83>
+                            <40*lassen87>
+                            <40*lassen89>
+                            <40*lassen410>
+                            <40*lassen740>
+                            <40*lassen411>
+                            <40*lassen741>
+                            <40*lassen742>
+                            <40*lassen413>
+                            <40*lassen743>
+                            <40*lassen414>
+                            <40*lassen744>
+                            <40*lassen415>
+                            <40*lassen416>
+                            <40*lassen746>
+                            <40*lassen590>
+                            <40*lassen417>
+                            <40*lassen591>
+                            <40*lassen418>
+                            <40*lassen748>
+                            <40*lassen593>
+                            <40*lassen594>
+                            <40*lassen596>
+                            <40*lassen268>
+                            <40*lassen597>
+                            <40*lassen598>
+                            <40*lassen90>
+                            <40*lassen420>
+                            <40*lassen421>
+                            <40*lassen750>
+                            <40*lassen422>
+                            <40*lassen751>
+                            <40*lassen423>
+                            <40*lassen752>
+                            <40*lassen753>
+                            <40*lassen425>
+                            <40*lassen754>
+                            <40*lassen426>
+                            <40*lassen270>
+                            <40*lassen755>
+                            <40*lassen427>
+                            <40*lassen756>
+                            <40*lassen428>
+                            <40*lassen429>
+                            <40*lassen758>
+                            <40*lassen759>
+                            <40*lassen276>
+                            <40*lassen277>
+                            <40*lassen278>
+                            <40*lassen430>
+                            <40*lassen433>
+                            <40*lassen435>
+                            <40*lassen282>
+                            <40*lassen438>
+                            <40*lassen285>
+                            <40*lassen286>
+                            <40*lassen287>
+                            <40*lassen288>
+                            <40*lassen289>
+                            <40*lassen440>
+                            <40*lassen113>
+                            <40*lassen442>
+                            <40*lassen445>
+                            <40*lassen117>
+                            <40*lassen290>
+                            <40*lassen446>
+                            <40*lassen118>
+                            <40*lassen291>
+                            <40*lassen292>
+                            <40*lassen449>
+                            <40*lassen602>
+                            <40*lassen121>
+                            <40*lassen606>
+                            <40*lassen607>
+                            <40*lassen780>
+                            <40*lassen452>
+                            <40*lassen453>
+                            <40*lassen455>
+                            <40*lassen784>
+                            <40*lassen127>
+                            <40*lassen458>
+                            <40*lassen460>
+                            <40*lassen136>
+                            <40*lassen626>
+                            <40*lassen627>
+                            <40*lassen628>
+                            <40*lassen629>
+                            <40*lassen148>
+                            <40*lassen477>
+                            <40*lassen149>
+                            <40*lassen300>
+                            <40*lassen301>
+                            <40*lassen631>
+                            <40*lassen303>
+                            <40*lassen632>
+                            <40*lassen150>
+                            <40*lassen635>
+                            <40*lassen151>
+                            <40*lassen480>
+                            <40*lassen636>
+                            <40*lassen152>
+                            <40*lassen481>
+                            <40*lassen637>
+                            <40*lassen482>
+                            <40*lassen638>
+                            <40*lassen154>
+                            <40*lassen483>
+                            <40*lassen639>
+                            <40*lassen484>
+                            <40*lassen156>
+                            <40*lassen485>
+                            <40*lassen157>
+                            <40*lassen486>
+                            <40*lassen158>
+                            <40*lassen487>
+                            <40*lassen488>
+                            <40*lassen489>
+                            <40*lassen640>
+                            <40*lassen641>
+                            <40*lassen642>
+                            <40*lassen313>
+                            <40*lassen315>
+                            <40*lassen645>
+                            <40*lassen316>
+                            <40*lassen646>
+                            <40*lassen317>
+                            <40*lassen161>
+                            <40*lassen318>
+                            <40*lassen319>
+                            <40*lassen163>
+                            <40*lassen649>
+                            <40*lassen164>
+                            <40*lassen494>
+                            <40*lassen165>
+                            <40*lassen495>
+                            <40*lassen166>
+                            <40*lassen496>
+                            <40*lassen167>
+                            <40*lassen497>
+                            <40*lassen168>
+                            <40*lassen498>
+                            <40*lassen169>
+                            <40*lassen499>
+                            <40*lassen800>
+                            <40*lassen805>
+                            <40*lassen806>
+                            <40*lassen650>
+                            <40*lassen651>
+                            <40*lassen808>
+                            <40*lassen652>
+                            <40*lassen323>
+                            <40*lassen809>
+                            <40*lassen326>
+                            <40*lassen170>
+                            <40*lassen656>
+                            <40*lassen327>
+                            <40*lassen171>
+                            <40*lassen657>
+                            <40*lassen172>
+                            <40*lassen658>
+                            <40*lassen173>
+                            <40*lassen659>
+                            <40*lassen174>
+                            <40*lassen175>
+                            <40*lassen177>
+                            <40*lassen178>
+                            <40*lassen179>
+                            <40*lassen330>
+                            <40*lassen660>
+                            <40*lassen331>
+                            <40*lassen661>
+                            <40*lassen332>
+                            <40*lassen662>
+                            <40*lassen333>
+                            <40*lassen663>
+                            <40*lassen334>
+                            <40*lassen664>
+                            <40*lassen335>
+                            <40*lassen665>
+                            <40*lassen336>
+                            <40*lassen180>
+                            <40*lassen666>
+                            <40*lassen337>
+                            <40*lassen181>
+                            <40*lassen667>
+                            <40*lassen338>
+                            <40*lassen668>
+                            <40*lassen339>
+                            <40*lassen669>
+                            <40*lassen184>
+                            <40*lassen187>
+                            <40*lassen188>
+                            <40*lassen189>
+                            <40*lassen340>
+                            <40*lassen670>
+                            <40*lassen341>
+                            <40*lassen671>
+                            <40*lassen342>
+                            <40*lassen672>
+                            <40*lassen343>
+                            <40*lassen673>
+                            <40*lassen344>
+                            <40*lassen345>
+                            <40*lassen675>
+                            <40*lassen346>
+                            <40*lassen676>
+                            <40*lassen347>
+                            <40*lassen677>
+                            <40*lassen348>
+                            <40*lassen678>
+                            <40*lassen679>
+                            <40*lassen197>
+                            <40*lassen198>
+                            <40*lassen500>
+                            <40*lassen501>
+                            <40*lassen502>
+                            <40*lassen503>
+                            <40*lassen504>
+                            <40*lassen506>
+                            <40*lassen350>
+                            <40*lassen351>
+                            <40*lassen508>
+                            <40*lassen352>
+                            <40*lassen353>
+                            <40*lassen354>
+                            <40*lassen355>
+                            <40*lassen356>
+                            <40*lassen357>
+                            <40*lassen358>
+                            <40*lassen359>
+                            <40*lassen734>
+                            <40*lassen404>
+                            <40*lassen733>
+                            <40*lassen403>
+                            <40*lassen402>
+                            <40*lassen401>
+                            <40*lassen510>
+                            <40*lassen730>
+                            <40*lassen511>
+                            <40*lassen512>
+                            <40*lassen514>
+                            <40*lassen516>
+                            <40*lassen360>
+                            <40*lassen361>
+                            <40*lassen518>
+                            <40*lassen362>
+                            <40*lassen519>
+                            <40*lassen363>
+                            <40*lassen364>
+                            <40*lassen365>
+                            <40*lassen366>
+                            <40*lassen367>
+                            <40*lassen368>
+                            <40*lassen369>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test> was used as the working directory.
+Started at Thu Mar  7 22:01:20 2024
+Terminated at Fri Mar  8 00:19:01 2024
+Results reported at Fri Mar  8 00:19:01 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -nnodes 256
+#BSUB -G uiuc
+#BSUB -W 300
+#BSUB -J scale1024
+#BSUB -q pbatch
+#BSUB -o scal1024.txt
+
+source ../emirge/config/activate_env.sh
+source ../emirge/mirgecom/scripts/mirge-testing-env.sh
+source ../scripts/multi_scalability.sh -p ../ -s 1024 -n 1024
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   4.00 sec.
+    Max Memory :                                 78 MB
+    Average Memory :                             72.99 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1443 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   8262 sec.
+    Turnaround time :                            53919 sec.
+
+The output (if any) is above this job summary.
+

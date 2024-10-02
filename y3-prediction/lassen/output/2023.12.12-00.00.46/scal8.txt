@@ -1,0 +1,684 @@
+Customizing shell for Lassen.
+Activating 'nozzle.lazy.timing.env' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+Customizing shell for Lassen.
+Customizing shell for Lassen.
+Activating 'nozzle.lazy.timing.env' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+Activating 'nozzle.lazy.timing.env' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+Driver directory: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run
+Driver directory: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run
+Driver directory: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run
+Mon Dec 11 10:53:16 PST 2023
+Mon Dec 11 10:53:16 PST 2023
+Mon Dec 11 10:53:16 PST 2023
+Running parallel timing tests...
+Running parallel timing tests...
+* Running prediction-scalability test in scalability_test.
+Running parallel timing tests...
+* Running prediction-scalability test in scalability_test.
+* Running prediction-scalability test in scalability_test.
+** Running prediction-scalability_np8 on 8 ranks.
+** Running prediction-scalability_np8 on 8 ranks.
+** Running prediction-scalability_np8 on 8 ranks.
+rm: cannot remove ‘actii.msh’: No such file or directory
+rm: cannot remove ‘actii.msh’: No such file or directory
+Making 3D mesh with the following parameters:
+Output name: actii
+Number of threads: 1
+Mesh size: 16.05
+Injector ratio: 2
+Sample boundary layer ratio: 4
+Bulk boundary layer ratio: 4
+Injector boundary layer ratio: 2
+Cavity boundary layer ratio: 2
+Surround boundary layer ratio: 2
+Isolator factor: 2
+Cavity factor: 4
+Injector factor: 3
+Shear layer factor: 4
+Sample factor: 4
+Make link actii.msh for finished mesh.
+Making 3D mesh with the following parameters:
+Making 3D mesh with the following parameters:
+Output name: actii
+Number of threads: 1
+Mesh size: 16.05
+Output name: actii
+Number of threads: 1
+Mesh size: 16.05
+Injector ratio: 2
+Sample boundary layer ratio: 4
+Injector ratio: 2
+Sample boundary layer ratio: 4
+Bulk boundary layer ratio: 4
+Injector boundary layer ratio: 2
+Bulk boundary layer ratio: 4
+Injector boundary layer ratio: 2
+Cavity boundary layer ratio: 2
+Surround boundary layer ratio: 2
+Cavity boundary layer ratio: 2
+Surround boundary layer ratio: 2
+Isolator factor: 2
+Cavity factor: 4
+Injector factor: 3
+Isolator factor: 2
+Cavity factor: 4
+Injector factor: 3
+Shear layer factor: 4
+Shear layer factor: 4
+Sample factor: 4
+Sample factor: 4
+Make link actii.msh for finished mesh.
+Make link actii.msh for finished mesh.
+Expected mesh file already exists, skipping mesh creation.
+Expected mesh file already exists, skipping mesh creation.
+Expected mesh file already exists, skipping mesh creation.
+ln: failed to create symbolic link ‘actii.msh’: File exists
+ln: failed to create symbolic link ‘actii.msh’: File exists
+++ jsrun -g 1 -a 1 -n 8 bash /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh python -u -O -m mpi4py driver.py -c prediction-scalability_np8 -g /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test/log_data -i run_params.yaml --log --lazy
+++ jsrun -g 1 -a 1 -n 8 bash /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh python -u -O -m mpi4py driver.py -c prediction-scalability_np8 -g /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test/log_data -i run_params.yaml --log --lazy
+++ jsrun -g 1 -a 1 -n 8 bash /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh python -u -O -m mpi4py driver.py -c prediction-scalability_np8 -g /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test/log_data -i run_params.yaml --log --lazy
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+2023-12-11 10:53:50,518 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2023-12-11 10:53:50,518 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2023-12-11 10:53:50,518 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+2023-12-11 10:53:50,518 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2023-12-11 10:53:50,518 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2023-12-11 10:53:50,518 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2023-12-11 10:53:50,518 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2023-12-11 10:53:50,518 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2023-12-11 10:53:50,519 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2023-12-11 10:53:50,519 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+2023-12-11 10:53:50,519 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+2023-12-11 10:53:50,519 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2023-12-11 10:53:50,519 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+2023-12-11 10:53:50,519 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2023-12-11 10:53:50,519 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2023-12-11 10:53:50,519 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2023-12-11 10:53:50,518 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2023-12-11 10:53:50,518 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2023-12-11 10:53:50,518 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+2023-12-11 10:53:50,518 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+2023-12-11 10:53:50,518 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2023-12-11 10:53:50,518 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2023-12-11 10:53:50,518 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+2023-12-11 10:53:50,518 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params.yaml
+Running driver.py
+
+Using user input from file: run_params.yaml
+Running driver.py
+
+2023-12-11 10:53:54,345 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,345 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,345 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,345 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,346 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,346 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,346 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,346 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,348 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,348 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,348 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,348 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,348 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,348 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,348 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,348 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,351 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,351 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,351 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,351 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,351 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,351 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,351 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+2023-12-11 10:53:54,351 - INFO - mirgecom.mpi - Using mpi4py version 4.0.0.dev0 with pkl5 scatter support.
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 594, in __init__
+    self.db_conn.execute("select * from quantities;")
+sqlite3.OperationalError: no such table: quantities
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 76, in <module>
+    main(actx_class, restart_filename=restart_filename,
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/mpi.py", line 245, in wrapped_func
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 594, in __init__
+    self.db_conn.execute("select * from quantities;")
+sqlite3.OperationalError: no such table: quantities
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 76, in <module>
+    main(actx_class, restart_filename=restart_filename,
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/mpi.py", line 245, in wrapped_func
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 594, in __init__
+    self.db_conn.execute("select * from quantities;")
+sqlite3.OperationalError: no such table: quantities
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 76, in <module>
+    main(actx_class, restart_filename=restart_filename,
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/mpi.py", line 245, in wrapped_func
+    func(*args, **kwargs)
+    func(*args, **kwargs)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py", line 449, in main
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py", line 449, in main
+    func(*args, **kwargs)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py", line 449, in main
+    logmgr = initialize_logmgr(True,
+               logmgr = initialize_logmgr(True,
+             ^^^^^^^^^^^^^  ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/logging_quantities.py", line 68, in initialize_logmgr
+^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/logging_quantities.py", line 68, in initialize_logmgr
+    logmgr = initialize_logmgr(True,
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/logging_quantities.py", line 68, in initialize_logmgr
+    logmgr = LogManager(filename=filename, mode=mode, mpi_comm=mpi_comm)
+    logmgr = LogManager(filename=filename, mode=mode, mpi_comm=mpi_comm)
+               logmgr = LogManager(filename=filename, mode=mode, mpi_comm=mpi_comm)
+         ^^^^^^^^^^^^^^^        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 600, in __init__
+^^^^^^^^^^^^^^^^^^^^^  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 600, in __init__
+
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 600, in __init__
+    self.schema_version = _set_up_schema(self.db_conn)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    self.schema_version = _set_up_schema(self.db_conn)
+    self.schema_version = _set_up_schema(self.db_conn)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+                          ^^^^^  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 359, in _set_up_schema
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 359, in _set_up_schema
+^^^^^^^^^^^^^^^^^^^^^^^
+    db_conn.execute("""
+sqlite3.OperationalError: database is locked
+    db_conn.execute("""
+sqlite3.OperationalError: database is locked
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 359, in _set_up_schema
+    db_conn.execute("""
+sqlite3.OperationalError: database is locked
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 594, in __init__
+    self.db_conn.execute("select * from quantities;")
+sqlite3.OperationalError: no such table: quantities
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 76, in <module>
+    main(actx_class, restart_filename=restart_filename,
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/mpi.py", line 245, in wrapped_func
+    func(*args, **kwargs)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py", line 449, in main
+    logmgr = initialize_logmgr(True,
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/logging_quantities.py", line 68, in initialize_logmgr
+    logmgr = LogManager(filename=filename, mode=mode, mpi_comm=mpi_comm)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 600, in __init__
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 594, in __init__
+    self.schema_version = _set_up_schema(self.db_conn)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 359, in _set_up_schema
+    db_conn.execute("""
+sqlite3.OperationalError: database is locked
+    self.db_conn.execute("select * from quantities;")
+sqlite3.OperationalError: no such table: quantities
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 76, in <module>
+    main(actx_class, restart_filename=restart_filename,
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/mpi.py", line 245, in wrapped_func
+    func(*args, **kwargs)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py", line 449, in main
+    logmgr = initialize_logmgr(True,
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/logging_quantities.py", line 68, in initialize_logmgr
+    logmgr = LogManager(filename=filename, mode=mode, mpi_comm=mpi_comm)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 600, in __init__
+    self.schema_version = _set_up_schema(self.db_conn)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 359, in _set_up_schema
+    db_conn.execute("""
+sqlite3.OperationalError: database is locked
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 2 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 1 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 0 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 594, in __init__
+    self.db_conn.execute("select * from quantities;")
+sqlite3.OperationalError: no such table: quantities
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 76, in <module>
+    main(actx_class, restart_filename=restart_filename,
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/mpi.py", line 245, in wrapped_func
+    func(*args, **kwargs)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py", line 449, in main
+    logmgr = initialize_logmgr(True,
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/logging_quantities.py", line 68, in initialize_logmgr
+    logmgr = LogManager(filename=filename, mode=mode, mpi_comm=mpi_comm)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 600, in __init__
+    self.schema_version = _set_up_schema(self.db_conn)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 359, in _set_up_schema
+    db_conn.execute("""
+sqlite3.OperationalError: table quantities already exists
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 594, in __init__
+    self.db_conn.execute("select * from quantities;")
+sqlite3.OperationalError: no such table: quantities
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 76, in <module>
+    main(actx_class, restart_filename=restart_filename,
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/mpi.py", line 245, in wrapped_func
+    func(*args, **kwargs)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py", line 449, in main
+    logmgr = initialize_logmgr(True,
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/logging_quantities.py", line 68, in initialize_logmgr
+    logmgr = LogManager(filename=filename, mode=mode, mpi_comm=mpi_comm)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 600, in __init__
+    self.schema_version = _set_up_schema(self.db_conn)
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/logpyle/logpyle/__init__.py", line 359, in _set_up_schema
+    db_conn.execute("""
+sqlite3.OperationalError: table quantities already exists
+--------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 2 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+++ return_code=1
+++ set +x
+++ return_code=1
+++ set +x
+mv: cannot move ‘viz_data’ to ‘viz_data_8’: No such file or directory
+**  scalability_test/prediction-scalability_np8 failed.
+Mon Dec 11 10:54:25 PST 2023
+Scaling/timing tests done.
+Passing tests: 
+Failing tests:  scalability_test/prediction-scalability_np8
+mv: cannot stat ‘restart_data’: No such file or directory
+**  scalability_test/prediction-scalability_np8 failed.
+Mon Dec 11 10:54:25 PST 2023
+Scaling/timing tests done.
+Passing tests: 
+Failing tests:  scalability_test/prediction-scalability_np8
+++ return_code=1
+++ set +x
+mv: cannot stat ‘viz_data’: No such file or directory
+mv: cannot stat ‘restart_data’: No such file or directory
+**  scalability_test/prediction-scalability_np8 failed.
+Mon Dec 11 10:54:25 PST 2023
+Scaling/timing tests done.
+Passing tests: 
+Failing tests:  scalability_test/prediction-scalability_np8
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 5471455: <scale8> in cluster <lassen> Exited
+
+Job <scale8> was submitted from host <lassen708> by user <mtcampbe> in cluster <lassen> at Sun Dec 10 03:56:44 2023
+Job was executed on host(s) <1*lassen710>, in queue <pdebug>, as user <mtcampbe> in cluster <lassen> at Mon Dec 11 10:52:53 2023
+                            <40*lassen15>
+                            <40*lassen9>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test> was used as the working directory.
+Started at Mon Dec 11 10:52:53 2023
+Terminated at Mon Dec 11 10:55:10 2023
+Results reported at Mon Dec 11 10:55:10 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -nnodes 2
+#BSUB -G uiuc
+#BSUB -W 120
+#BSUB -J scale8
+#BSUB -q pdebug
+#BSUB -o scal8.txt
+
+source ../emirge/config/activate_env.sh
+source ../emirge/mirgecom/scripts/mirge-testing-env.sh
+source ../scripts/multi_scalability.sh -p ../ -s 8 -n 8
+
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.20 sec.
+    Max Memory :                                 59 MB
+    Average Memory :                             56.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1634 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   136 sec.
+    Turnaround time :                            111506 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 5471211: <scale8> in cluster <lassen> Exited
+
+Job <scale8> was submitted from host <lassen708> by user <mtcampbe> in cluster <lassen> at Sat Dec  9 04:00:04 2023
+Job was executed on host(s) <1*lassen710>, in queue <pdebug>, as user <mtcampbe> in cluster <lassen> at Mon Dec 11 10:52:53 2023
+                            <40*lassen24>
+                            <40*lassen23>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test> was used as the working directory.
+Started at Mon Dec 11 10:52:53 2023
+Terminated at Mon Dec 11 10:55:10 2023
+Results reported at Mon Dec 11 10:55:10 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -nnodes 2
+#BSUB -G uiuc
+#BSUB -W 120
+#BSUB -J scale8
+#BSUB -q pdebug
+#BSUB -o scal8.txt
+
+source ../emirge/config/activate_env.sh
+source ../emirge/mirgecom/scripts/mirge-testing-env.sh
+source ../scripts/multi_scalability.sh -p ../ -s 8 -n 8
+
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.27 sec.
+    Max Memory :                                 59 MB
+    Average Memory :                             56.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1634 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   136 sec.
+    Turnaround time :                            197706 sec.
+
+The output (if any) is above this job summary.
+
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 5471707: <scale8> in cluster <lassen> Exited
+
+Job <scale8> was submitted from host <lassen708> by user <mtcampbe> in cluster <lassen> at Mon Dec 11 03:58:18 2023
+Job was executed on host(s) <1*lassen710>, in queue <pdebug>, as user <mtcampbe> in cluster <lassen> at Mon Dec 11 10:52:28 2023
+                            <40*lassen30>
+                            <40*lassen25>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test> was used as the working directory.
+Started at Mon Dec 11 10:52:28 2023
+Terminated at Mon Dec 11 10:55:10 2023
+Results reported at Mon Dec 11 10:55:10 2023
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -nnodes 2
+#BSUB -G uiuc
+#BSUB -W 120
+#BSUB -J scale8
+#BSUB -q pdebug
+#BSUB -o scal8.txt
+
+source ../emirge/config/activate_env.sh
+source ../emirge/mirgecom/scripts/mirge-testing-env.sh
+source ../scripts/multi_scalability.sh -p ../ -s 8 -n 8
+
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.26 sec.
+    Max Memory :                                 59 MB
+    Average Memory :                             56.50 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1634 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   161 sec.
+    Turnaround time :                            25012 sec.
+
+The output (if any) is above this job summary.
+

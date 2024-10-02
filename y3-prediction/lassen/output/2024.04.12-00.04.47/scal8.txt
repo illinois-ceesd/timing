@@ -1,0 +1,373 @@
+Customizing shell for Lassen.
+Activating 'nozzle.lazy.timing.env' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/subprocess.py", line 69, in <module>
+    import msvcrt
+ModuleNotFoundError: No module named 'msvcrt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/site-packages/conda/exception_handler.py", line 17, in __call__
+    return func(*args, **kwargs)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/site-packages/conda/cli/main.py", line 95, in main_sourced
+    from ..base.context import context
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/site-packages/conda/base/context.py", line 12, in <module>
+    import platform
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/platform.py", line 119, in <module>
+    import subprocess
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/subprocess.py", line 75, in <module>
+    import select
+ImportError: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/lib-dynload/select.cpython-310-powerpc64le-linux-gnu.so: cannot read file data: Input/output error
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda", line 13, in <module>
+    sys.exit(main())
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/site-packages/conda/cli/main.py", line 128, in main
+    return conda_exception_handler(main, *args, **kwargs)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/site-packages/conda/exception_handler.py", line 388, in conda_exception_handler
+    return_value = exception_handler(func, *args, **kwargs)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/site-packages/conda/exception_handler.py", line 20, in __call__
+    return self.handle_exception(exc_val, exc_tb)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/site-packages/conda/exception_handler.py", line 51, in handle_exception
+    from .exceptions import (
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/site-packages/conda/exceptions.py", line 15, in <module>
+    import requests
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/site-packages/requests/__init__.py", line 43, in <module>
+    import urllib3
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/site-packages/urllib3/__init__.py", line 14, in <module>
+    from . import exceptions
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/site-packages/urllib3/exceptions.py", line 3, in <module>
+    import socket
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/socket.py", line 54, in <module>
+    import os, sys, io, selectors
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/selectors.py", line 12, in <module>
+    import select
+ImportError: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/lib/python3.10/lib-dynload/select.cpython-310-powerpc64le-linux-gnu.so: cannot read file data: Input/output error
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+Driver directory: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run
+Thu Apr 11 03:52:05 PDT 2024
+Running parallel timing tests...
+* Running prediction-scalability test in scalability_test.
+** Running prediction-scalability_np8 on 8 ranks.
+Making 3D mesh with the following parameters:
+Output name: actii
+Number of threads: 1
+Mesh size: 16.05
+Injector ratio: 2
+Sample boundary layer ratio: 4
+Bulk boundary layer ratio: 4
+Injector boundary layer ratio: 2
+Cavity boundary layer ratio: 2
+Surround boundary layer ratio: 2
+Isolator factor: 2
+Cavity factor: 4
+Injector factor: 3
+Shear layer factor: 4
+Sample factor: 4
+Make link actii.msh for finished mesh.
+Expected mesh file already exists, skipping mesh creation.
+++ jsrun -g 1 -a 1 -n 8 bash /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh python -u -O -m mpi4py driver.py -c prediction-scalability_np8 -g /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test/log_data -i run_params.yaml --log --lazy
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Custom casename 'prediction-scalability_np8'
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 218, in main
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 44, in <module>
+    from mirgecom.simutil import ApplicationOptionsError
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py", line 78, in <module>
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 44, in <module>
+    from mirgecom.simutil import ApplicationOptionsError
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py", line 78, in <module>
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 44, in <module>
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 44, in <module>
+    from mirgecom.simutil import ApplicationOptionsError
+    from mirgecom.simutil import ApplicationOptionsError
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py", line 78, in <module>
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py", line 78, in <module>
+    run_command_line(args)
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 44, in <module>
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 44, in <module>
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 44, in <module>
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 291, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 44, in <module>
+    from mirgecom.simutil import ApplicationOptionsError
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py", line 78, in <module>
+    from mirgecom.simutil import ApplicationOptionsError
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py", line 78, in <module>
+    from mirgecom.simutil import ApplicationOptionsError
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py", line 78, in <module>
+    from mirgecom.simutil import ApplicationOptionsError
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py", line 78, in <module>
+    import grudge.op as op
+    import grudge.op as op
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/__init__.py", line 23, in <module>
+    import grudge.op as op
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/__init__.py", line 23, in <module>
+    import grudge.op as op
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/__init__.py", line 23, in <module>
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/__init__.py", line 23, in <module>
+    import grudge.op as op
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/__init__.py", line 23, in <module>
+    from grudge.discretization import (
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 41, in <module>
+    from grudge.discretization import (
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 41, in <module>
+    from grudge.discretization import (
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 41, in <module>
+    from grudge.discretization import (
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 41, in <module>
+    import grudge.op as op
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/__init__.py", line 23, in <module>
+    import grudge.op as op
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/__init__.py", line 23, in <module>
+    import grudge.op as op
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/__init__.py", line 23, in <module>
+    from grudge.discretization import (
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 41, in <module>
+    from grudge.discretization import (
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 41, in <module>
+    from grudge.discretization import (
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 41, in <module>
+    from grudge.discretization import (
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 41, in <module>
+    from meshmode.discretization.poly_element import ModalGroupFactory
+    from meshmode.discretization.poly_element import ModalGroupFactory
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 32, in <module>
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 32, in <module>
+    from meshmode.discretization.poly_element import ModalGroupFactory
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 32, in <module>
+    from meshmode.discretization.poly_element import ModalGroupFactory
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 32, in <module>
+    from meshmode.discretization.poly_element import ModalGroupFactory
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 32, in <module>
+    from meshmode.discretization.poly_element import ModalGroupFactory
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 32, in <module>
+    from meshmode.discretization.poly_element import ModalGroupFactory
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 32, in <module>
+    from meshmode.discretization.poly_element import ModalGroupFactory
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 32, in <module>
+    import loopy as lp
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/loopy/loopy/__init__.py", line 24, in <module>
+    import loopy as lp
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/loopy/loopy/__init__.py", line 24, in <module>
+    import loopy as lp
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/loopy/loopy/__init__.py", line 24, in <module>
+    import loopy as lp
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/loopy/loopy/__init__.py", line 24, in <module>
+    import loopy as lp
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/loopy/loopy/__init__.py", line 24, in <module>
+    import loopy as lp
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/loopy/loopy/__init__.py", line 24, in <module>
+    import loopy as lp
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/loopy/loopy/__init__.py", line 24, in <module>
+    import loopy as lp
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/loopy/loopy/__init__.py", line 24, in <module>
+    from loopy.symbolic import (
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/loopy/loopy/symbolic.py", line 38, in <module>
+    from loopy.symbolic import (
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/loopy/loopy/symbolic.py", line 38, in <module>
+    from loopy.symbolic import (
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/loopy/loopy/symbolic.py", line 38, in <module>
+    from loopy.symbolic import (
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/loopy/loopy/symbolic.py", line 38, in <module>
+    from loopy.symbolic import (
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/loopy/loopy/symbolic.py", line 38, in <module>
+    from loopy.symbolic import (
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/loopy/loopy/symbolic.py", line 38, in <module>
+    from loopy.symbolic import (
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/loopy/loopy/symbolic.py", line 38, in <module>
+    from loopy.symbolic import (
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/loopy/loopy/symbolic.py", line 38, in <module>
+    import islpy as isl
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/islpy/__init__.py", line 25, in <module>
+    import islpy as isl
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/islpy/__init__.py", line 25, in <module>
+    import islpy as isl
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/islpy/__init__.py", line 25, in <module>
+    import islpy as isl
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/islpy/__init__.py", line 25, in <module>
+    import islpy as isl
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/islpy/__init__.py", line 25, in <module>
+    import islpy as isl
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/islpy/__init__.py", line 25, in <module>
+    import islpy as isl
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/islpy/__init__.py", line 25, in <module>
+    import islpy as isl
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/islpy/__init__.py", line 25, in <module>
+    import islpy._isl as _isl
+    import islpy._isl as _isl
+ImportError: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/islpy/../../../libisl.so.23: cannot read file data: Input/output error
+ImportError: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/islpy/../../../libisl.so.23: cannot read file data: Input/output error
+    import islpy._isl as _isl
+ImportError: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/islpy/../../../libisl.so.23: cannot read file data: Input/output error
+    import islpy._isl as _isl
+ImportError: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/islpy/../../../libisl.so.23: cannot read file data: Input/output error
+    import islpy._isl as _isl
+ImportError: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/islpy/../../../libisl.so.23: cannot read file data: Input/output error
+    import islpy._isl as _isl
+ImportError: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/islpy/../../../libisl.so.23: cannot read file data: Input/output error
+    import islpy._isl as _isl
+ImportError: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/islpy/../../../libisl.so.23: cannot read file data: Input/output error
+    import islpy._isl as _isl
+ImportError: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/nozzle.lazy.timing.env/lib/python3.11/site-packages/islpy/../../../libisl.so.23: cannot read file data: Input/output error
+++ return_code=1
+++ set +x
+mv: cannot stat ‘viz_data’: No such file or directory
+mv: cannot stat ‘restart_data’: No such file or directory
+**  scalability_test/prediction-scalability_np8 failed.
+Thu Apr 11 03:52:38 PDT 2024
+Scaling/timing tests done.
+Passing tests: 
+Failing tests:  scalability_test/prediction-scalability_np8
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 5779698: <scale8> in cluster <lassen> Exited
+
+Job <scale8> was submitted from host <lassen708> by user <mtcampbe> in cluster <lassen> at Wed Apr 10 23:58:59 2024
+Job was executed on host(s) <1*lassen710>, in queue <pdebug>, as user <mtcampbe> in cluster <lassen> at Thu Apr 11 03:50:27 2024
+                            <40*lassen25>
+                            <40*lassen24>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test> was used as the working directory.
+Started at Thu Apr 11 03:50:27 2024
+Terminated at Thu Apr 11 03:53:22 2024
+Results reported at Thu Apr 11 03:53:22 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -nnodes 2
+#BSUB -G uiuc
+#BSUB -W 120
+#BSUB -J scale8
+#BSUB -q pdebug
+#BSUB -o scal8.txt
+
+source ../emirge/config/activate_env.sh
+source ../emirge/mirgecom/scripts/mirge-testing-env.sh
+source ../scripts/multi_scalability.sh -p ../ -s 8 -n 8
+
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.24 sec.
+    Max Memory :                                 254 MB
+    Average Memory :                             98.38 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   3315 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   174 sec.
+    Turnaround time :                            14063 sec.
+
+The output (if any) is above this job summary.
+
