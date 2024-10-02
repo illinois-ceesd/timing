@@ -1,1 +1,1 @@
-../../utils/grab-and-process-new-scaling-data.sh
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/utils/grab-and-process-new-scaling-data.sh
