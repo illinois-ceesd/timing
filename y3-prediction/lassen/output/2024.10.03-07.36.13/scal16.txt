@@ -1,0 +1,447 @@
+Customizing shell for Lassen.
+/g/g17/mtcampbe/.lsbatch/1727962537.6227622.shell: line 9: ../emirge/config/activate_env.sh: No such file or directory
+/g/g17/mtcampbe/.lsbatch/1727962537.6227622.shell: line 10: ../emirge/mirgecom/scripts/mirge-testing-env.sh: No such file or directory
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+Driver directory: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run
+Thu Oct  3 06:35:46 PDT 2024
+Running parallel timing tests...
+* Running prediction-scalability test in scalability_test.
+** Running prediction-scalability_np16 on 16 ranks.
+rm: cannot remove 'actii.msh': No such file or directory
+Making 3D mesh with the following parameters:
+Output name: actii
+Number of threads: 1
+Mesh size: 12.3
+Injector ratio: 2
+Sample boundary layer ratio: 4
+Bulk boundary layer ratio: 4
+Injector boundary layer ratio: 2
+Cavity boundary layer ratio: 2
+Surround boundary layer ratio: 2
+Isolator factor: 2
+Cavity factor: 4
+Injector factor: 3
+Shear layer factor: 4
+Sample factor: 4
+Make link actii.msh for finished mesh.
+Thu Oct  3 06:35:46 PDT 2024
++ rm -f tmp.msh
++ gmsh -setnumber size 12.3 -setnumber blratio 4 -setnumber cavityfac 4 -setnumber isofac 2 -setnumber samplefac 4 -setnumber injectorfac 3 -setnumber blratiocavity 2 -setnumber blratioinjector 2 -setnumber blratiosample 4 -setnumber blratiosurround 2 -setnumber shearfac 4 -o tmp.msh -nopopup -format msh2 ./actii_from_brep.geo -3 -nt 1
+./mkmsh: line 119: gmsh: command not found
++ set +x
+Thu Oct  3 06:35:46 PDT 2024
+Mesh creation failed.++ runoptions='-n 16'
+++ [[ ! -z '' ]]
+++ mpiexec -n 16 python -u -O -m mpi4py driver.py -c prediction-scalability_np16 -g /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test/log_data -i run_params_np16.yaml --log --lazy
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+Traceback (most recent call last):
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 174, in _run_module_as_main
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    "__main__", fname, loader, pkg_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    exec code in run_globals
+  File "/collab/usr/gapps/python/build/spack-coralea.3/opt/spack/linux-rhel7-ppc64le/gcc-4.9.3/python-2.7.16-y7waqswzr2qvpfohcdbn2grwlkwakas4/lib/python2.7/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    main()
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 196, in main
+    run_path(sys.argv[0], run_name='__main__')
+    run_command_line(args)
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_command_line(args)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/site-packages/mpi4py/run.py", line 47, in run_command_line
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    run_path(sys.argv[0], run_name='__main__')
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 251, in run_path
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                 code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                      code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    print(f"Custom casename {args.casename}")
+                                           ^
+                              ^
+SyntaxError: invalid syntax
+                         ^
+SyntaxError: invalid syntax
+SyntaxError: invalid syntax
+    code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+              code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+            code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+            code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+            code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+              code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                     code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+         code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                                  code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                code = _get_code_from_file(path_name)
+  File "/usr/tce/packages/python/python-2.7.16/lib/python2.7/runpy.py", line 232, in _get_code_from_file
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                                                     ^
+SyntaxError: invalid syntax
+                                   ^
+SyntaxError: invalid syntax
+       ^
+SyntaxError: invalid syntax
+                              ^
+SyntaxError:     print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError:                                    ^
+SyntaxError: invalid syntax
+                                 ^
+SyntaxError: invalid syntax
+                          ^
+SyntaxError: invalid syntax
+                                      ^
+SyntaxError: invalid syntax
+                                           ^
+SyntaxError:   ^
+SyntaxError: invalid syntax
+               ^
+SyntaxError: invalid syntax
+invalid syntax
+invalid syntax
+invalid syntax
+    code = compile(f.read(), fname, 'exec')
+  File "driver.py", line 43
+    print(f"Custom casename {args.casename}")
+                                           ^
+SyntaxError: invalid syntax
+--------------------------------------------------------------------------
+Primary job  terminated normally, but 1 process returned
+a non-zero exit code. Per user-direction, the job has been aborted.
+--------------------------------------------------------------------------
+------------------------------------------------------------
+A process or daemon was unable to complete a TCP connection
+to another process:
+  Local host:    lassen9
+  Remote host:   lassen710
+This is usually caused by a firewall on the remote host. Please
+check that any firewall (e.g., iptables) has been disabled and
+try again.
+------------------------------------------------------------
+------------------------------------------------------------
+A process or daemon was unable to complete a TCP connection
+to another process:
+  Local host:    lassen9
+  Remote host:   lassen8
+This is usually caused by a firewall on the remote host. Please
+check that any firewall (e.g., iptables) has been disabled and
+try again.
+------------------------------------------------------------
+------------------------------------------------------------
+A process or daemon was unable to complete a TCP connection
+to another process:
+  Local host:    lassen9
+  Remote host:   lassen7
+This is usually caused by a firewall on the remote host. Please
+check that any firewall (e.g., iptables) has been disabled and
+try again.
+------------------------------------------------------------
+------------------------------------------------------------
+A process or daemon was unable to complete a TCP connection
+to another process:
+  Local host:    lassen9
+  Remote host:   lassen6
+This is usually caused by a firewall on the remote host. Please
+check that any firewall (e.g., iptables) has been disabled and
+try again.
+------------------------------------------------------------
+--------------------------------------------------------------------------
+mpiexec detected that one or more processes exited with non-zero status, thus causing
+the job to be terminated. The first process to do so was:
+
+  Process name: [[17647,1],10]
+  Exit code:    1
+--------------------------------------------------------------------------
+++ return_code=1
+++ set +x
+mv: cannot stat 'viz_data': No such file or directory
+mv: cannot stat 'restart_data': No such file or directory
+**  scalability_test/prediction-scalability_np16 failed.
+Thu Oct  3 06:35:50 PDT 2024
+Scaling/timing tests done.
+Passing tests: 
+Failing tests:  scalability_test/prediction-scalability_np16
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 6227622: <scale16> in cluster <lassen> Exited
+
+Job <scale16> was submitted from host <lassen709> by user <mtcampbe> in cluster <lassen> at Thu Oct  3 06:35:37 2024
+Job was executed on host(s) <1*lassen710>, in queue <pdebug>, as user <mtcampbe> in cluster <lassen> at Thu Oct  3 06:35:39 2024
+                            <40*lassen9>
+                            <40*lassen8>
+                            <40*lassen7>
+                            <40*lassen6>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test> was used as the working directory.
+Started at Thu Oct  3 06:35:39 2024
+Terminated at Thu Oct  3 06:35:50 2024
+Results reported at Thu Oct  3 06:35:50 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -nnodes 4
+#BSUB -G uiuc
+#BSUB -W 120
+#BSUB -J scale16
+#BSUB -q pdebug
+#BSUB -o scal16.txt
+
+source ../emirge/config/activate_env.sh
+source ../emirge/mirgecom/scripts/mirge-testing-env.sh
+source ../scripts/multi_scalability.sh -p ../ -s 16 -n 16
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.17 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   11 sec.
+    Turnaround time :                            13 sec.
+
+The output (if any) is above this job summary.
+
