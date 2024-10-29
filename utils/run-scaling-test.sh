@@ -17,7 +17,7 @@ TEMP_TIMESTAMP=$(date "+%Y.%m.%d-%H.%M.%S")
 EMIRGE_HOME=${EMIRGE_HOME:-"${TOPDIR}/emirge"}
 export MIRGE_CACHE_ROOT="${TOPDIR}/timing-run-caches"
 SCALING_DAY_OF_WEEK=$(date +%a)
-SCALING_DRIVER_BRANCH="tioga-scaling-merge"
+SCALING_DRIVER_BRANCH="main"
 
 printf "Running scaling cases for ${SCALING_CASE_TIMING_ROOT} on ${TIMING_PLATFORM}@${TEMP_TIMESTAMP}\n"
 
@@ -106,7 +106,7 @@ if [ -f CLONE_PREDICTION_DRIVER ]; then
         printf "Installing driver in ${SCALING_CASE_RUN_ROOT}\n"
         conda deactivate
         source ${EMIRGE_HOME}/config/activate_env.sh
-        ${EMIRGE_HOME}/version.sh
+        # ${EMIRGE_HOME}/version.sh
         
         cd ${SCALING_CASE_RUN_ROOT}
         ln -s $EMIRGE_HOME emirge
@@ -161,15 +161,21 @@ if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
         else
             job1_id=$(printf "${job1}" | cut -d "<" -f 2 | cut -d ">" -f 1)
             set -x
-            job2=$(${BATCH_COMMAND} -w "ended(${job1_id})" scal2nodes_${PLATFORM_BATCH_NAME}.sh)
+            # job2=$(${BATCH_COMMAND} -w "ended(${job1_id})" scal2nodes_${PLATFORM_BATCH_NAME}.sh)
+            sleep 30 # sleep helps prevent identical timestamps on logfiles for multiple runs
+            job2=$(${BATCH_COMMAND} scal2nodes_${PLATFORM_BATCH_NAME}.sh)
             set +x
             job2_id=$(printf "${job2}" | cut -d "<" -f 2 | cut -d ">" -f 1)
             set -x
-            job3=$(${BATCH_COMMAND} -w "ended(${job2_id})" scal4nodes_${PLATFORM_BATCH_NAME}.sh)
+            # job3=$(${BATCH_COMMAND} -w "ended(${job2_id})" scal4nodes_${PLATFORM_BATCH_NAME}.sh)
+            sleep 30
+            job3=$(${BATCH_COMMAND} scal4nodes_${PLATFORM_BATCH_NAME}.sh)
             set +x
             job3_id=$(printf "${job3}" | cut -d "<" -f 2 | cut -d ">" -f 1)
             set -x
-            job4=$(${BATCH_COMMAND} -w "ended(${job3_id})" scal8nodes_${PLATFORM_BATCH_NAME}.sh)
+            # job4=$(${BATCH_COMMAND} -w "ended(${job3_id})" scal8nodes_${PLATFORM_BATCH_NAME}.sh)
+            sleep 30
+            job4=$(${BATCH_COMMAND} scal8nodes_${PLATFORM_BATCH_NAME}.sh)
             set +x
             job4_id=$(printf "${job4}" | cut -d "<" -f 2 | cut -d ">" -f 1)
             printf "Scaling JobIDs: ${job1_id} ${job2_id} ${job3_id} ${job4_id}\n"
