@@ -1,0 +1,52 @@
+/etc/profile.d/lsf.sh: line 334: 149264 Segmentation fault      $glibc > /dev/null 2>&1
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 6531933: <scale8> in cluster <lassen> Exited
+
+Job <scale8> was submitted from host <lassen35> by user <mtcampbe> in cluster <lassen> at Fri Dec 13 06:55:54 2024
+Job was executed on host(s) <1*lassen710>, in queue <pdebug>, as user <mtcampbe> in cluster <lassen> at Fri Dec 13 06:55:57 2024
+                            <40*lassen33>
+                            <40*lassen32>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test> was used as the working directory.
+Started at Fri Dec 13 06:55:57 2024
+Terminated at Fri Dec 13 06:56:03 2024
+Results reported at Fri Dec 13 06:56:03 2024
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -nnodes 2
+#BSUB -G uiuc
+#BSUB -W 120
+#BSUB -J scale8
+#BSUB -q pdebug
+#BSUB -o scal8.txt
+
+source ../emirge/config/activate_env.sh
+source ../emirge/mirgecom/scripts/mirge-testing-env.sh
+source ../scripts/multi_scalability.sh -p ../ -s 8 -n 8
+
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.37 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   5 sec.
+    Turnaround time :                            9 sec.
+
+The output (if any) is above this job summary.
+
