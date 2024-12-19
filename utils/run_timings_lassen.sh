@@ -30,6 +30,7 @@ git pull
 # - the script below will build mirgecom
 # - after mirgecom is built INSTALL_MIRGECOM file is removed
 # TODO: Make install a script-local option
+export MIRGE_BRANCH="main"
 if [ -f "INSTALL_STUFF" ]; then
     touch INSTALL_MIRGECOM
     touch INSTALL_MATPLOTLIB
