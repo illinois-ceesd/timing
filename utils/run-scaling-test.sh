@@ -32,7 +32,7 @@ if [ "$SCALING_DAY_OF_WEEK" = "Mon" ]; then
         echo "Cache deletion directive not given.  Not touching the cache."
     fi
 elif [ -f AUTODELETE_TIMING_CACHE ]; then
-    echo "Today is not Monday. Skipping cache deletion."
+    echo "Today is not Monday. Skipping cache deletion. Enabling deletion for Monday."
     # Re-enable cache deletion for when Monday hits
     touch DELETE_TIMING_CACHE
 fi
@@ -97,6 +97,10 @@ else
     printf "No previous driver or data found in ${SCALING_CASE_RUN_ROOT}\n"
 fi
 
+conda deactivate
+source ${EMIRGE_HOME}/config/activate_env.sh
+${EMIRGE_HOME}/version.sh
+
 # Install the prediction driver
 if [ -f CLONE_PREDICTION_DRIVER ]; then
     printf "Cloning (drivers_y3-prediction@${SCALING_DRIVER_BRANCH}) to: ${TOPDIR}/${SCALING_CASE_RUN_ROOT}\n"
@@ -104,13 +108,10 @@ if [ -f CLONE_PREDICTION_DRIVER ]; then
     git clone -b ${SCALING_DRIVER_BRANCH} git@github.com:/illinois-ceesd/drivers_y3-prediction ${SCALING_CASE_RUN_ROOT}
     if [ -f INSTALL_PREDICTION_DRIVER ]; then
         printf "Installing driver in ${SCALING_CASE_RUN_ROOT}\n"
-        conda deactivate
-        source ${EMIRGE_HOME}/config/activate_env.sh
-        # ${EMIRGE_HOME}/version.sh
-        
         cd ${SCALING_CASE_RUN_ROOT}
         ln -s $EMIRGE_HOME emirge
         pip install -e .
+        # conda deactivate
         cd data/cav5_comb4/3D/scalability
         ln -sf ${TOPDIR}/y3-prediction-scalability-data/*.msh .
         printf "Installed driver in ${SCALING_CASE_RUN_ROOT} at ${TEMP_TIMESTAMP}\n"
@@ -122,6 +123,8 @@ else
     printf "Driver clone directive not given: Skipping cloning of new driver.\n"
 fi
 
+conda deactivate
+
 if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
     printf "Found driver in ${SCALING_CASE_RUN_ROOT}\n"
     cd ${SCALING_CASE_RUN_ROOT}
@@ -132,6 +135,7 @@ if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
     cd ../
 
     if [ -f SUBMIT_SCALING_JOBS ]; then
+        touch ${TOPDIR}/$SCALING_CASE_RUN_ROOT}/scaling-run_${TEMP_TIMESTAMP}
         printf "Submitting scaling jobs.\n"
         cd ${TOPDIR}/${SCALING_CASE_RUN_ROOT}/scalability_test
         PLATFORM_BATCH_NAME="lassen.bsub"

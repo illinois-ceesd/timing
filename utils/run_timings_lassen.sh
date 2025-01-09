@@ -14,7 +14,7 @@ TIMING_DATE=$(date "+%Y-%m-%d %H:%M")
 testing_date=$(date "+%Y.%m.%d")
 
 # New: now explicitly set the env modules
-. ./lassen-env.sh
+# . ./lassen-env.sh
 
 # --- Debugging ---
 # which mpicc
@@ -59,7 +59,6 @@ fi
 #if [ -f "RUN_PREDICTION" ]; then
 #    ./run-driver-timing.sh -d drivers_y2-prediction -b update-to-y3 -i y2-prediction
 #fi
-
 if [ -f "RUN_SCALING_TEST" ]; then
     ./run-scaling-test.sh
 fi
