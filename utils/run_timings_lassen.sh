@@ -14,7 +14,7 @@ TIMING_DATE=$(date "+%Y-%m-%d %H:%M")
 testing_date=$(date "+%Y.%m.%d")
 
 # New: now explicitly set the env modules
-. ./lassen-env.sh
+# . ./lassen-env.sh
 
 # --- Debugging ---
 # which mpicc

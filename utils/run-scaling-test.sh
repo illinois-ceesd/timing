@@ -29,10 +29,10 @@ if [ "$SCALING_DAY_OF_WEEK" = "Mon" ]; then
         # Only remove the cache *once* on Monday
         rm DELETE_TIMING_CACHE
     else
-        echo "Cache deletion directive not given.  Not touching the cache."
+        echo "Cache deletion directive not given. Not touching the cache."
     fi
 elif [ -f AUTODELETE_TIMING_CACHE ]; then
-    echo "Today is not Monday. Skipping cache deletion."
+    echo "Today is not Monday. Skipping cache deletion. Enabling Monday deletion."
     # Re-enable cache deletion for when Monday hits
     touch DELETE_TIMING_CACHE
 fi
@@ -66,13 +66,7 @@ if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
         cp ${SCALING_CASE_RUN_ROOT}/scalability_test/scal*.txt ${PLATFORM_OUTPUT_DIR}
         if [ -f COMMIT_SCALING_DATA ]; then
             printf " - Updating timing repo with processed data.\n"
-            # git add ${PLATFORM_SQL_DIR}/*-sqlite
-            # git add ${PLATFORM_SQL_DIR}
-            # git add ${PLATFORM_OUTPUT_DIR}
-            # git add ${SCALING_CASE_TIMING_ROOT}/${TIMING_PLATFORM}/yaml
-            # git add ${PLATFORM_YAML_DIR}
             git add ${PLATFORM_TIMING_DATA_DIR}
-            # git add ${SCALING_CASE_TIMING_ROOT}/yaml
             if ! git diff --cached --exit-code >/dev/null; then 
                 (git commit -m " - Automatic commit: Y3Scalability/${TIMING_PLATFORM} ${TEMP_TIMESTAMP}" && git push)
             else
@@ -96,6 +90,10 @@ else
     printf "No previous driver or data found in ${SCALING_CASE_RUN_ROOT}\n"
 fi
 
+conda deactivate
+source ${EMIRGE_HOME}/config/activate_env.sh
+${EMIRGE_HOME}/version.sh
+
 # Install the prediction driver
 if [ -f CLONE_PREDICTION_DRIVER ]; then
     printf "Cloning (drivers_y3-prediction@${SCALING_DRIVER_BRANCH}) to: ${TOPDIR}/${SCALING_CASE_RUN_ROOT}\n"
@@ -103,10 +101,6 @@ if [ -f CLONE_PREDICTION_DRIVER ]; then
     git clone -b ${SCALING_DRIVER_BRANCH} git@github.com:/illinois-ceesd/drivers_y3-prediction ${SCALING_CASE_RUN_ROOT}
     if [ -f INSTALL_PREDICTION_DRIVER ]; then
         printf "Installing driver in ${SCALING_CASE_RUN_ROOT}\n"
-        conda deactivate
-        source ${EMIRGE_HOME}/config/activate_env.sh
-        # ${EMIRGE_HOME}/version.sh
-        
         cd ${SCALING_CASE_RUN_ROOT}
         ln -s $EMIRGE_HOME emirge
         pip install -e .
@@ -121,6 +115,8 @@ else
     printf "Driver clone directive not given: Skipping cloning of new driver.\n"
 fi
 
+conda deactivate
+
 if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
     printf "Found driver in ${SCALING_CASE_RUN_ROOT}\n"
     cd ${SCALING_CASE_RUN_ROOT}
@@ -131,6 +127,7 @@ if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
     cd ../
 
     if [ -f SUBMIT_SCALING_JOBS ]; then
+        touch ${TOPDIR}/$SCALING_CASE_RUN_ROOT}/scaling-run_${TEMP_TIMESTAMP}
         printf "Submitting scaling jobs.\n"
         cd ${TOPDIR}/${SCALING_CASE_RUN_ROOT}/scalability_test
         PLATFORM_BATCH_NAME="lassen.bsub"
