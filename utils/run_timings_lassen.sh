@@ -5,7 +5,7 @@
 # set -e
 set -x
 
-export MIRGE_TIMING_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing
+export MIRGE_TIMING_HOME=/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/RepoMonitoring/pilot-timing
 cd ${MIRGE_TIMING_HOME}
 
 TIMING_HOST=$(hostname)
@@ -30,35 +30,13 @@ git pull
 # - the script below will build mirgecom
 # - after mirgecom is built INSTALL_MIRGECOM file is removed
 # TODO: Make install a script-local option
-export MIRGE_BRANCH="main"
+export MIRGE_BRANCH="production-pilot"
+export TIMING_ENV_NAME="timing.pilot"
 if [ -f "INSTALL_STUFF" ]; then
     touch INSTALL_MIRGECOM
     touch INSTALL_MATPLOTLIB
     ./install-mirgecom.sh
 fi
-
-# Run the lazy nozzle data collection driver
-#if [ -f "RUN_NOZZLE" ]; then
-#    ./time-lazy-nozzle.sh
-#fi
-
-# Run the lazy 1dflame data collection driver
-#if [ -f "RUN_FLAME" ]; then
-#    ./time-lazy-flame1d.sh
-#fi
-
-# Time isolator
-#if [ -f "RUN_ISOLATOR" ]; then
-#   ./time-lazy-isolator.sh
-#fi
-
-# Time combustor
-# ./time-lazy-combustor.sh
-
-# Time prediction
-#if [ -f "RUN_PREDICTION" ]; then
-#    ./run-driver-timing.sh -d drivers_y2-prediction -b update-to-y3 -i y2-prediction
-#fi
 
 if [ -f "RUN_SCALING_TEST" ]; then
     ./run-scaling-test.sh
