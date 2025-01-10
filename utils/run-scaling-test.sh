@@ -17,7 +17,7 @@ TEMP_TIMESTAMP=$(date "+%Y.%m.%d-%H.%M.%S")
 EMIRGE_HOME=${EMIRGE_HOME:-"${TOPDIR}/emirge"}
 export MIRGE_CACHE_ROOT="${TOPDIR}/timing-run-caches"
 SCALING_DAY_OF_WEEK=$(date +%a)
-SCALING_DRIVER_BRANCH="tioga-scaling"
+SCALING_DRIVER_BRANCH="main"
 
 printf "Running scaling cases for ${SCALING_CASE_TIMING_ROOT} on ${TIMING_PLATFORM}@${TEMP_TIMESTAMP}\n"
 
@@ -32,7 +32,7 @@ if [ "$SCALING_DAY_OF_WEEK" = "Mon" ]; then
         echo "Cache deletion directive not given.  Not touching the cache."
     fi
 elif [ -f AUTODELETE_TIMING_CACHE ]; then
-    echo "Today is not Monday. Skipping cache deletion."
+    echo "Today is not Monday. Skipping cache deletion. Enabling deletion for Monday."
     # Re-enable cache deletion for when Monday hits
     touch DELETE_TIMING_CACHE
 fi
@@ -80,8 +80,9 @@ if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
                 printf " -- No changes to commit.\n"
             fi
         else
-            print "Not committing processed timing data: directive not given.\n"
+            printf "Not committing processed timing data: directive not given.\n"
         fi
+    else
         printf "Not processing previous runs: No directive given.\n"
     fi
     if [ -f ARCHIVE_PREDICTION_DRIVER ]; then
@@ -96,6 +97,10 @@ else
     printf "No previous driver or data found in ${SCALING_CASE_RUN_ROOT}\n"
 fi
 
+conda deactivate
+source ${EMIRGE_HOME}/config/activate_env.sh
+${EMIRGE_HOME}/version.sh
+
 # Install the prediction driver
 if [ -f CLONE_PREDICTION_DRIVER ]; then
     printf "Cloning (drivers_y3-prediction@${SCALING_DRIVER_BRANCH}) to: ${TOPDIR}/${SCALING_CASE_RUN_ROOT}\n"
@@ -103,13 +108,10 @@ if [ -f CLONE_PREDICTION_DRIVER ]; then
     git clone -b ${SCALING_DRIVER_BRANCH} git@github.com:/illinois-ceesd/drivers_y3-prediction ${SCALING_CASE_RUN_ROOT}
     if [ -f INSTALL_PREDICTION_DRIVER ]; then
         printf "Installing driver in ${SCALING_CASE_RUN_ROOT}\n"
-        conda deactivate
-        source ${EMIRGE_HOME}/config/activate_env.sh
-        ${EMIRGE_HOME}/version.sh
-        
         cd ${SCALING_CASE_RUN_ROOT}
         ln -s $EMIRGE_HOME emirge
         pip install -e .
+        # conda deactivate
         cd data/cav5_comb4/3D/scalability
         ln -sf ${TOPDIR}/y3-prediction-scalability-data/*.msh .
         printf "Installed driver in ${SCALING_CASE_RUN_ROOT} at ${TEMP_TIMESTAMP}\n"
@@ -121,6 +123,8 @@ else
     printf "Driver clone directive not given: Skipping cloning of new driver.\n"
 fi
 
+conda deactivate
+
 if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
     printf "Found driver in ${SCALING_CASE_RUN_ROOT}\n"
     cd ${SCALING_CASE_RUN_ROOT}
@@ -131,6 +135,7 @@ if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
     cd ../
 
     if [ -f SUBMIT_SCALING_JOBS ]; then
+        touch ${TOPDIR}/$SCALING_CASE_RUN_ROOT}/scaling-run_${TEMP_TIMESTAMP}
         printf "Submitting scaling jobs.\n"
         cd ${TOPDIR}/${SCALING_CASE_RUN_ROOT}/scalability_test
         PLATFORM_BATCH_NAME="lassen.bsub"
@@ -160,15 +165,21 @@ if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
         else
             job1_id=$(printf "${job1}" | cut -d "<" -f 2 | cut -d ">" -f 1)
             set -x
-            job2=$(${BATCH_COMMAND} -w "ended(${job1_id})" scal2nodes_${PLATFORM_BATCH_NAME}.sh)
+            # job2=$(${BATCH_COMMAND} -w "ended(${job1_id})" scal2nodes_${PLATFORM_BATCH_NAME}.sh)
+            sleep 30 # sleep helps prevent identical timestamps on logfiles for multiple runs
+            job2=$(${BATCH_COMMAND} scal2nodes_${PLATFORM_BATCH_NAME}.sh)
             set +x
             job2_id=$(printf "${job2}" | cut -d "<" -f 2 | cut -d ">" -f 1)
             set -x
-            job3=$(${BATCH_COMMAND} -w "ended(${job2_id})" scal4nodes_${PLATFORM_BATCH_NAME}.sh)
+            # job3=$(${BATCH_COMMAND} -w "ended(${job2_id})" scal4nodes_${PLATFORM_BATCH_NAME}.sh)
+            sleep 30
+            job3=$(${BATCH_COMMAND} scal4nodes_${PLATFORM_BATCH_NAME}.sh)
             set +x
             job3_id=$(printf "${job3}" | cut -d "<" -f 2 | cut -d ">" -f 1)
             set -x
-            job4=$(${BATCH_COMMAND} -w "ended(${job3_id})" scal8nodes_${PLATFORM_BATCH_NAME}.sh)
+            # job4=$(${BATCH_COMMAND} -w "ended(${job3_id})" scal8nodes_${PLATFORM_BATCH_NAME}.sh)
+            sleep 30
+            job4=$(${BATCH_COMMAND} scal8nodes_${PLATFORM_BATCH_NAME}.sh)
             set +x
             job4_id=$(printf "${job4}" | cut -d "<" -f 2 | cut -d ">" -f 1)
             printf "Scaling JobIDs: ${job1_id} ${job2_id} ${job3_id} ${job4_id}\n"
@@ -178,5 +189,5 @@ if [ -d ${SCALING_CASE_RUN_ROOT} ]; then
         printf "Job submission directive not given.\n"
     fi
 else
-    print "No prediction driver found in ${SCALING_CASE_RUN_ROOT}\n"
+    printf "No prediction driver found in ${SCALING_CASE_RUN_ROOT}\n"
 fi
