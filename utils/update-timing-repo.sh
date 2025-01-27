@@ -8,7 +8,7 @@
 # - Submits the y3-prediction scaling run jobs for 
 # tonight's tests 
 
-TOPDIR=$(pwd)
+TOPDIR="/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing"
 
 SCALING_CASE_RUN_ROOT="y3-prediction-scaling-run"
 SCALING_CASE_TIMING_ROOT="y3-prediction"
