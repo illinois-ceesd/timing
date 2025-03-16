@@ -1,0 +1,11 @@
+timing:
+    sql_path: log_data
+    project: uiuc
+    queue: pdebug
+    nnodes: 1
+    mirge_branch: production
+    pyopenclCTX: port:tesla
+    host: Lassen
+    gpu_arch: GV100GL
+    timing_repo: illinois-ceesd/timing.git
+    timing_branch: main
