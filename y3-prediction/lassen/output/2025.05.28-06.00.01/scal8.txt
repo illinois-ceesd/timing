@@ -1,0 +1,51 @@
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 7288215: <scale8> in cluster <lassen> Done
+
+Job <scale8> was submitted from host <lassen709> by user <mtcampbe> in cluster <lassen> at Tue May 27 18:35:13 2025
+Job was executed on host(s) <1*lassen710>, in queue <pdebug>, as user <mtcampbe> in cluster <lassen> at Tue May 27 18:35:16 2025
+                            <40*lassen11>
+                            <40*lassen10>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/RepoMonitoring/pilot-timing/y3-prediction-scaling-run/scalability_test> was used as the working directory.
+Started at Tue May 27 18:35:16 2025
+Terminated at Tue May 27 18:49:57 2025
+Results reported at Tue May 27 18:49:57 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -nnodes 2
+#BSUB -G uiuc
+#BSUB -W 120
+#BSUB -J scale8
+#BSUB -q pdebug
+#BSUB -o scal8.txt
+
+source ../emirge/config/activate_env.sh
+source ../emirge/mirgecom/scripts/mirge-testing-env.sh
+source ../scripts/multi_scalability.sh -p ../ -s 8 -n 8
+
+
+------------------------------------------------------------
+
+Successfully completed.
+
+Resource usage summary:
+
+    CPU time :                                   0.63 sec.
+    Max Memory :                                 59 MB
+    Average Memory :                             58.52 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1634 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   882 sec.
+    Turnaround time :                            884 sec.
+
+The output (if any) is above this job summary.
+
