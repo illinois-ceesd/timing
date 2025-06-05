@@ -1,0 +1,593 @@
+Customizing shell for Lassen.
+
+The following have been reloaded with a version change:
+  1) base-gcc/8.3.1 => base-gcc/11.2.1
+
+
+Lmod is automatically replacing "clang/ibm-16.0.6-cuda-11.2.0-gcc-8.3.1" with
+"gcc/10.2.1".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) spectrum-mpi/rolling-release
+
+Activating 'timing.main' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+Driver directory: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run
+Wed Jun  4 12:56:34 PDT 2025
+Running parallel timing tests...
+* Running prediction-scalability test in scalability_test.
+** Running prediction-scalability_np32 on 32 ranks.
+++ runoptions='-n 32'
+++ [[ ! -z '' ]]
+++ jsrun -g 1 -a 1 -n 32 bash /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh python -u -O -m mpi4py driver.py -c prediction-scalability_np32 -g /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test/log_data -i run_params_np32.yaml --log --lazy
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,225 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,225 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,225 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,225 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,225 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,225 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-04 12:56:39,225 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,225 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,225 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,226 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,366 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,365 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,430 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,430 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,430 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,430 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,430 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,430 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,430 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,430 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,430 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,430 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,430 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,430 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,430 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,431 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:154: UserWarning: <class 'y3prediction.prediction.StepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.StepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,443 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,443 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,445 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,446 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-04 12:56:39,444 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py:183: UserWarning: <class 'y3prediction.prediction.WallStepperState'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.prediction.WallStepperState'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+_mm.init failed
+[lassen438:158087] Error: common_pami.c:1094 - ompi_common_pami_init() 8: Unable to create 1 PAMI communication context(s) rc=1
+_mm.init failed
+[lassen438:158088] Error: common_pami.c:1094 - ompi_common_pami_init() 9: Unable to create 1 PAMI communication context(s) rc=1
+_mm.init failed
+[lassen438:158089] Error: common_pami.c:1094 - ompi_common_pami_init() 11: Unable to create 1 PAMI communication context(s) rc=1
+_mm.init failed
+[lassen438:158090] Error: common_pami.c:1094 - ompi_common_pami_init() 10: Unable to create 1 PAMI communication context(s) rc=1
+--------------------------------------------------------------------------
+No components were able to be opened in the pml framework.
+
+This typically means that either no components of this type were
+installed, or none of the installed components can be loaded.
+Sometimes this means that shared libraries required by these
+components are unable to be found/loaded.
+
+  Host:      lassen438
+  Framework: pml
+--------------------------------------------------------------------------
+[lassen438:158087] PML pami cannot be selected
+--------------------------------------------------------------------------
+No components were able to be opened in the pml framework.
+
+This typically means that either no components of this type were
+installed, or none of the installed components can be loaded.
+Sometimes this means that shared libraries required by these
+components are unable to be found/loaded.
+
+  Host:      lassen438
+  Framework: pml
+--------------------------------------------------------------------------
+[lassen438:158088] PML pami cannot be selected
+--------------------------------------------------------------------------
+No components were able to be opened in the pml framework.
+
+This typically means that either no components of this type were
+installed, or none of the installed components can be loaded.
+Sometimes this means that shared libraries required by these
+components are unable to be found/loaded.
+
+  Host:      lassen438
+  Framework: pml
+--------------------------------------------------------------------------
+[lassen438:158090] PML pami cannot be selected
+--------------------------------------------------------------------------
+No components were able to be opened in the pml framework.
+
+This typically means that either no components of this type were
+installed, or none of the installed components can be loaded.
+Sometimes this means that shared libraries required by these
+components are unable to be found/loaded.
+
+  Host:      lassen438
+  Framework: pml
+--------------------------------------------------------------------------
+[lassen438:158089] PML pami cannot be selected
+++ return_code=1
+++ set +x
+mv: cannot stat ‘viz_data’: No such file or directory
+mv: cannot stat ‘restart_data’: No such file or directory
+**  scalability_test/prediction-scalability_np32 failed.
+Wed Jun  4 12:56:40 PDT 2025
+Scaling/timing tests done.
+Passing tests: 
+Failing tests:  scalability_test/prediction-scalability_np32
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 7311399: <scale32> in cluster <lassen> Exited
+
+Job <scale32> was submitted from host <lassen709> by user <mtcampbe> in cluster <lassen> at Wed Jun  4 12:32:09 2025
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <mtcampbe> in cluster <lassen> at Wed Jun  4 12:56:23 2025
+                            <40*lassen251>
+                            <40*lassen738>
+                            <40*lassen583>
+                            <40*lassen588>
+                            <40*lassen101>
+                            <40*lassen762>
+                            <40*lassen438>
+                            <40*lassen770>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test> was used as the working directory.
+Started at Wed Jun  4 12:56:23 2025
+Terminated at Wed Jun  4 12:56:40 2025
+Results reported at Wed Jun  4 12:56:40 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -nnodes 8
+#BSUB -G uiuc
+#BSUB -W 120
+#BSUB -J scale32
+#BSUB -q pbatch
+#BSUB -o scal32.txt
+
+source ../emirge/config/activate_env.sh
+source ../emirge/mirgecom/scripts/mirge-testing-env.sh
+source ../scripts/multi_scalability.sh -p ../ -s 32 -n 32
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   0.23 sec.
+    Max Memory :                                 -
+    Average Memory :                             -
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   -
+    Max Processes :                              -
+    Max Threads :                                -
+    Run time :                                   17 sec.
+    Turnaround time :                            1471 sec.
+
+The output (if any) is above this job summary.
+
