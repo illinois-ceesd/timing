@@ -14546,3 +14546,21 @@ time_second_10: 14.048316672444344
 max_python_mem_usage: 7384.625
 max_gpu_mem_usage: 10603.625
 ---
+run_date: 2025-06-07 13:56
+run_host: Lassen
+cl_device: 
+num_processors: 4
+run_arch: ppc64le
+gpu_arch: GV100GL
+run_platform: lassen
+mirge_branch: Unknown
+driver_branch: main
+mirge_version: Unknown
+driver_version: a91af5b748f465e2443c082d954688f749e74f88
+time_startup: 318.3589539527893
+time_first_step: 489.2627245540498
+time_first_10: 509.09585734899156
+time_second_10: 14.049799113767222
+max_python_mem_usage: 7691.8125
+max_gpu_mem_usage: 9767.8125
+---
