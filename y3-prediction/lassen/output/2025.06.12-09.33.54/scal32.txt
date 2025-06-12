@@ -1,0 +1,1796 @@
+Customizing shell for Lassen.
+
+The following have been reloaded with a version change:
+  1) base-gcc/8.3.1 => base-gcc/11.2.1
+
+
+Lmod is automatically replacing "clang/ibm-16.0.6-cuda-11.2.0-gcc-8.3.1" with
+"gcc/10.2.1".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) spectrum-mpi/rolling-release
+
+Activating 'timing.main' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+Driver directory: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run
+Wed Jun 11 23:23:40 PDT 2025
+Running parallel timing tests...
+* Running prediction-scalability test in scalability_test.
+** Running prediction-scalability_np32 on 32 ranks.
+++ runoptions='-n 32'
+++ [[ ! -z '' ]]
+++ jsrun -g 1 -a 1 -n 32 bash /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh python -u -O -m mpi4py driver.py -c prediction-scalability_np32 -g /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test/log_data -i run_params_np32.yaml --log --lazy
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+2025-06-11 23:23:43,554 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-11 23:23:43,554 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-11 23:23:43,554 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-11 23:23:43,554 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-11 23:23:43,555 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-11 23:23:43,555 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-11 23:23:43,555 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-11 23:23:43,555 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-11 23:23:43,573 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-11 23:23:43,572 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-11 23:23:43,573 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-11 23:23:43,573 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-11 23:23:43,609 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-11 23:23:43,609 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-11 23:23:43,609 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-11 23:23:43,609 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-11 23:23:43,644 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-11 23:23:43,644 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-11 23:23:43,644 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-11 23:23:43,644 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-11 23:23:43,647 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,647 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,647 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,647 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,651 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,651 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,651 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,651 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,653 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-11 23:23:43,653 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-11 23:23:43,653 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-11 23:23:43,653 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-11 23:23:43,668 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,668 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,668 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,668 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,705 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,705 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,705 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,705 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,742 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,742 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,742 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,742 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,748 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,748 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,748 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,748 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,808 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-11 23:23:43,808 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-11 23:23:43,808 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-11 23:23:43,808 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-11 23:23:43,884 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-11 23:23:43,884 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-11 23:23:43,884 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-11 23:23:43,884 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-11 23:23:43,909 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,909 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,909 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,909 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,981 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,981 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,981 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:43,981 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-11 23:23:44,980 - INFO - mirgecom.mpi - Using mpi4py version 4.0.3 with pkl5 scatter support.
+2025-06-11 23:23:44,980 - INFO - mirgecom.mpi - mpi4py is using 'Open MPI v10.3.1.03rtm0, package: IBM Spectrum MPI, ident: IBM Spectrum MPI, repo rev: IBM_SPECTRUM_MPI_10.03.01.02_2020.08.03_XAA0, Unreleased developer copy' with MPI v3.1.
+2025-06-11 23:24:08,659 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (23.37s wall 0.00x CPU)
+2025-06-11 23:24:08,659 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (23.37s wall 0.00x CPU)
+2025-06-11 23:24:08,659 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (23.37s wall 0.00x CPU)
+2025-06-11 23:24:08,664 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (23.37s wall 0.00x CPU)
+2025-06-11 23:24:11,351 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.06s wall 0.00x CPU)
+2025-06-11 23:24:11,358 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.08s wall 0.00x CPU)
+2025-06-11 23:24:11,362 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.07s wall 0.00x CPU)
+2025-06-11 23:24:11,364 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.08s wall 0.00x CPU)
+2025-06-11 23:24:11,368 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.08s wall 0.00x CPU)
+2025-06-11 23:24:11,368 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.09s wall 0.00x CPU)
+2025-06-11 23:24:11,368 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.09s wall 0.00x CPU)
+2025-06-11 23:24:11,368 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.09s wall 0.00x CPU)
+2025-06-11 23:24:11,368 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.08s wall 0.00x CPU)
+2025-06-11 23:24:11,372 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.08s wall 0.00x CPU)
+2025-06-11 23:24:11,372 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.08s wall 0.00x CPU)
+2025-06-11 23:24:11,376 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.09s wall 0.00x CPU)
+2025-06-11 23:24:11,388 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.11s wall 0.00x CPU)
+2025-06-11 23:24:11,388 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.11s wall 0.00x CPU)
+2025-06-11 23:24:11,431 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.15s wall 0.00x CPU)
+2025-06-11 23:24:11,431 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.14s wall 0.00x CPU)
+2025-06-11 23:24:11,442 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.15s wall 0.00x CPU)
+2025-06-11 23:24:11,446 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.17s wall 0.00x CPU)
+2025-06-11 23:24:11,473 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.20s wall 0.00x CPU)
+2025-06-11 23:24:11,478 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.19s wall 0.00x CPU)
+2025-06-11 23:24:11,483 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.21s wall 0.00x CPU)
+2025-06-11 23:24:11,485 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.21s wall 0.00x CPU)
+2025-06-11 23:24:11,514 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.23s wall 0.00x CPU)
+2025-06-11 23:24:11,516 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.24s wall 0.00x CPU)
+2025-06-11 23:24:11,521 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.23s wall 0.00x CPU)
+2025-06-11 23:24:11,522 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.23s wall 0.00x CPU)
+2025-06-11 23:24:11,530 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.25s wall 0.00x CPU)
+2025-06-11 23:24:11,539 - INFO - mirgecom.logging_quantities - emirge's version.sh: completed (26.26s wall 0.00x CPU)
+2025-06-11 23:24:12,101 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103d16a20>.
+2025-06-11 23:24:12,106 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103b6f9c0>.
+2025-06-11 23:24:12,113 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103b6a790>.
+2025-06-11 23:24:12,116 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103b9d0f0>.
+2025-06-11 23:24:12,124 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103b9d0f0>.
+2025-06-11 23:24:12,126 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103b9c380>.
+2025-06-11 23:24:12,131 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103b2a820>.
+2025-06-11 23:24:12,155 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103aab600>.
+2025-06-11 23:24:12,155 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103dd5a60>.
+2025-06-11 23:24:12,161 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103b9d0f0>.
+2025-06-11 23:24:12,165 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103aee620>.
+2025-06-11 23:24:12,166 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103b9d3a0>.
+2025-06-11 23:24:12,175 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103aae620>.
+2025-06-11 23:24:12,184 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103d16a20>.
+2025-06-11 23:24:12,186 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103a24fc0>.
+2025-06-11 23:24:12,187 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103aa4e50>.
+2025-06-11 23:24:12,191 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103cd5940>.
+2025-06-11 23:24:12,193 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103c5d0f0>.
+2025-06-11 23:24:12,197 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103b2a820>.
+2025-06-11 23:24:12,201 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103c1ee20>.
+2025-06-11 23:24:12,205 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103aa7d00>.
+2025-06-11 23:24:12,206 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103d56a20>.
+2025-06-11 23:24:12,209 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103c95920>.
+2025-06-11 23:24:12,211 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103c9cf70>.
+2025-06-11 23:24:12,212 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1039e50d0>.
+2025-06-11 23:24:12,213 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103aa4e50>.
+2025-06-11 23:24:12,214 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x1038ed3c0>.
+2025-06-11 23:24:12,224 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103cd5940>.
+2025-06-11 23:24:12,225 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103b6b260>.
+2025-06-11 23:24:12,230 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103c5d0f0>.
+2025-06-11 23:24:12,240 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103a28350>.
+2025-06-11 23:24:12,254 - INFO - mirgecom.simutil - Using SVM-based memory pool on <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103b2b260>.
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 25 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank25); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank25); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank25); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank25);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 24 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank24); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank24); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank24); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank24);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 26 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank26); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank26); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank26); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank26);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 27 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank27); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank27); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank27); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank27);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 8 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank8); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank8); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank8); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank8);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 29 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank29); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank29); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank29); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank29);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 0 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank0); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank0); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank0); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank0);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 28 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank28); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank28); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank28); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank28);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 10 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank10); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank10); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank10); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank10);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 30 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank30); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank30); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank30); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank30);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 1 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank1); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank1); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank1); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank1);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 31 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank31); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank31); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank31); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank31);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 11 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank11); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank11); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank11); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank11);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 3 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank3); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank3); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank3); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank3);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 9 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank9); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank9); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank9); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank9);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 2 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank2); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank2); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank2); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank2);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 16 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank16); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank16); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank16); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank16);
+
+Setting force_eval = False for pre-compiled time integration
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 18 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank18); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank18); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank18); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank18);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 6 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank6); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank6); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank6); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank6);
+
+Shock capturing parameters: alpha 0.01, s0 -6.408239965311849, kappa 0.5
+Smoothing characteristic length for use in artificial viscosity
+smoothing_alpha 1e-12
+Artificial viscosity smoothness_alpha=1e-12
+Artificial viscosity smoothness_tau=1e-12
+Artificial viscosity using modified transport properties
+	 mu, beta, kappa
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 17 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank17); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank17); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank17); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank17);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 12 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank12); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank12); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank12); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank12);
+
+Shock capturing parameters:
+	av_mu 0.1
+	av_beta 6.0
+	av_kappa 1.0
+	av_prantdl 0.9
+stagnation temperature 2076.43
+
+#### Simluation control data: ####
+	nrestart = 1000
+	nhealth = -1
+	nstatus = -1
+	Constant dt mode, current_dt = 1e-13
+	t_final = 2e-11
+	order = 42025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 19 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank19); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank19); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank19); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank19);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 14 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank14); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank14); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank14); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank14);
+
+
+	dimension = 3
+	Time integration compiled_lsrk54
+   Boundary Conditions:
+	Checking for outflow boundary in mesh.
+	Checking for inflow boundary in mesh.
+	Checking for flow boundary in mesh.
+	Checking for injection boundary in mesh.
+	Checking for upstream_injection boundary in mesh.
+	Checking for isothermal_wall boundary in mesh.
+	Checking for wall boundary in mesh.
+	Checking for slip_wall boundary in mesh.
+	Checking for noslip_wall boundary in mesh.
+	Checking for symmetry boundary in mesh.
+	Checking for wall_interface boundary in mesh.
+
+	Interface wall boundary conditions are noslip for velocity
+#### Simluation control data: ####
+
+
+#### Visualization setup: ####
+	Basic visualization output enabled.
+	(cv, dv, cfl)
+	Extra visualization output enabled for derived quantities.
+	(velocity, mass_fractions, etc.)
+	Writing viz data every 1000 steps.
+#### Visualization setup: ####
+
+#### Simluation initialization data: ####
+	Initializing flow to y3prediction
+	Inflow stagnation pressure 274500.0
+	Inflow stagnation temperature 2076.43
+	Injection stagnation pressure 50400.0
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 5 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank5); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank5); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank5); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank5);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 13 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank13); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank13); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank13); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank13);
+
+	Injection stagnation temperature 300.0
+	Upstream injection stagnation pressure50400.0
+	Upstream injection stagnation temperature300.0
+#### Simluation initialization data: ####
+
+#### Simluation setup data: ####
+	vel_sigma = 500
+	temp_sigma = 1250
+	vel_sigma_injection = 5000
+	temp_sigma_injection = 5000
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 20 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank20); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank20); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank20); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank20);
+
+#### Simluation setup data: ####
+
+#### Ignition control parameters ####
+spark center (0.677,-0.021)
+spark FWHM 0.02
+spark strength 600.0
+ignition time 5e-08
+ignition duration 1e-08
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 15 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank15); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank15); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank15); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank15);
+
+heat source ignition
+#### Ignition control parameters ####
+
+
+Setting inviscid numerical flux to: Rusanov
+Setting viscous numerical flux to: Harmonic
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 4 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank4); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank4); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank4); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank4);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 23 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank23); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank23); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank23); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank23);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 7 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank7); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank7); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank7); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank7);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 21 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank21); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank21); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank21); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank21);
+
+2025-06-11 23:24:12,310 - INFO - mirgecom.array_context - Rank 22 disk cache config: loopy: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank22); pyopencl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank22); pocl: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/xdg-cache/rank22); cuda: True (/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/timing-run-caches/cuda-cache/rank22);
+
+
+#### Simluation material properties: ####
+#### Fluid domain: ####
+	mu = 4.216360056e-05
+	kappa = 0.05621788139856423
+	Prandtl Number  = 0.75
+	nspecies = 7
+	full multi-species initialization with pyrometheus eos
+	combustion source terms enabled
+	Pyrometheus EOS
+	Pyro mechanism uiuc_sharp
+
+Species mass fractions limited to [0:1]
+#### Wall domain: ####
+	Reactive wall model for porous media
+	Wall oxidizer transport enabled
+	 Wall mass loss enabled
+	Wall density = 1625
+	Wall cp = 770
+	Wall O2 diff = 0.0001
+	Wall surround density = 7900.0
+	Wall surround cp = 470
+	Wall surround kappa = 48
+	Wall time scale = 100
+	Wall penalty = 0
+#### Simluation material properties: ####
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+	 Power law transport model:
+		 temperature dependent viscosity, species diffusivity
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+
+	transport_alpha = 0.6
+	transport_beta = 4.093e-07
+	transport_sigma = 2.0
+	transport_n = 0.666
+	species diffusivity = [0.0001 0.0001 0.0001 0.0001 0.0001 0.0001 0.0001]
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+species_names=['C2H4', 'O2', 'CO2', 'CO', 'H2O', 'H2', 'N2']
+{'C2H4': 0.0001, 'O2': 0.0001, 'CO2': 0.0001, 'CO': 0.0001, 'H2O': 0.0001, 'H2': 0.0001, 'N2': 0.0001}
+#### Simluation initialization data: ####
+	inlet Mach number 0.039188827430281535
+	inlet gamma 1.2942272392672118
+	inlet temperature 2075.9609743385954
+	inlet pressure 274227.36437127565
+	inlet rho 0.4607349972974453
+	inlet velocity 34.39515974209585
+	********
+	outlet Mach number 3.793040446574542
+	outlet gamma 1.3777480529683475
+	outlet temperature 558.5757736845096
+	outlet pressure 2284.257055974718
+	outlet rho 0.014263380803459059
+	outlet velocity 1796.0265011633348
+	********
+	injector Mach number 1.0
+	injector gamma 1.3246735835852341
+	injector temperature 258.1007615257789
+	injector pressure 27281.922529269654
+	injector rho 0.1911428114322463
+	injector velocity -434.8234312418551
+Reading mesh from data/actii_np32.msh
+Read(rank, batch): Dist(6, 0) on lassen736.
+Reading mesh on lassen736.
+Read(rank, batch): Dist(7, 0) on lassen739.
+Reading mesh on lassen739.
+Read(rank, batch): Dist(2, 0) on lassen256.
+Reading mesh on lassen256.
+Read(rank, batch): Dist(0, 0) on lassen252.
+Reading mesh on lassen252.
+Read(rank, batch): Dist(4, 0) on lassen581.
+Reading mesh on lassen581.
+Read(rank, batch): Dist(3, 0) on lassen408.
+Reading mesh on lassen408.
+Read(rank, batch): Dist(1, 0) on lassen255.
+Reading mesh on lassen255.
+Read(rank, batch): Dist(5, 0) on lassen586.
+Reading mesh on lassen586.
+Reading gmsh mesh from disk file...
+Reading gmsh mesh from disk file...
+Reading gmsh mesh from disk file...
+Reading gmsh mesh from disk file...
+Reading gmsh mesh from disk file...
+Reading gmsh mesh from disk file...
+Reading gmsh mesh from disk file...
+Reading gmsh mesh from disk file...
+Done. Populating meshmode data structures...
+Done. Populating meshmode data structures...
+Done. Populating meshmode data structures...
+Done. Populating meshmode data structures...
+Done. Populating meshmode data structures...
+Done. Populating meshmode data structures...
+Done. Populating meshmode data structures...
+Done. Populating meshmode data structures...
+Done.
+Read GMSH: 13.932989358901978
+MeshData: 28.60922908782959
+Done.
+Read GMSH: 13.838937044143677
+MeshData: 28.720635175704956
+Done.
+Read GMSH: 13.872769117355347
+MeshData: 28.70028018951416
+Done.
+Read GMSH: 13.892069816589355
+MeshData: 28.71271848678589
+Done.
+Read GMSH: 14.019718408584595
+MeshData: 28.61278533935547
+Done.
+Read GMSH: 13.915266990661621
+MeshData: 28.718693256378174
+Done.
+Read GMSH: 13.873300552368164
+MeshData: 28.774851322174072
+Done.
+Read GMSH: 13.941558599472046
+MeshData: 28.846181869506836
+Mesh reading done on all nodes.
+Making partition table on all nodes.
+2025-06-11 23:24:55,772 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py:602: UserWarning: num_ranks is deprecated, use nranks_per_axis instead.
+  warn("num_ranks is deprecated, use nranks_per_axis instead.")
+
+2025-06-11 23:24:55,771 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py:602: UserWarning: num_ranks is deprecated, use nranks_per_axis instead.
+  warn("num_ranks is deprecated, use nranks_per_axis instead.")
+
+2025-06-11 23:24:55,772 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py:602: UserWarning: num_ranks is deprecated, use nranks_per_axis instead.
+  warn("num_ranks is deprecated, use nranks_per_axis instead.")
+
+2025-06-11 23:24:55,772 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py:602: UserWarning: num_ranks is deprecated, use nranks_per_axis instead.
+  warn("num_ranks is deprecated, use nranks_per_axis instead.")
+
+2025-06-11 23:24:55,772 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py:602: UserWarning: num_ranks is deprecated, use nranks_per_axis instead.
+  warn("num_ranks is deprecated, use nranks_per_axis instead.")
+
+2025-06-11 23:24:55,772 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py:602: UserWarning: num_ranks is deprecated, use nranks_per_axis instead.
+  warn("num_ranks is deprecated, use nranks_per_axis instead.")
+
+2025-06-11 23:24:55,772 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py:602: UserWarning: num_ranks is deprecated, use nranks_per_axis instead.
+  warn("num_ranks is deprecated, use nranks_per_axis instead.")
+
+2025-06-11 23:24:55,772 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/simutil.py:602: UserWarning: num_ranks is deprecated, use nranks_per_axis instead.
+  warn("num_ranks is deprecated, use nranks_per_axis instead.")
+
+Partitioning mesh on all nodes.
+Partitioning done, distributing to node-local ranks.
+Rank(0) mesh partition
+---------------------------
+Number of fluid elements: 24111
+Number of elements: 24111
+---------------------------
+Rank(1) mesh partition
+---------------------------
+Number of fluid elements: 24147
+Number of elements: 24147
+---------------------------
+Rank(2) mesh partition
+---------------------------
+Number of fluid elements: 23937
+Number of elements: 23937
+---------------------------
+Rank(3) mesh partition
+---------------------------
+Number of fluid elements: 23988
+Number of elements: 23988
+---------------------------
+Rank(8) mesh partition
+---------------------------
+Number of fluid elements: 24033
+Number of elements: 24033
+---------------------------
+Rank(9) mesh partition
+---------------------------
+Number of fluid elements: 23873
+Number of elements: 23873
+---------------------------
+Rank(10) mesh partition
+---------------------------
+Number of fluid elements: 23958
+Number of elements: 23958
+---------------------------
+Rank(4) mesh partition
+---------------------------
+Number of fluid elements: 23879
+Number of elements: 23879
+---------------------------
+Rank(11) mesh partition
+---------------------------
+Number of fluid elements: 18502
+Number of wall elements: 5541
+Number of elements: 24043
+---------------------------
+Rank(5) mesh partition
+---------------------------
+Number of fluid elements: 24016
+Number of elements: 24016
+---------------------------
+Rank(6) mesh partition
+---------------------------
+Number of fluid elements: 24009
+Number of elements: 24009
+---------------------------
+Rank(24) mesh partition
+---------------------------
+Number of fluid elements: 23995
+Number of elements: 23995
+---------------------------
+Rank(7) mesh partition
+---------------------------
+Number of fluid elements: 24024
+Number of elements: 24024
+---------------------------
+Rank(25) mesh partition
+---------------------------
+Number of fluid elements: 23901
+Number of elements: 23901
+---------------------------
+Rank(26) mesh partition
+---------------------------
+Number of fluid elements: 23878
+Number of elements: 23878
+---------------------------
+Rank(12) mesh partition
+---------------------------
+Number of fluid elements: 9747
+Number of wall elements: 14280
+Number of elements: 24027
+---------------------------
+Rank(16) mesh partition
+---------------------------
+Number of fluid elements: 23839
+Number of elements: 23839
+---------------------------
+Rank(27) mesh partition
+---------------------------
+Number of fluid elements: 23890
+Number of elements: 23890
+---------------------------
+Rank(28) mesh partition
+---------------------------
+Number of fluid elements: 24040
+Number of elements: 24040
+---------------------------
+Rank(13) mesh partition
+---------------------------
+Number of fluid elements: 9683
+Number of wall elements: 14581
+Number of elements: 24264
+Rank(17) mesh partition
+---------------------------
+Number of fluid elements: 11793
+Number of wall elements: 12238
+Number of elements: 24031
+---------------------------
+Rank(29) mesh partition
+---------------------------
+Number of fluid elements: 24024
+Number of elements: 24024
+---------------------------
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+Rank(30) mesh partition
+---------------------------
+Number of fluid elements: 23884
+Number of elements: 23884
+---------------------------
+Rank(14) mesh partition
+---------------------------
+Number of fluid elements: 23793
+Number of wall elements: 238
+Number of elements: 24031
+---------------------------
+Rank(19) mesh partition
+---------------------------
+Number of fluid elements: 6622
+Number of wall elements: 17421
+Number of elements: 24043
+---------------------------
+Rank(31) mesh partition
+---------------------------
+Number of fluid elements: 25021
+Number of elements: 25021
+---------------------------
+Rank(15) mesh partition
+---------------------------
+Number of fluid elements: 23972
+Number of elements: 23972
+---------------------------
+No target file specied, using restart as target
+Rank(18) mesh partition
+---------------------------
+Number of fluid elements: 6298
+Number of wall elements: 17513
+Number of elements: 23811
+---------------------------
+No target file specied, using restart as target
+---------------------------
+No target file specied, using restart as target
+Rank(20) mesh partition
+---------------------------
+Number of fluid elements: 7014
+Number of wall elements: 17138
+Number of elements: 24152
+---------------------------
+No target file specied, using restart as target
+Rank(21) mesh partition
+---------------------------
+Number of fluid elements: 7412
+Number of wall elements: 16708
+Number of elements: 24120
+---------------------------
+No target file specied, using restart as target
+Rank(22) mesh partition
+---------------------------
+Number of fluid elements: 10774
+Number of wall elements: 13214
+Number of elements: 23988
+---------------------------
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+Rank(23) mesh partition
+---------------------------
+Number of fluid elements: 23962
+Number of elements: 23962
+---------------------------
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+Making 3D order 4 discretization.
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+No target file specied, using restart as target
+2025-06-11 23:24:59,819 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,819 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,819 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,819 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,820 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,820 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,820 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,820 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,820 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,820 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,820 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,820 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,823 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,823 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,823 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,823 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,826 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,826 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,826 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,826 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,826 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,826 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,826 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,826 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,830 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,830 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,830 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,830 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,833 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,833 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,833 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,833 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,849 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,849 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,849 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,849 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,849 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,853 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,853 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,853 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,853 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,853 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,853 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,854 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,853 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,854 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,854 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,854 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,854 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,854 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,854 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,854 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,853 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,853 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,853 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,853 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,853 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,853 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,853 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,853 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,853 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,854 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,855 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,855 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,855 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,856 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,856 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,856 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,856 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,856 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,856 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,856 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,856 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,859 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,859 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,860 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,861 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,864 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,864 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,865 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,865 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,865 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,865 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,865 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,865 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,865 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,865 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,869 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,869 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,869 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,869 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,869 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,869 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,869 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,869 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,872 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,872 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,872 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,874 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,876 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,879 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,880 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,881 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,880 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,880 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,881 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,881 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,881 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,882 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,881 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,881 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,882 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,882 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,882 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,882 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,882 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,882 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,882 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,884 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,884 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,884 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,890 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,890 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,892 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,892 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,893 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,892 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,892 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,893 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,893 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,893 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,893 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,893 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,893 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,893 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,893 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,893 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,894 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,894 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,894 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,894 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,896 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,897 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,897 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,904 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,904 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,905 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,905 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,905 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,905 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,905 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,905 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,913 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,913 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,917 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,929 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:474: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+
+2025-06-11 23:24:59,929 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103c5d0f0> to 3896 bytes
+2025-06-11 23:24:59,929 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,930 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,931 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,931 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,936 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,937 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,940 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,940 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,943 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,944 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,944 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,946 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,946 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,946 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,946 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,947 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,948 - INFO - meshmode.discretization.connection.face - building face restriction: start
+2025-06-11 23:24:59,956 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:474: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+
+2025-06-11 23:24:59,956 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103aa7d00> to 3896 bytes
+2025-06-11 23:24:59,967 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,970 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,977 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,979 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:474: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+
+2025-06-11 23:24:59,979 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103a24fc0> to 3896 bytes
+2025-06-11 23:24:59,982 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:474: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+
+2025-06-11 23:24:59,982 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103b6a790> to 3896 bytes
+2025-06-11 23:24:59,983 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,983 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,987 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:24:59,989 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:474: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+
+2025-06-11 23:24:59,989 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103aa4e50> to 3896 bytes
+2025-06-11 23:24:59,993 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:474: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+
+2025-06-11 23:24:59,993 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103aee620> to 3896 bytes
+2025-06-11 23:24:59,995 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:474: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+
+2025-06-11 23:24:59,995 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103c95920> to 3896 bytes
+2025-06-11 23:25:00,000 - INFO - meshmode.discretization.connection.face - building face restriction: done
+2025-06-11 23:25:00,000 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:474: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+
+2025-06-11 23:25:00,000 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103b2b260> to 3896 bytes
+2025-06-11 23:25:00,002 - INFO - meshmode.discretization.connection.face - building face restriction: done
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 573, in freeze
+    pt_prg = self._freeze_prg_cache[normalized_expr]
+             ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: DictOfNamedArrays(tags=frozenset(), data={'_ary': Einsum(tags={PrefixNamed(prefix='nodes0_3d'), FirstAxisIsElementsTag()}, access_descriptors=((EinsumElementwiseAxis(dim=1), EinsumReductionAxis(dim=0)), (EinsumElementwiseAxis(dim=0), EinsumReductionAxis(dim=0))), args=(Placeholder(shape=(15, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationDOFAxisTag()})), Axis(tags=frozenset())), name='_actx_dw'), Placeholder(shape=(16, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationElementAxisTag()})), Axis(tags=frozenset({DiscretizationDOFAxisTag()}))), name='_actx_dw_0')), redn_axis_to_redn_descr={EinsumReductionAxis(dim=0): ReductionDescriptor(tags=frozenset())})})
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+2025-06-11 23:25:00,010 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:474: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/__main__.py", line 7, in <module>
+2025-06-11 23:25:00,010 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103d56a20> to 3896 bytes
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 214, in main
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 85, in <module>
+    main(actx_class, restart_filename=restart_filename,
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/mpi.py", line 152, in wrapped_func
+    func(*args, **kwargs)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py", line 4277, in main
+2025-06-11 23:25:00,014 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py:474: UserWarning: Running on an Nvidia GPU, reducing the argument size limit from 4352 to 3896.
+  warn("Running on an Nvidia GPU, reducing the argument "
+
+2025-06-11 23:25:00,014 - INFO - arraycontext.impl.pytato - limiting argument buffer size for <pyopencl.Device 'Tesla V100-SXM2-16GB' on 'Portable Computing Language' at 0x103b9d0f0> to 3896 bytes
+    dcoll = create_discretization_collection(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/discretization.py", line 76, in create_discretization_collection
+    return make_discretization_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 1091, in make_discretization_collection
+    inter_part_connections=_set_up_inter_part_connections(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 946, in _set_up_inter_part_connections
+    make_partition_connection(
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 620, in make_partition_connection
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 573, in freeze
+    pt_prg = self._freeze_prg_cache[normalized_expr]
+             ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError    grp_batches = _make_cross_face_batches(actx,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 69, in _make_cross_face_batches
+    for ary in tgt_bdry_discr.nodes(cached=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in nodes
+: DictOfNamedArrays(tags=frozenset(), data={'_ary': Einsum(tags={FirstAxisIsElementsTag(), PrefixNamed(prefix='nodes0_3d')}, access_descriptors=((EinsumElementwiseAxis(dim=1), EinsumReductionAxis(dim=0)), (EinsumElementwiseAxis(dim=0), EinsumReductionAxis(dim=0))), args=(Placeholder(shape=(15, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationDOFAxisTag()})), Axis(tags=frozenset())), name='_actx_dw'), Placeholder(shape=(1634, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationElementAxisTag()})), Axis(tags=frozenset({DiscretizationDOFAxisTag()}))), name='_actx_dw_0')), redn_axis_to_redn_descr={EinsumReductionAxis(dim=0): ReductionDescriptor(tags=frozenset())})})
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 214, in main
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 85, in <module>
+    main(actx_class, restart_filename=restart_filename,
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/mpi.py", line 152, in wrapped_func
+    _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+            func(*args, **kwargs)
+            ^^^^^^^^^^^^^  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py", line 4277, in main
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in <genexpr>
+    _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 605, in freeze
+    pt_prg = pt_prg.with_transformed_translation_unit(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/target/loopy/__init__.py", line 300, in with_transformed_translation_unit
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 573, in freeze
+    pt_prg = self._freeze_prg_cache[normalized_expr]
+             ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError    dcoll = create_discretization_collection(
+              program=f(self.program.t_unit).executor(self.cl_context),
+  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/discretization.py", line 76, in create_discretization_collection
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/array_context.py", line 1652, in transform_loopy_program
+    return make_discretization_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 1091, in make_discretization_collection
+: DictOfNamedArrays(tags=frozenset(), data={'_ary': Einsum(tags={FirstAxisIsElementsTag(), PrefixNamed(prefix='nodes0_3d')}, access_descriptors=((EinsumElementwiseAxis(dim=1), EinsumReductionAxis(dim=0)), (EinsumElementwiseAxis(dim=0), EinsumReductionAxis(dim=0))), args=(Placeholder(shape=(15, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationDOFAxisTag()})), Axis(tags=frozenset())), name='_actx_dw'), Placeholder(shape=(719, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationElementAxisTag()})), Axis(tags=frozenset({DiscretizationDOFAxisTag()}))), name='_actx_dw_0')), redn_axis_to_redn_descr={EinsumReductionAxis(dim=0): ReductionDescriptor(tags=frozenset())})})
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 214, in main
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 85, in <module>
+    inter_part_connections=_set_up_inter_part_connections(
+          main(actx_class, restart_filename=restart_filename,
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/mpi.py", line 152, in wrapped_func
+                     ^^^^^^^^^^^^^^^^^^^^^^^^    r = self.transform_loopy_cache[t_unit]
+^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 946, in _set_up_inter_part_connections
+        ~~~~~~~~~~~~~~~~~    make_partition_connection(
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 620, in make_partition_connection
+    func(*args, **kwargs)
+~~~~~~~~~^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 588, in __getitem__
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py", line 4277, in main
+    grp_batches = _make_cross_face_batches(actx,
+                  ^^^^^^^^^^^^^    return self.fetch(key)
+^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 69, in _make_cross_face_batches
+           ^^^^^^^^^^^^^^    for ary in tgt_bdry_discr.nodes(cached=False)
+^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 755, in fetch
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in nodes
+    stored_key, value = self._fetch(keyhash)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 747, in _fetch_uncached
+    key, value = pickle.loads(row[0])
+                 ^^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute '_read_from_str_wrapper' on <module 'islpy' from '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/islpy/__init__.py'>
+    dcoll = create_discretization_collection(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/discretization.py", line 76, in create_discretization_collection
+    return make_discretization_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 1091, in make_discretization_collection
+    _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in <genexpr>
+    _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 605, in freeze
+    pt_prg = pt_prg.with_transformed_translation_unit(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/target/loopy/__init__.py", line 300, in with_transformed_translation_unit
+    inter_part_connections=_set_up_inter_part_connections(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 946, in _set_up_inter_part_connections
+    make_partition_connection(
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 620, in make_partition_connection
+    program=f(self.program.t_unit).executor(self.cl_context),
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/array_context.py", line 1652, in transform_loopy_program
+    grp_batches = _make_cross_face_batches(actx,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 69, in _make_cross_face_batches
+    for ary in tgt_bdry_discr.nodes(cached=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in nodes
+    r = self.transform_loopy_cache[t_unit]
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 588, in __getitem__
+    _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in <genexpr>
+    _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 605, in freeze
+    return self.fetch(key)
+           ^^^^^^^^^^^^    pt_prg = pt_prg.with_transformed_translation_unit(
+  ^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 755, in fetch
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    stored_key, value = self._fetch(keyhash)
+^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/target/loopy/__init__.py", line 300, in with_transformed_translation_unit
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 747, in _fetch_uncached
+    key, value = pickle.loads(row[0])
+                 ^^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute '_read_from_str_wrapper' on <module 'islpy' from '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/islpy/__init__.py'>
+    program=f(self.program.t_unit).executor(self.cl_context),
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/array_context.py", line 1652, in transform_loopy_program
+    r = self.transform_loopy_cache[t_unit]
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 588, in __getitem__
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 573, in freeze
+    pt_prg = self._freeze_prg_cache[normalized_expr]
+             ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError    return self.fetch(key)
+           ^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 755, in fetch
+    stored_key, value = self._fetch(keyhash)
+   : DictOfNamedArrays(tags=frozenset(), data={'_ary': Einsum(tags={FirstAxisIsElementsTag(), PrefixNamed(prefix='nodes0_3d')}, access_descriptors=((EinsumElementwiseAxis(dim=1), EinsumReductionAxis(dim=0)), (EinsumElementwiseAxis(dim=0), EinsumReductionAxis(dim=0))), args=(Placeholder(shape=(15, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationDOFAxisTag()})), Axis(tags=frozenset())), name='_actx_dw'), Placeholder(shape=(1123, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationElementAxisTag()})), Axis(tags=frozenset({DiscretizationDOFAxisTag()}))), name='_actx_dw_0')), redn_axis_to_redn_descr={EinsumReductionAxis(dim=0): ReductionDescriptor(tags=frozenset())})})
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+                     ^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 747, in _fetch_uncached
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 214, in main
+    key, value = pickle.loads(row[0])
+                 ^^^^^^^^^^^^^    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 46, in run_command_line
+^^^^^^^
+AttributeError: Can't get attribute '_read_from_str_wrapper' on <module 'islpy' from '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/islpy/__init__.py'>
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 85, in <module>
+    main(actx_class, restart_filename=restart_filename,
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/mpi.py", line 152, in wrapped_func
+    func(*args, **kwargs)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py", line 4277, in main
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 573, in freeze
+    pt_prg = self._freeze_prg_cache[normalized_expr]
+             ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError    dcoll = create_discretization_collection(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/discretization.py", line 76, in create_discretization_collection
+    return make_discretization_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 1091, in make_discretization_collection
+: DictOfNamedArrays(tags=frozenset(), data={'_ary': Einsum(tags={FirstAxisIsElementsTag(), PrefixNamed(prefix='nodes0_3d')}, access_descriptors=((EinsumElementwiseAxis(dim=1), EinsumReductionAxis(dim=0)), (EinsumElementwiseAxis(dim=0), EinsumReductionAxis(dim=0))), args=(Placeholder(shape=(15, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationDOFAxisTag()})), Axis(tags=frozenset())), name='_actx_dw'), Placeholder(shape=(1173, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationElementAxisTag()})), Axis(tags=frozenset({DiscretizationDOFAxisTag()}))), name='_actx_dw_0')), redn_axis_to_redn_descr={EinsumReductionAxis(dim=0): ReductionDescriptor(tags=frozenset())})})
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/__main__.py", line 7, in <module>
+    inter_part_connections=_set_up_inter_part_connections(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 214, in main
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 946, in _set_up_inter_part_connections
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 46, in run_command_line
+    make_partition_connection(
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 620, in make_partition_connection
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+    grp_batches = _make_cross_face_batches(actx,
+              File "driver.py", line 85, in <module>
+      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    main(actx_class, restart_filename=restart_filename,
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/mpi.py", line 152, in wrapped_func
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 69, in _make_cross_face_batches
+    for ary in tgt_bdry_discr.nodes(cached=False)
+      func(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py", line 4277, in main
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in nodes
+    _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in <genexpr>
+    _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 605, in freeze
+    pt_prg = pt_prg.with_transformed_translation_unit(
+             ^^^^^^^^^^^^    dcoll = create_discretization_collection(
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+          File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/target/loopy/__init__.py", line 300, in with_transformed_translation_unit
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/discretization.py", line 76, in create_discretization_collection
+    return make_discretization_collection(
+      program=f(self.program.t_unit).executor(self.cl_context),
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/array_context.py", line 1652, in transform_loopy_program
+^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 1091, in make_discretization_collection
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 573, in freeze
+    inter_part_connections=_set_up_inter_part_connections(
+                           ^^^^^^^^^^^^^^^^^^^^^^    pt_prg = self._freeze_prg_cache[normalized_expr]
+^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 946, in _set_up_inter_part_connections
+    r = self.transform_loopy_cache[t_unit]
+             ~~~~~~~~~~~        ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^~~~~~~~~^^^^^^
+KeyError    make_partition_connection(
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 620, in make_partition_connection
+^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 588, in __getitem__
+    grp_batches = _make_cross_face_batches(actx,
+                  ^^^^^^^^^    return self.fetch(key)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 69, in _make_cross_face_batches
+^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 755, in fetch
+    for ary in tgt_bdry_discr.nodes(cached=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in nodes
+    stored_key, value = self._fetch(keyhash)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 747, in _fetch_uncached
+    _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in <genexpr>
+    key, value = pickle.loads(row[0])
+                 ^^^^^^^^^^^    _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+: DictOfNamedArrays(tags=frozenset(), data={'_ary': Einsum(tags={FirstAxisIsElementsTag(), PrefixNamed(prefix='nodes0_3d')}, access_descriptors=((EinsumElementwiseAxis(dim=1), EinsumReductionAxis(dim=0)), (EinsumElementwiseAxis(dim=0), EinsumReductionAxis(dim=0))), args=(Placeholder(shape=(15, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationDOFAxisTag()})), Axis(tags=frozenset())), name='_actx_dw'), Placeholder(shape=(1149, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationElementAxisTag()})), Axis(tags=frozenset({DiscretizationDOFAxisTag()}))), name='_actx_dw_0')), redn_axis_to_redn_descr={EinsumReductionAxis(dim=0): ReductionDescriptor(tags=frozenset())})})
+
+During handling of the above exception, another exception occurred:
+
+^^^^^^^^^
+AttributeError: Can't get attribute '_read_from_str_wrapper' on <module 'islpy' from '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/islpy/__init__.py'>
+                          ^^^^^^^^^^^^^^^Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/__main__.py", line 7, in <module>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^    main()
+^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 605, in freeze
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 214, in main
+    pt_prg = pt_prg.with_transformed_translation_unit(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/target/loopy/__init__.py", line 300, in with_transformed_translation_unit
+    run_command_line(args)
+    program=f(self.program.t_unit).executor(self.cl_context),
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 46, in run_command_line
+            ^^^^^^^^^^    run_path(sys.argv[0], run_name='__main__')
+^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/array_context.py", line 1652, in transform_loopy_program
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 85, in <module>
+    main(actx_class, restart_filename=restart_filename,
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/mpi.py", line 152, in wrapped_func
+    r = self.transform_loopy_cache[t_unit]
+        ~~~~~~~~~~~~~~~~~~~~~~~~~    func(*args, **kwargs)
+~^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 588, in __getitem__
+    return self.fetch(key)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py", line 4277, in main
+           ^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 755, in fetch
+    stored_key, value = self._fetch(keyhash)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 747, in _fetch_uncached
+    key, value = pickle.loads(row[0])
+                 ^^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute '_read_from_str_wrapper' on <module 'islpy' from '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/islpy/__init__.py'>
+    dcoll = create_discretization_collection(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/discretization.py", line 76, in create_discretization_collection
+    return make_discretization_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 1091, in make_discretization_collection
+    inter_part_connections=_set_up_inter_part_connections(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 946, in _set_up_inter_part_connections
+    make_partition_connection(
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 620, in make_partition_connection
+    grp_batches = _make_cross_face_batches(actx,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 69, in _make_cross_face_batches
+    for ary in tgt_bdry_discr.nodes(cached=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in nodes
+    _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+                    ^^^^^^^^^^^Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 573, in freeze
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in <genexpr>
+    _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+    pt_prg = self._freeze_prg_cache[normalized_expr]
+             ~~~~~~~~~                   ~~~~~~~~~~~~~^^^^^^^^^^^^       ^^^^^^^^^^^^^^^^^^^^^
+KeyError^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 605, in freeze
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 573, in freeze
+    pt_prg = pt_prg.with_transformed_translation_unit(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/target/loopy/__init__.py", line 300, in with_transformed_translation_unit
+    pt_prg = self._freeze_prg_cache[normalized_expr]
+             ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: DictOfNamedArrays(tags=frozenset(), data={'_ary': Einsum(tags={PrefixNamed(prefix='nodes0_3d'), FirstAxisIsElementsTag()}, access_descriptors=((EinsumElementwiseAxis(dim=1), EinsumReductionAxis(dim=0)), (EinsumElementwiseAxis(dim=0), EinsumReductionAxis(dim=0))), args=(Placeholder(shape=(15, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationDOFAxisTag()})), Axis(tags=frozenset())), name='_actx_dw'), Placeholder(shape=(1897, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationElementAxisTag()})), Axis(tags=frozenset({DiscretizationDOFAxisTag()}))), name='_actx_dw_0')), redn_axis_to_redn_descr={EinsumReductionAxis(dim=0): ReductionDescriptor(tags=frozenset())})})
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 214, in main
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 85, in <module>
+    main(actx_class, restart_filename=restart_filename,
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/mpi.py", line 152, in wrapped_func
+    func(*args, **kwargs)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py", line 4277, in main
+: DictOfNamedArrays(tags=frozenset(), data={'_ary': Einsum(tags={FirstAxisIsElementsTag(), PrefixNamed(prefix='nodes0_3d')}, access_descriptors=((EinsumElementwiseAxis(dim=1), EinsumReductionAxis(dim=0)), (EinsumElementwiseAxis(dim=0), EinsumReductionAxis(dim=0))), args=(Placeholder(shape=(15, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationDOFAxisTag()})), Axis(tags=frozenset())), name='_actx_dw'), Placeholder(shape=(1320, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationElementAxisTag()})), Axis(tags=frozenset({DiscretizationDOFAxisTag()}))), name='_actx_dw_0')), redn_axis_to_redn_descr={EinsumReductionAxis(dim=0): ReductionDescriptor(tags=frozenset())})})
+
+During handling of the above exception, another exception occurred:
+
+    program=f(self.program.t_unit).executor(self.cl_context),
+          Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/__main__.py", line 7, in <module>
+  ^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/array_context.py", line 1652, in transform_loopy_program
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 214, in main
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 85, in <module>
+    main(actx_class, restart_filename=restart_filename,
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/mpi.py", line 152, in wrapped_func
+    func(*args, **kwargs)
+    dcoll = create_discretization_collection(
+             File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py", line 4277, in main
+ ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/discretization.py", line 76, in create_discretization_collection
+    return make_discretization_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 1091, in make_discretization_collection
+    inter_part_connections=_set_up_inter_part_connections(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 946, in _set_up_inter_part_connections
+    r = self.transform_loopy_cache[t_unit]
+        ~~~~~~~~~~~~    make_partition_connection(
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 620, in make_partition_connection
+~~~~~~~~~~~~~~^^^^^^^^
+    dcoll = create_discretization_collection(
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 588, in __getitem__
+            ^    grp_batches = _make_cross_face_batches(actx,
+       ^^^^^^^^^^^^^^^^^^^^^^^           ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/discretization.py", line 76, in create_discretization_collection
+^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 69, in _make_cross_face_batches
+    return make_discretization_collection(
+       for ary in tgt_bdry_discr.nodes(cached=False)
+        ^^^^^^^^^               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 1091, in make_discretization_collection
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in nodes
+    _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^    inter_part_connections=_set_up_inter_part_connections(
+  ^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in <genexpr>
+                   _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+          ^^^^^^^^^^^                     ^^^^^^^^^^^^^     ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 946, in _set_up_inter_part_connections
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 605, in freeze
+    pt_prg = pt_prg.with_transformed_translation_unit(
+         make_partition_connection(
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 620, in make_partition_connection
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    return self.fetch(key)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/target/loopy/__init__.py", line 300, in with_transformed_translation_unit
+           ^^^^^^^^^^    program=f(self.program.t_unit).executor(self.cl_context),
+^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 755, in fetch
+            ^^^^^^^^^^^^^    grp_batches = _make_cross_face_batches(actx,
+                  ^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/array_context.py", line 1652, in transform_loopy_program
+^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 69, in _make_cross_face_batches
+    stored_key, value = self._fetch(keyhash)
+                        ^^^^^^^^^^^^^^^^^^^^
+    for ary in tgt_bdry_discr.nodes(cached=False)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 747, in _fetch_uncached
+    r = self.transform_loopy_cache[t_unit]
+               ^^^^^^^^^^        ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^~~~~~~~^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 588, in __getitem__
+^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in nodes
+    key, value = pickle.loads(row[0])
+                 ^^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute '_read_from_str_wrapper' on <module 'islpy' from '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/islpy/__init__.py'>
+    return self.fetch(key)
+    _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+                 ^^^^^^^^^^^^^^              ^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 755, in fetch
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in <genexpr>
+    stored_key, value = self._fetch(keyhash)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 747, in _fetch_uncached
+    _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+                       key, value = pickle.loads(row[0])
+                 ^^^^^^^^^^^^^       ^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute '_read_from_str_wrapper' on <module 'islpy' from '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/islpy/__init__.py'>
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 605, in freeze
+    pt_prg = pt_prg.with_transformed_translation_unit(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/target/loopy/__init__.py", line 300, in with_transformed_translation_unit
+    program=f(self.program.t_unit).executor(self.cl_context),
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/array_context.py", line 1652, in transform_loopy_program
+    r = self.transform_loopy_cache[t_unit]
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 588, in __getitem__
+    return self.fetch(key)
+           ^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 755, in fetch
+    stored_key, value = self._fetch(keyhash)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 747, in _fetch_uncached
+    key, value = pickle.loads(row[0])
+                 ^^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute '_read_from_str_wrapper' on <module 'islpy' from '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/islpy/__init__.py'>
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 573, in freeze
+    pt_prg = self._freeze_prg_cache[normalized_expr]
+             ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: DictOfNamedArrays(tags=frozenset(), data={'_ary': Einsum(tags={FirstAxisIsElementsTag(), PrefixNamed(prefix='nodes0_3d')}, access_descriptors=((EinsumElementwiseAxis(dim=1), EinsumReductionAxis(dim=0)), (EinsumElementwiseAxis(dim=0), EinsumReductionAxis(dim=0))), args=(Placeholder(shape=(15, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationDOFAxisTag()})), Axis(tags=frozenset())), name='_actx_dw'), Placeholder(shape=(1932, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationElementAxisTag()})), Axis(tags=frozenset({DiscretizationDOFAxisTag()}))), name='_actx_dw_0')), redn_axis_to_redn_descr={EinsumReductionAxis(dim=0): ReductionDescriptor(tags=frozenset())})})
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 214, in main
+    run_command_line(args)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 46, in run_command_line
+    run_path(sys.argv[0], run_name='__main__')
+  File "<frozen runpy>", line 287, in run_path
+  File "<frozen runpy>", line 98, in _run_module_code
+  File "<frozen runpy>", line 88, in _run_code
+  File "driver.py", line 85, in <module>
+    main(actx_class, restart_filename=restart_filename,
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/mpi.py", line 152, in wrapped_func
+    func(*args, **kwargs)
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/prediction.py", line 4277, in main
+    dcoll = create_discretization_collection(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/mirgecom/mirgecom/discretization.py", line 76, in create_discretization_collection
+    return make_discretization_collection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 1091, in make_discretization_collection
+    inter_part_connections=_set_up_inter_part_connections(
+                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/grudge/grudge/discretization.py", line 946, in _set_up_inter_part_connections
+    make_partition_connection(
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 620, in make_partition_connection
+    grp_batches = _make_cross_face_batches(actx,
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/connection/opposite_face.py", line 69, in _make_cross_face_batches
+    for ary in tgt_bdry_discr.nodes(cached=False)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in nodes
+    _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/discretization/__init__.py", line 590, in <genexpr>
+    _DOFArray(None, tuple(actx.freeze(resample_mesh_nodes(grp, iaxis))
+                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 605, in freeze
+    pt_prg = pt_prg.with_transformed_translation_unit(
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/pytato/pytato/target/loopy/__init__.py", line 300, in with_transformed_translation_unit
+    program=f(self.program.t_unit).executor(self.cl_context),
+            ^^^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/meshmode/meshmode/array_context.py", line 1652, in transform_loopy_program
+    r = self.transform_loopy_cache[t_unit]
+        ~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 588, in __getitem__
+    return self.fetch(key)
+           ^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 755, in fetch
+    stored_key, value = self._fetch(keyhash)
+                        ^^^^^^^^^^^^^^^^^^^^
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/pytools/persistent_dict.py", line 747, in _fetch_uncached
+    key, value = pickle.loads(row[0])
+                 ^^^^^^^^^^^^^^^^^^^^
+AttributeError: Can't get attribute '_read_from_str_wrapper' on <module 'islpy' from '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/islpy/__init__.py'>
+Traceback (most recent call last):
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/arraycontext/arraycontext/impl/pytato/__init__.py", line 573, in freeze
+    pt_prg = self._freeze_prg_cache[normalized_expr]
+            --------------------------------------------------------------------------
+MPI_ABORT was invoked on rank 14 in communicator MPI_COMM_WORLD
+with errorcode 1.
+
+NOTE: invoking MPI_ABORT causes Open MPI to kill all MPI processes.
+You may or may not see output from other processes, depending on
+exactly when Open MPI kills them.
+--------------------------------------------------------------------------
+ ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+KeyError: DictOfNamedArrays(tags=frozenset(), data={'_ary': Einsum(tags={FirstAxisIsElementsTag(), PrefixNamed(prefix='nodes0_3d')}, access_descriptors=((EinsumElementwiseAxis(dim=1), EinsumReductionAxis(dim=0)), (EinsumElementwiseAxis(dim=0), EinsumReductionAxis(dim=0))), args=(Placeholder(shape=(15, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationDOFAxisTag()})), Axis(tags=frozenset())), name='_actx_dw'), Placeholder(shape=(1236, 3), dtype='float64', axes=(Axis(tags=frozenset({DiscretizationElementAxisTag()})), Axis(tags=frozenset({DiscretizationDOFAxisTag()}))), name='_actx_dw_0')), redn_axis_to_redn_descr={EinsumReductionAxis(dim=0): ReductionDescriptor(tags=frozenset())})})
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "<frozen runpy>", line 198, in _run_module_as_main
+  File "<frozen runpy>", line 88, in _run_code
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/__main__.py", line 7, in <module>
+    main()
+  File "/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/envs/timing.main/lib/python3.12/site-packages/mpi4py/run.py", line 214, in main
+++ return_code=1
+++ set +x
+mv: cannot stat ‘viz_data’: No such file or directory
+mv: cannot stat ‘restart_data’: No such file or directory
+**  scalability_test/prediction-scalability_np32 failed.
+Wed Jun 11 23:25:00 PDT 2025
+Scaling/timing tests done.
+Passing tests: 
+Failing tests:  scalability_test/prediction-scalability_np32
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 7331976: <scale32> in cluster <lassen> Exited
+
+Job <scale32> was submitted from host <lassen709> by user <mtcampbe> in cluster <lassen> at Wed Jun 11 23:23:28 2025
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <mtcampbe> in cluster <lassen> at Wed Jun 11 23:23:30 2025
+                            <40*lassen736>
+                            <40*lassen581>
+                            <40*lassen408>
+                            <40*lassen252>
+                            <40*lassen739>
+                            <40*lassen255>
+                            <40*lassen256>
+                            <40*lassen586>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test> was used as the working directory.
+Started at Wed Jun 11 23:23:30 2025
+Terminated at Wed Jun 11 23:25:33 2025
+Results reported at Wed Jun 11 23:25:33 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -nnodes 8
+#BSUB -G uiuc
+#BSUB -W 120
+#BSUB -J scale32
+#BSUB -q pbatch
+#BSUB -o scal32.txt
+
+source ../emirge/config/activate_env.sh
+source ../emirge/mirgecom/scripts/mirge-testing-env.sh
+source ../scripts/multi_scalability.sh -p ../ -s 32 -n 32
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   2.00 sec.
+    Max Memory :                                 59 MB
+    Average Memory :                             56.00 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1634 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   123 sec.
+    Turnaround time :                            125 sec.
+
+The output (if any) is above this job summary.
+
