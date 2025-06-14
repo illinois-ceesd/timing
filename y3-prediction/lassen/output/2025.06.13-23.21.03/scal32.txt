@@ -1,0 +1,401 @@
+Customizing shell for Lassen.
+
+The following have been reloaded with a version change:
+  1) base-gcc/8.3.1 => base-gcc/11.2.1
+
+
+Lmod is automatically replacing "clang/ibm-16.0.6-cuda-11.2.0-gcc-8.3.1" with
+"gcc/10.2.1".
+
+
+Due to MODULEPATH changes, the following have been reloaded:
+  1) spectrum-mpi/rolling-release
+
+Activating 'timing.main' environment for '/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/emirge/miniforge3/bin/conda'.
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+/p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test
+Driver directory: /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run
+Fri Jun 13 15:35:19 PDT 2025
+Running parallel timing tests...
+* Running prediction-scalability test in scalability_test.
+** Running prediction-scalability_np32 on 32 ranks.
+++ runoptions='-n 32'
+++ [[ ! -z '' ]]
+++ jsrun -g 1 -a 1 -n 32 bash /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/emirge/mirgecom/scripts/lassen-parallel-spawner.sh python -u -O -m mpi4py driver.py -c prediction-scalability_np32 -g /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test/log_data -i run_params_np32.yaml --log --lazy
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+Custom casename 'prediction-scalability_np32'
+2025-06-13 15:35:53,761 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:53,761 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:53,761 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:53,762 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:54,783 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-13 15:35:54,783 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:54,801 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:54,834 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:54,853 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:54,873 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:54,917 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:54,943 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:54,971 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:55,057 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-13 15:35:55,145 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:55,149 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:55,154 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:55,183 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-13 15:35:55,213 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:55,216 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:55,269 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:55,271 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:55,359 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:55,360 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:55,378 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:55,404 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:55,451 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:55,462 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:55,489 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:55,508 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:55,545 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+2025-06-13 15:35:55,553 - INFO - grudge.array_context - get_reasonable_array_context_class: MPIFusionContractorArrayContext lazy=True distributed=True device-parallel=True
+Using user input from file: run_params_np32.yaml
+Running driver.py
+
+2025-06-13 15:35:57,452 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,452 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,452 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,452 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,502 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,502 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,502 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,502 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,624 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,624 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,624 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,624 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,627 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,627 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,627 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,627 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,627 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,627 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,627 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,658 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,658 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,658 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,658 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,671 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,671 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,671 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,671 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,677 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,680 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,680 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,680 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+2025-06-13 15:35:57,681 - WARNING - py.warnings - /p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/y3prediction/wall.py:37: UserWarning: <class 'y3prediction.wall.WallVars'> does not have __array_ufunc__ set. This will cause numpy to attempt broadcasting, in a way that is likely undesired. To avoid this, set __array_ufunc__ = None in <class 'y3prediction.wall.WallVars'>.
+  @with_container_arithmetic(bcast_obj_array=False,
+
+_mm.init failed
+[lassen394:168186] Error: common_pami.c:1094 - ompi_common_pami_init() 12: Unable to create 1 PAMI communication context(s) rc=1
+_mm.init failed
+[lassen394:168185] Error: common_pami.c:1094 - ompi_common_pami_init() 13: Unable to create 1 PAMI communication context(s) rc=1
+_mm.init failed
+[lassen394:168187] Error: common_pami.c:1094 - ompi_common_pami_init() 15: Unable to create 1 PAMI communication context(s) rc=1
+_mm.init failed
+[lassen394:168188] Error: common_pami.c:1094 - ompi_common_pami_init() 14: Unable to create 1 PAMI communication context(s) rc=1
+--------------------------------------------------------------------------
+No components were able to be opened in the pml framework.
+
+This typically means that either no components of this type were
+installed, or none of the installed components can be loaded.
+Sometimes this means that shared libraries required by these
+components are unable to be found/loaded.
+
+  Host:      lassen394
+  Framework: pml
+--------------------------------------------------------------------------
+[lassen394:168187] PML pami cannot be selected
+--------------------------------------------------------------------------
+No components were able to be opened in the pml framework.
+
+This typically means that either no components of this type were
+installed, or none of the installed components can be loaded.
+Sometimes this means that shared libraries required by these
+components are unable to be found/loaded.
+
+  Host:      lassen394
+  Framework: pml
+--------------------------------------------------------------------------
+[lassen394:168188] PML pami cannot be selected
+--------------------------------------------------------------------------
+No components were able to be opened in the pml framework.
+
+This typically means that either no components of this type were
+installed, or none of the installed components can be loaded.
+Sometimes this means that shared libraries required by these
+components are unable to be found/loaded.
+
+  Host:      lassen394
+  Framework: pml
+--------------------------------------------------------------------------
+[lassen394:168185] PML pami cannot be selected
+--------------------------------------------------------------------------
+No components were able to be opened in the pml framework.
+
+This typically means that either no components of this type were
+installed, or none of the installed components can be loaded.
+Sometimes this means that shared libraries required by these
+components are unable to be found/loaded.
+
+  Host:      lassen394
+  Framework: pml
+--------------------------------------------------------------------------
+[lassen394:168186] PML pami cannot be selected
+++ return_code=1
+++ set +x
+mv: cannot stat ‘viz_data’: No such file or directory
+mv: cannot stat ‘restart_data’: No such file or directory
+**  scalability_test/prediction-scalability_np32 failed.
+Fri Jun 13 15:35:59 PDT 2025
+Scaling/timing tests done.
+Passing tests: 
+Failing tests:  scalability_test/prediction-scalability_np32
+
+------------------------------------------------------------
+Sender: LSF System <lsfadmin@lassen710>
+Subject: Job 7335656: <scale32> in cluster <lassen> Exited
+
+Job <scale32> was submitted from host <lassen709> by user <mtcampbe> in cluster <lassen> at Fri Jun 13 15:35:07 2025
+Job was executed on host(s) <1*lassen710>, in queue <pbatch>, as user <mtcampbe> in cluster <lassen> at Fri Jun 13 15:35:08 2025
+                            <40*lassen489>
+                            <40*lassen363>
+                            <40*lassen534>
+                            <40*lassen384>
+                            <40*lassen245>
+                            <40*lassen544>
+                            <40*lassen394>
+                            <40*lassen395>
+</g/g17/mtcampbe> was used as the home directory.
+</p/gpfs1/mtcampbe/CEESD/AutomatedTesting/MIRGE-Timing/timing/y3-prediction-scaling-run/scalability_test> was used as the working directory.
+Started at Fri Jun 13 15:35:08 2025
+Terminated at Fri Jun 13 15:36:24 2025
+Results reported at Fri Jun 13 15:36:24 2025
+
+Your job looked like:
+
+------------------------------------------------------------
+# LSBATCH: User input
+#!/bin/bash
+#BSUB -nnodes 8
+#BSUB -G uiuc
+#BSUB -W 120
+#BSUB -J scale32
+#BSUB -q pbatch
+#BSUB -o scal32.txt
+
+source ../emirge/config/activate_env.sh
+source ../emirge/mirgecom/scripts/mirge-testing-env.sh
+source ../scripts/multi_scalability.sh -p ../ -s 32 -n 32
+
+------------------------------------------------------------
+
+Exited with exit code 1.
+
+Resource usage summary:
+
+    CPU time :                                   2.00 sec.
+    Max Memory :                                 152 MB
+    Average Memory :                             76.33 MB
+    Total Requested Memory :                     -
+    Delta Memory :                               -
+    Max Swap :                                   1634 MB
+    Max Processes :                              4
+    Max Threads :                                27
+    Run time :                                   76 sec.
+    Turnaround time :                            77 sec.
+
+The output (if any) is above this job summary.
+
